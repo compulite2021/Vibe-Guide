@@ -1,0 +1,90 @@
+# General Specification
+
+This chapter covers basic specifications.
+
+**The following is covered in this chapter:**
+-  2.1. Controls
+-  2.2. I/O
+-  2.3. Capacity
+
+
+## Controls
+
+-   4 large backlit push encoder wheels.
+    
+-   4 small interactive backlit push encoder wheels.
+    
+-   Backlit trackball.
+    
+-   Dedicated dimmer encoder wheel.
+    
+-   15 **Motorized Faders**.
+    
+-   20 **Qkey** controller keys.
+    
+-   20 Multi-use Auxiliary **Qkeys** .
+    
+-   5 general purpose non-motorized **Global Faders**.
+
+
+##  I/O
+
+-   8 Physical DMX 512 input/output ports (RDM supported).
+    
+-   Standard 64 DMX over Ethernet universes. 96, 128, 256, DMX universes optional via license.
+    
+-   Support for Compulite VC, Art-Net 3, and sACN protocols. RDM is currently supported locally and over Compulite VC networks. (Art-Net and sACN in the near future)
+    
+-   MIDI In/Out.
+    
+-   SMPTE In.
+    
+-   1 Ethernet data network with 2 etherCON ports.
+    
+-   2 Ethernet networks for accessories and additional devices such as NAS storage.
+    
+-   4 USB 3 ports on the back panel.
+    
+-   2 USB 2 ports on the front panel.
+    
+-   3.5mm audio line in/out.
+    
+-   3.5mm Mic in.
+    
+-   3.5mm Speaker out.
+    
+-   2 DisplayPort video outputs.
+
+
+## Capacity
+
+-   100 physical/virtual motorized fader controllers.
+    
+-   100 physical/virtual Qkey single button controllers.
+    
+-   100 physical/virtual Auxiliary Qkey single button controllers.
+    
+-   5 global multi-purpose non-motorized Slider controllers.
+    
+-   30 individual pages for motorized Sliders, Qkeys, and Auxiliary Qkeys.
+    
+-   9000 total physical/virtual controllers.
+    
+-   1000 Qlists.
+    
+-   Virtually unlimited cues.
+    
+-   1000 Scenes.
+    
+-   1000 Qlists.
+    
+-   1000 fixture Groups.
+    
+-   1000 Libraries per bank type.
+    
+-   1000 Effects.
+    
+-   1000 Snapshots.
+    
+-   1000 Macros.
+

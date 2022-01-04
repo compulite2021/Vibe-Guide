@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 General Specification | bookdownproj.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 General Specification | bookdownproj.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 General Specification | bookdownproj.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="vibe-hardware.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Vibe</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#unboxing"><i class="fa fa-check"></i><b>1.1</b> Unboxing</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#getting-started"><i class="fa fa-check"></i><b>1.2</b> Getting Started</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#guide-conventions"><i class="fa fa-check"></i><b>1.3</b> Guide Conventions</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#important-terms"><i class="fa fa-check"></i><b>1.4</b> Important Terms</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="general-specification.html"><a href="general-specification.html"><i class="fa fa-check"></i><b>2</b> General Specification</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-specification.html"><a href="general-specification.html#controls"><i class="fa fa-check"></i><b>2.1</b> Controls</a></li>
+<li class="chapter" data-level="2.2" data-path="general-specification.html"><a href="general-specification.html#io"><i class="fa fa-check"></i><b>2.2</b> I/O</a></li>
+<li class="chapter" data-level="2.3" data-path="general-specification.html"><a href="general-specification.html#capacity"><i class="fa fa-check"></i><b>2.3</b> Capacity</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vibe-hardware.html"><a href="vibe-hardware.html"><i class="fa fa-check"></i><b>3</b> Vibe Hardware</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="vibe-hardware.html"><a href="vibe-hardware.html#editor-controls"><i class="fa fa-check"></i><b>3.1</b> Editor Controls</a></li>
+<li class="chapter" data-level="3.2" data-path="vibe-hardware.html"><a href="vibe-hardware.html#aux-qkeys-grand-master-and-global-controllers"><i class="fa fa-check"></i><b>3.2</b> Aux Qkeys, Grand Master, and Global Controllers</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="general-specification" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> General Specification</h1>
+<p>This chapter covers basic specifications.</p>
+<p><strong>The following is covered in this chapter:</strong>
+- 2.1. Controls
+- 2.2. I/O
+- 2.3. Capacity</p>
+<div id="controls" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Controls</h2>
+<ul>
+<li><p>4 large backlit push encoder wheels.</p></li>
+<li><p>4 small interactive backlit push encoder wheels.</p></li>
+<li><p>Backlit trackball.</p></li>
+<li><p>Dedicated dimmer encoder wheel.</p></li>
+<li><p>15 <strong>Motorized Faders</strong>.</p></li>
+<li><p>20 <strong>Qkey</strong> controller keys.</p></li>
+<li><p>20 Multi-use Auxiliary <strong>Qkeys</strong> .</p></li>
+<li><p>5 general purpose non-motorized <strong>Global Faders</strong>.</p></li>
+</ul>
+</div>
+<div id="io" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> I/O</h2>
+<ul>
+<li><p>8 Physical DMX 512 input/output ports (RDM supported).</p></li>
+<li><p>Standard 64 DMX over Ethernet universes. 96, 128, 256, DMX universes optional via license.</p></li>
+<li><p>Support for Compulite VC, Art-Net 3, and sACN protocols. RDM is currently supported locally and over Compulite VC networks. (Art-Net and sACN in the near future)</p></li>
+<li><p>MIDI In/Out.</p></li>
+<li><p>SMPTE In.</p></li>
+<li><p>1 Ethernet data network with 2 etherCON ports.</p></li>
+<li><p>2 Ethernet networks for accessories and additional devices such as NAS storage.</p></li>
+<li><p>4 USB 3 ports on the back panel.</p></li>
+<li><p>2 USB 2 ports on the front panel.</p></li>
+<li><p>3.5mm audio line in/out.</p></li>
+<li><p>3.5mm Mic in.</p></li>
+<li><p>3.5mm Speaker out.</p></li>
+<li><p>2 DisplayPort video outputs.</p></li>
+</ul>
+</div>
+<div id="capacity" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Capacity</h2>
+<ul>
+<li><p>100 physical/virtual motorized fader controllers.</p></li>
+<li><p>100 physical/virtual Qkey single button controllers.</p></li>
+<li><p>100 physical/virtual Auxiliary Qkey single button controllers.</p></li>
+<li><p>5 global multi-purpose non-motorized Slider controllers.</p></li>
+<li><p>30 individual pages for motorized Sliders, Qkeys, and Auxiliary Qkeys.</p></li>
+<li><p>9000 total physical/virtual controllers.</p></li>
+<li><p>1000 Qlists.</p></li>
+<li><p>Virtually unlimited cues.</p></li>
+<li><p>1000 Scenes.</p></li>
+<li><p>1000 Qlists.</p></li>
+<li><p>1000 fixture Groups.</p></li>
+<li><p>1000 Libraries per bank type.</p></li>
+<li><p>1000 Effects.</p></li>
+<li><p>1000 Snapshots.</p></li>
+<li><p>1000 Macros.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="vibe-hardware.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/02-General-Specification.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/02-General-Specification.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

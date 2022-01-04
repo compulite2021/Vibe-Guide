@@ -1,9 +1,120 @@
---- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
----
+# Introduction
 
-# Down the rabbit-hole
+This chapter discusses getting started with your Compulite Vibe console.
 
+**The following is covered in this chapter:**
+
+-   1.1. Unboxing
+-   1.2. Getting Started
+-   1.3. Guide Conventions
+-   1.4. Important Terms
+
+## Unboxing
+
+TBA.
+
+## Getting Started
+Power requirements:
+• Vibe uses a power supply that supports 90-264V at 47-63 Hz.
+• Approximately 3.2 amps at 230V.
+• Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
+
+Desk Light:
+• Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
+• Desk light intensity is controlled in the {System Settings} {Hardware} tab. 
+
+Monitor intensity:
+• Monitor intensity is controlled in the {System Settings} {Hardware} tab. 
+
+Power up the console:
+• Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.
+• Turn on the power supply switch above the powerCON connector.
+• Press the Power button located at the upper right corner of the monitor panel above the USB connectors.
+• The operating system will boot and the Vibe console software will automatically launch.
+
+Power down the console:
+• Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.
+• Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.
+• Tap {Yes} or {No}.
+• The Vibe application will shutdown and a screen will appear with the following options:
+{Shut Down the Console} - System will power off
+{Restart Vibe} - Vibe console application will restart
+{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.
+Choose Shut Down the Console - The console will safely power off.
+
+## Guide Conventions
+
+
+• **[XXXX]** - Physical key
+
+• **{XXXX}** - Soft key § [ ] { } - Example
+
+• **Press** - Action applied to a physical key
+
+• **Tap** - Action applied to softkey or virtual key
+
+• **Toggle** - Action that actives and deactivates with alternating taps or presses
+
+• **Key** - Any physical or virtual key that is NOT used for controller activation
+
+• **Button** - Any virtual or physical key that is used to activate a controller
+
+• **Keypad** - Embedded numeric keypad
+
+• **Keyboard** - Console's pull-out ASCII keyboard or any external keyboard
+
+• **SK -** Object softkeys (Libraries, Groups, Snap, Macros, etc.)
+
+• 👉 **-** Hint or suggestion
+
+• **RED**  **-** Important information or Caution
+
+• **[Here]** - Short form for Press an appropriate destination softkey or controller button to complete the command
+
+## Important Terms
+
+
+-   **DMX 512 Output/Input Port** - One of the 8 physical 5 pin XLR connectors on the back of the console. Although the gender is female, any connector may be configured as an input but must use a turnaround adapter.
+    
+-   **DMX 512 Universe** - Virtual DMX outputs 0 ➡️ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. ◾ Compulite VC protocol ◾ w Art-Net 3 w ◾ sACN
+    
+-   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ➡️ 1000 = User defined sets
+    
+-   **Parameter** - An individual feature of a fixture such as dimmer, pan, tilt, color wheel, gobo.
+    
+-   **Controllers** - Any physical or virtual control that executes or plays back system objects such as cues, scenes, macros, and snapshots.
+    
+-   **Submaster** - A special type of Scene where stored fixtures inhibit their dimmer values proportionate to their assigned slider controller value.
+    
+-   **Master Controller** - Playback section of the console with large [GO], [BACK], [HOLD] keys.
+    
+-   **Slider** - Slide potentiometer often referred to as a Fader.
+    
+-   **Qkey** - A single button Controller.
+    
+-   **Assert** - Takes back control of parameters that have been "robbed" by other controllers.
+    
+-   **HTP (Highest-Takes-Precedence)** - When values from two or more controllers are summed, The highest value will output to the stage. Used mainly for dimmer values in theater applications.
+    
+-   **LTP (Latest-Takes-Precedence)** - When similar parameters are on two or more controllers, the last asserted parameter will output it's values to the stage no matter what the value.
+    
+-   **[SELECT]** - Multi-use key, mainly used to assign any controller as the Master Controller. Commands not specifying a Qlist destination will be applied directly to the [SELECT] Master Controller.
+    
+-   **Qlist** - A Folder containing cues. Each Qlist has its own unique numbering system from 0.001 to 999.999.
+    
+-   **Cue** - A look (record) contained within a Qlist. Cues contain stored parameter values and properties such as text label and time values.
+    
+-   **Scene** - A look that exists independent of a Qlist.
+    
+-   **Library** - Container of frequently used fixture parameter values (Bank Library) or system objects (Object Library) . Bank Libraries may be created as referenced or unreferenced. The default for most libraries is referenced.
+    
+-   **Options** - Used to modify object properties "on the fly"
+    
+-   **Settings** - Used to modify object properties and behaviors after an object has been created.
+    
+-   **Cue Zero** - The starting point at the top of a Qlist. Release may or may not return to the top of a Qlist depending on Qlist Properties. Cue Zero will always return to the top of the Qlist. The command Cue 0 GOTO is valid.
+    
+
+For the sake of this guide, **Channel, Spot, Matrix, and Server Sets** will be referred to as Fixture because the Fixture Set can reference all the other sets
+
+Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.

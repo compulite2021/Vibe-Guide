@@ -1,0 +1,12 @@
+introduction
+unboxing
+getting-started
+guide-conventions
+important-terms
+general-specification
+controls
+io
+capacity
+vibe-hardware
+editor-controls
+aux-qkeys-grand-master-and-global-controllers
