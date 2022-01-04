@@ -10,13 +10,13 @@ This chapter covers basic specifications.
 -  3.4. Master Controller and Control Keys
 -  3.5. Aux Qkeys, Grand Master, and Global Controllers
 
----
+
 ## Console
 
 ![Front Panel View](https://www.dropbox.com/s/4nb7qt9l55n2ov9/3.1.png?dl=1)
 
 ![Rear Panel View](https://www.dropbox.com/s/uxeylsagug5qv7l/3.1.1.png?dl=1)
----
+
 
 ## Editor Controls
 ![Editor Controls](https://www.dropbox.com/s/rb4vacdtke2kw4n/3.2.png?dl=1)
@@ -44,7 +44,7 @@ This chapter covers basic specifications.
 > • Object select keys
 > 
 > • Navigation keys
----
+
 ## Motorized Sliders and Qkeys
 
 ![Motorized Slider and Qkey Controllers](https://www.dropbox.com/s/p0ezk95x8ey2jpi/3.3.png?dl=1)
@@ -67,7 +67,7 @@ This chapter covers basic specifications.
 > 
 > • Snap
 
----
+
 ## Master Controller and Control Keys
 
 ![Master Controller and Control Keys](https://www.dropbox.com/s/jtqjusxfneduw81/3.4.png?dl=1)
@@ -92,7 +92,7 @@ This chapter covers basic specifications.
 > 
 > • **[TEACH]** for BBM tap time
 
----
+
 ## Aux Qkeys, Grand Master, and Global Controllers
 
 ![Aux Qkeys, Grand Master, Blackout, and General Sliders](https://www.dropbox.com/s/77t7rqdf6xxj5je/3.5.png?dl=1)

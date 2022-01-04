@@ -8,5 +8,8 @@ controls
 io
 capacity
 vibe-hardware
+console
 editor-controls
+motorized-sliders-and-qkeys
+master-controller-and-control-keys
 aux-qkeys-grand-master-and-global-controllers
