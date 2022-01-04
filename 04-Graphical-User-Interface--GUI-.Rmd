@@ -10,6 +10,9 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 -  4.5. Toolbars
 -  4.6. Live Display
 -  4.7. Live Parameter Display
+-  4.7.1. Parameter Mode
+-  4.7.2. Bank Mode
+-  4.7.3. Fixture Mode
 
 
 ## Introduction

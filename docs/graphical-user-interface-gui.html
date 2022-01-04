@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="vibe-hardware.html"/>
-
+<link rel="next" href="file-management.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -101,6 +101,14 @@
 <li class="chapter" data-level="4.5" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#toolbars"><i class="fa fa-check"></i><b>4.5</b> Toolbars</a></li>
 <li class="chapter" data-level="4.6" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#live-display"><i class="fa fa-check"></i><b>4.6</b> Live Display</a></li>
 <li class="chapter" data-level="4.7" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#live-parameter-display"><i class="fa fa-check"></i><b>4.7</b> Live Parameter Display</a></li>
+<li class="chapter" data-level="4.8" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#parameter-mode"><i class="fa fa-check"></i><b>4.8</b> Parameter Mode</a></li>
+<li class="chapter" data-level="4.9" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#bank-mode"><i class="fa fa-check"></i><b>4.9</b> Bank Mode</a></li>
+<li class="chapter" data-level="4.10" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#fixture-mode"><i class="fa fa-check"></i><b>4.10</b> Fixture Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="file-management.html"><a href="file-management.html"><i class="fa fa-check"></i><b>5</b> File Management</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="file-management.html"><a href="file-management.html#show-menu"><i class="fa fa-check"></i><b>5.1</b> Show Menu</a></li>
+<li class="chapter" data-level="5.2" data-path="file-management.html"><a href="file-management.html#load-vector-show"><i class="fa fa-check"></i><b>5.2</b> Load Vector Show</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -131,7 +139,10 @@
 - 4.4. Smart Screen
 - 4.5. Toolbars
 - 4.6. Live Display
-- 4.7. Live Parameter Display</p>
+- 4.7. Live Parameter Display
+- 4.7.1. Parameter Mode
+- 4.7.2. Bank Mode
+- 4.7.3. Fixture Mode</p>
 <div id="introduction-1" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Introduction</h2>
 <p>Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.</p>
@@ -274,7 +285,38 @@
 <p><strong>Live View Settings pop-up - Behavior Tab</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwhGHyHCbLeSvpBFU5jQY%2Fimage.png?alt=media&amp;token=3f711f98-6e83-4882-87b0-1eefe91182af" /></p>
 <p><strong>Fixture Jumping</strong>: ◾ Off ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. <strong>Parameter Jumping</strong>: ◾ Jumps the parameter’s column and related bank parameters to the end of the dock position. (First scrollable column). <strong>Interactive Fixture Selection:</strong> ◾ Turns on the ability to make fixture selections from the live display grids. <strong>Interactive</strong> <strong>Cell Editing:</strong> ◾ Turns on the ability to directly edit cells in the live display grid. <strong>Interactive Header selection</strong> - Currently implemented but may not be turned off. ◾ Enables parameters to be directly selected from the live display headers. <strong>Submaster Values:</strong> ◾ <strong>Show Stored Values</strong> - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&amp;token=35bbd680-0f4c-4b4f-b659-94e00a30f028" /> icon will also be shown to indicate when the parameter is inhibited. ◾ <strong>Show Output Values</strong> - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.</p>
+</div>
+<div id="parameter-mode" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Parameter Mode</h2>
+<p>Unlike most theatrical consoles, parameters other than dimmer may be shown in Live Parameter Mode.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbj8JRvg1tZzGiWEi5gEC%2Fimage.png?alt=media&amp;token=37b62e05-c40f-49af-b21b-3adde1d11146" /></p>
+<p>Parameters visible in Live Parameter Mode are filtered using the Parameter View Settings Pop-up.</p>
+<p><strong>Filter Parameters:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&amp;token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" /> icon - The Parameter View Settings pop-up will open.</p></li>
+<li><p>Tap parameters on either side to move them from one box to the other.</p></li>
+<li><p>Close the pop-up using [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6ybVVc9nwVMMpuasiGVA%2Fimage.png?alt=media&amp;token=8724d072-b248-46f0-8a4c-a5e999282b40" /></p></li>
+</ol>
+<pre><code>.</code></pre>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8Ippy128mYH7PrJmnqqe%2Fimage.png?alt=media&amp;token=5219dbe8-3ac5-4ce1-9050-e62b3d2b23ce" /></p>
+</div>
+<div id="bank-mode" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> Bank Mode</h2>
+<p>Fixtures may also be graphically displayed by banks.</p>
+<p><strong>Currently, three banks can be graphically viewed</strong>: Image will be implemented soon.</p>
+<ul>
+<li><p><strong>Intensity</strong> - In the form of an illuminated disk.</p></li>
+<li><p><strong>Position</strong> - In the form of a cursor that moves in a black rectangle representing the stage.</p></li>
+<li><p><strong>Color</strong> - In the form of a circular color swatch - Color wheels are not currently supported.</p></li>
+<li><p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKU2qDFW9ABD56I5la6U9%2Fimage.png?alt=media&amp;token=7ea2c6f2-50a5-403d-b3e8-840c464f1077" /></p></li>
+</ul>
+</div>
+<div id="fixture-mode" class="section level2" number="4.10">
+<h2><span class="header-section-number">4.10</span> Fixture Mode</h2>
+<p>Graphically Displays Intensity, Position, and Color parameter icons as a single “tombstone” fixture</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPgGlBvQc4nGhp5FloW0r%2Fimage.png?alt=media&amp;token=4b3c4f7e-9903-4aaf-a52b-465effad9a9e" /></p>
 
+<hr />
 </div>
 </div>
             </section>
@@ -282,8 +324,8 @@
           </div>
         </div>
       </div>
-<a href="vibe-hardware.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="vibe-hardware.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="file-management.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
