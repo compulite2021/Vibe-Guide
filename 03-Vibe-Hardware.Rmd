@@ -13,9 +13,9 @@ This chapter covers basic specifications.
 ---
 ## Console
 
-![Front Panel View](https://www.compulite.com/images/Products/Lighting%20Controllers/ITEM%20SLIDE/VIBE/1.webp)
+![Front Panel View](https://www.dropbox.com/s/4nb7qt9l55n2ov9/3.1.png?dl=1)
 
-![Rear Panel View](https://www.compulite.com/images/Products/Lighting%20Controllers/ITEM%20SLIDE/VIBE/3.webp)
+![Rear Panel View](https://www.dropbox.com/s/uxeylsagug5qv7l/3.1.1.png?dl=1)
 ---
 
 ## Editor Controls
