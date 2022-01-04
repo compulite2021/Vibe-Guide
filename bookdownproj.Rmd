@@ -1,3 +1,338 @@
+# Introduction
+
+This chapter discusses getting started with your Compulite Vibe console.
+
+**The following is covered in this chapter:**
+
+-   1.1. Unboxing
+-   1.2. Getting Started
+-   1.3. Guide Conventions
+-   1.4. Important Terms
+
+## Unboxing
+
+TBA.
+
+## Getting Started
+Power requirements:
+• Vibe uses a power supply that supports 90-264V at 47-63 Hz.
+• Approximately 3.2 amps at 230V.
+• Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
+
+Desk Light:
+• Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
+• Desk light intensity is controlled in the {System Settings} {Hardware} tab. 
+
+Monitor intensity:
+• Monitor intensity is controlled in the {System Settings} {Hardware} tab. 
+
+Power up the console:
+• Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.
+• Turn on the power supply switch above the powerCON connector.
+• Press the Power button located at the upper right corner of the monitor panel above the USB connectors.
+• The operating system will boot and the Vibe console software will automatically launch.
+
+Power down the console:
+• Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.
+• Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.
+• Tap {Yes} or {No}.
+• The Vibe application will shutdown and a screen will appear with the following options:
+{Shut Down the Console} - System will power off
+{Restart Vibe} - Vibe console application will restart
+{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.
+Choose Shut Down the Console - The console will safely power off.
+
+## Guide Conventions
+
+
+• **[XXXX]** - Physical key
+
+• **{XXXX}** - Soft key § [ ] { } - Example
+
+• **Press** - Action applied to a physical key
+
+• **Tap** - Action applied to softkey or virtual key
+
+• **Toggle** - Action that actives and deactivates with alternating taps or presses
+
+• **Key** - Any physical or virtual key that is NOT used for controller activation
+
+• **Button** - Any virtual or physical key that is used to activate a controller
+
+• **Keypad** - Embedded numeric keypad
+
+• **Keyboard** - Console's pull-out ASCII keyboard or any external keyboard
+
+• **SK -** Object softkeys (Libraries, Groups, Snap, Macros, etc.)
+
+• 👉 **-** Hint or suggestion
+
+• **RED**  **-** Important information or Caution
+
+• **[Here]** - Short form for Press an appropriate destination softkey or controller button to complete the command
+
+## Important Terms
+
+
+-   **DMX 512 Output/Input Port** - One of the 8 physical 5 pin XLR connectors on the back of the console. Although the gender is female, any connector may be configured as an input but must use a turnaround adapter.
+    
+-   **DMX 512 Universe** - Virtual DMX outputs 0 ➡️ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. ◾ Compulite VC protocol ◾ w Art-Net 3 w ◾ sACN
+    
+-   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ➡️ 1000 = User defined sets
+    
+-   **Parameter** - An individual feature of a fixture such as dimmer, pan, tilt, color wheel, gobo.
+    
+-   **Controllers** - Any physical or virtual control that executes or plays back system objects such as cues, scenes, macros, and snapshots.
+    
+-   **Submaster** - A special type of Scene where stored fixtures inhibit their dimmer values proportionate to their assigned slider controller value.
+    
+-   **Master Controller** - Playback section of the console with large [GO], [BACK], [HOLD] keys.
+    
+-   **Slider** - Slide potentiometer often referred to as a Fader.
+    
+-   **Qkey** - A single button Controller.
+    
+-   **Assert** - Takes back control of parameters that have been "robbed" by other controllers.
+    
+-   **HTP (Highest-Takes-Precedence)** - When values from two or more controllers are summed, The highest value will output to the stage. Used mainly for dimmer values in theater applications.
+    
+-   **LTP (Latest-Takes-Precedence)** - When similar parameters are on two or more controllers, the last asserted parameter will output it's values to the stage no matter what the value.
+    
+-   **[SELECT]** - Multi-use key, mainly used to assign any controller as the Master Controller. Commands not specifying a Qlist destination will be applied directly to the [SELECT] Master Controller.
+    
+-   **Qlist** - A Folder containing cues. Each Qlist has its own unique numbering system from 0.001 to 999.999.
+    
+-   **Cue** - A look (record) contained within a Qlist. Cues contain stored parameter values and properties such as text label and time values.
+    
+-   **Scene** - A look that exists independent of a Qlist.
+    
+-   **Library** - Container of frequently used fixture parameter values (Bank Library) or system objects (Object Library) . Bank Libraries may be created as referenced or unreferenced. The default for most libraries is referenced.
+    
+-   **Options** - Used to modify object properties "on the fly"
+    
+-   **Settings** - Used to modify object properties and behaviors after an object has been created.
+    
+-   **Cue Zero** - The starting point at the top of a Qlist. Release may or may not return to the top of a Qlist depending on Qlist Properties. Cue Zero will always return to the top of the Qlist. The command Cue 0 GOTO is valid.
+    
+
+For the sake of this guide, **Channel, Spot, Matrix, and Server Sets** will be referred to as Fixture because the Fixture Set can reference all the other sets
+
+Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.
+
+<!--chapter:end:index.Rmd-->
+
+# General Specification
+
+This chapter covers basic specifications.
+
+**The following is covered in this chapter:**
+-  2.1. Controls
+-  2.2. I/O
+-  2.3. Capacity
+
+
+## Controls
+
+-   4 large backlit push encoder wheels.
+    
+-   4 small interactive backlit push encoder wheels.
+    
+-   Backlit trackball.
+    
+-   Dedicated dimmer encoder wheel.
+    
+-   15 **Motorized Faders**.
+    
+-   20 **Qkey** controller keys.
+    
+-   20 Multi-use Auxiliary **Qkeys** .
+    
+-   5 general purpose non-motorized **Global Faders**.
+
+
+##  I/O
+
+-   8 Physical DMX 512 input/output ports (RDM supported).
+    
+-   Standard 64 DMX over Ethernet universes. 96, 128, 256, DMX universes optional via license.
+    
+-   Support for Compulite VC, Art-Net 3, and sACN protocols. RDM is currently supported locally and over Compulite VC networks. (Art-Net and sACN in the near future)
+    
+-   MIDI In/Out.
+    
+-   SMPTE In.
+    
+-   1 Ethernet data network with 2 etherCON ports.
+    
+-   2 Ethernet networks for accessories and additional devices such as NAS storage.
+    
+-   4 USB 3 ports on the back panel.
+    
+-   2 USB 2 ports on the front panel.
+    
+-   3.5mm audio line in/out.
+    
+-   3.5mm Mic in.
+    
+-   3.5mm Speaker out.
+    
+-   2 DisplayPort video outputs.
+
+
+## Capacity
+
+-   100 physical/virtual motorized fader controllers.
+    
+-   100 physical/virtual Qkey single button controllers.
+    
+-   100 physical/virtual Auxiliary Qkey single button controllers.
+    
+-   5 global multi-purpose non-motorized Slider controllers.
+    
+-   30 individual pages for motorized Sliders, Qkeys, and Auxiliary Qkeys.
+    
+-   9000 total physical/virtual controllers.
+    
+-   1000 Qlists.
+    
+-   Virtually unlimited cues.
+    
+-   1000 Scenes.
+    
+-   1000 Qlists.
+    
+-   1000 fixture Groups.
+    
+-   1000 Libraries per bank type.
+    
+-   1000 Effects.
+    
+-   1000 Snapshots.
+    
+-   1000 Macros.
+
+
+<!--chapter:end:02-General-Specification.Rmd-->
+
+
+# Vibe Hardware
+
+This chapter covers basic specifications.
+
+**The following is covered in this chapter:**
+-  3.1. Console
+-  3.2. Editor Controls
+-  3.3. Motorized Sliders and Qkeys
+-  3.4. Master Controller and Control Keys
+-  3.5. Aux Qkeys, Grand Master, and Global Controllers
+
+
+## Console
+
+![Front Panel View](https://www.dropbox.com/s/4nb7qt9l55n2ov9/3.1.png?dl=1)
+
+![Rear Panel View](https://www.dropbox.com/s/uxeylsagug5qv7l/3.1.1.png?dl=1)
+
+
+## Editor Controls
+![Editor Controls](https://www.dropbox.com/s/rb4vacdtke2kw4n/3.2.png?dl=1)
+
+> Editor Controls are used to program and edit parameter values for all
+> fixtures as well as create and edit objects such as cues and
+> libraries.
+> 
+> • **[Vibe]** Key (Shift Key)
+> 
+> • Numeric Key Pad § 4 Main encoder push wheels
+> 
+> • Trackball
+> 
+> • **[Next]/[Prev]** Keys
+> 
+> • XYZ lock keys
+> 
+> • **[Res]** Wheel resolution key
+> 
+> • Dedicated dimmer wheel
+> 
+> • Command select keys
+> 
+> • Object select keys
+> 
+> • Navigation keys
+
+## Motorized Sliders and Qkeys
+
+![Motorized Slider and Qkey Controllers](https://www.dropbox.com/s/p0ezk95x8ey2jpi/3.3.png?dl=1)
+
+> 15 individually paging 60mm Motorized slider potentiometers and 15
+> individually paging Qkey single button controllers, used to execute
+> and control objects such as: • Qlist Cues
+> 
+> • Scenes
+> 
+> • Effects Rate and Size
+> 
+> • Group selects
+> 
+> • Group Masters (Submasters)
+> 
+> • Libraries
+> 
+> • Macros
+> 
+> • Snap
+
+
+## Master Controller and Control Keys
+
+![Master Controller and Control Keys](https://www.dropbox.com/s/jtqjusxfneduw81/3.4.png?dl=1)
+
+> • Non-motorized 100mm Sliders, used for Theatrical playback of cues
+> 
+> • Large **[GO/BACK/HOLD]** Keys for executing cues on the Master
+> Controller
+> 
+> • Master Controller **[SELECT]** key
+> 
+> • Controller **[RELEASE]** Key
+> 
+> • **[LOAD]** key to pre-load a controller for execution
+> 
+> • Controller **[FREE]** Key (unload)
+> 
+> • **12 [Controller Keys]** to provide additional or missing functions
+> to controllers.
+> 
+> • **[RATE]** for overall or individual rate override of controllers
+> 
+> • **[TEACH]** for BBM tap time
+
+
+## Aux Qkeys, Grand Master, and Global Controllers
+
+![Aux Qkeys, Grand Master, Blackout, and General Sliders](https://www.dropbox.com/s/77t7rqdf6xxj5je/3.5.png?dl=1)
+
+> • 20 individually paging Auxiliary **Qkey Controllers** for single
+> button execution of Cues, Scenes, Group Selects, Snaps, and Macros.
+> 
+> • 5 Non-motorized single button Sliders for execution and control of
+> Scenes, Cues, Group Masters (Submasters), Rate Masters, and Flash
+> Masters.
+> 
+> • Grand Master Slider.
+> 
+> • **[BO]** Blackout key with blackout option.
+
+![Workspace Template Keys](https://www.dropbox.com/s/2641qkgyzj63akv/3.5.1.png?dl=1)
+
+> • **[PATCH] [PROGRAM]** and **[PLAY-B]** Workspace Template keys
+> available for accessing display pages.
+> 
+> • **[View]**, stores or executes display snapshots.
+
+<!--chapter:end:03-Vibe-Hardware.Rmd-->
+
 # Graphical User Interface (GUI)
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
@@ -241,3 +576,6 @@ Fixtures may also be graphically displayed by banks.
 Graphically Displays Intensity, Position, and Color parameter icons as a single "tombstone" fixture
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPgGlBvQc4nGhp5FloW0r%2Fimage.png?alt=media&token=4b3c4f7e-9903-4aaf-a52b-465effad9a9e)
+
+<!--chapter:end:04-Graphical-User-Interface--GUI-.Rmd-->
+
