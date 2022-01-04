@@ -13,3 +13,11 @@ editor-controls
 motorized-sliders-and-qkeys
 master-controller-and-control-keys
 aux-qkeys-grand-master-and-global-controllers
+graphical-user-interface-gui
+introduction-1
+vibe-menu
+layouts
+smart-screen
+toolbars
+live-display
+live-parameter-display

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Graphical User Interface (GUI) | bookdownproj.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Graphical User Interface (GUI) | bookdownproj.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Graphical User Interface (GUI) | bookdownproj.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="vibe-hardware.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Vibe</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#unboxing"><i class="fa fa-check"></i><b>1.1</b> Unboxing</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#getting-started"><i class="fa fa-check"></i><b>1.2</b> Getting Started</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#guide-conventions"><i class="fa fa-check"></i><b>1.3</b> Guide Conventions</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#important-terms"><i class="fa fa-check"></i><b>1.4</b> Important Terms</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="general-specification.html"><a href="general-specification.html"><i class="fa fa-check"></i><b>2</b> General Specification</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-specification.html"><a href="general-specification.html#controls"><i class="fa fa-check"></i><b>2.1</b> Controls</a></li>
+<li class="chapter" data-level="2.2" data-path="general-specification.html"><a href="general-specification.html#io"><i class="fa fa-check"></i><b>2.2</b> I/O</a></li>
+<li class="chapter" data-level="2.3" data-path="general-specification.html"><a href="general-specification.html#capacity"><i class="fa fa-check"></i><b>2.3</b> Capacity</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="vibe-hardware.html"><a href="vibe-hardware.html"><i class="fa fa-check"></i><b>3</b> Vibe Hardware</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="vibe-hardware.html"><a href="vibe-hardware.html#console"><i class="fa fa-check"></i><b>3.1</b> Console</a></li>
+<li class="chapter" data-level="3.2" data-path="vibe-hardware.html"><a href="vibe-hardware.html#editor-controls"><i class="fa fa-check"></i><b>3.2</b> Editor Controls</a></li>
+<li class="chapter" data-level="3.3" data-path="vibe-hardware.html"><a href="vibe-hardware.html#motorized-sliders-and-qkeys"><i class="fa fa-check"></i><b>3.3</b> Motorized Sliders and Qkeys</a></li>
+<li class="chapter" data-level="3.4" data-path="vibe-hardware.html"><a href="vibe-hardware.html#master-controller-and-control-keys"><i class="fa fa-check"></i><b>3.4</b> Master Controller and Control Keys</a></li>
+<li class="chapter" data-level="3.5" data-path="vibe-hardware.html"><a href="vibe-hardware.html#aux-qkeys-grand-master-and-global-controllers"><i class="fa fa-check"></i><b>3.5</b> Aux Qkeys, Grand Master, and Global Controllers</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html"><i class="fa fa-check"></i><b>4</b> Graphical User Interface (GUI)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#vibe-menu"><i class="fa fa-check"></i><b>4.2</b> {VIBE} Menu</a></li>
+<li class="chapter" data-level="4.3" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#layouts"><i class="fa fa-check"></i><b>4.3</b> Layouts</a></li>
+<li class="chapter" data-level="4.4" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#smart-screen"><i class="fa fa-check"></i><b>4.4</b> Smart Screen</a></li>
+<li class="chapter" data-level="4.5" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#toolbars"><i class="fa fa-check"></i><b>4.5</b> Toolbars</a></li>
+<li class="chapter" data-level="4.6" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#live-display"><i class="fa fa-check"></i><b>4.6</b> Live Display</a></li>
+<li class="chapter" data-level="4.7" data-path="graphical-user-interface-gui.html"><a href="graphical-user-interface-gui.html#live-parameter-display"><i class="fa fa-check"></i><b>4.7</b> Live Parameter Display</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="graphical-user-interface-gui" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Graphical User Interface (GUI)</h1>
+<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<p><strong>The following is covered in this chapter:</strong>
+- 4.1. Introduction
+- 4.2. {VIBE} Menu
+- 4.3. Layouts
+- 4.4. Smart Screen
+- 4.5. Toolbars
+- 4.6. Live Display
+- 4.7. Live Parameter Display</p>
+<div id="introduction-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.</p>
+<ul>
+<li><p>Supported gestures: ◾ Two fingers for swipe and scrolling. ◾ One finger select. ◾ Multi-selection via ⤴️⤵️shaped gestures. ◾ Multi-selection via window.</p></li>
+<li><p>Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21” embedded screen is general-purpose like the external monitors.</p></li>
+<li><p>The smaller 11.6” <strong>Smart Screen</strong> is dedicated to displaying context sensitive interactive parameter information such as color pickers and gobo pickers.</p></li>
+<li><p>Each monitor, (excluding the <strong>Smart Screen</strong>) can contain one Window Frame.</p></li>
+<li><p>Window frames can contain one of three <strong>Workspace Templates</strong>.</p></li>
+<li><p>Each Template has a dedicated display in the lower area. This area will have different fixed options and information depending on the selected Workspace Template.</p></li>
+<li><p>The remainder of the template may be freely customized by the user.</p></li>
+<li><p>Each Template can contain up to 4 <strong>Pages</strong> that can be toggling using the <strong>WorkSpace</strong> <strong>Template</strong> <strong>Keys</strong> or by tapping the yellow <strong>{VIBE}</strong> Menu key at the bottom left of each Workspace Template and tapping the <strong>{PAGES}</strong> key to the right of the <strong>{VIBE}</strong> key to open the page’s display.</p></li>
+<li><p>Each Monitor (excluding the <strong>Smart Screen</strong>) can contain its own independent set of <strong>WorkSpace</strong> <strong>Templates</strong>.</p></li>
+<li><p>Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the <strong>Smart Screen</strong>: ◾ <strong>[PATCH]</strong> ◾ <strong>[PROG]</strong> - (Program) ◾ <strong>[PLAY-B]</strong> - (Playback Controllers)</p></li>
+<li><p>The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).</p></li>
+<li><p><strong>The Patch Template</strong> by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the <strong>{VIBE}</strong> Menu.</p></li>
+<li><p><strong>The Program Template</strong> contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the <strong>{VIBE}</strong> Menu. The controller display may be toggled to display the Qkey controller display using the <strong>[SWAP DISPLAY]</strong> key at the top left corner of the controller panel.</p></li>
+<li><p><strong>The Playback Template</strong> contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the <strong>{VIBE}</strong> Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the <strong>[SWAP DISPLAY]</strong> key at the top left corner of the controller panel.</p></li>
+</ul>
+</div>
+<div id="vibe-menu" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> {VIBE} Menu</h2>
+<p>The <strong>{VIBE}</strong> Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as <strong>Save</strong> and <strong>System Settings</strong> as well as configure <strong>Workspace Template</strong> displays.</p>
+<p><img src="https://www.dropbox.com/s/kixy9336g2t5pcj/4.2.png?dl=1" /></p>
+<p><strong>Configuring WorkSpaces:</strong></p>
+<ul>
+<li><p>When configuring workspaces, any object at the end of the hierarchical sub-menu can be tapped to open its object on a blank portion of the current workspace or dragged and dropped to the workspace surface. Once on the surface it may be moved or sized freely, space permitting.</p></li>
+<li><p>If an object is dragged on top of another both will turn green and become one <strong>tabbed</strong> object.</p></li>
+<li><p>To edit the placement of objects, the <strong>{Lock}</strong> icon beside the <strong>{VIBE}</strong> menu key must be toggled to unlock the workspace display. After changes are made, it must be toggled again to lock the display and allow normal usage.
+<img src="https://www.dropbox.com/s/kpd3wlwhvd8rc3q/4.2.1.png?dl=1" alt="Library Softkeys randomly sized and placed on the [PROGRAM] Workspace" /></p></li>
+</ul>
+</div>
+<div id="layouts" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Layouts</h2>
+<p><strong>Layouts:</strong></p>
+<ul>
+<li><p>After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a <strong>Layout</strong> by tapping the <strong>{VIBE}</strong> Menu and then the <strong>{LAYOUT}</strong> key. A Sub-menu will open with options to <strong>{SAVE LAYOUT}</strong>, <strong>{LOAD LAYOUT}</strong>.</p></li>
+<li><p>After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.</p></li>
+<li><p>Layouts remember the configuration of external monitors and a warning message will appear if the system is booted without the expected external monitor.</p></li>
+</ul>
+</div>
+<div id="smart-screen" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Smart Screen</h2>
+<p>The 11.6” multi-touch monitor embedded in the upper section of the Vibe console is referred to as the <strong>Smart Screen</strong>. The <strong>Smart Screen</strong> is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. <strong>For more detail see:</strong></p>
+<p>9.3.4 Smart Screen</p>
+</div>
+<div id="toolbars" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Toolbars</h2>
+<p><strong>The Editor Toolbar contains is a set of interactive Softkeys that are used to access less common commands:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fah3p67j4k739AdPqqoZZ%2Fimage.png?alt=media&amp;token=0b312a30-9936-4964-a72e-9e70ea1d4203" /></p>
+<p><strong>The Patch Toolbar contains two pages of options:</strong>
+◾ Idle state toolbar</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7Gk2ieRY1JDn5Ez0SATG%2Fimage.png?alt=media&amp;token=666125c4-516c-4b37-8309-7135c93936ae" /></p>
+<p>◾ Fixture selection state toolbar
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FO04AjxRNK9LzNNzKFXft%2Fimage.png?alt=media&amp;token=5d5f2389-b9ee-490a-8526-40b00f503451" /></p>
+</div>
+<div id="live-display" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Live Display</h2>
+<p>Vibe has two ways to display parameter data: 1) <strong>Live Display</strong> - Displays cue and editor data as a spreadsheet. 2)<strong>Live Parameter Display</strong> - shows values in a table format instead of spreadsheet format.</p>
+<p><strong>Live Display</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHL2HLzRYhYIFEgymXLPX%2Fimage.png?alt=media&amp;token=37932519-d036-4fd4-90c3-87f20b1a2f85" /></p>
+<p><strong>The Live Display has a number of options that may be set under the Options field:</strong></p>
+<ul>
+<li><p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRsKkH1GR7Zny1naiOQVr%2Fimage.png?alt=media&amp;token=67514158-ffd4-4fc1-86f5-d870d259b8fe" /></p>
+<p><strong>-</strong> Opens Live View Settings. (See <a href="/s/3kS90tLsADGm1ocbe7q9/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.6.1.-live-view-settings">4.6.1.Live View Settings</a>.)</p></li>
+<li><p><strong>Fit</strong> - Opens column width options. ◾ Fit to Window ◾ Fit to Value ◾ Fix by Text ◾ Default</p></li>
+<li><p><strong>Active on Stage</strong> - Only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbf0BrDcGgnikCifAG1ux%2Fimage.png?alt=media&amp;token=f5270819-7037-4f40-92df-b2484a941eb1" /></p>
+<ul>
+<li><p><strong>Sets</strong> - Select which of the fixture sets to display. ◾ Fixture s Channel ◾ Spot s Matrix ◾ Media Server ◾ Other custom Sets if created</p></li>
+<li><p><strong>Format</strong> - Controls what format the data is displayed in. ◾ % - Values in percentage ◾ Decimal - DMX values 0 à 255 ◾ Text - Parameter step text ◾ Text + Percentage</p></li>
+</ul>
+</div>
+<div id="live-parameter-display" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Live Parameter Display</h2>
+<p>Live View Settings pop-up - Display Tab.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9cVAF9Ur1Z673WX9EGc2%2Fimage.png?alt=media&amp;token=94c675c2-bc3e-417f-91eb-54e02c384e1d" /></p>
+<p><strong>Live View Scheme</strong> - Parameter columns may be freely added, removed, moved in using the Live View Scheme.</p>
+<p><strong>Move columns:</strong></p>
+<ol style="list-style-type: decimal">
+<li><ol style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Tap a parameter column heading or multiple parameter column headings</p>
+<p>-the green indicator light will turn on.</p></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Use the <strong>{|&lt; }</strong> or <strong>{&gt;|}</strong> keys to move the parameter column forward or backwards.</p></li>
+</ol>
+<p><strong>Move columns to the first or last column position:</strong></p>
+<ol style="list-style-type: decimal">
+<li><ol style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Tap a parameter column heading or multiple parameter column headings</p>
+<p>-the green indicator light will turn on.</p></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Use the <strong>{|&lt;&lt; }</strong> or <strong>{&gt;&gt;|}</strong> keys to move the parameter column first position or last position.</p></li>
+</ol>
+<p><strong>Remove</strong> <strong>columns:</strong></p>
+<ol style="list-style-type: decimal">
+<li><ol style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Tap a parameter column heading or multiple parameter column headings</p>
+<p>-the green indicator light will turn on.</p></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Tap the <strong>{Remove}</strong> key.</p></li>
+</ol>
+<p><strong>Dock</strong> - Locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position. (Group By Banks and All icons in 1 cell are not implemented yet)</p>
+<p><strong>Add Columns</strong> - Columns are added using the Banks section of the pop-up.</p>
+<ol style="list-style-type: decimal">
+<li><ol style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Select a bank - All parameters for the bank will appear in the box adjacent to the banks.</p></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Select the parameter or parameters to add to the live display. 👉 Swipe in the the parameter box to browse hidden parameters.</p></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li></li>
+</ol>
+<p>Tap a parameter that is not already selected in green and it will be added to the end of the column list.</p></li>
+</ol>
+<p>Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Use the <strong>{|&lt; }</strong> or <strong>{&gt;|} {|&lt;&lt; }</strong> or <strong>{&gt;&gt;|}</strong> to position the column.</li>
+</ol>
+<p><strong>Interactive Icons:</strong> ◾ Adds or removes the icon columns.</p>
+<p>Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</p>
+<p><strong>General:</strong> ◾ Global Fixture Number - Fixture’s hidden unique system number. ◾ Fixture Layer Number - Adds or removes Fixture Number column. ◾ Fixture Name - Adds or removes Fixture Name column.</p>
+<p>Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</p>
+<p><strong>Live View Settings pop-up - Behavior Tab</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwhGHyHCbLeSvpBFU5jQY%2Fimage.png?alt=media&amp;token=3f711f98-6e83-4882-87b0-1eefe91182af" /></p>
+<p><strong>Fixture Jumping</strong>: ◾ Off ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. <strong>Parameter Jumping</strong>: ◾ Jumps the parameter’s column and related bank parameters to the end of the dock position. (First scrollable column). <strong>Interactive Fixture Selection:</strong> ◾ Turns on the ability to make fixture selections from the live display grids. <strong>Interactive</strong> <strong>Cell Editing:</strong> ◾ Turns on the ability to directly edit cells in the live display grid. <strong>Interactive Header selection</strong> - Currently implemented but may not be turned off. ◾ Enables parameters to be directly selected from the live display headers. <strong>Submaster Values:</strong> ◾ <strong>Show Stored Values</strong> - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&amp;token=35bbd680-0f4c-4b4f-b659-94e00a30f028" /> icon will also be shown to indicate when the parameter is inhibited. ◾ <strong>Show Output Values</strong> - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="vibe-hardware.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/04-Graphical-User-Interface--GUI-.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/04-Graphical-User-Interface--GUI-.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
