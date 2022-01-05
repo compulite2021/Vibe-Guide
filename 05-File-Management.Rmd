@@ -1,5 +1,4 @@
 
----
 # File Management
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
