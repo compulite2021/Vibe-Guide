@@ -1,18 +1,16 @@
 # Working with MIDI
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+- 22.1. What is MIDI
+- 22.2. General MIDI Configuration
+- 22.3 Configuring MIDI Notes and Commands
+- 22.4. MIDI Show Control
+- 22.5 MIDI Time Code
 
 
-## Introduction
+## What is MIDI
+## General MIDI Configuration
+## Configuring MIDI Notes and Commands
+## MIDI Show Control
+## MIDI Time Code

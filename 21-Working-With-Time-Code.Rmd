@@ -1,18 +1,18 @@
 # Working With Time Code
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+- 21.1. Timecode and Timeline basics
+- 21.2. Create a Timeline View
+- 21.3. Configuring Timecode
+- 21.4. Recording Timeline Tracks
+- 21.5. Executing and Editing Events
+- 21.6. Markers
 
 
-## Introduction
+## Timecode and Timeline basics
+## Create a Timeline View
+## Configuring Timecode
+## Recording Timeline Tracks
+## Executing and Editing Events
+## Markers

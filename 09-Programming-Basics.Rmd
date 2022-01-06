@@ -1,18 +1,63 @@
 # Programming Basics
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+
+- 9.1. Editor
+- 9.1.1. What is the Editor
+- 9.1.2. Blind Editor
+- 9.2. Editor Tools
+- 9.2.1. Selections Tools 
+- 9.2.3. Pattern
+- 9.2.2. Transpose
+- 9.2.4. Fan Mode
+- 9.2.5. Highlight Mode 
+- 9.2.6. Lowlight Mode 
+- 9.2.7. Remainder Dim {Rem Dim} 
+- 9.2.8. Home Scene
+- 9.3. Working with Fixtures
+- 9.3.1. Fixture Selection basics
+- 9.3.2. What are Parameters 
+- 9.3.3. Virtual Parameters
+- 9.3.4. Smart Screen
+- 9.3.5. Adjusting Parameters using the Wheel Picker
+- 9.3.6. Grab
+- 9.3.7. Fixture Selection (Detailed)
+- 9.3.8. Setting Parameters using Main Encoder Wheels
+- 9.3.9. Setting Parameters using Interactive Encoder Wheels
+- 9.3.10. Release and Home Sequences
+- 9.4. Groups
 
 
-## Introduction
+## Editor
+
+###  What is the Editor
+### Blind Editor
+
+
+## Editor Tools
+
+### Editor Tools
+### Selections Tools 
+### Pattern
+### Transpose
+### Fan Mode
+### Highlight Mode 
+### Lowlight Mode 
+### Remainder Dim {Rem Dim} 
+### Home Scene
+
+## Working with Fixtures
+
+### Fixture Selection basics
+### What are Parameters 
+### Virtual Parameters
+### Smart Screen
+### Adjusting Parameters using the Wheel Picker
+### Grab
+### Fixture Selection (Detailed)
+### Setting Parameters using Main Encoder Wheels
+### Setting Parameters using Interactive Encoder Wheels
+### Release and Home Sequences
+
+## Groups

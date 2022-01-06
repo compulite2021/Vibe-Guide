@@ -1,18 +1,17 @@
 # Topo Topographical Display
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+- 19.1. Creating a Topo View
+- 19.2. Topo Menu
+- 19.3. Creating a Topo
+- 19.4. Adding fixtures to a Topo
+- 19.5. Adding Pixel Maps
+- 19.6. Adding text and background elements
 
-
-## Introduction
+## Creating a Topo View
+## Topo Menu
+## Creating a Topo
+## Adding fixtures to a Topo
+## Adding Pixel Maps
+## Adding text and background elements

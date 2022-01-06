@@ -1,18 +1,57 @@
 # Programming Cues, and Scenes
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+
+- 10.1. What Are Qlists, Cues, Scenes, and Submasters?
+- 10.2. Tracking Principals
+- 10.3. Storing Cues and Scenes Directly to Controllers
+- 10.4. Master Controller
+- 10.5. Storing Cues to the Master Controller
+- 10.6. Storing Qlist Cues to any Controller
+- 10.7. Cue Store Options
+- 10.8. Assigning Text Labels
+- 10.9. Modifying Cues and Scenes
+- 10.10. Creating New Cues from Existing Cue Data
+- 10.11. Cue Time Properties
+- 10.11.1. Assigning Cue Time
+- 10.11.2. Wait and Follow Times
+- 10.12. Additional Cue Properties
+- 10.12.1. Link
+- 10.12.2. Loop
+- 10.12.3. Tracking Options
+- 10.13.1. Assign Parameter Time During Cue Creation
+- 10.13. Parameter Time
+- 10.13.2. Adding or Modifying Parameter Time after Cue Creation
+- 10.13.3. Fanning Parameter Time
+- 10.14. Group Submasters
+- 10.14.1. Convert a Scene into a Group Submaster
+- 10.14.2. Assign a Group Submater directly to a Slider Controller
+- 10.14.3. Assign a Group Submaster using existing Groups
 
 
-## Introduction
+## What Are Qlists, Cues, Scenes, and Submasters?
+## Tracking Principals
+## Storing Cues and Scenes Directly to Controllers
+## Master Controller
+## Storing Cues to the Master Controller
+## Storing Qlist Cues to any Controller
+## Cue Store Options
+## Assigning Text Labels
+## Modifying Cues and Scenes
+## Creating New Cues from Existing Cue Data
+## Cue Time Properties
+###  Assigning Cue Time
+###  Wait and Follow Times
+## Additional Cue Properties
+### Link
+### Loop
+### Tracking Options
+### Assign Parameter Time During Cue Creation
+## Parameter Time
+### Adding or Modifying Parameter Time after Cue Creation
+### Fanning Parameter Time
+## Group Submasters
+### Convert a Scene into a Group Submaster
+### Assign a Group Submater directly to a Slider Controller
+### Assign a Group Submaster using existing Groups

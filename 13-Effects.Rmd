@@ -1,18 +1,16 @@
 # Effects
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+- 13.1. Effect Basics
+- 13.2. Smart Screen Effects Editor
+- 13.2.1. Building Effects Using the Small Screen Editor
+- 13.3. Advanced Effects Editor
+- 13.3.1. Building Effects Using the Advanced Effects Editor
 
 
-## Introduction
+## Effect Basics
+## Smart Screen Effects Editor
+### Building Effects Using the Small Screen Editor
+## Advanced Effects Editor
+### Building Effects Using the Advanced Effects Editor
