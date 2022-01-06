@@ -1,18 +1,591 @@
 # System Default Settings
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
+This chapter deals with customizing system settings to suit programming styles.
 
 **The following is covered in this chapter:**
--  4.1. Introduction
--  4.2. {VIBE} Menu
--  4.3. Layouts
--  4.4. Smart Screen
--  4.5. Toolbars
--  4.6. Live Display
--  4.7. Live Parameter Display
--  4.7.1. Parameter Mode
--  4.7.2. Bank Mode
--  4.7.3. Fixture Mode
+-  7.1. Editing
+-  7.2. Timing
+-  7.3. Network
+-  7.4. Hardware
+-  7.5. Defaults
+-  7.5.1. Controller Settings
+-  7.5.2. Controller Actions
+-  7.5.3. Qlist Properties
+-  7.5.4. Chaser Properties
+-  7.5.5. Cue Settings
+-  7.5.6. Cue Store Options
+-  7.5.7. Scene Settings
+-  7.5.8. Scene Store Options
+-  7.5.9. Bank Library Options
+-  7.5.10. Snap Settings
+-  7.6. System
 
 
-## Introduction
+## Editing
+
+
+System Settings defaults are accessed by selecting {System Settings} from the {Vibe} menu or by tapping the {System Status} area at the far right side of the controller displays.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdQJECnSiQVLEANpmIHGB%2Fimage.png?alt=media&token=dd956e65-97d0-478f-bfc0-005dd69e8426)
+
+**Editing Properties** - Editing Section
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHEhHv2xSifRxET7GgYiF%2Fimage.png?alt=media&token=36982cb9-06b1-4de9-a806-52a33a4d8c30)
+
+**Default Stage Value:**
+
+-   Home Value - When released, fixtures parameters will return to their home values as specified in the device's definition or user **Home Scene**.
+    
+-   Maintain Last Value - When released, fixture parameters will remain at their current position but dimmer will go out.
+    
+
+**Auto Parameter Grouping:**
+
+-   When on, parameters are grouped as follows:
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLO8HajrUseN0GShf6J83%2Fimage.png?alt=media&token=0c5c416b-2190-4490-b0ae-42c0075a6c40)
+
+
+
+**Clear Editor After Store:**
+
+-   Default editor behaviour when in Compulite Mode - After storing a cue, values remain in the editor until [RESET] or [VIBE]+[RESET] is pressed.
+    
+
+**Editor Flash:**
+
+-   Sets default values for toolbar {FLASH} feature.
+    
+-   {Base} = Start point (low value) {Time} = Flash duration {Size} = Amplitude (high values)
+    
+-   Defaults - {Base} 0.2 (20%) {Time} 2 seconds {Size} 0.6 (80%)
+    
+
+**Apply Compulite Mode:** - Sets a number of defaults to emulate traditional nontracking Compulite Mode.
+
+-   Default Stage Values = {Maintain Last Value}
+    
+-   {Clear Editor After Store} = Off
+    
+-   {Advance To Cue After Store} = Off
+    
+-   Qlist Behavior = {Non-Tracking}
+    
+
+**_________________________________________________________________________________________________**
+
+**Editing Properties:** - Cueing Section
+
+Tracking - Non-Tracking:
+
+-   Tracking On: ◾ Values track forward. The stage look is made up of a combination of hard and tracked values.
+    
+-   Non-Tracking: ◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.
+    
+
+> In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the **Store Options** {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.
+
+**Clear Editor on Master GO:**
+
+-   The editor will be reset when GO on the Master Controller is pressed.
+    
+
+**Store Scene by Default:**
+
+-   By default [STORE] [HERE] (press any controller button) will create and assign the first available Scene to the controller instead of a Qlist and Cue.
+    
+-   Qlists may then be stored by using the syntax [STORE] [CUE] [HERE] (press any controller button).
+    
+
+**Next Cue Increment:**
+
+-   When [Store] [Here], [STORE] [STORE], or [STORE] [ENTER] are used to append a new cue to the end of a Qlist, the specified spacing will be used.
+    
+
+> E.g. If the increment is 1 and the last cue is 10, the new cue would be 11. If the increment is 10, then the new cue would be 20.
+
+______________________________________________________________________________________________________
+
+**Editing Properties:** - ON Value
+
+-   Virtual wheel sets the default editor value for the dimmer parameter when the [ON] key is pressed.
+    
+-   {First ON Recalls Last} - Pressing [ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.
+    
+
+**Restore and Save Defaults:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1sYs7slvo57lpbk514kd%2Fimage.png?alt=media&token=86c68d56-5c49-485e-8c87-2fb4c8ff7b30)
+
+-   {Restore Popup Positions} - Currently redundant.
+    
+-   {Restore Defaults} - Restores settings changes to the last time {Apply to Defaults} was set.
+    
+-   {Restore Factory} - Restores console to "read only" defaults.
+    
+-   {Apply to Defaults} -Updates system setting changes to **show specific** defaults without exiting the pop-up.
+
+## Timing
+
+
+Timing Properties - Cue Section
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1keJSUrF101byZfAFjtQ%2Fimage.png?alt=media&token=571303df-f193-449b-b427-ad4fb5892d12)
+
+**Default Back Time:**
+
+-   Timing is used when the [Back] or [Hold Back] Buttons are pressed.
+    
+
+**Default Assert:**
+
+-   Timing is used when a controller's parameters are reasserted with the [ASSERT] [HERE] command.
+    
+-   Use Cue Time - As the Assert command is basically a GOTO command to the same cue that is active, the cue time for the cue being reasserted may be used instead of the Default Assert time.
+    
+
+**Default GOTO Time:**
+
+-   Default timing when the GOTO command is used. GOTO time can be overridden using command [GOTO] [CUE] [#] [TIME] [Value]Press ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246)  or [ENTER]. 
+    
+
+**Default Release Time:**
+
+-   Default Fade out time for parameters being released from the editor using the [RESET], parameter [RELEASE] keys, or Controllers being released from the stage (turned off) using the controller [RELEASE] button.
+**_________________________________________________________________________________________________**
+
+**Look Ahead** Section:
+
+-   Set all controllers on will enable the Look Ahead function for all controllers.
+    
+-   Set all controllers off will disable the Look Ahead function for all controllers.
+    
+
+> Once all is set on, individual controllers may disable Look Ahead at any time. Once all off, individual controllers may be enabled Look Ahead at any time.
+
+**_________________________________________________________________________________________________**
+
+**Timing Properties - Snap** Section:
+
+-   Default fade time for all controllers being initiated by the Snap.
+    
+
+**_________________________________________________________________________________________________**
+
+**Timing Properties - Snap** Section:
+
+-   Default fade time for all controllers being initiated by the Snap.
+    
+
+**_________________________________________________________________________________________________**
+
+**Timing Properties - System Time** Section:
+
+-   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
+
+## Network
+
+
+**Network Properties** - Local
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzbXVz8P0y7uiYN8NZcxA%2Fimage.png?alt=media&token=1d20123c-1ec3-4890-bd4f-beeec5768a61)
+
+**Local:**
+
+-   Set local console IP
+    
+
+**Console State:**
+
+-   The unique name is assigned to the console to help identify it in the partners list.
+    
+
+**Console Name:**
+
+-   The unique name is assigned to the console to help identify it in the partners list.
+    
+
+**Console State: Device Priority:**
+
+-   Stand Alone (Default) - Consoles is not in a session but networking for sACN, Artnet, and Compulite VC's is active.
+    
+-   Local - Local DMX connectors are available but DMX over Ethernet is disabled.
+    
+
+**User ID:**
+
+-   Not yet implemented
+    
+
+**Start Session:**
+
+-   The console will become the Master console. (session owner) for use with Multi User and Master/Slave.
+    
+
+**"Online IP" Devises:**
+
+-   Displays all Valid IP based devices active on the network
+
+## Hardware
+
+
+**Hardware Properties** - Panel Backlight
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSARe7F3ebVc2vXRXb8ES%2Fimage.png?alt=media&token=7374ba0b-183b-4c1d-b024-03ad68f9bec5)
+
+**Inactive keys:**
+
+-   Adjusts the LED backlight level of keys that are not valid in the current operational state.
+    
+-   Adjusts the LED backlight level of controllers that are unassigned.
+    
+
+**Active Keys:**
+
+-   Adjusts the LED backlight level of keys that may be used in the current operational state.
+    
+-   Adjusts the LED backlight level of controllers that are assigned objects.
+    
+
+**Operation System:**
+
+-   Opens relevant Windows setting screen.
+
+## Defaults
+
+
+**Defaults** - Initial settings for most system objects.
+**See:**
+-  7.5.1. Controller Settings
+-  7.5.2. Controller Actions
+-  7.5.3. Qlist Properties
+-  7.5.4. Chaser Properties
+-  7.5.5. Cue Settings
+-  7.5.6. Cue Store Options
+-  7.5.7. Scene Settings
+-  7.5.8. Scene Store Options
+-  7.5.9. Bank Library Options
+-  7.5.10. Snap Settings
+
+
+
+### Controller Settings
+
+
+
+**Defaults** - Controller Settings
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fy4SUzlM57ramuMP5BoTH%2Fimage.png?alt=media&token=214a0244-aa56-412c-b44c-73d9534d27c0)
+
+**Flash behaviour:**
+
+-   **Release On Release** - While a Flash button is depressed, the controller will assert its values, when released the controller will be released from affecting the stage.
+    
+-   **Pure LTP** - Pressing a Flash key reasserts overridden LTP values from another controller but does not release them when the flash key is released.
+    
+-   **Go On Flash** - If a slider is down it will flash the intensity to full **and** advance the Qlist in cue time with every press of the Flash key.
+    
+-   **Latch** - Flash key toggles ON/OFF.
+    
+
+**Slider Behaviour:**
+
+-   **Intensity Only** - Slider only controls the intensity.
+    
+-   **Go + Fade Parameters** - Moving the slider off zero will initiate a GO command. All parameters **except** intensity will fade to their recorded values using cue time. Intensity will remain under the control of the slider.
+    
+-   **Go + Jump Parameters** - Parameters Jump to their values as soon as the slider moves off zero. Intensity will remain under the control of the slider.
+    
+-   **Release At Bottom** - The controller will be released from affecting the stage when the slider reaches zero. Default System Release Time or Qlist Release Time will be used.
+    
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Controller Settings: Properties
+
+-   **Exclude from Sna**p - The controller will not be recorded in Snapshots.
+    
+-   **Exclude from (Snap) Override** - Snap commands will be ignored even if the controller was initially recorded in a snap.
+    
+-   **Exclude from Free All** - The controller will not be unloaded with a global [VIBE]+[FREE] command. It may only be unloaded with [FREE] [HERE].
+    
+-   **Exclude from Release All** - The controller will not be released with a global [VIBE]+[RELEASE] command. It may only be unloaded with [RELEASE] [HERE].
+    
+-   **Prevent from Paging** - Locks a Qlist or Scene to the current page. Paging ⤴️ or ⤵️ will not affect the Qlist or Scene on the controller.
+    
+-   **Prevent from Grab** - The **Grab** command will not capture the controller's active parameters.
+    
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Controller Settings: Priority
+
+-   **Virtual Priority Wheel** - Sets the controller's LTP group number. Controllers assigned higher numbers cannot be overridden by lower numbers. Controllers assigned the same number will be LTP among themselves. Values may be entered using the virtual wheel or directly by taping the middle of the centre area of the wheel and typing a value from the keypad.
+    
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Controller Settings: Restore defaults
+
+-   **Restores settings** - Resets Controller settings to their last stored configuration.
+
+
+### Controller Actions
+
+
+Defaults - Controller Default Actions
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTNhexbQgUA1LwTkAsZhq%2Fimage.png?alt=media&token=6c102180-552d-4f4c-8456-1fa923a9f4c3)
+
+**Qlists and Scenes:**
+
+-   The Default button assignments when a Qlist or Scene is assigned to a controller ( See: [14.5. Configuring Controllers](/s/3kS90tLsADGm1ocbe7q9/14.-playing-back-cues-and-scenes/14.-playing-back-cues-and-scenes/14.5.-configuring-controllers))
+    
+
+**Submasters (Group Submasters)** - When a Scene is configured as a Submaster it has a unique set of functions and button options.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fyro3yMgwPvP82WXUu9i2%2Fimage.png?alt=media&token=dcd0726e-8344-437a-ad67-cf0a62e90d0d)
+
+
+### Qlist Properties
+
+
+
+7.5.3. Qlist Properties
+
+**Defaults** - Qlist Properties
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpZrRV2L9hLCBY8kMLGXJ%2Fimage.png?alt=media&token=c5e50558-6a2c-4f9f-acfc-a4379190c46b)
+
+**Qlist Mode:**
+
+-   Normal - Cues do not auto loop and all normal time functions are calculated.
+    
+-   Chaser - Cues auto-loop from one to another. Only In-Time, and Delay-In Time are calculated. Parameter time is still valid.
+    
+
+**Qlist Direction:**
+
+-   Backward - Chasers and Qlists transition highest to lowest.
+    
+-   Forward - Chases and Qlists transition lowest to highest.
+    
+
+**Tracking (Default):**
+
+-   ON - Normal tracking logic will be used.
+    
+-   OFF (NOT QONLY) - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).
+    
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Qlist Properties: Preferences
+
+-   **Back to top on release** - After a controller is released, it will reset to the first cue in the Qlist.
+    
+-   **Sequence** - If toggled on, pressing GO will advance the Qlist.
+    
+-   **Mark cue at top of the list.**
+    
+-   **Loop back to first** - If toggled on, a Qlist will loop from the end of the list to the beginning of the list when GO is pressed.
+    
+-   **Trigger** - Toggles on/off the execution of Macros and Snaps that are attached to cues.
+    
+-   **Look Ahead** - Enable/Disable the Look Ahead function.
+    
+
+**__________________________________________________________________________________________________**
+
+**Defaults** - Qlist Properties: Loop GO Behavior
+
+| **Behavior** |**Function**  |
+|--|--|
+| Go Next This is the default | Pressing GO immediately fades to the next cue in the loop. The loop continues running.|
+| Exit Loop At End | GO immediately stops the current transition and fades to the first cue AFTER the loop.|
+| Fade To End Of Loop | GO immediately stops the current transition and fades to the last cue in the loop. The loop count is ignored.|
+| Finish Loop And Pause| The current loop completes and stops at the END of the loop. Pressing GO will restart the loop. Loop count will be taken into consideration and at the end of the loop count, the next GO will exit the loop.|
+| Restart Loop| Immediately Stops the cue transition and faders to the first cue in the loop and the loop continues running.|
+| Finish Cue And Pause | The current cue completes its transition and pauses. Pressing GO again will resume the loop.|
+| Finish cue and exit| The current cue completes its transition and stops. Next Press of GO will fade to the first cue after the loop.
+|
+
+
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Release time
+
+-   **Virtual Wheel:** ◾ Wheel at Default - System Default Release time is referenced. ◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off. ◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.
+    
+-   **Button under wheel:** Toggles between Milliseconds, Seconds, Minutes, Hours.
+    
+
+**Defaults** - Qlist Properties: ◾ **Restore default** - Resets Qlist properties to their last stored configuration.
+
+
+### Chaser Properties
+
+
+**Defaults** - Chase Properties
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUuNxJvTPYzZo6RDQhNMq%2Fimage.png?alt=media&token=92f11feb-40b7-4277-a431-808d7c6fa941)
+
+**Chase pattern:**
+
+-   Normal - Cues loop from one to another in order.
+    
+-   Build - Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behaviour).
+    
+-   Bounce - Cues transition from lowest cue number to highest, then reverse and transition from highest to lowest.
+    
+-   Bounce Build - Cues are added on to each other lowest to highest are added to each other highest to lowest.
+    
+-   Random - Cue Order is randomized.
+    
+
+**Time:**
+
+-   Chase TIme: Independence in-time for dimmer when a chase is started.
+    
+-   Units Button - Sets the units for time settings.
+    
+-   Loop count: Repeats the chase loop the specified count and stops on the last cue.
+    
+
+**Properties:**
+
+-   Int Limit: Proportionately limits the intensity output of the cues assigned to a controller.
+    
+-   X-fade: Proportionately adjusts the crossfade curve of a chase from full crossfade to jump.
+    
+
+**_________________________________________________________________________________________________**
+
+**Defaults** - Properties: Restore default:
+
+-   **Restores default** - Resets Chase properties to their last stored configuration.
+
+
+
+### Cue Settings
+
+
+
+Default - Cue Settings
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZEuDSIZSfUAHhjUrQKbv%2Fimage.png?alt=media&token=39c28fe6-3f0b-4ee5-a049-2cab503a96d5)
+
+**See:**
+
+-   **Time:**
+ ◾ [10.11.1. Assigning Cue Time](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.1.-assigning-cue-time)
+ ◾ [10.11.2. Wait and Follow Times](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.2.-wait-and-follow-times)
+    
+-   **Properties:** ◾ [10.12.3. Tracking Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
+
+
+### Cue Store Options
+
+
+**Default** - Cue Store Options
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Frd1nmaRBQfU8BhlaMr5q%2Fimage.png?alt=media&token=fad2a5e2-4b2b-4888-8041-a8a14da0c24c)
+
+**See**: [10.7. Cue Store Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options)
+
+
+
+### Scene Settings
+
+
+**Defaults** - Scene Settings
+
+-   **Time In** - Sets the default in-time for Scenes. The default value may be changed using: 
+ ◾ Virtual wheel 
+◾ Tapping in the centre of the wheel until it turns red then entering a value using the keypad
+    
+-   **Units Button** - Sets the time units (H/M/S/Mil)
+
+
+
+### Scene Store Options
+
+
+**Default** - Cue Store Options
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNtCjzXKxrTr7soWJAkbX%2Fimage.png?alt=media&token=cdfcc8ce-4970-4c38-afbf-b6b13956e205)
+
+**Similar to Cue Store Options. See:** [10.7. Cue Store Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options)
+
+
+
+### Bank Library Options
+
+Default - Lib Options
+
+Options are the same for the following:
+Intensity
+Position
+Color
+Beam
+Image
+Shape
+See: 
+12.2. Store and Modify Bank Libraries 
+
+Options for Effect include an additional option: 
+Include Base - If toggled on, the start points of parameters will be stored with the Effect making them "Absolute Effects".
+
+
+
+### Snap Settings
+
+**Default** - Snap Settings
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fx3dGQ1iKTtHp4T6BifIs%2Fimage.png?alt=media&token=b8b87d32-bf97-49de-99e8-7259fd5f5d60)
+
+**Load Pages:**
+
+-   Snap will change the current page to the page the Snap was stored in.
+    
+
+**Load Master Controller:**
+
+-   Snap will change the [Select] to to the controller that was Master Controller at the time of the Snap.
+    
+
+**Snap Time:**
+
+-   Default fade time for all controllers being initiated by the Snap.
+    
+
+**Units Button:**
+
+-   Sets the time units. (H/M/S/Mil)
+    
+
+See: [17. Snaps](/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots)
+
+## System
+
+Default - System
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5rfthijhcCOgxMs4SEaN%2Fimage.png?alt=media&token=a3e38145-be1c-445b-8591-4713f7ddc08d)
+
+**Vibe is made up of four modules:**
+
+1.  **GUI** - Desktop Graphical Interface application.
+    
+2.  **LPU** (Light Processing Unit) - Calculates core "real time" calculations.
+    
+3. **SQL** DataBase - Data management. (There is no option to Auto Recover the database as it is always up to date)
+    
+4. **HAL** - Hardware Access Layer.
+    
+
+**Auto Recover:**
+
+-   In the case of an unexpected halt, the toggled on modules will attempt a restart.
+
