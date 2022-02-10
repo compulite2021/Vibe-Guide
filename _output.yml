@@ -5,4 +5,4 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Vibe</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://compulite.com/" target="blank">Compulite Systems (2000) Ltd.</a></li>
