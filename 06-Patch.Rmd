@@ -1,3 +1,4 @@
+
 # Patch
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
@@ -64,7 +65,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 
 5. The DMX Modes pop-up will open. 
 6. Review the DMX implementation and select the desired mode. 
-7. Tap ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246) or press [ENTER] to close the pop-up and add the fixture to the Imported Devices list.
+7. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and add the fixture to the Imported Devices list.
 
 ## Create and Patch imported fixtures
 
@@ -102,7 +103,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 > By default, the interval between fixtures of the same type is fixed.
 > Using the INTERVAL field, a custom interval may be set.
 
-11. To complete **CREATE and PATCH** tap the **{APPLY & CONTINUE}** key in the bottom **right corner of the pop-up**, Press **[ENTER]**, or tap ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246) to close the pop-up and return to the patch workspace.
+11. To complete **CREATE and PATCH** tap the **{APPLY & CONTINUE}** key in the bottom **right corner of the pop-up**, Press **[ENTER]**, or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and return to the patch workspace.
 
 **Theatrical Multi-Patching can also be done manually using keypad syntax:**
 
@@ -158,8 +159,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 1. Drag and drop the same fixture to multiple DMX offsets.
     
 
-> All types of fixtures may be multi-patched but caution should be used when 
-> multi-patching multi-parameter fixtures.
+> All types of fixtures may be multi-patched but caution should be used when  multi-patching multi-parameter fixtures.
 
 **Unpatch fixtures using drag and drop:**
 
@@ -172,22 +172,31 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 ### Modify Patch
 
 
-> Once patched fixtures can be modified using keypad syntax or using the
-> two Patch Toolbars in the Patch Workspace.
+> Once patched fixtures can be modified using keypad syntax or using the two Patch Toolbars in the Patch Workspace.
 
 **Toolbar with no fixture selection:**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqKMW5KV6R4utuJVcSVsR%2Fimage.png?alt=media&token=a7f67f72-ce3d-4d33-bf3c-c0bc08b359cc)
 
-◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. ◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. ◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
+◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
+◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
+◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
+◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
 
 **Toolbar with fixture selection:**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FotGVSrjFRfLjFfyVTGIP%2Fimage.png?alt=media&token=68199556-cfb9-4e09-824b-6a2ce4950f75)
 
-◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. See: 20. XYZ Fixture Calibration ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup ◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
+◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
+◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
+◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
+See: 20. XYZ Fixture Calibration 
+◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
+◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
 
-**Modify the patch using keypad syntax:** ◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
+**Modify the patch using keypad syntax:** 
+◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
+◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
 
 ## Configuring Physical DMX 1/0
 
@@ -279,7 +288,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
     
 4. Choose the Controller Type, Page Number, and Controller number from the pop-up.
     
-5. Press ENTER, or tap   ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246) to close the pop-up and complete the patch.
+5. Press ENTER, or tap   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and complete the patch.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqScO17uMOAvMRfx3MPAQ%2Fimage.png?alt=media&token=659d250e-b572-4978-825b-fceebb565c77)
@@ -313,7 +322,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
     
 2. Set a DMX level from 0 ➡️ 255 using tee virtual slider.
     
-3. Tap ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246)  or press [ENTER] to close the pop-up and park the address.
+3. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up and park the address.
     
 
 **Unpark and address:**
@@ -322,7 +331,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
     
 2. Tap {Clear Park}.
     
-3. Tap ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246) or press [ENTER] to close the pop-up and unpark the address.
+3. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and unpark the address.
     
 
 **Park a fixture:**

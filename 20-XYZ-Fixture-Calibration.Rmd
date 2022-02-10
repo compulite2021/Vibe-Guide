@@ -1,4 +1,5 @@
 # XYZ Fixture Calibration
+Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtures are calibrated, you can specify a point of the stage in Vibe, and all fixtures will point to it. There are few things that need to be done in order to calibrate the fixtures, and it depends on which visualizer you use. 
 
 
 **The following is covered in this chapter:**
@@ -7,4 +8,48 @@
 
 
 ## Calibration in WYSIWYG
+
+
+
+Calibrate using WYSIWYG
+
+1.  On Vibe, go to [PATCH] page and tap on {FIXTURE CALIBRATION}
+    
+2.  Tap on {Stage} button and set the stage dimensions.
+    
+3.   Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see Blue Frame), and select the option of 'Mover Ruler (Set View Origin)ʼ.
+    
+4.  Select the center of your stage (see Red Arrow in the Picture)
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl24vUCyJ3U8pXylHigOy%2Fimage.png?alt=media&token=0cc76ff2-f5cc-4ee9-ab9d-63e58cff1abd)
+
+
+5. Go to 'Data tab'.
+
+6. When in the Data tab, press on Option (in the toolbar) ➡️ Document Options ➡️ Draw Defaults - and change the units to metric.
+
+
 ## Calibration in Capture
+
+
+20.2. Calibration in Capture
+
+**Calibrate using Capture**
+
+1. On Vibe, go to patch and tap on 'Fixture Calibration'.
+    
+2. Tap on 'Stage' button and set the stage dimensions.
+    
+3. Place your center of the stage in the intersect point of the 2 Bold Axis (when the CAD displays a view from the Top).
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FT9hNXHeED9qkRxDqogh3%2Fimage.png?alt=media&token=af4bc822-926e-4755-8976-34ce8b05b5fb)
+
+4. Go to Tools ➡️ Options and change the measurements to metric.
+
+5. Select a fixture in the Capture, and you will see the XYZ coordinates when the table is showing 'Selected Itemsʼ. 
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FF2vwwydnOsr7t9zKHmXA%2Fimage.png?alt=media&token=cfca2831-0e8c-4c18-ada2-64bee485e079)
+
+
+

@@ -1,5 +1,6 @@
 # Exam Viewing show data
 
+Virtually all Vibe show data can be viewed using the **Exam** display. The Exam display can be added to any Workspace Template using the Vibe Menu. **Path**: {Vibe}/{Display objects}/{Exam}. It can also opened as a pop-up using the [EXAM] key. The root menu is divided into two main sub menus, {Show} and {Patch} This chapter deals with viewing show and patch data.
 
 **The following is covered in this chapter:**
 - 18.1. Show Exam
@@ -7,4 +8,53 @@
 
 
 ## Show Exam
+
+
+
+**The Show Exam Menu has 14 items:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXkVlOh2YuM0Crfe6zchJ%2Fimage.png?alt=media&token=2c7afc7e-ab83-4c9e-bade-e12eed406da5)
+
+1.  **Qlist Exam** - List of all show Qlists.
+    
+
+-   Qlist # Exam - Displays a Cue Sheet view for all cues in the Qlist.
+    
+-   Cue Exam - Displays a track sheet for the selected cue. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+    
+-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
+    
+
+2. **Libraries Exam** -Lists all stored Libraries by type.
+
+-   Library Type Exam - Displays all libraries for the selected library type.
+    
+-   Library Fixtures Exam - Displays values for the fixtures stored in the library. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+    
+-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
+
+
+
 ## Patch Exam
+
+
+
+
+
+**The Patch Exam Menu has 6 items:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fg44oF5VnHAFKlgchByKH%2Fimage.png?alt=media&token=1ff7ac43-85c3-49ae-9d7e-7e8e56121b16)
+
+1.  **Devices Exam** - Shows a list of all imported devices and their properties.
+    
+
+-   Individual Device Exam - Graphically Displays DMX parameter allocation for the current device and mode.
+    
+
+2. **Sets Exam** - Displays the ID of each set type and the number of fixtures patched to it.
+
+-   Individual Set Exam - Shows a list of all fixtures patched to the set with columns for **Fixture Name, Fixture #** (in this case unique system ID # not actual fixture #), **Set ID #, # in Set**, (User defined number in the set) , and **Device Name**.
+    
+
+3. **DMX Out Exam** - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for **Universe #** (Port), Patched Fixture Count, and the **Number of Used DMX Address** out of 512.
+

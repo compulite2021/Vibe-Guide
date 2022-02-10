@@ -1,5 +1,5 @@
 # Connecting to External Devices
-
+This chapter deals with configuring, transmitting and receiving DMX over Ethernet.
 
 **The following is covered in this chapter:**
 - 24.1. Network Basics
@@ -10,7 +10,157 @@
 
 
 ## Network Basics
+
+24.1. Network Basics
+
+**Vibe has two user accessible Ethernet networks:**
+
+-   Data Network - Accessible via the two etherCON connectors on the rear panel. 
+◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.
+    
+-   General Networks - Accessible via the two RJ45 connectors on the rear panel. 
+◾ Used for Network storage of show files and remote diagnostics.
+    
+
+Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the System Settings pop-up. It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP, (the start address), must match on all devices in the network. Devices on the same network must **not** have identical IP addresses.
+
+**Common Start addresses are:**
+
+-   10.x.x.x - Default for most ETC networks and alternate for Art-Net network IP.
+    
+-   2.x.x.x - Default for Art-Net networks.
+    
+-   192.x.x.x -Default for most MA consoles.
+    
+
+**Subnet Mask** - Identifies the network itself and in conjunction with the IP address can be used to properly route network devices.
+
+-   255.0.0.0. - Compulite Default. Only the first triplet must match.
+    
+-   255.255.0.0 - Also common.
+    
+
+>Compulite uses the third triplet as a console identifier in some of the products.
+
+>The Vibe can be used in networks using a DHCP server but cannot act as a DHCP server.
+
+>In all cases, the first triplets must match for devices to communicate with one another.
+
+**Switches**:
+
+-   Vibe has two internal switches so single direct device to device connections are possible without a cross cable.
+    
+-   When more than one device must be connected to the Vibe a good quality gigabit switch should be used.
+    
+
+>Many a system has gone down due to bad Ethernet cabling and cheap switches. It is recommended that etherCON connectors be used where possible in conjunction with professional grade switches designed for lighting and audio applications.
+
+
+
+
 ## Connecting to Compulite ePorts
+
+
+
+Compulite manufactures the **ePort** brand of DMX over Ethernet nodes. **Supported Protocols:**
+
+-   ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm) 
+◾ Compulite VC protocol
+◾ Art-Net v2
+    
+-   ePort-41 - Current 
+◾ sACN pre-release and release versions 
+◾ Art-Net 3 
+◾ Compulite VC protocol
+    
+-   ePort-8 and ePort-2 
+◾ sACN pre-release and release versions 
+◾ Art-Net 3 
+◾ Compulite VC protocol For more product information, See: ePort Documents
+    
+
+Before an ePort can be connected it should be configured using the CNET Manager software, available at the above link.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKtKjDA2xiT6CVHWngE7Q%2Fimage.png?alt=media&token=7c8cf01a-067a-4c0d-9485-455c895c43cd)
+
+**Configuring ePorts:**
+
+1.  Make sure that the Vibe IP and the ePort IP are in the same range.
+    
+2.  Assign universes to each physical port by typing the universe number in the box below the icon of the physical connector.
+    
+3.   Select the DMX- ON-Ethernet protocol in the protocol list below the graphical display of the ePort.
+    
+
+>If the ePort is a newer model, sACN will also appear in the list. If Art-Net is selected make sure the Art-Net Subnet is also set. In most cases this will be set to 0 which allows the first 16 universes. It must be incremented by one with each new range of 16 universes
+
+4. Tap {Update} to apply all changes.
+
+
+
 ## Connecting to Art-Net and sACN Nodes
+
+Vibe currently supports transmission of 256 universes of DMX over Ethernet using the industry standards of Art-Net versions 1 ➡️ 3, ad eACN (ANSI E1.31-2016 standard).
+
+**Enable Art-Net or sACN output:**
+
+-   Tap {DMX SETTINGS} in the patch toolbar found at the bottom of the Patch Workspace Template. The DMX Properties Pop-up will open.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDbUaVsJmNV9YVlUroR6x%2Fimage.png?alt=media&token=9ad7bc9b-7bc7-4bee-8515-81c327fea619)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FcwG0UUTQDThCwUigBEqQ%2Fimage.png?alt=media&token=79bf49c9-01f9-4df9-9c2a-699272abb5cd)
+
+1. Under the Protocol heading, Tap {Art-Net} or {sACN} - The selection will turn red.
+    
+2. Under Broadcast Options (VC, Art-Net, sACN) tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the etherCON Data ports.
+    
+
+>The Vibe is capable of transmitting more than one protocol at a time. To save bandwidth it is also possible to enable only the universes for each protocol that are required. Vibe has separate universe patches for VCs, Art-Net, and sACN. By default, universes are patched 1 to 1 for each protocol. It is possible to reroute universe output destinations. Normally fixtures patched to console source universe 1 would be transmitted on Ethernet destination universe 1 but sometimes when multiple consoles are on line it is desirable to reroute universes to avoid conflicts. Source universe 1 for example could be rerouted to destination universe 101.
+
+The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ➡️ 256 providing the total amount of universes does not exceed the purchased license.
+
+**Reroute Console Universes:**
+
+1.  Under the **Source Universe** header, scroll the list to the source console universe number you wish to route **from**. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
+    
+2.  Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
+    
+
+**Additional functions:**
+
+-   Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
+    
+-   Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
+    
+-   Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
+    
+-   Reset all defaults for the selected protocol - Tap {Config All}.
+    
+
+**Art-Net Subnet View:**
+
+-   Art-Net is designed in blocks of 16 universes. The blocks starts at subnet 0 and increments by 1 every 16 universes. The Subnet number and fixture number in the subnet may be viewed by toggling {Subnet View}.
+
+
+
 ## RDM
+
+
+Currently, RDM is fully supported on the 8 physical DMX output ports and Compulite VC protocol. **View RDM information:**
+
+1.  Open Patch Workspace.
+    
+2.  Tap the RDM tab in the lower right corner of the workspace.
+    
+3.  Tap {Get Devices} - The system will scan and display RDM compliant devices.
+    
+4.  If new devices are added, press {Re Scan}. Full RDM management will be available in future releases.
+
+
+
 ## Connecting to Visualizers
+
+
+
+

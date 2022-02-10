@@ -1,3 +1,4 @@
+
 # Graphical User Interface (GUI)
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
@@ -19,9 +20,14 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.
 
--   Supported gestures: ◾ Two fingers for swipe and scrolling. ◾ One finger select. ◾ Multi-selection via ⤴️⤵️shaped gestures. ◾ Multi-selection via window.
+-   Supported gestures: 
+◾ Two fingers for swipe and scrolling. 
+◾ One finger select. 
+◾ Multi-selection via ⤴️⤵️shaped gestures. 
+◾ Multi-selection via window.
     
--   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21" embedded screen is general-purpose like the external monitors.
+-   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). 
+The large 21" embedded screen is general-purpose like the external monitors.
     
 -   The smaller 11.6" **Smart Screen** is dedicated to displaying context sensitive interactive parameter information such as color pickers and gobo pickers.
     
@@ -98,7 +104,9 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 ## Live Display
 
 
-Vibe has two ways to display parameter data: 1) **Live Display** - Displays cue and editor data as a spreadsheet. 2)**Live Parameter Display** - shows values in a table format instead of spreadsheet format.
+Vibe has two ways to display parameter data: 
+1.  **Live Display** - Displays cue and editor data as a spreadsheet. 
+2. **Live Parameter Display** - shows values in a table format instead of spreadsheet format.
 
 **Live Display**
 
@@ -117,9 +125,17 @@ Vibe has two ways to display parameter data: 1) **Live Display** - Displays cue 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbf0BrDcGgnikCifAG1ux%2Fimage.png?alt=media&token=f5270819-7037-4f40-92df-b2484a941eb1)
 
--   **Sets** - Select which of the fixture sets to display. ◾ Fixture s Channel ◾ Spot s Matrix ◾ Media Server ◾ Other custom Sets if created
+-   **Sets** - Select which of the fixture sets to display. 
+◾ Fixture s Channel 
+◾ Spot s Matrix 
+◾ Media Server 
+◾ Other custom Sets if created
     
--   **Format** - Controls what format the data is displayed in. ◾ % - Values in percentage ◾ Decimal - DMX values 0 à 255 ◾ Text - Parameter step text ◾ Text + Percentage
+-   **Format** - Controls what format the data is displayed in. 
+◾ % - Values in percentage 
+◾ Decimal - DMX values 0 ➡️ 255 
+◾ Text - Parameter step text 
+◾ Text + Percentage
 
 ## Live Parameter Display
 
@@ -132,60 +148,41 @@ Live View Settings pop-up - Display Tab.
 
 **Move columns:**
 
-1.  1.
+1.  Tap a parameter column heading or multiple parameter column headings
     
-    Tap a parameter column heading or multiple parameter column headings
+    - the green indicator light will turn on.
     
-    -the green indicator light will turn on.
-    
-2.  2.
-    
-    Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
+2.   Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
     
 
 **Move columns to the first or last column position:**
 
-1.  1.
+1.   Tap a parameter column heading or multiple parameter column headings
     
-    Tap a parameter column heading or multiple parameter column headings
+    - the green indicator light will turn on.
     
-    -the green indicator light will turn on.
-    
-2.  2.
-    
-    Use the **{|<< }** or **{>>|}** keys to move the parameter column first position or last position.
+2.  Use the **{|<< }** or **{>>|}** keys to move the parameter column first position or last position.
     
 
 **Remove**  **columns:**
 
-1.  1.
+1.  Tap a parameter column heading or multiple parameter column headings
     
-    Tap a parameter column heading or multiple parameter column headings
+    - the green indicator light will turn on.
     
-    -the green indicator light will turn on.
-    
-2.  2.
-    
-    Tap the **{Remove}** key.
+2.  Tap the **{Remove}** key.
     
 
 **Dock** - Locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position. (Group By Banks and All icons in 1 cell are not implemented yet)
 
 **Add Columns** - Columns are added using the Banks section of the pop-up.
 
-1.  1.
+1.   Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
     
-    Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
+2.   Select the parameter or parameters to add to the live display. 👉 Swipe in the the parameter box to browse hidden parameters.
     
-2.  2.
+3.  Tap a parameter that is not already selected in green and it will be added to the end of the column list.
     
-    Select the parameter or parameters to add to the live display. 👉 Swipe in the the parameter box to browse hidden parameters.
-    
-3.  3.
-    
-    Tap a parameter that is not already selected in green and it will be added to the end of the column list.
-    
-
 Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.
 
 4. Use the **{|< }** or **{>|} {|<< }** or **{>>|}** to position the column.
@@ -202,7 +199,17 @@ Fixture # and Fixture Name are toggles so if the indicator light is on, touching
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwhGHyHCbLeSvpBFU5jQY%2Fimage.png?alt=media&token=3f711f98-6e83-4882-87b0-1eefe91182af)
 
-**Fixture Jumping**: ◾ Off ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. **Parameter Jumping**: ◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). **Interactive Fixture Selection:**  ◾ Turns on the ability to make fixture selections from the live display grids. **Interactive**  **Cell Editing:**  ◾ Turns on the ability to directly edit cells in the live display grid. **Interactive Header selection** - Currently implemented but may not be turned off. ◾ Enables parameters to be directly selected from the live display headers. **Submaster Values:** ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the  ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028)  icon will also be shown to indicate when the parameter is inhibited. ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
+**Fixture Jumping**: 
+◾ Off 
+◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display.
+
+ **Parameter Jumping**: 
+ ◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). **Interactive Fixture Selection:**  
+ ◾ Turns on the ability to make fixture selections from the live display grids. **Interactive**  **Cell Editing:**  
+ ◾ Turns on the ability to directly edit cells in the live display grid. **Interactive Header selection** - Currently implemented but may not be turned off. 
+ ◾ Enables parameters to be directly selected from the live display headers. **Submaster Values:** 
+ ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the  [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png)  icon will also be shown to indicate when the parameter is inhibited. ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
 ## Parameter Mode
 
@@ -214,13 +221,13 @@ Parameters visible in Live Parameter Mode are filtered using the Parameter View 
 
 **Filter Parameters:**
 
-1. Tap the   ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b)    icon - The Parameter View Settings pop-up will open.
+1. Tap the   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)    icon - The Parameter View Settings pop-up will open.
     
 2. Tap parameters on either side to move them from one box to the other.
     
-3.   Close the pop-up using [ENTER] or     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6ybVVc9nwVMMpuasiGVA%2Fimage.png?alt=media&token=8724d072-b248-46f0-8a4c-a5e999282b40)
+3.   Close the pop-up using [ENTER] or   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)
     
-    .
+    
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8Ippy128mYH7PrJmnqqe%2Fimage.png?alt=media&token=5219dbe8-3ac5-4ce1-9050-e62b3d2b23ce)

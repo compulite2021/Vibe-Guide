@@ -24,34 +24,682 @@
 - 10.13. Parameter Time
 - 10.13.2. Adding or Modifying Parameter Time after Cue Creation
 - 10.13.3. Fanning Parameter Time
-- 10.14. Group Submasters
+-- 10.14. Group Submasters
 - 10.14.1. Convert a Scene into a Group Submaster
 - 10.14.2. Assign a Group Submater directly to a Slider Controller
 - 10.14.3. Assign a Group Submaster using existing Groups
 
 
 ## What Are Qlists, Cues, Scenes, and Submasters?
+
+
+**Qlists:**
+
+-   Qlists are containers that hold cues. They might metaphorically be thought of as file folders.
+    
+-   Each Qlist has its own unique Cue numbering system.
+    
+-   Qlists currently may contain up to 8,000 cues.
+    
+-   Qlists containing Cues must be assigned to Controllers before they can be output to the stage.
+    
+
+**Cues:**
+
+-   Cues are stored containers of editor values. They might metaphorically be thought of as files or records.
+    
+-   Cue may only exist within Qlists.
+    
+-   Cues may be numbered from 0.001 ➡️ 999.999
+    
+-   Cues cannot be stored without a Qlist destination.
+    
+-   Cues may be assigned: 
+◾ In Time 
+◾ Out Time 
+◾ Delay In Time 
+◾ Delay Out Time 
+◾ Text Label
+    
+
+**Scenes:**
+
+-   Scenes are essentially a QList and a Cue combined.
+    
+-   Scenes may only contain a single "Look" of editor values.
+    
+-   Scenes assigned to Slider Controllers are given the default settings of: 
+◾ {GO + Jump Parameters} 
+◾ {Release At Bottom}
+    
+-   Scenes may only be assigned In-TIme.
+    
+-   Scenes may be given Text Labels
+
+
+
+
 ## Tracking Principals
+
+
+Vibe uses the Tracking/Move Fade philosophy common in most current lighting consoles. In tracking consoles, "Hard Values" (parameter values with stored information) track forward from cue to cue until new hard values are encountered. **If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:**
+
+-   "Hard Value" Cells
+    
+-   "Tracking Cells" get their values by "seeing above" to the original hard values. They are basically transparent and only hard values are stored for a Cue. This is more efficient.
+    
+
+**Storing Cue information on a cell basis has other advantages:**
+
+-   Each parameter cell can have its own individual time which overrides overall cue time. This allows, for example, Pan/Tilt to have a separate transition time or Color Wheels to snap to their values instead of using overall cue time.
+    
+-   As Vibe's default behaviour for parameters it LTP (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.
+    
+
+>Some traditional theatre consoles call "Hard Values" "Move Instructions" and cells that are in transition, "Move Fades".
+
+-   Another advantage of tracking is that if you have values that are tracking through a number of cues, all you have to do is change the original hard values and that information will change down to the next hard value. You do not have to copy the change to each cue.
+
+
+
 ## Storing Cues and Scenes Directly to Controllers
+
+
+**Cues and Scenes may be stored:**
+
+-   Directly to the Master Controller using command line syntax.
+    
+-   Directly to a specified Qlist and Cue using syntax.
+    
+-   Directly to a controller.
+    
+
+**To store the first cue directly to a controller:**
+
+-   Set parameter levels in the Editor then press [STORE] [HERE] (to **any** of the buttons of a controller). The first available Qlist will be assigned to the controller and Cue 1 will be created.
+    
+-   Alternately a Cue # may be specified in advance: [STORE] [CUE] [3] [HERE] (press **any** of the buttons of the destination controller).
+    
+-   A Qlist # may also be specified in advance: [STORE] [QLIST] [3] [CUE] [1] [HERE] (press **any** of the buttons of the destination controller).
+    
+
+**To append additional cues to a controller:**
+
+-   Set parameter values in the Editor then press the [STORE] [HERE] (press **any** of the buttons of a controller that already has cues stored on it). A cue will be appended to the first available whole number of the Qlist
+    
+
+**To Store a Scene to a controller:**
+
+-   Set parameter levels in the Editor then press [STORE] [SCENE] [HERE] (press **any** of the buttons of the destination controller). The first available Scene # will be assigned to the controller. No Qlist will be assigned.
+    
+-   Alternately a Scene # may be specified in advance. [STORE] [SCENE] [3] [HERE] (press **any** of the buttons of the destination controller).
+
+
+
 ## Master Controller
+
+
+In Vibe, at least one controller must be assigned as the [SELECT] controller. This controller will now be linked to the Master Controller.
+
+**The Master Controller has 4 large buttons associated with it:**
+
+1.   [GO] - Initiates a forward timed fade between cues in the selected Qlist.
+    
+2.  [BACK] - Backs up one cue at a time using system timing properties' **Back Time**.
+    
+3.  [HOLD] - Pauses the progress of a fade
+    
+4.   [GOTO] - Advances to the specified cue in system timing properties' **GOTO Time**.
+    
+
+​
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTlMMBQ6ckDOoQV0l2c7K%2Fimage.png?alt=media&token=351cd79c-9da0-4ff1-afc9-f6c042b524dd)
+
+**Associated with but not limited to the controller assigned as the [SELECT] Controller are the following 3 buttons:**
+
+1.   [Load] - Preloads a controller with a specified cue # but does not advance to the cue. Pressing [GO] will advance to the preloaded cue using cue time.
+    
+2.   [Release] - Releases the destination controller from affecting the stage (Turns it off).
+    
+3.  [Free] - Unloads the controller.
+
+
+
 ## Storing Cues to the Master Controller
+
+>A Qlist must be assigned to the [SELECT] controller before cues can be stored using theatre style keypad syntax
+
+>A Qlist does not have to contain cues to be assigned to a controller
+
+**To assign a Qlist to a controller and make it the Master Controller:**
+
+1.  Press [QLIST] [#] [HERE] (press any of the buttons of the destination controller) - The Qlist will be assigned to the controller.
+    
+2.   Press [SELECT] [HERE] (press any of the buttons of the destination controller) - The destination controller will now be the Master Controller and the [Second Button] of the "Selected" controller will turn dark blue to indicate that it is now assigned to the Master Controller. The top header of the Controller Display on the main monitor above the controller will also turn dark blue.
+    
+
+**To Store a cue to the Master Controller:**
+
+1.  Set Parameter levels in the Editor the press [CUE] [#] [STORE]. The cue will be added to the Master Controller's assigned Qlist.
+    
+2.  Valid Cue numbers per Qlist = 000.001 → 999.999
+    
+3.  Addition cues may be stored via keypad syntax or the Direct Store method.
+    
+4.   Pressing [STORE] [STORE] or [STORE] [ENTER] will store editor values to the next whole number cue at the end of a Qlist. (Next spacing can be customized in system settings).
+
+
+
 ## Storing Qlist Cues to any Controller
+
+
+10.6. Storing Qlist Cues to any Controller
+
+><span style="color:Red">The destination Qlist must be assigned to a controller in advance or after storing the first Cue, the destination Qlist will bump the current cue on the Master Controller out and replace it.</span>.
+
+**To store a Cue to a Qlist that is already assigned to a Controller:** (Usually not the Master Controller)
+
+1.   Press [Qlist] [#] [HERE] to any button of the destination controller. The Qlist will be assigned to the controller
+    
+2.  Set parameter levels in the Editor
+    
+3.Press [Qlist] [#] [CUE] [#] [STORE]
+    
+4.  Valid Cue numbers per Qlist = 000.001 → 999.999
+    
+5. Addition cues may be stored via keypad syntax specifying the Qlist # in advance or [10.3. Storing Cues and Scenes Directly to Controllers](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.3.-storing-cues-and-scenes-directly-to-controllers)​
+
+
+
 ## Cue Store Options
+
+
+In the process of storing a cue, a number of filters and settings are available. **To open the Store Options pop-up, two methods are available:**
+
+-   **Store cues using keypad syntax:**
+    
+
+1.   Set values in the Editor.
+    
+2.   [CUE] [#] [OPTIONS] Cue Store Options pop-up opens. Make selections and press [STORE].
+    
+
+-   **Store directly to a Qlist on a Controller:**
+    
+
+1.  Set Values in the Editor.
+    
+2.  Press [STORE] [OPTIONS] Cue Options pop-up opens. Make selections and press [HERE] to any button on the destination controller.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvIDhfop5xKp45UnE7h0H%2Fimage.png?alt=media&token=d86025b2-3731-4866-b59b-a64bff37474d)
+**<p align=center> Cue Store Options Pop-up </p>**
+
+
+
 ## Assigning Text Labels
+
+**Assign a Text Label to a Qlist:**
+
+-   Method 1 - [QLIST] [#] [TEXT] opens the Text Entry pop-up.
+    
+-   Method 2 - [QLIST [#] [SETTINGS] opens the Qlist Properties tab or Qlist popup.
+    
+-   Method 3 - Press the Qlist header above a loaded Controller, The Qlist Properties pop-up opens - Enter Qlist Text in the white box.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6Lij3cAOLXSFtGIfX8Hu%2Fimage.png?alt=media&token=5fec3337-a839-4df0-b04e-a72298995cd6)
+
+To assign a Text Label to a Cue:
+
+-   Method 1 - [QLIST] [#] [CUE] [#][TEXT] opens Text Entry pop-up.
+    
+-   Method 2 - If assigned to the Master Controller, [CUE] [#] [TEXT] Opens Text Entry pop-up.
+    
+-   Method 3 - [CUE] [#] [SETTINGS] opens {Cue Properties} tab of Cue Settings pop-up. Enter Qlist text in the Text Box.
+    
+-   Method 4 - [TEXT] [HERE] press any button on the destination controller.
+    
+-   Method 5
+
+
 ## Modifying Cues and Scenes
+
+**Modify a Cue or Scene using [UPDATE]:**
+
+1.  Make a change to parameter values already outputting to the stage from an **active** cue or scene.
+    
+2.  Press the [UPDATE] and the **Update pop-up** will open. Two columns will appear. The left column shows **Cues** available for updating and the right column shows **Libraries** available for updating. If affected values are not referencing a library, the Cue column will indicate the **source** cue that the modifications will be updated to.
+    
+3.  If the Editor parameter values are **new** to all active cues, destination cue. Will be dependent on the **New Values** setting: 
+◾ If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column. 
+◾ If {Master PB Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller. 
+◾ If {Don't Store} is selected, no new parameter values will be updated.
+    
+
+4. Selected cues may be freely deselected in the Update pop-up.
+
+5. Set **Tracking Options** as required.
+
+6. Set **Source Filters** as required.
+
+7. Press [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and complete the Update.
+
+
+
 ## Creating New Cues from Existing Cue Data
+
+**To Copy a Cue to a new Cue:**
+
+1. [CUE] [#] [COPY]
+    
+2.  The **Copy Cue** Pop-up will open
+    
+3.  Three Options are available: 
+◾ {Actual Cue} - Copies cue properties as well as stored parameter values 
+◾ {State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) 
+◾ {Values Only} - Copies only the hard values that are stored in the source cue
+    
+5.   [CUE] [#] [PASTE] - The Cue Only Pop-up will open
+    
+6.  Three Options are available: ◾ {Paste} {Cue Only} ◾ {Paste} {Skip} ◾{OK} ◾ {Cancel}
+    
+7.   Choose an option and the operation will be completed
+    
+
+**To create a new cue using values from an existing cue, use one of the following two menu commands:**
+
+-   [CUE] [#] {LOAD} - Loads the cue's **actual** hard values into the Editor. Tracked values are ignored. **Or**
+    
+-   [CUE] [#] {LOAD STATE} - Loads the cue's hard values **and** current **tracked** values (Stage State) into the Editor.
+    
+-   Continue modifications and store as a new cue.
+
+
+
 ## Cue Time Properties
+
+**Cue Time Properties:**
+
+-   10.11.1. Assigning Cue Time
+    
+-   10.11.2. Wait and Follow Times
+
+
+
+
 ###  Assigning Cue Time
+
+**Cues may be assigned the following time properties:**
+
+-   Time
+    
+-   Time In
+    
+-   Time Out
+    
+-   Delay In
+    
+-   Delay Out
+    
+-   Follow Time
+    
+-   Wait Time
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIixTv98KdARFznVJRhSs%2Fimage.png?alt=media&token=7988483e-a9d5-4ed6-a020-867a05cfa43d)
+
+**Time Pop-up**
+
+Assign a simple in/out time to the current cue:
+
+1.  Press [CUE] [#]
+    
+2.  Press [TIME], the Time pop-up will appear
+    
+3.   Enter a value with the keypad. The default unit of time will be seconds.
+    
+4.  Press [ENTER] or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to exit the pop-up and assign the cue time.
+
+
+
 ###  Wait and Follow Times
+
+**There are two ways to make a cue automatically follow another:**
+
+1.   Wait Time - Starts counting down from the [GO] press before the next cue is executed.
+    
+2.  Follow Time - Advances to the next cue upon completion of the cue time and all of its individual parameter times.
+    
+
+**Set a Wait Time:**
+
+1.  Select the cue you want the Wait to be executed from.
+    
+2.  Press [TIME] - the Time Pop-up will appear.
+    
+3. Tap {Wait} and either type in the Wait Time or use the virtual time wheel to set the Wait Time.
+    
+
+>To clear a Wait Time, turn the physical Wait Wheel until its display and the {Wait} display say N/A , Press [ENTER]
+
+**Set a Follow Time:**
+
+1.  Select the cue you want the Follow from.
+    
+2.  Press [TIME] - the Time pop-up will appear.
+    
+3.   Tap {Follow} and either type in the Follow Time or use the virtual time wheel to set the Follow Time.
+
+
+
 ## Additional Cue Properties
+
+Additional Cue Properties:
+
+-   ​[10.12.1. Link](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.1.-link)​
+    
+-   ​[10.12.2. Loop](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.2.-loop)​
+    
+-   ​[10.12.3. Tracking Options](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
+
+
+
 ### Link
+
+Cues may be linked out of sequence using any of the following three methods: **Using keypad and Toolbar:**
+
+1.  Source [CUE] [#] {LINK} on the Editor Toolbar - The Link pop-up will appear.
+    
+2.   Type link destination [#] (Do not press [CUE]).
+    
+3.  Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to complete the operation.
+    
+
+**Using Cue Setting pop-Up:**
+
+1. Source [CUE] [#] [SETTINGS] - Cue Settings pop-up will open.
+    
+2.  Tap {Link} - The Link pop-up will appear.
+    
+3.  Type, scroll or drag to the desired destination cue.
+    
+4.   Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to complete the operation.
+    
+5.  Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  again to close the Settings pop-up.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGj0DeBaqy5cFOrJDEuoE%2Fimage.png?alt=media&token=435b5c75-4694-48cb-9dcb-caed09a9fe49)
+
+
+
+
 ### Loop
+
+
+10.12.2. Loop
+
+In many consoles, the only way to create a loop is to create a link from the end of a range of cues back to the beginning. Follow time must then be assigned to all of the cues. In Vibe this is also possible but a shorter more efficient method is also provided. **LOOP** is a function similar to **LINK**. It is assigned in the Loop pop-up or via the Cue Settings pop-up.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhUCiYqKZbhCNnUBSNsJL%2Fimage.png?alt=media&token=faa07d2f-6eb5-4915-b2bb-faa6b2f66f3f)
+
+Loop Pop-up
+
+**To assign a Loop:** Using keypad and Editor Toolbar:
+
+1. Start [CUE] [#] tap {LOOP} on the Editor Toolbar - The Loop pop-up will appear.
+    
+2.   Type end [#] or use {To Cue No} field list to select the end cue.
+    
+3. 
+     Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  to complete the operation.
+    
+
+Using Cue Setting Pop-Up:
+
+1.   Start [CUE] [#] [SETTINGS] - Cue Settings pop-up will open.
+    
+2.   Tap {Loop} - Loop pop-up will appear.
+    
+3.   Type end Cue [3] or scroll the value picker to the desired end cue [#].
+    
+4.   Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  to complete the operation.
+    
+5.   Press Enter or  [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) again to close the Settings pop-up.
+
+
 ### Tracking Options
-### Assign Parameter Time During Cue Creation
+
+
+
+**Individual cues may be tagged with one of four Tracking Options:**
+
+1.  Cue Only - Removes tracked values from asserting to the stage and sets them at home values (Not to be confused with Cue Only when used with **{UPDATE}** which works a cell basis).
+    
+2.  Skip Cue - All cells in the cue will behave like Skip Cells. Values will still "skip around" a Skip Cue, even if the values in the Skip Cue are modified.
+    
+3.  Block Cue - All cue parameter values whether tracked or hard will be made to act like hard values. Any new values added to cues above the Blocked cue will not track past a cue tagged a Block.
+    
+4.  Track - The systems default behaviour.
+    
+
+**There are two additional properties a cue can be tagged with:**
+
+1.  Force Black - When it is not desirable to see values move from one cue state to another, Force Black may be used to save programming time. In a cue tagged as Force Black, the dimmer parameter is first "forced" to Black Out, parameters then move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.
+    
+2. <span style="color:blue">Look Ahead cue - When Look Ahead is disabled for a Qlist, Individual cues with dark values may be tagged to perform Look Ahead prepositioning.</span>.
+
+
+
+
 ## Parameter Time
+
+
+**Parameter Time:**
+
+-   10.13.1. Assign Parameter Time During Cue Creation
+    
+-   10.13.2. Adding or Modifying Parameter Time after Cue Creation
+    
+-   10.13.3. Fanning Parameter Time
+
+
+### Assign Parameter Time During Cue Creation
+
+
+1.  Set fixture parameter values in the Editor.
+    
+2.  Select the fixtures requiring Parameter Time.
+    
+3.  Press [TIME] - The Parameter Time pop-up will appear.
+    
+4.  oggle on/off the parameters requiring Parameter Time ◾ Parameter view may be filtered by banks. ◾ Fixtures may be selected and detected freely in the pop-up. ◾ Toggling the parameter header will select reselect all fixtures.
+    
+5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
+    
+6.   Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up.
+    
+7.  Selected fixtures will now show a clock icon in the Live Display.
+    
+8.  Store the Cue using any of the methods described under: 10.3. Storing Cues and Scenes Directly to Controllers 10.5. Storing Cues to the Master Controller 10.6. Storing Qlist Cues to any Controller
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FkpygyXSL31pB9jFIEWT4%2Fimage.png?alt=media&token=e4464923-9510-46ad-a373-3c69b60805c7)
+
+<p align=center>Parameter Time pop-up </p>
+
+
+
+
 ### Adding or Modifying Parameter Time after Cue Creation
+
+
+
+
+**Method 1:**
+
+1.  Select fixtures that are active on the stage - Specific parameters may be selected before pressing [TIME].
+    
+2.  Press [TIME] - The Time pop-up will open.
+    
+3.  Toggle on/of the parameters that require Parameter Time. 
+• Parameter view may be filtered by banks. 
+• Fixtures may be selected and detected freely in the pop-up. 
+• Toggling the parameter header will select reselect all fixtures.
+    
+5.   Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
+    
+6.   Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  to close the pop-up.
+    
+7.  Selected fixtures will now show a clock icon in the Live Display.
+    
+8. Press [UPDATE]. See Also: 10.9. Modifying Cues and Scenes
+    
+
+**Method 2:**
+
+1.   Press [CUE] [#] [EDIT] - Update will flash red and the cue will be placed in the Editor.
+    
+2.   Select the fixtures that need parameter time editing.
+    
+3.  Press [TIME] - The Time pop-up will open.
+    
+4.  Toggle on/of the parameters that require Parameter Time. 
+◾ Parameter view may be filtered by banks. 
+◾ Fixtures may be selected and detected freely in the pop-up. 
+◾ Toggling the parameter header will select reselect all fixtures.
+    
+8.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
+    
+9.  Press the [UPDATE] again to complete the modification. The Update light will stop flashing.
+
+
 ### Fanning Parameter Time
+
+
+
+
+**Method 1:**
+
+1.  Select fixtures that are active on the stage - Specific parameters may be selected before pressing [TIME].
+    
+2.  Press [TIME] - The Time pop-up will open.
+    
+3.  Toggle on/of the parameters that require parameter or delay time. 
+◾ Parameter view may be filtered by banks. 
+◾ Fixtures may be selected and detected freely in the pop-up. 
+◾ Toggling the parameter header will select reselect all fixtures.
+    
+5.  Tap the Time-In or Delay-In virtual wheel.
+    
+6.  Tap {Fan}.
+    
+7.  Toggle the desired fan direction key.
+    
+8.  Rotate the appropriate virtual wheel to fan the In-Time or Delay-Time.
+    
+9.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the Parameter Time pop-up.
+    
+10.   Press [UPDATE] - Check that the correct cue is selected.
+    
+11.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the Update pop-up.
+    
+
+>The above sequence will also work with [CUE] [#] [EDIT] but step 10 is redundant.
+
+**Method 2:**
+
+1.  Select fixtures that are active on the stage - Specific parameters may be selected before pressing [TIME].
+    
+2. Press [TIME] - The Time pop-up will open.
+    
+3.  Toggle on/of the parameters that require parameter or delay time. 
+◾ Parameter view may be filtered by banks. 
+◾ Fixtures may be selected and detected freely in the pop-up. 
+◾ Toggling the parameter header will select reselect all fixtures.
+    
+5.  Tap the Time-In or Delay-In virtual wheel.
+    
+6.  Type a time or delay range. E.g. to evenly fan delay-in time for tilt in a selection of 8 fixtures, Tap {Delay-In} wheel and then 0 → 8 seconds on the keypad.
+    
+7.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the Parameter Time pop-up.
+    
+8.  Press [UPDATE] - Check that the correct cue is selected.
+    
+9.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the Update pop-up.
+
+
 ## Group Submasters
+
+
+**Group Submasters:**
+
+-   10.14.1. Convert a Scene into a Group Submaster
+    
+-   10.14.2. Assign a Group Submater directly to a Slider Controller
+    
+-   10.14.3. Assign a Group Submaster using existing Groups
+
+
 ### Convert a Scene into a Group Submaster
+
+
+Any Scene can be easily converted into a Group **Submaster** (Known in some consoles as Inhibitive Submasters or Group Masters).
+
+1.  Press [SETTINGS] [HERE] to any button of a controller that has a Scene assigned to it.
+    
+
+>Alternatively, tap any of the controller {function labels} on the controller display on the main monitor above the Scene Slider.
+
+2. The **Slider Definitions** pop-up will appear with the {**Controller Definitions**} tab selected.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfbKJ9gBvW8eb1sYaYLdd%2Fimage.png?alt=media&token=32bf010a-7943-437d-854e-9095e465662e)
+
+​
+
+3. Tap the middle {Button label}. By default, it should say {Intensity Master}. The Choose Control drop-down menu will appear.
+
+
 ### Assign a Group Submater directly to a Slider Controller
+
+
+1.  Specify a fixture selection but **do not** assign editor values.
+    
+2.  Press [STORE] [SCENE] [HERE] to any button of the destination controller. [FIXTURE] [1] → [6] [STORE] [SCENE] press the [TOP Buton] of Fader Controller # 1
+    
+3.  The [Top Controller Button] will now turn light blue to indicate that it is now a Group Submaster.
+    
+
+>When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue backlight will go steady.
+
+
 ### Assign a Group Submaster using existing Groups
+
+
+**Assign a Group to a Slider Controller using keypad syntax:**
+
+1.  Press [GROUP] [#] [HERE] - To any button of the destination slider controller.
+    
+2.   The top controller button will turn light blue to indicate that it is now a Group Submaster.
+    
+
+**Assign a Group to a Slider Controller using Group softkeys:**
+
+
+**Assign a Group to a Slider Controller using keypad syntax:**
+
+1.  Press [GROUP] [#] [HERE] - To any button of the destination slider controller.
+    
+2.   The top controller button will turn light blue to indicate that it is now a Group Submaster.
+    
+
+**Assign a Group to a Slider Controller using Group softkeys:**
+
+1.  Press a {GROUP} softkey.
+    
+2.  Press [HERE] to any button of the destination slider controller.
+    
+3.   The [Top Controller Button] will now turn light blue to indicate that it is now a Group Submaster.
+    
+>When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue back light will go steady.
+

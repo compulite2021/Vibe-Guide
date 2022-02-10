@@ -8,5 +8,70 @@
 
 
 ## What are Libraries
+**Vibe has two types of Libraries, Bank Libraries and Object Libraries:**
+
+1.  Bank Libraries - Store commonly used parameter values for Intensity, Position, Color, Beam, Image, Shapers, and Video content. They correspond to the parameter banks. Libraries are essentially filtered cues that are referenced by recorded objects such as Scenes and Cues. There are also two special bank libraries, Custom, and Effects.
+    
+
+-   Custom libraries are unfiltered and record whatever parameters are in the Editor. The system [FILTERS] key function or user defined Filter object libraries may be used to limit which parameters are stored in Custom libraries.
+    
+-   Effect libraries store effects parameters from the Editor so that they do not have to be manually rebuilt every time they are required.
+    
+
+1.  Object Libraries - Pools of system object types.
+-   Common Object Libraries are: 
+◾ Group 
+◾ Qlist 
+◾ Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
+◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
+◾ Filters – Pool of user defined flters 
+◾ Macro
+
+
+
 ## Store and Modify Bank Libraries
+
+
+12.2. Store and Modify Bank Libraries
+
+>Compulite Libraries are similar to Presets or Palettes on other consoles.
+
+**​**
+
+**Automatic Parameter Grouping:**
+
+-   Vibe uses tee concept of "Auto Parameter Grouping" parameters when storing libraries. All parameters in Position, Color, and Shaper parameter banks will always be recorded into a library to guarantee that what was viewed on the stage is the same as what is recorded in the library.
+    
+-   Filters may be applied to modify what is stored in a Library.
+    
+
+**Libraries can be assigned one of six behaviours:**
+
+1.   **Fixture Specific** – Values only applied only to specific stored fixtures.
+    
+2.  **Parameter Specific** – Values will be applied to all matching parameter types.
+    
+3.   **Pattern** –Values will be applied to all matching parameter types and will keep the pattern of the values.
+    
+4.  **Device + Fixture** – the first fixture will be used as a reference for all other similar fixture types. If values are changed for specific fixtures they will be stored in the library as if they were fixture specific. If a fixture other than the first fixture is released from the library, its values will again be referenced from the first fixture. If the first fixture is released, the next fixture will become the reference.
+    
+5.  **Device** and Parameter – Values will be applied to fixtures of the same device type and the same parameter type.
+    
+6.   **Device and pattern** – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.
+
 ## Object Libraries
+
+
+See:
+
+-   9.4. Groups
+    
+-   10.1. What Are Qlists, Cues, Scenes, and Submasters?
+    
+-   11.2. General Filters Tab
+    
+-   16.1. Creating Macros
+    
+-   17.1. Storing Snaps
+
+

@@ -1,18 +1,181 @@
 # Working With Time Code
 
+Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.
 
-**The following is covered in this chapter:**
-- 21.1. Timecode and Timeline basics
-- 21.2. Create a Timeline View
-- 21.3. Configuring Timecode
-- 21.4. Recording Timeline Tracks
-- 21.5. Executing and Editing Events
-- 21.6. Markers
+><span style="color:Red">This feature is under development and this section is preliminary.</span>.
+
+
+**The following is covered in this section:**
+
+-   21.1. Timecode and Timeline basics
+    
+-   21.2. Create a Timeline View
+    
+-   21.3. Configuring Timecode
+    
+-   21.4. Recording Timeline Tracks
+    
+-   21.5. Executing and Editing Events
+    
+-   21.6. Markers
 
 
 ## Timecode and Timeline basics
+
+
+
+Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.
+
+Vibe can read the following sources:
+
+-   Virtual Local - Internally generated timecode.
+    
+-   Physical Local - SMPTE or MIDI timecode received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.
+    
+-   USB MIDI class compliant timecode.
+    
+-   MIDI over Ethernet via Compulite VC protocol.
+    
+-   Input sources from remote multi-User consoles and devices
+    
+
+Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpjpXjINn7lHxSI1iWnDS%2Fimage.png?alt=media&token=48094203-e923-499d-92d1-25740bd33b57)
+
+
 ## Create a Timeline View
+
+
+
+
+When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4CPQRcUCzXDxypHqd55h%2Fimage.png?alt=media&token=2044a09f-1d94-4ed7-ad37-07bee99338aa)
+
+**Timeline view with two timeline tracks, the cursor, and a marker**
+
+**To add a Timeline view to a page:**
+
+1.  Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.
+    
+2.  Tap {Pages} - Page display will open.
+    
+3.  Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.
+    
+4.  Tap the Lock/Unlock icon to enable adding a new view.
+    
+5.  On the screen with the blank workspace, open the {Vibe} menu again and select} ➡️{Display Objects} ➡️ {Timeline View} - A blank timeline view will appear on the workspace.
+    
+6.  Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.
+
+
 ## Configuring Timecode
+
+Timecode connectors for the following:
+
+-   Audio input Combi Jack with: 
+◾ Female unbalanced line level input on 1/4" Phone jack 
+◾ Female 3 pin XLR balanced line level input.
+    
+-   5 Pin DIN connector for MIDI and MIDI timecode input.
+    
+
+Additionally, the following general purpose ports may be used for Timecode:
+
+-   USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.
+    
+-   Compulite devices that support MIDI over Ethernet can also be used.
+    
+
+Recommended quality and level for SMPTE:
+
+-   SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.
+    
+-   As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLgG5nB216vImSY9fr9OB%2Fimage.png?alt=media&token=76aba117-f6c3-43b0-a5be-9c70916f6be4)
+
+**1/O Settings Pop-up in Timecode Tab**
+
+
+
+
 ## Recording Timeline Tracks
+
+After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in "real time" and then edited.
+
+**To create a timeline track:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F73xlQLCtxsd36JNC9yx0%2Fimage.png?alt=media&token=077da161-e0ab-45b6-8c6d-dd616a6e77ba)
+
+1.  Open a Time Line View.
+    
+2. Tap {[<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/>](image.png)} - The "Create New Timeline" pop-up will open.
+    
+3.  Select a timeline number and name.
+    
+4.  Choose Start from {Blank} Timeline as an option.
+    
+5.  Tap the {Select Clock} drop down in the top left corner and select the timecode source. 
+◾ Virtual Local - Use internal timecode clock. 
+◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console. 
+◾ Additional options will populate the list depending on the interfaced timecode device.
+    
+6.  Enable the red {Record} button or the {+ Record} button.
+    
+    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGx2TJzn8fjRzKPQEiGXd%2Fimage.png?alt=media&token=7ff02406-b7cd-4693-adee-d6b7b0e641df)
+    
+    ◾ Record overwrites existing events. 
+    ◾ + Record adds events to existing events.
+    
+7. If using internal TC, press Play.
+    
+8.  If using external TC start the timecode source.
+    
+9.  The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller's events.
+    
+10.  When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.
+    
+11.  👉 Disable the Record button to prevent accidental overwrite of events.
+
+
+
+
 ## Executing and Editing Events
+
+
+To Execute timeline events:
+
+-   If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.
+    
+-   If the source is internal, tap {Play} on the timecode view's control bar. The internal timecode will start and events will execute.
+    
+-   The control bar may be used to stop and rewind events when the source is internal Editing timecode events
+    
+-   Record may be enabled and disabled "on the fly" to overwrite sections of a timeline track.
+    
+-   Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUmPReMEAwmVIMyLpZj2B%2Fimage.png?alt=media&token=0fe1d599-7137-460d-b28a-169ffa04e148)
+
+
+
 ## Markers
+
+
+To aid in timeline navigation, Markers may be inserted.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKBnRy0cxRc4cr710ZvnV%2Fimage.png?alt=media&token=d1e31740-8e0d-46ac-b234-63a914610c3c)
+
+To insert a marker:
+
+-   Press the + at the desired location when the timeline is running. A marker will be inserted.
+    
+-   Press ⬅️ to move backwards through the markers.
+    
+-   Press ➡️ to move forwards through the markers.
+    
+-   Press 🗑️ to delete a marker
+

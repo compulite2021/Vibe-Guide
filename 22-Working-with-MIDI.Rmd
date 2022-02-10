@@ -1,5 +1,5 @@
 # Working with MIDI
-
+This chapter deals with configuring and assigning MIDI 
 
 **The following is covered in this chapter:**
 - 22.1. What is MIDI
@@ -10,7 +10,143 @@
 
 
 ## What is MIDI
+
+MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer. It is a control protocol and does not transmit audio. Over the years the MIDI protocol has evolved to also be a popular way to synchronize and "Play" lighting equipment. MIDI is based around a 7-bit architecture and therefore has a theoretical 127 possible notes for a keyboard. (Most pianos use 88 notes and synthesizers use even less)
+
+**In the basic MIDI implementation it is possible to have:**
+
+-   16 independent MIDI channels - The channels systems listen on.
+    
+-   127 Note ONs - Pressing down on a keyboard.
+    
+-   127 Note OFFs - Lifting off a keyboard.
+    
+-   Note On Velocity of 1 ➡️ 127 - How hard the key is struck.
+    
+-   After Touch pressure of 0 ➡️ 127 - Ho muce pressure is applied after the key reaches the bottom.
+    
+-   127 controllers each with a range of 0 ➡️ 127 - Encoder wheels or faders.
+    
+-   Patch changes from 0 ➡️ 127 - change from one instrument to another.
+    
+-   Pitch bend wheel that has a 14-bit resolution.
+    
+-   A section for MIDI time code, and other manufacturer's "System Exclusive" information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.
+
+
+
+
 ## General MIDI Configuration
+
+
+
+**I/O General:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnEjvXatpBYTjlOz39Avh%2Fimage.png?alt=media&token=b9519df2-6306-4b05-b8b4-d3b6deb01c07)
+
+**General configuring Vibe MIDI:**
+
+1.  Connect all appropriate MIDI devices and power them on.
+    
+2.  Toggle a MIDI Connection source 
+◾ Local MIDI. 
+◾ MIDI over USB/MIDI over Ethernet. 
+◾ Refresh looks for new connections if devices are added later.
+    
+3.  Press Apply to stay in I/O settings or Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up.
+
+
+
 ## Configuring MIDI Notes and Commands
+
+
+
+**MIDI Notes and Commands:**
+
+-   The numbers 0 ➡️ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ➡️ G-10.
+    
+-   Tabs at the bottom filter the type of MIDI message to be received.
+    
+-   Channel # may also be selected to filter just messages being received on the selected channel.
+    
+
+>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXF0IiD2SaKn2XnLU0F6U%2Fimage.png?alt=media&token=df35f2f2-a61f-4b6f-a369-afe735d338bd)
+
+**Assign MIDI Notes to Controllers:**
+
+1.  Enable Notes in or Notes out.
+    
+2.  By default, all 16 available channels will be selected. Deselect as needed.
+    
+3.   Select the tab for the type of MIDI message to be received. In this case **Note** (Note ON = press down on controller key, Note off = release of controller key).
+    
+4. Tap {Teach } - The Teach key will turn purple.
+    
+5.   Tap the desired note box in the MIDI grid - The box will turn purple.
+    
+6.   Press any one of the controller keys - The location and button function of the controller will appear in the box.
+    
+7.  Tap the {Teach} key again to toggle it off.
+    
+8.  Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up.
+
+**Additional functions:**
+
+-   Tap {Clear} followed by a MIDI grid box to clear its assignment.
+    
+-   Tap {Clear All} to clear all MIDI assignments.
+    
+-   Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.
+    
+-   Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.
+
+
+
+
 ## MIDI Show Control
+
+
+Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices. Basic MSC commands are:
+
+-   Go
+    
+-   Stop
+    
+-   Fire - Generally used for macros
+    
+
+Also supported on **receive** are:
+
+-   All fixtures
+    
+-   General lights
+    
+-   Moving lights
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1XOa7AE5WB6cDdDzPfKf%2Fimage.png?alt=media&token=5cc5108e-b28a-4c58-9760-3615ce433210)
+
+
+To receive MSC:
+
+1.  Tap {Enable In}
+    
+2.   Match the {Device #} to number of the peer that will be sending the control commands.
+    
+3.  If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.
+    
+4.   If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. To Transmit MSC: This function is currently under development.
+    
+
+Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm
+
+
+
 ## MIDI Time Code
+
+See: 
+21.3. Configuring Timecode
+
+

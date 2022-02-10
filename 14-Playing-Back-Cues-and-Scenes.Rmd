@@ -17,13 +17,261 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 
 ## Controller Priority Logic
+
+
+
+**Controller Priority:**
+
+-   Vibe keeps an LTP priority list of which controllers own parameters and the order in which they were asserted. Every time a controller is turned on, its parameters are asserted and the controller moves to the top of the list. Parameters that are still on active controllers but are currently overridden are said to be "robbed". When the controller that owns the parameter is released from the stage, the last active controller to own the robbed parameter is now moved back to the top of the list and reasserted the parameter to the stage.
+    
+-   This feature is very useful for "On the Fly" programming where a main Qlist may be temporarily overridden by Qkeys or Controllers and quickly restored when they are released.
+    
+
+> <span style="color:Red">The Editor is always the highest propriety and will override any values from controllers until they are released or The Editor is reset</span>.
+
+
+**Priority Groups:**
+
+-   Controllers assigned the same Priority Group number will be LTP amongst themselves.
+    
+-   Controllers assigned higher Propriety Group numbers cannot be overridden ("robbed") by controllers with lower numbers.
+    
+
+**Assigning Controllers to priority Groups:**
+1. Tap the top area of a controller display, the Settings pop-up will open.
+2. Select the {Controller Settings} Tab.
+
+OR
+
+1. Press [SETTINGS] [HERE] to any controller button, the Settings pop-up will open.
+2. Select the {Controller Settings} Tab.
+3. Rotate the virtual wheel to the desired Priority Group number or tap the center of the wheel until it turns red and type a Priority Group number from 0 - 999.
+
+
+
 ## Controller Overview
+**Controllers are used to playback or execute a number of objects:**
+
+-   Cues
+    
+-   Scenes
+    
+-   Group Submasters
+    
+-   Libraries
+    
+-   Macros
+    
+-   Snaps
+    
+
+**Vibe has five controller types:**
+
+1.  Three button Motorized Slider Controllers
+    
+2.   Single button Qkey Controllers
+    
+3.   Single Auxiliary Qkey Controllers
+    
+4.   Non-Motorized Global Slider Controllers
+    
+5.   A/B "theatre style" A/B dipless crossfader pair
+    
+
+>Vibe software makes no distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.
+
+
+
+
 ## Master Controller
+
+
+
+Master Controller:
+
+-   Any single Controller may be linked to the Master Controller by Pressing [SELECT] [HERE] to any of the buttons of the controller.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FK4qlOzDdfkC90Kz6UAM4%2Fimage.png?alt=media&token=90a2e768-21a3-48f2-80d3-22f5cf51812f)
+
+-   [GO] - Initiates a forward transition from one cue to another using Cue Time.
+    
+-   [BACK] - Initiates a transition to the previous cue using system Default Back Time.
+    
+-   [HOLD] - Pauses a cue in transition. Pressing [HOLD] again resumes the transition. Pressing [GO] will resume the transition as well. Pressing [BACK] will fade to the previous cue.
+    
+
+>The A/B is only linked to the Master Controller if the [SELECT] is assigned to A/B.
+
+
+
+
+
 ## GOTO and LOAD
+
+GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO immediately transitions to the specified cue in the system **GOTO Time**. LOAD preloads controllers. The next [GO] will transition to the preloaded cue in **Cue Time**.
+
+**GOTO Commands: GOTO a cue on the Master Controller using system GOTO Time:**
+
+-   [CUE] [#] [GOTO]
+    
+
+**GOTO a cue on the Master Controller using a specified Time:**
+
+-   [CUE] [#] [TIME] - Enter time value [GOTO]
+    
+
+**GOTO a cue on the Master Controller using system Cue Time:**
+
+-   [CUE] [#] [TIME] [GOTO]
+    
+
+**GOTO a cue on the Master Controller using Goto Cue pop-up:**
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKEOvtbbAVzM7TDiNKlj0%2Fimage.png?alt=media&token=c29809ec-8785-4168-82a1-e5eb8acdcbd9)
+
+
+
 ## Configuring Controllers
+
+Controller buttons and sliders may be customized to allow maximum flexibility. When Qlists and Scenes are initially assigned to Controllers, the buttons are configured as per the **System Settings defaults** for Controller and Controller Action. Defaults are accessed by tapping the System Status area at the far right side of the controller display.
+
+​
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGkClKOOjBjN1V1m8tPOV%2Fimage.png?alt=media&token=87d77122-0695-4b24-ab08-94b5775f5542)
+
+​
+
+**Assigning Buttons and Slider Behavior:**
+
+1.  Press [SETTINGS] [HERE] to any button of the controller that has an object assigned to it - The Slider Definitions pop-up will appear with the **{Controller Definitions}** tab selected.
+    
+
+Alternatively**,** tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfwjOnUaEKSvR4aAKXgLa%2Fimage.png?alt=media&token=db920673-2c21-4ce0-a07d-9042832f1169)
+
+
+
 ## Controller Color Codes
+
+
+
+Controller Live Display color coding If [SELECT] Master Controller:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfbKuGmKwF3M2zCkMLz69%2Fimage.png?alt=media&token=ef2a4913-4a41-4ec1-ba7f-86b4fb9d9298)
+
+**If from a non-[Select] Controller:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHjUbHWVkDxi8MkzTVhsc%2Fimage.png?alt=media&token=f2845b66-5885-4eb9-b0b2-7c86018378cf)
+
+Controller Display and Backlit Controller Key's color coding:
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FF0tOXHQj21FTgYwn5sOa%2Fimage.png?alt=media&token=0afe36bb-b8f4-4862-a1ea-6a5377ec095a)
+
+
+
 ## Working With controllers
+
+
+
+**Controller types: Detailed**
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGb32rZZcd6yQCCZd48BJ%2Fimage.png?alt=media&token=f49c51d8-765f-4e44-a4e9-7728e9cf8e4a)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWLspVtza0wuNqbGlW1oc%2Fimage.png?alt=media&token=b2b4278b-54ee-4b71-870f-9f338eb7c91b)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpSh1bTf9SfpZP392B34R%2Fimage.png?alt=media&token=f814d61e-7c76-400b-ac9c-c21055354aeb)
+
+
 ## Controller Release and Free
+
+
+
+>Vibe has two types of release functions, Editor Release and Controller Release. The following deals with Controller Release.
+
+Off - Instantly turns off a controller
+
+-   [OFF] [HERE] to any controller button.
+    
+
+Release - Turns off a controller using release time.
+
+-   [RELEASE] [HERE] to any controller button.
+    
+
+Release All - Turns off all controllers using release time.
+
+-   [VIBE] + [RELEASE]
+    
+
+Release Time -
+
+-   By default controllers use the Default Release Time set in System Settings Timing. See: 7.2. Timing
+    
+-   Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: 7.5.3. Qlist Properties
+    
+
+Free - Unloads a controller. It does not delete the loaded object.
+
+
+
 ## Controller Qlist Properties
+
+
+
+By default, the first incident of a Qlist being assigned to a controller will take its Qlist properties from the user default Qlist Properties. 
+**For Qlist Properties details, see:** 7.5.3. Qlist Properties
+
+-   Each new incident of assigning the same Qlist to additional controllers will initially copy the Qlist properties from the first assignment.
+    
+-   If changes are made to individual controller Qlist properties, those changes stay with the controller and are not copied or updated to other controller Qlist properties.
+    
+-   If it is desirable to update what will be copied to future assignments of the Qlist, toggle {**Save to Qlist**} On. Changes made to the current Qlist properties will now be passed along.
+    
+-   Qlist properties may be restored to their user defaults by tapping the {**Restore Defaults**} key.
+
+
+
 ## Controller Modes
+
+
+
+The Controller Mode keys are located at the far left of the console beside the motorized faders. The motorized faders may be assigned to any one of 4 modes. These modes allow for a quick modification to various rate and effect parameters. Controller modes are outside of the editor and are designed for "On the Fly" usage.
+
+**Controller Modes allow the following to be adjusted:**
+
+-   [FADERS] - Normal behaviour for the fader as assigned in Controller Definitions
+    
+-   [RATE] - The Rate of the fades, loops, effects, and chasers on the controller will be proportionally adjusted. Motorized faders will move to an optimized position of 32% allowing for proportional adjustment of a controller's rate.
+    
+-   [SIZE] - Proportionally adjusts the size of effects running on the controller.
+    
+-   [OFFSET] - Adjusts the spread of the fixtures in running effects
+    
+-   [PROTECT] - When implemented, must be held down before any of the fader modes may be changed.
+
+
 ## Rate and Teach Keys
+
+
+
+The Rate function allows users to adjust controller rates or effects parameters in "real time". This is very helpful in fine tuning chases and effects to synchronize with music, or to improvise performances "on the fly". The Rate Screen operates outside of the editor and is non destructive. Changes made in the Rate Screen may not be stored in cues but may be stored and recalled in [Snaps].
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoTIV2IcDVKhTeghw18aY%2Fimage.png?alt=media&token=201512e6-1726-448b-8f39-d64a3dac80f7)
+
+Using the Rate Screen: Large encoder wheels:
+
+1.  Press the [Rate Key] - When opened, all loaded controllers will appear in the "Selected Controllers" section of the display. Initially all loaded controllers will be globally affected by the wheels and features in the Rate Screen.
+    
+2.  Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display. 
+    ◾ {Select All} will reselect all loaded controllers for rate control. 
+    ◾ {Deselect All} will release all selected controllers from rate control 
+    ◾ {Show Active} will release all controllers in the "Selected Controllers" section that are not currently under the control of the rate wheels.
+    
+3.   Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) --> 3000% (effectively cut time)
+    
+4.  Wheel 2 - {X Fade %} adjusts the "fade vs jump percent of a chaser. Range: 0% (full jump) --> 100% (full cross fade)
+    
+5.  Wheel 3 - {Intensity Limit} proportionally limits the intensity output of a controller. Range 0% (no intensity output) --> 100% {Intensity controller full}
+    
+6.   Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom)
+
+

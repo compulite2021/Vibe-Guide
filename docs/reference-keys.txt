@@ -63,10 +63,9 @@ editor
 what-is-the-editor
 blind-editor
 editor-tools
-editor-tools-1
 selections-tools
-pattern
 transpose
+pattern
 fan-mode
 highlight-mode
 lowlight-mode
@@ -102,8 +101,8 @@ additional-cue-properties
 link
 loop
 tracking-options
-assign-parameter-time-during-cue-creation
 parameter-time
+assign-parameter-time-during-cue-creation
 adding-or-modifying-parameter-time-after-cue-creation
 fanning-parameter-time
 group-submasters
@@ -175,7 +174,6 @@ configuring-midi-notes-and-commands
 midi-show-control
 midi-time-code
 working-with-media-servers
-working-with-media-servers-1
 connecting-to-external-devices
 network-basics
 connecting-to-compulite-eports

@@ -1,4 +1,5 @@
 
+
 # File Management
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
@@ -15,21 +16,13 @@ The {Show} menu is the first item of the {VIBE} Menu. It contains 5 sub menus:
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfBDfNYJ44c5lhNg2g9a4%2Fimage.png?alt=media&token=59378d5b-2964-4b83-b2fe-6e0af9417360)
 
-1.  1.
+1.  **{New Show}** - Opens the New Show pop-up with options for {Cancel} {Don't Save} {Save}.
     
-    **{New Show}** - Opens the New Show pop-up with options for {Cancel} {Don't Save} {Save}.
+2.  **{Save Show}** - Directly updates the current show file. A Save Progress pop-up will open and automatically close on completion of the save.
     
-2.  2.
+3.   **{Save Show As...}** - Opens the Save Show/Load Show Browser. New show files may be created or existing files may be overwritten.
     
-    **{Save Show}** - Directly updates the current show file. A Save Progress pop-up will open and automatically close on completion of the save.
-    
-3.  3.
-    
-    **{Save Show As...}** - Opens the Save Show/Load Show Browser. New show files may be created or existing files may be overwritten.
-    
-4.  4.
-    
-    **{Load Show}** - Opens Save Show/Load Show Browser. Shows may be viewed as folders or lists.
+4.  **{Load Show}** - Opens Save Show/Load Show Browser. Shows may be viewed as folders or lists.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8MKnc6njGYP40gqLoc07%2Fimage.png?alt=media&token=678e11f6-a4d8-4845-b6b5-3aeec4f98d17)
@@ -45,7 +38,9 @@ Vector Shows may be loaded with the following limitations:
 
 **Devices:**
 
-◾ If a matching device exists in Vibe that device will be used. Modes will be matched. ◾ If a similar device exists, it will be used. Modes will try to be matched. ◾ If no match or close match is found, a generic device will be created.
+◾ If a matching device exists in Vibe that device will be used. Modes will be matched. 
+◾ If a similar device exists, it will be used. Modes will try to be matched. 
+◾ If no match or close match is found, a generic device will be created.
 
 **Patch:**
 

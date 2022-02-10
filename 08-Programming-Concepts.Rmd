@@ -9,6 +9,98 @@
 
 ## Operational Philosophy
 
+The Vibe is an advanced lighting control system designed to simplify programming in all styles of Entertainment lighting.
+
+**Abstraction:**
+
+-   To simplify programming, Vibe uses an abstract layer that allows fixtures of different hardware types to be presented to the user in a universal way.
+    
+-   The dedicated graphical "Smart Screen" presents global pickers for most parameters including: ◾ HSV color picker (Hue, Saturation, Intensity) 
+◾ P/T XYZ Trackpad 
+◾ Blade picker 
+◾ Beam picker for Iris, Zoom, Focus and Frost effects 
+◾ General slider picker for GOBO, Color, Prism, and Animation wheels 
+◾ Intensity picker for common intensity values and strobe effects
+    
+
+**Real World Units:**
+
+-   Where possible picker values are displayed in "Real World" units 
+◾ XYZ P/T in degrees 
+◾ Strobe in HZ 
+◾ Color in HSV 0-360 degrees 
+◾ Zoom in degrees
+    
+
+**Virtual Parameters:**
+
+-   To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture. Examples would be: 
+◾ HSV - As a common denominator for CMY, RGB, and Multi color LED fixtures such as RGBA, ETC Seven color, RGBW. 
+◾ Virtual Intensity - For controlling LED fixtures that do not have a dimmer parameter. 
+◾ XYZ - for calibration of fixtures that only have a physical Pan/Tilt
+    
+
+**Tracking:**
+
+-   Vibe by default is a Tracking console and follows the conventions of modern theatrical consoles. Vibe also has a special track feature called SKIP. If cues are modified using SKIP, instead of Qonly, the relationship with the original hard value is maintained, and changes to the original value "Skip" over the modification and preserve the track.
+    
+
+**Qonly Mode: Not implemented globally**
+
+-   Modifications, insertions and deletions will be done Qonly by default
+    
+-   Move fades will still be valid
+    
+
+**Non - Tracking Compulite Mode - Defaults are changed to:**
+
+-   Tracking turned off.
+    
+-   The Editor is not cleared after a Store.
+    
+-   After Reset, Editor values remain at their last position instead of returning to home values. (Compulite Gray tracking)
+    
+-   Controllers do not advance after a Store.
+    
+
+**Color spaces:**
+
+-   The Vibe can work in three color spaces: 
+◾ HSV - Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (depending on the fixture type) will be displayed but not directly referenced in cues using HSV.
+◾ RGB - If color values are set using the physical RGB parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced .
+◾ CMY - If color values are set using the CMY parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced.
+    
+
+**Color crossfading:**
+
+-   Currently, color crossfading is done using the physical color parameters. In future release it will be possible to crossfade HSV using predefined vectors
+    
+
+**Maintain Selection:**
+
+-   To avoid constantly reselecting fixtures after a STORE command, Vibe maintains its selection on reset of the editor.
+    
+-   To clear the editor and selection, [VIBE] (Shift) + [RESET] must be pressed.
+
 ## Command Syntax
 
+Vibe uses a hybrid command syntax.
+
+**When dealing with keypad command line driven operations, the logic is:**
+
+-   Source Objects ➡️ Filters ➡️ Options ➡️ Command Completes. (Action Completes Mode)
+    
+
+e.g. [Group 1] [Full] [Library 2 (Position) 1] [Enter] [Cue 1] [Store Options] {Red + White} [Store]
+
+**For softkeys and controllers where touching the object completes the sequence, the logic is:**
+
+-   Source Object, Filter, Command, Options, Destination Object Completes (Here Mode) Completes {GROUP} [1][Full], [LIBRARY] {Position} [3] [Store] [Store Options] {Red Only} [Press any [Button] on Slider Controller 1].
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJjGqf0ZKvNgbMmWYyefp%2Fimage.png?alt=media&token=14f9265e-0c0f-4b32-bca5-85052fd5265a)
+
 ## Command Line
+
+The **Command Line** is the area where commands appear as they are entered. When in Live it is bounded in grey on the big monitor and blue on the small monitor. When in BLIND, both command lines are bounded in yellow. Commands may be backspaced using the Clear Entry [CE] key, The command line can be clear back to the beginning using the [CLEAR] key ([VIBE]+[CE]) Command are also augmented with the interactive toolbar beside the command line on the big screen.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk0i46P1yhl6uOnIPJeA4%2Fimage.png?alt=media&token=53c13b51-105e-47fe-946e-bb66bb26c64e)

@@ -10,7 +10,145 @@
 
 
 ## Effect Basics
+
+
+13.1. Effect Basics
+
+>All Screen captures below are from the Advanced Effects Editor.
+
+Vibe Effects are made up of Effect Events running along horizontal Effect Tracks. Each Event Track must have:
+
+-   At least one parameter assigned in the far left column. Additional parameters may be added but they will respond simultaneously to the Effect.
+    
+-   One Effect Event. Additional Effect Events may be added to the track each with its own time base or Effects may be merged and share a time base.
+    
+
+Multi-track effects:
+
+-   Effects requiring more than one parameter may be stacked on separate Effects Tracks.
+    
+-   Examples of Multi-track effects would be: 
+◾ CMY and RGB color effects 
+◾ Pan/Tilt Circles 
+◾ Blade effects
+    
+
+All Effect Events are built from the following components:
+
+-   Functions
+    
+-   Primitives
+    
+-   Patterns
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzJCypqadK2zTJZAzlsv8%2Fimage.png?alt=media&token=849d516c-0877-4ec0-ba28-c12870397dbb)
+
+
 ## Smart Screen Effects Editor
+
+
+13.2. Smart Screen Effects Editor
+
+The Smart Screen Effects Editor allows users to quickly build effects within the normal work flow of the console while still having access to the main live displays. **Effect Tracks** are created for every selected parameter but they are hidden to remove screen clutter. Some advance operations are removed to speed up programming of simple effects.
+
+**Two pages are available in the Smart Screen Editor:**
+
+-   **Attributes** - Used for building Effect Events.
+    
+-   **Grouping** - Used for setting fixture **Blocks Of** (Fixture Grouping in Vector) **and Sub Blocks Of** (Blocks on some console).
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJeOOrM0lGv2SWmcQqMOw%2Fimage.png?alt=media&token=4e5f7645-13fe-4400-bc9f-c2378dfe771a)
+
+**<p align=center> Smart Screen Attribute page</p>**
+
+
+
 ### Building Effects Using the Small Screen Editor
+
+13.2.1. Building Effects Using the Small Screen Editor
+
+**To build an Effect in the Smart Screen Effects Editor:**
+
+1.  Select the the fixtures to be used in the Effect.
+    
+2.  Select the **parameter/parameters** to be in the Effect 9.4.2. What are Parameters
+    
+3.  Press [EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.
+    
+4.  Tap the Pre Built tab and make a selection. Or
+    
+5.  Tap the Favorite Primitive tab and select a Primitive - the Function shown on the Primitive will be loaded with a default linear Pattern.
+    
+6.  The Pattern may be changed by by tapping any of the following: 
+    ◾ / Fixtures move in a positive direction across the selection. 
+    ◾ \ Fixture move in a negative direction across the selection. 
+    ◾ /\ Fixture mirror in a positive direction. 
+    ◾ / Fixture mirror in a negative direction.
+    
+7.  Set the Offset {Pattern Spread} - Default is 100%. 
+    ◾ 100% = Selection is divided 100% transitioning across the Primitive.
+    ◾ 0% = all fixtures transition in unison.
+    
+8.  Set Swing (In Base) as needed 13.1. Effects Basics
+    
+9.  Adjust Size and Base to set the Low and High ranges of the values
+    
+10.  Set the Rate - x.xx Rate is a multiplier of the time value. Default Effect Time is 4 seconds to complete the cycle
+    
+
+>Similar results to inverting the pattern functions may be achieved by reversing the selection direction with the {⬅️ Negative}, {Positive ➡️} keys
+
+
+
 ## Advanced Effects Editor
+
+Both Effect Editors write to the same Effect Engine. Either or both may be used to create effects. Whichever is opened at the time will be synchronized to the Effects Engine, but only **one** Effect Editor may open at a time.
+
+**Selecting multiple columns and rows:**
+
+-   It is possible to make simultaneous changes to Primitive, Pattern, and Effect settings by toggling them on/off.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh4D4iNfE9oZE7jHw7N9y%2Fimage.png?alt=media&token=8e41c166-0b91-452b-8e09-53d83eab995d)
+
+Advanced Effect Editor
+
+**The Advanced Effects Editor differs from the Smart Screen Effects Editor in the following ways:**
+
+-   Parameter selection is made in the Effects Editor not before entering it.
+    
+-   Effect Tracks are shown.
+    
+-   Multiple Parameters may be assigned to the same Effect Track.
+
+
 ### Building Effects Using the Advanced Effects Editor
+
+
+13.3.1. Building Effects Using the Advanced Effects Editor
+
+**Build a basic Effect in the Advanced Effects Editor:**
+
+1.  Select the fixtures to be used in the Effect.
+    
+2.  Press [VIBE]+[EFFECT] to open the Advanced Effect Editor.
+    
+3.  Tap a parameter bank in the FIiters area.
+    
+4.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple.
+    
+5.  Tap a blank space in the Parameter Column of an unassigned Effect Track
+    
+
+-   the parameter will be assigned and the Attributes Column.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQDYd66yIXJkmqtsGOa6Z%2Fimage.png?alt=media&token=0d97202d-4d62-48ac-82df-997dcd97247a)
+
+6. Tap a Function from the Favorites tab or All Functions tab - The Function background will turn purple.
+
+<p align="center">
+  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FywgEN6NflW0gAVp1Xf8t%2Fimage.png?alt=media&token=d7704a4a-dd61-4526-9580-8d2859e8178b">
+</p>
+

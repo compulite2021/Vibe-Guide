@@ -1,4 +1,5 @@
 
+
 # Vibe Hardware
 
 This chapter covers basic specifications.
@@ -21,96 +22,88 @@ This chapter covers basic specifications.
 ## Editor Controls
 ![Editor Controls](https://www.dropbox.com/s/rb4vacdtke2kw4n/3.2.png?dl=1)
 
-> Editor Controls are used to program and edit parameter values for all
-> fixtures as well as create and edit objects such as cues and
-> libraries.
-> 
-> • **[Vibe]** Key (Shift Key)
-> 
-> • Numeric Key Pad § 4 Main encoder push wheels
-> 
-> • Trackball
-> 
-> • **[Next]/[Prev]** Keys
-> 
-> • XYZ lock keys
-> 
-> • **[Res]** Wheel resolution key
-> 
-> • Dedicated dimmer wheel
-> 
-> • Command select keys
-> 
-> • Object select keys
-> 
-> • Navigation keys
+ Editor Controls are used to program and edit parameter values for all fixtures as well as create and edit objects such as cues and libraries.
+ 
+ • **[Vibe]** Key (Shift Key)
+ 
+ • Numeric Key Pad § 4 Main encoder push wheels
+ 
+ • Trackball
+ 
+ • **[Next]/[Prev]** Keys
+ 
+ • XYZ lock keys
+ 
+ • **[Res]** Wheel resolution key
+ 
+ • Dedicated dimmer wheel
+ 
+ • Command select keys
+ 
+ • Object select keys
+ 
+ • Navigation keys
 
 ## Motorized Sliders and Qkeys
 
 ![Motorized Slider and Qkey Controllers](https://www.dropbox.com/s/p0ezk95x8ey2jpi/3.3.png?dl=1)
 
-> 15 individually paging 60mm Motorized slider potentiometers and 15
-> individually paging Qkey single button controllers, used to execute
-> and control objects such as: • Qlist Cues
-> 
-> • Scenes
-> 
-> • Effects Rate and Size
-> 
-> • Group selects
-> 
-> • Group Masters (Submasters)
-> 
-> • Libraries
-> 
-> • Macros
-> 
-> • Snap
+ 15 individually paging 60mm Motorized slider potentiometers and 15 individually paging Qkey single button controllers, used to execute and control objects such as: 
+
+• Qlist Cues
+ 
+ • Scenes
+ 
+ • Effects Rate and Size
+ 
+ • Group selects
+ 
+ • Group Masters (Submasters)
+ 
+ • Libraries
+ 
+ • Macros
+ 
+ • Snap
 
 
 ## Master Controller and Control Keys
 
 ![Master Controller and Control Keys](https://www.dropbox.com/s/jtqjusxfneduw81/3.4.png?dl=1)
 
-> • Non-motorized 100mm Sliders, used for Theatrical playback of cues
-> 
-> • Large **[GO/BACK/HOLD]** Keys for executing cues on the Master
-> Controller
-> 
-> • Master Controller **[SELECT]** key
-> 
-> • Controller **[RELEASE]** Key
-> 
-> • **[LOAD]** key to pre-load a controller for execution
-> 
-> • Controller **[FREE]** Key (unload)
-> 
-> • **12 [Controller Keys]** to provide additional or missing functions
-> to controllers.
-> 
-> • **[RATE]** for overall or individual rate override of controllers
-> 
-> • **[TEACH]** for BBM tap time
+ • Non-motorized 100mm Sliders, used for Theatrical playback of cues
+ 
+ • Large **[GO/BACK/HOLD]** Keys for executing cues on the Master Controller
+ 
+ • Master Controller **[SELECT]** key
+ 
+ • Controller **[RELEASE]** Key
+ 
+ • **[LOAD]** key to pre-load a controller for execution
+ 
+ • Controller **[FREE]** Key (unload)
+ 
+ • **12 [Controller Keys]** to provide additional or missing functions to controllers.
+ 
+ • **[RATE]** for overall or individual rate override of controllers
+ 
+ • **[TEACH]** for BBM tap time
 
 
 ## Aux Qkeys, Grand Master, and Global Controllers
 
 ![Aux Qkeys, Grand Master, Blackout, and General Sliders](https://www.dropbox.com/s/77t7rqdf6xxj5je/3.5.png?dl=1)
 
-> • 20 individually paging Auxiliary **Qkey Controllers** for single
-> button execution of Cues, Scenes, Group Selects, Snaps, and Macros.
-> 
-> • 5 Non-motorized single button Sliders for execution and control of
-> Scenes, Cues, Group Masters (Submasters), Rate Masters, and Flash
-> Masters.
-> 
-> • Grand Master Slider.
-> 
-> • **[BO]** Blackout key with blackout option.
+ • 20 individually paging Auxiliary **Qkey Controllers** for single button execution of Cues, Scenes, Group Selects, Snaps, and Macros.
+ 
+ • 5 Non-motorized single button Sliders for execution and control of Scenes, Cues, Group Masters (Submasters), Rate Masters, and Flash Masters.
+ 
+ • Grand Master Slider.
+ 
+ • **[BO]** Blackout key with blackout option.
 
 ![Workspace Template Keys](https://www.dropbox.com/s/2641qkgyzj63akv/3.5.1.png?dl=1)
 
-> • **[PATCH] [PROGRAM]** and **[PLAY-B]** Workspace Template keys
-> available for accessing display pages.
-> 
-> • **[View]**, stores or executes display snapshots.
+ • **[PATCH] [PROGRAM]** and **[PLAY-B]** Workspace Template keys available for accessing display pages.
+ 
+ • **[View]**, stores or executes display snapshots.

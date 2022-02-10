@@ -1,3 +1,4 @@
+
 # System Default Settings
 
 This chapter deals with customizing system settings to suit programming styles.
@@ -73,15 +74,17 @@ System Settings defaults are accessed by selecting {System Settings} from the {V
 -   Qlist Behavior = {Non-Tracking}
     
 
-**_________________________________________________________________________________________________**
+---
 
 **Editing Properties:** - Cueing Section
 
 Tracking - Non-Tracking:
 
--   Tracking On: ◾ Values track forward. The stage look is made up of a combination of hard and tracked values.
+-   Tracking On: 
+◾ Values track forward. The stage look is made up of a combination of hard and tracked values.
     
--   Non-Tracking: ◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.
+-   Non-Tracking: 
+◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.
     
 
 > In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the **Store Options** {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.
@@ -147,7 +150,7 @@ Timing Properties - Cue Section
 
 **Default GOTO Time:**
 
--   Default timing when the GOTO command is used. GOTO time can be overridden using command [GOTO] [CUE] [#] [TIME] [Value]Press ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBBvbBF5WD2r2B0yIuQHd%2Fimage.png?alt=media&token=635e83af-37a1-4bad-b8be-8d516b1c4246)  or [ENTER]. 
+-   Default timing when the GOTO command is used. GOTO time can be overridden using command [GOTO] [CUE] [#] [TIME] [Value]Press [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or [ENTER]. 
     
 
 **Default Release Time:**
@@ -413,16 +416,20 @@ Defaults - Controller Default Actions
 
 
 
-**_________________________________________________________________________________________________**
+---
 
 **Defaults** - Release time
 
--   **Virtual Wheel:** ◾ Wheel at Default - System Default Release time is referenced. ◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off. ◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.
+-   **Virtual Wheel:** 
+◾ Wheel at Default - System Default Release time is referenced. 
+◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off. 
+◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.
     
 -   **Button under wheel:** Toggles between Milliseconds, Seconds, Minutes, Hours.
     
 
-**Defaults** - Qlist Properties: ◾ **Restore default** - Resets Qlist properties to their last stored configuration.
+**Defaults** - Qlist Properties: 
+◾ **Restore default** - Resets Qlist properties to their last stored configuration.
 
 
 ### Chaser Properties
@@ -483,7 +490,8 @@ Default - Cue Settings
  ◾ [10.11.1. Assigning Cue Time](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.1.-assigning-cue-time)
  ◾ [10.11.2. Wait and Follow Times](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.2.-wait-and-follow-times)
     
--   **Properties:** ◾ [10.12.3. Tracking Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
+-   **Properties:** 
+◾ [10.12.3. Tracking Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
 
 
 ### Cue Store Options
@@ -503,7 +511,7 @@ Default - Cue Settings
 **Defaults** - Scene Settings
 
 -   **Time In** - Sets the default in-time for Scenes. The default value may be changed using: 
- ◾ Virtual wheel 
+◾ Virtual wheel 
 ◾ Tapping in the centre of the wheel until it turns red then entering a value using the keypad
     
 -   **Units Button** - Sets the time units (H/M/S/Mil)

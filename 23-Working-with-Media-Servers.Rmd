@@ -5,4 +5,3 @@
 - 23. Working with Media Servers
 
 
-## 23 Working with Media Servers
