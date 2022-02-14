@@ -5,7 +5,9 @@ bookdown::gitbook:
       before: |
         <li style="text-align: center;">
         <img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;"><br>
-        <li>Vibe Guide</li>
+        <br>
+        <br>
+        <li style="text-align: center;">Vibe Guide</li>
       after: |
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
