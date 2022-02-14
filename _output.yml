@@ -3,6 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li>>Vibe Guide</li>
+        <li>Vibe Guide</li>
       after: |
-        <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.<br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
+        <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
+        <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
