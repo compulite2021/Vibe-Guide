@@ -4,12 +4,11 @@ bookdown::gitbook:
     toc:
       before: |
         <li style="text-align: center;">
-        <img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;"><br>
+        <img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;">
         <br>
         <li style="text-align: center;"><h2>Vibe Guide</h2></li>
         <li style="text-align: center;">Version R_2.00</li>
         <br>
       after: |
-        <br>
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
