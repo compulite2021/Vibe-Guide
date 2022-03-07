@@ -5,6 +5,7 @@
 This chapter covers basic specifications.
 
 **The following is covered in this chapter:**
+
 -   3.1. Console
 -   3.2. Editor Controls
 -   3.3. Motorized Sliders and Qkeys
