@@ -15,6 +15,7 @@ TBA.
 
 ## Getting Started
 Power requirements:
+
 • Vibe uses a power supply that supports 90-264V at 47-63 Hz.
 • Approximately 3.2 amps at 230V.
 • Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
