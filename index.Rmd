@@ -16,28 +16,31 @@ TBA.
 ## Getting Started
 Power requirements:
 
-• Vibe uses a power supply that supports 90-264V at 47-63 Hz.
-• Approximately 3.2 amps at 230V.
-• Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
+- Vibe uses a power supply that supports 90-264V at 47-63 Hz.
+- Approximately 3.2 amps at 230V.
+- Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
 
 Desk Light:
-• Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
-• Desk light intensity is controlled in the {System Settings} {Hardware} tab. 
+
+- Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
+- Desk light intensity is controlled in the {System Settings} {Hardware} tab. 
 
 Monitor intensity:
-• Monitor intensity is controlled in the {System Settings} {Hardware} tab. 
+- Monitor intensity is controlled in the {System Settings} {Hardware} tab. 
 
 Power up the console:
-• Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.
-• Turn on the power supply switch above the powerCON connector.
-• Press the Power button located at the upper right corner of the monitor panel above the USB connectors.
-• The operating system will boot and the Vibe console software will automatically launch.
+
+- Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.
+- Turn on the power supply switch above the powerCON connector.
+- Press the Power button located at the upper right corner of the monitor panel above the USB connectors.
+- The operating system will boot and the Vibe console software will automatically launch.
 
 Power down the console:
-• Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.
-• Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.
-• Tap {Yes} or {No}.
-• The Vibe application will shutdown and a screen will appear with the following options:
+
+- Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.
+- Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.
+- Tap {Yes} or {No}.
+- The Vibe application will shutdown and a screen will appear with the following options:
 {Shut Down the Console} - System will power off
 {Restart Vibe} - Vibe console application will restart
 {Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.
@@ -46,31 +49,31 @@ Choose Shut Down the Console - The console will safely power off.
 ## Guide Conventions
 
 
-• **[XXXX]** - Physical key
+- **[XXXX]** - Physical key
 
-• **{XXXX}** - Soft key § [ ] { } - Example
+- **{XXXX}** - Soft key § [ ] { } - Example
 
-• **Press** - Action applied to a physical key
+- **Press** - Action applied to a physical key
 
-• **Tap** - Action applied to softkey or virtual key
+- **Tap** - Action applied to softkey or virtual key
 
-• **Toggle** - Action that actives and deactivates with alternating taps or presses
+- **Toggle** - Action that actives and deactivates with alternating taps or presses
 
-• **Key** - Any physical or virtual key that is NOT used for controller activation
+- **Key** - Any physical or virtual key that is NOT used for controller activation
 
-• **Button** - Any virtual or physical key that is used to activate a controller
+- **Button** - Any virtual or physical key that is used to activate a controller
 
-• **Keypad** - Embedded numeric keypad
+- **Keypad** - Embedded numeric keypad
 
-• **Keyboard** - Console's pull-out ASCII keyboard or any external keyboard
+- **Keyboard** - Console's pull-out ASCII keyboard or any external keyboard
 
-• **SK -** Object softkeys (Libraries, Groups, Snap, Macros, etc.)
+- **SK -** Object softkeys (Libraries, Groups, Snap, Macros, etc.)
 
-• 👉 **-** Hint or suggestion
+- 👉 **-** Hint or suggestion
 
-• **RED**  **-** Important information or Caution
+- **RED**  **-** Important information or Caution
 
-• **[Here]** - Short form for Press an appropriate destination softkey or controller button to complete the command
+- **[Here]** - Short form for Press an appropriate destination softkey or controller button to complete the command
 
 ## Important Terms
 
