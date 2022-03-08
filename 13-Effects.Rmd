@@ -2,6 +2,7 @@
 
 
 **The following is covered in this chapter:**
+
 - 13.1. Effect Basics
 - 13.2. Smart Screen Effects Editor
 - 13.2.1. Building Effects Using the Small Screen Editor

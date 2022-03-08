@@ -2,6 +2,7 @@
 
 
 **The following is covered in this chapter:**
+
 - 25. Master/Slave
 
 

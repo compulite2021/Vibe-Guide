@@ -3,6 +3,7 @@
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
+
 - 15.1. Look Ahead (Move in Dark)
 - 15.2. Look Ahead Cue (Mark)
 - 15.3. Force Black

@@ -4,6 +4,7 @@
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
+
 -  6.1.   Fixture Sets
 -  6.2.   Import Devices
 -  6.3.   Advanced Search

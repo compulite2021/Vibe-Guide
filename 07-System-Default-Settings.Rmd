@@ -4,6 +4,7 @@
 This chapter deals with customizing system settings to suit programming styles.
 
 **The following is covered in this chapter:**
+
 -  7.1. Editing
 -  7.2. Timing
 -  7.3. Network

@@ -3,6 +3,7 @@ Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtu
 
 
 **The following is covered in this chapter:**
+
 - 20.1. Calibration in WYSIWYG
 - 20.2. Calibration in Capture
 

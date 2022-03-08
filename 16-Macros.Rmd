@@ -2,6 +2,7 @@
 
 
 **The following is covered in this chapter:**
+
 - 16.1. Creating Macros
 - 16.2. Triggrering Macros
 - 16.3. Attaching Macros

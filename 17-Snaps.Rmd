@@ -2,6 +2,7 @@
 
 
 **The following is covered in this chapter:**
+
 - 17.1. Storing Snaps
 - 17.2. Triggering Snap
 - 17.3. Attaching Snaps

@@ -4,6 +4,7 @@
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
+
 -  4.1. Introduction
 -  4.2. {VIBE} Menu
 -  4.3. Layouts

@@ -2,6 +2,7 @@
 This chapter deals with configuring, transmitting and receiving DMX over Ethernet.
 
 **The following is covered in this chapter:**
+
 - 24.1. Network Basics
 - 24.2. Connecting to Compulite ePorts
 - 24.3. Connecting to Art-Net and sACN Nodes

@@ -2,6 +2,7 @@
 This chapter deals with configuring and assigning MIDI 
 
 **The following is covered in this chapter:**
+
 - 22.1. What is MIDI
 - 22.2. General MIDI Configuration
 - 22.3 Configuring MIDI Notes and Commands

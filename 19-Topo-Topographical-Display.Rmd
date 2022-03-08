@@ -2,6 +2,7 @@
 It is sometimes useful to organize fixture selection in a graphical manner instead of numerical lists. In Vibe this is referred to as the TOPO (Topographical) map display. Other console may refer to this feature as "Layouts", "Magic Sheets", or "Rig" Schematics".
 
 **The following is covered in this chapter:**
+
 - 19.1. Creating a Topo View
 - 19.2. Topo Menu
 - 19.3. Creating a Topo

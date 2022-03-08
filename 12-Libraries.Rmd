@@ -2,6 +2,7 @@
 
 
 **The following is covered in this chapter:**
+
 - 12.1. What are Libraries
 - 12.2. Store and Modify Bank Libraries
 - 12.3. Object Libraries
