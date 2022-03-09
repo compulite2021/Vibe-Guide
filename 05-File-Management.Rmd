@@ -5,6 +5,7 @@
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
+
 -  5.1 Show Menu
 -  5.2 Load Vector Show
 
