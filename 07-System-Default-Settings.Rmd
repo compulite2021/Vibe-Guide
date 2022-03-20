@@ -28,11 +28,11 @@ This chapter deals with customizing system settings to suit programming styles.
 
 System Settings defaults are accessed by selecting {System Settings} from the {Vibe} menu or by tapping the {System Status} area at the far right side of the controller displays.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdQJECnSiQVLEANpmIHGB%2Fimage.png?alt=media&token=dd956e65-97d0-478f-bfc0-005dd69e8426)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9aZek2hoU1UMUzTGqNGg%2F7.1.webp?alt=media&token=6b643d27-1471-44bd-914f-51bb1733d14f)
 
 **Editing Properties** - Editing Section
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHEhHv2xSifRxET7GgYiF%2Fimage.png?alt=media&token=36982cb9-06b1-4de9-a806-52a33a4d8c30)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNhQX0oar9rEo6NUdNBul%2F7.1.1.webp?alt=media&token=882d021b-ab31-4b7f-b899-693abe059daf)
 
 **Default Stage Value:**
 
@@ -120,7 +120,7 @@ ________________________________________________________________________________
 
 **Restore and Save Defaults:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1sYs7slvo57lpbk514kd%2Fimage.png?alt=media&token=86c68d56-5c49-485e-8c87-2fb4c8ff7b30)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxFu9gzPgWtT8ffCJCekJ%2F7.1.2.webp?alt=media&token=72e6c0c4-49ed-42a1-9d51-e9e97d4823e3)
 
 -   {Restore Popup Positions} - Currently redundant.
     
@@ -135,7 +135,7 @@ ________________________________________________________________________________
 
 Timing Properties - Cue Section
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1keJSUrF101byZfAFjtQ%2Fimage.png?alt=media&token=571303df-f193-449b-b427-ad4fb5892d12)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWzxK5PnA0giOYH3ndZkh%2F7.2.webp?alt=media&token=7617faa8-e505-4a96-9bd8-7bac6b4af477)
 
 **Default Back Time:**
 
@@ -193,7 +193,7 @@ Timing Properties - Cue Section
 
 **Network Properties** - Local
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzbXVz8P0y7uiYN8NZcxA%2Fimage.png?alt=media&token=1d20123c-1ec3-4890-bd4f-beeec5768a61)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5qtZLg6Nt6y9lGdNUv3b%2F7.3.webp?alt=media&token=818c09d0-ca1c-4054-b080-00b461884518)
 
 **Local:**
 
@@ -236,7 +236,7 @@ Timing Properties - Cue Section
 
 **Hardware Properties** - Panel Backlight
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSARe7F3ebVc2vXRXb8ES%2Fimage.png?alt=media&token=7374ba0b-183b-4c1d-b024-03ad68f9bec5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNTAaCC0zSMDawzSL3jLm%2F7.4.webp?alt=media&token=ed771d92-0cc0-48b4-9669-6d83cbe49db8)
 
 **Inactive keys:**
 
@@ -260,6 +260,12 @@ Timing Properties - Cue Section
 
 
 **Defaults** - Initial settings for most system objects.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FU3hN3WzAt97uaM12rHlu%2F7.5.webp?alt=media&token=6c4fc2b1-e16e-4cac-aa83-524c93f2a99b)
+
+
+
 **See:**
 -  7.5.1. Controller Settings
 -  7.5.2. Controller Actions
@@ -280,7 +286,7 @@ Timing Properties - Cue Section
 
 **Defaults** - Controller Settings
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fy4SUzlM57ramuMP5BoTH%2Fimage.png?alt=media&token=214a0244-aa56-412c-b44c-73d9534d27c0)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIRko0Ph6QW39QUTMFEaI%2F7.5.1.webp?alt=media&token=c11c81e4-d394-4237-bd78-b63dacce9566)
 
 **Flash behaviour:**
 
@@ -340,7 +346,7 @@ Timing Properties - Cue Section
 
 Defaults - Controller Default Actions
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTNhexbQgUA1LwTkAsZhq%2Fimage.png?alt=media&token=6c102180-552d-4f4c-8456-1fa923a9f4c3)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fkv1gkM29OvT8OKSvb3W1%2F7.5.2.webp?alt=media&token=1e94b8a1-ea91-4b63-a303-6a1858727e09)
 
 **Qlists and Scenes:**
 
@@ -349,7 +355,7 @@ Defaults - Controller Default Actions
 
 **Submasters (Group Submasters)** - When a Scene is configured as a Submaster it has a unique set of functions and button options.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fyro3yMgwPvP82WXUu9i2%2Fimage.png?alt=media&token=dcd0726e-8344-437a-ad67-cf0a62e90d0d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fw0e6FlJP0dNlpzuujuot%2F7.5.2.1.webp?alt=media&token=43cdc4db-7246-48fd-82cb-3fe8db74aa4c)
 
 
 ### Qlist Properties
@@ -360,7 +366,7 @@ Defaults - Controller Default Actions
 
 **Defaults** - Qlist Properties
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpZrRV2L9hLCBY8kMLGXJ%2Fimage.png?alt=media&token=c5e50558-6a2c-4f9f-acfc-a4379190c46b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHDjMWGWWZT6WTImJ7Lso%2F7.5.3.webp?alt=media&token=0a31ada9-f9ae-4abb-ac7b-9a8931c25a6c)
 
 **Qlist Mode:**
 
@@ -438,7 +444,7 @@ Defaults - Controller Default Actions
 
 **Defaults** - Chase Properties
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUuNxJvTPYzZo6RDQhNMq%2Fimage.png?alt=media&token=92f11feb-40b7-4277-a431-808d7c6fa941)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQV7K9S8rlSeUjGMiDofs%2F7.5.4.webp?alt=media&token=138e6db1-675f-4b3f-8297-88650b716c05)
 
 **Chase pattern:**
 
@@ -483,7 +489,7 @@ Defaults - Controller Default Actions
 
 Default - Cue Settings
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZEuDSIZSfUAHhjUrQKbv%2Fimage.png?alt=media&token=39c28fe6-3f0b-4ee5-a049-2cab503a96d5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoE3efM7x3Rse7NTjNd1S%2F7.5.5.webp?alt=media&token=6b323409-dd86-41f2-8c3e-651ea2852b00)
 
 **See:**
 
@@ -500,7 +506,7 @@ Default - Cue Settings
 
 **Default** - Cue Store Options
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Frd1nmaRBQfU8BhlaMr5q%2Fimage.png?alt=media&token=fad2a5e2-4b2b-4888-8041-a8a14da0c24c)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjkzU21qPYa1QeWdSjgIe%2F7.5.6.webp?alt=media&token=f9d16c19-eb41-479b-9be3-e3a4d2dfd36c)
 
 **See**: [10.7. Cue Store Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options)
 
@@ -524,7 +530,7 @@ Default - Cue Settings
 
 **Default** - Cue Store Options
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNtCjzXKxrTr7soWJAkbX%2Fimage.png?alt=media&token=cdfcc8ce-4970-4c38-afbf-b6b13956e205)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDgLaAhLr29G2p63xJTdO%2F7.5.8.webp?alt=media&token=739d0f7d-3b86-45c5-a74c-5d035cab9acd)
 
 **Similar to Cue Store Options. See:** [10.7. Cue Store Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options)
 
@@ -533,6 +539,8 @@ Default - Cue Settings
 ### Bank Library Options
 
 Default - Lib Options
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDVM7PFXkDxkbwqmaCdYE%2F7.5.9.webp?alt=media&token=f4dd2186-436e-4398-8927-0f51c3c2a1c3)
 
 Options are the same for the following:
 Intensity
@@ -553,7 +561,7 @@ Include Base - If toggled on, the start points of parameters will be stored with
 
 **Default** - Snap Settings
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fx3dGQ1iKTtHp4T6BifIs%2Fimage.png?alt=media&token=b8b87d32-bf97-49de-99e8-7259fd5f5d60)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FcUc9GJIbRrx2Up4cS8iO%2F7.5.10.webp?alt=media&token=7fcc6e63-3807-4460-a4c0-f8601d3c0834)
 
 **Load Pages:**
 
@@ -581,7 +589,7 @@ See: [17. Snaps](/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots
 
 Default - System
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5rfthijhcCOgxMs4SEaN%2Fimage.png?alt=media&token=a3e38145-be1c-445b-8591-4713f7ddc08d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fd06vZ93BsWt45sBzsBbp%2F7.6.webp?alt=media&token=f21da99d-b35a-4e03-80fa-297c8d5a37c8)
 
 **Vibe is made up of four modules:**
 

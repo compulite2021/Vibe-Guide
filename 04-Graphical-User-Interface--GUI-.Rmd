@@ -58,7 +58,7 @@ The large 21" embedded screen is general-purpose like the external monitors.
 
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
-![](https://www.dropbox.com/s/kixy9336g2t5pcj/4.2.png?dl=1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSdcglLmIyMYifAnnJBOK%2F4.2.webp?alt=media&token=a6a65486-49b5-42da-b415-c791c188158d)
 
 **Configuring WorkSpaces:**
 
@@ -67,7 +67,7 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 -   If an object is dragged on top of another both will turn green and become one **tabbed** object.
     
 -   To edit the placement of objects, the **{Lock}** icon beside the **{VIBE}** menu key  must be toggled to unlock the workspace display. After changes are made, it must be toggled again to lock the display and allow normal usage.
-![**Library Softkeys randomly sized and placed on the [PROGRAM] Workspace**](https://www.dropbox.com/s/kpd3wlwhvd8rc3q/4.2.1.png?dl=1)
+![**Library Softkeys randomly sized and placed on the [PROGRAM] Workspace**](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
 
 
 ## Layouts
@@ -92,15 +92,15 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 **The Editor Toolbar contains is a set of interactive Softkeys that are used to access less common commands:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fah3p67j4k739AdPqqoZZ%2Fimage.png?alt=media&token=0b312a30-9936-4964-a72e-9e70ea1d4203)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FEtMwno5lafumX8bqox4j%2F4.5.webp?alt=media&token=c082bd36-0eb9-4402-8a03-bede1ce46ec1)
 
 **The Patch Toolbar contains two pages of options:**
  ◾ Idle state toolbar
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7Gk2ieRY1JDn5Ez0SATG%2Fimage.png?alt=media&token=666125c4-516c-4b37-8309-7135c93936ae)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk1fZqMaKocauppohAgHw%2F4.5.1.webp?alt=media&token=c8cafb32-4d46-4284-ab22-4dfc5699cf4b)
 
 ◾ Fixture selection state toolbar
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FO04AjxRNK9LzNNzKFXft%2Fimage.png?alt=media&token=5d5f2389-b9ee-490a-8526-40b00f503451)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
 ## Live Display
 
@@ -111,7 +111,7 @@ Vibe has two ways to display parameter data:
 
 **Live Display**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHL2HLzRYhYIFEgymXLPX%2Fimage.png?alt=media&token=37932519-d036-4fd4-90c3-87f20b1a2f85)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6qvBRbxpA4zVqzi1eqFx%2F4.6.webp?alt=media&token=9f4db473-e88e-439e-9c84-3ea59a199c95)
 
 **The Live Display has a number of options that may be set under the Options field:**
 
@@ -124,7 +124,7 @@ Vibe has two ways to display parameter data:
 -   **Active on Stage** - Only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbf0BrDcGgnikCifAG1ux%2Fimage.png?alt=media&token=f5270819-7037-4f40-92df-b2484a941eb1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FACLxFHojrpM1W1uVZfRf%2F4.6.1.webp?alt=media&token=cf1c4fbf-74a4-47f5-9bab-085fb9cb925e)
 
 -   **Sets** - Select which of the fixture sets to display. 
 ◾ Fixture s Channel 
@@ -143,7 +143,7 @@ Vibe has two ways to display parameter data:
 
 Live View Settings pop-up - Display Tab.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9cVAF9Ur1Z673WX9EGc2%2Fimage.png?alt=media&token=94c675c2-bc3e-417f-91eb-54e02c384e1d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5uGp3hwefoypGXdWveRx%2F4.7.webp?alt=media&token=ab20ee96-1d11-43a8-bdf2-b4183886bcb0)
 
 **Live View Scheme** - Parameter columns may be freely added, removed, moved in using the Live View Scheme.
 
@@ -198,7 +198,7 @@ Fixture # and Fixture Name are toggles so if the indicator light is on, touching
 
 **Live View Settings pop-up - Behavior Tab**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwhGHyHCbLeSvpBFU5jQY%2Fimage.png?alt=media&token=3f711f98-6e83-4882-87b0-1eefe91182af)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0Cf1rvhFttH5PpWmRGsr%2F4.7.1.webp?alt=media&token=add0fffb-777d-4be4-b946-9baf95669f4e)
 
 **Fixture Jumping**: 
 ◾ Off 
@@ -216,7 +216,7 @@ Fixture # and Fixture Name are toggles so if the indicator light is on, touching
 
 Unlike most theatrical consoles, parameters other than dimmer may be shown in Live Parameter Mode.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbj8JRvg1tZzGiWEi5gEC%2Fimage.png?alt=media&token=37b62e05-c40f-49af-b21b-3adde1d11146)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNzhdWIduBdr1JlJxRnpw%2F4.8.webp?alt=media&token=68d8f738-7d03-4ae9-ba14-8670879bf203)
 
 Parameters visible in Live Parameter Mode are filtered using the Parameter View Settings Pop-up.
 
@@ -231,7 +231,7 @@ Parameters visible in Live Parameter Mode are filtered using the Parameter View 
     
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8Ippy128mYH7PrJmnqqe%2Fimage.png?alt=media&token=5219dbe8-3ac5-4ce1-9050-e62b3d2b23ce)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtzAZJ7gsczYgIUPMQYit%2F4.8.1.webp?alt=media&token=9923932f-be18-402f-92aa-5307f27cfd3a)
 
 
 ## Bank Mode
@@ -245,10 +245,10 @@ Fixtures may also be graphically displayed by banks.
 -   **Position** - In the form of a cursor that moves in a black rectangle representing the stage.
     
 -   **Color** - In the form of a circular color swatch - Color wheels are not currently supported.
-- ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKU2qDFW9ABD56I5la6U9%2Fimage.png?alt=media&token=7ea2c6f2-50a5-403d-b3e8-840c464f1077)
+- ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiiqnBUvvCzFFqXrjLXkE%2F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
 
 ## Fixture Mode
 
 Graphically Displays Intensity, Position, and Color parameter icons as a single "tombstone" fixture
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPgGlBvQc4nGhp5FloW0r%2Fimage.png?alt=media&token=4b3c4f7e-9903-4aaf-a52b-465effad9a9e)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FbVNqz9O6Ncel6mSwo6Nj%2F4.10.webp?alt=media&token=1313790f-2563-4b84-a48d-4da3f71042d3)

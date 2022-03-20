@@ -15,13 +15,23 @@ This chapter covers basic specifications.
 
 ## Console
 
-![Front Panel View](https://www.dropbox.com/s/4nb7qt9l55n2ov9/3.1.png?dl=1)
 
-![Rear Panel View](https://www.dropbox.com/s/uxeylsagug5qv7l/3.1.1.png?dl=1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoXar4XEyvpm48DVT7GxC%2F3.1.webp?alt=media&token=2b25b3aa-fc22-45b1-a018-bd5bfe5ec5a7)
+
+**<p align=center> **Front Panel View**</p>**
+
+​
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQ7Yp9gAyO9rW9YbcenEq%2F3.png?alt=media&token=b1b77950-f160-4efb-8ec7-a7d1d666720d)
+
+​<p align=center> **Rear Panel View**</p>
+
 
 
 ## Editor Controls
-![Editor Controls](https://www.dropbox.com/s/rb4vacdtke2kw4n/3.2.png?dl=1)
+![Editor Controls](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJOCXTVt329PaiHlLxdDM%2F3.2.webp?alt=media&token=e05ff57b-0114-43e5-851a-2980421d8225)
+
+**<p align=center> **Editor Controls**</p>**
 
  Editor Controls are used to program and edit parameter values for all fixtures as well as create and edit objects such as cues and libraries.
  
@@ -47,7 +57,7 @@ This chapter covers basic specifications.
 
 ## Motorized Sliders and Qkeys
 
-![Motorized Slider and Qkey Controllers](https://www.dropbox.com/s/p0ezk95x8ey2jpi/3.3.png?dl=1)
+![Motorized Slider and Qkey Controllers](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxsWfMbqMqt1HoY8RjkUG%2F3.3.webp?alt=media&token=88f965be-30de-4ae9-bc05-77a7b881cf97)
 
  15 individually paging 60mm Motorized slider potentiometers and 15 individually paging Qkey single button controllers, used to execute and control objects such as: 
 
@@ -70,7 +80,7 @@ This chapter covers basic specifications.
 
 ## Master Controller and Control Keys
 
-![Master Controller and Control Keys](https://www.dropbox.com/s/jtqjusxfneduw81/3.4.png?dl=1)
+![Master Controller and Control Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FeKxmo9RyqPKPWmOtQUtI%2F3.4.webp?alt=media&token=f13a5178-75d3-4156-8951-e33ff77ddc53)
 
  • Non-motorized 100mm Sliders, used for Theatrical playback of cues
  
@@ -93,7 +103,11 @@ This chapter covers basic specifications.
 
 ## Aux Qkeys, Grand Master, and Global Controllers
 
-![Aux Qkeys, Grand Master, Blackout, and General Sliders](https://www.dropbox.com/s/77t7rqdf6xxj5je/3.5.png?dl=1)
+<p align="center">
+  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0sZ9sO4ZJRnSUlSMY8jv%2F3.5.webp?alt=media&token=35001380-7789-4973-bd6a-e0c6eeeb6edb">
+</p>
+
+<p align=center> Aux Qkeys, Grand Master, Blackout, and General Sliders</p>
 
  • 20 individually paging Auxiliary **Qkey Controllers** for single button execution of Cues, Scenes, Group Selects, Snaps, and Macros.
  
@@ -103,7 +117,9 @@ This chapter covers basic specifications.
  
  • **[BO]** Blackout key with blackout option.
 
-![Workspace Template Keys](https://www.dropbox.com/s/2641qkgyzj63akv/3.5.1.png?dl=1)
+<p align="center">
+  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRmMcKxsyaEiRpBhi3sGs%2F3.5.1.webp?alt=media&token=599ec487-dcbf-42f0-bbb7-4652f10a0390">
+</p>
 
  • **[PATCH] [PROGRAM]** and **[PLAY-B]** Workspace Template keys available for accessing display pages.
  

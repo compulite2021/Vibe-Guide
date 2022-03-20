@@ -36,15 +36,15 @@ Each **SET** may have Fixtures numbered from 1 ➡️ 999999 To patch a device, 
     
 4.  A new list and search window will open. If the exact device name is known, type it in the search window, if not flick or drag to browse the list until the desired device is found.
     
-    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAUMZKpfdB34jywodQrO7%2Fimage.png?alt=media&token=431ecdec-063a-4a18-bf87-ae81bb29f889)
+    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6OPIN7M2INVvd6Qb68PC%2F6.2.webp?alt=media&token=a9d3bfed-3a49-4174-bdb6-3c32843653ee)
     
 5. The < key may be pressed at any time to return to the Imported Devices list.
     
-    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4tjZs5njqhMzp7bbKLsG%2Fimage.png?alt=media&token=4af0db3d-b44c-4863-aa08-d32d817decbe)
+    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMJNhnkyYAYn3wnGiHWkk%2F6.2.1.webp?alt=media&token=cb596e2e-e61d-424f-ba50-aa0eee3a0c55)
     
 6. .
     
-    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0TwiXXhqaNIzq1ts1LHL%2Fimage.png?alt=media&token=e89933c0-2019-4fda-8875-3dfaed6f85fc)
+    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&token=62e204dc-17b9-4fd2-8566-18780860a2b8)
     
 
 ## Advanced Search
@@ -62,11 +62,13 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 4. Select the fixture from under the Matching Devices header.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAhrPAXebL2lasJ1WM2k5%2Fimage.png?alt=media&token=de407624-9c32-4abc-8abf-1dce806ca92f)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSoJ6Bs01KdLdos1AX1dR%2F6.3.webp?alt=media&token=6337e45c-7ce2-4694-92fb-8a750d367eb1)
 
 5. The DMX Modes pop-up will open. 
 6. Review the DMX implementation and select the desired mode. 
 7. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and add the fixture to the Imported Devices list.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW9vK61A11wEoGR23P58y%2F6.3.1.webp?alt=media&token=ac62e3aa-1045-4cc4-87d6-5715e511417d)
 
 ## Create and Patch imported fixtures
 
@@ -78,7 +80,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 3. Tap the device you wish to patch and the Create and Patch Fixtures popup will appear.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Ff9eVMyaXgozk0Gdx4lvu%2Fimage.png?alt=media&token=b239533b-b082-44cb-b4d4-b86b0d6eb538)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FcFXeBwqGbF1LU2qRzhsk%2F6.4.webp?alt=media&token=cdca54cf-4b59-440f-ad0d-d1b0f09960b0)
 
 1. In the **Create and Patch** fixtures pop-up, type the quantity in the red highlighted field via the keypad or flick/drag to browse the list until the desired quantity number is found then tap the number.
     
@@ -144,7 +146,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 
 Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures list.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FOUjRNeP13oCfbjf2DHvf%2Fimage.png?alt=media&token=7501c3cb-0572-4bcd-989c-9ca5cac5e63a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFTYnnKHRjr3DV3bFTnMN%2F6.4.1.webp?alt=media&token=7a7991b5-3817-4e6d-8fd0-cbd9c031c839)
 
 **Make multiple selections of fixtures using the keypad:**
 
@@ -177,7 +179,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 
 **Toolbar with no fixture selection:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqKMW5KV6R4utuJVcSVsR%2Fimage.png?alt=media&token=a7f67f72-ce3d-4d33-bf3c-c0bc08b359cc)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8RUSEceSC54jo9ad3dch%2F6.4.2.webp?alt=media&token=301e5200-bdc3-41df-904f-aae3609dcb59)
 
 ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
 ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
@@ -186,7 +188,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 
 **Toolbar with fixture selection:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FotGVSrjFRfLjFfyVTGIP%2Fimage.png?alt=media&token=68199556-cfb9-4e09-824b-6a2ce4950f75)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&token=4f322af9-9116-4d1e-b01b-cc15538d482a)
 
 ◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
 ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
@@ -205,7 +207,7 @@ See: 20. XYZ Fixture Calibration
 > By default, DMX is mapped to the physical ports on a 1:1 basis. 
 > DMX is always transmitted but can be remapped to anyone of the supported 256 DMX universes.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fj4n2nAFW40634aOq7a0D%2Fimage.png?alt=media&token=1f17e796-5f31-44f8-a684-5437018a3fc8)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FysS3YygefUYdl0S2006u%2F6.5.webp?alt=media&token=d646bef8-2793-4d67-8cb5-fb7224ac4a39)
 
 **Remap Physical outputs:**
 
@@ -292,7 +294,7 @@ See: 20. XYZ Fixture Calibration
 5. Press ENTER, or tap   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and complete the patch.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqScO17uMOAvMRfx3MPAQ%2Fimage.png?alt=media&token=659d250e-b572-4978-825b-fceebb565c77)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3DT3je7pCP3pknk8LC7V%2F6.6.webp?alt=media&token=3bb762be-4947-4802-a1c0-e89d98163565)
 
 **Map a Fixture to a DMX input:**
 

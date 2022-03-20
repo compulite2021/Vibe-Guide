@@ -41,7 +41,7 @@ Editor Basics:
 
 All manual parameter modification occurs in the **EDITOR**. (Programmer in some other consoles). The **Live Displays** show all values from **both** Controller outputs (Playbacks or Executors on some consoles) and fixtures in the Editor. Color coding is used to distinguish between values coming from the controllers and values in the **EDITOR**.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fyfj9pENaY2RICC8bbyrV%2Fimage.png?alt=media&token=1519cebf-1974-4a4f-8f63-e1d347375abe)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJ376dF1k5YYrLIEw9Guq%2F9.1.1.webp?alt=media&token=9bed6d66-ad72-4973-add6-9eb94d134da5)
 
 **Home a fixture in the Editor:**
 
@@ -139,7 +139,7 @@ Vibe has two Blind Editor behaviours:
 
 Currently, Vibe has basic Selection Tools. Advanced tools are under development.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGx7aGZ388b54sCRa7IfH%2Fimage.png?alt=media&token=ae9608dc-9e11-4410-bc87-a2a01ecba6c3)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9gX5fSd003KSW9SXkmvY%2F9.2.1.webp?alt=media&token=2cf874a1-a246-4be6-b36b-b8b1b3ec6fb9)
 
 -   {ODDS} - Absolute odd number in the range
     
@@ -211,7 +211,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 
 **Vibe has two methods to fan fixture parameters:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7QSRPy48WfQ6gfvsaYUN%2Fimage.png?alt=media&token=014b95a6-a2b4-4bd6-885a-cd199313a2ad)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRCZsSlnmcSFafQEwMVRY%2F9.2.4.webp?alt=media&token=2157359e-bd73-4d57-b692-0826758d2620)
 
 1.  Using the [Fan] key and interface.
     
@@ -274,27 +274,27 @@ See: 9.3.7. Fixture Selection (Detailed)
 -   {Fade In} - Blocks of 1 and no Sub Block
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FREHdakIY7QeXSPlYv3V1%2Fimage.png?alt=media&token=8f2ff9bd-894a-460b-9187-5fdeb9151f31)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQzZ38bEmppvXl48ulv8q%2F9.2.4.1.webp?alt=media&token=af1d73eb-2f53-462d-88ad-0227cdd79c2f)
 
 -   {Fade In} - Blocks of 4 no Sub Blocks
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FgIpWqS8iD5thdqKc39lk%2Fimage.png?alt=media&token=6c52bbc5-2c00-4393-977c-d752b7d3b08d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fygiz82lG0e6QyeKOCsyM%2F9.2.4.2.webp?alt=media&token=85ed0077-6d5f-44d5-bdc4-a8b7397d32f3)
 
 -   {Fade In} - Blocks of 6, Sub Blocks of 2
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWZoHyBjnKOexUXRB5RJ8%2Fimage.png?alt=media&token=4b3561d5-ffa9-4f3d-a7ff-ada37bb05939)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5DhSrryscbhAwmpb6kLe%2F9.2.4.3.webp?alt=media&token=041f6ae8-95c7-4515-8a7e-7d6eebfb0da1)
 
 -   {Saw Tooth} - (Low-High Mirror) Blocks of 12, Sub Blocks 2
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvdgPZYHoe5CndTOViOyT%2Fimage.png?alt=media&token=f134c601-ac53-4dd8-9d4f-b7eca88ca64b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FyNnPhSss8ibiMnNEoCUE%2F9.2.4.4.webp?alt=media&token=cac11c41-6744-4ae2-b878-451fe9830e66)
 
 -   Moving Light Fixture with {Fade In} Dimmer and Color Fan, and {Diagonal} Pan Fan
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0miw7A3hvrDtyF3008eO%2Fimage.png?alt=media&token=dc06235d-9785-4cad-9868-5ed11c707cc7)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW2ZfOpxlsJUa56lG2mgQ%2F9.2.4.5.webp?alt=media&token=284e82aa-eec2-4e18-a210-4c1d01ff8752)
 
 Instead of fanning Blocks based on the selection, fixture Groups may also be used as Blocks.
 
@@ -558,32 +558,32 @@ The **Smart Screen** is dedicated to displaying:
 
 **The Smart Screen is divided into six sections:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3MRjEUUrb6VfX3w0YMEK%2Fimage.png?alt=media&token=12cde89d-55a5-4a47-849c-065d9d89ac35)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a)
 
 **Smart Screen - Intensity Bank**
 
 The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSXwdoP1qpO3V3Nzz3eq1%2Fimage.png?alt=media&token=e00854cc-3f79-4c15-a005-2298b26891f5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
 
 **Smart Screen - Position Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fm76yn5bGr7LlFVxhnw6T%2Fimage.png?alt=media&token=87c24948-59c3-4196-a32d-f359ce83d0cf)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJPfrbyoQQQ5mSxZVBMFc%2F9.3.4.2.webp?alt=media&token=0560c39f-4054-4a14-8c4e-3e17b9ef9073)
 
 **Smart Screen - Color Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqdIGva7DvngrGPMce4HI%2Fimage.png?alt=media&token=370311fd-c7e7-4b0d-ba56-d4365138a394)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0V0GkR1cpsQvt7KpECZc%2F9.3.4.3.webp?alt=media&token=fa417166-175f-4433-aa91-b520767cc5e0)
 
 **Smart Screen - Beam Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7KApaRu54s0Enj8sCtut%2Fimage.png?alt=media&token=b040ab07-a243-4a76-a8c3-b2f15ec2e9b2)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fgi0I8PKwG6fimjXbMWIx%2F9.3.4.4.webp?alt=media&token=d004d2d8-5312-46b0-83dd-ace7c845160c)
 **Smart Screen - Image Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmuRBpzSrmTGLiO3O0uWk%2Fimage.png?alt=media&token=2cda885c-5e96-421b-a8d7-786661546a25)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Flz5lsxgDSdnj7OrX8Rub%2F9.3.4.5.webp?alt=media&token=db035427-73e0-47c0-a675-15d7f4b8b60b)
 
 **Smart Screen - Shape Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnI7Q19jt5F3x0LsggVoF%2Fimage.png?alt=media&token=e1174f4f-f177-4dd5-9b31-cef0856d6a9c)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&token=f11d9d9f-6df7-4f09-bcba-9006ec853af6)
 **Smart Screen - Control**
 
 **Smart Screen Preferences:**
@@ -623,7 +623,7 @@ Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor
 ### Adjusting Parameters using the Wheel Picker
 
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiDTNh31IjI39T2GTkc3i%2Fimage.png?alt=media&token=e3b46448-3c04-4e7b-b728-72ef5d5f98f3)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYRrblpqrjOFnaCqFguQy%2F9.3.5.webp?alt=media&token=35ce4615-8aa3-4192-a5c6-7db4e70d41c8)
 
 **Smart Screen Picker Programming**
 
@@ -809,7 +809,7 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
     
 -   Shape assigns Focus and Zoom to the interactive wheels In future releases it will be possible for users to customize the defaults.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fgs6aKJiEwFOjMbUqvhMR%2Fimage.png?alt=media&token=b67edcd6-9fc9-4feb-b6e6-f418b3bbc26f)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDGXNEIrHnemjvPSftsn9%2F9.3.9.webp?alt=media&token=26fc8f97-07b6-488f-a54e-2e0234b4f8a8)
 
 
 ### Release and Home Sequences
@@ -864,3 +864,39 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 -   Using keypad - press [GROUP] [#] [Settings] - the Group Settings pop-up will open. Range text labelling may be done via this method.
     
 -   Using SKs - Tap the source {GROUP} SK and then press [Settings] key
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjEQyWFlLHb9TfvsEVXxh%2Fimage.png?alt=media&token=73b411d1-45a5-4d83-bf88-b0687256910f)
+
+Group Settings Pop-up
+
+>A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad. Press [STORE] then tap destination {Group} SK or Press [Group] [#] [STORE] to create the new Group. The new Group will not be linked to the original Groups
+
+**Groups may be used to release fixtures:**
+
+-   With keypad - [GROUP] [#] [RELEASE] (Currently only works if ENTER is pressed after group selection)
+    
+-   With SKs, {Group #}, [Release]
+    
+
+**Release a fixture from a Group Method 1:**
+
+-   With softkeys: Fixture # [+ ➡️ -], [STORE], tap {Group SK}, Group Efietel pop-up appears, select {Release}
+    
+-   With keypad: Fixture # [+ ➡️ -], press [GROUP], #, [STORE], Group Efietel pop-up, appears, select {Release}
+    
+
+**Release a fixture from a Group Method 2:**
+
+-   [GROUP [#] [EDIT] - [UPDATE] key flashes red ([EDIT] tap {GROUP SK} is also valid)
+    
+-   [FIXTURE] [#] [RELEASE]
+    
+-   Press [UPDATE] to complete the sequence
+    
+
+**To Delete a Group:**
+
+-   [GROUP] # [DELETE]
+    
+-   Tap {GROUP} [#] [DELETE]

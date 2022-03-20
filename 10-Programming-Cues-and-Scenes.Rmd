@@ -82,7 +82,9 @@
 ## Tracking Principals
 
 
-Vibe uses the Tracking/Move Fade philosophy common in most current lighting consoles. In tracking consoles, "Hard Values" (parameter values with stored information) track forward from cue to cue until new hard values are encountered. **If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:**
+
+Vibe uses the Tracking/Move Fade philosophy common in most current lighting consoles. In tracking consoles, "Hard Values" (parameter values with stored information) track forward from cue to cue until new hard values are encountered. 
+**If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:**
 
 -   "Hard Value" Cells
     
@@ -94,11 +96,41 @@ Vibe uses the Tracking/Move Fade philosophy common in most current lighting cons
 -   Each parameter cell can have its own individual time which overrides overall cue time. This allows, for example, Pan/Tilt to have a separate transition time or Color Wheels to snap to their values instead of using overall cue time.
     
 -   As Vibe's default behaviour for parameters it LTP (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.
-    
 
 >Some traditional theatre consoles call "Hard Values" "Move Instructions" and cells that are in transition, "Move Fades".
 
 -   Another advantage of tracking is that if you have values that are tracking through a number of cues, all you have to do is change the original hard values and that information will change down to the next hard value. You do not have to copy the change to each cue.
+    
+
+**An issue with tracking is that making a modification to values in one of the cues in the tracked range will change the values in all the cues following it. To solve this problem, Vibe offers two options:**
+
+1.
+    **Qonly**
+    
+
+-   **{Qonly}** - Used in any case where **cue modification, cue insertion, or cue deletion** must affect **"This Cue Only"**.
+    
+-   The look of the cue following any of the above operations will maintain the appearance it had before the operation. This is done by automatically copying the hard values that made up the original look (stage state) and pasting them into the cue following the modification. The downside is that there is no longer a tracking link from the original hard values even though the values match the original values.
+    
+
+2. **Skip Track**
+
+-   **{Skip}** - Stores modified values as a special kind of cell that acts like a normal **Tracking Cell** until the **Skip Cell** is reached. The **Skip Cell** then behaves as if it has hard values and outputs its value to the stage. When the Qlist is advanced past a cue with the **Skip Cells**, they again behave as tracking cells, thus restoring the link to the original hard values.
+    
+-   Storing a Cue modification using **Skip**, has the same apparent result as storing **Qonly**. The main difference is that with **Qonly**, the link to the original hard values is lost, and with **Skip**, the link is preserved.
+    
+-   To make it easier for users to identify cues with **Skip** Cells, the parameter value with the **Skip** will be displayed in Magenta.
+    
+
+**Tracking examples:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUNCsyi8JpsI7oeqZi6ZK%2F10.2.0.webp?alt=media&token=d2092292-5f80-49d7-bcf0-59e42d4535e6)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZvSTEeRxeentEcii0LHv%2F10.2.webp?alt=media&token=42722a5a-048d-4b79-a9fd-5e6813fdd5b6)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMizBgP9oiqcr83efFqfN%2F10.2.1.webp?alt=media&token=2f61ddfa-a902-4a3b-9078-a5edcee9e13c)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0kaT0pjfbcv2rVuFoaPu%2F10.2.2.webp?alt=media&token=24b18404-77dc-4b25-93c4-ad2b4c3d0a59)
 
 
 
@@ -135,6 +167,12 @@ Vibe uses the Tracking/Move Fade philosophy common in most current lighting cons
 -   Alternately a Scene # may be specified in advance. [STORE] [SCENE] [3] [HERE] (press **any** of the buttons of the destination controller).
 
 
+**To convert a Scene to a Qlist:**
+
+1. Press [STORE] [HERE] to an existing Scene.
+    
+2. The Store to Controller pop-up will appear. Tap {Create a new Qlist} the Scene will be assigned the first available Qlist with the Scene's look being converted to Cue 1.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqjIYoECGpKkw2eosYT1W%2F10.3.webp?alt=media&token=92e2fb56-797e-4596-869b-0e1c042b9e01)
 
 ## Master Controller
 
@@ -154,7 +192,7 @@ In Vibe, at least one controller must be assigned as the [SELECT] controller. Th
 
 ​
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTlMMBQ6ckDOoQV0l2c7K%2Fimage.png?alt=media&token=351cd79c-9da0-4ff1-afc9-f6c042b524dd)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBHxc5Q4Nsp0bSvXoqXgY%2F10.4.webp?alt=media&token=58f1929e-1d7d-4e60-b83f-94cc9678a3cc)
 
 **Associated with but not limited to the controller assigned as the [SELECT] Controller are the following 3 buttons:**
 
@@ -164,7 +202,9 @@ In Vibe, at least one controller must be assigned as the [SELECT] controller. Th
     
 3.  [Free] - Unloads the controller.
 
+>[Load] [Release] and [Free] do not work with the big Master Controller buttons, only with any button on the controller that is associated with it as the [SELECT] controller.
 
+By default cues that do not have a Qlist or Controller specified in their destination will be stored to the controller selected as the Master Controller.
 
 ## Storing Cues to the Master Controller
 
@@ -189,7 +229,7 @@ In Vibe, at least one controller must be assigned as the [SELECT] controller. Th
     
 4.   Pressing [STORE] [STORE] or [STORE] [ENTER] will store editor values to the next whole number cue at the end of a Qlist. (Next spacing can be customized in system settings).
 
-
+>Vibe uses the "Clear Editor After Store" behaviour common in most theatre consoles. The Controller will by default advance to the stored cue and clear the Editor. This behaviour may be disabled in System Settings.
 
 ## Storing Qlist Cues to any Controller
 
@@ -233,7 +273,7 @@ In the process of storing a cue, a number of filters and settings are available.
 2.  Press [STORE] [OPTIONS] Cue Options pop-up opens. Make selections and press [HERE] to any button on the destination controller.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvIDhfop5xKp45UnE7h0H%2Fimage.png?alt=media&token=d86025b2-3731-4866-b59b-a64bff37474d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7XZturjhs8q9d2Fm3TGW%2F10.7.webp?alt=media&token=29f529bc-8560-42b7-a2ae-ae0268021904)
 **<p align=center> Cue Store Options Pop-up </p>**
 
 
@@ -249,7 +289,7 @@ In the process of storing a cue, a number of filters and settings are available.
 -   Method 3 - Press the Qlist header above a loaded Controller, The Qlist Properties pop-up opens - Enter Qlist Text in the white box.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6Lij3cAOLXSFtGIfX8Hu%2Fimage.png?alt=media&token=5fec3337-a839-4df0-b04e-a72298995cd6)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fvo4dkHjXveLtlV0VPv1J%2F10.8.webp?alt=media&token=5d8568d3-e662-4d1f-a6cd-1ec63c6be530)
 
 To assign a Text Label to a Cue:
 
@@ -285,6 +325,95 @@ To assign a Text Label to a Cue:
 6. Set **Source Filters** as required.
 
 7. Press [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and complete the Update.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWRLE1BnIrudwRn2IJP4Q%2F10.9.webp?alt=media&token=03b6843d-4dae-45a1-b5e5-d505b514868b)
+
+**UPDATE Source Filters:**
+
+{Master Controller} - Updates will only be made to the active cue on the controller assigned to the Master Controller.
+
+{Last Activated Controller} - Updates will be made to the last controller that asserter priority.
+
+{Grab All} - All Active Controllers will be shown in a list and the user must select the destination of the updates.
+
+**UPDATE Tracking Options:**
+
+-   {Default (Track)} - Changes will track forward to the next cue if it does not have a hard value.
+    
+-   {Cue Only} - Changes will be made to "This Cue Only" preserving the look of the next cue (Hard values will be added to next cue).
+    
+-   {Skip Cue} - Changes will be made to the current cue but the changes will be "skipped over" preserving the link to the original hard values.
+    
+-   {Back Track} - Updates the changes to the **original** hard value that made the stage look.
+    
+
+**Update directly to a Controller:**
+
+1.   Make a change to parameter value outputting to the stage.
+    
+2.  Press [UPDATE] - The Update pop-up will open.
+    
+3.  Make option changes if needed.
+    
+4.  Press [HERE] to any button on a destination Controller - the Editor values will be updated into the active cue on the destination Controller.
+    
+
+**Update values to a cue or range of cues using keypad syntax:**
+
+1.  Make a change to parameter value outputting to the stage.
+    
+2.  Type [Qlist] [#] (if destination cue/cues are not on the Master Controller) [CUE] [+ ➡️ -] [CUE] [#] [UPDATE] - Modifications will now be updated to the destination cue selection.
+    
+
+Cues may alternately be modified using the universal syntax below:
+
+**Modify cues using EDIT:**
+
+1. [QLIST] [#] [CUE] [#] [EDIT] - Cue values will be placed in the Editor and the [UPDATE] key will flash red.
+    
+2.  Modify the parameters in the Editor as required.
+    
+3. Press [UPDATE] to complete the edit and restore control to the source controller.
+    
+
+This method may be used in [BLIND] and unlike live, fixtures may be released from the source cue. Effects may also be edited
+
+**Modifying cues using {Overwrite}, {Update}, or {Release} keys - (Traditional method common to most consoles)**
+
+1.  Make a change to parameter value outputting to the stage.
+    
+2.  Press [QLIST] (in not not on the Master Controller) [CUE] [#] [STORE].
+    
+3.  If the cue exits, the Cue Exists pop-up will appear with options for {Cancel, Update, Overwrite, Release}. 
+◾ Tap {Overwrite} to replace all fixtures with those in the Editor. 
+◾ Tap {Update} to merge the Editor into the selected cue. 
+◾ Tap {Release} to remove the selected fixtures from the cue.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLorXIBo6svKGJIHyVcxC%2F10.9.1.webp?alt=media&token=b9c11b6e-cbf7-401f-b5df-66dee8df863b)
+
+**Cue Exists pop-up**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfuG9DGIRoxtNWzrca99h%2F10.9.2.webp?alt=media&token=3d8c1790-cce0-4db6-826c-0eee6ad81c06)
+
+Cue Settings pop-up
+
+**Cue Settings for Text Label, Cue Time, Cue Linking and Looping, Cue Re-numbering and Cue Tracking options may be changed at any time after they are created using the Cue Settings pop-up:**
+
+-   Press [CUE] [#] [SETTINGS] - The Cue Settings pop-up will appear.
+    
+-   Alternately tapping the {Cue # } area of the source Controllers' display, will open the Cue Settings pop-Up.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMZek3Y7UHMkWYzfH3xor%2F10.9.3.webp?alt=media&token=902bcd31-04a0-48f1-ab2e-c7f69a29151f)
+
+**Controller Display** (Sliders, A/B, Master Controller (MPB), System Settings)
+
+**To Delete a Cue:**
+
+-   [Qlist] [#] (Optional if [SELECT] controller) [CUE [#] [DELETE]
+
 
 
 
