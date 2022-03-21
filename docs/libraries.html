@@ -384,6 +384,9 @@
 ◾ Filters – Pool of user defined flters
 ◾ Macro</li>
 </ul>
+<blockquote>
+<p>Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.</p>
+</blockquote>
 </div>
 <div id="store-and-modify-bank-libraries" class="section level2" number="12.2">
 <h2><span class="header-section-number">12.2</span> Store and Modify Bank Libraries</h2>
@@ -391,7 +394,6 @@
 <blockquote>
 <p>Compulite Libraries are similar to Presets or Palettes on other consoles.</p>
 </blockquote>
-<p><strong>​</strong></p>
 <p><strong>Automatic Parameter Grouping:</strong></p>
 <ul>
 <li><p>Vibe uses tee concept of “Auto Parameter Grouping” parameters when storing libraries. All parameters in Position, Color, and Shaper parameter banks will always be recorded into a library to guarantee that what was viewed on the stage is the same as what is recorded in the library.</p></li>
@@ -406,6 +408,73 @@
 <li><p><strong>Device</strong> and Parameter – Values will be applied to fixtures of the same device type and the same parameter type.</p></li>
 <li><p><strong>Device and pattern</strong> – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.</p></li>
 </ol>
+<p><strong>Store a Library using keypad syntax:</strong>
+1. Press [Fixture] [#] [+ à -] - Select parameter {Bank } on Smart Screen.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.</p></li>
+<li><p>Press [LIBRARY] - Library {Store Options} pop-up will open at the bottom of the Smart Screen and {Banks} will appear on the Editor Toolbar.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVCqjLaER2OAgqUxrCI4t%2Fimage.png?alt=media&amp;token=e6e20dba-cd8a-41bd-9f43-6d8851f60b8e" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Tap a parameter {Bank} key on the Editor Toolbar.</li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FkhULoWzjDhUgDQ6bl9Oa%2Fimage.png?alt=media&amp;token=d99a3186-7685-4a5d-ad56-6893dfc3953b" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Enter the destination library number via the keypad.</p></li>
+<li><p>Make {Library Store Options} changes as required.</p></li>
+<li><p>Press [STORE] to complete the sequence.</p></li>
+</ol>
+<p><strong>A shortcut for Bank selection is to specify a number directly after pressing [LIBRARY] key:</strong> 1 = Intensity bank 2 = Position bank 3 = Color bank 4 = Beam bank 5 = Image 6 = Shape 7 = Custom 8 = Effect</p>
+<p>After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.</p>
+<p><strong>Modify a Library using [UPDATE]:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
+<li><p>Press the [UPDATE] - The Update pop-up will open. Two columns will appear. The left column shows <strong>Cues</strong> available for updating and the right column shows Libraries available for updating. The source library or <strong>libraries</strong> should be selected.</p></li>
+<li><p>Selected libraries may be freely deselected in the Update pop-up. If all Libraries are deselected, updates will become “hard” values in the source cue instead of the source libraries being updated.</p></li>
+<li><p>Press <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up and complete the update.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FswW9jeskVr3TEdTRVbDT%2Fimage.png?alt=media&amp;token=5fb52b3a-4a43-4e9f-80f9-eb56ad0ed9f5" /></p>
+<p><strong>Update pop-up</strong></p>
+<p><strong>Overwrite, Update, or Release fixtures in Libraries via Softkey syntax:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
+<li><p>Press [STORE] and tap source {Library SK}.</p></li>
+<li><p>The {Cancel, Update, Overwrite, Release} pop-up will appear on the large screen.</p></li>
+<li><p>Tap {Overwrite} to replace all fixtures with those in the Editor, {Update} to merge the editor into the library, or {Release} to remove the selected fixtures from the Library.</p></li>
+</ol>
+<blockquote>
+<p>Releasing fixtures is only valid if the library is <strong>Fixture Specific</strong> or <strong>Device + Fixture</strong> in the case where specific fixtures have modified recorded values.</p>
+</blockquote>
+<blockquote>
+<p>Alternately the sequence [LIBRARY] {Bank} from the Editor Toolbar [#] [STORE] to an existing library will work the same as above.</p>
+</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&amp;token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425" />
+<strong>Object Exists pop-up</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F715KxeIgoRObcRqRjQAh%2Fimage.png?alt=media&amp;token=e82df1d4-a779-41ab-9e01-b7d1f99f76c0" />
+<strong>Library Settings pop-up</strong></p>
+<p>Library Settings may be changed at any time after they are created using the Library Settings pop-up.</p>
+<p><strong>There are two ways to do this:</strong></p>
+<ul>
+<li><p>Tap the Library {SK} you wish to modify and press [SETTINGS]. (This is invalid with Snaps and Macros as it will trigger them) Or</p></li>
+<li><p>Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open. ◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. ◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.</p></li>
+</ul>
+<p><strong>Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:</strong></p>
+<ul>
+<li><p>For Library Softkeys, Tap a Library {SK} - Start typing on the pull-out keyboard. The Text Entry pop-up will appear.</p></li>
+<li><p>Tap a Library {SK} press [TEXT] - The Text Entry pop-up will appear.</p></li>
+<li><p>Press [TEXT] tap a Library {SK} - The Text Entry pop-up will appear.</p></li>
+<li><p>Press [Library] tap {Bank} on the Editor Toolbar Press [#] [TEXT] - The Library Text pop-up will open.</p></li>
+<li><p>Directly after storing a Library, press [TEXT] - Library text pop-up will open.</p></li>
+</ul>
+<p><strong>Delete a library:</strong></p>
+<ul>
+<li><p>Method 1: Tap the Libraries’ {SK} then press [DELETE]</p></li>
+<li><p>Method 2: Keypad sequence for Bank Libraries: [LIBRARY] tap {Bank} on the Editor Toolbar [#] [DELETE]</p></li>
+<li><p>Method 3: Keypad sequence for deleting Object Libraries: [Object] [#] [DELETE]</p></li>
+</ul>
+<blockquote>
+<p>For most Delete functions, pressing [DELETE] [DELETE] will do the same as pressing [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to complete the operation.</p>
+</blockquote>
 </div>
 <div id="object-libraries" class="section level2" number="12.3">
 <h2><span class="header-section-number">12.3</span> Object Libraries</h2>

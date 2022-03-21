@@ -42,7 +42,95 @@ All Effect Events are built from the following components:
     
 -   Patterns
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzJCypqadK2zTJZAzlsv8%2Fimage.png?alt=media&token=849d516c-0877-4ec0-ba28-c12870397dbb)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHDImbNucaxJ6HcluGgXp%2F13.1.webp?alt=media&token=ca946819-0a7e-43c6-8595-b2825a0341b3)
+
+
+
+**Functions**:
+
+-   Are the basic building blocks of effects. They may be assigned to Primitives and Patterns.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuLl9MfvoPRQuRNhnVBzR%2F13.1.1.webp?alt=media&token=fa8592b2-d3da-4b0b-897d-69dfb2692758)
+
+**Vibe uses functions as the raw building blocks for three features of the console:**
+
+1.  Primitives - Main element of Effects
+    
+2.  Profiles - Used for cue transitions
+    
+3.  Curves - Used for dimmer behavior
+    
+
+>Vibe ships with a number of "read only" Functions. They may not be edited. Users may create their own functions in the Advanced Effect's **Function Editor**.
+
+**Primitives:**
+
+-   When Functions are linked to parameters on an Effect Track, the are called **Primitives**.
+    
+-   Primitives modulate parameter values based on their assigned **Functions**.
+    
+-   Primitives may be modified by a number of **Primitive settings**.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0d8NHIL2kTwNt1MCce9W%2F13.1.2.webp?alt=media&token=df1c4ad9-09ab-4bb2-a4bc-4924e5ae73a4)
+
+**Primitive Settings:**
+
+-   Time - The duration of time it takes each fixture to complete one cycle across the Primitive.
+    
+-   Size - The amplitude of the Primitive's function.
+    
+-   Base - The Y axis of start of the Primitive's function when each fixture crosses it.
+    
+-   In Base - Adjusts the direction from the parameters start point (Base) it is linked to the Swing {Up} [Center} {Down} keys.
+    
+
+>E.g. If the Base value of tilt is 50% (0°) and the **In Base** is **Center (-50%)**, tilt would split center with a sine wave primitive assigned to it. **Up (0%)** would send the tilt from strait down to full out into the audience. **Down (-100%)** would send the tilt from strait down to full up upstage.
+
+**Pattern:**
+
+-   Sets the behavior of fixture selection as it transitions across the Primitive.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYB0AfSeWWlGnAtGWCpeW%2F31.1.3.webp?alt=media&token=239b8720-7985-409a-b7ce-57e4c3830a61)
+
+**Pattern Settings:**
+
+-   Spread (Offset) - Sets the percentage of offset between each fixture in a selection. 100% would evenly divide up the selection's transition across the Primitive. A Spread of 0% would have all fixtures transitioning across the Primitive in unison.
+    
+-   UP - Based on the UP group #, Each UP grouping will complete a full cycle across the primitive before the next UP group can start.
+
+>e.g. A selection of 8 fixtures assigned to a primitive with a sine wave function and a spread of 100%, UP is set to 1, Fixture 1 will have to complete its full cycle across the Primitive before fixture 2 will begin. If the UP # is set to 2 fixture 1 and 2 will have split the cycle before the next two fixtures start.
+
+**Effects:**
+
+-   The combination of Parameters, Primitives, and Patterns.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0td9DJ6xeq6UtHgkGwZG%2F13.1.4.webp?alt=media&token=c31de2b9-8aba-4afc-a7c2-092b7b541912)
+
+**Effects Settings:**
+
+-   Settings that affect both Primitives and Patterns (Effect Event) are called Effect settings.
+    
+-   Effect setting are integrated into the Smart Screen Editor and are available by tapping the empty space beside the Effect Event in the Advanced Editor.
+    
+-   Offset All - Moves the start time of the Effect Event along the X axis of the Effect Track.
+    
+-   Params Spread - Is a toggle button that enables the proportional offsetting of the start times of multiple Effect Tracks at the same time.
+    
+
+>{Params Spread} is a quick way to make CMY or RGB effects where colors need to spread apart so as not to mix to black or white.
+
+**Effects Libraries:**
+
+-   Once effects have been created then may be directly stored in cues and scenes or saved in Effects Libraries for future use.
+    
+-   Effect Libraries are stored similar to normal Libraries Store and Modify Bank Libraries.
+    
+-   Effects libraries have one additional option to allow users to include the base values. This is useful when effects must start from an absolute value.
+
 
 
 ## Smart Screen Effects Editor
@@ -59,7 +147,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 -   **Grouping** - Used for setting fixture **Blocks Of** (Fixture Grouping in Vector) **and Sub Blocks Of** (Blocks on some console).
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJeOOrM0lGv2SWmcQqMOw%2Fimage.png?alt=media&token=4e5f7645-13fe-4400-bc9f-c2378dfe771a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIgg80rwQtyD8LqADi6WE%2F13.2.webp?alt=media&token=515e980f-453b-47db-80ca-1806b3d61f5d)
 
 **<p align=center> Smart Screen Attribute page</p>**
 
@@ -101,6 +189,33 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 >Similar results to inverting the pattern functions may be achieved by reversing the selection direction with the {⬅️ Negative}, {Positive ➡️} keys
 
 
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMLJPn65GrCpdENgeBuI3%2F13.2.1.webp?alt=media&token=ac88df5b-06e7-4313-9407-bc348c14f3c3)
+**Smart Screen**
+
+**Grouping:**
+
+For Grouping to be noticeable there must be an Pattern Offset Spread above 0%.
+
+1. Tap the {Grouping} key - The Grouping page will open.
+    
+2.  If the Offset Pattern Spread is not above 0%, tap the {Wave On} key. The Spread will be changes to 100%.
+    
+3.  Set the {Blocks Of} [#] - This interleaves the Pattern into Groupings. 
+    ◾ The Default for Blocks and Sub Block is 1/0 - No Groupings. 
+    ◾ When {Blocks Of} is set to 1 or above, the Sub Blocks will move to 1 and Interleave Groups will be possible. 
+    ◾ e.g. 2/1 would interleave a selection into Odds/Evens. 
+    ◾ e.g. 3/1 would interleave a selection of 12 fixtures into [1+4+7+10] - [2+5+8+11] - [3+6+9+12]
+    
+4.  Set the {Sub Blocks Of} - Combines fixture in a selection, to act like single fixtures. ◾ e.g. 12/2 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]
+    
+
+>As a shortcut, Setting {Sub Block Of} back to 0 allows {Blocks Of} to combine fixtures instead of interleaving - 2/0 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]
+
+>The Advanced Effects Editor may be opened at any time by pressing [Vibe] [Effects]. All Effects running in the Smart Screen Effects Editor will be synchronized with the Advanced Editor
+
+**After programming an Effect, Close the editor using the** ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiqDovif3XQdSLCRmPgLg%2Fimage.png?alt=media&token=5fda6a67-cd96-4687-aa9e-78c3ae594e41) **in the upper right corner.**
+
+
 
 ## Advanced Effects Editor
 
@@ -111,9 +226,8 @@ Both Effect Editors write to the same Effect Engine. Either or both may be used 
 -   It is possible to make simultaneous changes to Primitive, Pattern, and Effect settings by toggling them on/off.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh4D4iNfE9oZE7jHw7N9y%2Fimage.png?alt=media&token=8e41c166-0b91-452b-8e09-53d83eab995d)
-
-Advanced Effect Editor
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoWHeezMvX1aI2sNpksZw%2F13.3.webp?alt=media&token=75cb2b00-1aca-49e9-b84b-e8e021ae43d7)
+**Advanced Effect Editor**
 
 **The Advanced Effects Editor differs from the Smart Screen Effects Editor in the following ways:**
 
@@ -122,6 +236,159 @@ Advanced Effect Editor
 -   Effect Tracks are shown.
     
 -   Multiple Parameters may be assigned to the same Effect Track.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPyWoaSOHwBfutS6kimsm%2F13.3.0.webp?alt=media&token=10b42e8e-33f7-4e9f-952a-84e2b74c6071)
+
+-   Multiple Effects Events may be assigned to the same Effect Track.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuS5BTuPNoqsPu8GQbj2i%2F13.3.0.1.webp?alt=media&token=bcdb84a8-c9a5-4e62-9ec3-7139eb79ac48)
+
+-   Effect sharing the same Effect Track can uses separate patterns or share patterns.
+    
+-   Pattern Size, Rate, and Base may be spread to create randomized looking effects.
+    
+-   Repeat - The number of times each Effect Event repeats before moving on the the next Effects Event, when they are sharing an Effects Track.
+    
+
+Building Effects in the Advanced Editor differs from the Smart Screen Editor in that a only a fixture selection is needed before entering the editor. Parameters are selected using the {Filters} and {Choose Parameter} . This takes a bit longer but is more flexible.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5ShDQJRdKbXuqv2ZINAc%2F13.3.0.2.webp?alt=media&token=108c475e-6e16-44a3-a6da-e9d4808706f7)
+
+**Build a basic Effect in the Advanced Effects Editor:**
+
+1.  Select the fixtures to be used in the Effect.
+    
+2.  Press [VIBE]+[EFFECT] to open the Advanced Effect Editor.
+    
+3.  Tap a parameter bank in the FIiters area.
+    
+4.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple.
+    
+5.  Tap a blank space in the Parameter Column of an unassigned Effect Track
+    
+
+-   the parameter will be assigned and the Attributes Column.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FX6HquT8ZjyknVOW4hFaV%2F13.3.1.webp?alt=media&token=41203d4f-ce06-4c05-9a58-f9c18ff91f44)
+
+6. Tap a Function from the Favorites tab or All Functions tab - The Function background will turn purple.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FCtz0h7EygEwdVYVqGu8y%2F13.3.1.2.webp?alt=media&token=8d0ba766-063c-4191-b479-4b9f3a720e58)
+
+7. Tap a blank space in the Effect Event Column - an Effect Event will be created with a Primitive and Pattern .
+
+8. Adjust Pattern and Primitive settings - See 13.1. Effects Basics
+
+9. Close the Advanced editor using the ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiqDovif3XQdSLCRmPgLg%2Fimage.png?alt=media&token=5fda6a67-cd96-4687-aa9e-78c3ae594e41) in the upper right corner.
+
+10 Store final Effect directly to a cue/scene or to the Effects Library.
+
+**Grouping:** See 13.2.1. Building Effects Using the Small Screen Editor **Blocks by Groups:** - Groups may be substituted for individual fixtures using this option.
+
+1.  Select Groups in the order you wish the effect to use.
+    
+2.  Build an effect as listed above.
+    
+3.  Tap in the blank space beside the Effect Event, the blank space will highlight in blue and the **Effect Settings** will appear.
+    
+4.  Toggle {Blocks By Groups on} - Make sure {Sub Blocks Of} is set to 0 or the groups will act as interleave instead of blocks.
+    
+
+**Combining Parameters:**
+
+1.  Tap a parameter bank in the FIiters area.
+    
+2.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple.
+    
+3.  Tap a space in the Parameter Column already containing a parameter - the parameter will be merged into the parameter. column - All Primitives and Patterns will affect both parameters.
+    
+
+**Stacking Effects Events:**
+
+1.  Tap a Function from the Favorites tab or All Functions tab - The Function background will turn purple.
+    
+2.  Tap the space to the right of an existing Effect Even - A new Effect Event will be stacked beside the existing one.
+    
+-   Each Stacked Effect Event can have its own Primitive and Pattern.
+- **Combining Effects Events:**
+
+1.  Drag and drop the primitive of an Effect Event over an adjacent primitive
+    
+
+-   the primitives will now be combined but will **share** the pattern settings.
+    
+
+**Duplicate an Effects Event:**
+
+1.  Tap either the pattern or primitive are of an Effect Event - The background of the pattern or primitive will turn red and the Effects Toolbar will open under the Effects Tracks.
+    
+2.  Tap {+ Duplicate} - A duplicate of the Effect Event will be added to the right of the source Effect Event.
+    
+
+**Copy an Effect Track:** Copies Effect Event settings to a new parameter (synchronize).
+
+1.  Tap a parameter bank in the **FIiters** area.
+    
+2.  Tap a parameter in the **Choose Parameter** area - the parameter background will turn purple.
+    
+3.  Tap a blank space in the Parameter Column below an assigned Effect Track - the parameter will be assigned.
+    
+4.  Press the empty area to the right of the source Effect Event - The blank area will turn light blue and the Effects Toolbar will open under the Effects Tracks.
+    
+5.  Tap {Copy} - The source Effect Event's settings will be copied.
+    
+6.  Tap in the blank area to the right of the new parameter - The area will turn blue and the Effects Toolbar will open under the Effects Tracks.
+    
+7.  Tap {Paste} - The source Effect Event settings will be pasted to the new parameter.
+    **Delete an Effect Event:**
+
+1.  Tap either the pattern or primitive of the event to be deleted - the background will turn red.
+    
+2.  Tap {Delete} on the Effects Toolbar below the Effect Tracks.
+    
+
+**Release a parameter from an effect:** Effect Parameters may be released using Edit Cue or Update pop-up.
+
+-   **Using Edit Cue:**
+    
+>Cue must be active on a controller or it will be loaded to the Master Controller and bump its current Qlist out.
+
+1. [QLIST] [#] [CUE] [#] [EDIT] - Cue values will be placed in the Editor and the [UPDATE] key will flash red.
+    
+2.  Press [VIBE]+[EFFECT] - The Advanced Effect Editor will open.
+    
+3. Select the fixtures requiring parameters to be released.
+    
+4. Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6. Press [UPDATE] to complete the edit and restore control to the source controller.
+    
+
+-   **Using Update pop-up:** Cue being edited must be active on a controller.
+    
+
+1. Select the fixtures requiring parameters to be released.
+    
+2.   Press the the parameter's push wheel, or tap the wheel display above the wheel, to select the parameter.
+    
+3. Press [VIBE]+[EFFECT] - opens Advanced Editor.
+    
+4.  Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - Stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6.  Press [UPDATE] - The Update pop-up will open.
+    
+7.  Make sure the proper cue is selected in the Cue column.
+    
+8.  Tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] - Completes the update operation.
+
+
 
 
 ### Building Effects Using the Advanced Effects Editor
@@ -145,11 +412,125 @@ Advanced Effect Editor
 -   the parameter will be assigned and the Attributes Column.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQDYd66yIXJkmqtsGOa6Z%2Fimage.png?alt=media&token=0d97202d-4d62-48ac-82df-997dcd97247a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FX6HquT8ZjyknVOW4hFaV%2F13.3.1.webp?alt=media&token=41203d4f-ce06-4c05-9a58-f9c18ff91f44)
 
 6. Tap a Function from the Favorites tab or All Functions tab - The Function background will turn purple.
 
 <p align="center">
-  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FywgEN6NflW0gAVp1Xf8t%2Fimage.png?alt=media&token=d7704a4a-dd61-4526-9580-8d2859e8178b">
+  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FCtz0h7EygEwdVYVqGu8y%2F13.3.1.2.webp?alt=media&token=8d0ba766-063c-4191-b479-4b9f3a720e58">
 </p>
 
+
+7. Tap a blank space in the Effect Event Column - an Effect Event will be created with a Primitive and Pattern .
+
+8. Adjust Pattern and Primitive settings - See 13.1. Effects Basics
+
+9. Close the Advanced editor using the ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiqDovif3XQdSLCRmPgLg%2Fimage.png?alt=media&token=5fda6a67-cd96-4687-aa9e-78c3ae594e41) in the upper right corner.
+
+10 Store final Effect directly to a cue/scene or to the Effects Library.
+
+**Grouping:** See 13.2.1. Building Effects Using the Small Screen Editor **Blocks by Groups:** - Groups may be substituted for individual fixtures using this option.
+
+1.  Select Groups in the order you wish the effect to use.
+    
+2.  Build an effect as listed above.
+    
+3.  Tap in the blank space beside the Effect Event, the blank space will highlight in blue and the **Effect Settings** will appear.
+    
+4.  Toggle {Blocks By Groups on} - Make sure {Sub Blocks Of} is set to 0 or the groups will act as interleave instead of blocks.
+    
+
+**Combining Parameters:**
+
+1.  Tap a parameter bank in the FIiters area.
+    
+2.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple.
+    
+3.  Tap a space in the Parameter Column already containing a parameter - the parameter will be merged into the parameter. column - All Primitives and Patterns will affect both parameters.
+    
+
+**Stacking Effects Events:**
+
+1.  Tap a Function from the Favorites tab or All Functions tab - The Function background will turn purple.
+    
+2.  Tap the space to the right of an existing Effect Even - A new Effect Event will be stacked beside the existing one.
+   -   Each Stacked Effect Event can have its own Primitive and Pattern.
+    
+
+**Combining Effects Events:**
+
+1.  Drag and drop the primitive of an Effect Event over an adjacent primitive
+    
+
+-   the primitives will now be combined but will **share** the pattern settings.
+    
+
+**Duplicate an Effects Event:**
+
+1.  Tap either the pattern or primitive are of an Effect Event - The background of the pattern or primitive will turn red and the Effects Toolbar will open under the Effects Tracks.
+    
+2.  Tap {+ Duplicate} - A duplicate of the Effect Event will be added to the right of the source Effect Event.
+    
+
+**Copy an Effect Track:** Copies Effect Event settings to a new parameter (synchronize).
+
+1.  Tap a parameter bank in the **FIiters** area.
+    
+2.  Tap a parameter in the **Choose Parameter** area - the parameter background will turn purple.
+    
+3.  Tap a blank space in the Parameter Column below an assigned Effect Track - the parameter will be assigned.
+    
+4.  Press the empty area to the right of the source Effect Event - The blank area will turn light blue and the Effects Toolbar will open under the Effects Tracks.
+    
+5.  Tap {Copy} - The source Effect Event's settings will be copied.
+    
+6.  Tap in the blank area to the right of the new parameter - The area will turn blue and the Effects Toolbar will open under the Effects Tracks.
+    
+7.  Tap {Paste} - The source Effect Event settings will be pasted to the new parameter.
+    
+
+**Delete an Effect Event:**
+
+1.  Tap either the pattern or primitive of the event to be deleted - the background will turn red.
+    
+2.  Tap {Delete} on the Effects Toolbar below the Effect Tracks.
+    
+
+**Release a parameter from an effect:** Effect Parameters may be released using Edit Cue or Update pop-up.
+
+-   **Using Edit Cue:**
+    
+
+>Cue must be active on a controller or it will be loaded to the Master Controller and bump its current Qlist out.
+
+1.  [QLIST] [#] [CUE] [#] [EDIT] - Cue values will be placed in the Editor and the [UPDATE] key will flash red.
+    
+2.  Press [VIBE]+[EFFECT] - The Advanced Effect Editor will open.
+    
+3.  Select the fixtures requiring parameters to be released.
+    
+4.  Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6.  Press [UPDATE] to complete the edit and restore control to the source controller.
+    
+
+-   **Using Update pop-up:** Cue being edited must be active on a controller.
+    
+
+1.  Select the fixtures requiring parameters to be released.
+    
+2.  Press the the parameter's push wheel, or tap the wheel display above the wheel, to select the parameter.
+    
+3.  Press [VIBE]+[EFFECT] - opens Advanced Editor.
+    
+4.  Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - Stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6.  Press [UPDATE] - The Update pop-up will open.
+    
+7.  Make sure the proper cue is selected in the Cue column.
+    
+8.  Tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>  or press [ENTER] - Completes the update operation.
