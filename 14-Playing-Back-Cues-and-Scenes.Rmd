@@ -48,6 +48,8 @@ OR
 2. Select the {Controller Settings} Tab.
 3. Rotate the virtual wheel to the desired Priority Group number or tap the center of the wheel until it turns red and type a Priority Group number from 0 - 999.
 
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FsqtPJBuklsoRMifhcbTf%2F14.1.webp?alt=media&token=a0a4963b-265b-4915-aadc-d350a26ef118)
+
 
 
 ## Controller Overview
@@ -81,6 +83,38 @@ OR
 
 >Vibe software makes no distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.
 
+**Controller quantities and numbering:** Physical and Virtual
+
+-   30 pages of 100 Motorized Sliders - Numbered 1.1 ➡️ 30.100
+    
+-   30 pages of 100 Qkeys - Numbered 1.101 ➡️ 30.200
+    
+-   30 pages of 100 Auxiliary Qkeys - Numbered 1.201 ➡️ 30.300
+    
+-   100 Non-motorized Global Sliders - Numbered 301 ➡️ 400
+    
+-   1 Non-motorized A/B dipless crossfader - Numbered 401
+    
+
+Controllers are numbered from right to left to facilitate continuous numbering with physical and virtual controller wings.
+
+**Compound Controllers:**
+
+-   **Controllers may be extended in width to make larger compound controllers.** This is useful in creating additional crossfader pairs or adding controls for rate and effects. There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F06WOI4jVCzRUG1Op7xtO%2F14.2.webp?alt=media&token=40d4b958-9e44-4fb1-8fac-080edda51ca2)
+
+**A/B Cross Faders:**
+
+-   An A/B Cross Fader Pair is provided for manual "Theater Style" playback of cues.
+    
+-   By default, the fader on the left will control dimmer parameters fading **in.**
+    
+-   By default, the fader on the right will control all other values including the dimmer that is fading **out.**
+    
+-   Parameter values that match will not dip even if the A and B are at different levels.
+
 
 
 
@@ -93,7 +127,7 @@ Master Controller:
 -   Any single Controller may be linked to the Master Controller by Pressing [SELECT] [HERE] to any of the buttons of the controller.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FK4qlOzDdfkC90Kz6UAM4%2Fimage.png?alt=media&token=90a2e768-21a3-48f2-80d3-22f5cf51812f)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnvgTSy6VcG0Vk2ScI1UI%2F14.3.webp?alt=media&token=1209fc8b-b080-408c-8f8f-3623e27e799b)
 
 -   [GO] - Initiates a forward transition from one cue to another using Cue Time.
     
@@ -102,8 +136,7 @@ Master Controller:
 -   [HOLD] - Pauses a cue in transition. Pressing [HOLD] again resumes the transition. Pressing [GO] will resume the transition as well. Pressing [BACK] will fade to the previous cue.
     
 
->The A/B is only linked to the Master Controller if the [SELECT] is assigned to A/B.
-
+><span style="color:Red">The A/B is only linked to the Master Controller if the [SELECT] is assigned to A/B.</span>.
 
 
 
@@ -128,7 +161,66 @@ GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO im
     
 
 **GOTO a cue on the Master Controller using Goto Cue pop-up:**
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKEOvtbbAVzM7TDiNKlj0%2Fimage.png?alt=media&token=c29809ec-8785-4168-82a1-e5eb8acdcbd9)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUx0DT82VAZ384ULKAWIf%2F14.4.webp?alt=media&token=fc1a8fba-8a68-4301-99f1-866ce553eeb7)
+
+
+1.  Press [GOTO] - Goto Cue pop-up will open.
+    
+2.   Select {Qlist} if not the current Qlist on the Master Controller.
+    
+3.  Select the {Cue}.
+    
+4.  Select behaviour.
+    
+
+-   {Default GOTO time} - Uses system default GOTO Time.
+    
+-   {Cue Time} - Uses Cue's recorded time.
+    
+-   {Custom} - Set GOTO time using the Custom Time wheel or tap centre of the wheel until it turns red and set time value from the keypad.
+    
+-   {Release Master PB on Top} - Releases the Master Controller.
+    
+
+1.  Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up and execute the GOTO.
+    
+
+><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.
+
+**GOTO a cue NOT on the Master Controller:**
+
+-   [QLIST] [#] [CUE] [#] [GO] (Controller must have a GO button assigned).
+    
+
+**GOTO Cue Zero -** Cue Zero is essential {Release Master PB to Top}.
+
+-   [CUE] [0] [GOTO] **It is also possible to go out of sequence directly to a Cue on the Master Controller (in cue time):**
+    
+-   [CUE] [#] [GO]
+    
+
+**Load Commands:** **Load a cue on the Master Controller** - Method 1.
+
+1.  [CUE] [#] [LOAD] [HERE] - To Controller assigned as [SELECT]
+    
+2.  Press [GO] - On Controller assigned as [SELECT]
+    
+
+**Load a cue on the Master Controller** - Method 2.
+
+1.  [CUE] [#] [LOAD] [LOAD]
+    
+2.  Press [GO] - Using Master Controller GO or GO of controller assigned as [SELECT]
+    
+
+**LOAD a cue NOT on the Master Controller:**
+
+1.   [QLIST] [#] [CUE] [#] [LOAD] [HERE] - Qlist and Cue will be preloaded.
+    
+2.  Press [GO] - Controller will execute loaded cue.
+    
+
+>If a Qlist other than the one that is currently on the Controller is specified, that Qlist will replace the current one with the specified cue pending.
 
 
 
@@ -138,7 +230,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 ​
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGkClKOOjBjN1V1m8tPOV%2Fimage.png?alt=media&token=87d77122-0695-4b24-ab08-94b5775f5542)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqeMUdw1GkILRy0kC1sLA%2F14.5.webp?alt=media&token=22aa0373-4ae2-4805-be51-8666f4d914b5)
 
 ​
 
@@ -147,9 +239,29 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 1.  Press [SETTINGS] [HERE] to any button of the controller that has an object assigned to it - The Slider Definitions pop-up will appear with the **{Controller Definitions}** tab selected.
     
 
-Alternatively**,** tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider
+>Alternatively, tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfwjOnUaEKSvR4aAKXgLa%2Fimage.png?alt=media&token=db920673-2c21-4ce0-a07d-9042832f1169)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F13csCDeGohc9JOrWEXwK%2F14.5.1.webp?alt=media&token=e354be44-6075-4683-b6ed-8d083af0f89b)
+
+
+><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.
+
+
+2. Tap one of the three assignable {Buttons} or the {Slider} button in the centre - A context sensitive drop down menu based on the object assigned and the specific button selected will appear.
+
+3. Choose a Control behaviour from the menu. Assignable Button
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fj6JDjNRFb7TWGRNNO9Y0%2F14.5.2.webp?alt=media&token=9639a28e-b8fe-40cc-a602-83092ac7d617)
+
+**Assignable Button Behavior:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFwTYO2QIsI5mcbflwK5f%2F14.5.3.webp?alt=media&token=618ef47e-5d30-429a-b872-dd6077df7b85)
+
+**Assignable Slider Behavior:**
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fm5ysy6BoE6l3FCWVHrYn%2F14.5.4.webp?alt=media&token=f6271bd6-0fe1-4576-ae64-f237d372b124)
+
+>Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See 7.5.1. Controller Settings
 
 
 
@@ -157,16 +269,16 @@ Alternatively**,** tap any of the controller {function labels} on the controller
 
 
 
-Controller Live Display color coding If [SELECT] Master Controller:
+**Controller Live Display color coding If [SELECT] Master Controller:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfbKuGmKwF3M2zCkMLz69%2Fimage.png?alt=media&token=ef2a4913-4a41-4ec1-ba7f-86b4fb9d9298)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYuCloo8lxuLBVkc73yQs%2F14.6.webp?alt=media&token=146cb343-7101-490b-a1b4-e1139a436896)
 
 **If from a non-[Select] Controller:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHjUbHWVkDxi8MkzTVhsc%2Fimage.png?alt=media&token=f2845b66-5885-4eb9-b0b2-7c86018378cf)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmWdkTDP2PrAbs3XAz1Ep%2F14.6.1.webp?alt=media&token=6e23d42c-cbff-4ce8-86e2-a7246be52d3f)
 
-Controller Display and Backlit Controller Key's color coding:
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FF0tOXHQj21FTgYwn5sOa%2Fimage.png?alt=media&token=0afe36bb-b8f4-4862-a1ea-6a5377ec095a)
+**Controller Display and Backlit Controller Key's color coding:**
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2xhFbKiKqTiXNa4FPjKN%2F14.6.2.webp?alt=media&token=b8942fb1-76cd-44e4-a1be-83b25e1f8bda)
 
 
 
@@ -175,11 +287,79 @@ Controller Display and Backlit Controller Key's color coding:
 
 
 **Controller types: Detailed**
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGb32rZZcd6yQCCZd48BJ%2Fimage.png?alt=media&token=f49c51d8-765f-4e44-a4e9-7728e9cf8e4a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPeyRlEeHQvF5HuUF6hYJ%2F14.7.webp?alt=media&token=fa28a2ea-7020-4b6b-9600-666da021144b)
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWLspVtza0wuNqbGlW1oc%2Fimage.png?alt=media&token=b2b4278b-54ee-4b71-870f-9f338eb7c91b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUS9LD2Ch0ruVmweAvB6p%2F14.7.1.webp?alt=media&token=2c8f4681-8eb8-47cc-bc60-48e1b0139624)
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpSh1bTf9SfpZP392B34R%2Fimage.png?alt=media&token=f814d61e-7c76-400b-ac9c-c21055354aeb)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fiul8UK0l8I5GRkUgjFt0%2F14.7.3.webp?alt=media&token=f8b2c063-b524-43ab-9202-a9f27287647c)
+
+
+
+Control Keys: Provide "On the Fly" access to button functions not directly assigned to controllers. Apply a Controller Key:
+
+1.   Press a {Control Key}
+    
+2. Press any destination [Controller Button] to apply the Control Key's function
+    
+
+>In most cases**,** a double press of the Control Keys locks them on until pressed again.
+
+**Control Key Functions:**
+
+-   **FLASH** - Momentarily turns on a Controller. 👉 Most useful when locked on with double press.
+    
+-   **SOLO** - Turns off intensity parameters on all controllers excluding the destination controller.
+    
+-   **GO/RELEASE** - First press initiates a GO, second press initiates a RELEASE. 👉 Most useful when locked on with double press.
+    
+-   **ON** - Instantly turns on a controller.
+    
+-   **OFF** - Instantly turns off a controller.
+    
+-   **Latch** - Currently unimplemented.
+    
+-   **GO** - Initiates a GO command.
+    
+-   **ASSERT** - Takes back control of parameters that have been "robbed" by other controllers.
+    
+-   **HOLD/BACK** - If a controller is running, pause the controller. If a controller is static, initiate a BACK command.
+    
+-   **<<< (Step Back)** - Steps backwards through a Qlist ignoring time 👉 [VIBE]
+    
+-   **+ [BACK]** will also step backwards through the list.
+    
+-   **>>> (Step Forward)** - Steps forward through a Qlist ignoring time 👉 [VIBE] + [GO] will also step forward through the list.
+    
+-   **<<<-->>>** - Reverses sequence direction (mainly used with loops and chasers).
+
+**Assign a Qlist to a Controller:**
+
+1.  [QLIST] [#]
+    
+2.  [HERE] to any button of the controller that will be the start point of the range.
+    
+
+>Blank Qlists may be assigned to any controller.
+
+**Assign a range of Qlist:**
+
+1.   [QLIST] [#] → [QLIST] [#]
+    
+2.  [HERE] to any button of the controller that will be the start point of the range.
+    
+
+**Assign a Cue to a controller:**
+
+1.   [QLIST] [#]
+    
+2.  [CUE] [#]
+    
+3.  [HERE] Press any of the controller's buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: 7.5.2. Controller Actions
+    
+
+**Release and unload Controllers:**
+
+-   See: 14.8. Controller Release and Free
 
 
 ## Controller Release and Free
@@ -212,6 +392,13 @@ Release Time -
 
 Free - Unloads a controller. It does not delete the loaded object.
 
+
+-   [FREE] [HERE] to any controller button.
+    
+
+Free All - Unloads all controllers.
+
+-   [VIBE] + [FREE]
 
 
 ## Controller Qlist Properties
@@ -256,7 +443,7 @@ The Controller Mode keys are located at the far left of the console beside the m
 
 The Rate function allows users to adjust controller rates or effects parameters in "real time". This is very helpful in fine tuning chases and effects to synchronize with music, or to improvise performances "on the fly". The Rate Screen operates outside of the editor and is non destructive. Changes made in the Rate Screen may not be stored in cues but may be stored and recalled in [Snaps].
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoTIV2IcDVKhTeghw18aY%2Fimage.png?alt=media&token=201512e6-1726-448b-8f39-d64a3dac80f7)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FASGNCmc8hdzIqKOE9fa2%2F4.11.webp?alt=media&token=3a476108-bcb8-4f20-8965-4339044e1870)
 
 Using the Rate Screen: Large encoder wheels:
 
@@ -276,3 +463,72 @@ Using the Rate Screen: Large encoder wheels:
 6.   Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom)
 
 
+Small encoder wheels: (top to bottom)
+
+1.  Small Wheel 1 - {FX Rate} adjusts the rate of effects that are running on the selected controllers.
+    
+2.  Small Wheel 2 - {FX Size} adjusts the size of effects that are running on the selected controllers.
+    
+3.   Small Wheel 3 - {FX Offset} adjusts the offset (Spread) of effects that are running on the selected controllers.
+    
+4.   Small Wheel 3 - {FX Base} adjusts the base values (start point) of parameters that are in running effects on the selected controllers.
+    
+
+Reset keys:
+
+1.  {Reset Ctrl Rate} - Sets all controller rates back to their default of 100%
+    
+2.  {Reset FX Rate} - Sets controlled FX rates back to their stored values.
+    
+3.  {Reset FX Size} - Resets controlled size of effects back to their stored values.
+    
+4.  {Reset FX Offset} - Resets controlled offsets of effects back to their stored values.
+    
+5.  {Reset FX Base} - Resets controlled effects base values back to their stored values.
+    
+
+Freeze toggle keys:
+
+1.  {Freeze All} - Pauses all running chases and effects until the {Freeze All} key is toggled again.
+    
+2.  {Freeze Chase} - Pauses all running chases until the {Freeze Chase} key is toggled again.
+    
+3.  {Freeze Effect - Pauses all running effects until the {Freeze Effect} key is toggled again.
+    
+
+Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: 13.3.1. Building Effects Using the Advanced Effects Editor
+
+Transport Bar:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3tsI1uZbjqG5pxqzYh3r%2F14.11.2.webp?alt=media&token=2658ea17-92cf-4afa-9028-74f319a5ce62)
+
+When actively in the Rate Screen, physical controller keys are mapped to the rate interface and may not be used to activate Qlists, cues, or scenes. As an alternative, the transport bar may be used. To use the transport bar:
+
+1.  Tap {Enable Controller PB} to activate the Transport Bar.
+    
+2.  Select the controllers to control with the bar by toggling any of the controller's physical control keys
+    
+3.   Use the transport Bar buttons to:
+    
+
+-   {<<} Step Back
+    
+-   {|<} Back
+    
+-   {||} Hold (Pause)
+    
+-   {>} GO
+    
+-   {>>} Step Forward
+    
+
+1.   {Release} may be tapped at any time to deactivate the selected controllers using release time.
+    
+
+Teach keys: Currently unimplemented
+
+1.   {Teach Enabled} - Enables the [Teach Key] for sampling and adjusting tap rate of chasers and effects in "real time".
+    
+2.   {Tap X} keys set the sample rate for the teach function (number of presses to be averaged)
+    
+3.  When implemented, Teach time may also be set from the Rate Screen using the transport bar buttons.
