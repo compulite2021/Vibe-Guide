@@ -45,7 +45,9 @@
 
 1. Make sure that all controllers on **all** pages are setup, loaded, and activated exactly as you want them to be restored.
     
-2.  Press [STORE] [HERE] to any available {Snap} softkey. Or
+2.  Press [STORE] [HERE] to any available {Snap} softkey. 
+
+Or
     
 3. Press [SNAP] [#] [STORE].
     
@@ -92,6 +94,23 @@ Snaps may be assigned a time to "smooth" out their transitions.
 4.  Close the pop-up using [ENTER] or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) .
 
 
+**Additional Snap Settings:**
+
+-   Snap Label - Enter text label for Snap into the white text box.
+    
+-   Load Pages - Restores the controllers to the page they were on when the Snap was recorded.
+    
+-   Load Master PB (Controller) - Restores assignment of the Master Controller to the controller it was assigned to when the Snap was recorded.
+    
+
+**Controller Settings Properties that affect Snap:**
+
+-   Exclude from Snap - Controller will not be included when Snaps are recorded.
+    
+-   Exclude from Override - Even if recorded in a Snap, the controller will ignore Snap activation instructions.
+
+
+
 
 ## Attaching Snaps
 
@@ -129,5 +148,8 @@ Snaps may be attached and triggered from Qlist Cues Attach a Snap to a Cue.
 2.  [SETTINGS] [HERE] to any controller button and select the Qlist Properties tab.
     
 3.   Deselect the {Trigger} button - Triggering will be disabled for the incident of the Qlist assigned to that specific controller.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fd35SScD9jx2IIxZBd7cE%2F173..webp?alt=media&token=eaf131f2-2835-4b49-bdfd-7332d407d98f)
 
 

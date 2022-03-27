@@ -18,17 +18,21 @@ Calibrate using WYSIWYG
     
 2.  Tap on {Stage} button and set the stage dimensions.
     
-3.   Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see Blue Frame), and select the option of 'Mover Ruler (Set View Origin)ʼ.
+3.   Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see <span style="color:blue">Blue Frame</span>), and select the option of 'Mover Ruler (Set View Origin)ʼ.
     
-4.  Select the center of your stage (see Red Arrow in the Picture)
+4.  Select the center of your stage (see <span style="color:Red">Red Arrow</span> in the Picture)
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl24vUCyJ3U8pXylHigOy%2Fimage.png?alt=media&token=0cc76ff2-f5cc-4ee9-ab9d-63e58cff1abd)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXCTVpvo6MK4hT6KirGey%2F20.1.webp?alt=media&token=539a482f-4d3b-40ea-a25e-3199c557973b)
 
 
 5. Go to 'Data tab'.
 
 6. When in the Data tab, press on Option (in the toolbar) ➡️ Document Options ➡️ Draw Defaults - and change the units to metric.
+
+
+7.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FevwfnkgAvMLdIU4zgZBr%2F20.1.1.webp?alt=media&token=2ef469e1-b321-48d2-89f2-da906b386daf)
 
 
 ## Calibration in Capture
@@ -45,12 +49,19 @@ Calibrate using WYSIWYG
 3. Place your center of the stage in the intersect point of the 2 Bold Axis (when the CAD displays a view from the Top).
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FT9hNXHeED9qkRxDqogh3%2Fimage.png?alt=media&token=af4bc822-926e-4755-8976-34ce8b05b5fb)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn5Wiw7EBsgJNFC9bYVRx%2F20.2.webp?alt=media&token=3224f209-dfa7-440e-8e84-4b5e88866f58)
 
 4. Go to Tools ➡️ Options and change the measurements to metric.
 
 5. Select a fixture in the Capture, and you will see the XYZ coordinates when the table is showing 'Selected Itemsʼ. 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FF2vwwydnOsr7t9zKHmXA%2Fimage.png?alt=media&token=cfca2831-0e8c-4c18-ada2-64bee485e079)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F35qZUCLtAwnVv9zjMkVV%2F20.2.1.webp?alt=media&token=d469868d-cd70-496f-9573-6623cd50040f)
+
+
+6. Copy these values (manually) to the Fixture calibration table in Vibe.
+
+7. Copy the column X to the column X the column Y to the column Z the column Z to the column Y
+
+8. After all values are in the Vibe fixture calibration table, select the X column (by tapping the header) and press [-], and select the Y column and press [-]. Fixtures should now be calibrated.
 
 
 

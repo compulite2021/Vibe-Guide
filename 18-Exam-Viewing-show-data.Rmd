@@ -14,7 +14,7 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 **The Show Exam Menu has 14 items:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXkVlOh2YuM0Crfe6zchJ%2Fimage.png?alt=media&token=2c7afc7e-ab83-4c9e-bade-e12eed406da5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW6Xww7DJpwyKPcb0okaD%2F18.1.webp?alt=media&token=c6a011cc-ad76-495d-b429-acee8616888e)
 
 1.  **Qlist Exam** - List of all show Qlists.
     
@@ -35,16 +35,57 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 -   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
 
 
+3. **Group Exam** -Lists all stored groups.
+
+-   Group # Exam - Displays all the fixtures in the group and their recorded selection order.
+    
+-   Individual group fixtures - N/A.
+    
+
+4. **Snaps Exam** - Lists all recorded Snapshots.
+
+-   Snap # Exam - Graphically displays what controllers and their status are recorded in the the Snap.
+    
+
+5. **Macro Exam** - Lists all stored Macros.
+
+-   Macro # Exam - Opens a display of all macro steps, time (if enabled), macro state, and macro command (This will be editable in future versions).
+    
+
+6. Time Lines - Not implemented yet.
+
+7. **Look Ahead Mask Exam** - Displays which fixtures will be enabled for the Look Ahead feature. (Move in Black) .
+
+8. MIDI Notes - Shows patched midi notes (currently unimplemented use patch {I/0 Settings} as an alternative.)
+
+9. Filters - Not Implemented.
+
+10. **Scene Exam** - Lists all stored Scenes.
+
+-   Scene # Exam - Displays a track sheet for the selected Scene. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+    
+-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues,** and **Libraries** tabs at the bottom of the display.
+    
+
+11. **Submaster Exam** - Lists all stored Scenes that have been converted to Group Submasters.
+
+-   Submaster # Exam - Displays a track sheet for the selected Group Submaster. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+    
+
+12. **Home Scene Exam** - Displays values for all fixtures stored in the user defined Home Scene.
+
+13. **Highlight Scene Exam** - Displays values for all fixtures stored in the user defined Highlight Scene.
+
+14. **Lowlight Scene Exam** - Displays values for all fixtures stored in the user defined Lowlight Scene.
+
+
 
 ## Patch Exam
 
 
-
-
-
 **The Patch Exam Menu has 6 items:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fg44oF5VnHAFKlgchByKH%2Fimage.png?alt=media&token=1ff7ac43-85c3-49ae-9d7e-7e8e56121b16)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpdUll7y7i9CAEFIimzbC%2F18.2.webp?alt=media&token=102bd268-8e0b-48e8-bb18-1b4fcf78e4f4)
 
 1.  **Devices Exam** - Shows a list of all imported devices and their properties.
     
@@ -57,5 +98,19 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 -   Individual Set Exam - Shows a list of all fixtures patched to the set with columns for **Fixture Name, Fixture #** (in this case unique system ID # not actual fixture #), **Set ID #, # in Set**, (User defined number in the set) , and **Device Name**.
     
 
-3. **DMX Out Exam** - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for **Universe #** (Port), Patched Fixture Count, and the **Number of Used DMX Address** out of 512.
+3. **DMX Out Exam** - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for **Universe #** <span style="color:green">(Port)</span>, Patched Fixture Count, and the **Number of Used DMX Address** out of 512.
 
+-   Individual Universe Exam - Displays a table of patched fixtures and their DMX properties.
+    
+
+4. **DMX In Exam** - Displays a table of how may DMX inputs are used on each of the two available DMX inputs.
+
+-   Individual Input Exam - Displays a table of DMX input assignments.
+    
+
+5. **Park Exam** - Displays a table of the number of parked fixtures and addresses.
+
+-   View Park by Dimmer (Address) or Fixture - Displays a list of all parked fixtures or dimmers and their parked dimmer values.
+    
+
+6. **Curves** **Exam** (Functions) - Displays a graphical list of all read only and user created Functions. It also displays which functions are included in the favorites list.

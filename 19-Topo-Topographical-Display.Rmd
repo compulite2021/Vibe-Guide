@@ -13,7 +13,7 @@ It is sometimes useful to organize fixture selection in a graphical manner inste
 ## Creating a Topo View
 When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzBJhsOEsrnAOjMZtf3Ey%2Fimage.png?alt=media&token=b2868c9c-ff91-412f-a21b-27f892f172ba)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNV0Q6P9Wr1tucBYEoQUY%2F19.1.webp?alt=media&token=ecf69dbf-a74e-4491-9ee7-546e12c3ee20)
 
 **Topo View in {LIVE} mode displaying the "Movers" Topo**
 
@@ -45,7 +45,7 @@ When starting a new show any Topo views stored in Layouts will be empty until th
 
 The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FABeK0EHUyNhqc7hHqiMF%2Fimage.png?alt=media&token=1538bdd8-df4a-4fd2-b0c1-8f8d6f09df53)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5nxdImYsIjjUwZbJiSqu%2F19.2.webp?alt=media&token=488961aa-b20c-4a3c-9292-82805b05ace7)
 
 ​
 
@@ -55,16 +55,87 @@ The Topo Menu is a hierarchical menu that provides the tools for creating and ed
     
   Topo:
     
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVwdRu7w6MFMWhYiuObr6%2Fimage.png?alt=media&token=2691588d-f195-4341-9cc5-fd03647126e1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&token=7277a796-bf80-4991-a343-94ad8f13f621)
 
 ​
-2. Actions: a. {Add Elements} - accesses the following:
+2. Actions: 
+
+a. {Add Elements} - accesses the following:
 
 1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. 6.1. Fixture Sets. 19.4. Adding fixtures to a Topo.
     
 2.   {Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps
 
+b. {Selection} - May be used in Live mode or Edit mode.
 
+>Selections must start out side of the fixture.
+
+1.  Select by creating a rectangular lasso. - Dragging from left to right or right to left to create a rectangle around or through the objects.
+    
+2.  Select by creating a free-form path, dragging through objects.
+    
+3.  De-select all.
+    
+4.  Delete selected (only valid in Edit Mode).
+    
+5.  Snap to grid - Fixtures and object will snap to the nearest grid node.
+    
+6.  Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.
+    
+
+c. {Tools}:
+
+1. {Align}:
+
+1.  Left
+    
+2.  Center
+    
+3.  Right
+    
+4.  Top
+    
+5.  Middle
+    
+6.  Bottom
+    
+7.  Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following: 
+   
+    ◾ fixture location on the circumference 
+    ◾ Radius 
+    ◾ End point
+    
+8.  Point to Point
+
+2. {Align to Point} - A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.
+
+3. {Spread} (Fan) - When Spread is selected, a horizontal virtual modifier wheel will appear. The following spread options are available:
+
+1.  Spread horizontally from left
+    
+2.  Spread horizontally from center
+    
+3.  Spread horizontally from right
+    
+4.  spread vertically from top
+    
+5.  Spread vertically from middle
+    
+6.  Spread vertically from bottom
+    
+
+4. {Transform} - Used to modify size and rotation of Topo objects. Horizontal virtual wheels will appear for the following:
+
+1.  Scale
+    
+2.  Rotate
+    
+3.  Presets are supplied for: 
+    ◾ Rotate 45° counterclockwise 
+    ◾ Rotate 45° clockwise 
+    ◾ Reset
+    
+4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.
 
 ## Creating a Topo
 
@@ -74,7 +145,7 @@ The Topo Menu is a hierarchical menu that provides the tools for creating and ed
 1.  Tap the {[<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/>](image.png)} key in the Topo Menu at the right hand side of the Topo view display - The "Create New Topo" pop-up will appear
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSd4kBBR9bPrV2EOH63sT%2Fimage.png?alt=media&token=96d8008c-4bec-4ea1-aa45-a40b3fb65c6a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdbnMzNTAiuRmv8Gch2g2%2F19.3.webp?alt=media&token=ca062ed5-c7e8-4c08-ac9b-ff74f9a497ba)
 
 2. Select the desired Topo number, and give the Topo a unique name.
 
@@ -135,20 +206,29 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
 2.  From the {Add Elements} drop down, tap {Pixel Mapper} - The Create New Pixel Mapper pop-up will appear.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlqDgGfO7xNrlZvZHfAWW%2Fimage.png?alt=media&token=e9a5819b-487a-499d-9110-b2a981763f93)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Ff9zc1asl0cfTClSVXoI1%2F19.5.webp?alt=media&token=6349e1a5-6671-4d96-9be8-09a19688a2c1)
 
 3. Fill in the number of columns and rows and set the start position and direction.
 
-4.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and create the blank pixel map.
+1.  Press [Enter] or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and create the blank pixel map.
     
-5.   👉 Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.
+2.   👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.
     
-6.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo
+3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo
     
-7.  Release the fixtures and they will populate the pixel map. 
-👉 The number of fixtures must not exceed the number of pixel mapper cells.
+4.  Release the fixtures and they will populate the pixel map. 
+👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.
     
-8.  The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture's color mix will be shown. CMY, RGB, and HSV color spaces are supported.
+5.  The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture's color mix will be shown. CMY, RGB, and HSV color spaces are supported.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FebGZvb6DGOYtyqaGKSdZ%2F19.5.1.webp?alt=media&token=5f033d65-2db7-4ba0-918e-7980aade9cc9)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FM8tXegFlpqyJ9QGo4FY0%2F91.5.2.webp?alt=media&token=dd690b9b-aa5a-4f0a-a8e2-a8f137b1f78a)
+
+1.  Multiple pixel mappers may be added to the same Topo along with other objects.
+    
+2.  👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
 
 
 ## Adding text and background elements
@@ -163,7 +243,7 @@ Additional elements may be added to a Topo. Currently available are {Text Label}
 2.  From the drop down, tap {Text Label} - The Create Label pop-up will appear.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVMjMPRUyZuHghG50IwBl%2Fimage.png?alt=media&token=4912fc34-2301-4ed1-ab61-f6697ed1b078)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh32lxtwe1nBgE1xhjmbE%2F19.6.webp?alt=media&token=59a84956-400f-4e66-bfa8-c699d69d7fca)
 
 3. Close the pop-up and the test label will appear on the Topo surface.
 
@@ -171,6 +251,22 @@ Additional elements may be added to a Topo. Currently available are {Text Label}
 
 5. Transpose tools may be used to size and rotate the label.
 
-Backgrounds such as studio layouts and rig elements may be added to the Topo. **To add a Background to a Topo:**
+Backgrounds such as studio layouts and rig elements may be added to the Topo. 
 
+**To add a Background to a Topo:**
+
+
+1.  Prepare a USB stick with a JPEG, BMP, or PNG piece of content.
+    
+2.  Insert the USB stick into one of the Vibe's USB ports.
+    
+3.  From the Topo Actions menu, tap {Add Elements}.
+    
+4.  Tap {Add Background} - A browser pop-up will appear.
+    
+5.  Select the USB stick and click on the desired content - Once imported, the content may be found in the default local directory on the hard-drive under D:\Vibe\Compulite\WorkDir\show\Images\Topo\
+    
+6.  Tap {Load}, [Enter] or tap  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.
+    
+7.  To remove the background tap {Remove Background}
 
