@@ -40,17 +40,28 @@ Vibe can read the following sources:
     
 
 Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpjpXjINn7lHxSI1iWnDS%2Fimage.png?alt=media&token=48094203-e923-499d-92d1-25740bd33b57)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&token=b585f40e-5bdb-4475-8098-b00bb3ebce08)
+
+Vibe automatically matches frame rates to the incoming source.
+
+Supported frame rates are:
+
+-   24 FPS
+    
+-   25 FPS
+    
+-   29.97 FPS drop-frame
+    
+-   30 FPS
 
 
 ## Create a Timeline View
 
 
-
-
 When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4CPQRcUCzXDxypHqd55h%2Fimage.png?alt=media&token=2044a09f-1d94-4ed7-ad37-07bee99338aa)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiEYg2WqRWqRZXIcBO5Yc%2F21.2.webp?alt=media&token=5e38c8e0-da98-4242-9d22-be0c6f3a7eb6)
 
 **Timeline view with two timeline tracks, the cursor, and a marker**
 
@@ -94,11 +105,26 @@ Recommended quality and level for SMPTE:
 -   As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLgG5nB216vImSY9fr9OB%2Fimage.png?alt=media&token=76aba117-f6c3-43b0-a5be-9c70916f6be4)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&token=4d637f49-7313-454e-8b8e-9214d8d1b707)
 
 **1/O Settings Pop-up in Timecode Tab**
 
+**Enable Timecode:**
 
+1.   From the patch toolbar tap {I/O Settings}
+    
+2.  For Tap {General} tab and select: 
+   
+    ◾ {Local MIDI} to enable the DIN connector MIDI. 
+    ◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.
+    
+3.  Tap the {Timecode} tab, the Timecode pop-up will appear.
+    
+4.  Enable {MTC In} to enable any type of MIDI timecode input.
+    
+5.  Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}
+    
+6.   Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.
 
 
 ## Recording Timeline Tracks
@@ -107,7 +133,7 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
 
 **To create a timeline track:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F73xlQLCtxsd36JNC9yx0%2Fimage.png?alt=media&token=077da161-e0ab-45b6-8c6d-dd616a6e77ba)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&token=6d042dc3-2c94-47b0-910d-e5481466fa85)
 
 1.  Open a Time Line View.
     
@@ -124,7 +150,7 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
     
 6.  Enable the red {Record} button or the {+ Record} button.
     
-    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGx2TJzn8fjRzKPQEiGXd%2Fimage.png?alt=media&token=7ff02406-b7cd-4693-adee-d6b7b0e641df)
+    ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&token=fb24e6fe-6798-432f-a7d7-b454cf666b76)
     
     ◾ Record overwrites existing events. 
     ◾ + Record adds events to existing events.
@@ -137,7 +163,7 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
     
 10.  When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.
     
-11.  👉 Disable the Record button to prevent accidental overwrite of events.
+11.  👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span>
 
 
 
@@ -157,7 +183,7 @@ To Execute timeline events:
     
 -   Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUmPReMEAwmVIMyLpZj2B%2Fimage.png?alt=media&token=0fe1d599-7137-460d-b28a-169ffa04e148)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&token=985e10f0-a809-4482-8112-763a2766724b)
 
 
 
@@ -167,7 +193,7 @@ To Execute timeline events:
 To aid in timeline navigation, Markers may be inserted.
 
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKBnRy0cxRc4cr710ZvnV%2Fimage.png?alt=media&token=d1e31740-8e0d-46ac-b234-63a914610c3c)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00)
 
 To insert a marker:
 

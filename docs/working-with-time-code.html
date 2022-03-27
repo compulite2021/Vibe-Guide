@@ -380,13 +380,21 @@
 <li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
 <li><p>Input sources from remote multi-User consoles and devices</p></li>
 </ul>
-<p>Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpjpXjINn7lHxSI1iWnDS%2Fimage.png?alt=media&amp;token=48094203-e923-499d-92d1-25740bd33b57" /></p>
+<p>Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&amp;token=b585f40e-5bdb-4475-8098-b00bb3ebce08" /></p>
+<p>Vibe automatically matches frame rates to the incoming source.</p>
+<p>Supported frame rates are:</p>
+<ul>
+<li><p>24 FPS</p></li>
+<li><p>25 FPS</p></li>
+<li><p>29.97 FPS drop-frame</p></li>
+<li><p>30 FPS</p></li>
+</ul>
 </div>
 <div id="create-a-timeline-view" class="section level2" number="21.2">
 <h2><span class="header-section-number">21.2</span> Create a Timeline View</h2>
 <p>When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4CPQRcUCzXDxypHqd55h%2Fimage.png?alt=media&amp;token=2044a09f-1d94-4ed7-ad37-07bee99338aa" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiEYg2WqRWqRZXIcBO5Yc%2F21.2.webp?alt=media&amp;token=5e38c8e0-da98-4242-9d22-be0c6f3a7eb6" /></p>
 <p><strong>Timeline view with two timeline tracks, the cursor, and a marker</strong></p>
 <p><strong>To add a Timeline view to a page:</strong></p>
 <ol style="list-style-type: decimal">
@@ -417,14 +425,25 @@
 <li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
 <li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
 </ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLgG5nB216vImSY9fr9OB%2Fimage.png?alt=media&amp;token=76aba117-f6c3-43b0-a5be-9c70916f6be4" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
 <p><strong>1/O Settings Pop-up in Timecode Tab</strong></p>
+<p><strong>Enable Timecode:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>From the patch toolbar tap {I/O Settings}</p></li>
+<li><p>For Tap {General} tab and select:</p>
+<p>◾ {Local MIDI} to enable the DIN connector MIDI.
+◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
+<li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
+<li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
+<li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
+<li><p>Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</p></li>
+</ol>
 </div>
 <div id="recording-timeline-tracks" class="section level2" number="21.4">
 <h2><span class="header-section-number">21.4</span> Recording Timeline Tracks</h2>
 <p>After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in “real time” and then edited.</p>
 <p><strong>To create a timeline track:</strong></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F73xlQLCtxsd36JNC9yx0%2Fimage.png?alt=media&amp;token=077da161-e0ab-45b6-8c6d-dd616a6e77ba" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&amp;token=6d042dc3-2c94-47b0-910d-e5481466fa85" /></p>
 <ol style="list-style-type: decimal">
 <li><p>Open a Time Line View.</p></li>
 <li><p>Tap {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} - The “Create New Timeline” pop-up will open.</p></li>
@@ -435,14 +454,14 @@
 ◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console.
 ◾ Additional options will populate the list depending on the interfaced timecode device.</p></li>
 <li><p>Enable the red {Record} button or the {+ Record} button.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGx2TJzn8fjRzKPQEiGXd%2Fimage.png?alt=media&amp;token=7ff02406-b7cd-4693-adee-d6b7b0e641df" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p>
 <p>◾ Record overwrites existing events.
 ◾ + Record adds events to existing events.</p></li>
 <li><p>If using internal TC, press Play.</p></li>
 <li><p>If using external TC start the timecode source.</p></li>
 <li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
 <li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 Disable the Record button to prevent accidental overwrite of events.</p></li>
+<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
 </ol>
 </div>
 <div id="executing-and-editing-events" class="section level2" number="21.5">
@@ -455,12 +474,12 @@
 <li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
 <li><p>Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
 </ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUmPReMEAwmVIMyLpZj2B%2Fimage.png?alt=media&amp;token=0fe1d599-7137-460d-b28a-169ffa04e148" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&amp;token=985e10f0-a809-4482-8112-763a2766724b" /></p>
 </div>
 <div id="markers" class="section level2" number="21.6">
 <h2><span class="header-section-number">21.6</span> Markers</h2>
 <p>To aid in timeline navigation, Markers may be inserted.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKBnRy0cxRc4cr710ZvnV%2Fimage.png?alt=media&amp;token=d1e31740-8e0d-46ac-b234-63a914610c3c" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&amp;token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00" /></p>
 <p>To insert a marker:</p>
 <ul>
 <li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
