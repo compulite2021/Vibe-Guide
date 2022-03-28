@@ -21,11 +21,17 @@
 
 1.  Object Libraries - Pools of system object types.
 -   Common Object Libraries are: 
+
 ◾ Group 
+
 ◾ Qlist 
+
 ◾ Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
+
 ◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
+
 ◾ Filters – Pool of user defined flters 
+
 ◾ Macro
 
 >Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.
@@ -129,7 +135,11 @@ Library Settings may be changed at any time after they are created using the Lib
 
 -   Tap the Library {SK} you wish to modify and press [SETTINGS]. (This is invalid with Snaps and Macros as it will trigger them) Or
     
--   Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open. ◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. ◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.
+-   Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open. 
+
+◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
+
+◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.
     
 
 **Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:**

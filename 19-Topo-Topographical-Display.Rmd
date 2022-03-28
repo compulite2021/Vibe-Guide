@@ -101,9 +101,11 @@ c. {Tools}:
     
 7.  Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following: 
    
-    ◾ fixture location on the circumference 
-    ◾ Radius 
-    ◾ End point
+   ◾ fixture location on the circumference 
+    
+   ◾ Radius 
+   
+   ◾ End point
     
 8.  Point to Point
 
@@ -131,9 +133,12 @@ c. {Tools}:
 2.  Rotate
     
 3.  Presets are supplied for: 
-    ◾ Rotate 45° counterclockwise 
-    ◾ Rotate 45° clockwise 
-    ◾ Reset
+    
+  ◾ Rotate 45° counterclockwise 
+    
+  ◾ Rotate 45° clockwise 
+    
+  ◾ Reset
     
 4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.
 

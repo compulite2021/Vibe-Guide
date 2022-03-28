@@ -471,7 +471,11 @@ Fixtures are selected using the [FIXTURE] key on the keypad. They also may be st
     
 -   **[VIBE]+[CE/CLEAR]** - Clears the command line to the beginning and ideal tee system.
     
--   **[RELEASE]**: ◾ First press releases the active parameters (last adjusted) for selected fixtures. ◾ Second press releases all remaining parameters for selected fixtures from the Editor.
+-   **[RELEASE]**: 
+
+◾ First press releases the active parameters (last adjusted) for selected fixtures. 
+
+◾ Second press releases all remaining parameters for selected fixtures from the Editor.
     
 -   **[DE SEL]** - Deselects all fixtures but maintains values in the Editor. This function is usually used to protect the operator from accidentally adjusting parameters in the Editor when they are temporarily captured. It may also be used to "idle" the command line to allow [TEXT] {SK} function while fixtures are still in the Editor.
     
@@ -594,12 +598,14 @@ The Context sensitive area changes depending on the bank and fixture type. Where
 ◾ Home - Returns menus to Settings level.
 
 ◾ Format - Sets the view format for wheel displays. 
+
 • Percent 
 • Decimal 
 • Text 
 • Text + Percent
 
 ◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball 
+
 • 8 bit - Blue on [Res] Key 
 • 10 bit - Green on [Res] key 
 • 12 bit - Red on [Res] key 
@@ -607,11 +613,13 @@ The Context sensitive area changes depending on the bank and fixture type. Where
 • 24 bit - Magenta on [Res] key 
 
 ◾ View - Sets behaviour of smart screen views.
+
 • Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
 • Programming - Maintains the programming display even with the editor released. 
 • Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.
 
 ◾ Wheel Picker Display Modes: 
+
 • Smart - All wheels for the selected fixture are shown in the interactive wheel picker area. 
 • Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
 • Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
@@ -633,7 +641,17 @@ To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
 
 1.   Select the fixtures to program
     
-2. Swipe or Drag the **Wheel Picker** on the right-hand side of the **Smart Screen** and browse to the wheel and slot you want to program. Common wheels are: ◾ Color Wheel ◾ Static Gobo Wheel ◾ Rotating Gobo Wheel ◾ Animation Wheel ◾ Prism Wheel
+2. Swipe or Drag the **Wheel Picker** on the right-hand side of the **Smart Screen** and browse to the wheel and slot you want to program. Common wheels are: 
+
+◾ Color Wheel 
+
+◾ Static Gobo Wheel 
+
+◾ Rotating Gobo Wheel 
+
+◾ Animation Wheel 
+
+◾ Prism Wheel
     
 3.  Tap the wheel slot you wish to program and the context sensitive area or the **Smart Screen** will open with the appropriate picker.
     
@@ -654,7 +672,13 @@ To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
     
 5.  Rotate the large push wheel encoder of the parameter you wish to adjust.
     
-6.  Values may be added directly from the keypad by: ◾ Pushing a parameter wheel downward to select the parameter. ◾ AT will appear on the command line ◾ Type a value from Zero ➡️ Full.
+6.  Values may be added directly from the keypad by: 
+
+◾ Pushing a parameter wheel downward to select the parameter. 
+
+◾ AT will appear on the command line 
+
+◾ Type a value from Zero ➡️ Full.
     
 
 ><span style="color:red">@ is only used for the dimmer parameter</span>.
@@ -667,19 +691,29 @@ A Parameter value must be entered in 2 digits or one digit and the [Enter] key f
 Grab is a powerful tool for selecting fixtures that meet a number of conditions. By default [GRAB] selects all fixtures with intensity or virtual intensity values above Zero **Pressing [GRAB] without a selection opens up a pop-up on the Smart Screen. It contains the following options:**
 
 -   **{Filters}:** 
+
 ◾ {Stage} - Select anything that is live on the stage and meets the conditions below. 
+
 ◾ {Editor} -Select anything that is in the Editor and meets the conditions below. 
+
 ◾ {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
     
 -   **{Conditions}:** 
+
 ◾ {All Fixtures} - Selects all fixtures that have any changes via the editor. 
+
 ◾ {Active} - fixture has intensity value over zero. 
+
 ◾ {Invisible} - recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
+
 ◾ {Inactive} (fixtures that have NO recorded values).
     
 -   **{Parameter Selection}**:
+
 ◾ {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+[GRAB]) 
+
 ◾ {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is [GRAB] + [ENTER]) 
+
 ◾ <span style="color:DodgerBlue">{Search & Replace}</span>.
     
 -   [SET] [GRAB] selects all active fixtures filtered by set (Fixture/Channel/Spot/Matrix/Server/Custom)
@@ -729,6 +763,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 > <span style="color:DodgerBlue">If more than one state is involved, the state will backspace right up until the idle state</span>.
 
 > **[Shift CE]** will clear the command line to the beginning and put the system in an idle state.
+
 
  -   [Fixture] # [+ ➡️ -] [[Full]/[Zero] (@100 and @00 are valid if % or text display format).
         

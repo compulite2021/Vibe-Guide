@@ -29,8 +29,11 @@ Multi-track effects:
 -   Effects requiring more than one parameter may be stacked on separate Effects Tracks.
     
 -   Examples of Multi-track effects would be: 
+
 ◾ CMY and RGB color effects 
+
 ◾ Pan/Tilt Circles 
+
 ◾ Blade effects
     
 
@@ -149,7 +152,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIgg80rwQtyD8LqADi6WE%2F13.2.webp?alt=media&token=515e980f-453b-47db-80ca-1806b3d61f5d)
 
-**<p align=center> Smart Screen Attribute page</p>**
+<p align=center> Smart Screen Attribute page</p>
 
 
 
@@ -170,14 +173,20 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 5.  Tap the Favorite Primitive tab and select a Primitive - the Function shown on the Primitive will be loaded with a default linear Pattern.
     
 6.  The Pattern may be changed by by tapping any of the following: 
-    ◾ / Fixtures move in a positive direction across the selection. 
-    ◾ \ Fixture move in a negative direction across the selection. 
-    ◾ /\ Fixture mirror in a positive direction. 
-    ◾ / Fixture mirror in a negative direction.
+    
+  ◾ / Fixtures move in a positive direction across the selection. 
+  
+  ◾ \ Fixture move in a negative direction across the selection. 
+
+  ◾ /\ Fixture mirror in a positive direction. 
+    
+  ◾ / Fixture mirror in a negative direction.
     
 7.  Set the Offset {Pattern Spread} - Default is 100%. 
-    ◾ 100% = Selection is divided 100% transitioning across the Primitive.
-    ◾ 0% = all fixtures transition in unison.
+    
+  ◾ 100% = Selection is divided 100% transitioning across the Primitive.
+    
+  ◾ 0% = all fixtures transition in unison.
     
 8.  Set Swing (In Base) as needed 13.1. Effects Basics
     
@@ -201,12 +210,18 @@ For Grouping to be noticeable there must be an Pattern Offset Spread above 0%.
 2.  If the Offset Pattern Spread is not above 0%, tap the {Wave On} key. The Spread will be changes to 100%.
     
 3.  Set the {Blocks Of} [#] - This interleaves the Pattern into Groupings. 
-    ◾ The Default for Blocks and Sub Block is 1/0 - No Groupings. 
-    ◾ When {Blocks Of} is set to 1 or above, the Sub Blocks will move to 1 and Interleave Groups will be possible. 
-    ◾ e.g. 2/1 would interleave a selection into Odds/Evens. 
-    ◾ e.g. 3/1 would interleave a selection of 12 fixtures into [1+4+7+10] - [2+5+8+11] - [3+6+9+12]
+   
+◾ The Default for Blocks and Sub Block is 1/0 - No Groupings. 
+   
+◾ When {Blocks Of} is set to 1 or above, the Sub Blocks will move to 1 and Interleave Groups will be possible. 
+   
+◾ e.g. 2/1 would interleave a selection into Odds/Evens. 
+   
+◾ e.g. 3/1 would interleave a selection of 12 fixtures into [1+4+7+10] - [2+5+8+11] - [3+6+9+12]
     
-4.  Set the {Sub Blocks Of} - Combines fixture in a selection, to act like single fixtures. ◾ e.g. 12/2 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]
+4.  Set the {Sub Blocks Of} - Combines fixture in a selection, to act like single fixtures. 
+
+◾ e.g. 12/2 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]
     
 
 >As a shortcut, Setting {Sub Block Of} back to 0 allows {Blocks Of} to combine fixtures instead of interleaving - 2/0 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]

@@ -713,7 +713,11 @@
 <li><p><strong>[FIXTURE]</strong> ➡️ - Reselects all fixtures in the Editor.</p></li>
 <li><p><strong>[CE]</strong> - Backspaces the command line one character at a time but currently will not go back one command at a time.</p></li>
 <li><p><strong>[VIBE]+[CE/CLEAR]</strong> - Clears the command line to the beginning and ideal tee system.</p></li>
-<li><p><strong>[RELEASE]</strong>: ◾ First press releases the active parameters (last adjusted) for selected fixtures. ◾ Second press releases all remaining parameters for selected fixtures from the Editor.</p></li>
+<li><p><strong>[RELEASE]</strong>:</p></li>
+</ul>
+<p>◾ First press releases the active parameters (last adjusted) for selected fixtures.</p>
+<p>◾ Second press releases all remaining parameters for selected fixtures from the Editor.</p>
+<ul>
 <li><p><strong>[DE SEL]</strong> - Deselects all fixtures but maintains values in the Editor. This function is usually used to protect the operator from accidentally adjusting parameters in the Editor when they are temporarily captured. It may also be used to “idle” the command line to allow [TEXT] {SK} function while fixtures are still in the Editor.</p></li>
 <li><p><strong>[RESET]</strong> - Releases all parameters from the Editor.</p></li>
 <li><p><strong>[VIBE]+[RESET]</strong> - Releases all parameters from the Editor and releases all selected fixtures.</p></li>
@@ -793,23 +797,23 @@
 <li><strong>Settings:</strong></li>
 </ul>
 <p>◾ Home - Returns menus to Settings level.</p>
-<p>◾ Format - Sets the view format for wheel displays.
-• Percent
+<p>◾ Format - Sets the view format for wheel displays.</p>
+<p>• Percent
 • Decimal
 • Text
 • Text + Percent</p>
-<p>◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball
-• 8 bit - Blue on [Res] Key
+<p>◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball</p>
+<p>• 8 bit - Blue on [Res] Key
 • 10 bit - Green on [Res] key
 • 12 bit - Red on [Res] key
 • 16 bit - Yellow on [Res] key
 • 24 bit - Magenta on [Res] key</p>
-<p>◾ View - Sets behaviour of smart screen views.
-• Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared.
+<p>◾ View - Sets behaviour of smart screen views.</p>
+<p>• Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared.
 • Programming - Maintains the programming display even with the editor released.
 • Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.</p>
-<p>◾ Wheel Picker Display Modes:
-• Smart - All wheels for the selected fixture are shown in the interactive wheel picker area.
+<p>◾ Wheel Picker Display Modes:</p>
+<p>• Smart - All wheels for the selected fixture are shown in the interactive wheel picker area.
 • Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture.
 • Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels</p>
 <p>Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor</p>
@@ -822,7 +826,14 @@
 <p>To adjust fixture wheel parameter values: (Interactive Wheel Picker method)</p>
 <ol style="list-style-type: decimal">
 <li><p>Select the fixtures to program</p></li>
-<li><p>Swipe or Drag the <strong>Wheel Picker</strong> on the right-hand side of the <strong>Smart Screen</strong> and browse to the wheel and slot you want to program. Common wheels are: ◾ Color Wheel ◾ Static Gobo Wheel ◾ Rotating Gobo Wheel ◾ Animation Wheel ◾ Prism Wheel</p></li>
+<li><p>Swipe or Drag the <strong>Wheel Picker</strong> on the right-hand side of the <strong>Smart Screen</strong> and browse to the wheel and slot you want to program. Common wheels are:</p></li>
+</ol>
+<p>◾ Color Wheel</p>
+<p>◾ Static Gobo Wheel</p>
+<p>◾ Rotating Gobo Wheel</p>
+<p>◾ Animation Wheel</p>
+<p>◾ Prism Wheel</p>
+<ol start="3" style="list-style-type: decimal">
 <li><p>Tap the wheel slot you wish to program and the context sensitive area or the <strong>Smart Screen</strong> will open with the appropriate picker.</p></li>
 <li><p>Adjust the virtual controls as needed.</p></li>
 </ol>
@@ -836,8 +847,11 @@
 <li><p>Banks may contain more than 4 wheels of parameters. Tapping the desired <strong>{BANK}</strong> key again, pages to the next set of 4 parameter wheels.</p></li>
 <li><p>The Assigned parameter wheel function is displayed on the <strong>Wheel Display</strong> at the bottom of the Smart Screen directly above the wheels.</p></li>
 <li><p>Rotate the large push wheel encoder of the parameter you wish to adjust.</p></li>
-<li><p>Values may be added directly from the keypad by: ◾ Pushing a parameter wheel downward to select the parameter. ◾ AT will appear on the command line ◾ Type a value from Zero ➡️ Full.</p></li>
+<li><p>Values may be added directly from the keypad by:</p></li>
 </ol>
+<p>◾ Pushing a parameter wheel downward to select the parameter.</p>
+<p>◾ AT will appear on the command line</p>
+<p>◾ Type a value from Zero ➡️ Full.</p>
 <blockquote>
 <p><span style="color:red">@ is only used for the dimmer parameter</span>.</p>
 </blockquote>
@@ -847,20 +861,26 @@
 <h3><span class="header-section-number">9.3.6</span> Grab</h3>
 <p>Grab is a powerful tool for selecting fixtures that meet a number of conditions. By default <a href="programming-basics.html#grab">GRAB</a> selects all fixtures with intensity or virtual intensity values above Zero <strong>Pressing <a href="programming-basics.html#grab">GRAB</a> without a selection opens up a pop-up on the Smart Screen. It contains the following options:</strong></p>
 <ul>
-<li><p><strong>{Filters}:</strong>
-◾ {Stage} - Select anything that is live on the stage and meets the conditions below.
-◾ {Editor} -Select anything that is in the Editor and meets the conditions below.
-◾ {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.</p></li>
-<li><p><strong>{Conditions}:</strong>
-◾ {All Fixtures} - Selects all fixtures that have any changes via the editor.
-◾ {Active} - fixture has intensity value over zero.
-◾ {Invisible} - recorded “hard” parameter values for fixtures that do NOT have an intensity value over zero.
-◾ {Inactive} (fixtures that have NO recorded values).</p></li>
-<li><p><strong>{Parameter Selection}</strong>:
-◾ {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+<a href="programming-basics.html#grab">GRAB</a>)
-◾ {Active (ENTER)} Select all “Active” fixtures and enters them into the Editor. (Shortcut is <a href="programming-basics.html#grab">GRAB</a> + [ENTER])
-◾ <span style="color:DodgerBlue">{Search &amp; Replace}</span>.</p></li>
-<li><p>[SET] <a href="programming-basics.html#grab">GRAB</a> selects all active fixtures filtered by set (Fixture/Channel/Spot/Matrix/Server/Custom)</p></li>
+<li><strong>{Filters}:</strong></li>
+</ul>
+<p>◾ {Stage} - Select anything that is live on the stage and meets the conditions below.</p>
+<p>◾ {Editor} -Select anything that is in the Editor and meets the conditions below.</p>
+<p>◾ {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.</p>
+<ul>
+<li><strong>{Conditions}:</strong></li>
+</ul>
+<p>◾ {All Fixtures} - Selects all fixtures that have any changes via the editor.</p>
+<p>◾ {Active} - fixture has intensity value over zero.</p>
+<p>◾ {Invisible} - recorded “hard” parameter values for fixtures that do NOT have an intensity value over zero.</p>
+<p>◾ {Inactive} (fixtures that have NO recorded values).</p>
+<ul>
+<li><strong>{Parameter Selection}</strong>:</li>
+</ul>
+<p>◾ {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+<a href="programming-basics.html#grab">GRAB</a>)</p>
+<p>◾ {Active (ENTER)} Select all “Active” fixtures and enters them into the Editor. (Shortcut is <a href="programming-basics.html#grab">GRAB</a> + [ENTER])</p>
+<p>◾ <span style="color:DodgerBlue">{Search &amp; Replace}</span>.</p>
+<ul>
+<li>[SET] <a href="programming-basics.html#grab">GRAB</a> selects all active fixtures filtered by set (Fixture/Channel/Spot/Matrix/Server/Custom)</li>
 </ul>
 <p><strong>To Selectively Grab a Controller:</strong></p>
 <ol style="list-style-type: decimal">

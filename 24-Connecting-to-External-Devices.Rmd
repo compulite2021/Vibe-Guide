@@ -70,18 +70,23 @@ Compulite manufactures the **ePort** brand of DMX over Ethernet nodes. **Support
 -   ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm) 
 
 ◾ Compulite VC protocol
+
 ◾ Art-Net v2
     
 -   ePort-41 - Current 
 
 ◾ sACN pre-release and release versions 
+
 ◾ Art-Net 3 
+
 ◾ Compulite VC protocol
     
 -   ePort-8 and ePort-2 
 
 ◾ sACN pre-release and release versions 
+
 ◾ Art-Net 3 
+
 ◾ Compulite VC protocol For more product information, See: ePort Documents
     
 

@@ -24,7 +24,7 @@
 - 10.13. Parameter Time
 - 10.13.2. Adding or Modifying Parameter Time after Cue Creation
 - 10.13.3. Fanning Parameter Time
--- 10.14. Group Submasters
+- 10.14. Group Submasters
 - 10.14.1. Convert a Scene into a Group Submaster
 - 10.14.2. Assign a Group Submater directly to a Slider Controller
 - 10.14.3. Assign a Group Submaster using existing Groups
@@ -55,10 +55,15 @@
 -   Cues cannot be stored without a Qlist destination.
     
 -   Cues may be assigned: 
+
 ◾ In Time 
+
 ◾ Out Time 
+
 ◾ Delay In Time 
+
 ◾ Delay Out Time 
+
 ◾ Text Label
     
 
@@ -69,7 +74,9 @@
 -   Scenes may only contain a single "Look" of editor values.
     
 -   Scenes assigned to Slider Controllers are given the default settings of: 
+
 ◾ {GO + Jump Parameters} 
+
 ◾ {Release At Bottom}
     
 -   Scenes may only be assigned In-TIme.
@@ -274,7 +281,7 @@ In the process of storing a cue, a number of filters and settings are available.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7XZturjhs8q9d2Fm3TGW%2F10.7.webp?alt=media&token=29f529bc-8560-42b7-a2ae-ae0268021904)
-**<p align=center> Cue Store Options Pop-up </p>**
+<p align=center> Cue Store Options Pop-up </p>
 
 
 
@@ -313,8 +320,12 @@ To assign a Text Label to a Cue:
 2.  Press the [UPDATE] and the **Update pop-up** will open. Two columns will appear. The left column shows **Cues** available for updating and the right column shows **Libraries** available for updating. If affected values are not referencing a library, the Cue column will indicate the **source** cue that the modifications will be updated to.
     
 3.  If the Editor parameter values are **new** to all active cues, destination cue. Will be dependent on the **New Values** setting: 
+
+
 ◾ If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column. 
+
 ◾ If {Master PB Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller. 
+
 ◾ If {Don't Store} is selected, no new parameter values will be updated.
     
 
@@ -386,8 +397,11 @@ This method may be used in [BLIND] and unlike live, fixtures may be released fro
 2.  Press [QLIST] (in not not on the Master Controller) [CUE] [#] [STORE].
     
 3.  If the cue exits, the Cue Exists pop-up will appear with options for {Cancel, Update, Overwrite, Release}. 
+
 ◾ Tap {Overwrite} to replace all fixtures with those in the Editor. 
+
 ◾ Tap {Update} to merge the Editor into the selected cue. 
+
 ◾ Tap {Release} to remove the selected fixtures from the cue.
     
 
@@ -426,13 +440,24 @@ Cue Settings pop-up
 2.  The **Copy Cue** Pop-up will open
     
 3.  Three Options are available: 
+
 ◾ {Actual Cue} - Copies cue properties as well as stored parameter values 
+
 ◾ {State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) 
+
 ◾ {Values Only} - Copies only the hard values that are stored in the source cue
     
 5.   [CUE] [#] [PASTE] - The Cue Only Pop-up will open
     
-6.  Three Options are available: ◾ {Paste} {Cue Only} ◾ {Paste} {Skip} ◾{OK} ◾ {Cancel}
+6.  Three Options are available: 
+
+◾ {Paste} {Cue Only} 
+
+◾ {Paste} {Skip} 
+
+◾{OK} 
+
+◾ {Cancel}
     
 7.   Choose an option and the operation will be completed
     
@@ -715,7 +740,13 @@ Using Cue Setting Pop-Up:
     
 3.  Press [TIME] - The Parameter Time pop-up will appear.
     
-4.  oggle on/off the parameters requiring Parameter Time ◾ Parameter view may be filtered by banks. ◾ Fixtures may be selected and detected freely in the pop-up. ◾ Toggling the parameter header will select reselect all fixtures.
+4.  oggle on/off the parameters requiring Parameter Time 
+
+◾ Parameter view may be filtered by banks. 
+
+◾ Fixtures may be selected and detected freely in the pop-up. 
+
+◾ Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -769,8 +800,11 @@ See Also: 10.9. Modifying Cues and Scenes
 3.  Press [TIME] - The Time pop-up will open.
     
 4.  Toggle on/of the parameters that require Parameter Time. 
+
 ◾ Parameter view may be filtered by banks. 
+
 ◾ Fixtures may be selected and detected freely in the pop-up. 
+
 ◾ Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
@@ -786,8 +820,11 @@ See Also: 10.9. Modifying Cues and Scenes
 3.  Press [TIME] - The Time pop-up opens.
     
 4.  If they were not already selected, toggle on/of the parameters that require Parameter Time to be released. 
+
 ◾ Parameter view may be filtered by banks. 
+
 ◾ Fixtures may be selected and detected freely in the pop-up. 
+
 ◾ Toggling the parameter header will select reselect fixtures.
     
 5.  Press either the {Release} key over the Time-In wheel or the {Release} over the Delay-In wheel.
@@ -807,8 +844,11 @@ See Also: 10.9. Modifying Cues and Scenes
 2.  Press [TIME] - The Time pop-up will open.
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
+
 ◾ Parameter view may be filtered by banks. 
+
 ◾ Fixtures may be selected and detected freely in the pop-up. 
+
 ◾ Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.
@@ -835,8 +875,11 @@ See Also: 10.9. Modifying Cues and Scenes
 2. Press [TIME] - The Time pop-up will open.
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
+
 ◾ Parameter view may be filtered by banks. 
+
 ◾ Fixtures may be selected and detected freely in the pop-up. 
+
 ◾ Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.

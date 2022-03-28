@@ -450,9 +450,12 @@ Using the Rate Screen: Large encoder wheels:
 1.  Press the [Rate Key] - When opened, all loaded controllers will appear in the "Selected Controllers" section of the display. Initially all loaded controllers will be globally affected by the wheels and features in the Rate Screen.
     
 2.  Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display. 
-    ◾ {Select All} will reselect all loaded controllers for rate control. 
-    ◾ {Deselect All} will release all selected controllers from rate control 
-    ◾ {Show Active} will release all controllers in the "Selected Controllers" section that are not currently under the control of the rate wheels.
+   
+  ◾ {Select All} will reselect all loaded controllers for rate control. 
+  
+  ◾ {Deselect All} will release all selected controllers from rate control 
+    
+  ◾ {Show Active} will release all controllers in the "Selected Controllers" section that are not currently under the control of the rate wheels.
     
 3.   Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) --> 3000% (effectively cut time)
     

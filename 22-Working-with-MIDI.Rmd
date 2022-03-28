@@ -49,9 +49,13 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 -   MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.
     
 -   MIDI time code is available in the following frame rates: 
+
 ◾ 24 frame/s (standard rate for film work) 
+
 ◾ 25 frame/s (standard rate for PAL video) 
+
 ◾ 29.97 frame/s (drop-frame timecode for NTSC video) 
+
 ◾ 30 frame/s (non-drop timecode for NTSC video)
     
 
@@ -85,8 +89,11 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 1.  Connect all appropriate MIDI devices and power them on.
     
 2.  Toggle a MIDI Connection source 
+
 ◾ Local MIDI. 
+
 ◾ MIDI over USB/MIDI over Ethernet. 
+
 ◾ Refresh looks for new connections if devices are added later.
     
 3.  Press Apply to stay in I/O settings or Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up.

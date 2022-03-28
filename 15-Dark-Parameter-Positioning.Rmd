@@ -87,6 +87,7 @@ A Look Ahead cue is a cue that automatically pre-positions parameters when the d
 **Unimplemented**
 
 -   Look Ahead: (sometimes referred to a Mark Cue) 
+
 ◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store **Options** as {Look Ahead} will preposition dark parameters for just the tagged cue.
 
 
