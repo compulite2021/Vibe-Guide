@@ -18,24 +18,21 @@ This chapter covers basic specifications.
 <p align="center">
   <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoXar4XEyvpm48DVT7GxC%2F3.1.webp?alt=media&token=2b25b3aa-fc22-45b1-a018-bd5bfe5ec5a7"> 
 </p>
-
-**<p align=center> Front Panel View</p>**
+<p align=center> Front Panel View</p>
 
 
 
 <p align="center">
   <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQ7Yp9gAyO9rW9YbcenEq%2F3.png?alt=media&token=b1b77950-f160-4efb-8ec7-a7d1d666720d"> 
 </p>
-
-**<p align=center> Rear Panel View</p>**
+<p align=center> Rear Panel View</p>
 
 
 
 <p align="center">
   <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJOCXTVt329PaiHlLxdDM%2F3.2.webp?alt=media&token=e05ff57b-0114-43e5-851a-2980421d8225">
 </p>
-
-**<p align=center> Editor Controls</p>**
+<p align=center> Editor Controls</p>
 
 
  Editor Controls are used to program and edit parameter values for all fixtures as well as create and edit objects such as cues and libraries.
