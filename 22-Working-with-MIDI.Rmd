@@ -35,6 +35,41 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 -   A section for MIDI time code, and other manufacturer's "System Exclusive" information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.
 
 
+>E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ's frequently control lighting via MIDI touchpad controllers.
+
+**MIDI Show Control or MSC -** <span style="color:blue">Not yet implemented</span>
+
+-   is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.
+    
+-   The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia
+    
+
+**MIDI Time Code** - <span style="color:blue">Not yet implemented</span>
+
+-   MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.
+    
+-   MIDI time code is available in the following frame rates: 
+◾ 24 frame/s (standard rate for film work) 
+◾ 25 frame/s (standard rate for PAL video) 
+◾ 29.97 frame/s (drop-frame timecode for NTSC video) 
+◾ 30 frame/s (non-drop timecode for NTSC video)
+    
+
+>Vibe can receive MIDI time code but does not generate MIDI time code.
+
+**Local MIDI:**
+
+-   MIDI is generated and received from the 5 pin DIN connectors on the back of the console.
+    
+
+**MIDI over USB:**
+
+-   Transmits and receives MIDI over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.
+    
+
+**MIDI over Ethernet:**
+
+-   Windows class compliant MIDI over Ethernet is supported. Compulite VC MIDI over Ethernet is also supported.
 
 
 ## General MIDI Configuration
@@ -43,7 +78,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 **I/O General:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnEjvXatpBYTjlOz39Avh%2Fimage.png?alt=media&token=b9519df2-6306-4b05-b8b4-d3b6deb01c07)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLfFsHYyFscSxarwfepfu%2F22.2.webp?alt=media&token=7b0b4729-7618-47fb-819f-c2cc7c95c2ec)
 
 **General configuring Vibe MIDI:**
 
@@ -73,7 +108,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 >The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXF0IiD2SaKn2XnLU0F6U%2Fimage.png?alt=media&token=df35f2f2-a61f-4b6f-a369-afe735d338bd)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4VPqNUiOZuUAJ3DO9bYY%2F22.3.webp?alt=media&token=46e4c67b-244b-42f9-b9cc-d364a6c10b64)
 
 **Assign MIDI Notes to Controllers:**
 
@@ -92,6 +127,44 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 7.  Tap the {Teach} key again to toggle it off.
     
 8.  Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up.
+
+
+**Assign MIDI Continuous Controller to Vibe Controller:**
+
+1.  Select the channel that the MIDI message will be received on.
+    
+2.  Select the tab for the type of MIDI message to be received. In this case **Continuous Controller**.
+    
+3. Tap {Teach } -The Teach key will turn purple.
+    
+4. Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.
+    
+5.  Move any of the Vibe slider faders - The location and controller type will appear in the box.
+    
+6.  Tap the {Teach} key again to toggle it off.
+    
+7.  Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.
+    
+
+**Assign Macros to a MIDI note:**
+
+1.  Select the channel that the MIDI message will be received on.
+    
+2.  Select the tab for the type of MIDI message to be received. In this case **Note**.
+    
+3.  Tap {Teach } - The Teach key will turn purple.
+    
+4.  Tap the desired note box in the MIDI grid - The box will turn purple.
+    
+5.  Press [MACRO] - The Macro selector pop-up will appear.
+    
+6.  Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.
+    
+7.  Tap the {Teach} key again to toggle it off.
+    
+8.  Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.
+
+
 
 **Additional functions:**
 
@@ -127,7 +200,7 @@ Also supported on **receive** are:
 -   Moving lights
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1XOa7AE5WB6cDdDzPfKf%2Fimage.png?alt=media&token=5cc5108e-b28a-4c58-9760-3615ce433210)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a)
 
 
 To receive MSC:

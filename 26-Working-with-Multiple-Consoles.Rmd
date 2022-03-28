@@ -7,6 +7,6 @@
 
 ## Working with Multiple Consoles
 
-<span style="color:Red">Not yet implemented</span>.
+<span style="color:blue">Not yet implemented</span>.
 
 

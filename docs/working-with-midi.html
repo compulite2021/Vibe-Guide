@@ -380,11 +380,43 @@
 <li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
 <li><p>A section for MIDI time code, and other manufacturer’s “System Exclusive” information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.</p></li>
 </ul>
+<blockquote>
+<p>E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ’s frequently control lighting via MIDI touchpad controllers.</p>
+</blockquote>
+<p><strong>MIDI Show Control or MSC -</strong> <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p></li>
+<li><p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia</p></li>
+</ul>
+<p><strong>MIDI Time Code</strong> - <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.</p></li>
+<li><p>MIDI time code is available in the following frame rates:
+◾ 24 frame/s (standard rate for film work)
+◾ 25 frame/s (standard rate for PAL video)
+◾ 29.97 frame/s (drop-frame timecode for NTSC video)
+◾ 30 frame/s (non-drop timecode for NTSC video)</p></li>
+</ul>
+<blockquote>
+<p>Vibe can receive MIDI time code but does not generate MIDI time code.</p>
+</blockquote>
+<p><strong>Local MIDI:</strong></p>
+<ul>
+<li>MIDI is generated and received from the 5 pin DIN connectors on the back of the console.</li>
+</ul>
+<p><strong>MIDI over USB:</strong></p>
+<ul>
+<li>Transmits and receives MIDI over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</li>
+</ul>
+<p><strong>MIDI over Ethernet:</strong></p>
+<ul>
+<li>Windows class compliant MIDI over Ethernet is supported. Compulite VC MIDI over Ethernet is also supported.</li>
+</ul>
 </div>
 <div id="general-midi-configuration" class="section level2" number="22.2">
 <h2><span class="header-section-number">22.2</span> General MIDI Configuration</h2>
 <p><strong>I/O General:</strong></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnEjvXatpBYTjlOz39Avh%2Fimage.png?alt=media&amp;token=b9519df2-6306-4b05-b8b4-d3b6deb01c07" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLfFsHYyFscSxarwfepfu%2F22.2.webp?alt=media&amp;token=7b0b4729-7618-47fb-819f-c2cc7c95c2ec" /></p>
 <p><strong>General configuring Vibe MIDI:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Connect all appropriate MIDI devices and power them on.</p></li>
@@ -406,7 +438,7 @@
 <blockquote>
 <p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
 </blockquote>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXF0IiD2SaKn2XnLU0F6U%2Fimage.png?alt=media&amp;token=df35f2f2-a61f-4b6f-a369-afe735d338bd" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4VPqNUiOZuUAJ3DO9bYY%2F22.3.webp?alt=media&amp;token=46e4c67b-244b-42f9-b9cc-d364a6c10b64" /></p>
 <p><strong>Assign MIDI Notes to Controllers:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Enable Notes in or Notes out.</p></li>
@@ -417,6 +449,27 @@
 <li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
 <li><p>Tap the {Teach} key again to toggle it off.</p></li>
 <li><p>Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
+</ol>
+<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
+<li><p>Tap {Teach } -The Teach key will turn purple.</p></li>
+<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
+</ol>
+<p><strong>Assign Macros to a MIDI note:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Note</strong>.</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press [MACRO] - The Macro selector pop-up will appear.</p></li>
+<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
 </ol>
 <p><strong>Additional functions:</strong></p>
 <ul>
@@ -440,7 +493,7 @@
 <li><p>General lights</p></li>
 <li><p>Moving lights</p></li>
 </ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1XOa7AE5WB6cDdDzPfKf%2Fimage.png?alt=media&amp;token=5cc5108e-b28a-4c58-9760-3615ce433210" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&amp;token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a" /></p>
 <p>To receive MSC:</p>
 <ol style="list-style-type: decimal">
 <li><p>Tap {Enable In}</p></li>
