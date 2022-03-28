@@ -83,7 +83,9 @@ Choose Shut Down the Console - The console will safely power off.
 -   **DMX 512 Universe** - Virtual DMX outputs 0 ➡️ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. 
 
 ◾ Compulite VC protocol 
+
 ◾ w Art-Net 3 w 
+
 ◾ sACN
     
 -   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ➡️ 1000 = User defined sets
