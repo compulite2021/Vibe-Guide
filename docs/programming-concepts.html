@@ -367,28 +367,29 @@
 <p><strong>Abstraction:</strong></p>
 <ul>
 <li><p>To simplify programming, Vibe uses an abstract layer that allows fixtures of different hardware types to be presented to the user in a universal way.</p></li>
-<li><p>The dedicated graphical “Smart Screen” presents global pickers for most parameters including: ◾ HSV color picker (Hue, Saturation, Intensity)
-◾ P/T XYZ Trackpad
-◾ Blade picker
-◾ Beam picker for Iris, Zoom, Focus and Frost effects
-◾ General slider picker for GOBO, Color, Prism, and Animation wheels
-◾ Intensity picker for common intensity values and strobe effects</p></li>
+<li><p>The dedicated graphical “Smart Screen” presents global pickers for most parameters including:</p></li>
 </ul>
+<p>◾ HSV color picker (Hue, Saturation, Intensity)</p>
+<p>◾ P/T XYZ Trackpad</p>
+<p>◾ Blade picker</p>
+<p>◾ Beam picker for Iris, Zoom, Focus and Frost effects</p>
+<p>◾ General slider picker for GOBO, Color, Prism, and Animation wheels</p>
+<p>◾ Intensity picker for common intensity values and strobe effects</p>
 <p><strong>Real World Units:</strong></p>
 <ul>
-<li>Where possible picker values are displayed in “Real World” units
-◾ XYZ P/T in degrees
-◾ Strobe in HZ
-◾ Color in HSV 0-360 degrees
-◾ Zoom in degrees</li>
+<li>Where possible picker values are displayed in “Real World” units</li>
 </ul>
+<p>◾ XYZ P/T in degrees</p>
+<p>◾ Strobe in HZ</p>
+<p>◾ Color in HSV 0-360 degrees</p>
+<p>◾ Zoom in degrees</p>
 <p><strong>Virtual Parameters:</strong></p>
 <ul>
-<li>To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture. Examples would be:
-◾ HSV - As a common denominator for CMY, RGB, and Multi color LED fixtures such as RGBA, ETC Seven color, RGBW.
-◾ Virtual Intensity - For controlling LED fixtures that do not have a dimmer parameter.
-◾ XYZ - for calibration of fixtures that only have a physical Pan/Tilt</li>
+<li>To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture. Examples would be:</li>
 </ul>
+<p>◾ HSV - As a common denominator for CMY, RGB, and Multi color LED fixtures such as RGBA, ETC Seven color, RGBW.</p>
+<p>◾ Virtual Intensity - For controlling LED fixtures that do not have a dimmer parameter.</p>
+<p>◾ XYZ - for calibration of fixtures that only have a physical Pan/Tilt</p>
 <p><strong>Tracking:</strong></p>
 <ul>
 <li>Vibe by default is a Tracking console and follows the conventions of modern theatrical consoles. Vibe also has a special track feature called SKIP. If cues are modified using SKIP, instead of Qonly, the relationship with the original hard value is maintained, and changes to the original value “Skip” over the modification and preserve the track.</li>
@@ -407,11 +408,11 @@
 </ul>
 <p><strong>Color spaces:</strong></p>
 <ul>
-<li>The Vibe can work in three color spaces:
-◾ HSV - Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (depending on the fixture type) will be displayed but not directly referenced in cues using HSV.
-◾ RGB - If color values are set using the physical RGB parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced .
-◾ CMY - If color values are set using the CMY parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced.</li>
+<li>The Vibe can work in three color spaces:</li>
 </ul>
+<p>◾ HSV - Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (depending on the fixture type) will be displayed but not directly referenced in cues using HSV.</p>
+<p>◾ RGB - If color values are set using the physical RGB parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced .</p>
+<p>◾ CMY - If color values are set using the CMY parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced.</p>
 <p><strong>Color crossfading:</strong></p>
 <ul>
 <li>Currently, color crossfading is done using the physical color parameters. In future release it will be possible to crossfade HSV using predefined vectors</li>

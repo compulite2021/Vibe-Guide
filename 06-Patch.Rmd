@@ -114,7 +114,9 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 
 **To Patch fixtures using traditional keypad syntax:**
 
-◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** ◾ [ADDRESS] [#].[#] +/ - ➡️ [#].[#] [FIXTURE] [#] [STORE].
+◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
+
+◾ [ADDRESS] [#].[#] +/ - ➡️ [#].[#] [FIXTURE] [#] [STORE].
 
 > Addresses may also be typed in absolute format: 1 ➡️ 32,768 (64
 > Universes standard). The system will automatically assign the correct
@@ -182,8 +184,11 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8RUSEceSC54jo9ad3dch%2F6.4.2.webp?alt=media&token=301e5200-bdc3-41df-904f-aae3609dcb59)
 
 ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
+
 ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
+
 ◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
+
 ◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
 
 **Toolbar with fixture selection:**
@@ -191,14 +196,20 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&token=4f322af9-9116-4d1e-b01b-cc15538d482a)
 
 ◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
+
 ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
+
 ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
 See: 20. XYZ Fixture Calibration 
+
 ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
+
 ◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
 
 **Modify the patch using keypad syntax:** 
+
 ◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
+
 ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
 
 ## Configuring Physical DMX 1/0
@@ -223,7 +234,9 @@ See: 20. XYZ Fixture Calibration
 **Change output to input** - Currently, Vibe supports 2 inputs but multiple connectors may be assigned to the same input.
 
 1. Tap a patched output - Two additional options will appear below the Output Destination Universe box. 
+
 ◾ {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
+
 ◾ {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
     
 

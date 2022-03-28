@@ -59,7 +59,11 @@ This chapter covers basic specifications.
 
 ## Motorized Sliders and Qkeys
 
-![Motorized Slider and Qkey Controllers](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxsWfMbqMqt1HoY8RjkUG%2F3.3.webp?alt=media&token=88f965be-30de-4ae9-bc05-77a7b881cf97)
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxsWfMbqMqt1HoY8RjkUG%2F3.3.webp?alt=media&token=88f965be-30de-4ae9-bc05-77a7b881cf97"> 
+</p>
+
+<p align=center> Motorized Slider and Qkey Controllers</p>
 
  15 individually paging 60mm Motorized slider potentiometers and 15 individually paging Qkey single button controllers, used to execute and control objects such as: 
 
@@ -82,7 +86,11 @@ This chapter covers basic specifications.
 
 ## Master Controller and Control Keys
 
-![Master Controller and Control Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FeKxmo9RyqPKPWmOtQUtI%2F3.4.webp?alt=media&token=f13a5178-75d3-4156-8951-e33ff77ddc53)
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FeKxmo9RyqPKPWmOtQUtI%2F3.4.webp?alt=media&token=f13a5178-75d3-4156-8951-e33ff77ddc53"> 
+</p>
+
+<p align=center> Master Controller and Control Keys</p>
 
  • Non-motorized 100mm Sliders, used for Theatrical playback of cues
  

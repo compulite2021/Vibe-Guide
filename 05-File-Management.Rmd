@@ -40,7 +40,9 @@ Vector Shows may be loaded with the following limitations:
 **Devices:**
 
 ◾ If a matching device exists in Vibe that device will be used. Modes will be matched. 
+
 ◾ If a similar device exists, it will be used. Modes will try to be matched. 
+
 ◾ If no match or close match is found, a generic device will be created.
 
 **Patch:**

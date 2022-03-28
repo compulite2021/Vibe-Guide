@@ -412,11 +412,13 @@
 <p><strong>Editing Properties:</strong> - Cueing Section</p>
 <p>Tracking - Non-Tracking:</p>
 <ul>
-<li><p>Tracking On:
-◾ Values track forward. The stage look is made up of a combination of hard and tracked values.</p></li>
-<li><p>Non-Tracking:
-◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.</p></li>
+<li>Tracking On:</li>
 </ul>
+<p>◾ Values track forward. The stage look is made up of a combination of hard and tracked values.</p>
+<ul>
+<li>Non-Tracking:</li>
+</ul>
+<p>◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.</p>
 <blockquote>
 <p>In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the <strong>Store Options</strong> {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.</p>
 </blockquote>
@@ -436,7 +438,6 @@
 <blockquote>
 <p>E.g. If the increment is 1 and the last cue is 10, the new cue would be 11. If the increment is 10, then the new cue would be 20.</p>
 </blockquote>
-<hr />
 <p><strong>Editing Properties:</strong> - ON Value</p>
 <ul>
 <li><p>Virtual wheel sets the default editor value for the dimmer parameter when the [ON] key is pressed.</p></li>
@@ -470,8 +471,7 @@
 </ul>
 <p><strong>Default Release Time:</strong></p>
 <ul>
-<li>Default Fade out time for parameters being released from the editor using the [RESET], parameter [RELEASE] keys, or Controllers being released from the stage (turned off) using the controller [RELEASE] button.
-<strong>_________________________________________________________________________________________________</strong></li>
+<li>Default Fade out time for parameters being released from the editor using the [RESET], parameter [RELEASE] keys, or Controllers being released from the stage (turned off) using the controller [RELEASE] button.</li>
 </ul>
 <p><strong>Look Ahead</strong> Section:</p>
 <ul>
@@ -481,17 +481,14 @@
 <blockquote>
 <p>Once all is set on, individual controllers may disable Look Ahead at any time. Once all off, individual controllers may be enabled Look Ahead at any time.</p>
 </blockquote>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Timing Properties - Snap</strong> Section:</p>
 <ul>
 <li>Default fade time for all controllers being initiated by the Snap.</li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Timing Properties - Snap</strong> Section:</p>
 <ul>
 <li>Default fade time for all controllers being initiated by the Snap.</li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Timing Properties - System Time</strong> Section:</p>
 <ul>
 <li>System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.</li>
@@ -554,17 +551,19 @@
 <h2><span class="header-section-number">7.5</span> Defaults</h2>
 <p><strong>Defaults</strong> - Initial settings for most system objects.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FU3hN3WzAt97uaM12rHlu%2F7.5.webp?alt=media&amp;token=6c4fc2b1-e16e-4cac-aa83-524c93f2a99b" /></p>
-<p><strong>See:</strong>
-- 7.5.1. Controller Settings
-- 7.5.2. Controller Actions
-- 7.5.3. Qlist Properties
-- 7.5.4. Chaser Properties
-- 7.5.5. Cue Settings
-- 7.5.6. Cue Store Options
-- 7.5.7. Scene Settings
-- 7.5.8. Scene Store Options
-- 7.5.9. Bank Library Options
-- 7.5.10. Snap Settings</p>
+<p><strong>See:</strong></p>
+<ul>
+<li>7.5.1. Controller Settings</li>
+<li>7.5.2. Controller Actions</li>
+<li>7.5.3. Qlist Properties</li>
+<li>7.5.4. Chaser Properties</li>
+<li>7.5.5. Cue Settings</li>
+<li>7.5.6. Cue Store Options</li>
+<li>7.5.7. Scene Settings</li>
+<li>7.5.8. Scene Store Options</li>
+<li>7.5.9. Bank Library Options</li>
+<li>7.5.10. Snap Settings</li>
+</ul>
 <div id="controller-settings" class="section level3" number="7.5.1">
 <h3><span class="header-section-number">7.5.1</span> Controller Settings</h3>
 <p><strong>Defaults</strong> - Controller Settings</p>
@@ -583,7 +582,6 @@
 <li><p><strong>Go + Jump Parameters</strong> - Parameters Jump to their values as soon as the slider moves off zero. Intensity will remain under the control of the slider.</p></li>
 <li><p><strong>Release At Bottom</strong> - The controller will be released from affecting the stage when the slider reaches zero. Default System Release Time or Qlist Release Time will be used.</p></li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Controller Settings: Properties</p>
 <ul>
 <li><p><strong>Exclude from Sna</strong>p - The controller will not be recorded in Snapshots.</p></li>
@@ -593,12 +591,10 @@
 <li><p><strong>Prevent from Paging</strong> - Locks a Qlist or Scene to the current page. Paging ⤴️ or ⤵️ will not affect the Qlist or Scene on the controller.</p></li>
 <li><p><strong>Prevent from Grab</strong> - The <strong>Grab</strong> command will not capture the controller’s active parameters.</p></li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Controller Settings: Priority</p>
 <ul>
 <li><strong>Virtual Priority Wheel</strong> - Sets the controller’s LTP group number. Controllers assigned higher numbers cannot be overridden by lower numbers. Controllers assigned the same number will be LTP among themselves. Values may be entered using the virtual wheel or directly by taping the middle of the centre area of the wheel and typing a value from the keypad.</li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Controller Settings: Restore defaults</p>
 <ul>
 <li><strong>Restores settings</strong> - Resets Controller settings to their last stored configuration.</li>
@@ -635,7 +631,6 @@
 <li><p>ON - Normal tracking logic will be used.</p></li>
 <li><p>OFF (NOT QONLY) - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).</p></li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Qlist Properties: Preferences</p>
 <ul>
 <li><p><strong>Back to top on release</strong> - After a controller is released, it will reset to the first cue in the Qlist.</p></li>
@@ -645,7 +640,6 @@
 <li><p><strong>Trigger</strong> - Toggles on/off the execution of Macros and Snaps that are attached to cues.</p></li>
 <li><p><strong>Look Ahead</strong> - Enable/Disable the Look Ahead function.</p></li>
 </ul>
-<p><strong>__________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Qlist Properties: Loop GO Behavior</p>
 <table>
 <colgroup>
@@ -696,14 +690,16 @@
 <hr />
 <p><strong>Defaults</strong> - Release time</p>
 <ul>
-<li><p><strong>Virtual Wheel:</strong>
-◾ Wheel at Default - System Default Release time is referenced.
-◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off.
-◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.</p></li>
-<li><p><strong>Button under wheel:</strong> Toggles between Milliseconds, Seconds, Minutes, Hours.</p></li>
+<li><strong>Virtual Wheel:</strong></li>
 </ul>
-<p><strong>Defaults</strong> - Qlist Properties:
-◾ <strong>Restore default</strong> - Resets Qlist properties to their last stored configuration.</p>
+<p>◾ Wheel at Default - System Default Release time is referenced.</p>
+<p>◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off.</p>
+<p>◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.</p>
+<ul>
+<li><strong>Button under wheel:</strong> Toggles between Milliseconds, Seconds, Minutes, Hours.</li>
+</ul>
+<p><strong>Defaults</strong> - Qlist Properties:</p>
+<p>◾ <strong>Restore default</strong> - Resets Qlist properties to their last stored configuration.</p>
 </div>
 <div id="chaser-properties" class="section level3" number="7.5.4">
 <h3><span class="header-section-number">7.5.4</span> Chaser Properties</h3>
@@ -728,7 +724,6 @@
 <li><p>Int Limit: Proportionately limits the intensity output of the cues assigned to a controller.</p></li>
 <li><p>X-fade: Proportionately adjusts the crossfade curve of a chase from full crossfade to jump.</p></li>
 </ul>
-<p><strong>_________________________________________________________________________________________________</strong></p>
 <p><strong>Defaults</strong> - Properties: Restore default:</p>
 <ul>
 <li><strong>Restores default</strong> - Resets Chase properties to their last stored configuration.</li>
@@ -740,12 +735,14 @@
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoE3efM7x3Rse7NTjNd1S%2F7.5.5.webp?alt=media&amp;token=6b323409-dd86-41f2-8c3e-651ea2852b00" /></p>
 <p><strong>See:</strong></p>
 <ul>
-<li><p><strong>Time:</strong>
-◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.1.-assigning-cue-time">10.11.1. Assigning Cue Time</a>
-◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.2.-wait-and-follow-times">10.11.2. Wait and Follow Times</a></p></li>
-<li><p><strong>Properties:</strong>
-◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options">10.12.3. Tracking Options</a></p></li>
+<li><strong>Time:</strong></li>
 </ul>
+<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.1.-assigning-cue-time">10.11.1. Assigning Cue Time</a></p>
+<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.2.-wait-and-follow-times">10.11.2. Wait and Follow Times</a></p>
+<ul>
+<li><strong>Properties:</strong></li>
+</ul>
+<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options">10.12.3. Tracking Options</a></p>
 </div>
 <div id="cue-store-options" class="section level3" number="7.5.6">
 <h3><span class="header-section-number">7.5.6</span> Cue Store Options</h3>
@@ -757,10 +754,12 @@
 <h3><span class="header-section-number">7.5.7</span> Scene Settings</h3>
 <p><strong>Defaults</strong> - Scene Settings</p>
 <ul>
-<li><p><strong>Time In</strong> - Sets the default in-time for Scenes. The default value may be changed using:
-◾ Virtual wheel
-◾ Tapping in the centre of the wheel until it turns red then entering a value using the keypad</p></li>
-<li><p><strong>Units Button</strong> - Sets the time units (H/M/S/Mil)</p></li>
+<li><strong>Time In</strong> - Sets the default in-time for Scenes. The default value may be changed using:</li>
+</ul>
+<p>◾ Virtual wheel</p>
+<p>◾ Tapping in the centre of the wheel until it turns red then entering a value using the keypad</p>
+<ul>
+<li><strong>Units Button</strong> - Sets the time units (H/M/S/Mil)</li>
 </ul>
 </div>
 <div id="scene-store-options" class="section level3" number="7.5.8">

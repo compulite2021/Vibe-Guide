@@ -22,9 +22,13 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.
 
 -   Supported gestures: 
+
 ◾ Two fingers for swipe and scrolling. 
-◾ One finger select. 
+
+◾ One finger select.
+
 ◾ Multi-selection via ⤴️⤵️shaped gestures. 
+
 ◾ Multi-selection via window.
     
 -   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). 
@@ -44,7 +48,11 @@ The large 21" embedded screen is general-purpose like the external monitors.
     
 -   Each Monitor (excluding the **Smart Screen**) can contain its own independent set of **WorkSpace**  **Templates**.
     
--   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: ◾ **[PATCH]** ◾ **[PROG]** - (Program) ◾ **[PLAY-B]** - (Playback Controllers)
+-   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
+
+◾ **[PATCH]** 
+
+◾ **[PROG]** - (Program) ◾ **[PLAY-B]** - (Playback Controllers)
     
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
     
@@ -119,7 +127,15 @@ Vibe has two ways to display parameter data:
     
     **-** Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.6.1.-live-view-settings).)
     
--   **Fit** - Opens column width options. ◾ Fit to Window ◾ Fit to Value ◾ Fix by Text ◾ Default
+-   **Fit** - Opens column width options. 
+
+◾ Fit to Window 
+
+◾ Fit to Value 
+
+◾ Fix by Text 
+
+◾ Default
     
 -   **Active on Stage** - Only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
     
@@ -127,15 +143,23 @@ Vibe has two ways to display parameter data:
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FACLxFHojrpM1W1uVZfRf%2F4.6.1.webp?alt=media&token=cf1c4fbf-74a4-47f5-9bab-085fb9cb925e)
 
 -   **Sets** - Select which of the fixture sets to display. 
-◾ Fixture s Channel 
-◾ Spot s Matrix 
+
+◾ Fixture s Channel
+
+◾ Spot s Matrix
+
 ◾ Media Server 
+
 ◾ Other custom Sets if created
     
 -   **Format** - Controls what format the data is displayed in. 
+
 ◾ % - Values in percentage 
+
 ◾ Decimal - DMX values 0 ➡️ 255 
+
 ◾ Text - Parameter step text 
+
 ◾ Text + Percentage
 
 ## Live Parameter Display
@@ -151,7 +175,7 @@ Live View Settings pop-up - Display Tab.
 
 1.  Tap a parameter column heading or multiple parameter column headings
     
-    - the green indicator light will turn on.
+    > the green indicator light will turn on.
     
 2.   Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
     
@@ -160,7 +184,7 @@ Live View Settings pop-up - Display Tab.
 
 1.   Tap a parameter column heading or multiple parameter column headings
     
-    - the green indicator light will turn on.
+    > the green indicator light will turn on.
     
 2.  Use the **{|<< }** or **{>>|}** keys to move the parameter column first position or last position.
     
@@ -169,7 +193,7 @@ Live View Settings pop-up - Display Tab.
 
 1.  Tap a parameter column heading or multiple parameter column headings
     
-    - the green indicator light will turn on.
+    > the green indicator light will turn on.
     
 2.  Tap the **{Remove}** key.
     
@@ -188,11 +212,19 @@ Parameter keys are toggles so if the indicator light is on, touching the paramet
 
 4. Use the **{|< }** or **{>|} {|<< }** or **{>>|}** to position the column.
 
-**Interactive Icons:** ◾ Adds or removes the icon columns.
+**Interactive Icons:** 
+
+◾ Adds or removes the icon columns.
 
 Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.
 
-**General:** ◾ Global Fixture Number - Fixture's hidden unique system number. ◾ Fixture Layer Number - Adds or removes Fixture Number column. ◾ Fixture Name - Adds or removes Fixture Name column.
+**General:** 
+
+◾ Global Fixture Number - Fixture's hidden unique system number. 
+
+◾ Fixture Layer Number - Adds or removes Fixture Number column. 
+
+◾ Fixture Name - Adds or removes Fixture Name column.
 
 Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.
 
@@ -201,16 +233,26 @@ Fixture # and Fixture Name are toggles so if the indicator light is on, touching
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0Cf1rvhFttH5PpWmRGsr%2F4.7.1.webp?alt=media&token=add0fffb-777d-4be4-b946-9baf95669f4e)
 
 **Fixture Jumping**: 
+
 ◾ Off 
+
 ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+
 ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display.
 
  **Parameter Jumping**: 
+ 
  ◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). **Interactive Fixture Selection:**  
+ 
  ◾ Turns on the ability to make fixture selections from the live display grids. **Interactive**  **Cell Editing:**  
+
  ◾ Turns on the ability to directly edit cells in the live display grid. **Interactive Header selection** - Currently implemented but may not be turned off. 
+ 
  ◾ Enables parameters to be directly selected from the live display headers. **Submaster Values:** 
- ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the  [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png)  icon will also be shown to indicate when the parameter is inhibited. ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
+ 
+ ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the  [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png)  icon will also be shown to indicate when the parameter is inhibited. 
+ 
+ ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
 ## Parameter Mode
 
