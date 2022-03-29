@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 35 Programming Basics | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 35 Programming Basics | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 35 Programming Basics | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="programming-concepts-1.html"/>
+<link rel="next" href="programming-cues-and-scenes-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,91 +610,717 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<div id="programming-basics-1" class="section level1" number="35">
+<h1><span class="header-section-number">Chapter 35</span> Programming Basics</h1>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>9.1. Editor</li>
+<li>9.1.1. What is the Editor</li>
+<li>9.1.2. Blind Editor</li>
+<li>9.2. Editor Tools</li>
+<li>9.2.1. Selections Tools</li>
+<li>9.2.3. Pattern</li>
+<li>9.2.2. Transpose</li>
+<li>9.2.4. Fan Mode</li>
+<li>9.2.5. Highlight Mode</li>
+<li>9.2.6. Lowlight Mode</li>
+<li>9.2.7. Remainder Dim {Rem Dim}</li>
+<li>9.2.8. Home Scene</li>
+<li>9.3. Working with Fixtures</li>
+<li>9.3.1. Fixture Selection basics</li>
+<li>9.3.2. What are Parameters</li>
+<li>9.3.3. Virtual Parameters</li>
+<li>9.3.4. Smart Screen</li>
+<li>9.3.5. Adjusting Parameters using the Wheel Picker</li>
+<li>9.3.6. Grab</li>
+<li>9.3.7. Fixture Selection (Detailed)</li>
+<li>9.3.8. Setting Parameters using Main Encoder Wheels</li>
+<li>9.3.9. Setting Parameters using Interactive Encoder Wheels</li>
+<li>9.3.10. Release and Home Sequences</li>
+<li>9.4. Groups</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
-</ol>
-</div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
+<div id="editor-1" class="section level2" number="35.1">
+<h2><span class="header-section-number">35.1</span> Editor</h2>
+<p>Editor Basics:</p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li>9.1.1. What is the Editor</li>
+<li>9.1.2. Blind Editor</li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
+<div id="what-is-the-editor-1" class="section level3" number="35.1.1">
+<h3><span class="header-section-number">35.1.1</span> What is the Editor</h3>
+<p>All manual parameter modification occurs in the <strong>EDITOR</strong>. (Programmer in some other consoles). The <strong>Live Displays</strong> show all values from <strong>both</strong> Controller outputs (Playbacks or Executors on some consoles) and fixtures in the Editor. Color coding is used to distinguish between values coming from the controllers and values in the <strong>EDITOR</strong>.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJ376dF1k5YYrLIEw9Guq%2F9.1.1.webp?alt=media&amp;token=9bed6d66-ad72-4973-add6-9eb94d134da5" /></p>
+<p><strong>Home a fixture in the Editor:</strong></p>
+<ul>
+<li>[FIXTURE] [#] [HOME]</li>
+</ul>
+<p><strong>Home a fixture parameter in the Editor:</strong></p>
+<ul>
+<li>[FIXTURE] [#] {BANK} {PARAMETER} [HOME]</li>
+</ul>
+<p><strong>Release a fixture in the Editor:</strong></p>
+<ul>
+<li>[FIXTURE] [#] RELEASE]</li>
+</ul>
+<p><strong>Release a fixture parameter in the Editor:</strong></p>
+<ul>
+<li>[FIXTURE] [#] {BANK} {PARAMETER} [RELEASE]</li>
+</ul>
+<p><strong>Reset (Clear) the Editor:</strong></p>
+<ul>
+<li>Press [RESET] key</li>
+</ul>
+<p><strong>Reset (Clear) the Editor and clear the selection:</strong></p>
+<ul>
+<li>Press [VIBE] + [RESET]</li>
+</ul>
+<p>See also: <a href="/s/3kS90tLsADGm1ocbe7q9/9.-programming-basics/9.-programming-basics/9.3.10.-release-and-home-sequences">9.3.10. Release and Home Sequences</a></p>
 </div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<div id="blind-editor-1" class="section level3" number="35.1.2">
+<h3><span class="header-section-number">35.1.2</span> Blind Editor</h3>
+<p>The Blind Editor is used to create or modify objects without outputting values to the stage</p>
+<p>Vibe has two Blind Editor behaviours:</p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Blind acts as a discrete editor separate from the live editor</p></li>
+<li><p>Blind emulates the behaviour of single editor consoles where the main editors output is just disabled</p></li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+<p><strong>To build a new cue in the Blind Editor:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Press [Blind] key flashes yellow and the Command Line turns yellow</p></li>
+<li><p>Program values using the Live Display for reference - no values will be outputted to the stage</p></li>
+<li><p>Store objects as usual - See also:</p></li>
 </ol>
+<ul>
+<li><p>9.4. Creating and Applying Groups</p></li>
+<li><p>10.3. Storing Cues and Scenes Directly to Controllers</p></li>
+<li><p>10.5. Storing Cues to the Master Controller</p></li>
+<li><p>10.6. Storing Qlist Cues to any Controller</p></li>
+<li><p>12.2. Store and Modify Bank Libraries</p></li>
+</ul>
+<p><strong>To edit a cue in the Blind Editor:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [Blind] - key flashes yellow and the Command Line turns yellow</p></li>
+<li><p>Press [QLIST] [#] [CUE] [#] [EDIT] - [UPDATE] flashes red</p></li>
+<li><p>Make modifications to the cue</p></li>
+<li><p>Press [UPDATE] to complete the sequence</p></li>
+</ol>
+<p><strong>To emulate single editor blind:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [VIBE]+[BLIND] - Copies the Live Editor contents to the Blind Editor</p></li>
+<li><p>Toggle [VIBE ]+[BLIND] - Copies the contents of the Blind Editor to the Live Editor (The original contents stay in the Blind Editor</p></li>
+</ol>
+</div>
+</div>
+<div id="editor-tools-1" class="section level2" number="35.2">
+<h2><span class="header-section-number">35.2</span> Editor Tools</h2>
+<p><strong>Editor Tools:</strong></p>
+<ul>
+<li>9.2.1. Selections Tools</li>
+<li>9.2.3. Transpose</li>
+<li>9.2.4. Pattern</li>
+<li>9.2.5. Fan Mode</li>
+<li>9.2.6. Highlight Mode</li>
+<li>9.2.7. Lowlight Mode</li>
+<li>9.2.8. Remainder Dim {Rem Dim}</li>
+<li>9.2.9 Home Scene</li>
+</ul>
+<div id="selections-tools-1" class="section level3" number="35.2.1">
+<h3><span class="header-section-number">35.2.1</span> Selections Tools</h3>
+<p>Currently, Vibe has basic Selection Tools. Advanced tools are under development.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9gX5fSd003KSW9SXkmvY%2F9.2.1.webp?alt=media&amp;token=2cf874a1-a246-4be6-b36b-b8b1b3ec6fb9" /></p>
+<ul>
+<li><p>{ODDS} - Absolute odd number in the range</p></li>
+<li><p>{Evens} - Absolute even numbers in the range</p></li>
+<li><p>{2/1} - Grouping of 2 starting at the first fixture of the range (Relative odd numbers)</p></li>
+<li><p>{2/2} - Grouping of 2 starting at the second fixture of the range (relative even numbers)</p></li>
+<li><p>{3/1} - Grouping of 3 starting at the first fixture of the range</p></li>
+<li><p>{4/1} - Grouping of 4 starting at the first fixture of the range</p></li>
+<li><p>{/} - Used as a separator. <strong>Groupings of #/# Start fixture of the grouping</strong></p></li>
+<li><p><strong>E.g.</strong> [Fixture] [1] [➡️] [14] {Section Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13 (as soon as the {/} is pressed <strong>EVERY 3/1</strong> will be displayed on the command line).</p></li>
+</ul>
+<p>[Fixture] [1] [➡️] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed <strong>EVERY 3/2</strong> will be displayed on the command line).</p>
+</div>
+<div id="transpose-1" class="section level3" number="35.2.2">
+<h3><span class="header-section-number">35.2.2</span> Transpose</h3>
+<p>Transpose is accessed from the Editor Toolbar. It is used to reorder fixture selection based on a specified offset. This is particularly useful in creating interesting effects and fanning.</p>
+<p><strong>E.g. 1:</strong></p>
+<ul>
+<li>Fixture 1 ➡️ 12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12</li>
+</ul>
+<p><strong>E.g. 2:</strong></p>
+<ul>
+<li>Fixture 1 ➡️ 12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12</li>
+</ul>
+<p><strong>E.g. 3:</strong></p>
+<ul>
+<li>Fixture 1➡️12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12</li>
+</ul>
+</div>
+<div id="pattern-1" class="section level3" number="35.2.3">
+<h3><span class="header-section-number">35.2.3</span> Pattern</h3>
+<p>Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.</p>
+<p><strong>To set a pattern:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Make a fixture selection</p></li>
+<li><p>Tap {Pattern} on the Editor Toolbar - The Pattern pop-up will open. 👉 This is not an effect even though it is a dynamic display.</p></li>
+<li><p>Tap the indicator at the top of the displayed fixtures. - it should turn white.</p></li>
+<li><p>Select a number under the Block Size header.</p></li>
+<li><p>Tap the {Spread} icon. The fixture columns will expand to show the new fixture order.</p></li>
+<li><p>If desired make further order changes under the Offset Header and tap {offset} icon.</p></li>
+<li><p>Make further modifications or reset the selection with the {Reset} {Invert} {transpose} and {Invert Columns} keys.</p></li>
+<li><p>Once finished, exit the pop-up by pressing <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or [ENTER].</p></li>
+<li><p>Open the Advanced Effects editor and program the desired effect.</p></li>
+</ol>
+<ul>
+<li>See: 13.3. Advanced Effects Editor</li>
+</ul>
+<blockquote>
+<p>Simple Block and Sub Block groupings may be created within both Effects Editors. The pattern is for advanced blocks and groupings</p>
+</blockquote>
+</div>
+<div id="fan-mode-1" class="section level3" number="35.2.4">
+<h3><span class="header-section-number">35.2.4</span> Fan Mode</h3>
+<p><strong>Vibe has two methods to fan fixture parameters:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRCZsSlnmcSFafQEwMVRY%2F9.2.4.webp?alt=media&amp;token=2157359e-bd73-4d57-b692-0826758d2620" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Using the [Fan] key and interface.</p></li>
+<li><p>Using keypad syntax.</p></li>
+</ol>
+<p>See: 9.3.7. Fixture Selection (Detailed)</p>
+<p><strong>Using [Fan] Mode:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the range of fixtures to be fanned.</p></li>
+<li><p>Press [FAN] to enter Fan Mode.</p></li>
+<li><p>Select a Function from the sliding picker.</p></li>
+<li><p>Turn the encoder wheel of the parameter requiring fanning.</p></li>
+<li><p>Toggle [FAN] to turn off Fan Mode.</p></li>
+</ol>
+<blockquote>
+<p>Selecting a different parameter will also turn Fan mode off.</p>
+</blockquote>
+<p><strong>Common Fan Functions are :</strong></p>
+<ul>
+<li><p>{Fade In} / = lowest to highest</p></li>
+<li><p>{Fade Out}  = highest to lowest</p></li>
+<li><p>{Diagonal} -/- = Standard PAN Fan</p></li>
+<li><p>{Saw Tooth} / = Mirror lowest on ends to highest in middle</p></li>
+<li><p>{Mirror} / = Highest on ends to lowest in middle</p></li>
+</ul>
+<blockquote>
+<p>Function types may be freely changes while in Fan Mode to “audition” various results.</p>
+</blockquote>
+<blockquote>
+<p>Any Function created in the Function Editor of the Advanced Effect Editor may be applied to Fan</p>
+</blockquote>
+<p><strong>Block of and Sub Blocks:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the range of fixtures to be fanned.</p></li>
+<li><p>Press [FAN] to enter Fan Mode.</p></li>
+<li><p>Select a Function from the sliding picker.</p></li>
+<li><p>Select Blocks of {#}</p></li>
+<li><p>Select Sub Blocks {#}</p></li>
+<li><p>Turn the encoder wheel of the parameter requiring fanning.</p></li>
+<li><p>Toggle [FAN] to turn off Fan Mode.</p></li>
+</ol>
+<p><strong>Examples of Blocks and Sub Blocks:</strong></p>
+<ul>
+<li>{Fade In} - Blocks of 1 and no Sub Block</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQzZ38bEmppvXl48ulv8q%2F9.2.4.1.webp?alt=media&amp;token=af1d73eb-2f53-462d-88ad-0227cdd79c2f" /></p>
+<ul>
+<li>{Fade In} - Blocks of 4 no Sub Blocks</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fygiz82lG0e6QyeKOCsyM%2F9.2.4.2.webp?alt=media&amp;token=85ed0077-6d5f-44d5-bdc4-a8b7397d32f3" /></p>
+<ul>
+<li>{Fade In} - Blocks of 6, Sub Blocks of 2</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5DhSrryscbhAwmpb6kLe%2F9.2.4.3.webp?alt=media&amp;token=041f6ae8-95c7-4515-8a7e-7d6eebfb0da1" /></p>
+<ul>
+<li>{Saw Tooth} - (Low-High Mirror) Blocks of 12, Sub Blocks 2</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FyNnPhSss8ibiMnNEoCUE%2F9.2.4.4.webp?alt=media&amp;token=cac11c41-6744-4ae2-b878-451fe9830e66" /></p>
+<ul>
+<li>Moving Light Fixture with {Fade In} Dimmer and Color Fan, and {Diagonal} Pan Fan</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW2ZfOpxlsJUa56lG2mgQ%2F9.2.4.5.webp?alt=media&amp;token=284e82aa-eec2-4e18-a210-4c1d01ff8752" /></p>
+<p>Instead of fanning Blocks based on the selection, fixture Groups may also be used as Blocks.</p>
+<p><strong>To Fan Blocks By Groups:</strong></p>
+<ul>
+<li><p>Using the Group SKs or using the keypad, select the Groups to be fanned</p></li>
+<li><p>Tap {Blocks By Group}</p></li>
+<li><p>Use any of the above methods to fan parameters by Group Parameters may also be fanned using keypad syntax.</p></li>
+<li><p>Fixture Selection (Detailed)</p></li>
+</ul>
+</div>
+<div id="highlight-mode-1" class="section level3" number="35.2.5">
+<h3><span class="header-section-number">35.2.5</span> Highlight Mode</h3>
+<p>Highlight and Lowlight modes are used to help identify the positions of fixtures so that they may be edited more easily.</p>
+<p><strong>Highlight Mode affects parameters and banks in the following way:</strong></p>
+<ul>
+<li><p>Dimmer - Full</p></li>
+<li><p>Other Intensity parameters - home values and masked</p></li>
+<li><p>Position - unchanged and editable</p></li>
+<li><p>Color - home values and masked</p></li>
+<li><p>Beam - home values and masked</p></li>
+<li><p>Image - home values and masked</p></li>
+<li><p>Shape - home values and masked</p></li>
+</ul>
+<p><strong>To Highlight fixtures or Groups:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select fixtures using keypad or using Groups.</p></li>
+<li><p>Press [H.LIGHT] - The key will flash in red to indicate the mode is active. <strong>All</strong> fixtures of the selection will be set as specified above.</p></li>
+<li><p>Press [NEXT] - The first fixture will remain “highlighted” and all other fixtures will return to their editor or stage values.</p></li>
+<li><p>Adjust Pan/Tilt as required and press [NEXT] to move to the next fixture.</p></li>
+<li><p>Continue through the fixture selection using [NEXT] [PREV] until all fixtures are focused.</p></li>
+<li><p>Press [H.LIGHT] again to turn off Highlight Mode. The red light will go out and fixtures will return to their current editor or stage values.</p></li>
+</ol>
+<blockquote>
+<p>Highlight/Lowlight may be entered before a selection is made. Press [ENTER] to Highlight the selection</p>
+</blockquote>
+<p><strong>To swap new fixtures into Highlight:</strong></p>
+<ul>
+<li>Select new fixtures or Groups and press [ENTER] while still in Highlight Mode - the Highlight selection will be swapped.</li>
+</ul>
+<blockquote>
+<p>Until [NEXT] [PREV] is pressed Groups will be appended to make up a larger Highlight selection.</p>
+</blockquote>
+<p>The Highlight may be customized when the default home values are too generic. Users may want to tighten the zoom or use a specific iris as a fixtures default.</p>
+<p><strong>To create a custom Highlight Scene:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Set the values in the Editor similar to creating a Cue or a Scene</p></li>
+<li><p>Press [SCENE] [H.LIGHT] [STORE]</p></li>
+</ol>
+<blockquote>
+<p>The Highlight Scene only affects the active fixture.</p>
+</blockquote>
+<p><strong>To Delete the Highlight Scene:</strong></p>
+<ul>
+<li>Press [SCENE] [H.LIGHT] [DELETE]</li>
+</ul>
+</div>
+<div id="lowlight-mode-1" class="section level3" number="35.2.6">
+<h3><span class="header-section-number">35.2.6</span> Lowlight Mode</h3>
+<p>Lowlight mode is used when many fixtures are lit up and therefore Highlight is not helpful. <strong>Lowlight Mode affects parameters and banks in the following way:</strong></p>
+<ul>
+<li><p>Dimmer - 30% all fixtures except active fixture which will be at 100%</p></li>
+<li><p>Other Intensity parameters - home values and masked.</p></li>
+<li><p>Position - unchanged and editable</p></li>
+<li><p>Color - home values and masked</p></li>
+<li><p>Beam - home values and masked</p></li>
+<li><p>Image - home values and masked</p></li>
+<li><p>Shape - home values and masked Unlike Highlight, Lowlight maintains a value of 30% for dimmers while active.</p></li>
+</ul>
+<p><strong>To “Lowlight” fixtures or Groups:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select fixtures using the keypad or using Groups.</p></li>
+<li><p>Press [L.LIGHT] - All dimmer parameters will go to 30%. [L.LIGHT] will flash in red to indicate the mode is active. All other fixtures of the selection will be set as specified above.</p></li>
+<li><p>Press [NEXT] - The first fixture will go to a dimmer value of 100% and all other fixtures dimmer values will remain at 30%. Other parameters will return to their editor or stage values.</p></li>
+<li><p>Adjust Pan/Tilt as required and press [NEXT] to move to the next fixture.</p></li>
+<li><p>Continue through the fixture selection using [NEXT] [PREV] until all fixtures are focused.</p></li>
+<li><p>Press [L.LIGHT] again to turn off Highlight Mode. The red light will go out and fixtures will return to their current editor or stage values.</p></li>
+</ol>
+</div>
+<div id="remainder-dim-rem-dim-1" class="section level3" number="35.2.7">
+<h3><span class="header-section-number">35.2.7</span> Remainder Dim {Rem Dim}</h3>
+<p><strong>REM DIM</strong> is an Editor Tool commonly used in theatre environments but can be useful in many other situations.</p>
+<ul>
+<li><p><strong>{REM DIM}</strong> Toggles all dimmer values to 0 except those that are selected. If no value is given in the editor, the selected fixtures will maintain their current values and not create a hard move.</p></li>
+<li><p>While in {REM DIM}, [Next]/[Prev] will swap the Rem Dim fixture forwards or backwards.</p></li>
+<li><p>If a selection of multiple fixtures is made followed by {REM DIM} all unselected fixtures will go to 0. The selected fixtures will not be changed or entered into the editor.</p></li>
+<li><p>If a selection of multiple fixtures is made, [Next]/[Prev] will force all but the first fixture in the selection to 0. The next press of [Next]/[Prev] will force the first fixture to 0 and release the next fixture. Fixtures in the selection will continue to swap from 0 to release with each press of [Next]/[Prev].</p></li>
+<li><p>Pressing REM DIM again toggles the feature off and restores the stage look.</p></li>
+<li><p>Cues may be stored with {REM DIM} on but once stored, {REM DIM} is turned off.</p></li>
+</ul>
+</div>
+<div id="home-scene-1" class="section level3" number="35.2.8">
+<h3><span class="header-section-number">35.2.8</span> Home Scene</h3>
+<p>By default released fixtures return to their home values as defined by the device’s fixture profile. The device profile is usually based on the manufacturer’s suggested defaults, but sometimes the defaults are not appropriate. Vibe allows users to customize Home Values by building a Home Scene. When a fixture is programmed in a Home Scene it will take preference over its home values in the device profile.</p>
+<p><strong>Create a Home Scene:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Program fixtures in the editor to values that will work best as home values.</p></li>
+<li><p>Press [SCENE] [HOME] [STORE] - When released fixtures will now use the Home Scene as a reference.</p></li>
+</ol>
+<p><strong>Delete a Home Scene:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Press [SCENE] [HOME] [DELETE] - Home values will return to the device profile’s home values.</li>
+</ol>
+</div>
+</div>
+<div id="working-with-fixtures-1" class="section level2" number="35.3">
+<h2><span class="header-section-number">35.3</span> Working with Fixtures</h2>
+<p>Working with Fixtures:</p>
+<ul>
+<li><p>9.3.1. Fixture Selection basics</p></li>
+<li><p>9.3.2. What are Parameters</p></li>
+<li><p>9.3.3. Virtual Parameters</p></li>
+<li><p>9.3.4. Smart Screen</p></li>
+<li><p>9.3.5. Adjusting Parameters using the Wheel Picker</p></li>
+<li><p>9.3.6. Grab</p></li>
+<li><p>9.3.7. Fixture Selection (Detailed)</p></li>
+<li><p>9.3.8. Setting Parameters using Main Encoder Wheels</p></li>
+<li><p>9.3.9. Setting Parameters using Interactive Encoder Wheels</p></li>
+<li><p>9.3.10. Release and Home Sequences</p></li>
+</ul>
+<div id="fixture-selection-basics-1" class="section level3" number="35.3.1">
+<h3><span class="header-section-number">35.3.1</span> Fixture Selection basics</h3>
+<p>Fixtures are selected using the [FIXTURE] key on the keypad. They also may be stored and recalled using the [GROUP] key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.</p>
+<ul>
+<li><p><strong>[+] [-]</strong> ➡️ keys are valid with Fixture selections and Groups.</p></li>
+<li><p><strong>[FIXTURE]</strong> ◾ (period) - Reselects the last selection.</p></li>
+<li><p><strong>[FIXTURE]</strong> ➡️ - Reselects all fixtures in the Editor.</p></li>
+<li><p><strong>[CE]</strong> - Backspaces the command line one character at a time but currently will not go back one command at a time.</p></li>
+<li><p><strong>[VIBE]+[CE/CLEAR]</strong> - Clears the command line to the beginning and ideal tee system.</p></li>
+<li><p><strong>[RELEASE]</strong>:</p></li>
+</ul>
+<p>◾ First press releases the active parameters (last adjusted) for selected fixtures.</p>
+<p>◾ Second press releases all remaining parameters for selected fixtures from the Editor.</p>
+<ul>
+<li><p><strong>[DE SEL]</strong> - Deselects all fixtures but maintains values in the Editor. This function is usually used to protect the operator from accidentally adjusting parameters in the Editor when they are temporarily captured. It may also be used to “idle” the command line to allow [TEXT] {SK} function while fixtures are still in the Editor.</p></li>
+<li><p><strong>[RESET]</strong> - Releases all parameters from the Editor.</p></li>
+<li><p><strong>[VIBE]+[RESET]</strong> - Releases all parameters from the Editor and releases all selected fixtures.</p></li>
+<li><p><strong>[NEXT]/ [PREV]</strong> - Increments or decrements fixtures in a selection. When used with a Group, will be confined to the fixtures in the Group.</p></li>
+<li><p><strong>Trackball [X LOCK] / [Y LOCK]</strong> - Locks the X or Y axis of the trackball.</p></li>
+<li><p><strong>[RES]</strong> - Sets global encoder resolution. Blue = Low 8 bit, Green = Medium 10 bit (Default) Red = High 16 bit.</p></li>
+</ul>
+<blockquote>
+<p>Holding the [VIBE] key down while turning an encoder temporarily sets the encoder to high resolution 16 bit.</p>
+</blockquote>
+<blockquote>
+<p>Vibe uses a precision algorithm for encoders. Based on the starting resolution, the slower an encoder is turned, the more resolution it has.</p>
+</blockquote>
+</div>
+<div id="what-are-parameters-1" class="section level3" number="35.3.2">
+<h3><span class="header-section-number">35.3.2</span> What are Parameters</h3>
+<p>Parameters are any features of a device that may be manipulated and stored in an object. Examples of parameters would be:</p>
+<ul>
+<li><p>Dimmer</p></li>
+<li><p>Pan/Tilt</p></li>
+<li><p>Cyan/Yellow/Magenta</p></li>
+<li><p>Zoom</p></li>
+<li><p>Gobo 1</p></li>
+<li><p>Blade Rotate</p></li>
+</ul>
+<p>In Vibe parameters are organized under six standard <strong>Banks</strong> and one special Bank:</p>
+<ol style="list-style-type: decimal">
+<li><p>Intensity</p></li>
+<li><p>Position</p></li>
+<li><p>Color</p></li>
+<li><p>Beam</p></li>
+<li><p>Image</p></li>
+<li><p>Shape</p></li>
+<li><p>Control</p></li>
+</ol>
+<blockquote>
+<p>A special bank as its parameters is not stored in cues. Iaete d it eeade re l tmel meee gee to ffturee coatrol fuactoae) Parameter values may be set using either Vibe’s intuitive Smart Screen picker system or conventional parameter wheels and keypad method.</p>
+</blockquote>
+</div>
+<div id="virtual-parameters-1" class="section level3" number="35.3.3">
+<h3><span class="header-section-number">35.3.3</span> Virtual Parameters</h3>
+<p>See:</p>
+<ul>
+<li>8.1. Virtual Parameters</li>
+</ul>
+</div>
+<div id="smart-screen-3" class="section level3" number="35.3.4">
+<h3><span class="header-section-number">35.3.4</span> Smart Screen</h3>
+<p>The 11.6” multi-touch monitor directly above the 4 encoder wheels is referred to as the <strong>Smart Screen.</strong></p>
+<p>The <strong>Smart Screen</strong> is dedicated to displaying:</p>
+<ul>
+<li><p>Context sensitive interactive bank, and parameter information.</p></li>
+<li><p>Encoder wheel displays.</p></li>
+<li><p>Playback information for the controllers that are directly above it.</p></li>
+<li><p>Special pop-ups for Libraries, Store options and Grab functions.</p></li>
+<li><p>A simplified Effects editor.</p></li>
+<li><p>Displays for Fan feature.</p></li>
+</ul>
+<p><strong>The Smart Screen is divided into six sections:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&amp;token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a" /></p>
+<p><strong>Smart Screen - Intensity Bank</strong></p>
+<p>The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe’s universal fixture model. This means that is not necessary to memorize the manufacturer’s specification of each fixture, as all fixtures are programmed in a similar consistent way.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&amp;token=46d06b06-759b-4bda-9b64-6cc16ae1abb5" /></p>
+<p><strong>Smart Screen - Position Bank</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJPfrbyoQQQ5mSxZVBMFc%2F9.3.4.2.webp?alt=media&amp;token=0560c39f-4054-4a14-8c4e-3e17b9ef9073" /></p>
+<p><strong>Smart Screen - Color Bank</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0V0GkR1cpsQvt7KpECZc%2F9.3.4.3.webp?alt=media&amp;token=fa417166-175f-4433-aa91-b520767cc5e0" /></p>
+<p><strong>Smart Screen - Beam Bank</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fgi0I8PKwG6fimjXbMWIx%2F9.3.4.4.webp?alt=media&amp;token=d004d2d8-5312-46b0-83dd-ace7c845160c" />
+<strong>Smart Screen - Image Bank</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Flz5lsxgDSdnj7OrX8Rub%2F9.3.4.5.webp?alt=media&amp;token=db035427-73e0-47c0-a675-15d7f4b8b60b" /></p>
+<p><strong>Smart Screen - Shape Bank</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&amp;token=f11d9d9f-6df7-4f09-bcba-9006ec853af6" />
+<strong>Smart Screen - Control</strong></p>
+<p><strong>Smart Screen Preferences:</strong></p>
+<ul>
+<li><strong>Settings:</strong></li>
+</ul>
+<p>◾ Home - Returns menus to Settings level.</p>
+<p>◾ Format - Sets the view format for wheel displays.</p>
+<p>• Percent
+• Decimal
+• Text
+• Text + Percent</p>
+<p>◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball</p>
+<p>• 8 bit - Blue on [Res] Key
+• 10 bit - Green on [Res] key
+• 12 bit - Red on [Res] key
+• 16 bit - Yellow on [Res] key
+• 24 bit - Magenta on [Res] key</p>
+<p>◾ View - Sets behaviour of smart screen views.</p>
+<p>• Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared.
+• Programming - Maintains the programming display even with the editor released.
+• Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.</p>
+<p>◾ Wheel Picker Display Modes:</p>
+<p>• Smart - All wheels for the selected fixture are shown in the interactive wheel picker area.
+• Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture.
+• Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels</p>
+<p>Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor</p>
+</div>
+<div id="adjusting-parameters-using-the-wheel-picker-1" class="section level3" number="35.3.5">
+<h3><span class="header-section-number">35.3.5</span> Adjusting Parameters using the Wheel Picker</h3>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYRrblpqrjOFnaCqFguQy%2F9.3.5.webp?alt=media&amp;token=35ce4615-8aa3-4192-a5c6-7db4e70d41c8" /></p>
+<p><strong>Smart Screen Picker Programming</strong></p>
+<p>​</p>
+<p>To adjust fixture wheel parameter values: (Interactive Wheel Picker method)</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures to program</p></li>
+<li><p>Swipe or Drag the <strong>Wheel Picker</strong> on the right-hand side of the <strong>Smart Screen</strong> and browse to the wheel and slot you want to program. Common wheels are:</p></li>
+</ol>
+<p>◾ Color Wheel</p>
+<p>◾ Static Gobo Wheel</p>
+<p>◾ Rotating Gobo Wheel</p>
+<p>◾ Animation Wheel</p>
+<p>◾ Prism Wheel</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Tap the wheel slot you wish to program and the context sensitive area or the <strong>Smart Screen</strong> will open with the appropriate picker.</p></li>
+<li><p>Adjust the virtual controls as needed.</p></li>
+</ol>
+<blockquote>
+<p>Most virtual controls are also mapped to the 4 physical wheels</p>
+</blockquote>
+<p><strong>To adjust parameter values: (standard programming method)</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures to program.</p></li>
+<li><p>Tap the <strong>{BANK}</strong> key of the parameter you wish to adjust.</p></li>
+<li><p>Banks may contain more than 4 wheels of parameters. Tapping the desired <strong>{BANK}</strong> key again, pages to the next set of 4 parameter wheels.</p></li>
+<li><p>The Assigned parameter wheel function is displayed on the <strong>Wheel Display</strong> at the bottom of the Smart Screen directly above the wheels.</p></li>
+<li><p>Rotate the large push wheel encoder of the parameter you wish to adjust.</p></li>
+<li><p>Values may be added directly from the keypad by:</p></li>
+</ol>
+<p>◾ Pushing a parameter wheel downward to select the parameter.</p>
+<p>◾ AT will appear on the command line</p>
+<p>◾ Type a value from Zero ➡️ Full.</p>
+<blockquote>
+<p><span style="color:red">@ is only used for the dimmer parameter</span>.</p>
+</blockquote>
+<p>A Parameter value must be entered in 2 digits or one digit and the [Enter] key for whole numbers. E.g. 05, 50, 5 [ENTER] =50</p>
+</div>
+<div id="grab-1" class="section level3" number="35.3.6">
+<h3><span class="header-section-number">35.3.6</span> Grab</h3>
+<p>Grab is a powerful tool for selecting fixtures that meet a number of conditions. By default <a href="programming-basics-1.html#grab-1">GRAB</a> selects all fixtures with intensity or virtual intensity values above Zero <strong>Pressing <a href="programming-basics-1.html#grab-1">GRAB</a> without a selection opens up a pop-up on the Smart Screen. It contains the following options:</strong></p>
+<ul>
+<li><strong>{Filters}:</strong></li>
+</ul>
+<p>◾ {Stage} - Select anything that is live on the stage and meets the conditions below.</p>
+<p>◾ {Editor} -Select anything that is in the Editor and meets the conditions below.</p>
+<p>◾ {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.</p>
+<ul>
+<li><strong>{Conditions}:</strong></li>
+</ul>
+<p>◾ {All Fixtures} - Selects all fixtures that have any changes via the editor.</p>
+<p>◾ {Active} - fixture has intensity value over zero.</p>
+<p>◾ {Invisible} - recorded “hard” parameter values for fixtures that do NOT have an intensity value over zero.</p>
+<p>◾ {Inactive} (fixtures that have NO recorded values).</p>
+<ul>
+<li><strong>{Parameter Selection}</strong>:</li>
+</ul>
+<p>◾ {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+<a href="programming-basics-1.html#grab-1">GRAB</a>)</p>
+<p>◾ {Active (ENTER)} Select all “Active” fixtures and enters them into the Editor. (Shortcut is <a href="programming-basics-1.html#grab-1">GRAB</a> + [ENTER])</p>
+<p>◾ <span style="color:DodgerBlue">{Search &amp; Replace}</span>.</p>
+<ul>
+<li>[SET] <a href="programming-basics-1.html#grab-1">GRAB</a> selects all active fixtures filtered by set (Fixture/Channel/Spot/Matrix/Server/Custom)</li>
+</ul>
+<p><strong>To Selectively Grab a Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Press <a href="programming-basics-1.html#grab-1">GRAB</a></strong> - Grab Options pop-up will open</p></li>
+<li><p><strong>Press any Slider/Qkey/Aux Qkey controller button</strong> - All fixtures that are in the Controller’s active cue and have dimmer levels above Zero (or meet the Grab conditions selected in the pop-up), will be selected.</p></li>
+</ol>
+<blockquote>
+<p>Pressing ENTER will put the selection in the EDITOR.</p>
+</blockquote>
+<p><strong>Grab Fixtures in a cue based on a {Library} SK selection:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press <a href="programming-basics-1.html#grab-1">GRAB</a> tap a {Library} SK - All fixtures with matching libraries will be selected</p></li>
+<li><p>Tap another {Library} SK - The Library will be swapped to the new library</p></li>
+</ol>
+<blockquote>
+<p>This is especially useful for quickly swapping colors in cues containing libraries</p>
+</blockquote>
+<p><strong>Select all parameters for a fixture selection:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures</p></li>
+<li><p>Press [VIBE]+<a href="programming-basics-1.html#grab-1">GRAB</a></p></li>
+</ol>
+<p><strong>Select all Parameters with hard and tracked values outputting to the stage:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Press <a href="programming-basics-1.html#grab-1">GRAB</a> [ENTER]</li>
+</ol>
+</div>
+<div id="fixture-selection-detailed-1" class="section level3" number="35.3.7">
+<h3><span class="header-section-number">35.3.7</span> Fixture Selection (Detailed)</h3>
+<blockquote>
+<p>FIn this guide, FIXTURE will be the default SET but any SET (Channel, Spot, Matrix, Server, User) should also be applicable.</p>
+</blockquote>
+<blockquote>
+<p>Default SET is changed by double pressing the appropriate SET key</p>
+</blockquote>
+<blockquote>
+<p>Dimmer is implied, but parameter would normally be specified after [+➡️ -] and before value.</p>
+</blockquote>
+<blockquote>
+<p><strong>[CE]</strong> will backspace the command line one character at a time.
+<span style="color:DodgerBlue">If more than one state is involved, the state will backspace right up until the idle state</span>.</p>
+</blockquote>
+<blockquote>
+<p><strong>[Shift CE]</strong> will clear the command line to the beginning and put the system in an idle state.</p>
+</blockquote>
+<ul>
+<li>[Fixture] # [+ ➡️ -] [[Full]/[Zero] (<span class="citation">@100</span> and <span class="citation">@00</span> are valid if % or text display format).</li>
+</ul>
+<pre><code>-   [Fixture] # [+ ➡️ -] [@] enter value. Two digits are required to complete value entry.
+    
+-   [Fixture] # [+ ➡️ -] [@] [@] will set values to Full.
+    
+-   [Fixture] # [+ ➡️ -] [@] single value, [ENTER]. E.g. [Fixture] [1➡️6] [@] [5] [ENTER] will set a value of 50%. [@] [7] [ENTER] would set a value of 70%.
+    
+-   Pressing [ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
+    
+-   [Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon)Pop-up under the **Behavior** Tab
+    
+-   [Fixture] # [+ ➡️ -] [@] [+] [value] or [@] [-] [value] will make a relative change to the stage value. E.g. {If the stage value is 50, @ + 10 will set the value to 60. @ - 30 would set the value to 20}. The rules for single digit plus Enter will also apply.
+    
+-   [Fixture] # [➡️] #, Parameter, [@] {value] [➡️] [value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].
+    
+-   [Fixture] # [➡️] # Parameter, [@] [value] [➡️][➡️] [value] will **mirror** fan the range. {1➡➡️100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
+    
+-   Fixture **Dot** = Restore last. Will have a toolbar equivalent.
+    
+-   Fixture ➡️ = Reeelect Editor. Will have a toolbar equivalent.
+    
+-   Fixtures and Parameters may be deselected using [RELEASE/DE SEL] Key. This leaves values in the editor but not under the control of the wheels.
+    
+-   [GROUP] # selects all fixtures that are recorded into the group. *The typed fixture order is preserved in a recorded group.
+    
+-   With groups, parameters may be fanned via syntax as above, but their recorded order will be considered.
+    
+-   Control without having to press Shift, Reset, which clears the values in the Editor.
+    
+-   **{LIBRARY}, {LIBRARY}**, will select and enter values from a library into the Editor. This is especially useful when using position libraries as groups with positions.</code></pre>
+</div>
+<div id="setting-parameters-using-main-encoder-wheels-1" class="section level3" number="35.3.8">
+<h3><span class="header-section-number">35.3.8</span> Setting Parameters using Main Encoder Wheels</h3>
+<p>Vibe features the Smart Window to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: Using parameter wheels:</p>
+<ol style="list-style-type: decimal">
+<li><p>Fixture # [+ ➡️ -] Tap {Parameter Bank} on the Smart Screen.</p></li>
+<li><p>If the required parameter is not shown on the encoder wheel display, tap the {parameter Bank} to scroll through all available parameter pages.</p></li>
+<li><p>Turn the encoder wheel of the desired parameter to adjust values.</p></li>
+</ol>
+<blockquote>
+<p><span style="color:Red">Parameters other than dimmer do not use the @ key.</span>.</p>
+</blockquote>
+<p><strong>Direct entry of absolute values:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Fixture # [+ ➡️ -] Tap {Parameter Bank} on Smart Screen.</p></li>
+<li><p>Tap the {Wheel Display} directly above the physical parameter wheel you wish to enter a value for. The wheel display turns red.</p></li>
+<li><p>Enter a value using the keypad.</p></li>
+</ol>
+<p><strong>Direct entry of values using push wheels:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Fixture # [+ ➡️ -], Tap {Parameter Bank} on Smart Screen.</p></li>
+<li><p>Press physical wheel - Wheel display over the physical wheel turns red.</p></li>
+<li><p>Enter value via keypad.</p></li>
+</ol>
+</div>
+<div id="setting-parameters-using-interactive-encoder-wheels-1" class="section level3" number="35.3.9">
+<h3><span class="header-section-number">35.3.9</span> Setting Parameters using Interactive Encoder Wheels</h3>
+<p>Vibe has 4 additional interactive push encoder wheels along the right hand side of the smart screen. The parameters assigned to the wheels are dependent on the bank and selected fixture type: <strong>E.g:</strong></p>
+<ul>
+<li><p>Image assigns Focus and Zoom to the interactive wheels</p></li>
+<li><p>Color Mix assigns Color Wheel 1+2 to the interactive wheels</p></li>
+<li><p>Beam assigns Prism and Prism Rotate to the interactive wheels</p></li>
+<li><p>Shape assigns Focus and Zoom to the interactive wheels In future releases it will be possible for users to customize the defaults.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDGXNEIrHnemjvPSftsn9%2F9.3.9.webp?alt=media&amp;token=26fc8f97-07b6-488f-a54e-2e0234b4f8a8" /></p>
+</div>
+<div id="release-and-home-sequences-1" class="section level3" number="35.3.10">
+<h3><span class="header-section-number">35.3.10</span> Release and Home Sequences</h3>
+<p><strong>Release - Removes fixtures or fixture parameter values from the editor Release all active fixtures:</strong></p>
+<ul>
+<li>Press {RELEASE] key</li>
+</ul>
+<p><strong>Release fixtures:</strong></p>
+<ul>
+<li>Fixture # [+ ➡️ -] [RELEASE]</li>
+</ul>
+<p><strong>Release a parameter:</strong></p>
+<ul>
+<li>Fixture # [+ ➡️ -] tap {Bank} select {Parameter}, [RELEASE]</li>
+</ul>
+<p><strong>Release a Parameter Bank:</strong></p>
+<ul>
+<li>Fixture # [+ ➡️ -] [VIBE] {Bank} [RELEASE] If a fixture is selected and then is made active (Red), the first press of release, releases the parameter and then the second press releases the whole fixture. All devices are assigned home values for parameters based on the manufacturer’s DMX chart. By default, these home values are used to tell the system where fixture parameters should be when they are not in use. Vibe has two options for home values. They can be set in the System Settings pop-up in the {Editing Properties} tab under the Default Stage Values header. System settings is accessed via the Vibe Menu or by tapping on the {*****} icon in the lower right corner of the main monitor controller display.</li>
+</ul>
+</div>
+</div>
+<div id="groups-1" class="section level2" number="35.4">
+<h2><span class="header-section-number">35.4</span> Groups</h2>
+<blockquote>
+<p><span style="color:Red">The order that fixtures are typed is stored with a group</span>.</p>
+</blockquote>
+<p><strong>Storing Groups to SKs:</strong></p>
+<ul>
+<li>[FIXTURE] [#] [+ ➡️ -] [STORE] tap desired {Group Softkey} - it does not matter if levels are set, they will be ignored.</li>
+</ul>
+<p><strong>Labelling SK Groups:</strong></p>
+<ul>
+<li><p>Directly after storing a group, while the focus is still on the group SK, start typing from the keyboard and a Text Entry pop-up will open.</p></li>
+<li><p>At any time, pressing the [TEXT] key followed by tapping the SK will open the Text Entry pop-up.</p></li>
+</ul>
+<p><strong>Storing Groups via keypad syntax:</strong></p>
+<ul>
+<li><p>[FIXTURE] [#] [+ ➡️ -] [#] [GROUP] [#] [STORE].</p></li>
+<li><p>Pressing the [TEXT] key after any Group store will open the Text Entry popup.</p></li>
+</ul>
+<p><strong>Modify Groups using Group Settings pop-up:</strong></p>
+<ul>
+<li><p>Using keypad - press [GROUP] [#] [Settings] - the Group Settings pop-up will open. Range text labelling may be done via this method.</p></li>
+<li><p>Using SKs - Tap the source {GROUP} SK and then press [Settings] key</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjEQyWFlLHb9TfvsEVXxh%2Fimage.png?alt=media&amp;token=73b411d1-45a5-4d83-bf88-b0687256910f" /></p>
+<p>Group Settings Pop-up</p>
+<blockquote>
+<p>A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad. Press [STORE] then tap destination {Group} SK or Press [Group] [#] [STORE] to create the new Group. The new Group will not be linked to the original Groups</p>
+</blockquote>
+<p><strong>Groups may be used to release fixtures:</strong></p>
+<ul>
+<li><p>With keypad - [GROUP] [#] [RELEASE] (Currently only works if ENTER is pressed after group selection)</p></li>
+<li><p>With SKs, {Group #}, [Release]</p></li>
+</ul>
+<p><strong>Release a fixture from a Group Method 1:</strong></p>
+<ul>
+<li><p>With softkeys: Fixture # [+ ➡️ -], [STORE], tap {Group SK}, Group Efietel pop-up appears, select {Release}</p></li>
+<li><p>With keypad: Fixture # [+ ➡️ -], press [GROUP], #, [STORE], Group Efietel pop-up, appears, select {Release}</p></li>
+</ul>
+<p><strong>Release a fixture from a Group Method 2:</strong></p>
+<ul>
+<li><p>[GROUP [#] [EDIT] - [UPDATE] key flashes red ([EDIT] tap {GROUP SK} is also valid)</p></li>
+<li><p>[FIXTURE] [#] [RELEASE]</p></li>
+<li><p>Press [UPDATE] to complete the sequence</p></li>
+</ul>
+<p><strong>To Delete a Group:</strong></p>
+<ul>
+<li><p>[GROUP] # [DELETE]</p></li>
+<li><p>Tap {GROUP} [#] [DELETE]</p></li>
+</ul>
 
 </div>
 </div>
@@ -703,8 +1329,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="programming-concepts-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="programming-cues-and-scenes-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +1361,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/09-Programming-Basics.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +1369,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/09-Programming-Basics.Rmd",
 "text": null
 },
 "download": null,

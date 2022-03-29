@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 45 Topo Topographical Display | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 45 Topo Topographical Display | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 45 Topo Topographical Display | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="exam-viewing-show-data-1.html"/>
+<link rel="next" href="xyz-fixture-calibration-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,90 +610,199 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<div id="topo-topographical-display-1" class="section level1" number="45">
+<h1><span class="header-section-number">Chapter 45</span> Topo Topographical Display</h1>
+<p>It is sometimes useful to organize fixture selection in a graphical manner instead of numerical lists. In Vibe this is referred to as the TOPO (Topographical) map display. Other console may refer to this feature as “Layouts”, “Magic Sheets”, or “Rig” Schematics”.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>19.1. Creating a Topo View</li>
+<li>19.2. Topo Menu</li>
+<li>19.3. Creating a Topo</li>
+<li>19.4. Adding fixtures to a Topo</li>
+<li>19.5. Adding Pixel Maps</li>
+<li>19.6. Adding text and background elements</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
+<div id="creating-a-topo-view-1" class="section level2" number="45.1">
+<h2><span class="header-section-number">45.1</span> Creating a Topo View</h2>
+<p>When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNV0Q6P9Wr1tucBYEoQUY%2F19.1.webp?alt=media&amp;token=ecf69dbf-a74e-4491-9ee7-546e12c3ee20" /></p>
+<p><strong>Topo View in {LIVE} mode displaying the “Movers” Topo</strong></p>
+<p><strong>To add a Topo view to a page:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
+<li><p>Tap {Vibe} on the monitor that will display the Topo - Vibe menu will open.</p></li>
+<li><p>Tap {Pages} - Page display will open.</p></li>
+<li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
+<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ®{Display Objects} ® {Topo View} - A blank Topo view will appear on the workspace.</p></li>
+<li><p>Size and drag the Topo display as required then tap {unlock/lock} icon to lock the Topo from further adjustment - Topo display is now ready to add fixtures to.</p></li>
+<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
+<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
+<li><p>Select the stage point of view. The default is Top view.</p></li>
+<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
 </ol>
 </div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
-<ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
-</ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
-</div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<div id="topo-menu-1" class="section level2" number="45.2">
+<h2><span class="header-section-number">45.2</span> Topo Menu</h2>
+<p>The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5nxdImYsIjjUwZbJiSqu%2F19.2.webp?alt=media&amp;token=488961aa-b20c-4a3c-9292-82805b05ace7" /></p>
+<p>​</p>
+<p><strong>The root menu provides the following sub-menus:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><ol style="list-style-type: decimal">
+<li></li>
+</ol></li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+<p>Topo:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&amp;token=7277a796-bf80-4991-a343-94ad8f13f621" /></p>
+<p>​
+2. Actions:</p>
+<ol style="list-style-type: lower-alpha">
+<li>{Add Elements} - accesses the following:</li>
+</ol>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>{Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. 6.1. Fixture Sets. 19.4. Adding fixtures to a Topo.</p></li>
+<li><p>{Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps</p></li>
+</ol>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>{Selection} - May be used in Live mode or Edit mode.</li>
+</ol>
+<blockquote>
+<p>Selections must start out side of the fixture.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Select by creating a rectangular lasso. - Dragging from left to right or right to left to create a rectangle around or through the objects.</p></li>
+<li><p>Select by creating a free-form path, dragging through objects.</p></li>
+<li><p>De-select all.</p></li>
+<li><p>Delete selected (only valid in Edit Mode).</p></li>
+<li><p>Snap to grid - Fixtures and object will snap to the nearest grid node.</p></li>
+<li><p>Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.</p></li>
+</ol>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>{Tools}:</li>
+</ol>
+<ol style="list-style-type: decimal">
+<li><p>{Align}:</p></li>
+<li><p>Left</p></li>
+<li><p>Center</p></li>
+<li><p>Right</p></li>
+<li><p>Top</p></li>
+<li><p>Middle</p></li>
+<li><p>Bottom</p></li>
+<li><p>Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following:</p></li>
+</ol>
+<p>◾ fixture location on the circumference</p>
+<p>◾ Radius</p>
+<p>◾ End point</p>
+<ol start="8" style="list-style-type: decimal">
+<li><p>Point to Point</p></li>
+<li><p>{Align to Point} - A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.</p></li>
+<li><p>{Spread} (Fan) - When Spread is selected, a horizontal virtual modifier wheel will appear. The following spread options are available:</p></li>
+<li><p>Spread horizontally from left</p></li>
+<li><p>Spread horizontally from center</p></li>
+<li><p>Spread horizontally from right</p></li>
+<li><p>spread vertically from top</p></li>
+<li><p>Spread vertically from middle</p></li>
+<li><p>Spread vertically from bottom</p></li>
+<li><p>{Transform} - Used to modify size and rotation of Topo objects. Horizontal virtual wheels will appear for the following:</p></li>
+<li><p>Scale</p></li>
+<li><p>Rotate</p></li>
+<li><p>Presets are supplied for:</p></li>
+</ol>
+<p>◾ Rotate 45° counterclockwise</p>
+<p>◾ Rotate 45° clockwise</p>
+<p>◾ Reset</p>
+<ol start="4" style="list-style-type: decimal">
+<li>{Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.</li>
+</ol>
+</div>
+<div id="creating-a-topo-1" class="section level2" number="45.3">
+<h2><span class="header-section-number">45.3</span> Creating a Topo</h2>
+<p><strong>To create a new Topo:</strong> Navigate to a Topo view</p>
+<ol style="list-style-type: decimal">
+<li>Tap the {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} key in the Topo Menu at the right hand side of the Topo view display - The “Create New Topo” pop-up will appear</li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdbnMzNTAiuRmv8Gch2g2%2F19.3.webp?alt=media&amp;token=ca062ed5-c7e8-4c08-ac9b-ff74f9a497ba" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
+<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
+<li><p>Select the stage point of view. The default is Top view.</p></li>
+<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> aor press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
+</ol>
+</div>
+<div id="adding-fixtures-to-a-topo-1" class="section level2" number="45.4">
+<h2><span class="header-section-number">45.4</span> Adding fixtures to a Topo</h2>
+<p>There are two ways to add fixtures to a Topo <strong>Using keypad selection</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Press zoom option {FIT STAGE TO SCREEN} on the toolbar at the bottom of the Topo View to see the whole stage area.</p></li>
+<li><p>Select the fixtures using the keypad or a group.</p></li>
+<li><p>Tap {FROM EDITOR} on the toolbar at the bottom of the Topo View.</p></li>
+<li><p>Selected fixtures will now appear in the top right section of the Topo.</p></li>
+<li><p>initially, the fixtures will be selected (outlined in red), and can be dragged freely into place.</p></li>
+<li><p>Double tap in a clear space on the TOPO to deselect.</p></li>
+</ol>
+<blockquote>
+<p><span style="color:Red">If the {From Editor} key is selected with a long press (held for a few seconds) the fixtures may be directly dragged from the {From Editor} area. Only a maximum of 5 fixture icons will be shown but the whole selection will actually be there. Drag the fixtures to a location on the Topo view and release. The actual fixtures will now appear on the Topo surface. <strong>The reference point for dropping is the fixtures is the top left corner of the dragged fixture icons.</strong></span></p>
+</blockquote>
+<p>Using {ADD ELELMENTS} from the Topo menu:</p>
+<ol style="list-style-type: decimal">
+<li><p>Create the Topo</p></li>
+<li><p>From the Topo menu tap {ADD ELEMENTS}</p></li>
+<li><p>From the drop down, tap {SETS}</p></li>
+<li><p>From the next drop down, select a fixture set - A list of the fixture in the set will drop down.</p></li>
+<li><p>From the fixture list, select the fixtures to drag onto the Topo.</p></li>
+<li><p>Press, hold and drag the fixtures onto the Topo surface.</p></li>
+<li><p>Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.19.2. Topo Menu.</p></li>
+</ol>
+</div>
+<div id="adding-pixel-maps-1" class="section level2" number="45.5">
+<h2><span class="header-section-number">45.5</span> Adding Pixel Maps</h2>
+<p>The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. Matrix fixtures may be selected by blocks using the rectangle lasso selection tool, or free-form path tool.</p>
+<p><strong>To create a new pixel mapper:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
+<li><p>From the {Add Elements} drop down, tap {Pixel Mapper} - The Create New Pixel Mapper pop-up will appear.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Ff9zc1asl0cfTClSVXoI1%2F19.5.webp?alt=media&amp;token=6349e1a5-6671-4d96-9be8-09a19688a2c1" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Fill in the number of columns and rows and set the start position and direction.</p></li>
+<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and create the blank pixel map.</p></li>
+<li><p>👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.</p></li>
+<li><p>Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo</p></li>
+<li><p>Release the fixtures and they will populate the pixel map.
+👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.</p></li>
+<li><p>The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture’s color mix will be shown. CMY, RGB, and HSV color spaces are supported.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FebGZvb6DGOYtyqaGKSdZ%2F19.5.1.webp?alt=media&amp;token=5f033d65-2db7-4ba0-918e-7980aade9cc9" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FM8tXegFlpqyJ9QGo4FY0%2F91.5.2.webp?alt=media&amp;token=dd690b9b-aa5a-4f0a-a8e2-a8f137b1f78a" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Multiple pixel mappers may be added to the same Topo along with other objects.</p></li>
+<li><p>👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.</p></li>
+</ol>
+</div>
+<div id="adding-text-and-background-elements-1" class="section level2" number="45.6">
+<h2><span class="header-section-number">45.6</span> Adding text and background elements</h2>
+<p>Additional elements may be added to a Topo. Currently available are {Text Label} and {Add Background} To add</p>
+<p><strong>Text labels:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
+<li><p>From the drop down, tap {Text Label} - The Create Label pop-up will appear.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh32lxtwe1nBgE1xhjmbE%2F19.6.webp?alt=media&amp;token=59a84956-400f-4e66-bfa8-c699d69d7fca" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Close the pop-up and the test label will appear on the Topo surface.</p></li>
+<li><p>Drag the label to the desired location.</p></li>
+<li><p>Transpose tools may be used to size and rotate the label.</p></li>
+</ol>
+<p>Backgrounds such as studio layouts and rig elements may be added to the Topo.</p>
+<p><strong>To add a Background to a Topo:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Prepare a USB stick with a JPEG, BMP, or PNG piece of content.</p></li>
+<li><p>Insert the USB stick into one of the Vibe’s USB ports.</p></li>
+<li><p>From the Topo Actions menu, tap {Add Elements}.</p></li>
+<li><p>Tap {Add Background} - A browser pop-up will appear.</p></li>
+<li><p>Select the USB stick and click on the desired content - Once imported, the content may be found in the default local directory on the hard-drive under D:<br />
+</p></li>
+<li><p>Tap {Load}, [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.</p></li>
+<li><p>To remove the background tap {Remove Background}</p></li>
 </ol>
 
 </div>
@@ -703,8 +812,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exam-viewing-show-data-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="xyz-fixture-calibration-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +844,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/19-Topo-Topographical-Display.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +852,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/19-Topo-Topographical-Display.Rmd",
 "text": null
 },
 "download": null,

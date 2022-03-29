@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 40 Playing Back Cues and Scenes | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 40 Playing Back Cues and Scenes | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 40 Playing Back Cues and Scenes | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="effects-1.html"/>
+<link rel="next" href="dark-parameter-positioning-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,90 +610,382 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
+<div id="playing-back-cues-and-scenes-1" class="section level1" number="40">
+<h1><span class="header-section-number">Chapter 40</span> Playing Back Cues and Scenes</h1>
 <p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>14.1. Controller Priority Logic</li>
+<li>14.2. Controller Overview</li>
+<li>14.3. Master Controller</li>
+<li>14.4. GOTO and LOAD</li>
+<li>14.5. Configuring Controllers</li>
+<li>14.6. Controller Color Codes</li>
+<li>14.7. Working With controllers</li>
+<li>14.8. Controller Release and Free</li>
+<li>14.9. Controller Qlist Properties</li>
+<li>14.10. Controller Modes</li>
+<li>14.11. Rate and Teach Keys</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
-</ol>
-</div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
+<div id="controller-priority-logic-1" class="section level2" number="40.1">
+<h2><span class="header-section-number">40.1</span> Controller Priority Logic</h2>
+<p><strong>Controller Priority:</strong></p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li><p>Vibe keeps an LTP priority list of which controllers own parameters and the order in which they were asserted. Every time a controller is turned on, its parameters are asserted and the controller moves to the top of the list. Parameters that are still on active controllers but are currently overridden are said to be “robbed”. When the controller that owns the parameter is released from the stage, the last active controller to own the robbed parameter is now moved back to the top of the list and reasserted the parameter to the stage.</p></li>
+<li><p>This feature is very useful for “On the Fly” programming where a main Qlist may be temporarily overridden by Qkeys or Controllers and quickly restored when they are released.</p></li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
-</div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<blockquote>
+<p><span style="color:Red">The Editor is always the highest propriety and will override any values from controllers until they are released or The Editor is reset</span>.</p>
+</blockquote>
+<p><strong>Priority Groups:</strong></p>
+<ul>
+<li><p>Controllers assigned the same Priority Group number will be LTP amongst themselves.</p></li>
+<li><p>Controllers assigned higher Propriety Group numbers cannot be overridden (“robbed”) by controllers with lower numbers.</p></li>
+</ul>
+<p><strong>Assigning Controllers to priority Groups:</strong>
+1. Tap the top area of a controller display, the Settings pop-up will open.
+2. Select the {Controller Settings} Tab.</p>
+<p>OR</p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li>Press [SETTINGS] [HERE] to any controller button, the Settings pop-up will open.</li>
+<li>Select the {Controller Settings} Tab.</li>
+<li>Rotate the virtual wheel to the desired Priority Group number or tap the center of the wheel until it turns red and type a Priority Group number from 0 - 999.</li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FsqtPJBuklsoRMifhcbTf%2F14.1.webp?alt=media&amp;token=a0a4963b-265b-4915-aadc-d350a26ef118" /></p>
+</div>
+<div id="controller-overview-1" class="section level2" number="40.2">
+<h2><span class="header-section-number">40.2</span> Controller Overview</h2>
+<p><strong>Controllers are used to playback or execute a number of objects:</strong></p>
+<ul>
+<li><p>Cues</p></li>
+<li><p>Scenes</p></li>
+<li><p>Group Submasters</p></li>
+<li><p>Libraries</p></li>
+<li><p>Macros</p></li>
+<li><p>Snaps</p></li>
+</ul>
+<p><strong>Vibe has five controller types:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Three button Motorized Slider Controllers</p></li>
+<li><p>Single button Qkey Controllers</p></li>
+<li><p>Single Auxiliary Qkey Controllers</p></li>
+<li><p>Non-Motorized Global Slider Controllers</p></li>
+<li><p>A/B “theatre style” A/B dipless crossfader pair</p></li>
+</ol>
+<blockquote>
+<p>Vibe software makes no distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.</p>
+</blockquote>
+<p><strong>Controller quantities and numbering:</strong> Physical and Virtual</p>
+<ul>
+<li><p>30 pages of 100 Motorized Sliders - Numbered 1.1 ➡️ 30.100</p></li>
+<li><p>30 pages of 100 Qkeys - Numbered 1.101 ➡️ 30.200</p></li>
+<li><p>30 pages of 100 Auxiliary Qkeys - Numbered 1.201 ➡️ 30.300</p></li>
+<li><p>100 Non-motorized Global Sliders - Numbered 301 ➡️ 400</p></li>
+<li><p>1 Non-motorized A/B dipless crossfader - Numbered 401</p></li>
+</ul>
+<p>Controllers are numbered from right to left to facilitate continuous numbering with physical and virtual controller wings.</p>
+<p><strong>Compound Controllers:</strong></p>
+<ul>
+<li><strong>Controllers may be extended in width to make larger compound controllers.</strong> This is useful in creating additional crossfader pairs or adding controls for rate and effects. There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F06WOI4jVCzRUG1Op7xtO%2F14.2.webp?alt=media&amp;token=40d4b958-9e44-4fb1-8fac-080edda51ca2" /></p>
+<p><strong>A/B Cross Faders:</strong></p>
+<ul>
+<li><p>An A/B Cross Fader Pair is provided for manual “Theater Style” playback of cues.</p></li>
+<li><p>By default, the fader on the left will control dimmer parameters fading <strong>in.</strong></p></li>
+<li><p>By default, the fader on the right will control all other values including the dimmer that is fading <strong>out.</strong></p></li>
+<li><p>Parameter values that match will not dip even if the A and B are at different levels.</p></li>
+</ul>
+</div>
+<div id="master-controller-3" class="section level2" number="40.3">
+<h2><span class="header-section-number">40.3</span> Master Controller</h2>
+<p>Master Controller:</p>
+<ul>
+<li>Any single Controller may be linked to the Master Controller by Pressing [SELECT] [HERE] to any of the buttons of the controller.</li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnvgTSy6VcG0Vk2ScI1UI%2F14.3.webp?alt=media&amp;token=1209fc8b-b080-408c-8f8f-3623e27e799b" /></p>
+<ul>
+<li><p>[GO] - Initiates a forward transition from one cue to another using Cue Time.</p></li>
+<li><p>[BACK] - Initiates a transition to the previous cue using system Default Back Time.</p></li>
+<li><p>[HOLD] - Pauses a cue in transition. Pressing [HOLD] again resumes the transition. Pressing [GO] will resume the transition as well. Pressing [BACK] will fade to the previous cue.</p></li>
+</ul>
+<blockquote>
+<p><span style="color:Red">The A/B is only linked to the Master Controller if the [SELECT] is assigned to A/B.</span>.</p>
+</blockquote>
+</div>
+<div id="goto-and-load-1" class="section level2" number="40.4">
+<h2><span class="header-section-number">40.4</span> GOTO and LOAD</h2>
+<p>GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO immediately transitions to the specified cue in the system <strong>GOTO Time</strong>. LOAD preloads controllers. The next [GO] will transition to the preloaded cue in <strong>Cue Time</strong>.</p>
+<p><strong>GOTO Commands: GOTO a cue on the Master Controller using system GOTO Time:</strong></p>
+<ul>
+<li>[CUE] [#] [GOTO]</li>
+</ul>
+<p><strong>GOTO a cue on the Master Controller using a specified Time:</strong></p>
+<ul>
+<li>[CUE] [#] [TIME] - Enter time value [GOTO]</li>
+</ul>
+<p><strong>GOTO a cue on the Master Controller using system Cue Time:</strong></p>
+<ul>
+<li>[CUE] [#] [TIME] [GOTO]</li>
+</ul>
+<p><strong>GOTO a cue on the Master Controller using Goto Cue pop-up:</strong>
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUx0DT82VAZ384ULKAWIf%2F14.4.webp?alt=media&amp;token=fc1a8fba-8a68-4301-99f1-866ce553eeb7" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [GOTO] - Goto Cue pop-up will open.</p></li>
+<li><p>Select {Qlist} if not the current Qlist on the Master Controller.</p></li>
+<li><p>Select the {Cue}.</p></li>
+<li><p>Select behaviour.</p></li>
+</ol>
+<ul>
+<li><p>{Default GOTO time} - Uses system default GOTO Time.</p></li>
+<li><p>{Cue Time} - Uses Cue’s recorded time.</p></li>
+<li><p>{Custom} - Set GOTO time using the Custom Time wheel or tap centre of the wheel until it turns red and set time value from the keypad.</p></li>
+<li><p>{Release Master PB on Top} - Releases the Master Controller.</p></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up and execute the GOTO.</li>
+</ol>
+<blockquote>
+<p><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.</p>
+</blockquote>
+<p><strong>GOTO a cue NOT on the Master Controller:</strong></p>
+<ul>
+<li>[QLIST] [#] [CUE] [#] [GO] (Controller must have a GO button assigned).</li>
+</ul>
+<p><strong>GOTO Cue Zero -</strong> Cue Zero is essential {Release Master PB to Top}.</p>
+<ul>
+<li><p>[CUE] [0] [GOTO] <strong>It is also possible to go out of sequence directly to a Cue on the Master Controller (in cue time):</strong></p></li>
+<li><p>[CUE] [#] [GO]</p></li>
+</ul>
+<p><strong>Load Commands:</strong> <strong>Load a cue on the Master Controller</strong> - Method 1.</p>
+<ol style="list-style-type: decimal">
+<li><p>[CUE] [#] [LOAD] [HERE] - To Controller assigned as [SELECT]</p></li>
+<li><p>Press [GO] - On Controller assigned as [SELECT]</p></li>
+</ol>
+<p><strong>Load a cue on the Master Controller</strong> - Method 2.</p>
+<ol style="list-style-type: decimal">
+<li><p>[CUE] [#] [LOAD] [LOAD]</p></li>
+<li><p>Press [GO] - Using Master Controller GO or GO of controller assigned as [SELECT]</p></li>
+</ol>
+<p><strong>LOAD a cue NOT on the Master Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[QLIST] [#] [CUE] [#] [LOAD] [HERE] - Qlist and Cue will be preloaded.</p></li>
+<li><p>Press [GO] - Controller will execute loaded cue.</p></li>
+</ol>
+<blockquote>
+<p>If a Qlist other than the one that is currently on the Controller is specified, that Qlist will replace the current one with the specified cue pending.</p>
+</blockquote>
+</div>
+<div id="configuring-controllers-1" class="section level2" number="40.5">
+<h2><span class="header-section-number">40.5</span> Configuring Controllers</h2>
+<p>Controller buttons and sliders may be customized to allow maximum flexibility. When Qlists and Scenes are initially assigned to Controllers, the buttons are configured as per the <strong>System Settings defaults</strong> for Controller and Controller Action. Defaults are accessed by tapping the System Status area at the far right side of the controller display.</p>
+<p>​</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqeMUdw1GkILRy0kC1sLA%2F14.5.webp?alt=media&amp;token=22aa0373-4ae2-4805-be51-8666f4d914b5" /></p>
+<p>​</p>
+<p><strong>Assigning Buttons and Slider Behavior:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Press [SETTINGS] [HERE] to any button of the controller that has an object assigned to it - The Slider Definitions pop-up will appear with the <strong>{Controller Definitions}</strong> tab selected.</li>
+</ol>
+<blockquote>
+<p>Alternatively, tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider</p>
+</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F13csCDeGohc9JOrWEXwK%2F14.5.1.webp?alt=media&amp;token=e354be44-6075-4683-b6ed-8d083af0f89b" /></p>
+<blockquote>
+<p><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.</p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Tap one of the three assignable {Buttons} or the {Slider} button in the centre - A context sensitive drop down menu based on the object assigned and the specific button selected will appear.</p></li>
+<li><p>Choose a Control behaviour from the menu. Assignable Button</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fj6JDjNRFb7TWGRNNO9Y0%2F14.5.2.webp?alt=media&amp;token=9639a28e-b8fe-40cc-a602-83092ac7d617" /></p>
+<p><strong>Assignable Button Behavior:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFwTYO2QIsI5mcbflwK5f%2F14.5.3.webp?alt=media&amp;token=618ef47e-5d30-429a-b872-dd6077df7b85" /></p>
+<p><strong>Assignable Slider Behavior:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fm5ysy6BoE6l3FCWVHrYn%2F14.5.4.webp?alt=media&amp;token=f6271bd6-0fe1-4576-ae64-f237d372b124" /></p>
+<blockquote>
+<p>Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See 7.5.1. Controller Settings</p>
+</blockquote>
+</div>
+<div id="controller-color-codes-1" class="section level2" number="40.6">
+<h2><span class="header-section-number">40.6</span> Controller Color Codes</h2>
+<p><strong>Controller Live Display color coding If [SELECT] Master Controller:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYuCloo8lxuLBVkc73yQs%2F14.6.webp?alt=media&amp;token=146cb343-7101-490b-a1b4-e1139a436896" /></p>
+<p><strong>If from a non-[Select] Controller:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmWdkTDP2PrAbs3XAz1Ep%2F14.6.1.webp?alt=media&amp;token=6e23d42c-cbff-4ce8-86e2-a7246be52d3f" /></p>
+<p><strong>Controller Display and Backlit Controller Key’s color coding:</strong>
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2xhFbKiKqTiXNa4FPjKN%2F14.6.2.webp?alt=media&amp;token=b8942fb1-76cd-44e4-a1be-83b25e1f8bda" /></p>
+</div>
+<div id="working-with-controllers-1" class="section level2" number="40.7">
+<h2><span class="header-section-number">40.7</span> Working With controllers</h2>
+<p><strong>Controller types: Detailed</strong>
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPeyRlEeHQvF5HuUF6hYJ%2F14.7.webp?alt=media&amp;token=fa28a2ea-7020-4b6b-9600-666da021144b" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUS9LD2Ch0ruVmweAvB6p%2F14.7.1.webp?alt=media&amp;token=2c8f4681-8eb8-47cc-bc60-48e1b0139624" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fiul8UK0l8I5GRkUgjFt0%2F14.7.3.webp?alt=media&amp;token=f8b2c063-b524-43ab-9202-a9f27287647c" /></p>
+<p>Control Keys: Provide “On the Fly” access to button functions not directly assigned to controllers. Apply a Controller Key:</p>
+<ol style="list-style-type: decimal">
+<li><p>Press a {Control Key}</p></li>
+<li><p>Press any destination [Controller Button] to apply the Control Key’s function</p></li>
+</ol>
+<blockquote>
+<p>In most cases<strong>,</strong> a double press of the Control Keys locks them on until pressed again.</p>
+</blockquote>
+<p><strong>Control Key Functions:</strong></p>
+<ul>
+<li><p><strong>FLASH</strong> - Momentarily turns on a Controller. 👉 Most useful when locked on with double press.</p></li>
+<li><p><strong>SOLO</strong> - Turns off intensity parameters on all controllers excluding the destination controller.</p></li>
+<li><p><strong>GO/RELEASE</strong> - First press initiates a GO, second press initiates a RELEASE. 👉 Most useful when locked on with double press.</p></li>
+<li><p><strong>ON</strong> - Instantly turns on a controller.</p></li>
+<li><p><strong>OFF</strong> - Instantly turns off a controller.</p></li>
+<li><p><strong>Latch</strong> - Currently unimplemented.</p></li>
+<li><p><strong>GO</strong> - Initiates a GO command.</p></li>
+<li><p><strong>ASSERT</strong> - Takes back control of parameters that have been “robbed” by other controllers.</p></li>
+<li><p><strong>HOLD/BACK</strong> - If a controller is running, pause the controller. If a controller is static, initiate a BACK command.</p></li>
+<li><p><strong>&lt;&lt;&lt; (Step Back)</strong> - Steps backwards through a Qlist ignoring time 👉 [VIBE]</p></li>
+<li><p><strong>+ [BACK]</strong> will also step backwards through the list.</p></li>
+<li><p><strong>&gt;&gt;&gt; (Step Forward)</strong> - Steps forward through a Qlist ignoring time 👉 [VIBE] + [GO] will also step forward through the list.</p></li>
+<li><p><strong>&lt;&lt;&lt;–&gt;&gt;&gt;</strong> - Reverses sequence direction (mainly used with loops and chasers).</p></li>
+</ul>
+<p><strong>Assign a Qlist to a Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[QLIST] [#]</p></li>
+<li><p>[HERE] to any button of the controller that will be the start point of the range.</p></li>
+</ol>
+<blockquote>
+<p>Blank Qlists may be assigned to any controller.</p>
+</blockquote>
+<p><strong>Assign a range of Qlist:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[QLIST] [#] → [QLIST] [#]</p></li>
+<li><p>[HERE] to any button of the controller that will be the start point of the range.</p></li>
+</ol>
+<p><strong>Assign a Cue to a controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[QLIST] [#]</p></li>
+<li><p>[CUE] [#]</p></li>
+<li><p>[HERE] Press any of the controller’s buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: 7.5.2. Controller Actions</p></li>
+</ol>
+<p><strong>Release and unload Controllers:</strong></p>
+<ul>
+<li>See: 14.8. Controller Release and Free</li>
+</ul>
+</div>
+<div id="controller-release-and-free-1" class="section level2" number="40.8">
+<h2><span class="header-section-number">40.8</span> Controller Release and Free</h2>
+<blockquote>
+<p>Vibe has two types of release functions, Editor Release and Controller Release. The following deals with Controller Release.</p>
+</blockquote>
+<p>Off - Instantly turns off a controller</p>
+<ul>
+<li>[OFF] [HERE] to any controller button.</li>
+</ul>
+<p>Release - Turns off a controller using release time.</p>
+<ul>
+<li>[RELEASE] [HERE] to any controller button.</li>
+</ul>
+<p>Release All - Turns off all controllers using release time.</p>
+<ul>
+<li>[VIBE] + [RELEASE]</li>
+</ul>
+<p>Release Time -</p>
+<ul>
+<li><p>By default controllers use the Default Release Time set in System Settings Timing. See: 7.2. Timing</p></li>
+<li><p>Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: 7.5.3. Qlist Properties</p></li>
+</ul>
+<p>Free - Unloads a controller. It does not delete the loaded object.</p>
+<ul>
+<li>[FREE] [HERE] to any controller button.</li>
+</ul>
+<p>Free All - Unloads all controllers.</p>
+<ul>
+<li>[VIBE] + [FREE]</li>
+</ul>
+</div>
+<div id="controller-qlist-properties-1" class="section level2" number="40.9">
+<h2><span class="header-section-number">40.9</span> Controller Qlist Properties</h2>
+<p>By default, the first incident of a Qlist being assigned to a controller will take its Qlist properties from the user default Qlist Properties.
+<strong>For Qlist Properties details, see:</strong> 7.5.3. Qlist Properties</p>
+<ul>
+<li><p>Each new incident of assigning the same Qlist to additional controllers will initially copy the Qlist properties from the first assignment.</p></li>
+<li><p>If changes are made to individual controller Qlist properties, those changes stay with the controller and are not copied or updated to other controller Qlist properties.</p></li>
+<li><p>If it is desirable to update what will be copied to future assignments of the Qlist, toggle {<strong>Save to Qlist</strong>} On. Changes made to the current Qlist properties will now be passed along.</p></li>
+<li><p>Qlist properties may be restored to their user defaults by tapping the {<strong>Restore Defaults</strong>} key.</p></li>
+</ul>
+</div>
+<div id="controller-modes-1" class="section level2" number="40.10">
+<h2><span class="header-section-number">40.10</span> Controller Modes</h2>
+<p>The Controller Mode keys are located at the far left of the console beside the motorized faders. The motorized faders may be assigned to any one of 4 modes. These modes allow for a quick modification to various rate and effect parameters. Controller modes are outside of the editor and are designed for “On the Fly” usage.</p>
+<p><strong>Controller Modes allow the following to be adjusted:</strong></p>
+<ul>
+<li><p>[FADERS] - Normal behaviour for the fader as assigned in Controller Definitions</p></li>
+<li><p>[RATE] - The Rate of the fades, loops, effects, and chasers on the controller will be proportionally adjusted. Motorized faders will move to an optimized position of 32% allowing for proportional adjustment of a controller’s rate.</p></li>
+<li><p>[SIZE] - Proportionally adjusts the size of effects running on the controller.</p></li>
+<li><p>[OFFSET] - Adjusts the spread of the fixtures in running effects</p></li>
+<li><p>[PROTECT] - When implemented, must be held down before any of the fader modes may be changed.</p></li>
+</ul>
+</div>
+<div id="rate-and-teach-keys-1" class="section level2" number="40.11">
+<h2><span class="header-section-number">40.11</span> Rate and Teach Keys</h2>
+<p>The Rate function allows users to adjust controller rates or effects parameters in “real time”. This is very helpful in fine tuning chases and effects to synchronize with music, or to improvise performances “on the fly”. The Rate Screen operates outside of the editor and is non destructive. Changes made in the Rate Screen may not be stored in cues but may be stored and recalled in [Snaps].</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FASGNCmc8hdzIqKOE9fa2%2F4.11.webp?alt=media&amp;token=3a476108-bcb8-4f20-8965-4339044e1870" /></p>
+<p>Using the Rate Screen: Large encoder wheels:</p>
+<ol style="list-style-type: decimal">
+<li><p>Press the [Rate Key] - When opened, all loaded controllers will appear in the “Selected Controllers” section of the display. Initially all loaded controllers will be globally affected by the wheels and features in the Rate Screen.</p></li>
+<li><p>Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display.</p></li>
+</ol>
+<p>◾ {Select All} will reselect all loaded controllers for rate control.</p>
+<p>◾ {Deselect All} will release all selected controllers from rate control</p>
+<p>◾ {Show Active} will release all controllers in the “Selected Controllers” section that are not currently under the control of the rate wheels.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) –&gt; 3000% (effectively cut time)</p></li>
+<li><p>Wheel 2 - {X Fade %} adjusts the “fade vs jump percent of a chaser. Range: 0% (full jump) –&gt; 100% (full cross fade)</p></li>
+<li><p>Wheel 3 - {Intensity Limit} proportionally limits the intensity output of a controller. Range 0% (no intensity output) –&gt; 100% {Intensity controller full}</p></li>
+<li><p>Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom)</p></li>
+</ol>
+<p>Small encoder wheels: (top to bottom)</p>
+<ol style="list-style-type: decimal">
+<li><p>Small Wheel 1 - {FX Rate} adjusts the rate of effects that are running on the selected controllers.</p></li>
+<li><p>Small Wheel 2 - {FX Size} adjusts the size of effects that are running on the selected controllers.</p></li>
+<li><p>Small Wheel 3 - {FX Offset} adjusts the offset (Spread) of effects that are running on the selected controllers.</p></li>
+<li><p>Small Wheel 3 - {FX Base} adjusts the base values (start point) of parameters that are in running effects on the selected controllers.</p></li>
+</ol>
+<p>Reset keys:</p>
+<ol style="list-style-type: decimal">
+<li><p>{Reset Ctrl Rate} - Sets all controller rates back to their default of 100%</p></li>
+<li><p>{Reset FX Rate} - Sets controlled FX rates back to their stored values.</p></li>
+<li><p>{Reset FX Size} - Resets controlled size of effects back to their stored values.</p></li>
+<li><p>{Reset FX Offset} - Resets controlled offsets of effects back to their stored values.</p></li>
+<li><p>{Reset FX Base} - Resets controlled effects base values back to their stored values.</p></li>
+</ol>
+<p>Freeze toggle keys:</p>
+<ol style="list-style-type: decimal">
+<li><p>{Freeze All} - Pauses all running chases and effects until the {Freeze All} key is toggled again.</p></li>
+<li><p>{Freeze Chase} - Pauses all running chases until the {Freeze Chase} key is toggled again.</p></li>
+<li><p>{Freeze Effect - Pauses all running effects until the {Freeze Effect} key is toggled again.</p></li>
+</ol>
+<p>Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: 13.3.1. Building Effects Using the Advanced Effects Editor</p>
+<p>Transport Bar:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3tsI1uZbjqG5pxqzYh3r%2F14.11.2.webp?alt=media&amp;token=2658ea17-92cf-4afa-9028-74f319a5ce62" /></p>
+<p>When actively in the Rate Screen, physical controller keys are mapped to the rate interface and may not be used to activate Qlists, cues, or scenes. As an alternative, the transport bar may be used. To use the transport bar:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap {Enable Controller PB} to activate the Transport Bar.</p></li>
+<li><p>Select the controllers to control with the bar by toggling any of the controller’s physical control keys</p></li>
+<li><p>Use the transport Bar buttons to:</p></li>
+</ol>
+<ul>
+<li><p>{&lt;&lt;} Step Back</p></li>
+<li><p>{|&lt;} Back</p></li>
+<li><p>{||} Hold (Pause)</p></li>
+<li><p>{&gt;} GO</p></li>
+<li><p>{&gt;&gt;} Step Forward</p></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>{Release} may be tapped at any time to deactivate the selected controllers using release time.</li>
+</ol>
+<p>Teach keys: Currently unimplemented</p>
+<ol style="list-style-type: decimal">
+<li><p>{Teach Enabled} - Enables the [Teach Key] for sampling and adjusting tap rate of chasers and effects in “real time”.</p></li>
+<li><p>{Tap X} keys set the sample rate for the teach function (number of presses to be averaged)</p></li>
+<li><p>When implemented, Teach time may also be set from the Rate Screen using the transport bar buttons.</p></li>
 </ol>
 
 </div>
@@ -703,8 +995,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="effects-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dark-parameter-positioning-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +1027,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/14-Playing-Back-Cues-and-Scenes.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +1035,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/14-Playing-Back-Cues-and-Scenes.Rmd",
 "text": null
 },
 "download": null,

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 27 Introduction | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 27 Introduction | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 27 Introduction | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="working-with-multiple-consoles.html"/>
+<link rel="next" href="general-specification-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,91 +610,103 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<div id="introduction-2" class="section level1" number="27">
+<h1><span class="header-section-number">Chapter 27</span> Introduction</h1>
+<p>This chapter discusses getting started with your Compulite Vibe console.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>1.1. Unboxing</li>
+<li>1.2. Getting Started</li>
+<li>1.3. Guide Conventions</li>
+<li>1.4. Important Terms</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
-</ol>
+<div id="unboxing-1" class="section level2" number="27.1">
+<h2><span class="header-section-number">27.1</span> Unboxing</h2>
+<p>TBA.</p>
 </div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
+<div id="getting-started-1" class="section level2" number="27.2">
+<h2><span class="header-section-number">27.2</span> Getting Started</h2>
+<p>Power requirements:</p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li>Vibe uses a power supply that supports 90-264V at 47-63 Hz.</li>
+<li>Approximately 3.2 amps at 230V.</li>
+<li>Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.</li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
+<p>Desk Light:</p>
+<ul>
+<li>Insert the goose neck desk light into the 3 pin XLR on the rear of the console.</li>
+<li>Desk light intensity is controlled in the {System Settings} {Hardware} tab.</li>
+</ul>
+<p>Monitor intensity:
+- Monitor intensity is controlled in the {System Settings} {Hardware} tab.</p>
+<p>Power up the console:</p>
+<ul>
+<li>Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.</li>
+<li>Turn on the power supply switch above the powerCON connector.</li>
+<li>Press the Power button located at the upper right corner of the monitor panel above the USB connectors.</li>
+<li>The operating system will boot and the Vibe console software will automatically launch.</li>
+</ul>
+<p>Power down the console:</p>
+<ul>
+<li>Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.</li>
+<li>Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.</li>
+<li>Tap {Yes} or {No}.</li>
+<li>The Vibe application will shutdown and a screen will appear with the following options:
+{Shut Down the Console} - System will power off
+{Restart Vibe} - Vibe console application will restart
+{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.
+Choose Shut Down the Console - The console will safely power off.</li>
+</ul>
 </div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
-</ol>
-<p><strong>To remove a Force Black flag:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
-</ol>
+<div id="guide-conventions-1" class="section level2" number="27.3">
+<h2><span class="header-section-number">27.3</span> Guide Conventions</h2>
+<ul>
+<li><p><strong>[XXXX]</strong> - Physical key</p></li>
+<li><p><strong>{XXXX}</strong> - Soft key § [ ] { } - Example</p></li>
+<li><p><strong>Press</strong> - Action applied to a physical key</p></li>
+<li><p><strong>Tap</strong> - Action applied to softkey or virtual key</p></li>
+<li><p><strong>Toggle</strong> - Action that actives and deactivates with alternating taps or presses</p></li>
+<li><p><strong>Key</strong> - Any physical or virtual key that is NOT used for controller activation</p></li>
+<li><p><strong>Button</strong> - Any virtual or physical key that is used to activate a controller</p></li>
+<li><p><strong>Keypad</strong> - Embedded numeric keypad</p></li>
+<li><p><strong>Keyboard</strong> - Console’s pull-out ASCII keyboard or any external keyboard</p></li>
+<li><p><strong>SK -</strong> Object softkeys (Libraries, Groups, Snap, Macros, etc.)</p></li>
+<li><p>👉 <strong>-</strong> Hint or suggestion</p></li>
+<li><p><strong>RED</strong> <strong>-</strong> Important information or Caution</p></li>
+<li><p><strong>[Here]</strong> - Short form for Press an appropriate destination softkey or controller button to complete the command</p></li>
+</ul>
+</div>
+<div id="important-terms-1" class="section level2" number="27.4">
+<h2><span class="header-section-number">27.4</span> Important Terms</h2>
+<ul>
+<li><p><strong>DMX 512 Output/Input Port</strong> - One of the 8 physical 5 pin XLR connectors on the back of the console. Although the gender is female, any connector may be configured as an input but must use a turnaround adapter.</p></li>
+<li><p><strong>DMX 512 Universe</strong> - Virtual DMX outputs 0 ➡️ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols.</p></li>
+</ul>
+<p>◾ Compulite VC protocol</p>
+<p>◾ w Art-Net 3 w</p>
+<p>◾ sACN</p>
+<ul>
+<li><p><strong>SET</strong> = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ➡️ 1000 = User defined sets</p></li>
+<li><p><strong>Parameter</strong> - An individual feature of a fixture such as dimmer, pan, tilt, color wheel, gobo.</p></li>
+<li><p><strong>Controllers</strong> - Any physical or virtual control that executes or plays back system objects such as cues, scenes, macros, and snapshots.</p></li>
+<li><p><strong>Submaster</strong> - A special type of Scene where stored fixtures inhibit their dimmer values proportionate to their assigned slider controller value.</p></li>
+<li><p><strong>Master Controller</strong> - Playback section of the console with large [GO], [BACK], [HOLD] keys.</p></li>
+<li><p><strong>Slider</strong> - Slide potentiometer often referred to as a Fader.</p></li>
+<li><p><strong>Qkey</strong> - A single button Controller.</p></li>
+<li><p><strong>Assert</strong> - Takes back control of parameters that have been “robbed” by other controllers.</p></li>
+<li><p><strong>HTP (Highest-Takes-Precedence)</strong> - When values from two or more controllers are summed, The highest value will output to the stage. Used mainly for dimmer values in theater applications.</p></li>
+<li><p><strong>LTP (Latest-Takes-Precedence)</strong> - When similar parameters are on two or more controllers, the last asserted parameter will output it’s values to the stage no matter what the value.</p></li>
+<li><p><strong>[SELECT]</strong> - Multi-use key, mainly used to assign any controller as the Master Controller. Commands not specifying a Qlist destination will be applied directly to the [SELECT] Master Controller.</p></li>
+<li><p><strong>Qlist</strong> - A Folder containing cues. Each Qlist has its own unique numbering system from 0.001 to 999.999.</p></li>
+<li><p><strong>Cue</strong> - A look (record) contained within a Qlist. Cues contain stored parameter values and properties such as text label and time values.</p></li>
+<li><p><strong>Scene</strong> - A look that exists independent of a Qlist.</p></li>
+<li><p><strong>Library</strong> - Container of frequently used fixture parameter values (Bank Library) or system objects (Object Library) . Bank Libraries may be created as referenced or unreferenced. The default for most libraries is referenced.</p></li>
+<li><p><strong>Options</strong> - Used to modify object properties “on the fly”</p></li>
+<li><p><strong>Settings</strong> - Used to modify object properties and behaviors after an object has been created.</p></li>
+<li><p><strong>Cue Zero</strong> - The starting point at the top of a Qlist. Release may or may not return to the top of a Qlist depending on Qlist Properties. Cue Zero will always return to the top of the Qlist. The command Cue 0 GOTO is valid.</p></li>
+</ul>
+<p>For the sake of this guide, <strong>Channel, Spot, Matrix, and Server Sets</strong> will be referred to as Fixture because the Fixture Set can reference all the other sets</p>
+<p>Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.</p>
 
 </div>
 </div>
@@ -703,8 +715,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="working-with-multiple-consoles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="general-specification-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +747,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/index.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +755,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/index.Rmd",
 "text": null
 },
 "download": null,

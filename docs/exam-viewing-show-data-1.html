@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 44 Exam Viewing show data | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 44 Exam Viewing show data | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 44 Exam Viewing show data | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="snaps-snapshots-1.html"/>
+<link rel="next" href="topo-topographical-display-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,90 +610,112 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<div id="exam-viewing-show-data-1" class="section level1" number="44">
+<h1><span class="header-section-number">Chapter 44</span> Exam Viewing show data</h1>
+<p>Virtually all Vibe show data can be viewed using the <strong>Exam</strong> display. The Exam display can be added to any Workspace Template using the Vibe Menu. <strong>Path</strong>: {Vibe}/{Display objects}/{Exam}. It can also opened as a pop-up using the [EXAM] key. The root menu is divided into two main sub menus, {Show} and {Patch} This chapter deals with viewing show and patch data.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>18.1. Show Exam</li>
+<li>18.2. Patch Exam</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
+<div id="show-exam-1" class="section level2" number="44.1">
+<h2><span class="header-section-number">44.1</span> Show Exam</h2>
+<p><strong>The Show Exam Menu has 14 items:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW6Xww7DJpwyKPcb0okaD%2F18.1.webp?alt=media&amp;token=c6a011cc-ad76-495d-b429-acee8616888e" /></p>
 <ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
+<li><strong>Qlist Exam</strong> - List of all show Qlists.</li>
 </ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
-</ol>
-</div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li><p>Qlist # Exam - Displays a Cue Sheet view for all cues in the Qlist.</p></li>
+<li><p>Cue Exam - Displays a track sheet for the selected cue. Fixtures may be filtered using the <strong>Sets Tabs</strong> at the bottom of the screen.</p></li>
+<li><p>Fixture - Displays the selected fixture’s information organized by <strong>Patch, Sets, Cues</strong>, and <strong>Libraries</strong> tabs at the bottom of the display.</p></li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
-</div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Libraries Exam</strong> -Lists all stored Libraries by type.</li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+<ul>
+<li><p>Library Type Exam - Displays all libraries for the selected library type.</p></li>
+<li><p>Library Fixtures Exam - Displays values for the fixtures stored in the library. Fixtures may be filtered using the <strong>Sets Tabs</strong> at the bottom of the screen.</p></li>
+<li><p>Fixture - Displays the selected fixture’s information organized by <strong>Patch, Sets, Cues</strong>, and <strong>Libraries</strong> tabs at the bottom of the display.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Group Exam</strong> -Lists all stored groups.</li>
+</ol>
+<ul>
+<li><p>Group # Exam - Displays all the fixtures in the group and their recorded selection order.</p></li>
+<li><p>Individual group fixtures - N/A.</p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Snaps Exam</strong> - Lists all recorded Snapshots.</li>
+</ol>
+<ul>
+<li>Snap # Exam - Graphically displays what controllers and their status are recorded in the the Snap.</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Macro Exam</strong> - Lists all stored Macros.</li>
+</ol>
+<ul>
+<li>Macro # Exam - Opens a display of all macro steps, time (if enabled), macro state, and macro command (This will be editable in future versions).</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li><p>Time Lines - Not implemented yet.</p></li>
+<li><p><strong>Look Ahead Mask Exam</strong> - Displays which fixtures will be enabled for the Look Ahead feature. (Move in Black) .</p></li>
+<li><p>MIDI Notes - Shows patched midi notes (currently unimplemented use patch {I/0 Settings} as an alternative.)</p></li>
+<li><p>Filters - Not Implemented.</p></li>
+<li><p><strong>Scene Exam</strong> - Lists all stored Scenes.</p></li>
+</ol>
+<ul>
+<li><p>Scene # Exam - Displays a track sheet for the selected Scene. Fixtures may be filtered using the <strong>Sets Tabs</strong> at the bottom of the screen.</p></li>
+<li><p>Fixture - Displays the selected fixture’s information organized by <strong>Patch, Sets, Cues,</strong> and <strong>Libraries</strong> tabs at the bottom of the display.</p></li>
+</ul>
+<ol start="11" style="list-style-type: decimal">
+<li><strong>Submaster Exam</strong> - Lists all stored Scenes that have been converted to Group Submasters.</li>
+</ol>
+<ul>
+<li>Submaster # Exam - Displays a track sheet for the selected Group Submaster. Fixtures may be filtered using the <strong>Sets Tabs</strong> at the bottom of the screen.</li>
+</ul>
+<ol start="12" style="list-style-type: decimal">
+<li><p><strong>Home Scene Exam</strong> - Displays values for all fixtures stored in the user defined Home Scene.</p></li>
+<li><p><strong>Highlight Scene Exam</strong> - Displays values for all fixtures stored in the user defined Highlight Scene.</p></li>
+<li><p><strong>Lowlight Scene Exam</strong> - Displays values for all fixtures stored in the user defined Lowlight Scene.</p></li>
+</ol>
+</div>
+<div id="patch-exam-1" class="section level2" number="44.2">
+<h2><span class="header-section-number">44.2</span> Patch Exam</h2>
+<p><strong>The Patch Exam Menu has 6 items:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpdUll7y7i9CAEFIimzbC%2F18.2.webp?alt=media&amp;token=102bd268-8e0b-48e8-bb18-1b4fcf78e4f4" /></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><strong>Devices Exam</strong> - Shows a list of all imported devices and their properties.</li>
+</ol>
+<ul>
+<li>Individual Device Exam - Graphically Displays DMX parameter allocation for the current device and mode.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Sets Exam</strong> - Displays the ID of each set type and the number of fixtures patched to it.</li>
+</ol>
+<ul>
+<li>Individual Set Exam - Shows a list of all fixtures patched to the set with columns for <strong>Fixture Name, Fixture #</strong> (in this case unique system ID # not actual fixture #), <strong>Set ID #, # in Set</strong>, (User defined number in the set) , and <strong>Device Name</strong>.</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>DMX Out Exam</strong> - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for <strong>Universe #</strong> <span style="color:green">(Port)</span>, Patched Fixture Count, and the <strong>Number of Used DMX Address</strong> out of 512.</li>
+</ol>
+<ul>
+<li>Individual Universe Exam - Displays a table of patched fixtures and their DMX properties.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>DMX In Exam</strong> - Displays a table of how may DMX inputs are used on each of the two available DMX inputs.</li>
+</ol>
+<ul>
+<li>Individual Input Exam - Displays a table of DMX input assignments.</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Park Exam</strong> - Displays a table of the number of parked fixtures and addresses.</li>
+</ol>
+<ul>
+<li>View Park by Dimmer (Address) or Fixture - Displays a list of all parked fixtures or dimmers and their parked dimmer values.</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li><strong>Curves</strong> <strong>Exam</strong> (Functions) - Displays a graphical list of all read only and user created Functions. It also displays which functions are included in the favorites list.</li>
 </ol>
 
 </div>
@@ -703,8 +725,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="snaps-snapshots-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="topo-topographical-display-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +757,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/18-Exam-Viewing-show-data.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +765,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/18-Exam-Viewing-show-data.Rmd",
 "text": null
 },
 "download": null,

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 48 Working with MIDI | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 48 Working with MIDI | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 48 Working with MIDI | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="working-with-time-code-1.html"/>
+<link rel="next" href="working-with-media-servers-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,91 +610,161 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<div id="working-with-midi-1" class="section level1" number="48">
+<h1><span class="header-section-number">Chapter 48</span> Working with MIDI</h1>
+<p>This chapter deals with configuring and assigning MIDI</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li>22.1. What is MIDI</li>
+<li>22.2. General MIDI Configuration</li>
+<li>22.3 Configuring MIDI Notes and Commands</li>
+<li>22.4. MIDI Show Control</li>
+<li>22.5 MIDI Time Code</li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
-</ol>
-</div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
+<div id="what-is-midi-1" class="section level2" number="48.1">
+<h2><span class="header-section-number">48.1</span> What is MIDI</h2>
+<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer. It is a control protocol and does not transmit audio. Over the years the MIDI protocol has evolved to also be a popular way to synchronize and “Play” lighting equipment. MIDI is based around a 7-bit architecture and therefore has a theoretical 127 possible notes for a keyboard. (Most pianos use 88 notes and synthesizers use even less)</p>
+<p><strong>In the basic MIDI implementation it is possible to have:</strong></p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li><p>16 independent MIDI channels - The channels systems listen on.</p></li>
+<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
+<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
+<li><p>Note On Velocity of 1 ➡️ 127 - How hard the key is struck.</p></li>
+<li><p>After Touch pressure of 0 ➡️ 127 - Ho muce pressure is applied after the key reaches the bottom.</p></li>
+<li><p>127 controllers each with a range of 0 ➡️ 127 - Encoder wheels or faders.</p></li>
+<li><p>Patch changes from 0 ➡️ 127 - change from one instrument to another.</p></li>
+<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
+<li><p>A section for MIDI time code, and other manufacturer’s “System Exclusive” information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.</p></li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
+<blockquote>
+<p>E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ’s frequently control lighting via MIDI touchpad controllers.</p>
+</blockquote>
+<p><strong>MIDI Show Control or MSC -</strong> <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p></li>
+<li><p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia</p></li>
+</ul>
+<p><strong>MIDI Time Code</strong> - <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.</p></li>
+<li><p>MIDI time code is available in the following frame rates:</p></li>
+</ul>
+<p>◾ 24 frame/s (standard rate for film work)</p>
+<p>◾ 25 frame/s (standard rate for PAL video)</p>
+<p>◾ 29.97 frame/s (drop-frame timecode for NTSC video)</p>
+<p>◾ 30 frame/s (non-drop timecode for NTSC video)</p>
+<blockquote>
+<p>Vibe can receive MIDI time code but does not generate MIDI time code.</p>
+</blockquote>
+<p><strong>Local MIDI:</strong></p>
+<ul>
+<li>MIDI is generated and received from the 5 pin DIN connectors on the back of the console.</li>
+</ul>
+<p><strong>MIDI over USB:</strong></p>
+<ul>
+<li>Transmits and receives MIDI over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</li>
+</ul>
+<p><strong>MIDI over Ethernet:</strong></p>
+<ul>
+<li>Windows class compliant MIDI over Ethernet is supported. Compulite VC MIDI over Ethernet is also supported.</li>
+</ul>
 </div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<div id="general-midi-configuration-1" class="section level2" number="48.2">
+<h2><span class="header-section-number">48.2</span> General MIDI Configuration</h2>
+<p><strong>I/O General:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLfFsHYyFscSxarwfepfu%2F22.2.webp?alt=media&amp;token=7b0b4729-7618-47fb-819f-c2cc7c95c2ec" /></p>
+<p><strong>General configuring Vibe MIDI:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
+<li><p>Toggle a MIDI Connection source</p></li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+<p>◾ Local MIDI.</p>
+<p>◾ MIDI over USB/MIDI over Ethernet.</p>
+<p>◾ Refresh looks for new connections if devices are added later.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</li>
+</ol>
+</div>
+<div id="configuring-midi-notes-and-commands-1" class="section level2" number="48.3">
+<h2><span class="header-section-number">48.3</span> Configuring MIDI Notes and Commands</h2>
+<p><strong>MIDI Notes and Commands:</strong></p>
+<ul>
+<li><p>The numbers 0 ➡️ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ➡️ G-10.</p></li>
+<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
+<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
+</ul>
+<blockquote>
+<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4VPqNUiOZuUAJ3DO9bYY%2F22.3.webp?alt=media&amp;token=46e4c67b-244b-42f9-b9cc-d364a6c10b64" /></p>
+<p><strong>Assign MIDI Notes to Controllers:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Enable Notes in or Notes out.</p></li>
+<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Note</strong> (Note ON = press down on controller key, Note off = release of controller key).</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
 </ol>
+<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
+<li><p>Tap {Teach } -The Teach key will turn purple.</p></li>
+<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
+</ol>
+<p><strong>Assign Macros to a MIDI note:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Note</strong>.</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press [MACRO] - The Macro selector pop-up will appear.</p></li>
+<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
+</ol>
+<p><strong>Additional functions:</strong></p>
+<ul>
+<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
+<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
+<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
+<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
+</ul>
+</div>
+<div id="midi-show-control-1" class="section level2" number="48.4">
+<h2><span class="header-section-number">48.4</span> MIDI Show Control</h2>
+<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices. Basic MSC commands are:</p>
+<ul>
+<li><p>Go</p></li>
+<li><p>Stop</p></li>
+<li><p>Fire - Generally used for macros</p></li>
+</ul>
+<p>Also supported on <strong>receive</strong> are:</p>
+<ul>
+<li><p>All fixtures</p></li>
+<li><p>General lights</p></li>
+<li><p>Moving lights</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&amp;token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a" /></p>
+<p>To receive MSC:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap {Enable In}</p></li>
+<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
+<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
+<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. To Transmit MSC: This function is currently under development.</p></li>
+</ol>
+<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+</div>
+<div id="midi-time-code-1" class="section level2" number="48.5">
+<h2><span class="header-section-number">48.5</span> MIDI Time Code</h2>
+<p>See:
+21.3. Configuring Timecode</p>
 
 </div>
 </div>
@@ -703,8 +773,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="working-with-time-code-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-with-media-servers-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +805,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/22-Working-with-MIDI.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +813,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/22-Working-with-MIDI.Rmd",
 "text": null
 },
 "download": null,

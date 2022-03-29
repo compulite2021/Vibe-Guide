@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibemanual.knit</title>
+  <title>Chapter 47 Working With Time Code | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 47 Working With Time Code | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 47 Working With Time Code | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playing-back-cues-and-scenes.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="xyz-fixture-calibration-1.html"/>
+<link rel="next" href="working-with-midi-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,91 +610,147 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning</h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
-<p><strong>The following is covered in this chapter:</strong></p>
+<div id="working-with-time-code-1" class="section level1" number="47">
+<h1><span class="header-section-number">Chapter 47</span> Working With Time Code</h1>
+<p>Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.</p>
+<blockquote>
+<p><span style="color:Red">This feature is under development and this section is preliminary.</span>.</p>
+</blockquote>
+<p><strong>The following is covered in this section:</strong></p>
 <ul>
-<li>15.1. Look Ahead (Move in Dark)</li>
-<li>15.2. Look Ahead Cue (Mark)</li>
-<li>15.3. Force Black</li>
+<li><p>21.1. Timecode and Timeline basics</p></li>
+<li><p>21.2. Create a Timeline View</p></li>
+<li><p>21.3. Configuring Timecode</p></li>
+<li><p>21.4. Recording Timeline Tracks</p></li>
+<li><p>21.5. Executing and Editing Events</p></li>
+<li><p>21.6. Markers</p></li>
 </ul>
-<div id="look-ahead-move-in-dark" class="section level2" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)</h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
-<blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
+<div id="timecode-and-timeline-basics-1" class="section level2" number="47.1">
+<h2><span class="header-section-number">47.1</span> Timecode and Timeline basics</h2>
+<p>Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.</p>
+<p>Vibe can read the following sources:</p>
+<ul>
+<li><p>Virtual Local - Internally generated timecode.</p></li>
+<li><p>Physical Local - SMPTE or MIDI timecode received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
+<li><p>USB MIDI class compliant timecode.</p></li>
+<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
+<li><p>Input sources from remote multi-User consoles and devices</p></li>
+</ul>
+<p>Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&amp;token=b585f40e-5bdb-4475-8098-b00bb3ebce08" /></p>
+<p>Vibe automatically matches frame rates to the incoming source.</p>
+<p>Supported frame rates are:</p>
+<ul>
+<li><p>24 FPS</p></li>
+<li><p>25 FPS</p></li>
+<li><p>29.97 FPS drop-frame</p></li>
+<li><p>30 FPS</p></li>
+</ul>
+</div>
+<div id="create-a-timeline-view-1" class="section level2" number="47.2">
+<h2><span class="header-section-number">47.2</span> Create a Timeline View</h2>
+<p>When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiEYg2WqRWqRZXIcBO5Yc%2F21.2.webp?alt=media&amp;token=5e38c8e0-da98-4242-9d22-be0c6f3a7eb6" /></p>
+<p><strong>Timeline view with two timeline tracks, the cursor, and a marker</strong></p>
+<p><strong>To add a Timeline view to a page:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
-</blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
+<li><p>Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.</p></li>
+<li><p>Tap {Pages} - Page display will open.</p></li>
+<li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
+<li><p>Tap the Lock/Unlock icon to enable adding a new view.</p></li>
+<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ➡️{Display Objects} ➡️ {Timeline View} - A blank timeline view will appear on the workspace.</p></li>
+<li><p>Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.</p></li>
 </ol>
 </div>
-<div id="look-ahead-cue-mark" class="section level2" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)</h2>
-<p><strong>Unimplemented</strong></p>
+<div id="configuring-timecode-1" class="section level2" number="47.3">
+<h2><span class="header-section-number">47.3</span> Configuring Timecode</h2>
+<p>Timecode connectors for the following:</p>
 <ul>
-<li>Look Ahead: (sometimes referred to a Mark Cue)</li>
+<li>Audio input Combi Jack with:</li>
 </ul>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p>
+<p>◾ Female unbalanced line level input on 1/4” Phone jack</p>
+<p>◾ Female 3 pin XLR balanced line level input.</p>
+<ul>
+<li>5 Pin DIN connector for MIDI and MIDI timecode input.</li>
+</ul>
+<p>Additionally, the following general purpose ports may be used for Timecode:</p>
+<ul>
+<li><p>USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.</p></li>
+<li><p>Compulite devices that support MIDI over Ethernet can also be used.</p></li>
+</ul>
+<p>Recommended quality and level for SMPTE:</p>
+<ul>
+<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
+<li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
+<p><strong>1/O Settings Pop-up in Timecode Tab</strong></p>
+<p><strong>Enable Timecode:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>From the patch toolbar tap {I/O Settings}</p></li>
+<li><p>For Tap {General} tab and select:</p></li>
+</ol>
+<p>◾ {Local MIDI} to enable the DIN connector MIDI.</p>
+<p>◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
+<li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
+<li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
+<li><p>Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</p></li>
+</ol>
 </div>
-<div id="force-black" class="section level2" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black</h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<div id="recording-timeline-tracks-1" class="section level2" number="47.4">
+<h2><span class="header-section-number">47.4</span> Recording Timeline Tracks</h2>
+<p>After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in “real time” and then edited.</p>
+<p><strong>To create a timeline track:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&amp;token=6d042dc3-2c94-47b0-910d-e5481466fa85" /></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Open a Time Line View.</p></li>
+<li><p>Tap {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} - The “Create New Timeline” pop-up will open.</p></li>
+<li><p>Select a timeline number and name.</p></li>
+<li><p>Choose Start from {Blank} Timeline as an option.</p></li>
+<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p></li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<p>◾ Virtual Local - Use internal timecode clock.</p>
+<p>◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p>
+<p>◾ Additional options will populate the list depending on the interfaced timecode device.</p>
+<ol start="6" style="list-style-type: decimal">
+<li><p>Enable the red {Record} button or the {+ Record} button.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p></li>
 </ol>
+<p>◾ Record overwrites existing events.</p>
+<p>◾ + Record adds events to existing events.</p>
+<ol start="7" style="list-style-type: decimal">
+<li><p>If using internal TC, press Play.</p></li>
+<li><p>If using external TC start the timecode source.</p></li>
+<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
+<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
+<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
+</ol>
+</div>
+<div id="executing-and-editing-events-1" class="section level2" number="47.5">
+<h2><span class="header-section-number">47.5</span> Executing and Editing Events</h2>
+<p>To Execute timeline events:</p>
+<ul>
+<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
+<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
+<li><p>The control bar may be used to stop and rewind events when the source is internal Editing timecode events</p></li>
+<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
+<li><p>Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&amp;token=985e10f0-a809-4482-8112-763a2766724b" /></p>
+</div>
+<div id="markers-1" class="section level2" number="47.6">
+<h2><span class="header-section-number">47.6</span> Markers</h2>
+<p>To aid in timeline navigation, Markers may be inserted.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&amp;token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00" /></p>
+<p>To insert a marker:</p>
+<ul>
+<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
+<li><p>Press ⬅️ to move backwards through the markers.</p></li>
+<li><p>Press ➡️ to move forwards through the markers.</p></li>
+<li><p>Press 🗑️ to delete a marker</p></li>
+</ul>
 
 </div>
 </div>
@@ -703,8 +759,8 @@
           </div>
         </div>
       </div>
-<a href="playing-back-cues-and-scenes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="xyz-fixture-calibration-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="working-with-midi-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -735,7 +791,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/21-Working-With-Time-Code.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -743,7 +799,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/15-Dark-Parameter-Positioning.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/21-Working-With-Time-Code.Rmd",
 "text": null
 },
 "download": null,
