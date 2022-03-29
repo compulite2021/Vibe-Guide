@@ -1,4 +1,4 @@
-book_filename: "vibemanual"
+book_filename: "bookdownproj"
 output_dir: docs
 delete_merged_file: true
 edit: https://github.com/compulite2021/Vibe-Guide/edit/master/%s
