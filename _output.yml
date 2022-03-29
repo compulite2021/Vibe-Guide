@@ -13,6 +13,17 @@ bookdown::gitbook:
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
 
+
+toolbar:
+position: fixed
+download: yes
+search: yes
+sharing:
+facebook: yes
+twitter: yes
+
+
+
 bookdown::epub_book:
   fig_caption: FALSE
   toc_depth: 2
