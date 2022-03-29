@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 12 Libraries | vibemanual.knit</title>
+  <title>Chapter 32 Patch | vibemanual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 12 Libraries | vibemanual.knit" />
+  <meta property="og:title" content="Chapter 32 Patch | vibemanual.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 12 Libraries | vibemanual.knit" />
+  <meta name="twitter:title" content="Chapter 32 Patch | vibemanual.knit" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="filters.html"/>
-<link rel="next" href="effects.html"/>
+<link rel="prev" href="file-management-1.html"/>
+<link rel="next" href="system-default-settings-1.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -610,140 +610,270 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="libraries" class="section level1" number="12">
-<h1><span class="header-section-number">Chapter 12</span> Libraries</h1>
+<div id="patch-1" class="section level1" number="32">
+<h1><span class="header-section-number">Chapter 32</span> Patch</h1>
+<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>12.1. What are Libraries</li>
-<li>12.2. Store and Modify Bank Libraries</li>
-<li>12.3. Object Libraries</li>
+<li>6.1. Fixture Sets</li>
+<li>6.2. Import Devices</li>
+<li>6.3. Advanced Search</li>
+<li>6.4. Create and Patch imported fixtures</li>
+<li>6.4.1. Drag and Drop Patch</li>
+<li>6.4.2. Modify Patch</li>
+<li>6.5. Configuring Physical DMX 1/0</li>
+<li>6.6. Patching Inputs</li>
+<li>6.7. Parking Addresses and Fixtures</li>
 </ul>
-<div id="what-are-libraries" class="section level2" number="12.1">
-<h2><span class="header-section-number">12.1</span> What are Libraries</h2>
-<p><strong>Vibe has two types of Libraries, Bank Libraries and Object Libraries:</strong></p>
-<ol style="list-style-type: decimal">
-<li>Bank Libraries - Store commonly used parameter values for Intensity, Position, Color, Beam, Image, Shapers, and Video content. They correspond to the parameter banks. Libraries are essentially filtered cues that are referenced by recorded objects such as Scenes and Cues. There are also two special bank libraries, Custom, and Effects.</li>
-</ol>
-<ul>
-<li><p>Custom libraries are unfiltered and record whatever parameters are in the Editor. The system <a href="filters-1.html#filters-1">FILTERS</a> key function or user defined Filter object libraries may be used to limit which parameters are stored in Custom libraries.</p></li>
-<li><p>Effect libraries store effects parameters from the Editor so that they do not have to be manually rebuilt every time they are required.</p></li>
-</ul>
-<ol style="list-style-type: decimal">
-<li>Object Libraries - Pools of system object types.</li>
-</ol>
-<ul>
-<li>Common Object Libraries are:</li>
-</ul>
-<p>◾ Group</p>
-<p>◾ Qlist</p>
-<p>◾ Scenes– Single non-Qliet “Looks”(Submasters on some consoles)</p>
-<p>◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots</p>
-<p>◾ Filters – Pool of user defined flters</p>
-<p>◾ Macro</p>
-<blockquote>
-<p>Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.</p>
-</blockquote>
+<div id="fixture-sets-1" class="section level2" number="32.1">
+<h2><span class="header-section-number">32.1</span> Fixture Sets</h2>
+<p>Like other lighting consoles, Vibe contains an extensive <strong>Device Library</strong> with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. Before a device can be programmed it must be imported and patched to DMX addresses. Vibe has an advanced numbering system that allows devices to be grouped into five familiar categories called <strong>SETS</strong>. Custom <strong>SETS</strong> may also be created. Numbering in all sets may be freely changed if there are no overlapping numbers. Each Set has a unique ID.</p>
+<p><strong>Set ID numbers: 0 = [Fixture]</strong> is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers. <strong>1 = [Channel]</strong> is a numbering set that would normally be used for conventional single parameter devices. <strong>2 = [SPOT]</strong> is a numbering set that would mainly be used for multi-parameter devices like moving lights. <strong>3 = [MATRIX]</strong> is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices) <strong>4 = [SERVER]</strong> is a numbering system used for media servers.</p>
+<p>Each <strong>SET</strong> may have Fixtures numbered from 1 ➡️ 999999 To patch a device, you must first move focus to the main monitor and press the <a href="patch-1.html#patch-1">PATCH</a> Workspace Template key. By default, the first page will contain all the displays needed for patching.</p>
 </div>
-<div id="store-and-modify-bank-libraries" class="section level2" number="12.2">
-<h2><span class="header-section-number">12.2</span> Store and Modify Bank Libraries</h2>
-<p>12.2. Store and Modify Bank Libraries</p>
-<blockquote>
-<p>Compulite Libraries are similar to Presets or Palettes on other consoles.</p>
-</blockquote>
-<p><strong>Automatic Parameter Grouping:</strong></p>
-<ul>
-<li><p>Vibe uses tee concept of “Auto Parameter Grouping” parameters when storing libraries. All parameters in Position, Color, and Shaper parameter banks will always be recorded into a library to guarantee that what was viewed on the stage is the same as what is recorded in the library.</p></li>
-<li><p>Filters may be applied to modify what is stored in a Library.</p></li>
-</ul>
-<p><strong>Libraries can be assigned one of six behaviours:</strong></p>
+<div id="import-devices-1" class="section level2" number="32.2">
+<h2><span class="header-section-number">32.2</span> Import Devices</h2>
+<p><strong>Once the Patch Workspace is open:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Fixture Specific</strong> – Values only applied only to specific stored fixtures.</p></li>
-<li><p><strong>Parameter Specific</strong> – Values will be applied to all matching parameter types.</p></li>
-<li><p><strong>Pattern</strong> –Values will be applied to all matching parameter types and will keep the pattern of the values.</p></li>
-<li><p><strong>Device + Fixture</strong> – the first fixture will be used as a reference for all other similar fixture types. If values are changed for specific fixtures they will be stored in the library as if they were fixture specific. If a fixture other than the first fixture is released from the library, its values will again be referenced from the first fixture. If the first fixture is released, the next fixture will become the reference.</p></li>
-<li><p><strong>Device</strong> and Parameter – Values will be applied to fixtures of the same device type and the same parameter type.</p></li>
-<li><p><strong>Device and pattern</strong> – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.</p></li>
+<li><p>Make sure the {Imported Devices} tab just above the white FIXTURE selection display area at the bottom left of the workspace is selected.</p></li>
+<li><p>Tap {Import}, the Manufactures picker list will appear.</p></li>
+<li><p>Flick or drag along the list to browse to the desired manufacturer then tap the manufacturer’s name.</p></li>
+<li><p>A new list and search window will open. If the exact device name is known, type it in the search window, if not flick or drag to browse the list until the desired device is found.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6OPIN7M2INVvd6Qb68PC%2F6.2.webp?alt=media&amp;token=a9d3bfed-3a49-4174-bdb6-3c32843653ee" /></p></li>
+<li><p>The &lt; key may be pressed at any time to return to the Imported Devices list.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMJNhnkyYAYn3wnGiHWkk%2F6.2.1.webp?alt=media&amp;token=cb596e2e-e61d-424f-ba50-aa0eee3a0c55" /></p></li>
+<li><p>.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&amp;token=62e204dc-17b9-4fd2-8566-18780860a2b8" /></p></li>
 </ol>
-<p><strong>Store a Library using keypad syntax:</strong>
-1. Press [Fixture] [#] [+ à -] - Select parameter {Bank } on Smart Screen.</p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.</p></li>
-<li><p>Press [LIBRARY] - Library {Store Options} pop-up will open at the bottom of the Smart Screen and {Banks} will appear on the Editor Toolbar.</p></li>
+</div>
+<div id="advanced-search-1" class="section level2" number="32.3">
+<h2><span class="header-section-number">32.3</span> Advanced Search</h2>
+<p>Fixtures may be searched directly by name using the Advanced Device Search. Searches may also be filtered by parameter order and DMX Channel Count to limit the search. The filters are very helpful in finding close matches for fixtures that are not currently in the device library.</p>
+<p><strong>To access Advanced Search:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap {Import} from the main page - The tab will now read {Advanced Search}.</p></li>
+<li><p>Tap {Advanced Search} - The Advanced Search Pop-up will appear.</p></li>
+<li><p>Type the fixture’s name in the Fixture Name box or Set the filters to limit the selection.</p></li>
+<li><p>Select the fixture from under the Matching Devices header.</p></li>
 </ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVCqjLaER2OAgqUxrCI4t%2Fimage.png?alt=media&amp;token=e6e20dba-cd8a-41bd-9f43-6d8851f60b8e" /></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Tap a parameter {Bank} key on the Editor Toolbar.</li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FkhULoWzjDhUgDQ6bl9Oa%2Fimage.png?alt=media&amp;token=d99a3186-7685-4a5d-ad56-6893dfc3953b" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSoJ6Bs01KdLdos1AX1dR%2F6.3.webp?alt=media&amp;token=6337e45c-7ce2-4694-92fb-8a750d367eb1" /></p>
 <ol start="5" style="list-style-type: decimal">
-<li><p>Enter the destination library number via the keypad.</p></li>
-<li><p>Make {Library Store Options} changes as required.</p></li>
-<li><p>Press [STORE] to complete the sequence.</p></li>
+<li>The DMX Modes pop-up will open.</li>
+<li>Review the DMX implementation and select the desired mode.</li>
+<li>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up and add the fixture to the Imported Devices list.</li>
 </ol>
-<p><strong>A shortcut for Bank selection is to specify a number directly after pressing [LIBRARY] key:</strong> 1 = Intensity bank 2 = Position bank 3 = Color bank 4 = Beam bank 5 = Image 6 = Shape 7 = Custom 8 = Effect</p>
-<p>After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.</p>
-<p><strong>Modify a Library using [UPDATE]:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
-<li><p>Press the [UPDATE] - The Update pop-up will open. Two columns will appear. The left column shows <strong>Cues</strong> available for updating and the right column shows Libraries available for updating. The source library or <strong>libraries</strong> should be selected.</p></li>
-<li><p>Selected libraries may be freely deselected in the Update pop-up. If all Libraries are deselected, updates will become “hard” values in the source cue instead of the source libraries being updated.</p></li>
-<li><p>Press <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up and complete the update.</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FswW9jeskVr3TEdTRVbDT%2Fimage.png?alt=media&amp;token=5fb52b3a-4a43-4e9f-80f9-eb56ad0ed9f5" /></p>
-<p><strong>Update pop-up</strong></p>
-<p><strong>Overwrite, Update, or Release fixtures in Libraries via Softkey syntax:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
-<li><p>Press [STORE] and tap source {Library SK}.</p></li>
-<li><p>The {Cancel, Update, Overwrite, Release} pop-up will appear on the large screen.</p></li>
-<li><p>Tap {Overwrite} to replace all fixtures with those in the Editor, {Update} to merge the editor into the library, or {Release} to remove the selected fixtures from the Library.</p></li>
-</ol>
-<blockquote>
-<p>Releasing fixtures is only valid if the library is <strong>Fixture Specific</strong> or <strong>Device + Fixture</strong> in the case where specific fixtures have modified recorded values.</p>
-</blockquote>
-<blockquote>
-<p>Alternately the sequence [LIBRARY] {Bank} from the Editor Toolbar [#] [STORE] to an existing library will work the same as above.</p>
-</blockquote>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&amp;token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425" />
-<strong>Object Exists pop-up</strong></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F715KxeIgoRObcRqRjQAh%2Fimage.png?alt=media&amp;token=e82df1d4-a779-41ab-9e01-b7d1f99f76c0" />
-<strong>Library Settings pop-up</strong></p>
-<p>Library Settings may be changed at any time after they are created using the Library Settings pop-up.</p>
-<p><strong>There are two ways to do this:</strong></p>
-<ul>
-<li><p>Tap the Library {SK} you wish to modify and press [SETTINGS]. (This is invalid with Snaps and Macros as it will trigger them) Or</p></li>
-<li><p>Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open.</p></li>
-</ul>
-<p>◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it.</p>
-<p>◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.</p>
-<p><strong>Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:</strong></p>
-<ul>
-<li><p>For Library Softkeys, Tap a Library {SK} - Start typing on the pull-out keyboard. The Text Entry pop-up will appear.</p></li>
-<li><p>Tap a Library {SK} press [TEXT] - The Text Entry pop-up will appear.</p></li>
-<li><p>Press [TEXT] tap a Library {SK} - The Text Entry pop-up will appear.</p></li>
-<li><p>Press [Library] tap {Bank} on the Editor Toolbar Press [#] [TEXT] - The Library Text pop-up will open.</p></li>
-<li><p>Directly after storing a Library, press [TEXT] - Library text pop-up will open.</p></li>
-</ul>
-<p><strong>Delete a library:</strong></p>
-<ul>
-<li><p>Method 1: Tap the Libraries’ {SK} then press [DELETE]</p></li>
-<li><p>Method 2: Keypad sequence for Bank Libraries: [LIBRARY] tap {Bank} on the Editor Toolbar [#] [DELETE]</p></li>
-<li><p>Method 3: Keypad sequence for deleting Object Libraries: [Object] [#] [DELETE]</p></li>
-</ul>
-<blockquote>
-<p>For most Delete functions, pressing [DELETE] [DELETE] will do the same as pressing [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to complete the operation.</p>
-</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW9vK61A11wEoGR23P58y%2F6.3.1.webp?alt=media&amp;token=ac62e3aa-1045-4cc4-87d6-5715e511417d" /></p>
 </div>
-<div id="object-libraries" class="section level2" number="12.3">
-<h2><span class="header-section-number">12.3</span> Object Libraries</h2>
-<p>See:</p>
-<ul>
-<li><p>9.4. Groups</p></li>
-<li><p>10.1. What Are Qlists, Cues, Scenes, and Submasters?</p></li>
-<li><p>11.2. General Filters Tab</p></li>
-<li><p>16.1. Creating Macros</p></li>
-<li><p>17.1. Storing Snaps</p></li>
-</ul>
+<div id="create-and-patch-imported-fixtures-1" class="section level2" number="32.4">
+<h2><span class="header-section-number">32.4</span> Create and Patch imported fixtures</h2>
+<ol style="list-style-type: decimal">
+<li><p>Import the desired device. (See <a href="/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.2.-import-devices">6.2. Import Devices</a>).</p></li>
+<li><p>The device will now be in the list below the Imported Devices header.</p></li>
+<li><p>Tap the device you wish to patch and the Create and Patch Fixtures popup will appear.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FcFXeBwqGbF1LU2qRzhsk%2F6.4.webp?alt=media&amp;token=cdca54cf-4b59-440f-ad0d-d1b0f09960b0" /></p>
+<ol style="list-style-type: decimal">
+<li><p>In the <strong>Create and Patch</strong> fixtures pop-up, type the quantity in the red highlighted field via the keypad or flick/drag to browse the list until the desired quantity number is found then tap the number.</p></li>
+<li><p>If the <strong>Quantity</strong> number is not highlighted in Red, tap the field to make it active.</p></li>
+<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don’t always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).</p></li>
+<li><p>Press the ➡️ key on the keypad to tab to the {Set Number} field.</p></li>
+<li><p>Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number. 👉 By default, the first available number for the selected SET is pre-assigned.</p></li>
+<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap any box in the Fixture Number field to select it.</p></li>
+<li><p>By default, the same number as the SET Number will appear as the Fixture Number. Many users like to group Fixtures by 10ʼs or 100ʼs so it is common to type 101 for the start of one type of fixture, 201 for a second type and so on. The SET number and Fixture number do not have to be the same.</p></li>
+<li><p>Next to the Fixture Number field is a data entry box that displays the fixture’s default short name. This may be edited at any time while in this pop-up. The name will be updated when the fixtures are created upon closing the pop-up.</p></li>
+<li><p>In the second section of the pop-up, fixtures that were selected for creation can be patched via the DMX patch wizard. Press the ➡️ key on the keypad to tab to the next field, or tap a number in the UNIVERSE field. If the desired universe is not visible, flick/drag to browse to the correct universe number then tap it.</p></li>
+<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap any number in the <strong>ADDRESS</strong> field.</p></li>
+</ol>
+<blockquote>
+<p>By default, the interval between fixtures of the same type is fixed.
+Using the INTERVAL field, a custom interval may be set.</p>
+</blockquote>
+<ol start="11" style="list-style-type: decimal">
+<li>To complete <strong>CREATE and PATCH</strong> tap the <strong>{APPLY &amp; CONTINUE}</strong> key in the bottom <strong>right corner of the pop-up</strong>, Press <strong>[ENTER]</strong>, or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and return to the patch workspace.</li>
+</ol>
+<p><strong>Theatrical Multi-Patching can also be done manually using keypad syntax:</strong></p>
+<p>◾ Toggle off the <strong>{MAIN PATCH}</strong> key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.</p>
+<p><strong>To Patch fixtures using traditional keypad syntax:</strong></p>
+<p>◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the <strong>ADDRESS</strong> field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. <strong>Or</strong></p>
+<p>◾ [ADDRESS] [#].[#] +/ - ➡️ [#].[#] [FIXTURE] [#] [STORE].</p>
+<blockquote>
+<p>Addresses may also be typed in absolute format: 1 ➡️ 32,768 (64
+Universes standard). The system will automatically assign the correct
+universe</p>
+<p>When starting from a {New Show} only {Physical DMX outputs} are
+enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settings}</p>
+</blockquote>
+<div id="drag-and-drop-patch-1" class="section level3" number="32.4.1">
+<h3><span class="header-section-number">32.4.1</span> Drag and Drop Patch</h3>
+<p><strong>Drag and Drop Patch</strong> - If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be created but not patched. Created fixtures may then be dragged and dropped onto the Universe View.</p>
+<p><strong>Drag and Drop from the Fixtures tab:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Create fixtures - <strong>(</strong>See <a href="/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.4.-create-and-patch-imported-fixtures">6.4. Create and patch imported fixtures</a>).</p></li>
+<li><p>Select the Fixture <strong>Set</strong> you wish to patch from in the lower right of the main patch workspace.</p></li>
+<li><p>Select the <strong>Fixtures</strong> tab on the left side of the main patch workspace directly above the white FIXTURE selection box. A list of created fixtures will appear.</p></li>
+<li><p>Make sure the <strong>Universes View</strong> tab at the bottom of the main patch workspace is selected.</p></li>
+<li><p>Select a destination Universe from the <strong>Universes</strong> list in the top right of the main patch workspace. - Scroll the list to browse for hidden universes.</p></li>
+<li><p><strong>Press and Hold</strong> a fixture, it will turn into a floating icon of the fixture.</p></li>
+<li><p>Drag the fixture icon from the Fixtures list onto the Universe View grid. All associated DMX addresses for the fixture will turn green. Drop the fixture icon on the desired DMX start address for the fixture. - The fixture is now patched.</p></li>
+</ol>
+<p>Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures list.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFTYnnKHRjr3DV3bFTnMN%2F6.4.1.webp?alt=media&amp;token=7a7991b5-3817-4e6d-8fd0-cbd9c031c839" /></p>
+<p><strong>Make multiple selections of fixtures using the keypad:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Type a range of fixtures using the keypad - the fixture selection will be displayed numerically in the white fixture selection box.</p></li>
+<li><p><strong>Press and Hold</strong> anywhere in the white fixture selection box - a fixture icon will appear.</p></li>
+<li><p>Drag the icon to the Universe View grid and drop it at the destination start address - the range of fixtures is now patched.</p></li>
+</ol>
+<p><strong>Multi-Patch using Drag and Drop:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Drag and drop the same fixture to multiple DMX offsets.</li>
+</ol>
+<blockquote>
+<p>All types of fixtures may be multi-patched but caution should be used when multi-patching multi-parameter fixtures.</p>
+</blockquote>
+<p><strong>Unpatch fixtures using drag and drop:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Press and Hold</strong> any patched DMX offset - The DMX addresses for the fixtures patched to it will turn green and a fixture icon will be shown.</p></li>
+<li><p>Drag the selected block of fixtures towards the bottom of the screen - a waste basket icon will appear at the bottom of the workspace.</p></li>
+<li><p>Drag the block until the fixture icon is over the waste basket and release the fixture - the fixture will now be unpatched.</p></li>
+</ol>
+</div>
+<div id="modify-patch-1" class="section level3" number="32.4.2">
+<h3><span class="header-section-number">32.4.2</span> Modify Patch</h3>
+<blockquote>
+<p>Once patched fixtures can be modified using keypad syntax or using the two Patch Toolbars in the Patch Workspace.</p>
+</blockquote>
+<p><strong>Toolbar with no fixture selection:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8RUSEceSC54jo9ad3dch%2F6.4.2.webp?alt=media&amp;token=301e5200-bdc3-41df-904f-aae3609dcb59" /></p>
+<p>◾ {CLEAR PATCH} - Opens up Clear Patch pop-up.</p>
+<p>◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up.</p>
+<p>◾ {ADD FIXTURE} - Opens the Create And Patch pop-up.</p>
+<p>◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.</p>
+<p><strong>Toolbar with fixture selection:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&amp;token=4f322af9-9116-4d1e-b01b-cc15538d482a" /></p>
+<p>◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up.</p>
+<p>◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected.</p>
+<p>◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected.
+See: 20. XYZ Fixture Calibration</p>
+<p>◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup</p>
+<p>◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up</p>
+<p><strong>Modify the patch using keypad syntax:</strong></p>
+<p>◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar.</p>
+<p>◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.</p>
+</div>
+</div>
+<div id="configuring-physical-dmx-10-1" class="section level2" number="32.5">
+<h2><span class="header-section-number">32.5</span> Configuring Physical DMX 1/0</h2>
+<blockquote>
+<p>By default, DMX is mapped to the physical ports on a 1:1 basis.
+DMX is always transmitted but can be remapped to anyone of the supported 256 DMX universes.</p>
+</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FysS3YygefUYdl0S2006u%2F6.5.webp?alt=media&amp;token=d646bef8-2793-4d67-8cb5-fb7224ac4a39" /></p>
+<p><strong>Remap Physical outputs:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>With no fixtures selected, tap {DMX SETTINGS} on the patch toolbar - The DMX Properties pop-up will open.</p></li>
+<li><p>In the Protocol column, Tap {Physical output}.</p></li>
+<li><p>Under the Source Universe heading, tap the desired source universe number or once red type the universe number you wish to be the source.</p></li>
+<li><p>Under the Physical output Destination Universe heading, tap one of the 8 displayed physical outputs - the source Universe will now be patched to the output.</p></li>
+</ol>
+<p><strong>Change output to input</strong> - Currently, Vibe supports 2 inputs but multiple connectors may be assigned to the same input.</p>
+<ol style="list-style-type: decimal">
+<li>Tap a patched output - Two additional options will appear below the Output Destination Universe box.</li>
+</ol>
+<p>◾ {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input.</p>
+<p>◾ {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.</p>
+<p><strong>Change input back to output:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a patched input - an additional Make Output option will appear below the Output Destination Universe box.</p></li>
+<li><p>Tap {Make Output} - The Connector will now output DMX.</p></li>
+</ol>
+<p><strong>Change DMX refresh rate:</strong></p>
+<p>◾ Vibe will a<strong>l</strong>ways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.</p>
+</div>
+<div id="patching-inputs-1" class="section level2" number="32.6">
+<h2><span class="header-section-number">32.6</span> Patching Inputs</h2>
+<p><strong>The following objects may be mapped to DMX inputs</strong>:
+- DMX input mapped directly to the console’s DMX outputs
+- DMX input mapped to Macros
+- DMX input mapped to Controllers
+- DMX input mapped to fixtures</p>
+<p><strong>Map a DMX output to a DMX input:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO</p></li>
+<li><p>Press [ADDRESS] [#]</p></li>
+<li><p>Press [STORE]</p></li>
+</ol>
+<blockquote>
+<p><strong>E.g</strong>. [ADDRERSS] [1] {INPUT PATCH TO} [ADDRESS] [1] [STORE] - When DMX 1 is received from an external source like a console, DMX 1 will directly output to the Vibes DMX output. No values will be shown in the live display as no actual parameters are involved.</p>
+</blockquote>
+<p><strong>Map a range of DMX outputs to a range of DMX inputs:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#] ➡️ [#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO.</p></li>
+<li><p>Press [ADDRESS] [#] ➡️ [#]</p></li>
+<li><p>Press [STORE]</p></li>
+</ol>
+<p><strong>Map a Macro to a DMX input</strong> - Macro will trigger at 50%</p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#].[#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO.</p></li>
+<li><p>Press [MACRO] [#]</p></li>
+<li><p>Press [STORE]</p></li>
+</ol>
+<p><strong>Map a controller to a DMX input:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO.</p></li>
+<li><p>Press [PLAY-B] (Controller) - The Controller Selection pop-up will appear.</p></li>
+<li><p>Choose the Controller Type, Page Number, and Controller number from the pop-up.</p></li>
+<li><p>Press ENTER, or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and complete the patch.</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3DT3je7pCP3pknk8LC7V%2F6.6.webp?alt=media&amp;token=3bb762be-4947-4802-a1c0-e89d98163565" /></p>
+<p><strong>Map a Fixture to a DMX input:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - command line will say INPUT PATCH TO</p></li>
+<li><p>Press [Fixture] [#]</p></li>
+<li><p>Press [STORE]</p></li>
+</ol>
+<blockquote>
+<p>DMX inputs will automatically be mapped to all the fixtures parameters starting at the specified address. [ADDRESS] [1] [FIXTURE] [1] (A fixture with 42 parameters) [STORE] will automatically match the 42 parameters to input addresses 1 → 42. The next fixture would have to be mapped starting at address 43.</p>
+</blockquote>
+<p><strong>Delete a DMX Input patch assignment:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [ADDRESS] [#]</p></li>
+<li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO</p></li>
+<li><p>Press [DELETE]</p></li>
+</ol>
+</div>
+<div id="parking-addresses-and-fixtures-1" class="section level2" number="32.7">
+<h2><span class="header-section-number">32.7</span> Parking Addresses and Fixtures</h2>
+<p><strong>Park an Address:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[ADDRESS] [#] {PARK} - The Park pop-up will appear.</p></li>
+<li><p>Set a DMX level from 0 ➡️ 255 using tee virtual slider.</p></li>
+<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up and park the address.</p></li>
+</ol>
+<p><strong>Unpark and address:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[ADDRESS] [#] {PARK} - The Park pop-up will appear.</p></li>
+<li><p>Tap {Clear Park}.</p></li>
+<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up and unpark the address.</p></li>
+</ol>
+<p><strong>Park a fixture:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>[FIXTURE] [#] - Set parameter values in the editor.</p></li>
+<li><p>Tap {PARK} on the editor toolbar.</p></li>
+<li><p>Press [STORE] - Fixture will now be parked at the editor values.</p></li>
+</ol>
+<p><strong>Unpark a fixture:</strong></p>
+<ol style="list-style-type: decimal">
+<li>[FIXTURE] [#] {PARK} [DELETE] View parked fixtures and address: (See <a href="/s/3kS90tLsADGm1ocbe7q9/18.-exam-viewing-show-data/18.-exam-viewing-show-data/18.2.-patch-exam">18.2. Patch Exam</a>)</li>
+</ol>
+<blockquote>
+<p>The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key will blackout parked addresses and fixtures.</p>
+</blockquote>
 
 </div>
 </div>
@@ -752,8 +882,8 @@
           </div>
         </div>
       </div>
-<a href="filters.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="effects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="file-management-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="system-default-settings-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -784,7 +914,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/12-Libraries.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/edit/master/06-Patch.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -792,7 +922,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/12-Libraries.Rmd",
+"link": "https://github.com/compulite2021/Vibe-Guide/blob/master/06-Patch.Rmd",
 "text": null
 },
 "download": null,
