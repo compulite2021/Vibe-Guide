@@ -14,15 +14,6 @@ bookdown::gitbook:
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
 
 
-toolbar:
-position: fixed
-download: yes
-search: yes
-sharing:
-facebook: yes
-twitter: yes
-
-
 
 bookdown::epub_book:
   fig_caption: FALSE
