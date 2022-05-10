@@ -12,11 +12,9 @@ bookdown::gitbook:
       after: |
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
-
+github:
+  is_project_page: false
 
 bookdown::epub_book:
   fig_caption: FALSE
   toc_depth: 2
-  
-  github:
-  is_project_page: false
