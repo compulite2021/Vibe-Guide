@@ -1,4 +1,4 @@
-book_filename: "bookdownproj"
+book_filename: "vibe-manual"
 output_dir: docs
 delete_merged_file: true
 edit: null
