@@ -14,8 +14,9 @@ bookdown::gitbook:
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
 
 
-
 bookdown::epub_book:
   fig_caption: FALSE
   toc_depth: 2
   
+  github:
+  is_project_page: false
