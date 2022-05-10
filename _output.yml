@@ -18,3 +18,7 @@ github:
 bookdown::epub_book:
   fig_caption: FALSE
   toc_depth: 2
+
+bookdown::pdf_book:
+  fig_caption: FALSE
+  toc_depth: 2
