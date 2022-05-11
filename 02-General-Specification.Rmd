@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # General Specification
 
 This chapter covers basic specifications.
