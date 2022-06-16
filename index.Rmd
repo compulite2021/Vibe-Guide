@@ -137,12 +137,12 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 
 ## Releases
 
-Release Date: **06/09/2020** 
-DB version: **R_3.0** 
-Desktop version: **R_3.0** 
-LPU version: **R_3.0** 
-HAL version: **R_3.0** 
-Device Pack version: **DP_3.0**
+- Release Date: **06/09/2020** 
+- DB version: **R_3.0** 
+- Desktop version: **R_3.0** 
+- LPU version: **R_3.0** 
+- HAL version: **R_3.0** 
+- Device Pack version: **DP_3.0**
 
 ### Bug Fixes
 -   Fixed a crash when removing a point from the Function editor
