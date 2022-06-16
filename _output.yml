@@ -1,7 +1,10 @@
 bookdown::gitbook:
+  fig_caption: FALSE
   css: style.css
   config:
     toc:
+      collapse: section
+      scroll_highlight: yes
       before: |
         <li style="text-align: center;">
         <img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;">
