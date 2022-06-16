@@ -388,9 +388,13 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 -   Fixture Builder: 
 
 ◾ Errors on edit factory devices with overlapping steps 
+
 ◾ Editing a show device could cause it to be cloned infinite times 
+
 ◾ Parameter Step tab did not update the navigation buttons 
-◾ Edit boxes in Parameter Steps table did not work 
+
+◾ Edit boxes in Parameter Steps table did not work
+
 ◾ Memory leaks fixes
     
 
@@ -441,4 +445,8 @@ Version R_3.0 brings new and updated features as listed below:
 |Midi / SMPTE Test|New Midi / SMPTE test mode|
 |Update Firmware Options|There are new possibilities to update the console firmware|
 
-
+| Left columns  | Right columns |
+| ------------- |:-------------:|
+| left foo      | right foo     |
+| left bar      | right bar     |
+| left baz      | right baz     |
