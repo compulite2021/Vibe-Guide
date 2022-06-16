@@ -13,6 +13,7 @@ This chapter discusses getting started with your Compulite Vibe console.
 -   1.2. Getting Started
 -   1.3. Guide Conventions
 -   1.4. Important Terms
+-   1.5  Releases
 
 ## Unboxing
 
@@ -133,3 +134,311 @@ Choose Shut Down the Console - The console will safely power off.
 For the sake of this guide, **Channel, Spot, Matrix, and Server Sets** will be referred to as Fixture because the Fixture Set can reference all the other sets
 
 Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.
+
+## Releases
+
+Release Date: **06/09/2020** 
+DB version: **R_3.0** 
+Desktop version: **R_3.0** 
+LPU version: **R_3.0** 
+HAL version: **R_3.0** 
+Device Pack version: **DP_3.0**
+
+### Bug Fixes
+-   Fixed a crash when removing a point from the Function editor
+    
+
+-   Fixed a crash when searching Exam View and pressing SHIFT+RESET
+    
+
+-   Fixed a potential crash on startup
+    
+
+-   Fixed a potential crash on Undo popup
+    
+
+-   Fixed potential crash on HAL
+    
+
+-   Fixed a crash when pressing Actions on the Timeline view
+    
+
+-   Fixed a crash when pressing apply on the Link Cue popup
+    
+
+-   Fixed a crash on LPU when deleting a cue that is next on a PB and it's values are active as Look Ahead
+    
+
+-   Fixed a crash on LPU when releasing a playback during loop could cause it on some cases
+    
+
+-   Fixed a crash on filters popup when deleting the last parameter from the list
+    
+
+-   Fixed a crash when deleting a device that had no fixtures in the show
+    
+
+-   Loading a big show could cause the system to get stuck
+    
+
+-   Rem Dim could cause errors on DB
+    
+
+-   Grab Active Master PB could cause errors on DB
+    
+
+-   Live View - When parameter jumping is on its should works all the cases
+    
+
+-   Performance fixes in specific sequences as well as general system speed
+    
+
+-   Fixture selection was slow and caused many updates to small screen, especially when selecting with '+'
+    
+
+-   When fixture has values, entering to Blind editor where the values there are at home, will make a graphic flick
+    
+
+-   "Exclude from Snap" and "Exclude from Override" did not work correctly **Snaps stored with these options need to be rebuilt!**
+    
+
+-   It was not possible to select/deselect a cell on the first column in Cell Time popup
+    
+
+-   Exam of a new device did not show the info on Exam View
+    
+
+-   Exam view did not refresh after deleting a Qlist
+    
+
+-   Wheel picker sometimes was not accurate and selected the wrong step
+    
+
+-   Address test delta value was showing wrong value
+    
+
+-   Changes to Address properties did not output unless applying the popup
+    
+
+-   Fixtures with more than 1 color layer could make the HIS picker stuck
+    
+
+-   Data on the status view was not always refreshed
+    
+
+-   Filters popup – changes were not saved if user switched between filters
+    
+
+-   Activate a snap after deleting Qlists loaded them in a ghost mode
+    
+
+-   Deleting Libraries, Macros, Scenes did not remove them from the snaps they were stored in
+    
+
+-   Deleting Snaps did not clear the data correctly
+    
+
+-   Master PB did not change according to the data stored in the Snap
+    
+
+-   Fixture selection numbers did not cut to the actual maximum number on echoline
+    
+
+-   When Lib stored, echoline looks strange
+    
+
+-   Sometimes [Transpose] doesn't ordering the fixtures correctly
+    
+
+-   Park on parked parameters did not work correctly with Grand Master
+    
+
+-   A/B Slider behavior was wrong for manual fade.
+    
+
+-   Faders kept sending data even though the value did not change
+    
+
+-   Cue time units on popup did not change
+    
+
+-   SHIFT+GRAB took a lot of time
+    
+
+-   Delete a cue took a lot of time
+    
+
+-   Updating cues caused an error on DB and sometimes caused wrong values to be stored
+    
+
+-   Release value from Cue did not work correctly
+    
+
+-   Updating a copied cue/scene did not update it
+    
+
+-   Update cue values from the Tracksheet view did not always work
+    
+
+-   Load track data to cue did not load from a block cue
+    
+
+-   When updating a cue that after it there is a cue with virtual params stored, the params are changed
+    
+
+-   When Lib is stored as block, update the previous cue will make track to the block
+    
+
+-   After releasing a parameter from a cue, values look like they 'Block' even though they are tracked
+    
+
+-   After remove a reference from a Lib, all cues that are using any Libs will lose their reference
+    
+
+-   When updating a Hard value using a referenced Lib it should select the source cue in the update popup
+    
+
+-   Updating a Virtual Color Cue to Physical Color via update pop-up will track to the next cue if stored with Virtual Color
+    
+
+-   Cannot release a param so it will be tracked again from a Lib
+    
+
+-   Release Virtual color to physical color, vice versa, will release to Home
+    
+
+-   Release a Virtual Lib to Virtual hard value or Physical Lib to Physical hard value, keeps the notation of the Lib in the Live view
+    
+
+-   When storing a Lib, the Library notation and reference in Live is being applied only on the selected fixtures
+    
+
+-   Virtual and Physical params are acting weird when "maintain last value" is active
+    
+
+-   Can't delete Highlight or Lowlight cues
+    
+
+-   Link Cue popup showed error when opened from the toolbar
+    
+
+-   If a cue had time-in, time-out and follow in CUT, it was skipping the cue
+    
+
+-   Color values are jumping when Qlist is tracking off and follow time is CUT
+    
+
+-   Release at bottom took the Qlist release time instead of working in CUT
+    
+
+-   Clear editor on master Go, clears the editor in any go
+    
+
+-   Color icon is not changing when in Blind mode
+    
+
+-   If param is selected, and then you change to 'Parameter Steps' view, it does not show the steps of the param
+    
+
+-   Small screen effects showed wrong parameters
+    
+
+-   When Randomize fixtures in the effect, and more than 1 pattern is selected, it should shuffle them in the same way
+    
+
+-   Randomize an existing effect that has 2 params on the same row via small effect engine after selecting the params is wrong
+    
+
+-   Randomize fixtures should randomize only the order of the fixtures
+    
+
+-   When Pan effect was running, pressing the Tilt made a jump to 0
+    
+
+-   Rate window is flickering with the cues fades
+    
+
+-   Context view got back to idle after selecting a library
+    
+
+-   Context did not display Filter SK
+    
+
+-   The name of context view when its tabbed is wrong
+    
+
+-   SMPTE FPS value was wrong
+    
+
+-   Group Select/Deselect/Release did not work on Qlists and Scenes
+    
+
+-   'Group Release' button stuck the params it releases
+    
+
+-   [Shift]+Master [Go][Back] should make a Go\Back on master in Cut time
+    
+
+-   RDM settings are not stored in show file
+    
+
+-   Edit control - caret remains visible after focusing out
+    
+
+-   Fixture Builder: 
+
+◾ Errors on edit factory devices with overlapping steps 
+◾ Editing a show device could cause it to be cloned infinite times 
+◾ Parameter Step tab did not update the navigation buttons 
+◾ Edit boxes in Parameter Steps table did not work 
+◾ Memory leaks fixes
+    
+
+-   Vector show conversion bugs
+
+### Version Highlights
+
+Version R_3.0 brings new and updated features as listed below:
+| **Feature / Improvement** | **Description** |
+|--|--|
+|**Settings**||
+|Controller Default Actions|It is now possible to set a default controller action for each object type on each controller type|
+|Exit Button Location|The location for the button to exit the system or close a window was moved|
+|Clear Device IP History|Added this option to clear the cache under the system settings|
+|Show/Hide View Headers|Added an option to show or hide view headers in order to make room on screen|
+|Softkeys Size Improvements|It is now possible to make the softkey view very compact|
+|Unicast Option for Art-Net And VC|It is now possible to set specific IPs to send the output to|
+|Defaults Changes|There are some new defaults for: Update popup – new values to master pb Bottom Button on submasters – flash Pan & Tilt Effect default size|
+|**Patch**||
+|Edit Sets|There is an option to edit user-sets on the Sets view|
+|**Workflow**||
+|Media Bank|There is a new bank called Media on the Small Screen|
+|Toggle Between Banks|The combination of SHIFT+# on the keypad will switch a bank on the small screen|
+|Cell Time Fan|It is now possible to fan cell times via the keypad|
+|Parameter Profile|It is now possible to set a profile for parameters to change their fade behavior|
+|**Timeline**||
+|Grid View Filters|It is now possible to filter timelines on the grid view|
+|Time Format|It is now possible to decide the time format on the Timeline View|
+|Moving Events|It is now possible to move events on the Timeline with the wheels|
+|Events Selection|It is not possible to select events by creating a rectangle of selection|
+|State Machine Support|It is now possible to trigger Timeline commands from the keypad + toolbar commands|
+|**Popups**||
+|New "Loading" Popup|There is a new popup for continuous loading|
+|Remove Function|On the effects popup, it is now possible to remove an added function|
+|CITP Popup|There is a new popup for CITP configuration and commands|
+|**General**||
+|Auto Patch from Capture|Using CITP protocol, it is now possible to retrieve patch information from Capture|
+|**Fixture Builder**||
+|Option to edit Shutter Picker commands|It now possible to create/edit commands for the Shutter picker|
+|Option to edit Frost Picker commands|It now possible to create/edit commands for the Frost picker|
+|Option to edit Iris Picker commands|It now possible to create/edit commands for the Iris picker|
+|Option to edit Zoom Picker commands|It now possible to create/edit commands for the Zoom picker|
+|Option to edit Blade Picker commands|It now possible to create/edit commands for the Blade picker|
+|Option to edit Focus Picker commands|It now possible to create/edit commands for the Focus picker|
+|New Parameter Types|Added new parameter types to Vibe|
+|**Offline Tool**||
+|Panel Test|New Panel test mode to check the hardware|
+|Midi / SMPTE Test|New Midi / SMPTE test mode|
+|Update Firmware Options|There are new possibilities to update the console firmware|
+
+

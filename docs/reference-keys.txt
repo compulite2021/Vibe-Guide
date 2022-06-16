@@ -3,6 +3,9 @@ unboxing
 getting-started
 guide-conventions
 important-terms
+releases
+bug-fixes
+version-highlights
 general-specification
 controls
 io

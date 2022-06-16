@@ -81,6 +81,11 @@
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#getting-started"><i class="fa fa-check"></i><b>1.2</b> Getting Started<span></span></a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#guide-conventions"><i class="fa fa-check"></i><b>1.3</b> Guide Conventions<span></span></a></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#important-terms"><i class="fa fa-check"></i><b>1.4</b> Important Terms<span></span></a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#releases"><i class="fa fa-check"></i><b>1.5</b> Releases<span></span></a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#bug-fixes"><i class="fa fa-check"></i><b>1.5.1</b> Bug Fixes<span></span></a></li>
+<li class="chapter" data-level="1.5.2" data-path="index.html"><a href="index.html#version-highlights"><i class="fa fa-check"></i><b>1.5.2</b> Version Highlights<span></span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="general-specification.html"><a href="general-specification.html"><i class="fa fa-check"></i><b>2</b> General Specification<span></span></a>
 <ul>
@@ -364,6 +369,7 @@
 <li>1.2. Getting Started</li>
 <li>1.3. Guide Conventions</li>
 <li>1.4. Important Terms</li>
+<li>1.5 Releases</li>
 </ul>
 <div id="unboxing" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Unboxing<a href="index.html#unboxing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -452,7 +458,155 @@ Choose Shut Down the Console - The console will safely power off.</li>
 </ul>
 <p>For the sake of this guide, <strong>Channel, Spot, Matrix, and Server Sets</strong> will be referred to as Fixture because the Fixture Set can reference all the other sets</p>
 <p>Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.</p>
+</div>
+<div id="releases" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Releases<a href="index.html#releases" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Release Date: <strong>06/09/2020</strong>
+DB version: <strong>R_3.0</strong>
+Desktop version: <strong>R_3.0</strong>
+LPU version: <strong>R_3.0</strong>
+HAL version: <strong>R_3.0</strong>
+Device Pack version: <strong>DP_3.0</strong></p>
+<div id="bug-fixes" class="section level3 hasAnchor" number="1.5.1">
+<h3><span class="header-section-number">1.5.1</span> Bug Fixes<a href="index.html#bug-fixes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>Fixed a crash when removing a point from the Function editor</p></li>
+<li><p>Fixed a crash when searching Exam View and pressing SHIFT+RESET</p></li>
+<li><p>Fixed a potential crash on startup</p></li>
+<li><p>Fixed a potential crash on Undo popup</p></li>
+<li><p>Fixed potential crash on HAL</p></li>
+<li><p>Fixed a crash when pressing Actions on the Timeline view</p></li>
+<li><p>Fixed a crash when pressing apply on the Link Cue popup</p></li>
+<li><p>Fixed a crash on LPU when deleting a cue that is next on a PB and it’s values are active as Look Ahead</p></li>
+<li><p>Fixed a crash on LPU when releasing a playback during loop could cause it on some cases</p></li>
+<li><p>Fixed a crash on filters popup when deleting the last parameter from the list</p></li>
+<li><p>Fixed a crash when deleting a device that had no fixtures in the show</p></li>
+<li><p>Loading a big show could cause the system to get stuck</p></li>
+<li><p>Rem Dim could cause errors on DB</p></li>
+<li><p>Grab Active Master PB could cause errors on DB</p></li>
+<li><p>Live View - When parameter jumping is on its should works all the cases</p></li>
+<li><p>Performance fixes in specific sequences as well as general system speed</p></li>
+<li><p>Fixture selection was slow and caused many updates to small screen, especially when selecting with ‘+’</p></li>
+<li><p>When fixture has values, entering to Blind editor where the values there are at home, will make a graphic flick</p></li>
+<li><p>“Exclude from Snap” and “Exclude from Override” did not work correctly <strong>Snaps stored with these options need to be rebuilt!</strong></p></li>
+<li><p>It was not possible to select/deselect a cell on the first column in Cell Time popup</p></li>
+<li><p>Exam of a new device did not show the info on Exam View</p></li>
+<li><p>Exam view did not refresh after deleting a Qlist</p></li>
+<li><p>Wheel picker sometimes was not accurate and selected the wrong step</p></li>
+<li><p>Address test delta value was showing wrong value</p></li>
+<li><p>Changes to Address properties did not output unless applying the popup</p></li>
+<li><p>Fixtures with more than 1 color layer could make the HIS picker stuck</p></li>
+<li><p>Data on the status view was not always refreshed</p></li>
+<li><p>Filters popup – changes were not saved if user switched between filters</p></li>
+<li><p>Activate a snap after deleting Qlists loaded them in a ghost mode</p></li>
+<li><p>Deleting Libraries, Macros, Scenes did not remove them from the snaps they were stored in</p></li>
+<li><p>Deleting Snaps did not clear the data correctly</p></li>
+<li><p>Master PB did not change according to the data stored in the Snap</p></li>
+<li><p>Fixture selection numbers did not cut to the actual maximum number on echoline</p></li>
+<li><p>When Lib stored, echoline looks strange</p></li>
+<li><p>Sometimes <a href="programming-basics.html#transpose">Transpose</a> doesn’t ordering the fixtures correctly</p></li>
+<li><p>Park on parked parameters did not work correctly with Grand Master</p></li>
+<li><p>A/B Slider behavior was wrong for manual fade.</p></li>
+<li><p>Faders kept sending data even though the value did not change</p></li>
+<li><p>Cue time units on popup did not change</p></li>
+<li><p>SHIFT+GRAB took a lot of time</p></li>
+<li><p>Delete a cue took a lot of time</p></li>
+<li><p>Updating cues caused an error on DB and sometimes caused wrong values to be stored</p></li>
+<li><p>Release value from Cue did not work correctly</p></li>
+<li><p>Updating a copied cue/scene did not update it</p></li>
+<li><p>Update cue values from the Tracksheet view did not always work</p></li>
+<li><p>Load track data to cue did not load from a block cue</p></li>
+<li><p>When updating a cue that after it there is a cue with virtual params stored, the params are changed</p></li>
+<li><p>When Lib is stored as block, update the previous cue will make track to the block</p></li>
+<li><p>After releasing a parameter from a cue, values look like they ‘Block’ even though they are tracked</p></li>
+<li><p>After remove a reference from a Lib, all cues that are using any Libs will lose their reference</p></li>
+<li><p>When updating a Hard value using a referenced Lib it should select the source cue in the update popup</p></li>
+<li><p>Updating a Virtual Color Cue to Physical Color via update pop-up will track to the next cue if stored with Virtual Color</p></li>
+<li><p>Cannot release a param so it will be tracked again from a Lib</p></li>
+<li><p>Release Virtual color to physical color, vice versa, will release to Home</p></li>
+<li><p>Release a Virtual Lib to Virtual hard value or Physical Lib to Physical hard value, keeps the notation of the Lib in the Live view</p></li>
+<li><p>When storing a Lib, the Library notation and reference in Live is being applied only on the selected fixtures</p></li>
+<li><p>Virtual and Physical params are acting weird when “maintain last value” is active</p></li>
+<li><p>Can’t delete Highlight or Lowlight cues</p></li>
+<li><p>Link Cue popup showed error when opened from the toolbar</p></li>
+<li><p>If a cue had time-in, time-out and follow in CUT, it was skipping the cue</p></li>
+<li><p>Color values are jumping when Qlist is tracking off and follow time is CUT</p></li>
+<li><p>Release at bottom took the Qlist release time instead of working in CUT</p></li>
+<li><p>Clear editor on master Go, clears the editor in any go</p></li>
+<li><p>Color icon is not changing when in Blind mode</p></li>
+<li><p>If param is selected, and then you change to ‘Parameter Steps’ view, it does not show the steps of the param</p></li>
+<li><p>Small screen effects showed wrong parameters</p></li>
+<li><p>When Randomize fixtures in the effect, and more than 1 pattern is selected, it should shuffle them in the same way</p></li>
+<li><p>Randomize an existing effect that has 2 params on the same row via small effect engine after selecting the params is wrong</p></li>
+<li><p>Randomize fixtures should randomize only the order of the fixtures</p></li>
+<li><p>When Pan effect was running, pressing the Tilt made a jump to 0</p></li>
+<li><p>Rate window is flickering with the cues fades</p></li>
+<li><p>Context view got back to idle after selecting a library</p></li>
+<li><p>Context did not display Filter SK</p></li>
+<li><p>The name of context view when its tabbed is wrong</p></li>
+<li><p>SMPTE FPS value was wrong</p></li>
+<li><p>Group Select/Deselect/Release did not work on Qlists and Scenes</p></li>
+<li><p>‘Group Release’ button stuck the params it releases</p></li>
+<li><p>[Shift]+Master [Go][Back] should make a Goon master in Cut time</p></li>
+<li><p>RDM settings are not stored in show file</p></li>
+<li><p>Edit control - caret remains visible after focusing out</p></li>
+<li><p>Fixture Builder:</p></li>
+</ul>
+<p>◾ Errors on edit factory devices with overlapping steps
+◾ Editing a show device could cause it to be cloned infinite times
+◾ Parameter Step tab did not update the navigation buttons
+◾ Edit boxes in Parameter Steps table did not work
+◾ Memory leaks fixes</p>
+<ul>
+<li>Vector show conversion bugs</li>
+</ul>
+</div>
+<div id="version-highlights" class="section level3 hasAnchor" number="1.5.2">
+<h3><span class="header-section-number">1.5.2</span> Version Highlights<a href="index.html#version-highlights" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Version R_3.0 brings new and updated features as listed below:
+| <strong>Feature / Improvement</strong> | <strong>Description</strong> |
+|–|–|
+|<strong>Settings</strong>||
+|Controller Default Actions|It is now possible to set a default controller action for each object type on each controller type|
+|Exit Button Location|The location for the button to exit the system or close a window was moved|
+|Clear Device IP History|Added this option to clear the cache under the system settings|
+|Show/Hide View Headers|Added an option to show or hide view headers in order to make room on screen|
+|Softkeys Size Improvements|It is now possible to make the softkey view very compact|
+|Unicast Option for Art-Net And VC|It is now possible to set specific IPs to send the output to|
+|Defaults Changes|There are some new defaults for: Update popup – new values to master pb Bottom Button on submasters – flash Pan &amp; Tilt Effect default size|
+|<strong>Patch</strong>||
+|Edit Sets|There is an option to edit user-sets on the Sets view|
+|<strong>Workflow</strong>||
+|Media Bank|There is a new bank called Media on the Small Screen|
+|Toggle Between Banks|The combination of SHIFT+# on the keypad will switch a bank on the small screen|
+|Cell Time Fan|It is now possible to fan cell times via the keypad|
+|Parameter Profile|It is now possible to set a profile for parameters to change their fade behavior|
+|<strong>Timeline</strong>||
+|Grid View Filters|It is now possible to filter timelines on the grid view|
+|Time Format|It is now possible to decide the time format on the Timeline View|
+|Moving Events|It is now possible to move events on the Timeline with the wheels|
+|Events Selection|It is not possible to select events by creating a rectangle of selection|
+|State Machine Support|It is now possible to trigger Timeline commands from the keypad + toolbar commands|
+|<strong>Popups</strong>||
+|New “Loading” Popup|There is a new popup for continuous loading|
+|Remove Function|On the effects popup, it is now possible to remove an added function|
+|CITP Popup|There is a new popup for CITP configuration and commands|
+|<strong>General</strong>||
+|Auto Patch from Capture|Using CITP protocol, it is now possible to retrieve patch information from Capture|
+|<strong>Fixture Builder</strong>||
+|Option to edit Shutter Picker commands|It now possible to create/edit commands for the Shutter picker|
+|Option to edit Frost Picker commands|It now possible to create/edit commands for the Frost picker|
+|Option to edit Iris Picker commands|It now possible to create/edit commands for the Iris picker|
+|Option to edit Zoom Picker commands|It now possible to create/edit commands for the Zoom picker|
+|Option to edit Blade Picker commands|It now possible to create/edit commands for the Blade picker|
+|Option to edit Focus Picker commands|It now possible to create/edit commands for the Focus picker|
+|New Parameter Types|Added new parameter types to Vibe|
+|<strong>Offline Tool</strong>||
+|Panel Test|New Panel test mode to check the hardware|
+|Midi / SMPTE Test|New Midi / SMPTE test mode|
+|Update Firmware Options|There are new possibilities to update the console firmware|</p>
 
+</div>
 </div>
 </div>
             </section>
