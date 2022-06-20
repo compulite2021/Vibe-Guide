@@ -137,6 +137,8 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 
 ## Releases
 
+### R.3.0
+
 - Release Date: **06/09/2020** 
 - DB version: **R_3.0** 
 - Desktop version: **R_3.0** 
@@ -144,7 +146,7 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 - HAL version: **R_3.0** 
 - Device Pack version: **DP_3.0**
 
-### Bug Fixes
+#### Bug Fixes
 -   Fixed a crash when removing a point from the Function editor
     
 
@@ -400,48 +402,84 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 
 -   Vector show conversion bugs
 
-### Version Highlights
+#### Version Highlights
 
 Version R_3.0 brings new and updated features as listed below:
 
-| Feature / Improvement  | Description |
-| ------------- |:-------------:|
-| **Settings**      |      |
-| Controller Default Actions	      | It is now possible to set a default controller action for each object type on each controller type     |
-| Exit Button Location      | The location for the button to exit the system or close a window was moved     |
-| Clear Device IP History     | Added this option to clear the cache under the system settings     |
-| Show/Hide View Headers      | Added an option to show or hide view headers in order to make room on screen     |
-| Softkeys Size Improvements      | It is now possible to make the softkey view very compact     |
-| Unicast Option for Art-Net And VC     | It is now possible to set specific IPs to send the output to     |
-| Defaults Changes      | There are some new defaults for: Update popup – new values to master pb Bottom Button on submasters – flash Pan & Tilt Effect default size     |
-| **Patch**      |     |
-| Edit Sets      | There is an option to edit user-sets on the Sets view     |
-| **Workflow**      |      |
-| Media Bank      | There is a new bank called Media on the Small Screen     |
-| Toggle Between Banks      | The combination of SHIFT+# on the keypad will switch a bank on the small screen     |
-| Cell Time Fan     | It is now possible to fan cell times via the keypad     |
-| Parameter Profile      | It is now possible to set a profile for parameters to change their fade behavior     |
-| **Timeline**     |      |
-| Grid View Filters      | It is now possible to filter timelines on the grid view     |
-| Time Format      | It is now possible to decide the time format on the Timeline View     |
-| Moving Events      | It is now possible to move events on the Timeline with the wheels     |
-| Events Selection     | It is not possible to select events by creating a rectangle of selection     |
-| State Machine Support      | It is now possible to trigger Timeline commands from the keypad + toolbar commands     |
-| **Popups**      |      |
-| New “Loading” Popup      | There is a new popup for continuous loading     |
-| Remove Function      | On the effects popup, it is now possible to remove an added function     |
-| CITP Popup      | There is a new popup for CITP configuration and commands    |
-| **General**      |      |
-| Auto Patch from Capture     | Using CITP protocol, it is now possible to retrieve patch information from Capture     |
-| **Fixture Builder**      |      |
-| Option to edit Shutter Picker commands      | It now possible to create/edit commands for the Shutter picker     |
-| Option to edit Frost Picker commands      | It now possible to create/edit commands for the Frost picker     |
-| Option to edit Iris Picker commands      | It now possible to create/edit commands for the Iris picker     |
-| Option to edit Zoom Picker commands      | It now possible to create/edit commands for the Zoom picker     |
-| Option to edit Blade Picker commands      | It now possible to create/edit commands for the Blade picker     |
-| Option to edit Focus Picker commands      | It now possible to create/edit commands for the Focus picker     |
-| New Parameter Types      | Added new parameter types to Vibe     |
-| **Offline Tool**      |      |
-| Panel Test      | 	New Panel test mode to check the hardware     |
-| Midi / SMPTE Test      | New Midi / SMPTE test mode     |
-| Update Firmware Options      | There are new possibilities to update the console firmware     |
+
+**Settings**
+
+- **Controller Default Actions**- It is now possible to set a default controller action for each object type on each controller type.
+- **Exit Button Location** - The location for the button to exit the system or close a window was moved
+
+- **Clear Device IP History**- Added this option to clear the cache under the system settings.
+
+- **Show/Hide View Headers**- Added an option to show or hide view headers in order to make room on screen.
+
+- **Softkeys Size Improvements**- It is now possible to make the softkey view very compact
+
+- **Unicast Option for Art-Net And VC**- It is now possible to set specific IPs to send the output to
+
+- **Defaults Changes**- There are some new defaults for: Update popup – new values to master pb Bottom Button on submasters – flash Pan & Tilt Effect default size
+
+**Patch**
+
+- **Edit Sets**- There is an option to edit user-sets on the Sets view
+
+**Workflow**
+
+- **Media Bank**- There is a new bank called Media on the Small Screen
+
+- **Toggle Between Banks**- The combination of SHIFT+# on the keypad will switch a bank on the small screen
+
+- **Cell Time Fan**- It is now possible to fan cell times via the keypad
+
+- **Parameter Profile**- It is now possible to set a profile for parameters to change their fade behavior
+
+**Timeline**
+
+- **Grid View Filters**- It is now possible to filter timelines on the grid view
+
+- **Time Format**- It is now possible to decide the time format on the Timeline View
+
+- **Moving Events**- It is now possible to move events on the Timeline with the wheels
+
+- **Events Selection**- It is not possible to select events by creating a rectangle of selection
+
+- **State Machine Support**- It is now possible to trigger Timeline commands from the keypad + toolbar commands
+
+**Popups**
+
+- **New “Loading” Popup**- There is a new popup for continuous loading
+
+- **Remove Function**- On the effects popup, it is now possible to remove an added function
+
+- **CITP Popup**- There is a new popup for CITP configuration and commands
+
+**General**
+
+- **Auto Patch from Capture**- Using CITP protocol, it is now possible to retrieve patch information from Capture
+
+**Fixture Builder**
+
+- **Option to edit Shutter Picker commands**- It now possible to create/edit commands for the Shutter picker
+
+- **Option to edit Frost Picker commands**- It now possible to create/edit commands for the Frost picker
+
+- **Option to edit Iris Picker commands**- It now possible to create/edit commands for the Iris picker
+
+- **Option to edit Zoom Picker commands**- It now possible to create/edit commands for the Zoom picker
+
+- **Option to edit Blade Picker commands**- It now possible to create/edit commands for the Blade picker
+
+- **Option to edit Focus Picker commands**- It now possible to create/edit commands for the Focus picker
+
+- **New Parameter Types**- Added new parameter types to Vibe
+
+**Offline Tool**
+
+- **Panel Test**- New Panel test mode to check the hardware
+
+- **Midi / SMPTE Test**- New Midi / SMPTE test mode
+
+- **Update Firmware Options**- There are new possibilities to update the console firmware

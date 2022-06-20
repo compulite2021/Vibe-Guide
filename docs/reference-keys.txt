@@ -4,6 +4,7 @@ getting-started
 guide-conventions
 important-terms
 releases
+r.3.0
 bug-fixes
 version-highlights
 general-specification
