@@ -389,15 +389,15 @@ Some keys have two functions when used with the [VIBE] key (shift key). In this 
 
 -   Fixture Builder: 
 
-◾ Errors on edit factory devices with overlapping steps 
+ - Errors on edit factory devices with overlapping steps 
 
-◾ Editing a show device could cause it to be cloned infinite times 
+ - Editing a show device could cause it to be cloned infinite times 
 
-◾ Parameter Step tab did not update the navigation buttons 
+ - Parameter Step tab did not update the navigation buttons 
 
-◾ Edit boxes in Parameter Steps table did not work
+ - Edit boxes in Parameter Steps table did not work
 
-◾ Memory leaks fixes
+ - Memory leaks fixes
     
 
 -   Vector show conversion bugs
