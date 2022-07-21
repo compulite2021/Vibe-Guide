@@ -56,6 +56,7 @@ scene-settings
 scene-store-options
 bank-library-options
 snap-settings
+effects
 system
 programming-concepts
 operational-philosophy
@@ -120,7 +121,7 @@ libraries
 what-are-libraries
 store-and-modify-bank-libraries
 object-libraries
-effects
+effects-1
 effect-basics
 smart-screen-effects-editor
 building-effects-using-the-small-screen-editor

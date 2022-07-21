@@ -19,7 +19,8 @@ This chapter deals with customizing system settings to suit programming styles.
 -  7.5.7. Scene Settings
 -  7.5.8. Scene Store Options
 -  7.5.9. Bank Library Options
--  7.5.10. Snap Settings
+-  7.5.10.Snap Settings
+-  7.5.11 Effects
 -  7.6. System
 
 
@@ -229,6 +230,22 @@ Timing Properties - Cue Section
 
 -   Displays all Valid IP based devices active on the network
 
+
+**Clear Device IP History**
+
+There is an option to clear the table of the devices on the network.
+
+This option was added to let the users empty the table in case they travel to a different location or working on a different scene.
+
+**To clear Device IP History**
+
+1. Open System Settings.
+
+2. Go to Network tab.
+
+3. Tap Clear IP Devices.
+
+
 ## Hardware
 
 
@@ -348,10 +365,17 @@ Defaults - Controller Default Actions
 
 -   The Default button assignments when a Qlist or Scene is assigned to a controller ( See: [14.5. Configuring Controllers](/s/3kS90tLsADGm1ocbe7q9/14.-playing-back-cues-and-scenes/14.-playing-back-cues-and-scenes/14.5.-configuring-controllers))
     
+**Bottom Controller Button for Submaster**
 
-**Submasters (Group Submasters)** - When a Scene is configured as a Submaster it has a unique set of functions and button options.
+The default behavior for submaster's assignment on the bottom button is _Flash_
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F46a9txxILwGLKtp8K9sN%2Fimage.png?alt=media&token=22b87ea9-af78-4476-9ee4-8eb83de0f6b3)
+
+**Submasters (Group Submasters)** - When a Scene is configured as a Submaster it has a unique set of functions and button options**.**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fw0e6FlJP0dNlpzuujuot%2F7.5.2.1.webp?alt=media&token=43cdc4db-7246-48fd-82cb-3fe8db74aa4c)
+
+
 
 
 ### Qlist Properties
@@ -502,6 +526,15 @@ Default - Cue Settings
 ◾ [10.12.3. Tracking Options](/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
 
 
+**Update Popup**
+
+The default for the _New Values_ is _Master PB Only_
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJVFqmv4vtVYVMeKmMG0X%2Fimage.png?alt=media&token=bd3a09bd-086c-4a87-b389-b644b3076ee5)
+
+
+
+
 ### Cue Store Options
 
 
@@ -587,6 +620,13 @@ Include Base - If toggled on, the start points of parameters will be stored with
     
 
 See: [17. Snaps](/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots)
+
+
+
+## Effects
+
+When using pre-built effects on Pan & Tilt parameters, the default size of the effect is 20%.
+
 
 ## System
 
