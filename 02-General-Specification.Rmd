@@ -82,8 +82,6 @@ This chapter covers basic specifications.
     
 -   1000 Scenes.
     
--   1000 Qlists.
-    
 -   1000 fixture Groups.
     
 -   1000 Libraries per bank type.
