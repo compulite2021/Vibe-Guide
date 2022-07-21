@@ -623,7 +623,7 @@ See: [17. Snaps](/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots
 
 
 
-## Effects
+### Effects
 
 When using pre-built effects on Pan & Tilt parameters, the default size of the effect is 20%.
 
