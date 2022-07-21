@@ -62,7 +62,7 @@
     
 4.  **Device + Fixture** – the first fixture will be used as a reference for all other similar fixture types. If values are changed for specific fixtures they will be stored in the library as if they were fixture specific. If a fixture other than the first fixture is released from the library, its values will again be referenced from the first fixture. If the first fixture is released, the next fixture will become the reference.
     
-5.  **Device** and Parameter – Values will be applied to fixtures of the same device type and the same parameter type.
+5.  **Device and Parameter** – Values will be applied to fixtures of the same device type and the same parameter type.
     
 6.   **Device and pattern** – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.
 
@@ -124,9 +124,11 @@ After typing the first number, the bank name will appear on the command line. Th
 >Alternately the sequence [LIBRARY] {Bank} from the Editor Toolbar [#] [STORE] to an existing library will work the same as above.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425)
+
 **Object Exists pop-up**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F715KxeIgoRObcRqRjQAh%2Fimage.png?alt=media&token=e82df1d4-a779-41ab-9e01-b7d1f99f76c0)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTFtIlY02FdG9tk8XcTxR%2F12.2.1.png?alt=media&token=52aca567-ad5b-42f0-9368-8dff44a526ea)
+
 **Library Settings pop-up**
 
 Library Settings may be changed at any time after they are created using the Library Settings pop-up.
