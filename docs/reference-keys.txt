@@ -19,8 +19,6 @@ aux-qkeys-grand-master-and-global-controllers
 graphical-user-interface-gui
 introduction-1
 vibe-menu
-exit-button-location
-showhide-view-headers
 layouts
 smart-screen
 toolbars

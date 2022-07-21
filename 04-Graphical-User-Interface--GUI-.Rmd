@@ -69,7 +69,8 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 
 
 
-### Exit Button Location
+**Exit Button Location**
+
 **To exit Vibe or close a window**
 
 1. Open Vibe menu from the Vibe button
@@ -99,7 +100,8 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
 
 
-### Show/Hide View Headers
+**Show/Hide View Headers**
+
 There is an option to show or hide view headers. This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
 
 **To Show/Hide View Header**
