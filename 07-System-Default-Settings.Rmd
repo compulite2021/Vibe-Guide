@@ -28,7 +28,7 @@ This chapter deals with customizing system settings to suit programming styles.
 
 System Settings defaults are accessed by selecting {System Settings} from the {Vibe} menu or by tapping the {System Status} area at the far right side of the controller displays.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9aZek2hoU1UMUzTGqNGg%2F7.1.webp?alt=media&token=6b643d27-1471-44bd-914f-51bb1733d14f)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGArAdAtN90yRhuBySf1s%2F7.1.png?alt=media&token=1a580760-eefe-4d7b-b7a5-987191750123)
 
 **Editing Properties** - Editing Section
 
@@ -191,7 +191,7 @@ Timing Properties - Cue Section
 
 **Network Properties** - Local
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5qtZLg6Nt6y9lGdNUv3b%2F7.3.webp?alt=media&token=818c09d0-ca1c-4054-b080-00b461884518)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmRl35Hvba9wSFzljF7Ap%2F7.3.png?alt=media&token=458921a0-d441-4211-a5dc-b0c6819d1772)
 
 **Local:**
 
@@ -342,7 +342,7 @@ Timing Properties - Cue Section
 
 Defaults - Controller Default Actions
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fkv1gkM29OvT8OKSvb3W1%2F7.5.2.webp?alt=media&token=1e94b8a1-ea91-4b63-a303-6a1858727e09)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2QY58B93PfbYXzS3G7uS%2F7.5.2.png?alt=media&token=711da5cc-7dbb-4617-94a0-db040ba000fa)
 
 **Qlists and Scenes:**
 
@@ -443,7 +443,7 @@ Defaults - Controller Default Actions
 
 **Defaults** - Chase Properties
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQV7K9S8rlSeUjGMiDofs%2F7.5.4.webp?alt=media&token=138e6db1-675f-4b3f-8297-88650b716c05)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fx3HOw9fVBOsuOCVxbipY%2F7.5.4.png?alt=media&token=e223a6ec-52ab-4896-b1d9-35dcb6425bac)
 
 **Chase pattern:**
 
@@ -487,7 +487,7 @@ Defaults - Controller Default Actions
 
 Default - Cue Settings
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FoE3efM7x3Rse7NTjNd1S%2F7.5.5.webp?alt=media&token=6b323409-dd86-41f2-8c3e-651ea2852b00)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FT8Zv89ZCvjgntdDbmiIZ%2F7.5.5.png?alt=media&token=6d1f88b5-7abe-4c31-822d-8ad687c0dfd5)
 
 **See:**
 
@@ -592,7 +592,7 @@ See: [17. Snaps](/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots
 
 Default - System
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fd06vZ93BsWt45sBzsBbp%2F7.6.webp?alt=media&token=f21da99d-b35a-4e03-80fa-297c8d5a37c8)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzvCIV8NuJjCwGBqHV4cv%2F7.6.png?alt=media&token=2cc87dc5-332f-47eb-8ed2-cd59b916dd85)
 
 **Vibe is made up of four modules:**
 

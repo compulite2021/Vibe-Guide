@@ -572,18 +572,18 @@ The Context sensitive area changes depending on the bank and fixture type. Where
 
 **Smart Screen - Position Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJPfrbyoQQQ5mSxZVBMFc%2F9.3.4.2.webp?alt=media&token=0560c39f-4054-4a14-8c4e-3e17b9ef9073)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&token=6d819c90-c204-4edd-9731-4432337e32ec)
 
 **Smart Screen - Color Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0V0GkR1cpsQvt7KpECZc%2F9.3.4.3.webp?alt=media&token=fa417166-175f-4433-aa91-b520767cc5e0)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&token=c544d391-1994-41e0-bab8-5758ef3a4cce)
 
 **Smart Screen - Beam Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fgi0I8PKwG6fimjXbMWIx%2F9.3.4.4.webp?alt=media&token=d004d2d8-5312-46b0-83dd-ace7c845160c)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&token=40cee69d-bc7f-433a-b992-b123ee53b476)
 **Smart Screen - Image Bank**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Flz5lsxgDSdnj7OrX8Rub%2F9.3.4.5.webp?alt=media&token=db035427-73e0-47c0-a675-15d7f4b8b60b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&token=a78d7417-2ce5-4efa-8970-31d64ed3179b)
 
 **Smart Screen - Shape Bank**
 
@@ -901,7 +901,7 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 -   Using SKs - Tap the source {GROUP} SK and then press [Settings] key
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjEQyWFlLHb9TfvsEVXxh%2Fimage.png?alt=media&token=73b411d1-45a5-4d83-bf88-b0687256910f)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTyeIUEfkmEZue9ub8uBx%2F9.4.png?alt=media&token=7d1ef45d-a1fe-4c4a-8f78-82154a49df5b)
 
 Group Settings Pop-up
 

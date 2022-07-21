@@ -280,7 +280,7 @@ In the process of storing a cue, a number of filters and settings are available.
 2.  Press [STORE] [OPTIONS] Cue Options pop-up opens. Make selections and press [HERE] to any button on the destination controller.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7XZturjhs8q9d2Fm3TGW%2F10.7.webp?alt=media&token=29f529bc-8560-42b7-a2ae-ae0268021904)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FknletXzqZk4W9tZ8qBWq%2F10.7%20cue%20store%20options.png?alt=media&token=d07a452b-3958-4a12-a42a-abad08bdaa5c)
 <p align=center> Cue Store Options Pop-up </p>
 
 
@@ -296,7 +296,7 @@ In the process of storing a cue, a number of filters and settings are available.
 -   Method 3 - Press the Qlist header above a loaded Controller, The Qlist Properties pop-up opens - Enter Qlist Text in the white box.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fvo4dkHjXveLtlV0VPv1J%2F10.8.webp?alt=media&token=5d8568d3-e662-4d1f-a6cd-1ec63c6be530)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXJQArmGsu0DelGLmqjg2%2F10.8%20Assigning%20text%20labels.png?alt=media&token=b8729961-fa0a-49b3-9e67-d5547c6f59e6)
 
 To assign a Text Label to a Cue:
 
@@ -757,7 +757,7 @@ Using Cue Setting Pop-Up:
 8.  Store the Cue using any of the methods described under: 10.3. Storing Cues and Scenes Directly to Controllers 10.5. Storing Cues to the Master Controller 10.6. Storing Qlist Cues to any Controller
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlojufTuTTjw9B7l7Azyr%2F10.13.1.webp?alt=media&token=2c7da65d-d63f-48d2-a203-e57b7e19649c)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVMwWaGG9Qr6NDEWLQKOl%2F10.13.1%20parameter%20time.png?alt=media&token=55487d5d-9035-4083-a55e-a02b0b0573a4)
 
 <p align=center>Parameter Time pop-up </p>
 

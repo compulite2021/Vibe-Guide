@@ -13,7 +13,7 @@ It is sometimes useful to organize fixture selection in a graphical manner inste
 ## Creating a Topo View
 When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNV0Q6P9Wr1tucBYEoQUY%2F19.1.webp?alt=media&token=ecf69dbf-a74e-4491-9ee7-546e12c3ee20)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTDS2G9ZiwCKwHmLfetSe%2F19.1%20topo.png?alt=media&token=4bc1efc8-ebaa-4d30-8fe0-7c5ce82c1a5e)
 
 **Topo View in {LIVE} mode displaying the "Movers" Topo**
 
@@ -45,7 +45,7 @@ When starting a new show any Topo views stored in Layouts will be empty until th
 
 The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5nxdImYsIjjUwZbJiSqu%2F19.2.webp?alt=media&token=488961aa-b20c-4a3c-9292-82805b05ace7)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXFlu7uvTzBI5S6Apzy3g%2F19.2.png?alt=media&token=3b60e416-8286-4949-b75a-a8223de3da3a)
 
 ​
 
@@ -248,7 +248,7 @@ Additional elements may be added to a Topo. Currently available are {Text Label}
 2.  From the drop down, tap {Text Label} - The Create Label pop-up will appear.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh32lxtwe1nBgE1xhjmbE%2F19.6.webp?alt=media&token=59a84956-400f-4e66-bfa8-c699d69d7fca)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHsLe6IRkyI2sKrNgJoaU%2F19.6.png?alt=media&token=9c3717a4-6eee-4d68-8cd5-49c6273f7953)
 
 3. Close the pop-up and the test label will appear on the Topo surface.
 

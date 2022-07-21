@@ -62,7 +62,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 4. Select the fixture from under the Matching Devices header.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSoJ6Bs01KdLdos1AX1dR%2F6.3.webp?alt=media&token=6337e45c-7ce2-4694-92fb-8a750d367eb1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4CX90yhir4RUCFfG8kNP%2F6.3.png?alt=media&token=38c25f2a-507d-4f3b-99cd-6208f5cc4863)
 
 5. The DMX Modes pop-up will open. 
 6. Review the DMX implementation and select the desired mode. 
@@ -181,7 +181,7 @@ Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures li
 
 **Toolbar with no fixture selection:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8RUSEceSC54jo9ad3dch%2F6.4.2.webp?alt=media&token=301e5200-bdc3-41df-904f-aae3609dcb59)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYBzeJ8a39N937xjx5S3n%2F6.4.2.png?alt=media&token=d1b58421-5fff-40dd-8c9a-f14f6944e6c8)
 
 ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
 
@@ -218,7 +218,7 @@ See: 20. XYZ Fixture Calibration
 > By default, DMX is mapped to the physical ports on a 1:1 basis. 
 > DMX is always transmitted but can be remapped to anyone of the supported 256 DMX universes.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FysS3YygefUYdl0S2006u%2F6.5.webp?alt=media&token=d646bef8-2793-4d67-8cb5-fb7224ac4a39)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F373A2JvOjPY60S5OzfN5%2F6.5.png?alt=media&token=2c5c721d-669e-4b91-b171-6abbcc354f10)
 
 **Remap Physical outputs:**
 

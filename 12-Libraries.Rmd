@@ -104,7 +104,7 @@ After typing the first number, the bank name will appear on the command line. Th
 4.  Press <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>  or press [ENTER] to close the pop-up and complete the update.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FswW9jeskVr3TEdTRVbDT%2Fimage.png?alt=media&token=5fb52b3a-4a43-4e9f-80f9-eb56ad0ed9f5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKeFZwX4YqebXrAJ6H335%2F12.2.png?alt=media&token=97b093e2-f4c0-4b69-99f0-89e735f66480)
 
 **Update pop-up**
 

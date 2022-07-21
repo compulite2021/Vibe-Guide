@@ -62,11 +62,11 @@ The large 21" embedded screen is general-purpose like the external monitors.
     
 -   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
 
-## {VIBE} Menu
+## VIBE Menu
 
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSdcglLmIyMYifAnnJBOK%2F4.2.webp?alt=media&token=a6a65486-49b5-42da-b415-c791c188158d)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
 
 **Configuring WorkSpaces:**
 
@@ -167,7 +167,7 @@ Vibe has two ways to display parameter data:
 
 Live View Settings pop-up - Display Tab.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5uGp3hwefoypGXdWveRx%2F4.7.webp?alt=media&token=ab20ee96-1d11-43a8-bdf2-b4183886bcb0)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWo8asBh4pNKMfQ4bcO9k%2F4.7.png?alt=media&token=f827d0e1-c5f4-4a95-832b-c78bcb056dba)
 
 **Live View Scheme** - Parameter columns may be freely added, removed, moved in using the Live View Scheme.
 

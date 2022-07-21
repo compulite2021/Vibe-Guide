@@ -76,7 +76,7 @@ All Effect Events are built from the following components:
 -   Primitives may be modified by a number of **Primitive settings**.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0d8NHIL2kTwNt1MCce9W%2F13.1.2.webp?alt=media&token=df1c4ad9-09ab-4bb2-a4bc-4924e5ae73a4)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHOwdbSfAYgtO8DwPkda0%2F13.1.png?alt=media&token=7eadbadc-1bf2-49ac-850e-87d75cd619b8)
 
 **Primitive Settings:**
 
@@ -96,7 +96,7 @@ All Effect Events are built from the following components:
 -   Sets the behavior of fixture selection as it transitions across the Primitive.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYB0AfSeWWlGnAtGWCpeW%2F31.1.3.webp?alt=media&token=239b8720-7985-409a-b7ce-57e4c3830a61)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1pz67CpZIa5EhHHpCO0f%2F13.1.1.png?alt=media&token=ccd3ba4f-10c3-48bb-98c5-f8db77a02e1a)
 
 **Pattern Settings:**
 
@@ -111,7 +111,7 @@ All Effect Events are built from the following components:
 -   The combination of Parameters, Primitives, and Patterns.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0td9DJ6xeq6UtHgkGwZG%2F13.1.4.webp?alt=media&token=c31de2b9-8aba-4afc-a7c2-092b7b541912)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fj3rD9d6mWI7yabvQmX8O%2F13.1.2.png?alt=media&token=fc0ffa06-fa74-4740-b965-12353a5ff75b)
 
 **Effects Settings:**
 

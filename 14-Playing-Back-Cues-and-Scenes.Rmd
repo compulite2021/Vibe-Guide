@@ -230,7 +230,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 ​
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FqeMUdw1GkILRy0kC1sLA%2F14.5.webp?alt=media&token=22aa0373-4ae2-4805-be51-8666f4d914b5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtcSvDf3MUkoMFKVwYlq6%2F14.5%20system%20status.png?alt=media&token=1a6f0e8b-cc31-462b-ae8f-68180f3bbbff)
 
 ​
 
@@ -241,7 +241,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 >Alternatively, tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F13csCDeGohc9JOrWEXwK%2F14.5.1.webp?alt=media&token=e354be44-6075-4683-b6ed-8d083af0f89b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0Grl8Q74Ts6ZFuDbvduY%2F14.5%201.png?alt=media&token=d3d44aa4-4757-4921-a53b-0d2b33a80be2)
 
 
 ><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.
