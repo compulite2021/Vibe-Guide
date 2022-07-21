@@ -64,18 +64,51 @@ The large 21" embedded screen is general-purpose like the external monitors.
 
 ## VIBE Menu
 
+
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
+
+
+### Exit Button Location
+**To exit Vibe or close a window**
+
+1. Open Vibe menu from the Vibe button
+    
+
+2. Tap Windows
+    
+
+  3. Tap Exit/Close
+    
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
+
+
 
 **Configuring WorkSpaces:**
 
 -   When configuring workspaces, any object at the end of the hierarchical sub-menu can be tapped to open its object on a blank portion of the current workspace or dragged and dropped to the workspace surface. Once on the surface it may be moved or sized freely, space permitting.
     
+
 -   If an object is dragged on top of another both will turn green and become one **tabbed** object.
     
+
 -   To edit the placement of objects, the **{Lock}** icon beside the **{VIBE}** menu key  must be toggled to unlock the workspace display. After changes are made, it must be toggled again to lock the display and allow normal usage.
-![**Library Softkeys randomly sized and placed on the [PROGRAM] Workspace**](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
+
+
+### Show/Hide View Headers
+There is an option to show or hide view headers. This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
+
+**To Show/Hide View Header**
+
+1. Go to edit mode by tapping the Vibe button and unlocking the layout.
+
+2. Select the view you want to toggle its header on or off.
+
+3. Tap the Toggle Header button.
 
 
 ## Layouts
