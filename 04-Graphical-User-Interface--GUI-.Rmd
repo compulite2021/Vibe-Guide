@@ -114,7 +114,7 @@ The Exit button location was moved to a sub menu instead of being located on the
 This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
 
 
-**To Show/Hide View Header**
+**To Show/Hide View Header:**
 
 1. Go to edit mode by tapping the Vibe button and unlocking the layout
     
@@ -131,7 +131,8 @@ This option is valid when the layout is unlocked and the view is selected. Showi
 
 **Layouts:**
 
--   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
+-   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. 
+A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
     
 -   After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.
     
@@ -230,9 +231,7 @@ Live View Settings pop-up - Display Tab.
 
 **Move columns:**
 
-1. Tap a parameter column heading or multiple parameter column headings
-    
-    -the green indicator light will turn on.
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
     
 
 2. Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
@@ -272,16 +271,18 @@ Live View Settings pop-up - Display Tab.
 4. Use the **{|< }** or **{>|} {|<< }** or **{>>|}** to position the column.
 
 **Interactive Icons:** 
-◾ Adds or removes the icon columns.
+
+    ◾ Adds or removes the icon columns.
 
 ><span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
 
 
 
 **General:** 
-◾ Global Fixture Number - Fixture's hidden unique system number. 
-◾ Fixture Layer Number - Adds or removes Fixture Number column. 
-◾ Fixture Name - Adds or removes Fixture Name column.
+
+    ◾ Global Fixture Number - Fixture's hidden unique system number. 
+    ◾ Fixture Layer Number - Adds or removes Fixture Number column. 
+    ◾ Fixture Name - Adds or removes Fixture Name column.
 
 
 
@@ -296,24 +297,29 @@ Live View Settings pop-up - Display Tab.
 
 **Fixture Jumping**: 
 
-◾ Off 
-◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
-◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
+    ◾ Off 
+    ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+    ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
 
 **Parameter Jumping**: 
-◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
+    
+    ◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
 
 **Interactive Fixture Selection:**  
-◾ Turns on the ability to make fixture selections from the live display grids. 
+    
+    ◾ Turns on the ability to make fixture selections from the live display grids. 
 
 **Interactive**  **Cell Editing:**  
-◾ Turns on the ability to directly edit cells in the live display grid. 
+
+    ◾ Turns on the ability to directly edit cells in the live display grid. 
 
 **Interactive Header selection** - Currently implemented but may not be turned off. 
-◾ Enables parameters to be directly selected from the live display headers. 
+
+    ◾ Enables parameters to be directly selected from the live display headers. 
 
 **Submaster Values:** 
-◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
+
+    ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
 
 ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
