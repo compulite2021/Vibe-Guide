@@ -104,13 +104,19 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 
 There is an option to show or hide view headers. This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
 
+
 **To Show/Hide View Header**
 
-1. Go to edit mode by tapping the Vibe button and unlocking the layout.
+1. Go to edit mode by tapping the Vibe button and unlocking the layout
+    
 
-2. Select the view you want to toggle its header on or off.
+2. Select the view you want to toggle its header on or off
+    
+3. Tap the Toggle Header button
+    
 
-3. Tap the Toggle Header button.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9B5NTIysFGLAcAACtoIr%2Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
+
 
 
 ## Layouts
