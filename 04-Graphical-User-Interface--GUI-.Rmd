@@ -20,11 +20,12 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.
 
--   Supported gestures: 
-	◾ Two fingers for swipe and scrolling. 
-	◾ One finger select. 
-	◾ Multi-selection via ⤴️⤵️shaped gestures. 
-	◾ Multi-selection via window.
+-   Supported gestures:
+
+    ◾ Two fingers for swipe and scrolling. 
+    ◾ One finger select. 
+    ◾ Multi-selection via ⤴️⤵️shaped gestures. 
+    ◾ Multi-selection via window.
     
 
 -   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21" embedded screen is general-purpose like the external monitors.
