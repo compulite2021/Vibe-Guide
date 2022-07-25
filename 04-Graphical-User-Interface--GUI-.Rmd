@@ -7,7 +7,9 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 - 4.1. Introduction
 - 4.2. {VIBE} Menu
+- 4.2.1 Exit Button Location
 - 4.3. Layouts
+- 4.3.1 Show/Hide View Headers
 - 4.4. Smart Screen
 - 4.5. Toolbars
 - 4.6. Live Display
@@ -67,9 +69,10 @@ The large 21" embedded screen is general-purpose like the external monitors.
 
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
 
 
-**Exit Button Location**
+### Exit Button Location
 
 **To exit Vibe or close a window**
 
@@ -79,10 +82,11 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 2. Tap Windows
     
 
-  3. Tap Exit/Close
+3. Tap Exit/Close
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFV8W9WgLTCerYjssYKJD%2Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
+
 
 
 
@@ -100,7 +104,18 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
 
 
-**Show/Hide View Headers**
+
+## Layouts
+
+**Layouts:**
+
+-   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
+    
+-   After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.
+    
+-   Layouts remember the configuration of external monitors and a warning message will appear if the system is booted without the expected external monitor.
+
+### Show/Hide View Headers
 
 There is an option to show or hide view headers. This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
 
@@ -119,15 +134,6 @@ There is an option to show or hide view headers. This option is valid when the l
 
 
 
-## Layouts
-
-**Layouts:**
-
--   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
-    
--   After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.
-    
--   Layouts remember the configuration of external monitors and a warning message will appear if the system is booted without the expected external monitor.
 
 ## Smart Screen
 
@@ -295,7 +301,7 @@ Fixture # and Fixture Name are toggles so if the indicator light is on, touching
  
  ◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
-## Parameter Mode
+### Parameter Mode
 
 Unlike most theatrical consoles, parameters other than dimmer may be shown in Live Parameter Mode.
 
@@ -317,7 +323,7 @@ Parameters visible in Live Parameter Mode are filtered using the Parameter View 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtzAZJ7gsczYgIUPMQYit%2F4.8.1.webp?alt=media&token=9923932f-be18-402f-92aa-5307f27cfd3a)
 
 
-## Bank Mode
+### Bank Mode
 
 Fixtures may also be graphically displayed by banks.
 
@@ -330,7 +336,7 @@ Fixtures may also be graphically displayed by banks.
 -   **Color** - In the form of a circular color swatch - Color wheels are not currently supported.
 - ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiiqnBUvvCzFFqXrjLXkE%2F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
 
-## Fixture Mode
+### Fixture Mode
 
 Graphically Displays Intensity, Position, and Color parameter icons as a single "tombstone" fixture
 

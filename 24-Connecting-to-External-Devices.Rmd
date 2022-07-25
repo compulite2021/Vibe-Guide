@@ -7,7 +7,7 @@ This chapter deals with configuring, transmitting and receiving DMX over Etherne
 - 24.2. Connecting to Compulite ePorts
 - 24.3. Connecting to Art-Net and sACN Nodes
 - 24.4. RDM
-- 24.5. Connecting to Visualizers
+- 24.5. CITP
 
 
 ## Network Basics
@@ -155,6 +155,36 @@ The Vibe is capable of transmitting more than one protocol at a time. To save ba
 
 
 
+**Unicast Option for Art-Net and VC**
+
+It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. Ports that are not defined as unicast will be still sent as broadcast. Each port can be configured to multiple IPs. Few ports can be sent to the same IP.
+
+**To configure Unicast send**
+
+1. Tap Vibe menu button
+
+2. Tap Settings button
+
+3. Tap _DMX Settings_ button
+
+4. Go to _VC's Out_ or _Art-Net_
+
+5. Change the toggle to _Unicast Settings_
+
+6. Tap Add to add a new configuration line
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUygtX7FrLFBuX7Jpr2t1%2Fimage.png?alt=media&token=d54d8b49-b039-488e-a894-99812a32711e)
+
+
+
+On the first line – ports 1➡️ 5 will be sent to IP 172.16.10.10
+
+On the second line – port 5 will be sent also to IP 172.16.10.11
+
+On the third line – ports 6➡️ 10 will be sent to IP 172.16.10.12
+
+
+
 ## RDM
 
 
@@ -170,8 +200,55 @@ Currently, RDM is fully supported on the 8 physical DMX output ports and Compuli
 
 
 
-## Connecting to Visualizers
+## CITP
 
 
 
+**CITP Popup**
+
+This popup gathers all the CITP capabilities of the Vibe together.
+
+**To open the CITP Popup**
+
+1. Tap Vibe menu button
+
+2. In Settings, Tap CITP Settings
+
+In the popup there are 4 tabs:
+
+**General CITP Settings**
+
+This tab shows the general information about the console and gives the option to enable/disable CITP communication from/to this console.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwXqFHABn8Y02rKS0aClC%2Fimage.png?alt=media&token=54609c14-83fb-4f2a-a0cc-c94f4407e39e)
+
+
+**Media Servers**
+
+This tab shows a list of the detected Media Servers on the network. In order to connect to a media server and start a session, select a media server from the list and press _Connect_.
+
+In order to link a media server to a specific fixture, select a connected media server from the list and tap _Configure_. A popup will appear where you can choose which fixtures you want to link.
+
+In order to get all the available data from a media server, select a connected and linked media server from the list, and tap _Get Data_. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh3TOxEoJXcctMpwn2sJZ%2Fimage.png?alt=media&token=9eb3bec8-bf79-43bf-97e1-dd79baf7da90)
+
+**Visualizers**
+This tab shows a list of the detected Visualizers on the network. In order to connect to a visualizer and start a session, select it from the list and tap Connect. In order to get the patch from a connected visualizer, select it from the list and tap Get Show. This action will clear the current show, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create it on your show.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUENsFjNTKcMOaF7bbOwM%2Fimage.png?alt=media&token=39bb4fba-348e-4130-9df8-344239a287c5)
+
+**Consoles**
+
+This tab shows a list of the detected consoles on the network that are using CITP and their state.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFcpkKcW84Yay2mK4SL4y%2Fimage.png?alt=media&token=70780c8c-d341-42d3-846f-36fe9e6be416)
+
+
+**Auto Patch from Capture**
+
+It is possible to sync the show from Capture. In order to do that you need to set the Capture CITP settings to use Standard Multicast and select the relevant IP address.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FCt3bPG8w7qkGAHfPUj7l%2Fimage.png?alt=media&token=ff89b3eb-5b62-4981-80f9-1a0c7cf599b0)
+
+In addition, make sure Vibe and Capture are on the same subnet. After finishing preparing the show on Capture, go to Vibe, open the CITP popup, enable the CITP and connect to the Capture from the Visualizers tab. Then _Get Data_ from Capture and you should be ready to go.
 

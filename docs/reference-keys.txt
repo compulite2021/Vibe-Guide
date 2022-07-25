@@ -19,7 +19,9 @@ aux-qkeys-grand-master-and-global-controllers
 graphical-user-interface-gui
 introduction-1
 vibe-menu
+exit-button-location
 layouts
+showhide-view-headers
 smart-screen
 toolbars
 live-display
@@ -32,6 +34,7 @@ show-menu
 load-vector-show
 patch
 fixture-sets
+edit-sets
 import-devices
 advanced-search
 create-and-patch-imported-fixtures
@@ -183,7 +186,7 @@ network-basics
 connecting-to-compulite-eports
 connecting-to-art-net-and-sacn-nodes
 rdm
-connecting-to-visualizers
+citp
 masterslave
 masterslave-1
 working-with-multiple-consoles

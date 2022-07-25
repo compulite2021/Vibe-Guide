@@ -6,6 +6,7 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 **The following is covered in this chapter:**
 
 -  6.1.   Fixture Sets
+-  6.1.1  Edit Sets
 -  6.2.   Import Devices
 -  6.3.   Advanced Search
 -  6.4.   Create and Patch imported fixtures
@@ -23,6 +24,27 @@ Like other lighting consoles, Vibe contains an extensive **Device Library** with
 **Set ID numbers: 0 = [Fixture]** is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers. **1 = [Channel]** is a numbering set that would normally be used for conventional single parameter devices. **2 = [SPOT]** is a numbering set that would mainly be used for multi-parameter devices like moving lights. **3 = [MATRIX]** is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices) **4 = [SERVER]** is a numbering system used for media servers.
 
 Each **SET** may have Fixtures numbered from 1 ➡️ 999999 To patch a device, you must first move focus to the main monitor and press the [PATCH] Workspace Template key. By default, the first page will contain all the displays needed for patching.
+
+
+
+### Edit Sets
+There is an option to edit a user-created set. This is done via the Sets browser view.
+
+**To Edit a Set**
+
+1. Add a Sets browser view : 
+a. Open _Vibe_ menu
+b. Tap Patch
+c. Tap Sets
+
+2. On the Sets browser view select a user-created set
+
+3. Tap Edit
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDHXsAk0ZCFREw06w6uOp%2Fimage.png?alt=media&token=622ad1f2-ecbc-4e2b-8f04-96d6857896a1)
+
+
+
 
 ## Import Devices
 
