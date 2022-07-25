@@ -159,11 +159,11 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 **The Patch Toolbar contains two pages of options:**
  
- ◾ Idle state toolbar
+    ◾ Idle state toolbar
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk1fZqMaKocauppohAgHw%2F4.5.1.webp?alt=media&token=c8cafb32-4d46-4284-ab22-4dfc5699cf4b)
 
-◾ Fixture selection state toolbar
+    ◾ Fixture selection state toolbar
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
@@ -171,7 +171,8 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 
 Vibe has two ways to display parameter data: 
-1.  **Live Display** - Displays cue and editor data as a spreadsheet. 
+
+1. **Live Display** - Displays cue and editor data as a spreadsheet. 
 2. **Live Parameter Display** - shows values in a table format instead of spreadsheet format.
 
 **Live Display**
@@ -199,23 +200,23 @@ Vibe has two ways to display parameter data:
 
 -   **Sets** - Select which of the fixture sets to display. 
 
-◾ Fixture s Channel
+    ◾ Fixture s Channel
 
-◾ Spot s Matrix
+    ◾ Spot s Matrix
 
-◾ Media Server 
+    ◾ Media Server 
 
-◾ Other custom Sets if created
+    ◾ Other custom Sets if created
     
 -   **Format** - Controls what format the data is displayed in. 
 
-◾ % - Values in percentage 
+    ◾ % - Values in percentage 
 
-◾ Decimal - DMX values 0 ➡️ 255 
+    ◾ Decimal - DMX values 0 ➡️ 255 
 
-◾ Text - Parameter step text 
-
-◾ Text + Percentage
+    ◾ Text - Parameter step text 
+    
+    ◾ Text + Percentage
 
 ### Live View Settings
 
