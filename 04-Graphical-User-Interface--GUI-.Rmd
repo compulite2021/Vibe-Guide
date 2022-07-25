@@ -7,19 +7,13 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 - 4.1.   Introduction
 - 4.2.   {VIBE} Menu
-- 4.2.1  Exit Button
 - 4.3    Configuring WorkSpaces
-- 4.3.1  Basics
-- 4.3.2  Show/Hide View Headers
 - 4.4.   Layouts
 - 4.5.   Smart Screen
 - 4.6.   Toolbars
 - 4.7.   Live Display
-- 4.7.1. Live View Settings
 - 4.8.   Live Parameter Display
-- 4.8.1. Parameter Mode
-- 4.8.2. Bank Mode
-- 4.8.3. Fixture Mode
+
 
 
 ## Introduction
@@ -27,46 +21,52 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.
 
 -   Supported gestures: 
-
-    ◾ Two fingers for swipe and scrolling. 
-
-    ◾ One finger select.
-
-    ◾ Multi-selection via ⤴️⤵️shaped gestures. 
-
-    ◾ Multi-selection via window.
+	◾ Two fingers for swipe and scrolling. 
+	◾ One finger select. 
+	◾ Multi-selection via ⤴️⤵️shaped gestures. 
+	◾ Multi-selection via window.
     
--   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). 
-The large 21" embedded screen is general-purpose like the external monitors.
+
+-   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21" embedded screen is general-purpose like the external monitors.
     
+
 -   The smaller 11.6" **Smart Screen** is dedicated to displaying context sensitive interactive parameter information such as color pickers and gobo pickers.
     
+
 -   Each monitor, (excluding the **Smart Screen**) can contain one Window Frame.
     
+
 -   Window frames can contain one of three **Workspace Templates**.
     
+
 -   Each Template has a dedicated display in the lower area. This area will have different fixed options and information depending on the selected Workspace Template.
     
+
 -   The remainder of the template may be freely customized by the user.
     
+
 -   Each Template can contain up to 4 **Pages** that can be toggling using the **WorkSpace**  **Template**  **Keys** or by tapping the yellow **{VIBE}** Menu key at the bottom left of each Workspace Template and tapping the **{PAGES}** key to the right of the **{VIBE}** key to open the page's display.
     
+
 -   Each Monitor (excluding the **Smart Screen**) can contain its own independent set of **WorkSpace**  **Templates**.
     
+
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾ **[PATCH]**
+	◾  **[PATCH]** 
+	◾  **[PROG]** - (Program) 
+	◾  **[PLAY-B]** - (Playback Controllers)
     
-    ◾ **[PROG]** - (Program) 
-    
-    ◾ **[PLAY-B]** - (Playback Controllers)
-    
+
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
     
+
 -   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
     
+
 -   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
     
+
 -   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
 
 ## VIBE Menu
@@ -322,9 +322,9 @@ Live View Settings pop-up - Display Tab.
 
 **Submaster Values:** 
 
-    ◾ **Show Stored Values** - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
+    ◾ Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
 
-◾ **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
+**Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
 
 
@@ -334,9 +334,11 @@ Live View Settings pop-up - Display Tab.
 The Live Parameter Display shows values in a table format instead of spreadsheet format. 
 
 **There are three Live Parameter Modes:** 
-
-    ◾ Live Parameters 
+		
+    ◾ Live Parameters
+    
     ◾ Live Banks 
+    
     ◾ Live Fixtures
 
 Live Parameter Mode is mainly used to display single parameter fixtures similar to theatrical consoles but is far more versatile.
@@ -378,7 +380,8 @@ Fixtures may also be graphically displayed by banks.
 -   **Position** - In the form of a cursor that moves in a black rectangle representing the stage.
     
 -   **Color** - In the form of a circular color swatch - Color wheels are not currently supported.
-- ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiiqnBUvvCzFFqXrjLXkE%2F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiiqnBUvvCzFFqXrjLXkE%2F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
 
 ### Fixture Mode
 
