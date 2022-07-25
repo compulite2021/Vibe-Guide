@@ -19,12 +19,15 @@ aux-qkeys-grand-master-and-global-controllers
 graphical-user-interface-gui
 introduction-1
 vibe-menu
-exit-button-location
-layouts
+exit-button
+configuring-workspaces
+basics
 showhide-view-headers
+layouts
 smart-screen
 toolbars
 live-display
+live-view-settings
 live-parameter-display
 parameter-mode
 bank-mode
