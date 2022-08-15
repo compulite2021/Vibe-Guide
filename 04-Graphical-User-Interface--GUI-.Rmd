@@ -1,17 +1,21 @@
+
+
 # Graphical User Interface (GUI)
 
 This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
 
--   4.1. Introduction
--   4.2. {VIBE} Menu
--   4.3 Configuring WorkSpaces
--   4.4. Layouts
--   4.5. Smart Screen
--   4.6. Toolbars
--   4.7. Live Display
--   4.8. Live Parameter Display
+- 4.1.   Introduction
+- 4.2.   {VIBE} Menu
+- 4.3    Configuring WorkSpaces
+- 4.4.   Layouts
+- 4.5.   Smart Screen
+- 4.6.   Toolbars
+- 4.7.   Live Display
+- 4.8.   Live Parameter Display
+
+
 
 ## Introduction
 
@@ -20,292 +24,357 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 -   Supported gestures:
 
     ◾ Two fingers for swipe and scrolling.
-
-    ◾ One finger select.
-
+    
+    ◾ One finger select. 
+    
     ◾ Multi-selection via ️️⤴ ⤵ shaped gestures.
-
+    
     ◾ Multi-selection via window.
+    
 
 -   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21" embedded screen is general-purpose like the external monitors.
+    
 
 -   The smaller 11.6" **Smart Screen** is dedicated to displaying context sensitive interactive parameter information such as color pickers and gobo pickers.
+    
 
 -   Each monitor, (excluding the **Smart Screen**) can contain one Window Frame.
+    
 
 -   Window frames can contain one of three **Workspace Templates**.
+    
 
 -   Each Template has a dedicated display in the lower area. This area will have different fixed options and information depending on the selected Workspace Template.
+    
 
 -   The remainder of the template may be freely customized by the user.
+    
 
--   Each Template can contain up to 4 **Pages** that can be toggling using the **WorkSpace** **Template** **Keys** or by tapping the yellow **{VIBE}** Menu key at the bottom left of each Workspace Template and tapping the **{PAGES}** key to the right of the **{VIBE}** key to open the page's display.
+-   Each Template can contain up to 4 **Pages** that can be toggling using the **WorkSpace**  **Template**  **Keys** or by tapping the yellow **{VIBE}** Menu key at the bottom left of each Workspace Template and tapping the **{PAGES}** key to the right of the **{VIBE}** key to open the page's display.
+    
 
--   Each Monitor (excluding the **Smart Screen**) can contain its own independent set of **WorkSpace** **Templates**.
+-   Each Monitor (excluding the **Smart Screen**) can contain its own independent set of **WorkSpace**  **Templates**.
+    
 
--   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**:
+-   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  [\[PATCH]\] - (Patch)
+    ◾  \\[PATCH\\]
 	
     ◾  **[PROG]** - (Program) 
 	
     ◾  **[PLAY-B]** - (Playback Controllers)
-
+    
 
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
+    
 
 -   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
+    
 
--   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **\[SWAP DISPLAY\]** key at the top left corner of the controller panel.
+-   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
+    
 
--   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **\[SWAP DISPLAY\]** key at the top left corner of the controller panel.
+-   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
 
 ## VIBE Menu
 
+
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FhnmbOYCxpKpFeS3PTChB%252F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
 
 ### Exit Button
 
 The Exit and Close buttons are located in the Windows sub-menu.
 
+
 **To exit Vibe or close a window**
 
-1.  Open Vibe menu from the Vibe button
+1. Open Vibe menu from the Vibe button
+    
 
-2.  Tap Windows
+2. Tap Windows
+    
 
-3.  Tap Exit/Close
+3. Tap Exit/Close
+    
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FFV8W9WgLTCerYjssYKJD%252Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFV8W9WgLTCerYjssYKJD%2Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
 
 ## Configuring WorkSpaces
+
 
 ### Basics
 
 -   When configuring workspaces, any object at the end of the hierarchical sub-menu can be tapped to open its object on a blank portion of the current workspace or dragged and dropped to the workspace surface. Once on the surface it may be moved or sized freely, space permitting.
+    
 
 -   If an object is dragged on top of another both will turn green and become one **tabbed** object.
+    
 
--   To edit the placement of objects, the **{Lock}** icon beside the **{VIBE}** menu key must be toggled to unlock the workspace display. After changes are made, it must be toggled again to lock the display and allow normal usage.
+-   To edit the placement of objects, the **{Lock}** icon beside the **{VIBE}** menu key  must be toggled to unlock the workspace display. After changes are made, it must be toggled again to lock the display and allow normal usage.
+    
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FRgauawhpMT9fs8UyREov%252F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
+
 
 ### Show/Hide View Headers
 
-This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before.
+This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
+
 
 **To Show/Hide View Header:**
 
-1.  Go to edit mode by tapping the Vibe button and unlocking the layout
+1. Go to edit mode by tapping the Vibe button and unlocking the layout
+    
 
-2.  Select the view you want to toggle its header on or off
+2. Select the view you want to toggle its header on or off
+    
+3. Tap the Toggle Header button
+    
 
-3.  Tap the Toggle Header button
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9B5NTIysFGLAcAACtoIr%2Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252F9B5NTIysFGLAcAACtoIr%252Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
 
 ## Layouts
 
 **Layouts:**
 
--   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
-
+-   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. 
+A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
+    
 -   After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.
-
+    
 -   Layouts remember the configuration of external monitors and a warning message will appear if the system is booted without the expected external monitor.
 
+
+
+
+
 ## Smart Screen
+
 
 The 11.6" multi-touch monitor embedded in the upper section of the Vibe console is referred to as the **Smart Screen**. The **Smart Screen** is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. **For more detail see:**
 
 [9.3.4. Smart Screen](https://compulite2021.github.io/Vibe-Guide/programming-basics.html#smart-screen-1)
 
+
 ## Toolbars
+
 
 **The Editor Toolbar contains is a set of interactive Softkeys that are used to access less common commands:**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FEtMwno5lafumX8bqox4j%252F4.5.webp?alt=media&token=c082bd36-0eb9-4402-8a03-bede1ce46ec1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FEtMwno5lafumX8bqox4j%2F4.5.webp?alt=media&token=c082bd36-0eb9-4402-8a03-bede1ce46ec1)
 
 **The Patch Toolbar contains two pages of options:**
+ 
+  - Idle state toolbar
 
--   Idle state toolbar
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk1fZqMaKocauppohAgHw%2F4.5.1.webp?alt=media&token=c8cafb32-4d46-4284-ab22-4dfc5699cf4b)
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252Fk1fZqMaKocauppohAgHw%252F4.5.1.webp?alt=media&token=c8cafb32-4d46-4284-ab22-4dfc5699cf4b)
+  - Fixture selection state toolbar
 
--   Fixture selection state toolbar
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252Fn6vIb0nGIrhdgceYRjec%252F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
 ## Live Display
 
-Vibe has two ways to display parameter data:
 
-1.  **Live Display** - Displays cue and editor data as a spreadsheet.
-2.  **Live Parameter Display** - shows values in a table format instead of spreadsheet format.
+Vibe has two ways to display parameter data: 
+
+1. **Live Display** - Displays cue and editor data as a spreadsheet. 
+2. **Live Parameter Display** - shows values in a table format instead of spreadsheet format.
 
 **Live Display**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252F6qvBRbxpA4zVqzi1eqFx%252F4.6.webp?alt=media&token=9f4db473-e88e-439e-9c84-3ea59a199c95)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6qvBRbxpA4zVqzi1eqFx%2F4.6.webp?alt=media&token=9f4db473-e88e-439e-9c84-3ea59a199c95)
 
 **The Live Display has a number of options that may be set under the Options field:**
 
--   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&amp;token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png) - Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/~/changes/WdkBzgj8gGqCInAC3DkK/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.8.1.-live-view-settings).)
+-   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)     - Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/~/changes/WdkBzgj8gGqCInAC3DkK/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.8.1.-live-view-settings).)
+    
+-   **Fit** - Opens column width options. 
 
--   **Fit** - Opens column width options.
+    ◾ Fit to Window 
 
-    ◾ Fit to Window
+    ◾ Fit to Value 
 
-    ◾ Fit to Value
-
-    ◾ Fix by Text
+    ◾ Fix by Text 
 
     ◾ Default
-
+    
 -   **Active on Stage** - Only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
+    
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FACLxFHojrpM1W1uVZfRf%252F4.6.1.webp?alt=media&token=cf1c4fbf-74a4-47f5-9bab-085fb9cb925e)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FACLxFHojrpM1W1uVZfRf%2F4.6.1.webp?alt=media&token=cf1c4fbf-74a4-47f5-9bab-085fb9cb925e)
 
--   **Sets** - Select which of the fixture sets to display.
+-   **Sets** - Select which of the fixture sets to display. 
 
     ◾ Fixture s Channel
 
     ◾ Spot s Matrix
 
-    ◾ Media Server
+    ◾ Media Server 
 
     ◾ Other custom Sets if created
+    
+-   **Format** - Controls what format the data is displayed in. 
 
--   **Format** - Controls what format the data is displayed in.
+    ◾ % - Values in percentage 
 
-    ◾ % - Values in percentage
+    ◾ Decimal - DMX values 0 ⟶ 255 
 
-    ◾ Decimal - DMX values 0 ⟶ 255
-
-    ◾ Text - Parameter step text
-
+    ◾ Text - Parameter step text 
+    
     ◾ Text + Percentage
 
 ### Live View Settings
 
+
+
 Live View Settings pop-up - Display Tab.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252F5uGp3hwefoypGXdWveRx%252F4.7.webp?alt=media&token=ab20ee96-1d11-43a8-bdf2-b4183886bcb0)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5uGp3hwefoypGXdWveRx%2F4.7.webp?alt=media&token=ab20ee96-1d11-43a8-bdf2-b4183886bcb0)
+
+
 
 **Live View Scheme** - Parameter columns may be freely added, removed, moved in using the Live View Scheme.
 
 **Move columns:**
 
-1.  Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+    
 
-2.  Use the **{\|\< }** or **{>\|}** keys to move the parameter column forward or backwards.
+2. Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
+    
 
 **Move columns to the first or last column position:**
 
-1.  Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+    
 
-2.  Use the **{\|\<\<}** or **{>\>\|}** keys to move the parameter column first position or last position.
+2.  Use the **{|<<}** or **{>>|}** keys to move the parameter column first position or last position.
+    
 
-**Remove** **columns:**
+**Remove**  **columns:**
 
-1.  Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+    
 
-2.  Tap the {Remove} key.
+2. Tap the {Remove} key.
+    
 
 **Dock** - Locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position. (Group By Banks and All icons in 1 cell are not implemented yet)
 
 **Add Columns** - Columns are added using the Banks section of the pop-up.
 
-1.  Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
+1. Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
 
-2.  Select the parameter or parameters to add to the live display. 👉 Swipe in the the parameter box to browse hidden parameters.
+2. Select the parameter or parameters to add to the live display. 👉 Swipe in the the parameter box to browse hidden parameters.
+  
+3. Tap a parameter that is not already selected in green and it will be added to the end of the column list.
 
-3.  Tap a parameter that is not already selected in green and it will be added to the end of the column list.
 
-> [Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.]{style="color:Red"}.
+><span style="color:Red">Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.
+</span>.
 
-4.  Use the **{\|\< }** or **{>\|} {\|\<\< }** or **{>\>\|}** to position the column.
 
-**Interactive Icons:**
+4. Use the **{|< }** or **{>|} {|<< }** or **{>>|}** to position the column.
 
--   Adds or removes the icon columns.
+**Interactive Icons:** 
 
-> [Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.]{style="color:Red"}.
+  - Adds or removes the icon columns.
 
-**General:**
+><span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
 
--   Global Fixture Number - Fixture's hidden unique system number.
--   Fixture Layer Number - Adds or removes Fixture Number column.
--   Fixture Name - Adds or removes Fixture Name column.
 
-> [Fixture \# and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.]{style="color:Red"}
+
+**General:** 
+
+  - Global Fixture Number - Fixture's hidden unique system number. 
+  - Fixture Layer Number - Adds or removes Fixture Number column. 
+  - Fixture Name - Adds or removes Fixture Name column.
+
+
+
+><span style="color:Red">Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>
+
+
 
 **Live View Settings pop-up - Behavior Tab**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252F0Cf1rvhFttH5PpWmRGsr%252F4.7.1.webp?alt=media&token=add0fffb-777d-4be4-b946-9baf95669f4e)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0Cf1rvhFttH5PpWmRGsr%2F4.7.1.webp?alt=media&token=add0fffb-777d-4be4-b946-9baf95669f4e)
 
-**Fixture Jumping**:
 
--   Off
--   Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page.
--   Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display.
+**Fixture Jumping**: 
 
-**Parameter Jumping**:
+  - Off 
+  - Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+  - Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
 
--   Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column).
+**Parameter Jumping**: 
+    
+  - Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
 
-**Interactive Fixture Selection:**
+**Interactive Fixture Selection:**  
+    
+  - Turns on the ability to make fixture selections from the live display grids. 
 
--   Turns on the ability to make fixture selections from the live display grids.
+**Interactive**  **Cell Editing:**  
 
-**Interactive** **Cell Editing:**
+  - Turns on the ability to directly edit cells in the live display grid. 
 
--   Turns on the ability to directly edit cells in the live display grid.
+**Interactive Header selection** - Currently implemented but may not be turned off. 
 
-**Interactive Header selection** - Currently implemented but may not be turned off.
+  - Enables parameters to be directly selected from the live display headers. 
 
--   Enables parameters to be directly selected from the live display headers.
+**Submaster Values:** 
 
-**Submaster Values:**
-
--   Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&amp;token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited.
+  - Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
 
 **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
+
+
 ## Live Parameter Display
 
-The Live Parameter Display shows values in a table format instead of spreadsheet format.
 
-**There are three Live Parameter Modes:**
+The Live Parameter Display shows values in a table format instead of spreadsheet format. 
 
--   Live Parameters
-
--   Live Banks
-
--   Live Fixtures
+**There are three Live Parameter Modes:** 
+		
+  - Live Parameters
+    
+  - Live Banks 
+    
+  - Live Fixtures
 
 Live Parameter Mode is mainly used to display single parameter fixtures similar to theatrical consoles but is far more versatile.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FG5hlBdfBjmea6tjbutqi%252Fimage.png?alt=media&token=2a667d38-c262-4bbf-b802-dedade61d1a2)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FG5hlBdfBjmea6tjbutqi%2Fimage.png?alt=media&token=2a667d38-c262-4bbf-b802-dedade61d1a2)
+
+
 
 ### Parameter Mode
 
 Unlike most theatrical consoles, parameters other than dimmer may be shown in Live Parameter Mode.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FNzhdWIduBdr1JlJxRnpw%252F4.8.webp?alt=media&token=68d8f738-7d03-4ae9-ba14-8670879bf203)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNzhdWIduBdr1JlJxRnpw%2F4.8.webp?alt=media&token=68d8f738-7d03-4ae9-ba14-8670879bf203)
 
 Parameters visible in Live Parameter Mode are filtered using the Parameter View Settings Pop-up.
 
 **Filter Parameters:**
 
-1.  Tap the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&amp;token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png) icon - The Parameter View Settings pop-up will open.
+1. Tap the   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)    icon - The Parameter View Settings pop-up will open.
+    
+2. Tap parameters on either side to move them from one box to the other.
+    
+3.   Close the pop-up using [ENTER] or   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)
+    
+    
+    
 
-2.  Tap parameters on either side to move them from one box to the other.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtzAZJ7gsczYgIUPMQYit%2F4.8.1.webp?alt=media&token=9923932f-be18-402f-92aa-5307f27cfd3a)
 
-3.  Close the pop-up using \[ENTER\] or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&amp;token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FtzAZJ7gsczYgIUPMQYit%252F4.8.1.webp?alt=media&token=9923932f-be18-402f-92aa-5307f27cfd3a)
 
 ### Bank Mode
 
@@ -314,15 +383,15 @@ Fixtures may also be graphically displayed by banks.
 **Currently, three banks can be graphically viewed**: Image will be implemented soon.
 
 -   **Intensity** - In the form of an illuminated disk.
-
+    
 -   **Position** - In the form of a cursor that moves in a black rectangle representing the stage.
-
+    
 -   **Color** - In the form of a circular color swatch - Color wheels are not currently supported.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FiiqnBUvvCzFFqXrjLXkE%252F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiiqnBUvvCzFFqXrjLXkE%2F4.9.webp?alt=media&token=c9eab077-dd10-4792-bf41-696023b32b2a)
 
 ### Fixture Mode
 
 Graphically Displays Intensity, Position, and Color parameter icons as a single "tombstone" fixture
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%252F3kS90tLsADGm1ocbe7q9%252Fuploads%252FbVNqz9O6Ncel6mSwo6Nj%252F4.10.webp?alt=media&token=1313790f-2563-4b84-a48d-4da3f71042d3)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FbVNqz9O6Ncel6mSwo6Nj%2F4.10.webp?alt=media&token=1313790f-2563-4b84-a48d-4da3f71042d3)
