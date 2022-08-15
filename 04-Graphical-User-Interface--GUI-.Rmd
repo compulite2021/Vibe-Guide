@@ -220,7 +220,7 @@ Vibe has two ways to display parameter data:
 
     ◾ % - Values in percentage 
 
-    ◾ Decimal - DMX values 0 ➡️ 255 
+    ◾ Decimal - DMX values 0 ⟶ 255 
 
     ◾ Text - Parameter step text 
     
