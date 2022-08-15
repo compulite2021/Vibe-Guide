@@ -189,7 +189,7 @@ Vibe has two ways to display parameter data:
 
 **The Live Display has a number of options that may be set under the Options field:**
 
--   ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRsKkH1GR7Zny1naiOQVr%2Fimage.png?alt=media&token=67514158-ffd4-4fc1-86f5-d870d259b8fe) **-** Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/~/changes/WdkBzgj8gGqCInAC3DkK/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.8.1.-live-view-settings).)
+-   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)     - Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/~/changes/WdkBzgj8gGqCInAC3DkK/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.8.1.-live-view-settings).)
     
 -   **Fit** - Opens column width options. 
 
@@ -251,7 +251,7 @@ Live View Settings pop-up - Display Tab.
 1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
     
 
-2.  Use the **{|<< }** or **{>>|}** keys to move the parameter column first position or last position.
+2.  Use the **{|<<}** or **{>>|}** keys to move the parameter column first position or last position.
     
 
 **Remove**  **columns:**
