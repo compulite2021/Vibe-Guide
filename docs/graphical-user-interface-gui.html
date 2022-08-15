@@ -406,7 +406,7 @@
 <li><p>Each Template can contain up to 4 <strong>Pages</strong> that can be toggling using the <strong>WorkSpace</strong> <strong>Template</strong> <strong>Keys</strong> or by tapping the yellow <strong>{VIBE}</strong> Menu key at the bottom left of each Workspace Template and tapping the <strong>{PAGES}</strong> key to the right of the <strong>{VIBE}</strong> key to open the page’s display.</p></li>
 <li><p>Each Monitor (excluding the <strong>Smart Screen</strong>) can contain its own independent set of <strong>WorkSpace</strong> <strong>Templates</strong>.</p></li>
 <li><p>Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the <strong>Smart Screen</strong>:</p>
-<p>◾ \[PATCH\]</p>
+<p>◾ <strong><span class="math display">\[PATCH\]</span></strong></p>
 <p>◾ <strong>[PROG]</strong> - (Program)</p>
 <p>◾ <strong>[PLAY-B]</strong> - (Playback Controllers)</p></li>
 <li><p>The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).</p></li>
@@ -701,6 +701,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
