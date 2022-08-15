@@ -57,11 +57,11 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  **{PATCH}**
+    ◾  **["PATCH"]**
 	
-    ◾  **{PROG}** - (Program) 
+    ◾  **["PROG"]** - (Program) 
 	
-    ◾  **{PLAY-B}** - (Playback Controllers)
+    ◾  **["PLAY-B"]** - (Playback Controllers)
     
 
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
@@ -84,7 +84,7 @@ The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menu
 
 ### Exit Button
 
-The Exit button location was moved to a sub menu instead of being located on the main menu. The same happened with the Close button that closes a window. The reason for doing that is because user may mistakenly tap this button on it’s previous location. The buttons are now located under the Windows sub-menu.
+The Exit and Close buttons are located in the Windows sub-menu.
 
 
 **To exit Vibe or close a window**
