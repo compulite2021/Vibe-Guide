@@ -57,11 +57,11 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  **['PATCH']**
+    ◾  **\[PATCH\]**
 	
-    ◾  **['PROG']** - (Program) 
+    ◾  **[PROG]** - (Program) 
 	
-    ◾  **['PLAY-B']** - (Playback Controllers)
+    ◾  **[PLAY-B]** - (Playback Controllers)
     
 
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
