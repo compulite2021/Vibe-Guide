@@ -58,7 +58,7 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  __\[PATCH\]__
+    ◾  **[ PATCH ]**
 	
     ◾  **[PROG]** - (Program) 
 	
