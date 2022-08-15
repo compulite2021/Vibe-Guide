@@ -57,11 +57,11 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  **[PATCH]**
+    ◾  **[ PATCH ]**
 	
-    ◾  **[PROG]** - (Program) 
+    ◾  **[ PROG ]** - (Program) 
 	
-    ◾  **[PLAY-B]** - (Playback Controllers)
+    ◾  **[ PLAY-B ]** - (Playback Controllers)
     
 
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
@@ -167,11 +167,11 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 **The Patch Toolbar contains two pages of options:**
  
-    ◾ Idle state toolbar
+  - Idle state toolbar
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk1fZqMaKocauppohAgHw%2F4.5.1.webp?alt=media&token=c8cafb32-4d46-4284-ab22-4dfc5699cf4b)
 
-    ◾ Fixture selection state toolbar
+  - Fixture selection state toolbar
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
@@ -281,7 +281,7 @@ Live View Settings pop-up - Display Tab.
 
 **Interactive Icons:** 
 
-    ◾ Adds or removes the icon columns.
+  - Adds or removes the icon columns.
 
 ><span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
 
@@ -289,9 +289,9 @@ Live View Settings pop-up - Display Tab.
 
 **General:** 
 
-    ◾ Global Fixture Number - Fixture's hidden unique system number. 
-    ◾ Fixture Layer Number - Adds or removes Fixture Number column. 
-    ◾ Fixture Name - Adds or removes Fixture Name column.
+  - Global Fixture Number - Fixture's hidden unique system number. 
+  - Fixture Layer Number - Adds or removes Fixture Number column. 
+  - Fixture Name - Adds or removes Fixture Name column.
 
 
 
@@ -306,29 +306,29 @@ Live View Settings pop-up - Display Tab.
 
 **Fixture Jumping**: 
 
-    ◾ Off 
-    ◾ Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
-    ◾ Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
+  - Off 
+  - Jump if needed - live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+  - Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
 
 **Parameter Jumping**: 
     
-    ◾ Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
+  - Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
 
 **Interactive Fixture Selection:**  
     
-    ◾ Turns on the ability to make fixture selections from the live display grids. 
+  - Turns on the ability to make fixture selections from the live display grids. 
 
 **Interactive**  **Cell Editing:**  
 
-    ◾ Turns on the ability to directly edit cells in the live display grid. 
+  - Turns on the ability to directly edit cells in the live display grid. 
 
 **Interactive Header selection** - Currently implemented but may not be turned off. 
 
-    ◾ Enables parameters to be directly selected from the live display headers. 
+  - Enables parameters to be directly selected from the live display headers. 
 
 **Submaster Values:** 
 
-    ◾ Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
+  - Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXIJXhWCSwMTbGG7esTB5%2Fimage.png?alt=media&token=35bbd680-0f4c-4b4f-b659-94e00a30f028" width="30"/>](image.png) icon will also be shown to indicate when the parameter is inhibited. 
 
 **Show Output Values** - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
 
@@ -341,11 +341,11 @@ The Live Parameter Display shows values in a table format instead of spreadsheet
 
 **There are three Live Parameter Modes:** 
 		
-    ◾ Live Parameters
+  - Live Parameters
     
-    ◾ Live Banks 
+  - Live Banks 
     
-    ◾ Live Fixtures
+  - Live Fixtures
 
 Live Parameter Mode is mainly used to display single parameter fixtures similar to theatrical consoles but is far more versatile.
 
