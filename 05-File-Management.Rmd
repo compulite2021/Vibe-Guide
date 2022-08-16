@@ -81,6 +81,6 @@ Vector Shows may be loaded with the following limitations:
 
 ◾ Currently not supported but under development.
 
-**Vector Playbacks** ➡️ **Vibe Controllers:**
+**Vector Playbacks** ⟶ **Vibe Controllers:**
 
 ◾ Paging is matched and all button functions common to Vector and Vibe are matched.

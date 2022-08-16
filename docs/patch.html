@@ -394,7 +394,7 @@
 <h2><span class="header-section-number">6.1</span> Fixture Sets<a href="patch.html#fixture-sets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Like other lighting consoles, Vibe contains an extensive <strong>Device Library</strong> with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. Before a device can be programmed it must be imported and patched to DMX addresses. Vibe has an advanced numbering system that allows devices to be grouped into five familiar categories called <strong>SETS</strong>. Custom <strong>SETS</strong> may also be created. Numbering in all sets may be freely changed if there are no overlapping numbers. Each Set has a unique ID.</p>
 <p><strong>Set ID numbers: 0 = [Fixture]</strong> is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers. <strong>1 = [Channel]</strong> is a numbering set that would normally be used for conventional single parameter devices. <strong>2 = [SPOT]</strong> is a numbering set that would mainly be used for multi-parameter devices like moving lights. <strong>3 = [MATRIX]</strong> is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices) <strong>4 = [SERVER]</strong> is a numbering system used for media servers.</p>
-<p>Each <strong>SET</strong> may have Fixtures numbered from 1 ➡️ 999999 To patch a device, you must first move focus to the main monitor and press the <a href="patch.html#patch">PATCH</a> Workspace Template key. By default, the first page will contain all the displays needed for patching.</p>
+<p>Each <strong>SET</strong> may have Fixtures numbered from 1 ⟶ 999999 To patch a device, you must first move focus to the main monitor and press the <a href="patch.html#patch">PATCH</a> Workspace Template key. By default, the first page will contain all the displays needed for patching.</p>
 <div id="edit-sets" class="section level3 hasAnchor" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> Edit Sets<a href="patch.html#edit-sets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>There is an option to edit a user-created set. This is done via the Sets browser view.</p>
@@ -458,14 +458,15 @@
 <ol style="list-style-type: decimal">
 <li><p>In the <strong>Create and Patch</strong> fixtures pop-up, type the quantity in the red highlighted field via the keypad or flick/drag to browse the list until the desired quantity number is found then tap the number.</p></li>
 <li><p>If the <strong>Quantity</strong> number is not highlighted in Red, tap the field to make it active.</p></li>
-<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don’t always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).</p></li>
-<li><p>Press the ➡️ key on the keypad to tab to the {Set Number} field.</p></li>
-<li><p>Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number. 👉 By default, the first available number for the selected SET is pre-assigned.</p></li>
-<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap any box in the Fixture Number field to select it.</p></li>
+<li><p>Press the ⟶ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don’t always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).</p></li>
+<li><p>Press the ⟶ key on the keypad to tab to the {Set Number} field.</p></li>
+<li><p>Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number.
+👉 By default, the first available number for the selected SET is pre-assigned.</p></li>
+<li><p>Press the ⟶ key on the keypad to tab to the next field, or tap any box in the Fixture Number field to select it.</p></li>
 <li><p>By default, the same number as the SET Number will appear as the Fixture Number. Many users like to group Fixtures by 10ʼs or 100ʼs so it is common to type 101 for the start of one type of fixture, 201 for a second type and so on. The SET number and Fixture number do not have to be the same.</p></li>
 <li><p>Next to the Fixture Number field is a data entry box that displays the fixture’s default short name. This may be edited at any time while in this pop-up. The name will be updated when the fixtures are created upon closing the pop-up.</p></li>
-<li><p>In the second section of the pop-up, fixtures that were selected for creation can be patched via the DMX patch wizard. Press the ➡️ key on the keypad to tab to the next field, or tap a number in the UNIVERSE field. If the desired universe is not visible, flick/drag to browse to the correct universe number then tap it.</p></li>
-<li><p>Press the ➡️ key on the keypad to tab to the next field, or tap any number in the <strong>ADDRESS</strong> field.</p></li>
+<li><p>In the second section of the pop-up, fixtures that were selected for creation can be patched via the DMX patch wizard. Press the ⟶ key on the keypad to tab to the next field, or tap a number in the UNIVERSE field. If the desired universe is not visible, flick/drag to browse to the correct universe number then tap it.</p></li>
+<li><p>Press the ⟶ key on the keypad to tab to the next field, or tap any number in the <strong>ADDRESS</strong> field.</p></li>
 </ol>
 <blockquote>
 <p>By default, the interval between fixtures of the same type is fixed.
@@ -478,9 +479,9 @@ Using the INTERVAL field, a custom interval may be set.</p>
 <p>◾ Toggle off the <strong>{MAIN PATCH}</strong> key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.</p>
 <p><strong>To Patch fixtures using traditional keypad syntax:</strong></p>
 <p>◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the <strong>ADDRESS</strong> field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. <strong>Or</strong></p>
-<p>◾ [ADDRESS] [#].[#] +/ - ➡️ [#].[#] [FIXTURE] [#] [STORE].</p>
+<p>◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].</p>
 <blockquote>
-<p>Addresses may also be typed in absolute format: 1 ➡️ 32,768 (64
+<p>Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64
 Universes standard). The system will automatically assign the correct
 universe</p>
 <p>When starting from a {New Show} only {Physical DMX outputs} are
@@ -499,7 +500,7 @@ enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settin
 <li><p><strong>Press and Hold</strong> a fixture, it will turn into a floating icon of the fixture.</p></li>
 <li><p>Drag the fixture icon from the Fixtures list onto the Universe View grid. All associated DMX addresses for the fixture will turn green. Drop the fixture icon on the desired DMX start address for the fixture. - The fixture is now patched.</p></li>
 </ol>
-<p>Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures list.</p>
+<p>Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFTYnnKHRjr3DV3bFTnMN%2F6.4.1.webp?alt=media&amp;token=7a7991b5-3817-4e6d-8fd0-cbd9c031c839" /></p>
 <p><strong>Make multiple selections of fixtures using the keypad:</strong></p>
 <ol style="list-style-type: decimal">
@@ -592,9 +593,9 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 </blockquote>
 <p><strong>Map a range of DMX outputs to a range of DMX inputs:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Press [ADDRESS] [#] ➡️ [#]</p></li>
+<li><p>Press [ADDRESS] [#] ⟶ [#]</p></li>
 <li><p>Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO.</p></li>
-<li><p>Press [ADDRESS] [#] ➡️ [#]</p></li>
+<li><p>Press [ADDRESS] [#] ⟶ [#]</p></li>
 <li><p>Press [STORE]</p></li>
 </ol>
 <p><strong>Map a Macro to a DMX input</strong> - Macro will trigger at 50%</p>
@@ -635,7 +636,7 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 <p><strong>Park an Address:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>[ADDRESS] [#] {PARK} - The Park pop-up will appear.</p></li>
-<li><p>Set a DMX level from 0 ➡️ 255 using tee virtual slider.</p></li>
+<li><p>Set a DMX level from 0 ⟶ 255 using tee virtual slider.</p></li>
 <li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up and park the address.</p></li>
 </ol>
 <p><strong>Unpark and address:</strong></p>

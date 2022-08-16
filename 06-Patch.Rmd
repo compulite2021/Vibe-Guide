@@ -23,7 +23,7 @@ Like other lighting consoles, Vibe contains an extensive **Device Library** with
 
 **Set ID numbers: 0 = [Fixture]** is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers. **1 = [Channel]** is a numbering set that would normally be used for conventional single parameter devices. **2 = [SPOT]** is a numbering set that would mainly be used for multi-parameter devices like moving lights. **3 = [MATRIX]** is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices) **4 = [SERVER]** is a numbering system used for media servers.
 
-Each **SET** may have Fixtures numbered from 1 ➡️ 999999 To patch a device, you must first move focus to the main monitor and press the [PATCH] Workspace Template key. By default, the first page will contain all the displays needed for patching.
+Each **SET** may have Fixtures numbered from 1 ⟶ 999999 To patch a device, you must first move focus to the main monitor and press the [PATCH] Workspace Template key. By default, the first page will contain all the displays needed for patching.
 
 
 
@@ -108,21 +108,22 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
     
 2. If the **Quantity** number is not highlighted in Red, tap the field to make it active.
     
-3. Press the ➡️ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don't always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).
+3. Press the ⟶ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don't always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).
     
-4. Press the ➡️ key on the keypad to tab to the {Set Number} field.
+4. Press the ⟶ key on the keypad to tab to the {Set Number} field.
     
-5. Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number. 👉 By default, the first available number for the selected SET is pre-assigned.
+5. Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number. 
+👉 By default, the first available number for the selected SET is pre-assigned.
     
-6. Press the ➡️ key on the keypad to tab to the next field, or tap any box in the Fixture Number field to select it.
+6. Press the ⟶ key on the keypad to tab to the next field, or tap any box in the Fixture Number field to select it.
     
 7. By default, the same number as the SET Number will appear as the Fixture Number. Many users like to group Fixtures by 10ʼs or 100ʼs so it is common to type 101 for the start of one type of fixture, 201 for a second type and so on. The SET number and Fixture number do not have to be the same.
     
 8. Next to the Fixture Number field is a data entry box that displays the fixture's default short name. This may be edited at any time while in this pop-up. The name will be updated when the fixtures are created upon closing the pop-up.
     
-9. In the second section of the pop-up, fixtures that were selected for creation can be patched via the DMX patch wizard. Press the ➡️ key on the keypad to tab to the next field, or tap a number in the UNIVERSE field. If the desired universe is not visible, flick/drag to browse to the correct universe number then tap it.
+9. In the second section of the pop-up, fixtures that were selected for creation can be patched via the DMX patch wizard. Press the ⟶ key on the keypad to tab to the next field, or tap a number in the UNIVERSE field. If the desired universe is not visible, flick/drag to browse to the correct universe number then tap it.
     
-10. Press the ➡️ key on the keypad to tab to the next field, or tap any number in the **ADDRESS** field.
+10. Press the ⟶ key on the keypad to tab to the next field, or tap any number in the **ADDRESS** field.
     
 
 > By default, the interval between fixtures of the same type is fixed.
@@ -138,9 +139,9 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 
 ◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
 
-◾ [ADDRESS] [#].[#] +/ - ➡️ [#].[#] [FIXTURE] [#] [STORE].
+◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].
 
-> Addresses may also be typed in absolute format: 1 ➡️ 32,768 (64
+> Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64
 > Universes standard). The system will automatically assign the correct
 > universe
 > 
@@ -168,7 +169,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 7. Drag the fixture icon from the Fixtures list onto the Universe View grid. All associated DMX addresses for the fixture will turn green. Drop the fixture icon on the desired DMX start address for the fixture. - The fixture is now patched.
     
 
-Multiple fixtures may be selected by swiping ⤴️ or ⤵️ in the Fixtures list.
+Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFTYnnKHRjr3DV3bFTnMN%2F6.4.1.webp?alt=media&token=7a7991b5-3817-4e6d-8fd0-cbd9c031c839)
 
@@ -296,11 +297,11 @@ See: 20. XYZ Fixture Calibration
 
 **Map a range of DMX outputs to a range of DMX inputs:**
 
-1. Press [ADDRESS] [#] ➡️ [#]
+1. Press [ADDRESS] [#] ⟶ [#]
     
 2. Tap {INPUT PATCH TO} on the toolbar - Command line will say INPUT PATCH TO.
     
-3. Press [ADDRESS] [#] ➡️ [#]
+3. Press [ADDRESS] [#] ⟶ [#]
     
 4. Press [STORE]
     
@@ -358,7 +359,7 @@ See: 20. XYZ Fixture Calibration
 
 1. [ADDRESS] [#] {PARK} - The Park pop-up will appear.
     
-2. Set a DMX level from 0 ➡️ 255 using tee virtual slider.
+2. Set a DMX level from 0 ⟶ 255 using tee virtual slider.
     
 3. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up and park the address.
     

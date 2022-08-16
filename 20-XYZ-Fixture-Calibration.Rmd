@@ -28,10 +28,11 @@ Calibrate using WYSIWYG
 
 5. Go to 'Data tab'.
 
-6. When in the Data tab, press on Option (in the toolbar) ➡️ Document Options ➡️ Draw Defaults - and change the units to metric.
+6. When in the Data tab, press on Option (in the toolbar) ⟶  Document Options ⟶  Draw Defaults - and change the units to metric.
 
 
-7.
+7. 
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FevwfnkgAvMLdIU4zgZBr%2F20.1.1.webp?alt=media&token=2ef469e1-b321-48d2-89f2-da906b386daf)
 
 
@@ -51,7 +52,7 @@ Calibrate using WYSIWYG
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn5Wiw7EBsgJNFC9bYVRx%2F20.2.webp?alt=media&token=3224f209-dfa7-440e-8e84-4b5e88866f58)
 
-4. Go to Tools ➡️ Options and change the measurements to metric.
+4. Go to Tools ⟶  Options and change the measurements to metric.
 
 5. Select a fixture in the Capture, and you will see the XYZ coordinates when the table is showing 'Selected Itemsʼ. 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F35qZUCLtAwnVv9zjMkVV%2F20.2.1.webp?alt=media&token=d469868d-cd70-496f-9573-6623cd50040f)

@@ -155,10 +155,10 @@ Currently, Vibe has basic Selection Tools. Advanced tools are under development.
     
 -   {/} - Used as a separator. **Groupings of #/# Start fixture of the grouping**
     
--   **E.g.** [Fixture] [1] [➡️] [14] {Section Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13 (as soon as the {/} is pressed **EVERY 3/1** will be displayed on the command line).
+-   **E.g.** [Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13 (as soon as the {/} is pressed **EVERY 3/1** will be displayed on the command line).
     
 
-[Fixture] [1] [➡️] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).
+[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).
 
 ### Transpose
 
@@ -166,17 +166,17 @@ Transpose is accessed from the Editor Toolbar. It is used to reorder fixture sel
 
 **E.g. 1:**
 
--   Fixture 1 ➡️ 12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12
+-   Fixture 1 ⟶  12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12
     
 
 **E.g. 2:**
 
--   Fixture 1 ➡️ 12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12
+-   Fixture 1 ⟶  12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12
     
 
 **E.g. 3:**
 
--   Fixture 1➡️12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12
+-   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12
 
 ### Pattern
 Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
@@ -461,11 +461,11 @@ Working with Fixtures:
 
 Fixtures are selected using the [FIXTURE] key on the keypad. They also may be stored and recalled using the [GROUP] key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.
 
--   **[+] [-]** ➡️ keys are valid with Fixture selections and Groups.
+-   **[+] [-]** ⟶  keys are valid with Fixture selections and Groups.
     
 -   **[FIXTURE]** ◾ (period) - Reselects the last selection.
     
--   **[FIXTURE]** ➡️ - Reselects all fixtures in the Editor.
+-   **[FIXTURE]** ⟶  - Reselects all fixtures in the Editor.
     
 -   **[CE]** - Backspaces the command line one character at a time but currently will not go back one command at a time.
     
@@ -599,30 +599,41 @@ The Context sensitive area changes depending on the bank and fixture type. Where
 
 ◾ Format - Sets the view format for wheel displays. 
 
-• Percent 
-• Decimal 
-• Text 
-• Text + Percent
+-   Percent 
+
+-   Decimal 
+
+-   Text 
+
+-   Text + Percent
 
 ◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball 
 
-• 8 bit - Blue on [Res] Key 
-• 10 bit - Green on [Res] key 
-• 12 bit - Red on [Res] key 
-• 16 bit - Yellow on [Res] key 
-• 24 bit - Magenta on [Res] key 
+-   8 bit - Blue on [Res] Key
+
+-   10 bit - Green on [Res] key 
+
+-   12 bit - Red on [Res] key 
+
+-   16 bit - Yellow on [Res] key 
+
+-   24 bit - Magenta on [Res] key 
 
 ◾ View - Sets behaviour of smart screen views.
 
-• Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
-• Programming - Maintains the programming display even with the editor released. 
-• Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.
+-   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
+
+-   Programming - Maintains the programming display even with the editor released. 
+
+-   Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.
 
 ◾ Wheel Picker Display Modes: 
 
-• Smart - All wheels for the selected fixture are shown in the interactive wheel picker area. 
-• Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
-• Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
+-   Smart - All wheels for the selected fixture are shown in the interactive wheel picker area. 
+
+-   Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
+
+-   Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
 
 Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor
 
@@ -678,7 +689,7 @@ To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
 
 ◾ AT will appear on the command line 
 
-◾ Type a value from Zero ➡️ Full.
+◾ Type a value from Zero ⟶  Full.
     
 
 ><span style="color:red">@ is only used for the dimmer parameter</span>.
@@ -757,7 +768,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 > Default SET is changed by double pressing the appropriate SET key
 
-> Dimmer is implied, but parameter would normally be specified after  [+➡️ -] and before value.
+> Dimmer is implied, but parameter would normally be specified after  [+⟶  -] and before value.
 
 > **[CE]** will backspace the command line one character at a time. 
 > <span style="color:DodgerBlue">If more than one state is involved, the state will backspace right up until the idle state</span>.
@@ -765,27 +776,27 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 > **[Shift CE]** will clear the command line to the beginning and put the system in an idle state.
 
 
- -   [Fixture] # [+ ➡️ -] [[Full]/[Zero] (@100 and @00 are valid if % or text display format).
+ -   [Fixture] # [+ ⟶  -] [[Full]/[Zero] (@100 and @00 are valid if % or text display format).
         
-    -   [Fixture] # [+ ➡️ -] [@] enter value. Two digits are required to complete value entry.
+    -   [Fixture] # [+ ⟶  -] [@] enter value. Two digits are required to complete value entry.
         
-    -   [Fixture] # [+ ➡️ -] [@] [@] will set values to Full.
+    -   [Fixture] # [+ ⟶  -] [@] [@] will set values to Full.
         
-    -   [Fixture] # [+ ➡️ -] [@] single value, [ENTER]. E.g. [Fixture] [1➡️6] [@] [5] [ENTER] will set a value of 50%. [@] [7] [ENTER] would set a value of 70%.
+    -   [Fixture] # [+ ⟶  -] [@] single value, [ENTER]. E.g. [Fixture] [1⟶ 6] [@] [5] [ENTER] will set a value of 50%. [@] [7] [ENTER] would set a value of 70%.
         
     -   Pressing [ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
         
     -   [Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon)Pop-up under the **Behavior** Tab
         
-    -   [Fixture] # [+ ➡️ -] [@] [+] [value] or [@] [-] [value] will make a relative change to the stage value. E.g. {If the stage value is 50, @ + 10 will set the value to 60. @ - 30 would set the value to 20}. The rules for single digit plus Enter will also apply.
+    -   [Fixture] # [+ ⟶  -] [@] [+] [value] or [@] [-] [value] will make a relative change to the stage value. E.g. {If the stage value is 50, @ + 10 will set the value to 60. @ - 30 would set the value to 20}. The rules for single digit plus Enter will also apply.
         
-    -   [Fixture] # [➡️] #, Parameter, [@] {value] [➡️] [value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].
+    -   [Fixture] # [⟶ ] #, Parameter, [@] {value] [⟶ ] [value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].
         
-    -   [Fixture] # [➡️] # Parameter, [@] [value] [➡️][➡️] [value] will **mirror** fan the range. {1➡➡️100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
+    -   [Fixture] # [⟶ ] # Parameter, [@] [value] [⟶ ][⟶ ] [value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
         
     -   Fixture **Dot** = Restore last. Will have a toolbar equivalent.
         
-    -   Fixture ➡️ = Reeelect Editor. Will have a toolbar equivalent.
+    -   Fixture ⟶  = Reeelect Editor. Will have a toolbar equivalent.
         
     -   Fixtures and Parameters may be deselected using [RELEASE/DE SEL] Key. This leaves values in the editor but not under the control of the wheels.
         
@@ -803,7 +814,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 Vibe features the Smart Window to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: Using parameter wheels:
 
-1.  Fixture # [+ ➡️ -] Tap {Parameter Bank} on the Smart Screen.
+1.  Fixture # [+ ⟶  -] Tap {Parameter Bank} on the Smart Screen.
     
 2.  If the required parameter is not shown on the encoder wheel display, tap the {parameter Bank} to scroll through all available parameter pages.
     
@@ -814,7 +825,7 @@ Vibe features the Smart Window to simplify programming. Programming may also be 
 
 **Direct entry of absolute values:**
 
-1.  Fixture # [+ ➡️ -] Tap {Parameter Bank} on Smart Screen.
+1.  Fixture # [+ ⟶  -] Tap {Parameter Bank} on Smart Screen.
     
 2.  Tap the {Wheel Display} directly above the physical parameter wheel you wish to enter a value for. The wheel display turns red.
     
@@ -823,7 +834,7 @@ Vibe features the Smart Window to simplify programming. Programming may also be 
 
 **Direct entry of values using push wheels:**
 
-1.   Fixture # [+ ➡️ -], Tap {Parameter Bank} on Smart Screen.
+1.   Fixture # [+ ⟶  -], Tap {Parameter Bank} on Smart Screen.
     
 2.  Press physical wheel - Wheel display over the physical wheel turns red.
     
@@ -857,17 +868,17 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 **Release fixtures:**
 
--   Fixture # [+ ➡️ -] [RELEASE]
+-   Fixture # [+ ⟶  -] [RELEASE]
     
 
 **Release a parameter:**
 
--   Fixture # [+ ➡️ -] tap {Bank} select {Parameter}, [RELEASE]
+-   Fixture # [+ ⟶  -] tap {Bank} select {Parameter}, [RELEASE]
     
 
 **Release a Parameter Bank:**
 
--   Fixture # [+ ➡️ -] [VIBE] {Bank} [RELEASE] If a fixture is selected and then is made active (Red), the first press of release, releases the parameter and then the second press releases the whole fixture. All devices are assigned home values for parameters based on the manufacturer's DMX chart. By default, these home values are used to tell the system where fixture parameters should be when they are not in use. Vibe has two options for home values. They can be set in the System Settings pop-up in the {Editing Properties} tab under the Default Stage Values header. System settings is accessed via the Vibe Menu or by tapping on the {*****} icon in the lower right corner of the main monitor controller display.
+-   Fixture # [+ ⟶  -] [VIBE] {Bank} [RELEASE] If a fixture is selected and then is made active (Red), the first press of release, releases the parameter and then the second press releases the whole fixture. All devices are assigned home values for parameters based on the manufacturer's DMX chart. By default, these home values are used to tell the system where fixture parameters should be when they are not in use. Vibe has two options for home values. They can be set in the System Settings pop-up in the {Editing Properties} tab under the Default Stage Values header. System settings is accessed via the Vibe Menu or by tapping on the {*****} icon in the lower right corner of the main monitor controller display.
 
 
 ## Groups
@@ -877,7 +888,7 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 **Storing Groups to SKs:**
 
--   [FIXTURE] [#] [+ ➡️ -] [STORE] tap desired {Group Softkey} - it does not matter if levels are set, they will be ignored.
+-   [FIXTURE] [#] [+ ⟶  -] [STORE] tap desired {Group Softkey} - it does not matter if levels are set, they will be ignored.
     
 
 **Labelling SK Groups:**
@@ -889,7 +900,7 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 **Storing Groups via keypad syntax:**
 
--   [FIXTURE] [#] [+ ➡️ -] [#] [GROUP] [#] [STORE].
+-   [FIXTURE] [#] [+ ⟶  -] [#] [GROUP] [#] [STORE].
     
 -   Pressing the [TEXT] key after any Group store will open the Text Entry popup.
     
@@ -916,9 +927,9 @@ Group Settings Pop-up
 
 **Release a fixture from a Group Method 1:**
 
--   With softkeys: Fixture # [+ ➡️ -], [STORE], tap {Group SK}, Group Efietel pop-up appears, select {Release}
+-   With softkeys: Fixture # [+ ⟶  -], [STORE], tap {Group SK}, Group Efietel pop-up appears, select {Release}
     
--   With keypad: Fixture # [+ ➡️ -], press [GROUP], #, [STORE], Group Efietel pop-up, appears, select {Release}
+-   With keypad: Fixture # [+ ⟶  -], press [GROUP], #, [STORE], Group Efietel pop-up, appears, select {Release}
     
 
 **Release a fixture from a Group Method 2:**

@@ -85,13 +85,13 @@ OR
 
 **Controller quantities and numbering:** Physical and Virtual
 
--   30 pages of 100 Motorized Sliders - Numbered 1.1 ➡️ 30.100
+-   30 pages of 100 Motorized Sliders - Numbered 1.1 ⟶  30.100
     
--   30 pages of 100 Qkeys - Numbered 1.101 ➡️ 30.200
+-   30 pages of 100 Qkeys - Numbered 1.101 ⟶  30.200
     
--   30 pages of 100 Auxiliary Qkeys - Numbered 1.201 ➡️ 30.300
+-   30 pages of 100 Auxiliary Qkeys - Numbered 1.201 ⟶  30.300
     
--   100 Non-motorized Global Sliders - Numbered 301 ➡️ 400
+-   100 Non-motorized Global Sliders - Numbered 301 ⟶  400
     
 -   1 Non-motorized A/B dipless crossfader - Numbered 401
     
@@ -306,11 +306,15 @@ Control Keys: Provide "On the Fly" access to button functions not directly assig
 
 **Control Key Functions:**
 
--   **FLASH** - Momentarily turns on a Controller. 👉 Most useful when locked on with double press.
+-   **FLASH** - Momentarily turns on a Controller. 
+
+👉 Most useful when locked on with double press.
     
 -   **SOLO** - Turns off intensity parameters on all controllers excluding the destination controller.
     
--   **GO/RELEASE** - First press initiates a GO, second press initiates a RELEASE. 👉 Most useful when locked on with double press.
+-   **GO/RELEASE** - First press initiates a GO, second press initiates a RELEASE. 
+
+👉 Most useful when locked on with double press.
     
 -   **ON** - Instantly turns on a controller.
     
@@ -451,17 +455,17 @@ Using the Rate Screen: Large encoder wheels:
     
 2.  Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display. 
    
-  ◾ {Select All} will reselect all loaded controllers for rate control. 
+    ◾ {Select All} will reselect all loaded controllers for rate control. 
   
-  ◾ {Deselect All} will release all selected controllers from rate control 
+    ◾ {Deselect All} will release all selected controllers from rate control 
+     
+    ◾ {Show Active} will release all controllers in the "Selected Controllers" section that are not currently under the control of the rate wheels.
     
-  ◾ {Show Active} will release all controllers in the "Selected Controllers" section that are not currently under the control of the rate wheels.
+3.   Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) ⟶ 3000% (effectively cut time)
     
-3.   Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) --> 3000% (effectively cut time)
+4.  Wheel 2 - {X Fade %} adjusts the "fade vs jump percent of a chaser. Range: 0% (full jump) ⟶  100% (full cross fade)
     
-4.  Wheel 2 - {X Fade %} adjusts the "fade vs jump percent of a chaser. Range: 0% (full jump) --> 100% (full cross fade)
-    
-5.  Wheel 3 - {Intensity Limit} proportionally limits the intensity output of a controller. Range 0% (no intensity output) --> 100% {Intensity controller full}
+5.  Wheel 3 - {Intensity Limit} proportionally limits the intensity output of a controller. Range 0% (no intensity output) ⟶  100% {Intensity controller full}
     
 6.   Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom)
 

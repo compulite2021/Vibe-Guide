@@ -75,7 +75,7 @@ When starting a new show any Timeline views stored in Layouts will be empty and 
     
 4.  Tap the Lock/Unlock icon to enable adding a new view.
     
-5.  On the screen with the blank workspace, open the {Vibe} menu again and select} ➡️{Display Objects} ➡️ {Timeline View} - A blank timeline view will appear on the workspace.
+5.  On the screen with the blank workspace, open the {Vibe} menu again and select} ⟶ {Display Objects} ⟶  {Timeline View} - A blank timeline view will appear on the workspace.
     
 6.  Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.
 
@@ -86,9 +86,9 @@ Timecode connectors for the following:
 
 -   Audio input Combi Jack with: 
 
-◾ Female unbalanced line level input on 1/4" Phone jack 
+    ◾ Female unbalanced line level input on 1/4" Phone jack 
 
-◾ Female 3 pin XLR balanced line level input.
+    ◾ Female 3 pin XLR balanced line level input.
     
 -   5 Pin DIN connector for MIDI and MIDI timecode input.
     
@@ -117,9 +117,9 @@ Recommended quality and level for SMPTE:
     
 2.  For Tap {General} tab and select: 
    
-  ◾ {Local MIDI} to enable the DIN connector MIDI. 
+    ◾ {Local MIDI} to enable the DIN connector MIDI. 
   
-  ◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.
+    ◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.
     
 3.  Tap the {Timecode} tab, the Timecode pop-up will appear.
     
@@ -148,19 +148,19 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
     
 5.  Tap the {Select Clock} drop down in the top left corner and select the timecode source. 
 
-◾ Virtual Local - Use internal timecode clock. 
+    ◾ Virtual Local - Use internal timecode clock. 
 
-◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console. 
+    ◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console. 
 
-◾ Additional options will populate the list depending on the interfaced timecode device.
+    ◾ Additional options will populate the list depending on the interfaced timecode device.
     
 6.  Enable the red {Record} button or the {+ Record} button.
     
     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&token=fb24e6fe-6798-432f-a7d7-b454cf666b76)
     
-◾ Record overwrites existing events. 
+    ◾ Record overwrites existing events. 
     
-◾ + Record adds events to existing events.
+    ◾ + Record adds events to existing events.
     
 7. If using internal TC, press Play.
     
@@ -206,9 +206,9 @@ To insert a marker:
 
 -   Press the + at the desired location when the timeline is running. A marker will be inserted.
     
--   Press ⬅️ to move backwards through the markers.
+-   Press ⟵ to move backwards through the markers.
     
--   Press ➡️ to move forwards through the markers.
+-   Press ⟶  to move forwards through the markers.
     
 -   Press 🗑️ to delete a marker
 

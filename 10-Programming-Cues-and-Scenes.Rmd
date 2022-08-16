@@ -50,7 +50,7 @@
     
 -   Cue may only exist within Qlists.
     
--   Cues may be numbered from 0.001 ➡️ 999.999
+-   Cues may be numbered from 0.001 ⟶  999.999
     
 -   Cues cannot be stored without a Qlist destination.
     
@@ -374,7 +374,7 @@ To assign a Text Label to a Cue:
 
 1.  Make a change to parameter value outputting to the stage.
     
-2.  Type [Qlist] [#] (if destination cue/cues are not on the Master Controller) [CUE] [+ ➡️ -] [CUE] [#] [UPDATE] - Modifications will now be updated to the destination cue selection.
+2.  Type [Qlist] [#] (if destination cue/cues are not on the Master Controller) [CUE] [+ ⟶ -] [CUE] [#] [UPDATE] - Modifications will now be updated to the destination cue selection.
     
 
 Cues may alternately be modified using the universal syntax below:
@@ -441,23 +441,23 @@ Cue Settings pop-up
     
 3.  Three Options are available: 
 
-◾ {Actual Cue} - Copies cue properties as well as stored parameter values 
+    ◾ {Actual Cue} - Copies cue properties as well as stored parameter values 
 
-◾ {State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) 
+    ◾ {State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) 
 
-◾ {Values Only} - Copies only the hard values that are stored in the source cue
+    ◾ {Values Only} - Copies only the hard values that are stored in the source cue
     
 5.   [CUE] [#] [PASTE] - The Cue Only Pop-up will open
     
 6.  Three Options are available: 
 
-◾ {Paste} {Cue Only} 
+    ◾ {Paste} {Cue Only} 
 
-◾ {Paste} {Skip} 
+    ◾ {Paste} {Skip} 
 
-◾{OK} 
+    ◾{OK} 
 
-◾ {Cancel}
+    ◾ {Cancel}
     
 7.   Choose an option and the operation will be completed
     
@@ -742,11 +742,12 @@ Using Cue Setting Pop-Up:
     
 4.  oggle on/off the parameters requiring Parameter Time 
 
-◾ Parameter view may be filtered by banks. 
+  
+    ◾ Parameter view may be filtered by banks. 
 
-◾ Fixtures may be selected and detected freely in the pop-up. 
+    ◾ Fixtures may be selected and detected freely in the pop-up. 
 
-◾ Toggling the parameter header will select reselect all fixtures.
+    ◾ Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -775,10 +776,13 @@ Using Cue Setting Pop-Up:
     
 2.  Press [TIME] - The Time pop-up will open.
     
-3.  Toggle on/of the parameters that require Parameter Time. 
-• Parameter view may be filtered by banks. 
-• Fixtures may be selected and detected freely in the pop-up. 
-• Toggling the parameter header will select reselect all fixtures.
+3.  Toggle on/of the parameters that require Parameter Time.
+
+-   Parameter view may be filtered by banks. 
+
+-   Fixtures may be selected and detected freely in the pop-up. 
+
+-   Toggling the parameter header will select reselect all fixtures.
     
 4.   Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -801,11 +805,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 4.  Toggle on/of the parameters that require Parameter Time. 
 
-◾ Parameter view may be filtered by banks. 
+    ◾ Parameter view may be filtered by banks. 
 
-◾ Fixtures may be selected and detected freely in the pop-up. 
+    ◾ Fixtures may be selected and detected freely in the pop-up. 
 
-◾ Toggling the parameter header will select reselect all fixtures.
+    ◾ Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -821,11 +825,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 4.  If they were not already selected, toggle on/of the parameters that require Parameter Time to be released. 
 
-◾ Parameter view may be filtered by banks. 
+    ◾ Parameter view may be filtered by banks. 
 
-◾ Fixtures may be selected and detected freely in the pop-up. 
+    ◾ Fixtures may be selected and detected freely in the pop-up. 
 
-◾ Toggling the parameter header will select reselect fixtures.
+    ◾ Toggling the parameter header will select reselect fixtures.
     
 5.  Press either the {Release} key over the Time-In wheel or the {Release} over the Delay-In wheel.
     
@@ -845,11 +849,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
 
-◾ Parameter view may be filtered by banks. 
+    ◾ Parameter view may be filtered by banks. 
 
-◾ Fixtures may be selected and detected freely in the pop-up. 
+    ◾ Fixtures may be selected and detected freely in the pop-up. 
 
-◾ Toggling the parameter header will select reselect all fixtures.
+    ◾ Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.
     
@@ -876,11 +880,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
 
-◾ Parameter view may be filtered by banks. 
+    ◾ Parameter view may be filtered by banks. 
 
-◾ Fixtures may be selected and detected freely in the pop-up. 
+    ◾ Fixtures may be selected and detected freely in the pop-up. 
 
-◾ Toggling the parameter header will select reselect all fixtures.
+    ◾ Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.
     

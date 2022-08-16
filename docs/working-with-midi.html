@@ -393,10 +393,10 @@
 <li><p>16 independent MIDI channels - The channels systems listen on.</p></li>
 <li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
 <li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
-<li><p>Note On Velocity of 1 ➡️ 127 - How hard the key is struck.</p></li>
-<li><p>After Touch pressure of 0 ➡️ 127 - Ho muce pressure is applied after the key reaches the bottom.</p></li>
-<li><p>127 controllers each with a range of 0 ➡️ 127 - Encoder wheels or faders.</p></li>
-<li><p>Patch changes from 0 ➡️ 127 - change from one instrument to another.</p></li>
+<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
+<li><p>After Touch pressure of 0 ⟶ 127 - Ho muce pressure is applied after the key reaches the bottom.</p></li>
+<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or faders.</p></li>
+<li><p>Patch changes from 0 ⟶ 127 - change from one instrument to another.</p></li>
 <li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
 <li><p>A section for MIDI time code, and other manufacturer’s “System Exclusive” information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.</p></li>
 </ul>
@@ -411,12 +411,12 @@
 <p><strong>MIDI Time Code</strong> - <span style="color:blue">Not yet implemented</span></p>
 <ul>
 <li><p>MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.</p></li>
-<li><p>MIDI time code is available in the following frame rates:</p></li>
-</ul>
+<li><p>MIDI time code is available in the following frame rates:</p>
 <p>◾ 24 frame/s (standard rate for film work)</p>
 <p>◾ 25 frame/s (standard rate for PAL video)</p>
 <p>◾ 29.97 frame/s (drop-frame timecode for NTSC video)</p>
-<p>◾ 30 frame/s (non-drop timecode for NTSC video)</p>
+<p>◾ 30 frame/s (non-drop timecode for NTSC video)</p></li>
+</ul>
 <blockquote>
 <p>Vibe can receive MIDI time code but does not generate MIDI time code.</p>
 </blockquote>
@@ -440,20 +440,18 @@
 <p><strong>General configuring Vibe MIDI:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source</p></li>
-</ol>
+<li><p>Toggle a MIDI Connection source</p>
 <p>◾ Local MIDI.</p>
 <p>◾ MIDI over USB/MIDI over Ethernet.</p>
-<p>◾ Refresh looks for new connections if devices are added later.</p>
-<ol start="3" style="list-style-type: decimal">
-<li>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</li>
+<p>◾ Refresh looks for new connections if devices are added later.</p></li>
+<li><p>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
 </ol>
 </div>
 <div id="configuring-midi-notes-and-commands" class="section level2 hasAnchor" number="22.3">
 <h2><span class="header-section-number">22.3</span> Configuring MIDI Notes and Commands<a href="working-with-midi.html#configuring-midi-notes-and-commands" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>MIDI Notes and Commands:</strong></p>
 <ul>
-<li><p>The numbers 0 ➡️ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ➡️ G-10.</p></li>
+<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
 <li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
 <li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
 </ul>

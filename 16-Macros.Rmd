@@ -31,7 +31,7 @@ Current Macros can only be created using the **Teach Macro** recorder. In future
 **<span style="color:RoyalBlue">**Record a Macro including timing: Unimplemented**</span>.**
 
 
-1.  Use steps 1 ➡️ 3 to store the macro to the Macro clipboard.
+1.  Use steps 1 ⟶  3 to store the macro to the Macro clipboard.
     
 2.  Press [MACRO] [#] [TIME][STORE] - The Macro is now stored including it's timing.
     

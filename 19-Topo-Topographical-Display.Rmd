@@ -51,7 +51,7 @@ The Topo Menu is a hierarchical menu that provides the tools for creating and ed
 
 **The root menu provides the following sub-menus:**
 
-1.  1.
+1.  
     
   Topo:
     
@@ -101,11 +101,11 @@ c. {Tools}:
     
 7.  Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following: 
    
-   ◾ fixture location on the circumference 
+    ◾ fixture location on the circumference 
     
-   ◾ Radius 
+    ◾ Radius 
    
-   ◾ End point
+    ◾ End point
     
 8.  Point to Point
 
@@ -134,11 +134,11 @@ c. {Tools}:
     
 3.  Presets are supplied for: 
     
-  ◾ Rotate 45° counterclockwise 
+    ◾ Rotate 45° counterclockwise 
     
-  ◾ Rotate 45° clockwise 
+    ◾ Rotate 45° clockwise 
     
-  ◾ Reset
+    ◾ Reset
     
 4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.
 
@@ -222,6 +222,7 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
 3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo
     
 4.  Release the fixtures and they will populate the pixel map. 
+
 👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.
     
 5.  The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture's color mix will be shown. CMY, RGB, and HSV color spaces are supported.

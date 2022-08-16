@@ -22,17 +22,17 @@
 1.  Object Libraries - Pools of system object types.
 -   Common Object Libraries are: 
 
-◾ Group 
+    ◾ Group 
 
-◾ Qlist 
+    ◾ Qlist 
 
-◾ Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
+    ◾ Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
 
-◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
+    ◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
 
-◾ Filters – Pool of user defined flters 
+    ◾ Filters – Pool of user defined flters 
 
-◾ Macro
+    ◾ Macro
 
 >Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.
 
@@ -70,6 +70,7 @@
 
 
 **Store a Library using keypad syntax:**
+
 1.  Press [Fixture] [#] [+ à -] - Select parameter {Bank } on Smart Screen.
     
 2.  Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.
@@ -89,7 +90,23 @@
 
 7. Press [STORE] to complete the sequence.
 
-**A shortcut for Bank selection is to specify a number directly after pressing [LIBRARY] key:** 1 = Intensity bank 2 = Position bank 3 = Color bank 4 = Beam bank 5 = Image 6 = Shape 7 = Custom 8 = Effect
+**A shortcut for Bank selection is to specify a number directly after pressing [LIBRARY] key:**
+
+1 = Intensity bank 
+
+2 = Position bank 
+
+3 = Color bank 
+
+4 = Beam bank 
+
+5 = Image 
+
+6 = Shape 
+
+7 = Custom 
+
+8 = Effect
 
 After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.
 
@@ -139,9 +156,9 @@ Library Settings may be changed at any time after they are created using the Lib
     
 -   Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open. 
 
-◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
+    ◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
 
-◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.
+    ◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.
     
 
 **Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:**

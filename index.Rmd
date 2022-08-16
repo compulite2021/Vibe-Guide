@@ -86,7 +86,7 @@ Choose Shut Down the Console - The console will safely power off.
 
 -   **DMX 512 Output/Input Port** - One of the 8 physical 5 pin XLR connectors on the back of the console. Although the gender is female, any connector may be configured as an input but must use a turnaround adapter.
     
--   **DMX 512 Universe** - Virtual DMX outputs 0 ➡️ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. 
+-   **DMX 512 Universe** - Virtual DMX outputs 0 ⟶ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. 
 
 ◾ Compulite VC protocol 
 
@@ -94,7 +94,7 @@ Choose Shut Down the Console - The console will safely power off.
 
 ◾ sACN
     
--   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ➡️ 1000 = User defined sets
+-   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ⟶ 1000 = User defined sets
     
 -   **Parameter** - An individual feature of a fixture such as dimmer, pan, tilt, color wheel, gobo.
     

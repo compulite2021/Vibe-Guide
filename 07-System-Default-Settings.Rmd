@@ -337,7 +337,7 @@ This option was added to let the users empty the table in case they travel to a 
     
 -   **Exclude from Release All** - The controller will not be released with a global [VIBE]+[RELEASE] command. It may only be unloaded with [RELEASE] [HERE].
     
--   **Prevent from Paging** - Locks a Qlist or Scene to the current page. Paging ⤴️ or ⤵️ will not affect the Qlist or Scene on the controller.
+-   **Prevent from Paging** - Locks a Qlist or Scene to the current page. Paging ⤴ or ⤵ will not affect the Qlist or Scene on the controller.
     
 -   **Prevent from Grab** - The **Grab** command will not capture the controller's active parameters.
     

@@ -390,13 +390,11 @@
 <p>24.1. Network Basics</p>
 <p><strong>Vibe has two user accessible Ethernet networks:</strong></p>
 <ul>
-<li>Data Network - Accessible via the two etherCON connectors on the rear panel.</li>
+<li><p>Data Network - Accessible via the two etherCON connectors on the rear panel.</p>
+<p>◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.</p></li>
+<li><p>General Networks - Accessible via the two RJ45 connectors on the rear panel.</p>
+<p>◾ Used for Network storage of show files and remote diagnostics.</p></li>
 </ul>
-<p>◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.</p>
-<ul>
-<li>General Networks - Accessible via the two RJ45 connectors on the rear panel.</li>
-</ul>
-<p>◾ Used for Network storage of show files and remote diagnostics.</p>
 <p>Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the System Settings pop-up. It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP, (the start address), must match on all devices in the network. Devices on the same network must <strong>not</strong> have identical IP addresses.</p>
 <p><strong>Common Start addresses are:</strong></p>
 <ul>
@@ -431,22 +429,18 @@
 <h2><span class="header-section-number">24.2</span> Connecting to Compulite ePorts<a href="connecting-to-external-devices.html#connecting-to-compulite-eports" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Compulite manufactures the <strong>ePort</strong> brand of DMX over Ethernet nodes. <strong>Supported Protocols:</strong></p>
 <ul>
-<li>ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm)</li>
-</ul>
+<li><p>ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm)</p>
 <p>◾ Compulite VC protocol</p>
-<p>◾ Art-Net v2</p>
-<ul>
-<li>ePort-41 - Current</li>
-</ul>
+<p>◾ Art-Net v2</p></li>
+<li><p>ePort-41 - Current</p>
 <p>◾ sACN pre-release and release versions</p>
 <p>◾ Art-Net 3</p>
-<p>◾ Compulite VC protocol</p>
-<ul>
-<li>ePort-8 and ePort-2</li>
-</ul>
+<p>◾ Compulite VC protocol</p></li>
+<li><p>ePort-8 and ePort-2</p>
 <p>◾ sACN pre-release and release versions</p>
 <p>◾ Art-Net 3</p>
-<p>◾ Compulite VC protocol For more product information, See: ePort Documents</p>
+<p>◾ Compulite VC protocol For more product information, See: ePort Documents</p></li>
+</ul>
 <p>Before an ePort can be connected it should be configured using the CNET Manager software, available at the above link.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FazG0oFLuOppI8XrwMiK8%2F24.2.webp?alt=media&amp;token=439bc413-9d0a-487f-8fff-bc31e829c581" /></p>
 <p><strong>Configuring ePorts:</strong></p>
@@ -464,7 +458,7 @@
 </div>
 <div id="connecting-to-art-net-and-sacn-nodes" class="section level2 hasAnchor" number="24.3">
 <h2><span class="header-section-number">24.3</span> Connecting to Art-Net and sACN Nodes<a href="connecting-to-external-devices.html#connecting-to-art-net-and-sacn-nodes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe currently supports transmission of 256 universes of DMX over Ethernet using the industry standards of Art-Net versions 1 ➡️ 3, ad eACN (ANSI E1.31-2016 standard).</p>
+<p>Vibe currently supports transmission of 256 universes of DMX over Ethernet using the industry standards of Art-Net versions 1 ⟶ 3, ad eACN (ANSI E1.31-2016 standard).</p>
 <p><strong>Enable Art-Net or sACN output:</strong></p>
 <ul>
 <li>Tap {DMX SETTINGS} in the patch toolbar found at the bottom of the Patch Workspace Template. The DMX Properties Pop-up will open.</li>
@@ -477,7 +471,7 @@
 </ol>
 <p>The Vibe is capable of transmitting more than one protocol at a time. To save bandwidth it is also possible to enable only the universes for each protocol that are required. Vibe has separate universe patches for VCs, Art-Net, and sACN. By default, universes are patched 1 to 1 for each protocol. It is possible to reroute universe output destinations. Normally fixtures patched to console source universe 1 would be transmitted on Ethernet destination universe 1 but sometimes when multiple consoles are on line it is desirable to reroute universes to avoid conflicts. Source universe 1 for example could be rerouted to destination universe 101.</p>
 <blockquote>
-<p>The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ➡️ 256 providing the total amount of universes does not exceed the purchased license.</p>
+<p>The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ⟶ 256 providing the total amount of universes does not exceed the purchased license.</p>
 </blockquote>
 <p><strong>Reroute Console Universes:</strong></p>
 <ol style="list-style-type: decimal">
@@ -507,9 +501,9 @@
 <li><p>Tap Add to add a new configuration line</p></li>
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUygtX7FrLFBuX7Jpr2t1%2Fimage.png?alt=media&amp;token=d54d8b49-b039-488e-a894-99812a32711e" /></p>
-<p>On the first line – ports 1➡️ 5 will be sent to IP 172.16.10.10</p>
+<p>On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10</p>
 <p>On the second line – port 5 will be sent also to IP 172.16.10.11</p>
-<p>On the third line – ports 6➡️ 10 will be sent to IP 172.16.10.12</p>
+<p>On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12</p>
 </div>
 <div id="rdm" class="section level2 hasAnchor" number="24.4">
 <h2><span class="header-section-number">24.4</span> RDM<a href="connecting-to-external-devices.html#rdm" class="anchor-section" aria-label="Anchor link to header"></a></h2>

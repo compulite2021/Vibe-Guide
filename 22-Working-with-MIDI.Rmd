@@ -22,13 +22,13 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
     
 -   127 Note OFFs - Lifting off a keyboard.
     
--   Note On Velocity of 1 ➡️ 127 - How hard the key is struck.
+-   Note On Velocity of 1 ⟶  127 - How hard the key is struck.
     
--   After Touch pressure of 0 ➡️ 127 - Ho muce pressure is applied after the key reaches the bottom.
+-   After Touch pressure of 0 ⟶  127 - Ho muce pressure is applied after the key reaches the bottom.
     
--   127 controllers each with a range of 0 ➡️ 127 - Encoder wheels or faders.
+-   127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or faders.
     
--   Patch changes from 0 ➡️ 127 - change from one instrument to another.
+-   Patch changes from 0 ⟶   127 - change from one instrument to another.
     
 -   Pitch bend wheel that has a 14-bit resolution.
     
@@ -50,13 +50,13 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
     
 -   MIDI time code is available in the following frame rates: 
 
-◾ 24 frame/s (standard rate for film work) 
+    ◾ 24 frame/s (standard rate for film work) 
 
-◾ 25 frame/s (standard rate for PAL video) 
+    ◾ 25 frame/s (standard rate for PAL video) 
 
-◾ 29.97 frame/s (drop-frame timecode for NTSC video) 
+    ◾ 29.97 frame/s (drop-frame timecode for NTSC video) 
 
-◾ 30 frame/s (non-drop timecode for NTSC video)
+    ◾ 30 frame/s (non-drop timecode for NTSC video)
     
 
 >Vibe can receive MIDI time code but does not generate MIDI time code.
@@ -90,11 +90,11 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
     
 2.  Toggle a MIDI Connection source 
 
-◾ Local MIDI. 
+    ◾ Local MIDI. 
 
-◾ MIDI over USB/MIDI over Ethernet. 
+    ◾ MIDI over USB/MIDI over Ethernet. 
 
-◾ Refresh looks for new connections if devices are added later.
+    ◾ Refresh looks for new connections if devices are added later.
     
 3.  Press Apply to stay in I/O settings or Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up.
 
@@ -106,7 +106,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 **MIDI Notes and Commands:**
 
--   The numbers 0 ➡️ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ➡️ G-10.
+-   The numbers 0 ⟶  127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.
     
 -   Tabs at the bottom filter the type of MIDI message to be received.
     

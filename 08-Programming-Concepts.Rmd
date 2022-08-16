@@ -106,7 +106,7 @@ Vibe uses a hybrid command syntax.
 
 **When dealing with keypad command line driven operations, the logic is:**
 
--   Source Objects ➡️ Filters ➡️ Options ➡️ Command Completes. (Action Completes Mode)
+-   Source Objects ⟶  Filters ⟶  Options ⟶  Command Completes. (Action Completes Mode)
     
 
 e.g. [Group 1] [Full] [Library 2 (Position) 1] [Enter] [Cue 1] [Store Options] {Red + White} [Store]
