@@ -141,6 +141,7 @@ This option is valid when the layout is unlocked and the view is selected. Showi
 **Layouts:**
 
 -   After all workspaces and associated pages are configured, the display configurations of the workspaces can be saved to a **Layout** by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key. 
+
 A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
     
 -   After configuring external monitors, a layout should be saved to preserve the external monitor layout on reboot.
