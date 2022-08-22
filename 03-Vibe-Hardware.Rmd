@@ -11,11 +11,11 @@ This chapter covers basic specifications.
 
 **The following is covered in this chapter:**
 
--   3.1. Console
--   3.2. Editor Controls
--   3.3. Motorized Sliders and Qkeys
--   3.4. Master Controller and Control Keys
--   3.5. Aux Qkeys, Grand Master, and Global Controllers
+-   [3.1. Console](https://vibemanual.compulite.com/vibe-hardware.html#console)
+-   [3.2. Editor Controls](https://vibemanual.compulite.com/vibe-hardware.html#motorized-sliders-and-qkeys)
+-   [3.3. Motorized Sliders and Qkeys](https://vibemanual.compulite.com/vibe-hardware.html#editor-controls)
+-   [3.4. Master Controller and Control Keys](https://vibemanual.compulite.com/vibe-hardware.html#master-controller-and-control-keys)
+-   [3.5. Aux Qkeys, Grand Master, and Global Controllers](https://vibemanual.compulite.com/vibe-hardware.html#aux-qkeys-grand-master-and-global-controllers)
 
 
 ## Console
@@ -34,13 +34,16 @@ This chapter covers basic specifications.
 
 
 
+
+
+## Editor Controls
+
 <p align="center">
   <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJOCXTVt329PaiHlLxdDM%2F3.2.webp?alt=media&token=e05ff57b-0114-43e5-851a-2980421d8225">
 </p>
 <p align=center> Editor Controls</p>
 
-
- Editor Controls are used to program and edit parameter values for all fixtures as well as create and edit objects such as cues and libraries.
+Editor Controls are used to program and edit parameter values for all fixtures as well as create and edit objects such as cues and libraries.
  
  • **[Vibe]** Key (Shift Key)
  
