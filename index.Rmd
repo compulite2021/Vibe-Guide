@@ -30,10 +30,11 @@ TBA.
 **Desk Light:**
 
 - Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
-- <span style="color:DarkGray">Desk light intensity is controlled in the {System Settings} {Hardware} tab.</span> 
+- <span style="color:Gray">Desk light intensity is controlled in the {System Settings} {Hardware} tab.</span> 
 
-Monitor intensity:
-- <span style="color:DarkGray">Monitor intensity is controlled in the {System Settings} {Hardware} tab.</span> 
+**Monitor intensity:**
+
+- <span style="color:Gray">Monitor intensity is controlled in the {System Settings} {Hardware} tab.</span> 
 
 **Power up the console:**
 
@@ -48,9 +49,9 @@ Monitor intensity:
 - Tap {Exit} - The {Exit Vibe} Pop-up will appear.
 - Tap {Yes} or {No}.
 - The Vibe application will shutdown and a screen will appear with the following options:
-    - <span style="color:DarkGray">{Shut Down the Console} - System will power off.</span>
-    - <span style="color:DarkGray">{Restart Vibe} - Vibe console application will restart.</span>
-    - <span style="color:DarkGray">{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.</span>
+    - <span style="color:Gray">{Shut Down the Console} - System will power off.</span>
+    - <span style="color:Gray">{Restart Vibe} - Vibe console application will restart.</span>
+    - <span style="color:Gray">{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.</span>
 
 - Choose Shut Down the Console - The console will safely power off.
 
