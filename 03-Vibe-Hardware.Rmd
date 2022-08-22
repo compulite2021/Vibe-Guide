@@ -12,8 +12,8 @@ This chapter covers basic specifications.
 **The following is covered in this chapter:**
 
 -   [3.1. Console](https://vibemanual.compulite.com/vibe-hardware.html#console)
--   [3.2. Editor Controls](https://vibemanual.compulite.com/vibe-hardware.html#motorized-sliders-and-qkeys)
--   [3.3. Motorized Sliders and Qkeys](https://vibemanual.compulite.com/vibe-hardware.html#editor-controls)
+-   [3.2. Editor Controls](https://vibemanual.compulite.com/vibe-hardware.html#editor-controls)
+-   [3.3. Motorized Sliders and Qkeys](https://vibemanual.compulite.com/vibe-hardware.html#motorized-sliders-and-qkeys)
 -   [3.4. Master Controller and Control Keys](https://vibemanual.compulite.com/vibe-hardware.html#master-controller-and-control-keys)
 -   [3.5. Aux Qkeys, Grand Master, and Global Controllers](https://vibemanual.compulite.com/vibe-hardware.html#aux-qkeys-grand-master-and-global-controllers)
 
