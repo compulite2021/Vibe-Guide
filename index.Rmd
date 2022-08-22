@@ -20,44 +20,48 @@ This chapter discusses getting started with your Compulite Vibe console.
 TBA.
 
 ## Getting Started
-Power requirements:
+
+**Power requirements:**
 
 - Vibe uses a power supply that supports 90-264V at 47-63 Hz.
 - Approximately 3.2 amps at 230V.
 - Input uses a Neutrik powerCON connector ended with the appropriate male connector for the destination country.
 
-Desk Light:
+**Desk Light:**
 
 - Insert the goose neck desk light into the 3 pin XLR on the rear of the console.
-- Desk light intensity is controlled in the {System Settings} {Hardware} tab. 
+- <span style="color:DarkGray">Desk light intensity is controlled in the {System Settings} {Hardware} tab.</span> 
 
 Monitor intensity:
-- Monitor intensity is controlled in the {System Settings} {Hardware} tab. 
+- <span style="color:DarkGray">Monitor intensity is controlled in the {System Settings} {Hardware} tab.</span> 
 
-Power up the console:
+**Power up the console:**
 
 - Insert the supplied powerCON male connector into the female connector located on the rear of the console. Align the guide slots and turn clockwise untill the connector locks.
 - Turn on the power supply switch above the powerCON connector.
 - Press the Power button located at the upper right corner of the monitor panel above the USB connectors.
 - The operating system will boot and the Vibe console software will automatically launch.
 
-Power down the console:
+**Power down the console:**
 
 - Tap the {Vibe} menu key beside the command line on the main display - The Vibe Menu will open.
-- Tap {⏻ Exit} - The {Exit Vibe} Pop-up will appear.
+- Tap {Exit} - The {Exit Vibe} Pop-up will appear.
 - Tap {Yes} or {No}.
 - The Vibe application will shutdown and a screen will appear with the following options:
-{Shut Down the Console} - System will power off
-{Restart Vibe} - Vibe console application will restart
-{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.
-Choose Shut Down the Console - The console will safely power off.
+    - <span style="color:DarkGray">{Shut Down the Console} - System will power off.</span>
+    - <span style="color:DarkGray">{Restart Vibe} - Vibe console application will restart.</span>
+    - <span style="color:DarkGray">{Open Offline Tool} - the Vibe utilities app will open. Hardware and software updates are preformed in the Offline Tools app.</span>
+
+- Choose Shut Down the Console - The console will safely power off.
 
 ## Guide Conventions
 
 
 - **[XXXX]** - Physical key
 
-- **{XXXX}** - Soft key § [ ] { } - Example
+- **{XXXX}** - Soft key
+
+- **[ ]** **{ }** - Example
 
 - **Press** - Action applied to a physical key
 
@@ -77,7 +81,7 @@ Choose Shut Down the Console - The console will safely power off.
 
 - 👉 **-** Hint or suggestion
 
-- **RED**  **-** Important information or Caution
+- <span style="color:Red">**RED**</span> **-** Important information or Caution
 
 - **[Here]** - Short form for Press an appropriate destination softkey or controller button to complete the command
 
@@ -88,13 +92,19 @@ Choose Shut Down the Console - The console will safely power off.
     
 -   **DMX 512 Universe** - Virtual DMX outputs 0 ⟶ 256 that may be routed to the 8 physical outputs and/or any of the three supported DMX over Ethernet protocols. 
 
-◾ Compulite VC protocol 
+    ◾ Compulite VC protocol 
 
-◾ w Art-Net 3 w 
+    ◾ w Art-Net 3 w 
 
-◾ sACN
+    ◾ sACN
     
--   **SET** = Fixture numbering syste 0 = Fixtures, (Default, includes all sets), 1 = Channels (Conventional fixtures), 2 = Spots (Automated heads and mirrors), 3 = Matrix (LED pixel-based fixtures), 4 = Servers (Video servers), 5 ⟶ 1000 = User defined sets
+-   **SET** = Fixture numbering syste 
+    - 0 = Fixtures, (Default, includes all sets) 
+    - 1 = Channels (Conventional fixtures)
+    - 2 = Spots (Automated heads and mirrors) 
+    - 3 = Matrix (LED pixel-based fixtures) 
+    - 4 = Servers (Video servers) 
+    - 5 ⟶ 1000 = User defined sets
     
 -   **Parameter** - An individual feature of a fixture such as dimmer, pan, tilt, color wheel, gobo.
     
@@ -104,7 +114,7 @@ Choose Shut Down the Console - The console will safely power off.
     
 -   **Master Controller** - Playback section of the console with large [GO], [BACK], [HOLD] keys.
     
--   **Slider** - Slide potentiometer often referred to as a Fader.
+-   **Slider** - Slide potentiometer often referred to as a **Fader**.
     
 -   **Qkey** - A single button Controller.
     
@@ -118,7 +128,7 @@ Choose Shut Down the Console - The console will safely power off.
     
 -   **Qlist** - A Folder containing cues. Each Qlist has its own unique numbering system from 0.001 to 999.999.
     
--   **Cue** - A look (record) contained within a Qlist. Cues contain stored parameter values and properties such as text label and time values.
+-   **Cue** - A look (record) contained within a Qlist. Cues contain stored parameter values **and** properties such as text label and time values.
     
 -   **Scene** - A look that exists independent of a Qlist.
     
@@ -126,14 +136,14 @@ Choose Shut Down the Console - The console will safely power off.
     
 -   **Options** - Used to modify object properties "on the fly"
     
--   **Settings** - Used to modify object properties and behaviors after an object has been created.
+-   **Settings** - Used to modify object properties and behaviors **after** an object has been created.
     
 -   **Cue Zero** - The starting point at the top of a Qlist. Release may or may not return to the top of a Qlist depending on Qlist Properties. Cue Zero will always return to the top of the Qlist. The command Cue 0 GOTO is valid.
     
 
-For the sake of this guide, **Channel, Spot, Matrix, and Server Sets** will be referred to as Fixture because the Fixture Set can reference all the other sets
+>👉 For the sake of this guide, **Channel, Spot, Matrix, and Server Sets** will be referred to as **Fixture** because the Fixture Set can reference all the other sets
 
-Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.
+>👉 Some keys have two functions when used with the [VIBE] key (shift key). In this case, the key label on the bottom is the default, and top label is the shifted function.
 
 ## Releases
 
