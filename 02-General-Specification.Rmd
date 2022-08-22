@@ -9,9 +9,9 @@ This chapter covers basic specifications.
 
 **The following is covered in this chapter:**
 
--   2.1. Controls
--   2.2. I/O
--   2.3. Capacity
+-   [2.1. Controls](https://vibemanual.compulite.com/general-specification.html#controls)
+-   [2.2. I/O](https://vibemanual.compulite.com/general-specification.html#io)
+-   [2.3. Capacity](https://vibemanual.compulite.com/general-specification.html#capacity)
 
 
 ## Controls
@@ -28,7 +28,7 @@ This chapter covers basic specifications.
     
 -   20 **Qkey** controller keys.
     
--   20 Multi-use Auxiliary **Qkeys** .
+-   20 Multi-use **Auxiliary Qkeys** .
     
 -   5 general purpose non-motorized **Global Faders**.
 

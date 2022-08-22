@@ -9,11 +9,11 @@ This chapter discusses getting started with your Compulite Vibe console.
 
 **The following is covered in this chapter:**
 
--   1.1. Unboxing
--   1.2. Getting Started
--   1.3. Guide Conventions
--   1.4. Important Terms
--   1.5  Releases
+-   [1.1. Unboxing](https://vibemanual.compulite.com/index.html#unboxing)
+-   [1.2. Getting Started](https://vibemanual.compulite.com/index.html#getting-started)
+-   [1.3. Guide Conventions](https://vibemanual.compulite.com/index.html#guide-conventions)
+-   [1.4. Important Terms](https://vibemanual.compulite.com/index.html#important-terms)
+-   [1.5  Releases](https://vibemanual.compulite.com/index.html#releases)
 
 ## Unboxing
 
@@ -135,7 +135,7 @@ TBA.
     
 -   **Library** - Container of frequently used fixture parameter values (Bank Library) or system objects (Object Library) . Bank Libraries may be created as referenced or unreferenced. The default for most libraries is referenced.
     
--   **Options** - Used to modify object properties "on the fly"
+-   **Options** - Used to modify object properties "on the fly".
     
 -   **Settings** - Used to modify object properties and behaviors **after** an object has been created.
     
