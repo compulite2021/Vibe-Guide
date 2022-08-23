@@ -380,52 +380,56 @@
 <p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>5.1 Show Menu</li>
-<li>5.2 Load Vector Show</li>
+<li><a href="https://vibemanual.compulite.com/file-management.html#show-menu">5.1 Show Menu</a></li>
+<li><a href="https://vibemanual.compulite.com/file-management.html#load-vector-show">5.2 Load Vector Show</a></li>
 </ul>
 <div id="show-menu" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Show Menu<a href="file-management.html#show-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The Show menu is the first item of the {VIBE} Menu. It contains 5 sub menus:</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fd1qUl43R5aNuzM0Vd4zj%2F5.1.png?alt=media&amp;token=2a502a88-1fe4-4648-8ed2-0606cc272d37" /></p>
 <ol style="list-style-type: decimal">
-<li><p><strong>{New Show}</strong> - Opens the New Show pop-up with options for {Cancel} {Don’t Save} {Save}.</p></li>
+<li><p><strong>{New Show}</strong> - Opens the <strong>New Show</strong> pop-up with options for {Cancel} {Don’t Save} {Save}.</p></li>
 <li><p><strong>{Save Show}</strong> - Directly updates the current show file. A Save Progress pop-up will open and automatically close on completion of the save.</p></li>
 <li><p><strong>{Save Show As…}</strong> - Opens the Save Show/Load Show Browser. New show files may be created or existing files may be overwritten.</p></li>
 <li><p><strong>{Load Show}</strong> - Opens Save Show/Load Show Browser. Shows may be viewed as folders or lists.</p></li>
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRPNEzph0cLWgAv4qbh5L%2F5.1.1.webp?alt=media&amp;token=e14277ce-fdef-434a-b09f-b14005ca425b" /></p>
-<p><strong>Save Show/Load Show Browser</strong></p>
+<p align="center">
+Save Show/Load Show Browser
+</p>
 <ol start="5" style="list-style-type: decimal">
-<li><strong>{Load Vector Show}</strong> - (link)</li>
+<li><strong>{Load Vector Show}</strong> - (<a href="https://vibemanual.compulite.com/file-management.html#load-vector-show">5.2 Load Vector Show</a>).</li>
 </ol>
 </div>
 <div id="load-vector-show" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Load Vector Show<a href="file-management.html#load-vector-show" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Vector Shows may be loaded with the following limitations:</p>
 <p><strong>Devices:</strong></p>
-<p>◾ If a matching device exists in Vibe that device will be used. Modes will be matched.</p>
-<p>◾ If a similar device exists, it will be used. Modes will try to be matched.</p>
-<p>◾ If no match or close match is found, a generic device will be created.</p>
+<pre><code>◾ If a matching device exists in Vibe that device will be used. Modes will be matched. 
+
+◾ If a similar device exists, it will be used. Modes will try to be matched. 
+
+◾ If no match or close match is found, a generic device will be created.</code></pre>
 <p><strong>Patch:</strong></p>
-<p>◾ Vector device parameter DMX will be mapped to Vibe parameter DMX.</p>
+<pre><code>◾ Vector device parameter DMX will be mapped to Vibe parameter DMX.</code></pre>
 <p><strong>Qlists</strong>:</p>
-<p>◾ Qlists will be matched.</p>
+<pre><code>◾ Qlists will be matched.</code></pre>
 <p><strong>Cues and Cue Values:</strong></p>
-<p>◾ Matching Cues will be created with Vector cue parameter values matched to Vibe cue parameter values.</p>
+<pre><code>◾ Matching Cues will be created with Vector cue parameter values matched to Vibe cue parameter values.</code></pre>
 <p><strong>Temp Cues:</strong></p>
-<p>◾ Temp Cues are converted to Vibe Scenes.</p>
+<pre><code>◾ Temp Cues are converted to Vibe Scenes.</code></pre>
 <p><strong>Vector Submasters:</strong></p>
-<p>◾ Submasters are converted to Vibe Scene Submasters.</p>
+<pre><code>◾ Submasters are converted to Vibe Scene Submasters.</code></pre>
 <p><strong>Groups:</strong></p>
-<p>◾ Groups will be matched.</p>
+<pre><code>◾ Groups will be matched.</code></pre>
 <p><strong>Snaps:</strong></p>
-<p>◾ Snaps will be mapped with Vector physical playbacks being mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.</p>
+<pre><code>◾ Snaps will be mapped with Vector physical playbacks being mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.</code></pre>
 <p><strong>Macros:</strong></p>
-<p>◾ Currently not supported.</p>
+<pre><code>◾ Currently not supported.</code></pre>
 <p><strong>Effects:</strong></p>
-<p>◾ Currently not supported but under development.</p>
+<pre><code>◾ Currently not supported but under development.</code></pre>
 <p><strong>Vector Playbacks</strong> ⟶ <strong>Vibe Controllers:</strong></p>
-<p>◾ Paging is matched and all button functions common to Vector and Vibe are matched.</p>
+<pre><code>◾ Paging is matched and all button functions common to Vector and Vibe are matched.</code></pre>
 
 </div>
 </div>

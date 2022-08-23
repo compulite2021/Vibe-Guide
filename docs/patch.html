@@ -380,21 +380,25 @@
 <p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li>6.1. Fixture Sets</li>
-<li>6.1.1 Edit Sets</li>
-<li>6.2. Import Devices</li>
-<li>6.3. Advanced Search</li>
-<li>6.4. Create and Patch imported fixtures</li>
-<li>6.4.1. Drag and Drop Patch</li>
-<li>6.4.2. Modify Patch</li>
-<li>6.5. Configuring Physical DMX 1/0</li>
-<li>6.6. Patching Inputs</li>
-<li>6.7. Parking Addresses and Fixtures</li>
+<li><a href="https://vibemanual.compulite.com/patch.html#fixture-sets">6.1. Fixture Sets</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#import-devices">6.2. Import Devices</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#advanced-search">6.3. Advanced Search</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#create-and-patch-imported-fixtures">6.4. Create and Patch imported fixtures</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#configuring-physical-dmx-10">6.5. Configuring Physical DMX 1/0</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#patching-inputs">6.6. Patching Inputs</a></li>
+<li><a href="https://vibemanual.compulite.com/patch.html#parking-addresses-and-fixtures">6.7. Parking Addresses and Fixtures</a></li>
 </ul>
 <div id="fixture-sets" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Fixture Sets<a href="patch.html#fixture-sets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Like other lighting consoles, Vibe contains an extensive <strong>Device Library</strong> with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. Before a device can be programmed it must be imported and patched to DMX addresses. Vibe has an advanced numbering system that allows devices to be grouped into five familiar categories called <strong>SETS</strong>. Custom <strong>SETS</strong> may also be created. Numbering in all sets may be freely changed if there are no overlapping numbers. Each Set has a unique ID.</p>
-<p><strong>Set ID numbers: 0 = [Fixture]</strong> is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers. <strong>1 = [Channel]</strong> is a numbering set that would normally be used for conventional single parameter devices. <strong>2 = [SPOT]</strong> is a numbering set that would mainly be used for multi-parameter devices like moving lights. <strong>3 = [MATRIX]</strong> is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices) <strong>4 = [SERVER]</strong> is a numbering system used for media servers.</p>
+<p><strong>Set ID numbers:</strong></p>
+<ul>
+<li>0 = <strong>[Fixture]</strong> is a special global numbering set that must also reference one of the other sets. All devices must be assigned a Fixture number and one of the other set numbers.</li>
+<li>1 = <strong>[Channel]</strong> is a numbering set that would normally be used for conventional single parameter devices.</li>
+<li>2 = <strong>[SPOT]</strong> is a numbering set that would mainly be used for multi-parameter devices like moving lights.</li>
+<li>3 = <strong>[MATRIX]</strong> is a numbering set that would mainly be used for RGB or other non-moving LED fixtures. (also useful in pixel mapping devices)</li>
+<li>4 = <strong>[SERVER]</strong> is a numbering system used for media servers.</li>
+</ul>
 <p>Each <strong>SET</strong> may have Fixtures numbered from 1 ⟶ 999999 To patch a device, you must first move focus to the main monitor and press the <a href="patch.html#patch">PATCH</a> Workspace Template key. By default, the first page will contain all the displays needed for patching.</p>
 <div id="edit-sets" class="section level3 hasAnchor" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> Edit Sets<a href="patch.html#edit-sets" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -458,7 +462,7 @@
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FcFXeBwqGbF1LU2qRzhsk%2F6.4.webp?alt=media&amp;token=cdca54cf-4b59-440f-ad0d-d1b0f09960b0" /></p>
 <ol style="list-style-type: decimal">
 <li><p>In the <strong>Create and Patch</strong> fixtures pop-up, type the quantity in the red highlighted field via the keypad or flick/drag to browse the list until the desired quantity number is found then tap the number.</p></li>
-<li><p>If the <strong>Quantity</strong> number is not highlighted in Red, tap the field to make it active.</p></li>
+<li><p>If the <strong>Quantity</strong> number is not highlighted in <span style="color:Red">Red</span>, tap the field to make it active.</p></li>
 <li><p>Press the ⟶ key on the keypad to tab to the next field, or tap in the {SET} field. The appropriate SET for the selected fixture should automatically be selected, but as some fixtures don’t always cleanly fit into standard categories, check that the correct Set is selected. If not, flick/drag to browse to the correct SET then tap it. You may also type the Set number (0-5).</p></li>
 <li><p>Press the ⟶ key on the keypad to tab to the {Set Number} field.</p></li>
 <li><p>Set the Channel, Spot, Matrix, or Server number for the fixture in the red highlighted field using the keypad or scroll to browse the list until the desired start number is found, then tap the number.
@@ -470,7 +474,7 @@
 <li><p>Press the ⟶ key on the keypad to tab to the next field, or tap any number in the <strong>ADDRESS</strong> field.</p></li>
 </ol>
 <blockquote>
-<p>By default, the interval between fixtures of the same type is fixed.
+<p>👉 By default, the interval between fixtures of the same type is fixed.
 Using the INTERVAL field, a custom interval may be set.</p>
 </blockquote>
 <ol start="11" style="list-style-type: decimal">
@@ -482,11 +486,10 @@ Using the INTERVAL field, a custom interval may be set.</p>
 <p>◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the <strong>ADDRESS</strong> field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. <strong>Or</strong></p>
 <p>◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].</p>
 <blockquote>
-<p>Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64
-Universes standard). The system will automatically assign the correct
-universe</p>
-<p>When starting from a {New Show} only {Physical DMX outputs} are
-enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settings}</p>
+<p>👉 Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64U niverses standard). The system will automatically assign the correct universe.</p>
+</blockquote>
+<blockquote>
+<p>👉 When starting from a {New Show} only {Physical DMX outputs} are enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settings}</p>
 </blockquote>
 <div id="drag-and-drop-patch" class="section level3 hasAnchor" number="6.4.1">
 <h3><span class="header-section-number">6.4.1</span> Drag and Drop Patch<a href="patch.html#drag-and-drop-patch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -501,7 +504,9 @@ enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settin
 <li><p><strong>Press and Hold</strong> a fixture, it will turn into a floating icon of the fixture.</p></li>
 <li><p>Drag the fixture icon from the Fixtures list onto the Universe View grid. All associated DMX addresses for the fixture will turn green. Drop the fixture icon on the desired DMX start address for the fixture. - The fixture is now patched.</p></li>
 </ol>
-<p>Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.</p>
+<blockquote>
+<p>👉 Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.</p>
+</blockquote>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFTYnnKHRjr3DV3bFTnMN%2F6.4.1.webp?alt=media&amp;token=7a7991b5-3817-4e6d-8fd0-cbd9c031c839" /></p>
 <p><strong>Make multiple selections of fixtures using the keypad:</strong></p>
 <ol style="list-style-type: decimal">
@@ -514,7 +519,7 @@ enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settin
 <li>Drag and drop the same fixture to multiple DMX offsets.</li>
 </ol>
 <blockquote>
-<p>All types of fixtures may be multi-patched but caution should be used when multi-patching multi-parameter fixtures.</p>
+<p>👉 All types of fixtures may be multi-patched but caution should be used when multi-patching multi-parameter fixtures.</p>
 </blockquote>
 <p><strong>Unpatch fixtures using drag and drop:</strong></p>
 <ol style="list-style-type: decimal">
@@ -525,9 +530,7 @@ enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settin
 </div>
 <div id="modify-patch" class="section level3 hasAnchor" number="6.4.2">
 <h3><span class="header-section-number">6.4.2</span> Modify Patch<a href="patch.html#modify-patch" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<blockquote>
 <p>Once patched fixtures can be modified using keypad syntax or using the two Patch Toolbars in the Patch Workspace.</p>
-</blockquote>
 <p><strong>Toolbar with no fixture selection:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYBzeJ8a39N937xjx5S3n%2F6.4.2.png?alt=media&amp;token=d1b58421-5fff-40dd-8c9a-f14f6944e6c8" /></p>
 <p>◾ {CLEAR PATCH} - Opens up Clear Patch pop-up.</p>
@@ -538,8 +541,9 @@ enabled. Network universes must be enabled in <strong>PATCH</strong> {DMX Settin
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&amp;token=4f322af9-9116-4d1e-b01b-cc15538d482a" /></p>
 <p>◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up.</p>
 <p>◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected.</p>
-<p>◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected.
-See: 20. XYZ Fixture Calibration</p>
+<p>◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected.</p>
+<p>See:
+<a href="https://vibemanual.compulite.com/xyz-fixture-calibration.html">20. XYZ Fixture Calibration</a></p>
 <p>◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup</p>
 <p>◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up</p>
 <p><strong>Modify the patch using keypad syntax:</strong></p>
@@ -549,10 +553,8 @@ See: 20. XYZ Fixture Calibration</p>
 </div>
 <div id="configuring-physical-dmx-10" class="section level2 hasAnchor" number="6.5">
 <h2><span class="header-section-number">6.5</span> Configuring Physical DMX 1/0<a href="patch.html#configuring-physical-dmx-10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<blockquote>
 <p>By default, DMX is mapped to the physical ports on a 1:1 basis.
 DMX is always transmitted but can be remapped to anyone of the supported 256 DMX universes.</p>
-</blockquote>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F373A2JvOjPY60S5OzfN5%2F6.5.png?alt=media&amp;token=2c5c721d-669e-4b91-b171-6abbcc354f10" /></p>
 <p><strong>Remap Physical outputs:</strong></p>
 <ol style="list-style-type: decimal">
@@ -563,25 +565,27 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 </ol>
 <p><strong>Change output to input</strong> - Currently, Vibe supports 2 inputs but multiple connectors may be assigned to the same input.</p>
 <ol style="list-style-type: decimal">
-<li>Tap a patched output - Two additional options will appear below the Output Destination Universe box.</li>
-</ol>
+<li><p>Tap a patched output - Two additional options will appear below the Output Destination Universe box.</p>
 <p>◾ {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input.</p>
-<p>◾ {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.</p>
+<p>◾ {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.</p></li>
+</ol>
 <p><strong>Change input back to output:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Tap a patched input - an additional Make Output option will appear below the Output Destination Universe box.</p></li>
 <li><p>Tap {Make Output} - The Connector will now output DMX.</p></li>
 </ol>
 <p><strong>Change DMX refresh rate:</strong></p>
-<p>◾ Vibe will a<strong>l</strong>ways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.</p>
+<pre><code>◾ Vibe will a**l**ways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.</code></pre>
 </div>
 <div id="patching-inputs" class="section level2 hasAnchor" number="6.6">
 <h2><span class="header-section-number">6.6</span> Patching Inputs<a href="patch.html#patching-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>The following objects may be mapped to DMX inputs</strong>:
-- DMX input mapped directly to the console’s DMX outputs
-- DMX input mapped to Macros
-- DMX input mapped to Controllers
-- DMX input mapped to fixtures</p>
+<p><strong>The following objects may be mapped to DMX inputs</strong>:</p>
+<ul>
+<li><p>DMX input mapped directly to the console’s DMX outputs</p></li>
+<li><p>DMX input mapped to Macros</p></li>
+<li><p>DMX input mapped to Controllers</p></li>
+<li><p>DMX input mapped to fixtures</p></li>
+</ul>
 <p><strong>Map a DMX output to a DMX input:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Press [ADDRESS] [#]</p></li>
