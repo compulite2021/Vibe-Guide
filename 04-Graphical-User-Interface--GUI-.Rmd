@@ -6,14 +6,14 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
 
-- 4.1.   Introduction
-- 4.2.   {VIBE} Menu
-- 4.3    Configuring WorkSpaces
-- 4.4.   Layouts
-- 4.5.   Smart Screen
-- 4.6.   Toolbars
-- 4.7.   Live Display
-- 4.8.   Live Parameter Display
+- [4.1.   Introduction](https://vibemanual.compulite.com/graphical-user-interface-gui.html#introduction-1)
+- [4.2.   {VIBE} Menu](https://vibemanual.compulite.com/graphical-user-interface-gui.html#vibe-menu)
+- [4.3    Configuring WorkSpaces](https://vibemanual.compulite.com/graphical-user-interface-gui.html#configuring-workspaces)
+- [4.4.   Layouts](https://vibemanual.compulite.com/graphical-user-interface-gui.html#layouts)
+- [4.5.   Smart Screen](https://vibemanual.compulite.com/graphical-user-interface-gui.html#smart-screen)
+- [4.6.   Toolbars](https://vibemanual.compulite.com/graphical-user-interface-gui.html#toolbars)
+- [4.7.   Live Display](https://vibemanual.compulite.com/graphical-user-interface-gui.html#live-display)
+- [4.8.   Live Parameter Display](https://vibemanual.compulite.com/graphical-user-interface-gui.html#live-parameter-display)
 
 
 
@@ -29,7 +29,7 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
     
     ◾ Multi-selection via ️️⤴ ⤵ shaped gestures.
     
-    ◾ Multi-selection via window.
+    ◾ <span style="color:Gray">Multi-selection via window.</span>
     
 
 -   Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added using DisplayPort 1.2 or higher MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). The large 21" embedded screen is general-purpose like the external monitors.
@@ -58,9 +58,7 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  **\[PATCH\]**
-    
-    ◾  \[PATCH\]
+    ◾  **[PATCH]**
 	
     ◾  **[PROG]** - (Program) 
 	
@@ -157,7 +155,9 @@ A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
 ## Smart Screen
 
 
-The 11.6" multi-touch monitor embedded in the upper section of the Vibe console is referred to as the **Smart Screen**. The **Smart Screen** is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. **For more detail see:**
+The 11.6" multi-touch monitor embedded in the upper section of the Vibe console is referred to as the **Smart Screen**. The **Smart Screen** is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. 
+
+**For more detail see:**
 
 [9.3.4. Smart Screen](https://compulite2021.github.io/Vibe-Guide/programming-basics.html#smart-screen-1)
 
@@ -247,7 +247,7 @@ Live View Settings pop-up - Display Tab.
 1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
     
 
-2. Use the **{|< }** or **{>|}** keys to move the parameter column forward or backwards.
+2. Use the **{|<}** or **{>|}** keys to move the parameter column forward or backwards.
     
 
 **Move columns to the first or last column position:**
@@ -268,7 +268,7 @@ Live View Settings pop-up - Display Tab.
 
 **Dock** - Locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position. (Group By Banks and All icons in 1 cell are not implemented yet)
 
-**Add Columns** - Columns are added using the Banks section of the pop-up.
+**Add Columns** - Columns are added using the **Banks** section of the pop-up.
 
 1. Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
 
@@ -277,17 +277,17 @@ Live View Settings pop-up - Display Tab.
 3. Tap a parameter that is not already selected in green and it will be added to the end of the column list.
 
 
-><span style="color:Red">Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.
+>👉 <span style="color:Red">Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns.
 </span>.
 
 
-4. Use the **{|< }** or **{>|} {|<< }** or **{>>|}** to position the column.
+4. Use the **{|<}** or **{>|} {|<<}** or **{>>|}** to position the column.
 
 **Interactive Icons:** 
 
   - Adds or removes the icon columns.
 
-><span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
+>👉 <span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
 
 
 
@@ -299,7 +299,7 @@ Live View Settings pop-up - Display Tab.
 
 
 
-><span style="color:Red">Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>
+>👉 <span style="color:Red">Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>
 
 
 
@@ -318,17 +318,17 @@ Live View Settings pop-up - Display Tab.
     
   - Jumps the parameter's column and related bank parameters to the end of the dock position. (First scrollable column). 
 
-**Interactive Fixture Selection:**  
+<span style="color:Gray">**Interactive Fixture Selection:**</span>  
     
-  - Turns on the ability to make fixture selections from the live display grids. 
+  - <span style="color:Gray">Turns on the ability to make fixture selections from the live display grids.</span> 
 
-**Interactive**  **Cell Editing:**  
+<span style="color:Gray">**Interactive**  **Cell Editing:**</span>  
 
-  - Turns on the ability to directly edit cells in the live display grid. 
+  - <span style="color:Gray">Turns on the ability to directly edit cells in the live display grid.</span> 
 
 **Interactive Header selection** - Currently implemented but may not be turned off. 
 
-  - Enables parameters to be directly selected from the live display headers. 
+  - <span style="color:Gray">Enables parameters to be directly selected from the live display headers.</span>
 
 **Submaster Values:** 
 
@@ -383,7 +383,7 @@ Parameters visible in Live Parameter Mode are filtered using the Parameter View 
 
 Fixtures may also be graphically displayed by banks.
 
-**Currently, three banks can be graphically viewed**: Image will be implemented soon.
+**Currently, three banks can be graphically viewed**: <span style="color:Gray">Image will be implemented soon.</span>
 
 -   **Intensity** - In the form of an illuminated disk.
     

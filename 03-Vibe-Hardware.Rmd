@@ -63,7 +63,7 @@ Editor Controls are used to program and edit parameter values for all fixtures a
  
  • Object select keys
  
- • Navigation keys
+ • <span style="color:Gray">Navigation keys</span>
 
 ## Motorized Sliders and Qkeys
 
@@ -87,9 +87,9 @@ Editor Controls are used to program and edit parameter values for all fixtures a
  
  • Libraries
  
- • Macros
+ • <span style="color:Gray">Macros</span>
  
- • Snap
+ • <span style="color:Gray">Snap</span>
 
 
 ## Master Controller and Control Keys
@@ -127,9 +127,9 @@ Editor Controls are used to program and edit parameter values for all fixtures a
 
 <p align=center> Aux Qkeys, Grand Master, Blackout, and General Sliders</p>
 
- • 20 individually paging Auxiliary **Qkey Controllers** for single button execution of Cues, Scenes, Group Selects, Snaps, and Macros.
+ • 20 individually paging Auxiliary **Qkey Controllers** for single button execution of Cues, Scenes, Group Selects,   <span style="color:Gray">Snaps and Macros</span>.
  
- • 5 Non-motorized single button Sliders for execution and control of Scenes, Cues, Group Masters (Submasters), Rate Masters, and Flash Masters.
+ • 5 Non-motorized single button Sliders for execution and control of Scenes, Cues, Group Masters (Submasters), <span style="color:Gray">Rate Masters, and Flash Masters</span>.
  
  • Grand Master Slider.
  
@@ -141,4 +141,4 @@ Editor Controls are used to program and edit parameter values for all fixtures a
 
  • **[PATCH] [PROGRAM]** and **[PLAY-B]** Workspace Template keys available for accessing display pages.
  
- • **[View]**, stores or executes display snapshots.
+ • <span style="color:Gray">**[View]**, stores or executes display snapshots.</span>
