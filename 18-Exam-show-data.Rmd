@@ -1,4 +1,4 @@
-# Exam Viewing show data
+# Exam show data
 
 Virtually all Vibe show data can be viewed using the **Exam** display. The Exam display can be added to any Workspace Template using the Vibe Menu. **Path**: {Vibe}/{Display objects}/{Exam}. It can also opened as a pop-up using the [EXAM] key. The root menu is divided into two main sub menus, {Show} and {Patch} This chapter deals with viewing show and patch data.
 

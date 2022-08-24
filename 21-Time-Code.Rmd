@@ -1,4 +1,4 @@
-# Working With Time Code
+# Time Code
 
 Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.
 
@@ -19,6 +19,7 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
     
 -   [21.6. Markers](https://vibemanual.compulite.com/working-with-time-code.html#markers)
 
+-   21.7. Time Format
 
 ## Timecode and Timeline basics
 
@@ -173,6 +174,16 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
 11.  👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span>
 
 
+**Timeline Features**
+
+To trigger Timeline commands via the panel and Editor Toolbar there is an "Active Timeline View" indicator:
+
+**Grid View Filters**
+
+In the grid view of the Timeline**,** it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&token=7b352b8c-dfaf-402d-a9fc-5e986b395212)
+
 
 
 ## Executing and Editing Events
@@ -193,6 +204,109 @@ To Execute timeline events:
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&token=985e10f0-a809-4482-8112-763a2766724b)
 
 
+**Moving Events**
+
+It is possible to change selected event times via the physical wheels.
+
+There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.
+
+This option is available under the *Move Selection* sub-menu of the Timeline view (*Wheel On, Wheel Off*).
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&token=5e0244e3-c571-48b0-b1c1-2d72b0778999)
+
+Then there will be 2 physical wheels that are available for use:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&token=f1407bc6-fecc-4f8c-9615-f8a7541966dd)
+
+The left one is for moving the selected events.
+
+The right one is to change the time resolution for the current time movement.
+
+
+**Events Selection**
+
+To Select timeline events:
+
+- Tap on a single event – toggles the event selection
+
+- Tap on a playback box – toggles the playback selection
+
+- Tap on a marker – toggles the marker selection
+
+- Rectangle draw using touch and drag – toggles all the events inside the rectangle
+
+- Double-tap an empty area – clear the selection
+
+- Double tap on the time bar – sets the current time to the selected time
+
+- Long click an event and drag – moves the position of all the selected events
+
+- Double finger vertical scroll on the view – will scroll the Timelines
+
+- Double finger horizontal scroll on the time bar – will scroll the time bar
+
+<span style="color:Red">**Important!**</span>
+
+Selecting one object type (i.e. Playback, Event, Marker…) will clear all other objects selection. 
+
+Selection can have only one type of objects at a time.
+
+
+**State Machine Support**
+
+To trigger Timeline commands via the panel and Editor Toolbar there is an "Active Timeline View" indicator:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&token=87396a0f-bdd3-4e7c-aee1-65341332d0e3)
+
+
+If there are more than 1 Timeline Views on the layout, only 1 of them can be the "Active" one.
+
+Tapping the white header of the view will select the current view as the "Active" and will remove the Active sign from the other views.
+
+<span style="color:Red">**Important!**</span>
+
+Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.
+
+The available commands from the panel or the Editor Toolbar are split into 2 levels:
+
+**Commands for the View**
+
+These commands will affect the Active Timeline View.
+
+1. Go to idle state
+
+2. Press *Timeline* from the panel
+
+3. You see on the Editor Toolbar the available commands:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204)
+
+
+**Commands for Timelines**
+
+These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the "Active Timeline View".
+
+1. Go to idle state
+
+2. Press Timeline # (+#, ⟶#, etc.)
+
+3. You see on the Editor Toolbar the available commands:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzgT27J7izwv0ermWLplh%2Fimage.png?alt=media&token=8ebdbcb1-4cfc-4f5d-a4db-a219ef3f88d3)
+
+
+4. Sequence may also end with:
+
+	 **a.** Store – will create the timelines if they are not already created
+
+	 **b.** Delete – will delete the timelines if they exist
+
+	 **c.** Text – will open text box to give a name to the selected timelines
+
+	 **d.** Copy – will add the timelines to the clipboard 
+	 
+	 **e.**Paste – 		 	will paste the copied timelines from the clipboard
+	
 
 ## Markers
 
@@ -211,4 +325,15 @@ To insert a marker:
 -   Press ⟶  to move forwards through the markers.
     
 -   Press 🗑️ to delete a marker
+
+
+## Time Format
+
+It is possible to view the timeline and events data in different time
+formats.
+
+The default time format is milliseconds, but it is also possible to use FPS format. The time format selection is possible via the view's menu.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbo29Yc2ouM4IM1uP84Nl%2Fimage.png?alt=media&token=103f9e9d-1202-4ccc-bf97-7694f1762c3a)
+
 

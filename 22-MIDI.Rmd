@@ -1,4 +1,4 @@
-# Working with MIDI
+# MIDI
 This chapter deals with configuring and assigning MIDI 
 
 **The following is covered in this chapter:**

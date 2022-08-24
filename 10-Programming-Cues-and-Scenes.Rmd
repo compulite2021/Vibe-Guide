@@ -16,7 +16,8 @@
 - [10.11. Cue Time Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-time-properties)
 - [10.12. Additional Cue Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#additional-cue-properties)
 - [10.13. Parameter Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#parameter-time)
-- [10.14. Group Submasters](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
+- [10.14. Parameter Profile](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
+- 10.15.  Group Submasters
 
 ## What Are Qlists, Cues, Scenes, and Submasters?
 
@@ -891,16 +892,74 @@ See Also: 10.9. Modifying Cues and Scenes
 See:** 10.13.2. Adding or Modifying Parameter Time after Cue Creation.
 
 
+**Cell Time Fan**
+
+The following command combination enables a cell time fan without the need to touch the screen and set the time with the wheel.
+
+To Set Fan Cell Time:
+
+1. Select Fixtures
+    
+
+2. Give values to a parameter
+    
+
+3. Press Time
+    
+
+4. Popup opens
+    
+5. Press #→# and *ENTER* The first number is the base for the fan and the second number is the end value of the fan. In the picture below there is a fan between 2 and 6 seconds.
+    
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYEcjecqiWJTijSC3aOss%2Fimage.png?alt=media&token=85286838-edf2-4ba4-9bb8-f6263938dca5)
+
+
+## Parameter Profile
+
+Profile determine a parameter's behavior during a fade.
+Profiles are always relative to the fade time.
+Profile options are available in a popup that is triggered from a button on the toolbar named Profile. This button is valid once there is a valid parameter selection.
+
+Profile examples:
+- Linear (default) – on go, the parameter fades in cue time to its new level
+- Jump on Start (One) – on go, the parameter jumps to its level
+- Jump on End – when the fade is complete, the parameter jumps to its new level
+- Jump on 50% (Step) – when the fade reaches 50% of the cue time, the parameter jumps to its new level
+Any function from the system functions can be applied as a profile.
+
+**To Set a Parameter Profile**
+1. Select fixtures
+2. Select parameter(s)
+3. On the Editor Toolbar tap Profile
+4. Popup opens
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXCDZmHO4jg72bW1JVSVs%2Fimage.png?alt=media&token=ed2329aa-2f95-4960-9bd5-59f2e33e2496)
+
+**Popup Options**
+
+On the left side, there is a list of active parameters in the editor. Colored are the parameters that the settings will be applied to. User can switch a parameter on or off.
+
+In the middle, there is a list of functions. User may select the desired function as the profile for the parameters.
+
+On the right side, there are options that can be changed and explained in the table below.
+
+User may apply the popup with nothing selected on the options or with all the options active.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLqWbq2vRc7qd5hTBDaHm%2Fimage.png?alt=media&token=2d3405fd-5406-4102-a85c-049a4a5cf82f)
+
+
+
 ## Group Submasters
 
 
 **Group Submasters:**
 
--   10.14.1. Convert a Scene into a Group Submaster
+-   10.15.1. Convert a Scene into a Group Submaster
     
--   10.14.2. Assign a Group Submater directly to a Slider Controller
+-   10.15.2. Assign a Group Submater directly to a Slider Controller
     
--   10.14.3. Assign a Group Submaster using existing Groups
+-   10.15.3. Assign a Group Submaster using existing Groups
 
 
 ### Convert a Scene into a Group Submaster

@@ -1,4 +1,4 @@
-# Working with Multiple Consoles
+# Multi-User
 
 
 **The following is covered in this chapter:**
@@ -6,7 +6,7 @@
 - [26. Working with Multiple Consoles](https://vibemanual.compulite.com/working-with-multiple-consoles.html#working-with-multiple-consoles-1)
 
 
-## Working with Multiple Consoles
+## Multi-User
 
 <span style="color:blue">Not yet implemented</span>.
 

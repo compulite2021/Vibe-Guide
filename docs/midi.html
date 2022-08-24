@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 19 Topo Topographical Display | vibe-manual.knit</title>
+  <title>Chapter 22 MIDI | vibe-manual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 19 Topo Topographical Display | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 22 MIDI | vibe-manual.knit" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 19 Topo Topographical Display | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 22 MIDI | vibe-manual.knit" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="exam-show-data.html"/>
-<link rel="next" href="xyz-fixture-calibration.html"/>
+<link rel="prev" href="time-code.html"/>
+<link rel="next" href="media-servers.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -380,196 +380,159 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="topo-topographical-display" class="section level1 hasAnchor" number="19">
-<h1><span class="header-section-number">Chapter 19</span> Topo Topographical Display<a href="topo-topographical-display.html#topo-topographical-display" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>It is sometimes useful to organize fixture selection in a graphical manner instead of numerical lists. In Vibe this is referred to as the TOPO (Topographical) map display. Other console may refer to this feature as “Layouts”, “Magic Sheets”, or “Rig” Schematics”.</p>
+<div id="midi" class="section level1 hasAnchor" number="22">
+<h1><span class="header-section-number">Chapter 22</span> MIDI<a href="midi.html#midi" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter deals with configuring and assigning MIDI</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo-view">19.1. Creating a Topo View</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#topo-menu">19.2. Topo Menu</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo">19.3. Creating a Topo</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo">19.4. Adding fixtures to a Topo</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-pixel-maps">19.5. Adding Pixel Maps</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-text-and-background-elements">19.6. Adding text and background elements</a></li>
+<li><a href="https://vibemanual.compulite.com/working-with-midi.html#what-is-midi">22.1. What is MIDI</a></li>
+<li><a href="https://vibemanual.compulite.com/working-with-midi.html#general-midi-configuration">22.2. General MIDI Configuration</a></li>
+<li><a href="https://vibemanual.compulite.com/working-with-midi.html#configuring-midi-notes-and-commands">22.3 Configuring MIDI Notes and Commands</a></li>
+<li><a href="https://vibemanual.compulite.com/working-with-midi.html#midi-show-control">22.4. MIDI Show Control</a></li>
+<li><a href="https://vibemanual.compulite.com/working-with-midi.html#midi-time-code">22.5 MIDI Time Code</a></li>
 </ul>
-<div id="creating-a-topo-view" class="section level2 hasAnchor" number="19.1">
-<h2><span class="header-section-number">19.1</span> Creating a Topo View<a href="topo-topographical-display.html#creating-a-topo-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTDS2G9ZiwCKwHmLfetSe%2F19.1%20topo.png?alt=media&amp;token=4bc1efc8-ebaa-4d30-8fe0-7c5ce82c1a5e" /></p>
-<p><strong>Topo View in {LIVE} mode displaying the “Movers” Topo</strong></p>
-<p><strong>To add a Topo view to a page:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap {Vibe} on the monitor that will display the Topo - Vibe menu will open.</p></li>
-<li><p>Tap {Pages} - Page display will open.</p></li>
-<li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
-<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ®{Display Objects} ® {Topo View} - A blank Topo view will appear on the workspace.</p></li>
-<li><p>Size and drag the Topo display as required then tap {unlock/lock} icon to lock the Topo from further adjustment - Topo display is now ready to add fixtures to.</p></li>
-<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
-<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
-<li><p>Select the stage point of view. The default is Top view.</p></li>
-<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
-</ol>
-</div>
-<div id="topo-menu" class="section level2 hasAnchor" number="19.2">
-<h2><span class="header-section-number">19.2</span> Topo Menu<a href="topo-topographical-display.html#topo-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXFlu7uvTzBI5S6Apzy3g%2F19.2.png?alt=media&amp;token=3b60e416-8286-4949-b75a-a8223de3da3a" /></p>
-<p>​</p>
-<p><strong>The root menu provides the following sub-menus:</strong></p>
-<ol style="list-style-type: decimal">
-<li></li>
-</ol>
-<p>Topo:</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&amp;token=7277a796-bf80-4991-a343-94ad8f13f621" /></p>
-<p>​
-2. Actions:</p>
-<ol style="list-style-type: lower-alpha">
-<li>{Add Elements} - accesses the following:</li>
-</ol>
-<ol style="list-style-type: decimal">
-<li><p>{Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. 6.1. Fixture Sets. 19.4. Adding fixtures to a Topo.</p></li>
-<li><p>{Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps</p></li>
-</ol>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>{Selection} - May be used in Live mode or Edit mode.</li>
-</ol>
+<div id="what-is-midi" class="section level2 hasAnchor" number="22.1">
+<h2><span class="header-section-number">22.1</span> What is MIDI<a href="midi.html#what-is-midi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer. It is a control protocol and does not transmit audio. Over the years the MIDI protocol has evolved to also be a popular way to synchronize and “Play” lighting equipment. MIDI is based around a 7-bit architecture and therefore has a theoretical 127 possible notes for a keyboard. (Most pianos use 88 notes and synthesizers use even less)</p>
+<p><strong>In the basic MIDI implementation it is possible to have:</strong></p>
+<ul>
+<li><p>16 independent MIDI channels - The channels systems listen on.</p></li>
+<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
+<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
+<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
+<li><p>After Touch pressure of 0 ⟶ 127 - Ho muce pressure is applied after the key reaches the bottom.</p></li>
+<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or faders.</p></li>
+<li><p>Patch changes from 0 ⟶ 127 - change from one instrument to another.</p></li>
+<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
+<li><p>A section for MIDI time code, and other manufacturer’s “System Exclusive” information. In lighting, we often assign matching notes and controllers to common keys and wheels to synchronize playback.</p></li>
+</ul>
 <blockquote>
-<p>Selections must start out side of the fixture.</p>
+<p>E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ’s frequently control lighting via MIDI touchpad controllers.</p>
 </blockquote>
-<ol style="list-style-type: decimal">
-<li><p>Select by creating a rectangular lasso. - Dragging from left to right or right to left to create a rectangle around or through the objects.</p></li>
-<li><p>Select by creating a free-form path, dragging through objects.</p></li>
-<li><p>De-select all.</p></li>
-<li><p>Delete selected (only valid in Edit Mode).</p></li>
-<li><p>Snap to grid - Fixtures and object will snap to the nearest grid node.</p></li>
-<li><p>Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.</p></li>
-</ol>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>{Tools}:</li>
-</ol>
-<ol style="list-style-type: decimal">
-<li><p>{Align}:</p></li>
-<li><p>Left</p></li>
-<li><p>Center</p></li>
-<li><p>Right</p></li>
-<li><p>Top</p></li>
-<li><p>Middle</p></li>
-<li><p>Bottom</p></li>
-<li><p>Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following:</p>
-<p>◾ fixture location on the circumference</p>
-<p>◾ Radius</p>
-<p>◾ End point</p></li>
-<li><p>Point to Point</p></li>
-<li><p>{Align to Point} - A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.</p></li>
-<li><p>{Spread} (Fan) - When Spread is selected, a horizontal virtual modifier wheel will appear. The following spread options are available:</p></li>
-<li><p>Spread horizontally from left</p></li>
-<li><p>Spread horizontally from center</p></li>
-<li><p>Spread horizontally from right</p></li>
-<li><p>spread vertically from top</p></li>
-<li><p>Spread vertically from middle</p></li>
-<li><p>Spread vertically from bottom</p></li>
-<li><p>{Transform} - Used to modify size and rotation of Topo objects. Horizontal virtual wheels will appear for the following:</p></li>
-<li><p>Scale</p></li>
-<li><p>Rotate</p></li>
-<li><p>Presets are supplied for:</p>
-<p>◾ Rotate 45° counterclockwise</p>
-<p>◾ Rotate 45° clockwise</p>
-<p>◾ Reset</p></li>
-<li><p>{Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.</p></li>
-</ol>
-</div>
-<div id="creating-a-topo" class="section level2 hasAnchor" number="19.3">
-<h2><span class="header-section-number">19.3</span> Creating a Topo<a href="topo-topographical-display.html#creating-a-topo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>To create a new Topo:</strong> Navigate to a Topo view</p>
-<ol style="list-style-type: decimal">
-<li>Tap the {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} key in the Topo Menu at the right hand side of the Topo view display - The “Create New Topo” pop-up will appear</li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdbnMzNTAiuRmv8Gch2g2%2F19.3.webp?alt=media&amp;token=ca062ed5-c7e8-4c08-ac9b-ff74f9a497ba" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
-<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
-<li><p>Select the stage point of view. The default is Top view.</p></li>
-<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> aor press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
-</ol>
-</div>
-<div id="adding-fixtures-to-a-topo" class="section level2 hasAnchor" number="19.4">
-<h2><span class="header-section-number">19.4</span> Adding fixtures to a Topo<a href="topo-topographical-display.html#adding-fixtures-to-a-topo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are two ways to add fixtures to a Topo <strong>Using keypad selection</strong>:</p>
-<ol style="list-style-type: decimal">
-<li><p>Press zoom option {FIT STAGE TO SCREEN} on the toolbar at the bottom of the Topo View to see the whole stage area.</p></li>
-<li><p>Select the fixtures using the keypad or a group.</p></li>
-<li><p>Tap {FROM EDITOR} on the toolbar at the bottom of the Topo View.</p></li>
-<li><p>Selected fixtures will now appear in the top right section of the Topo.</p></li>
-<li><p>initially, the fixtures will be selected (outlined in red), and can be dragged freely into place.</p></li>
-<li><p>Double tap in a clear space on the TOPO to deselect.</p></li>
-</ol>
+<p><strong>MIDI Show Control or MSC -</strong> <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p></li>
+<li><p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia</p></li>
+</ul>
+<p><strong>MIDI Time Code</strong> - <span style="color:blue">Not yet implemented</span></p>
+<ul>
+<li><p>MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.</p></li>
+<li><p>MIDI time code is available in the following frame rates:</p>
+<p>◾ 24 frame/s (standard rate for film work)</p>
+<p>◾ 25 frame/s (standard rate for PAL video)</p>
+<p>◾ 29.97 frame/s (drop-frame timecode for NTSC video)</p>
+<p>◾ 30 frame/s (non-drop timecode for NTSC video)</p></li>
+</ul>
 <blockquote>
-<p><span style="color:Red">If the {From Editor} key is selected with a long press (held for a few seconds) the fixtures may be directly dragged from the {From Editor} area. Only a maximum of 5 fixture icons will be shown but the whole selection will actually be there. Drag the fixtures to a location on the Topo view and release. The actual fixtures will now appear on the Topo surface. <strong>The reference point for dropping is the fixtures is the top left corner of the dragged fixture icons.</strong></span></p>
+<p>Vibe can receive MIDI time code but does not generate MIDI time code.</p>
 </blockquote>
-<p>Using {ADD ELELMENTS} from the Topo menu:</p>
+<p><strong>Local MIDI:</strong></p>
+<ul>
+<li>MIDI is generated and received from the 5 pin DIN connectors on the back of the console.</li>
+</ul>
+<p><strong>MIDI over USB:</strong></p>
+<ul>
+<li>Transmits and receives MIDI over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</li>
+</ul>
+<p><strong>MIDI over Ethernet:</strong></p>
+<ul>
+<li>Windows class compliant MIDI over Ethernet is supported. Compulite VC MIDI over Ethernet is also supported.</li>
+</ul>
+</div>
+<div id="general-midi-configuration" class="section level2 hasAnchor" number="22.2">
+<h2><span class="header-section-number">22.2</span> General MIDI Configuration<a href="midi.html#general-midi-configuration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>I/O General:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLfFsHYyFscSxarwfepfu%2F22.2.webp?alt=media&amp;token=7b0b4729-7618-47fb-819f-c2cc7c95c2ec" /></p>
+<p><strong>General configuring Vibe MIDI:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Create the Topo</p></li>
-<li><p>From the Topo menu tap {ADD ELEMENTS}</p></li>
-<li><p>From the drop down, tap {SETS}</p></li>
-<li><p>From the next drop down, select a fixture set - A list of the fixture in the set will drop down.</p></li>
-<li><p>From the fixture list, select the fixtures to drag onto the Topo.</p></li>
-<li><p>Press, hold and drag the fixtures onto the Topo surface.</p></li>
-<li><p>Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.19.2. Topo Menu.</p></li>
+<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
+<li><p>Toggle a MIDI Connection source</p>
+<p>◾ Local MIDI.</p>
+<p>◾ MIDI over USB/MIDI over Ethernet.</p>
+<p>◾ Refresh looks for new connections if devices are added later.</p></li>
+<li><p>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
 </ol>
 </div>
-<div id="adding-pixel-maps" class="section level2 hasAnchor" number="19.5">
-<h2><span class="header-section-number">19.5</span> Adding Pixel Maps<a href="topo-topographical-display.html#adding-pixel-maps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. Matrix fixtures may be selected by blocks using the rectangle lasso selection tool, or free-form path tool.</p>
-<p><strong>To create a new pixel mapper:</strong></p>
+<div id="configuring-midi-notes-and-commands" class="section level2 hasAnchor" number="22.3">
+<h2><span class="header-section-number">22.3</span> Configuring MIDI Notes and Commands<a href="midi.html#configuring-midi-notes-and-commands" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>MIDI Notes and Commands:</strong></p>
+<ul>
+<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
+<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
+<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
+</ul>
+<blockquote>
+<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+</blockquote>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4VPqNUiOZuUAJ3DO9bYY%2F22.3.webp?alt=media&amp;token=46e4c67b-244b-42f9-b9cc-d364a6c10b64" /></p>
+<p><strong>Assign MIDI Notes to Controllers:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
-<li><p>From the {Add Elements} drop down, tap {Pixel Mapper} - The Create New Pixel Mapper pop-up will appear.</p></li>
+<li><p>Enable Notes in or Notes out.</p></li>
+<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Note</strong> (Note ON = press down on controller key, Note off = release of controller key).</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
 </ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Ff9zc1asl0cfTClSVXoI1%2F19.5.webp?alt=media&amp;token=6349e1a5-6671-4d96-9be8-09a19688a2c1" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Fill in the number of columns and rows and set the start position and direction.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and create the blank pixel map.</p></li>
-<li><p>👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.</p></li>
-<li><p>Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo</p></li>
-<li><p>Release the fixtures and they will populate the pixel map.</p></li>
-</ol>
-<p>👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.</p>
-<ol start="5" style="list-style-type: decimal">
-<li>The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture’s color mix will be shown. CMY, RGB, and HSV color spaces are supported.</li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FebGZvb6DGOYtyqaGKSdZ%2F19.5.1.webp?alt=media&amp;token=5f033d65-2db7-4ba0-918e-7980aade9cc9" /></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FM8tXegFlpqyJ9QGo4FY0%2F91.5.2.webp?alt=media&amp;token=dd690b9b-aa5a-4f0a-a8e2-a8f137b1f78a" /></p>
+<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Multiple pixel mappers may be added to the same Topo along with other objects.</p></li>
-<li><p>👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.</p></li>
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
+<li><p>Tap {Teach } -The Teach key will turn purple.</p></li>
+<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
 </ol>
+<p><strong>Assign Macros to a MIDI note:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Note</strong>.</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press [MACRO] - The Macro selector pop-up will appear.</p></li>
+<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Press the <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up.</p></li>
+</ol>
+<p><strong>Additional functions:</strong></p>
+<ul>
+<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
+<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
+<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
+<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
+</ul>
 </div>
-<div id="adding-text-and-background-elements" class="section level2 hasAnchor" number="19.6">
-<h2><span class="header-section-number">19.6</span> Adding text and background elements<a href="topo-topographical-display.html#adding-text-and-background-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Additional elements may be added to a Topo. Currently available are {Text Label} and {Add Background} To add</p>
-<p><strong>Text labels:</strong></p>
+<div id="midi-show-control" class="section level2 hasAnchor" number="22.4">
+<h2><span class="header-section-number">22.4</span> MIDI Show Control<a href="midi.html#midi-show-control" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices. Basic MSC commands are:</p>
+<ul>
+<li><p>Go</p></li>
+<li><p>Stop</p></li>
+<li><p>Fire - Generally used for macros</p></li>
+</ul>
+<p>Also supported on <strong>receive</strong> are:</p>
+<ul>
+<li><p>All fixtures</p></li>
+<li><p>General lights</p></li>
+<li><p>Moving lights</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&amp;token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a" /></p>
+<p>To receive MSC:</p>
 <ol style="list-style-type: decimal">
-<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
-<li><p>From the drop down, tap {Text Label} - The Create Label pop-up will appear.</p></li>
+<li><p>Tap {Enable In}</p></li>
+<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
+<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
+<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. To Transmit MSC: This function is currently under development.</p></li>
 </ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHsLe6IRkyI2sKrNgJoaU%2F19.6.png?alt=media&amp;token=9c3717a4-6eee-4d68-8cd5-49c6273f7953" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Close the pop-up and the test label will appear on the Topo surface.</p></li>
-<li><p>Drag the label to the desired location.</p></li>
-<li><p>Transpose tools may be used to size and rotate the label.</p></li>
-</ol>
-<p>Backgrounds such as studio layouts and rig elements may be added to the Topo.</p>
-<p><strong>To add a Background to a Topo:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Prepare a USB stick with a JPEG, BMP, or PNG piece of content.</p></li>
-<li><p>Insert the USB stick into one of the Vibe’s USB ports.</p></li>
-<li><p>From the Topo Actions menu, tap {Add Elements}.</p></li>
-<li><p>Tap {Add Background} - A browser pop-up will appear.</p></li>
-<li><p>Select the USB stick and click on the desired content - Once imported, the content may be found in the default local directory on the hard-drive under D:<br />
-</p></li>
-<li><p>Tap {Load}, [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.</p></li>
-<li><p>To remove the background tap {Remove Background}</p></li>
-</ol>
+<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+</div>
+<div id="midi-time-code" class="section level2 hasAnchor" number="22.5">
+<h2><span class="header-section-number">22.5</span> MIDI Time Code<a href="midi.html#midi-time-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>See:
+21.3. Configuring Timecode</p>
 
 </div>
 </div>
@@ -578,8 +541,8 @@
           </div>
         </div>
       </div>
-<a href="exam-show-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="xyz-fixture-calibration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="time-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="media-servers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

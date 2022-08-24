@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 19 Topo Topographical Display | vibe-manual.knit</title>
+  <title>Chapter 21 Time Code | vibe-manual.knit</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 19 Topo Topographical Display | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 21 Time Code | vibe-manual.knit" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 19 Topo Topographical Display | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 21 Time Code | vibe-manual.knit" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="exam-show-data.html"/>
-<link rel="next" href="xyz-fixture-calibration.html"/>
+<link rel="prev" href="xyz-fixture-calibration.html"/>
+<link rel="next" href="midi.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -380,196 +380,209 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="topo-topographical-display" class="section level1 hasAnchor" number="19">
-<h1><span class="header-section-number">Chapter 19</span> Topo Topographical Display<a href="topo-topographical-display.html#topo-topographical-display" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>It is sometimes useful to organize fixture selection in a graphical manner instead of numerical lists. In Vibe this is referred to as the TOPO (Topographical) map display. Other console may refer to this feature as “Layouts”, “Magic Sheets”, or “Rig” Schematics”.</p>
-<p><strong>The following is covered in this chapter:</strong></p>
+<div id="time-code" class="section level1 hasAnchor" number="21">
+<h1><span class="header-section-number">Chapter 21</span> Time Code<a href="time-code.html#time-code" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.</p>
+<blockquote>
+<p><span style="color:Red">This feature is under development and this section is preliminary.</span>.</p>
+</blockquote>
+<p><strong>The following is covered in this section:</strong></p>
 <ul>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo-view">19.1. Creating a Topo View</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#topo-menu">19.2. Topo Menu</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo">19.3. Creating a Topo</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo">19.4. Adding fixtures to a Topo</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-pixel-maps">19.5. Adding Pixel Maps</a></li>
-<li><a href="https://vibemanual.compulite.com/topo-topographical-display.html#adding-text-and-background-elements">19.6. Adding text and background elements</a></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#timecode-and-timeline-basics">21.1. Timecode and Timeline basics</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#create-a-timeline-view">21.2. Create a Timeline View</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#configuring-timecode">21.3. Configuring Timecode</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#recording-timeline-tracks">21.4. Recording Timeline Tracks</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#executing-and-editing-events">21.5. Executing and Editing Events</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/working-with-time-code.html#markers">21.6. Markers</a></p></li>
+<li><p>21.7. Time Format</p></li>
 </ul>
-<div id="creating-a-topo-view" class="section level2 hasAnchor" number="19.1">
-<h2><span class="header-section-number">19.1</span> Creating a Topo View<a href="topo-topographical-display.html#creating-a-topo-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTDS2G9ZiwCKwHmLfetSe%2F19.1%20topo.png?alt=media&amp;token=4bc1efc8-ebaa-4d30-8fe0-7c5ce82c1a5e" /></p>
-<p><strong>Topo View in {LIVE} mode displaying the “Movers” Topo</strong></p>
-<p><strong>To add a Topo view to a page:</strong></p>
+<div id="timecode-and-timeline-basics" class="section level2 hasAnchor" number="21.1">
+<h2><span class="header-section-number">21.1</span> Timecode and Timeline basics<a href="time-code.html#timecode-and-timeline-basics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.</p>
+<p>Vibe can read the following sources:</p>
+<ul>
+<li><p>Virtual Local - Internally generated timecode.</p></li>
+<li><p>Physical Local - SMPTE or MIDI timecode received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
+<li><p>USB MIDI class compliant timecode.</p></li>
+<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
+<li><p>Input sources from remote multi-User consoles and devices</p></li>
+</ul>
+<p>Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&amp;token=b585f40e-5bdb-4475-8098-b00bb3ebce08" /></p>
+<p>Vibe automatically matches frame rates to the incoming source.</p>
+<p>Supported frame rates are:</p>
+<ul>
+<li><p>24 FPS</p></li>
+<li><p>25 FPS</p></li>
+<li><p>29.97 FPS drop-frame</p></li>
+<li><p>30 FPS</p></li>
+</ul>
+</div>
+<div id="create-a-timeline-view" class="section level2 hasAnchor" number="21.2">
+<h2><span class="header-section-number">21.2</span> Create a Timeline View<a href="time-code.html#create-a-timeline-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiEYg2WqRWqRZXIcBO5Yc%2F21.2.webp?alt=media&amp;token=5e38c8e0-da98-4242-9d22-be0c6f3a7eb6" /></p>
+<p><strong>Timeline view with two timeline tracks, the cursor, and a marker</strong></p>
+<p><strong>To add a Timeline view to a page:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Tap {Vibe} on the monitor that will display the Topo - Vibe menu will open.</p></li>
+<li><p>Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.</p></li>
 <li><p>Tap {Pages} - Page display will open.</p></li>
 <li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
-<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ®{Display Objects} ® {Topo View} - A blank Topo view will appear on the workspace.</p></li>
-<li><p>Size and drag the Topo display as required then tap {unlock/lock} icon to lock the Topo from further adjustment - Topo display is now ready to add fixtures to.</p></li>
-<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
-<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
-<li><p>Select the stage point of view. The default is Top view.</p></li>
-<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
+<li><p>Tap the Lock/Unlock icon to enable adding a new view.</p></li>
+<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ⟶ {Display Objects} ⟶ {Timeline View} - A blank timeline view will appear on the workspace.</p></li>
+<li><p>Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.</p></li>
 </ol>
 </div>
-<div id="topo-menu" class="section level2 hasAnchor" number="19.2">
-<h2><span class="header-section-number">19.2</span> Topo Menu<a href="topo-topographical-display.html#topo-menu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXFlu7uvTzBI5S6Apzy3g%2F19.2.png?alt=media&amp;token=3b60e416-8286-4949-b75a-a8223de3da3a" /></p>
-<p>​</p>
-<p><strong>The root menu provides the following sub-menus:</strong></p>
+<div id="configuring-timecode" class="section level2 hasAnchor" number="21.3">
+<h2><span class="header-section-number">21.3</span> Configuring Timecode<a href="time-code.html#configuring-timecode" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Timecode connectors for the following:</p>
+<ul>
+<li><p>Audio input Combi Jack with:</p>
+<p>◾ Female unbalanced line level input on 1/4” Phone jack</p>
+<p>◾ Female 3 pin XLR balanced line level input.</p></li>
+<li><p>5 Pin DIN connector for MIDI and MIDI timecode input.</p></li>
+</ul>
+<p>Additionally, the following general purpose ports may be used for Timecode:</p>
+<ul>
+<li><p>USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.</p></li>
+<li><p>Compulite devices that support MIDI over Ethernet can also be used.</p></li>
+</ul>
+<p>Recommended quality and level for SMPTE:</p>
+<ul>
+<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
+<li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
+<p><strong>1/O Settings Pop-up in Timecode Tab</strong></p>
+<p><strong>Enable Timecode:</strong></p>
 <ol style="list-style-type: decimal">
-<li></li>
-</ol>
-<p>Topo:</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&amp;token=7277a796-bf80-4991-a343-94ad8f13f621" /></p>
-<p>​
-2. Actions:</p>
-<ol style="list-style-type: lower-alpha">
-<li>{Add Elements} - accesses the following:</li>
-</ol>
-<ol style="list-style-type: decimal">
-<li><p>{Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. 6.1. Fixture Sets. 19.4. Adding fixtures to a Topo.</p></li>
-<li><p>{Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps</p></li>
-</ol>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>{Selection} - May be used in Live mode or Edit mode.</li>
-</ol>
-<blockquote>
-<p>Selections must start out side of the fixture.</p>
-</blockquote>
-<ol style="list-style-type: decimal">
-<li><p>Select by creating a rectangular lasso. - Dragging from left to right or right to left to create a rectangle around or through the objects.</p></li>
-<li><p>Select by creating a free-form path, dragging through objects.</p></li>
-<li><p>De-select all.</p></li>
-<li><p>Delete selected (only valid in Edit Mode).</p></li>
-<li><p>Snap to grid - Fixtures and object will snap to the nearest grid node.</p></li>
-<li><p>Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.</p></li>
-</ol>
-<ol start="3" style="list-style-type: lower-alpha">
-<li>{Tools}:</li>
-</ol>
-<ol style="list-style-type: decimal">
-<li><p>{Align}:</p></li>
-<li><p>Left</p></li>
-<li><p>Center</p></li>
-<li><p>Right</p></li>
-<li><p>Top</p></li>
-<li><p>Middle</p></li>
-<li><p>Bottom</p></li>
-<li><p>Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following:</p>
-<p>◾ fixture location on the circumference</p>
-<p>◾ Radius</p>
-<p>◾ End point</p></li>
-<li><p>Point to Point</p></li>
-<li><p>{Align to Point} - A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.</p></li>
-<li><p>{Spread} (Fan) - When Spread is selected, a horizontal virtual modifier wheel will appear. The following spread options are available:</p></li>
-<li><p>Spread horizontally from left</p></li>
-<li><p>Spread horizontally from center</p></li>
-<li><p>Spread horizontally from right</p></li>
-<li><p>spread vertically from top</p></li>
-<li><p>Spread vertically from middle</p></li>
-<li><p>Spread vertically from bottom</p></li>
-<li><p>{Transform} - Used to modify size and rotation of Topo objects. Horizontal virtual wheels will appear for the following:</p></li>
-<li><p>Scale</p></li>
-<li><p>Rotate</p></li>
-<li><p>Presets are supplied for:</p>
-<p>◾ Rotate 45° counterclockwise</p>
-<p>◾ Rotate 45° clockwise</p>
-<p>◾ Reset</p></li>
-<li><p>{Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.</p></li>
+<li><p>From the patch toolbar tap {I/O Settings}</p></li>
+<li><p>For Tap {General} tab and select:</p>
+<p>◾ {Local MIDI} to enable the DIN connector MIDI.</p>
+<p>◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
+<li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
+<li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
+<li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
+<li><p>Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</p></li>
 </ol>
 </div>
-<div id="creating-a-topo" class="section level2 hasAnchor" number="19.3">
-<h2><span class="header-section-number">19.3</span> Creating a Topo<a href="topo-topographical-display.html#creating-a-topo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>To create a new Topo:</strong> Navigate to a Topo view</p>
+<div id="recording-timeline-tracks" class="section level2 hasAnchor" number="21.4">
+<h2><span class="header-section-number">21.4</span> Recording Timeline Tracks<a href="time-code.html#recording-timeline-tracks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in “real time” and then edited.</p>
+<p><strong>To create a timeline track:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&amp;token=6d042dc3-2c94-47b0-910d-e5481466fa85" /></p>
 <ol style="list-style-type: decimal">
-<li>Tap the {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} key in the Topo Menu at the right hand side of the Topo view display - The “Create New Topo” pop-up will appear</li>
+<li><p>Open a Time Line View.</p></li>
+<li><p>Tap {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} - The “Create New Timeline” pop-up will open.</p></li>
+<li><p>Select a timeline number and name.</p></li>
+<li><p>Choose Start from {Blank} Timeline as an option.</p></li>
+<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p>
+<p>◾ Virtual Local - Use internal timecode clock.</p>
+<p>◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p>
+<p>◾ Additional options will populate the list depending on the interfaced timecode device.</p></li>
+<li><p>Enable the red {Record} button or the {+ Record} button.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p>
+<p>◾ Record overwrites existing events.</p>
+<p>◾ + Record adds events to existing events.</p></li>
+<li><p>If using internal TC, press Play.</p></li>
+<li><p>If using external TC start the timecode source.</p></li>
+<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
+<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
+<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
 </ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdbnMzNTAiuRmv8Gch2g2%2F19.3.webp?alt=media&amp;token=ca062ed5-c7e8-4c08-ac9b-ff74f9a497ba" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Select the desired Topo number, and give the Topo a unique name.</p></li>
-<li><p>Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings pop-up.</p></li>
-<li><p>Select the stage point of view. The default is Top view.</p></li>
-<li><p>Tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> aor press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.</p></li>
+<p><strong>Timeline Features</strong></p>
+<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<p><strong>Grid View Filters</strong></p>
+<p>In the grid view of the Timeline<strong>,</strong> it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&amp;token=7b352b8c-dfaf-402d-a9fc-5e986b395212" /></p>
+</div>
+<div id="executing-and-editing-events" class="section level2 hasAnchor" number="21.5">
+<h2><span class="header-section-number">21.5</span> Executing and Editing Events<a href="time-code.html#executing-and-editing-events" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To Execute timeline events:</p>
+<ul>
+<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
+<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
+<li><p>The control bar may be used to stop and rewind events when the source is internal Editing timecode events</p></li>
+<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
+<li><p>Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
+</ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&amp;token=985e10f0-a809-4482-8112-763a2766724b" /></p>
+<p><strong>Moving Events</strong></p>
+<p>It is possible to change selected event times via the physical wheels.</p>
+<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
+<p>This option is available under the <em>Move Selection</em> sub-menu of the Timeline view (<em>Wheel On, Wheel Off</em>).</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&amp;token=5e0244e3-c571-48b0-b1c1-2d72b0778999" /></p>
+<p>Then there will be 2 physical wheels that are available for use:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&amp;token=f1407bc6-fecc-4f8c-9615-f8a7541966dd" /></p>
+<p>The left one is for moving the selected events.</p>
+<p>The right one is to change the time resolution for the current time movement.</p>
+<p><strong>Events Selection</strong></p>
+<p>To Select timeline events:</p>
+<ul>
+<li><p>Tap on a single event – toggles the event selection</p></li>
+<li><p>Tap on a playback box – toggles the playback selection</p></li>
+<li><p>Tap on a marker – toggles the marker selection</p></li>
+<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
+<li><p>Double-tap an empty area – clear the selection</p></li>
+<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
+<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
+<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
+<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
+</ul>
+<p><span style="color:Red"><strong>Important!</strong></span></p>
+<p>Selecting one object type (i.e. Playback, Event, Marker…) will clear all other objects selection.</p>
+<p>Selection can have only one type of objects at a time.</p>
+<p><strong>State Machine Support</strong></p>
+<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&amp;token=87396a0f-bdd3-4e7c-aee1-65341332d0e3" /></p>
+<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
+<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
+<p><span style="color:Red"><strong>Important!</strong></span></p>
+<p>Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</p>
+<p>The available commands from the panel or the Editor Toolbar are split into 2 levels:</p>
+<p><strong>Commands for the View</strong></p>
+<p>These commands will affect the Active Timeline View.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to idle state</p></li>
+<li><p>Press <em>Timeline</em> from the panel</p></li>
+<li><p>You see on the Editor Toolbar the available commands:</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&amp;token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204" /></p>
+<p><strong>Commands for Timelines</strong></p>
+<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to idle state</p></li>
+<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
+<li><p>You see on the Editor Toolbar the available commands:</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzgT27J7izwv0ermWLplh%2Fimage.png?alt=media&amp;token=8ebdbcb1-4cfc-4f5d-a4db-a219ef3f88d3" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Sequence may also end with:</p>
+<p><strong>a.</strong> Store – will create the timelines if they are not already created</p>
+<p><strong>b.</strong> Delete – will delete the timelines if they exist</p>
+<p><strong>c.</strong> Text – will open text box to give a name to the selected timelines</p>
+<p><strong>d.</strong> Copy – will add the timelines to the clipboard</p>
+<p><strong>e.</strong>Paste – will paste the copied timelines from the clipboard</p></li>
 </ol>
 </div>
-<div id="adding-fixtures-to-a-topo" class="section level2 hasAnchor" number="19.4">
-<h2><span class="header-section-number">19.4</span> Adding fixtures to a Topo<a href="topo-topographical-display.html#adding-fixtures-to-a-topo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are two ways to add fixtures to a Topo <strong>Using keypad selection</strong>:</p>
-<ol style="list-style-type: decimal">
-<li><p>Press zoom option {FIT STAGE TO SCREEN} on the toolbar at the bottom of the Topo View to see the whole stage area.</p></li>
-<li><p>Select the fixtures using the keypad or a group.</p></li>
-<li><p>Tap {FROM EDITOR} on the toolbar at the bottom of the Topo View.</p></li>
-<li><p>Selected fixtures will now appear in the top right section of the Topo.</p></li>
-<li><p>initially, the fixtures will be selected (outlined in red), and can be dragged freely into place.</p></li>
-<li><p>Double tap in a clear space on the TOPO to deselect.</p></li>
-</ol>
-<blockquote>
-<p><span style="color:Red">If the {From Editor} key is selected with a long press (held for a few seconds) the fixtures may be directly dragged from the {From Editor} area. Only a maximum of 5 fixture icons will be shown but the whole selection will actually be there. Drag the fixtures to a location on the Topo view and release. The actual fixtures will now appear on the Topo surface. <strong>The reference point for dropping is the fixtures is the top left corner of the dragged fixture icons.</strong></span></p>
-</blockquote>
-<p>Using {ADD ELELMENTS} from the Topo menu:</p>
-<ol style="list-style-type: decimal">
-<li><p>Create the Topo</p></li>
-<li><p>From the Topo menu tap {ADD ELEMENTS}</p></li>
-<li><p>From the drop down, tap {SETS}</p></li>
-<li><p>From the next drop down, select a fixture set - A list of the fixture in the set will drop down.</p></li>
-<li><p>From the fixture list, select the fixtures to drag onto the Topo.</p></li>
-<li><p>Press, hold and drag the fixtures onto the Topo surface.</p></li>
-<li><p>Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.19.2. Topo Menu.</p></li>
-</ol>
+<div id="markers" class="section level2 hasAnchor" number="21.6">
+<h2><span class="header-section-number">21.6</span> Markers<a href="time-code.html#markers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To aid in timeline navigation, Markers may be inserted.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&amp;token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00" /></p>
+<p>To insert a marker:</p>
+<ul>
+<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
+<li><p>Press ⟵ to move backwards through the markers.</p></li>
+<li><p>Press ⟶ to move forwards through the markers.</p></li>
+<li><p>Press 🗑️ to delete a marker</p></li>
+</ul>
 </div>
-<div id="adding-pixel-maps" class="section level2 hasAnchor" number="19.5">
-<h2><span class="header-section-number">19.5</span> Adding Pixel Maps<a href="topo-topographical-display.html#adding-pixel-maps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. Matrix fixtures may be selected by blocks using the rectangle lasso selection tool, or free-form path tool.</p>
-<p><strong>To create a new pixel mapper:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
-<li><p>From the {Add Elements} drop down, tap {Pixel Mapper} - The Create New Pixel Mapper pop-up will appear.</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Ff9zc1asl0cfTClSVXoI1%2F19.5.webp?alt=media&amp;token=6349e1a5-6671-4d96-9be8-09a19688a2c1" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Fill in the number of columns and rows and set the start position and direction.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and create the blank pixel map.</p></li>
-<li><p>👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.</p></li>
-<li><p>Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo</p></li>
-<li><p>Release the fixtures and they will populate the pixel map.</p></li>
-</ol>
-<p>👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.</p>
-<ol start="5" style="list-style-type: decimal">
-<li>The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture’s color mix will be shown. CMY, RGB, and HSV color spaces are supported.</li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FebGZvb6DGOYtyqaGKSdZ%2F19.5.1.webp?alt=media&amp;token=5f033d65-2db7-4ba0-918e-7980aade9cc9" /></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FM8tXegFlpqyJ9QGo4FY0%2F91.5.2.webp?alt=media&amp;token=dd690b9b-aa5a-4f0a-a8e2-a8f137b1f78a" /></p>
-<ol style="list-style-type: decimal">
-<li><p>Multiple pixel mappers may be added to the same Topo along with other objects.</p></li>
-<li><p>👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.</p></li>
-</ol>
-</div>
-<div id="adding-text-and-background-elements" class="section level2 hasAnchor" number="19.6">
-<h2><span class="header-section-number">19.6</span> Adding text and background elements<a href="topo-topographical-display.html#adding-text-and-background-elements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Additional elements may be added to a Topo. Currently available are {Text Label} and {Add Background} To add</p>
-<p><strong>Text labels:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>From the Topo Actions menu, tap {Add Elements}</p></li>
-<li><p>From the drop down, tap {Text Label} - The Create Label pop-up will appear.</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHsLe6IRkyI2sKrNgJoaU%2F19.6.png?alt=media&amp;token=9c3717a4-6eee-4d68-8cd5-49c6273f7953" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Close the pop-up and the test label will appear on the Topo surface.</p></li>
-<li><p>Drag the label to the desired location.</p></li>
-<li><p>Transpose tools may be used to size and rotate the label.</p></li>
-</ol>
-<p>Backgrounds such as studio layouts and rig elements may be added to the Topo.</p>
-<p><strong>To add a Background to a Topo:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Prepare a USB stick with a JPEG, BMP, or PNG piece of content.</p></li>
-<li><p>Insert the USB stick into one of the Vibe’s USB ports.</p></li>
-<li><p>From the Topo Actions menu, tap {Add Elements}.</p></li>
-<li><p>Tap {Add Background} - A browser pop-up will appear.</p></li>
-<li><p>Select the USB stick and click on the desired content - Once imported, the content may be found in the default local directory on the hard-drive under D:<br />
-</p></li>
-<li><p>Tap {Load}, [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.</p></li>
-<li><p>To remove the background tap {Remove Background}</p></li>
-</ol>
+<div id="time-format" class="section level2 hasAnchor" number="21.7">
+<h2><span class="header-section-number">21.7</span> Time Format<a href="time-code.html#time-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is possible to view the timeline and events data in different time
+formats.</p>
+<p>The default time format is milliseconds, but it is also possible to use FPS format. The time format selection is possible via the view’s menu.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbo29Yc2ouM4IM1uP84Nl%2Fimage.png?alt=media&amp;token=103f9e9d-1202-4ccc-bf97-7694f1762c3a" /></p>
 
 </div>
 </div>
@@ -578,8 +591,8 @@
           </div>
         </div>
       </div>
-<a href="exam-show-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="xyz-fixture-calibration.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="xyz-fixture-calibration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="midi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

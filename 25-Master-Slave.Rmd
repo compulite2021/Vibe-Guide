@@ -9,5 +9,5 @@
 ## Master/Slave
 
 
-
+<span style="color:blue">Not yet implemented</span>.
 

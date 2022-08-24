@@ -506,10 +506,15 @@ In Vibe parameters are organized under six standard **Banks** and one special Ba
     
 6.  Shape
     
-7.  Control 
-    
+7.  Control - A special bank as its parameters are not stored in cues. 
+Instead it sends "real time" messages to fixtures control functions).
 
->A special bank as its parameters is not stored in cues. Iaete d it eeade re l tmel meee gee to ffturee coatrol fuactoae) Parameter values may be set using either Vibe's intuitive Smart Screen picker system or conventional parameter wheels and keypad method.
+8.  Media
+    
+The switch between banks can be done either from the touch screen or through the combination SHIFT + # where the # represents the bank number.
+
+Parameter values may be set using either Vibe's intuitive **Smart Screen** picker system or conventional parameter wheels and keypad method.
+
 
 
 ### Virtual Parameters
