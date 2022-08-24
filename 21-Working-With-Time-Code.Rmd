@@ -7,17 +7,17 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
 
 **The following is covered in this section:**
 
--   21.1. Timecode and Timeline basics
+-   [21.1. Timecode and Timeline basics](https://vibemanual.compulite.com/working-with-time-code.html#timecode-and-timeline-basics)
     
--   21.2. Create a Timeline View
+-   [21.2. Create a Timeline View](https://vibemanual.compulite.com/working-with-time-code.html#create-a-timeline-view)
     
--   21.3. Configuring Timecode
+-   [21.3. Configuring Timecode](https://vibemanual.compulite.com/working-with-time-code.html#configuring-timecode)
     
--   21.4. Recording Timeline Tracks
+-   [21.4. Recording Timeline Tracks](https://vibemanual.compulite.com/working-with-time-code.html#recording-timeline-tracks)
     
--   21.5. Executing and Editing Events
+-   [21.5. Executing and Editing Events](https://vibemanual.compulite.com/working-with-time-code.html#executing-and-editing-events)
     
--   21.6. Markers
+-   [21.6. Markers](https://vibemanual.compulite.com/working-with-time-code.html#markers)
 
 
 ## Timecode and Timeline basics

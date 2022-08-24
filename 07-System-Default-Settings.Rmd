@@ -5,24 +5,12 @@ This chapter deals with customizing system settings to suit programming styles.
 
 **The following is covered in this chapter:**
 
--  7.1. Editing
--  7.2. Timing
--  7.3. Network
--  7.4. Hardware
--  7.5. Defaults
--  7.5.1. Controller Settings
--  7.5.2. Controller Actions
--  7.5.3. Qlist Properties
--  7.5.4. Chaser Properties
--  7.5.5. Cue Settings
--  7.5.6. Cue Store Options
--  7.5.7. Scene Settings
--  7.5.8. Scene Store Options
--  7.5.9. Bank Library Options
--  7.5.10.Snap Settings
--  7.5.11 Effects
--  7.6. System
-
+-  [7.1. Editing](https://vibemanual.compulite.com/system-default-settings.html#editing)
+-  [7.2. Timing](https://vibemanual.compulite.com/system-default-settings.html#timing)
+-  [7.3. Network](https://vibemanual.compulite.com/system-default-settings.html#network)
+-  [7.4. Hardware](https://vibemanual.compulite.com/system-default-settings.html#hardware)
+-  [7.5. Defaults](https://vibemanual.compulite.com/system-default-settings.html#defaults)
+-  [7.6. System](https://vibemanual.compulite.com/system-default-settings.html#system)
 
 ## Editing
 

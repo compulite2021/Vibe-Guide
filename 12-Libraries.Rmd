@@ -3,9 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- 12.1. What are Libraries
-- 12.2. Store and Modify Bank Libraries
-- 12.3. Object Libraries
+- [12.1. What are Libraries](https://vibemanual.compulite.com/libraries.html#what-are-libraries)
+- [12.2. Store and Modify Bank Libraries](https://vibemanual.compulite.com/libraries.html#store-and-modify-bank-libraries)
+- [12.3. Object Libraries](https://vibemanual.compulite.com/libraries.html#object-libraries)
 
 
 ## What are Libraries

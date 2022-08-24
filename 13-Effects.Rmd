@@ -3,11 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- 13.1. Effect Basics
-- 13.2. Smart Screen Effects Editor
-- 13.2.1. Building Effects Using the Small Screen Editor
-- 13.3. Advanced Effects Editor
-- 13.3.1. Building Effects Using the Advanced Effects Editor
+- [13.1. Effect Basics](https://vibemanual.compulite.com/effects-1.html#effect-basics)
+- [13.2. Smart Screen Effects Editor](https://vibemanual.compulite.com/effects-1.html#smart-screen-effects-editor)
+- [13.3. Advanced Effects Editor](https://vibemanual.compulite.com/effects-1.html#advanced-effects-editor)
 
 
 ## Effect Basics

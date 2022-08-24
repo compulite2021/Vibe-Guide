@@ -3,11 +3,11 @@ This chapter deals with configuring, transmitting and receiving DMX over Etherne
 
 **The following is covered in this chapter:**
 
-- 24.1. Network Basics
-- 24.2. Connecting to Compulite ePorts
-- 24.3. Connecting to Art-Net and sACN Nodes
-- 24.4. RDM
-- 24.5. CITP
+- [24.1. Network Basics](https://vibemanual.compulite.com/connecting-to-external-devices.html#network-basics)
+- [24.2. Connecting to Compulite ePorts](https://vibemanual.compulite.com/connecting-to-external-devices.html#connecting-to-compulite-eports)
+- [24.3. Connecting to Art-Net and sACN Nodes](https://vibemanual.compulite.com/connecting-to-external-devices.html#connecting-to-art-net-and-sacn-nodes)
+- [24.4. RDM](https://vibemanual.compulite.com/connecting-to-external-devices.html#rdm)
+- [24.5. CITP](https://vibemanual.compulite.com/connecting-to-external-devices.html#citp)
 
 
 ## Network Basics

@@ -3,10 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- 16.1. Creating Macros
-- 16.2. Triggrering Macros
-- 16.3. Attaching Macros
-
+- [16.1. Creating Macros](https://vibemanual.compulite.com/macros.html#creating-macros)
+- [16.2. Triggrering Macros](https://vibemanual.compulite.com/macros.html#triggrering-macros)
+- [16.3. Attaching Macros](https://vibemanual.compulite.com/macros.html#attaching-macros)
 
 ## Creating Macros
 

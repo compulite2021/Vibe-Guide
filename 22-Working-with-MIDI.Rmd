@@ -3,11 +3,11 @@ This chapter deals with configuring and assigning MIDI
 
 **The following is covered in this chapter:**
 
-- 22.1. What is MIDI
-- 22.2. General MIDI Configuration
-- 22.3 Configuring MIDI Notes and Commands
-- 22.4. MIDI Show Control
-- 22.5 MIDI Time Code
+- [22.1. What is MIDI](https://vibemanual.compulite.com/working-with-midi.html#what-is-midi)
+- [22.2. General MIDI Configuration](https://vibemanual.compulite.com/working-with-midi.html#general-midi-configuration)
+- [22.3 Configuring MIDI Notes and Commands](https://vibemanual.compulite.com/working-with-midi.html#configuring-midi-notes-and-commands)
+- [22.4. MIDI Show Control](https://vibemanual.compulite.com/working-with-midi.html#midi-show-control)
+- [22.5 MIDI Time Code](https://vibemanual.compulite.com/working-with-midi.html#midi-time-code)
 
 
 ## What is MIDI

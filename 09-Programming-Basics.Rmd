@@ -5,30 +5,10 @@
 
 **The following is covered in this chapter:**
 
-- 9.1. Editor
-- 9.1.1. What is the Editor
-- 9.1.2. Blind Editor
-- 9.2. Editor Tools
-- 9.2.1. Selections Tools 
-- 9.2.3. Pattern
-- 9.2.2. Transpose
-- 9.2.4. Fan Mode
-- 9.2.5. Highlight Mode 
-- 9.2.6. Lowlight Mode 
-- 9.2.7. Remainder Dim {Rem Dim} 
-- 9.2.8. Home Scene
-- 9.3. Working with Fixtures
-- 9.3.1. Fixture Selection basics
-- 9.3.2. What are Parameters 
-- 9.3.3. Virtual Parameters
-- 9.3.4. Smart Screen
-- 9.3.5. Adjusting Parameters using the Wheel Picker
-- 9.3.6. Grab
-- 9.3.7. Fixture Selection (Detailed)
-- 9.3.8. Setting Parameters using Main Encoder Wheels
-- 9.3.9. Setting Parameters using Interactive Encoder Wheels
-- 9.3.10. Release and Home Sequences
-- 9.4. Groups
+- [9.1. Editor](https://vibemanual.compulite.com/programming-basics.html#editor)
+- [ 9.2. Editor Tools](https://vibemanual.compulite.com/programming-basics.html#editor-tools)
+- [9.3. Working with Fixtures](https://vibemanual.compulite.com/programming-basics.html#working-with-fixtures)
+- [9.4. Groups](https://vibemanual.compulite.com/programming-basics.html#groups)
 
 
 ## Editor

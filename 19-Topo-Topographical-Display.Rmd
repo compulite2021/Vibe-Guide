@@ -3,12 +3,12 @@ It is sometimes useful to organize fixture selection in a graphical manner inste
 
 **The following is covered in this chapter:**
 
-- 19.1. Creating a Topo View
-- 19.2. Topo Menu
-- 19.3. Creating a Topo
-- 19.4. Adding fixtures to a Topo
-- 19.5. Adding Pixel Maps
-- 19.6. Adding text and background elements
+- [19.1. Creating a Topo View](https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo-view)
+- [19.2. Topo Menu](https://vibemanual.compulite.com/topo-topographical-display.html#topo-menu)
+- [19.3. Creating a Topo](https://vibemanual.compulite.com/topo-topographical-display.html#creating-a-topo)
+- [19.4. Adding fixtures to a Topo](https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo)
+- [19.5. Adding Pixel Maps](https://vibemanual.compulite.com/topo-topographical-display.html#adding-pixel-maps)
+- [19.6. Adding text and background elements](https://vibemanual.compulite.com/topo-topographical-display.html#adding-text-and-background-elements)
 
 ## Creating a Topo View
 When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.

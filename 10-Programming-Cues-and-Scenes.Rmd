@@ -3,32 +3,20 @@
 
 **The following is covered in this chapter:**
 
-- 10.1. What Are Qlists, Cues, Scenes, and Submasters?
-- 10.2. Tracking Principals
-- 10.3. Storing Cues and Scenes Directly to Controllers
-- 10.4. Master Controller
-- 10.5. Storing Cues to the Master Controller
-- 10.6. Storing Qlist Cues to any Controller
-- 10.7. Cue Store Options
-- 10.8. Assigning Text Labels
-- 10.9. Modifying Cues and Scenes
-- 10.10. Creating New Cues from Existing Cue Data
-- 10.11. Cue Time Properties
-- 10.11.1. Assigning Cue Time
-- 10.11.2. Wait and Follow Times
-- 10.12. Additional Cue Properties
-- 10.12.1. Link
-- 10.12.2. Loop
-- 10.12.3. Tracking Options
-- 10.13.1. Assign Parameter Time During Cue Creation
-- 10.13. Parameter Time
-- 10.13.2. Adding or Modifying Parameter Time after Cue Creation
-- 10.13.3. Fanning Parameter Time
-- 10.14. Group Submasters
-- 10.14.1. Convert a Scene into a Group Submaster
-- 10.14.2. Assign a Group Submater directly to a Slider Controller
-- 10.14.3. Assign a Group Submaster using existing Groups
-
+- [10.1. What Are Qlists, Cues, Scenes, and Submasters?](https://vibemanual.compulite.com/programming-cues-and-scenes.html#what-are-qlists-cues-scenes-and-submasters)
+- [10.2. Tracking Principals](https://vibemanual.compulite.com/programming-cues-and-scenes.html#tracking-principals)
+- [10.3. Storing Cues and Scenes Directly to Controllers](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-and-scenes-directly-to-controllers)
+- [10.4. Master Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#master-controller)
+- [10.5. Storing Cues to the Master Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-to-the-master-controller)
+- [10.6. Storing Qlist Cues to any Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-qlist-cues-to-any-controller)
+- [10.7. Cue Store Options](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-store-options-1)
+- [10.8. Assigning Text Labels](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assigning-text-labels)
+- [10.9. Modifying Cues and Scenes](https://vibemanual.compulite.com/programming-cues-and-scenes.html#modifying-cues-and-scenes)
+- [10.10. Creating New Cues from Existing Cue Data](https://vibemanual.compulite.com/programming-cues-and-scenes.html#creating-new-cues-from-existing-cue-data)
+- [10.11. Cue Time Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-time-properties)
+- [10.12. Additional Cue Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#additional-cue-properties)
+- [10.13. Parameter Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#parameter-time)
+- [10.14. Group Submasters](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
 
 ## What Are Qlists, Cues, Scenes, and Submasters?
 

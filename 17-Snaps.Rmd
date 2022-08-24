@@ -3,9 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- 17.1. Storing Snaps
-- 17.2. Triggering Snap
-- 17.3. Attaching Snaps
+- [17.1. Storing Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps)
+- [17.2. Triggering Snap](https://vibemanual.compulite.com/snaps-snapshots.html#triggering-snap)
+- [17.3. Attaching Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#attaching-snaps)
 
 
 ## Storing Snaps

@@ -4,17 +4,17 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
 
-- 14.1. Controller Priority Logic
-- 14.2. Controller Overview
-- 14.3. Master Controller
-- 14.4. GOTO and LOAD
-- 14.5. Configuring Controllers
-- 14.6. Controller Color Codes
-- 14.7. Working With controllers
-- 14.8. Controller Release and Free
-- 14.9. Controller Qlist Properties
-- 14.10. Controller Modes
-- 14.11. Rate and Teach Keys
+- [14.1. Controller Priority Logic](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-priority-logic)
+- [14.2. Controller Overview](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-overview)
+- [14.3. Master Controller](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#master-controller-1)
+- [14.4. GOTO and LOAD](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#goto-and-load)
+- [14.5. Configuring Controllers](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#configuring-controllers)
+- [14.6. Controller Color Codes](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-color-codes)
+- [14.7. Working With controllers](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#working-with-controllers)
+- [14.8. Controller Release and Free](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-release-and-free)
+- [14.9. Controller Qlist Properties](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-qlist-properties)
+- [14.10. Controller Modes](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-modes)
+- [14.11. Rate and Teach Keys](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#rate-and-teach-keys)
 
 
 ## Controller Priority Logic

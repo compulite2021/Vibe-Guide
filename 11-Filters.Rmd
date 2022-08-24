@@ -4,10 +4,9 @@
 
 **The following is covered in this chapter:**
 
-- 11.1. On the Fly Filters
-- 11.2. General Filters Tab
-- 11.3 Library Defaults Tab
-
+- [11.1. On the Fly Filters](https://vibemanual.compulite.com/filters.html#on-the-fly-filters)
+- [11.2. General Filters Tab](https://vibemanual.compulite.com/filters.html#general-filters-tab)
+- [11.3 Library Defaults Tab](https://vibemanual.compulite.com/filters.html#library-defaults-tab)
 
 ## On the Fly Filters
 

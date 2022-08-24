@@ -3,7 +3,7 @@
 
 **The following is covered in this chapter:**
 
-- 25. Master/Slave
+- [25.1 Master/Slave](https://vibemanual.compulite.com/masterslave.html#masterslave-1)
 
 
 ## Master/Slave

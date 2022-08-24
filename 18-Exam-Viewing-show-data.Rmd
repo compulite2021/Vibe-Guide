@@ -4,8 +4,8 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 **The following is covered in this chapter:**
 
-- 18.1. Show Exam
-- 18.2. Patch Exam
+- [18.1. Show Exam](https://vibemanual.compulite.com/exam-viewing-show-data.html#show-exam)
+- [18.2. Patch Exam](https://vibemanual.compulite.com/exam-viewing-show-data.html#patch-exam)
 
 
 ## Show Exam
