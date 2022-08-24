@@ -221,8 +221,7 @@ Timing Properties - Cue Section
 
 **Clear Device IP History**
 
-There is an option to clear the table of the devices on the network.
-
+There is a new option to clear the table of the devices on the network.
 This option was added to let the users empty the table in case they travel to a different location or working on a different scene.
 
 **To clear Device IP History**
@@ -231,7 +230,7 @@ This option was added to let the users empty the table in case they travel to a 
 
 2. Go to Network tab.
 
-3. Tap Clear IP Devices.
+3. Tap *Clear IP Devices.*
 
 
 ## Hardware
