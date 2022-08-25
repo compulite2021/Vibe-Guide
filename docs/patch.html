@@ -434,8 +434,7 @@
 <li><p>A new list and search window will open. If the exact device name is known, type it in the search window, if not flick or drag to browse the list until the desired device is found.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6OPIN7M2INVvd6Qb68PC%2F6.2.webp?alt=media&amp;token=a9d3bfed-3a49-4174-bdb6-3c32843653ee" /></p></li>
 <li><p>The &lt; key may be pressed at any time to return to the Imported Devices list.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMJNhnkyYAYn3wnGiHWkk%2F6.2.1.webp?alt=media&amp;token=cb596e2e-e61d-424f-ba50-aa0eee3a0c55" /></p></li>
-<li><p>.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMJNhnkyYAYn3wnGiHWkk%2F6.2.1.webp?alt=media&amp;token=cb596e2e-e61d-424f-ba50-aa0eee3a0c55" /></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&amp;token=62e204dc-17b9-4fd2-8566-18780860a2b8" /></p></li>
 </ol>
 </div>
@@ -460,7 +459,7 @@
 <div id="create-and-patch-imported-fixtures" class="section level2 hasAnchor" number="6.4">
 <h2><span class="header-section-number">6.4</span> Create and Patch imported fixtures<a href="patch.html#create-and-patch-imported-fixtures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><p>Import the desired device. (See <a href="/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.2.-import-devices">6.2. Import Devices</a>).</p></li>
+<li><p>Import the desired device. (See <a href="https://vibemanual.compulite.com/patch.html#import-devices">6.2. Import Devices</a>).</p></li>
 <li><p>The device will now be in the list below the Imported Devices header.</p></li>
 <li><p>Tap the device you wish to patch and the Create and Patch Fixtures popup will appear.</p></li>
 </ol>
@@ -480,16 +479,17 @@
 </ol>
 <blockquote>
 <p>👉 By default, the interval between fixtures of the same type is fixed.
-Using the INTERVAL field, a custom interval may be set.</p>
+Using the <strong>INTERVAL</strong> field, a custom interval may be set.</p>
 </blockquote>
 <ol start="11" style="list-style-type: decimal">
 <li>To complete <strong>CREATE and PATCH</strong> tap the <strong>{APPLY &amp; CONTINUE}</strong> key in the bottom <strong>right corner of the pop-up</strong>, Press <strong>[ENTER]</strong>, or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up and return to the patch workspace.</li>
 </ol>
 <p><strong>Theatrical Multi-Patching can also be done manually using keypad syntax:</strong></p>
-<p>◾ Toggle off the <strong>{MAIN PATCH}</strong> key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.</p>
+<pre><code>◾ Toggle off the **{MAIN PATCH}** key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.</code></pre>
 <p><strong>To Patch fixtures using traditional keypad syntax:</strong></p>
-<p>◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the <strong>ADDRESS</strong> field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. <strong>Or</strong></p>
-<p>◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].</p>
+<pre><code>◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
+
+◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].</code></pre>
 <blockquote>
 <p>👉 Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64U niverses standard). The system will automatically assign the correct universe.</p>
 </blockquote>
@@ -501,7 +501,7 @@ Using the INTERVAL field, a custom interval may be set.</p>
 <p><strong>Drag and Drop Patch</strong> - If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be created but not patched. Created fixtures may then be dragged and dropped onto the Universe View.</p>
 <p><strong>Drag and Drop from the Fixtures tab:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Create fixtures - <strong>(</strong>See <a href="/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.4.-create-and-patch-imported-fixtures">6.4. Create and patch imported fixtures</a>).</p></li>
+<li><p>Create fixtures - (See: <a href="https://vibemanual.compulite.com/patch.html#create-and-patch-imported-fixtures">6.4. Create and patch imported fixtures</a>).</p></li>
 <li><p>Select the Fixture <strong>Set</strong> you wish to patch from in the lower right of the main patch workspace.</p></li>
 <li><p>Select the <strong>Fixtures</strong> tab on the left side of the main patch workspace directly above the white FIXTURE selection box. A list of created fixtures will appear.</p></li>
 <li><p>Make sure the <strong>Universes View</strong> tab at the bottom of the main patch workspace is selected.</p></li>
@@ -538,22 +538,30 @@ Using the INTERVAL field, a custom interval may be set.</p>
 <p>Once patched fixtures can be modified using keypad syntax or using the two Patch Toolbars in the Patch Workspace.</p>
 <p><strong>Toolbar with no fixture selection:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYBzeJ8a39N937xjx5S3n%2F6.4.2.png?alt=media&amp;token=d1b58421-5fff-40dd-8c9a-f14f6944e6c8" /></p>
-<p>◾ {CLEAR PATCH} - Opens up Clear Patch pop-up.</p>
-<p>◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up.</p>
-<p>◾ {ADD FIXTURE} - Opens the Create And Patch pop-up.</p>
-<p>◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.</p>
+<pre><code>◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
+
+◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
+
+◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
+
+◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.</code></pre>
 <p><strong>Toolbar with fixture selection:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&amp;token=4f322af9-9116-4d1e-b01b-cc15538d482a" /></p>
-<p>◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up.</p>
-<p>◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected.</p>
-<p>◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected.</p>
+<pre><code>◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
+
+◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
+
+◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
+  </code></pre>
 <p>See:
 <a href="https://vibemanual.compulite.com/xyz-fixture-calibration.html">20. XYZ Fixture Calibration</a></p>
-<p>◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup</p>
-<p>◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up</p>
+<pre><code>◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
+
+◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up</code></pre>
 <p><strong>Modify the patch using keypad syntax:</strong></p>
-<p>◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar.</p>
-<p>◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.</p>
+<pre><code>◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
+
+◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.</code></pre>
 </div>
 </div>
 <div id="configuring-physical-dmx-10" class="section level2 hasAnchor" number="6.5">
@@ -580,7 +588,7 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 <li><p>Tap {Make Output} - The Connector will now output DMX.</p></li>
 </ol>
 <p><strong>Change DMX refresh rate:</strong></p>
-<pre><code>◾ Vibe will a**l**ways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.</code></pre>
+<p>◾ Vibe will aways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.</p>
 </div>
 <div id="patching-inputs" class="section level2 hasAnchor" number="6.6">
 <h2><span class="header-section-number">6.6</span> Patching Inputs<a href="patch.html#patching-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -663,10 +671,12 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 </ol>
 <p><strong>Unpark a fixture:</strong></p>
 <ol style="list-style-type: decimal">
-<li>[FIXTURE] [#] {PARK} [DELETE] View parked fixtures and address: (See <a href="/s/3kS90tLsADGm1ocbe7q9/18.-exam-viewing-show-data/18.-exam-viewing-show-data/18.2.-patch-exam">18.2. Patch Exam</a>)</li>
+<li>[FIXTURE] [#] {PARK} [DELETE]</li>
 </ol>
+<p><strong>View parked fixtures and address:</strong></p>
+<p>(See: <a href="https://vibemanual.compulite.com/exam-show-data.html#patch-exam">18.2. Patch Exam</a>)</p>
 <blockquote>
-<p>The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key will blackout parked addresses and fixtures.</p>
+<p><span style="color:Red">&gt; The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key <strong>will</strong> blackout parked addresses and fixtures.</span></p>
 </blockquote>
 
 </div>

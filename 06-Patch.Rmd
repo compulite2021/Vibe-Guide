@@ -67,7 +67,7 @@ c. Tap Sets
     
     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FMJNhnkyYAYn3wnGiHWkk%2F6.2.1.webp?alt=media&token=cb596e2e-e61d-424f-ba50-aa0eee3a0c55)
     
-6. .
+
     
     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&token=62e204dc-17b9-4fd2-8566-18780860a2b8)
     
@@ -98,7 +98,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 ## Create and Patch imported fixtures
 
 
-1. Import the desired device. (See [6.2. Import Devices](/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.2.-import-devices)).
+1. Import the desired device. (See [6.2. Import Devices](https://vibemanual.compulite.com/patch.html#import-devices)).
     
 2. The device will now be in the list below the Imported Devices header.
     
@@ -130,19 +130,19 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
     
 
 >👉 By default, the interval between fixtures of the same type is fixed.
-Using the INTERVAL field, a custom interval may be set.
+Using the **INTERVAL** field, a custom interval may be set.
 
 11. To complete **CREATE and PATCH** tap the **{APPLY & CONTINUE}** key in the bottom **right corner of the pop-up**, Press **[ENTER]**, or tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to close the pop-up and return to the patch workspace.
 
 **Theatrical Multi-Patching can also be done manually using keypad syntax:**
 
-◾ Toggle off the **{MAIN PATCH}** key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.
+    ◾ Toggle off the **{MAIN PATCH}** key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.
 
 **To Patch fixtures using traditional keypad syntax:**
 
-◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
+    ◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
 
-◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].
+    ◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].
 
 >👉 Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64U niverses standard). The system will automatically assign the correct universe.
  
@@ -154,7 +154,7 @@ Using the INTERVAL field, a custom interval may be set.
 
 **Drag and Drop from the Fixtures tab:**
 
-1. Create fixtures - **(**See [6.4. Create and patch imported fixtures](/s/3kS90tLsADGm1ocbe7q9/6.-patch/6.-patch/6.4.-create-and-patch-imported-fixtures)).
+1. Create fixtures - (See: [6.4. Create and patch imported fixtures](https://vibemanual.compulite.com/patch.html#create-and-patch-imported-fixtures)).
     
 2. Select the Fixture **Set** you wish to patch from in the lower right of the main patch workspace.
     
@@ -205,36 +205,36 @@ Once patched fixtures can be modified using keypad syntax or using the two Patch
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYBzeJ8a39N937xjx5S3n%2F6.4.2.png?alt=media&token=d1b58421-5fff-40dd-8c9a-f14f6944e6c8)
 
-  ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
+    ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
     
-  ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
+    ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
 
-  ◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
+    ◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
 
-  ◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
+    ◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
 
 **Toolbar with fixture selection:**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&token=4f322af9-9116-4d1e-b01b-cc15538d482a)
 
-  ◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
+    ◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
 
-  ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
+    ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
 
-  ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
+    ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
       
 See: 
 [20. XYZ Fixture Calibration](https://vibemanual.compulite.com/xyz-fixture-calibration.html) 
 
-  ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
+    ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
 
-  ◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
+    ◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
 
 **Modify the patch using keypad syntax:** 
 
-  ◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
+    ◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
 
-  ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
+    ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
 
 ## Configuring Physical DMX 1/0
 
@@ -273,7 +273,7 @@ See:
 
 **Change DMX refresh rate:**
 
-    ◾ Vibe will a**l**ways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.
+   ◾ Vibe will aways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.
 
 ## Patching Inputs
 
@@ -389,8 +389,12 @@ See:
 
 **Unpark a fixture:**
 
-1. [FIXTURE] [#] {PARK} [DELETE] View parked fixtures and address: (See [18.2. Patch Exam](/s/3kS90tLsADGm1ocbe7q9/18.-exam-viewing-show-data/18.-exam-viewing-show-data/18.2.-patch-exam))
+1. [FIXTURE] [#] {PARK} [DELETE] 
+
+**View parked fixtures and address:**
+
+(See: [18.2. Patch Exam](https://vibemanual.compulite.com/exam-show-data.html#patch-exam))
     
 
-> The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key will blackout parked addresses and fixtures.
+><span style="color:Red">> The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key **will** blackout parked addresses and fixtures.</span>
 

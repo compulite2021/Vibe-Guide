@@ -422,7 +422,7 @@
 <ul>
 <li><p>Default Stage Values = {Maintain Last Value}</p></li>
 <li><p>{Clear Editor After Store} = Off</p></li>
-<li><p>{Advance To Cue After Store} = Off</p></li>
+<li><p><span style="color:MediumSpringGreen">{Advance To Cue After Store} = Off</span></p></li>
 <li><p>Qlist Behavior = {Non-Tracking}</p></li>
 </ul>
 <hr />
@@ -437,11 +437,11 @@
 </ul>
 <p>◾ Only hard values are recorded and zero dimmer values is treated as a hard zero.</p>
 <blockquote>
-<p>In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the <strong>Store Options</strong> {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.</p>
+<p><span style="color:Red">In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the <strong>Store Options</strong> {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.</span></p>
 </blockquote>
 <p><strong>Clear Editor on Master GO:</strong></p>
 <ul>
-<li>The editor will be reset when GO on the Master Controller is pressed.</li>
+<li>The editor will be reset when <strong>GO</strong> on the <strong>Master Controller</strong> is pressed.</li>
 </ul>
 <p><strong>Store Scene by Default:</strong></p>
 <ul>
@@ -458,12 +458,12 @@
 <p><strong>Editing Properties:</strong> - ON Value</p>
 <ul>
 <li><p>Virtual wheel sets the default editor value for the dimmer parameter when the [ON] key is pressed.</p></li>
-<li><p>{First ON Recalls Last} - Pressing [ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.</p></li>
+<li><p><span style="color:Gray">{First ON Recalls Last} - Pressing [ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.</span></p></li>
 </ul>
 <p><strong>Restore and Save Defaults:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxFu9gzPgWtT8ffCJCekJ%2F7.1.2.webp?alt=media&amp;token=72e6c0c4-49ed-42a1-9d51-e9e97d4823e3" /></p>
 <ul>
-<li><p>{Restore Popup Positions} - Currently redundant.</p></li>
+<li><p>{Restore Popup Positions} - <span style="color:MediumSpringGreen">Currently redundant.</span></p></li>
 <li><p>{Restore Defaults} - Restores settings changes to the last time {Apply to Defaults} was set.</p></li>
 <li><p>{Restore Factory} - Restores console to “read only” defaults.</p></li>
 <li><p>{Apply to Defaults} -Updates system setting changes to <strong>show specific</strong> defaults without exiting the pop-up.</p></li>
@@ -471,7 +471,7 @@
 </div>
 <div id="timing" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> Timing<a href="system-default-settings.html#timing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Timing Properties - Cue Section</p>
+<p><strong>Timing Properties</strong> - Cue Section</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWzxK5PnA0giOYH3ndZkh%2F7.2.webp?alt=media&amp;token=7617faa8-e505-4a96-9bd8-7bac6b4af477" /></p>
 <p><strong>Default Back Time:</strong></p>
 <ul>
@@ -517,42 +517,42 @@
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmRl35Hvba9wSFzljF7Ap%2F7.3.png?alt=media&amp;token=458921a0-d441-4211-a5dc-b0c6819d1772" /></p>
 <p><strong>Local:</strong></p>
 <ul>
-<li>Set local console IP</li>
+<li>Option to set the local information of the console such as IP and name.</li>
 </ul>
 <p><strong>Console State:</strong></p>
 <ul>
-<li>The unique name is assigned to the console to help identify it in the partners list.</li>
-</ul>
-<p><strong>Console Name:</strong></p>
+<li>There are 2 possible individual states:
 <ul>
-<li>The unique name is assigned to the console to help identify it in the partners list.</li>
-</ul>
-<p><strong>Console State: Device Priority:</strong></p>
-<ul>
-<li><p>Stand Alone (Default) - Consoles is not in a session but networking for sACN, Artnet, and Compulite VC’s is active.</p></li>
-<li><p>Local - Local DMX connectors are available but DMX over Ethernet is disabled.</p></li>
+<li>Stand Alone (Default) – Console is not in a session but networking for outputs, remotes and external connections is active.</li>
+<li>Local (Offline) – Same as Stand Alone but disables the DMX over ethernet.</li>
+</ul></li>
 </ul>
 <p><strong>User ID:</strong></p>
 <ul>
-<li>Not yet implemented</li>
+<li><span style="color:blue">Not yet implemented</span>.</li>
 </ul>
 <p><strong>Start Session:</strong></p>
 <ul>
-<li>The console will become the Master console. (session owner) for use with Multi User and Master/Slave.</li>
+<li>The console becomes a Master console, meaning it’s hosting a session. Later on this in the Master-Slave and Multiuser chapters.</li>
 </ul>
-<p><strong>“Online IP” Devises:</strong></p>
+<p><strong>Online IP Devises:</strong></p>
 <ul>
-<li>Displays all Valid IP based devices active on the network</li>
+<li>Displays all Valid IP based devices active on the network.</li>
 </ul>
-<p><strong>Clear Device IP History</strong></p>
-<p>There is a new option to clear the table of the devices on the network.
-This option was added to let the users empty the table in case they travel to a different location or working on a different scene.</p>
+<p><strong>Delete Selected / Clear Device IP History</strong></p>
+<ul>
+<li>Can either select a device to remove from the list or clear the whole list.</li>
+</ul>
 <p><strong>To clear Device IP History</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Open System Settings.</p></li>
 <li><p>Go to Network tab.</p></li>
 <li><p>Tap <em>Clear IP Devices.</em></p></li>
 </ol>
+<p><strong>Connect As … / Disconnect:</strong></p>
+<ul>
+<li>Related to starting or ending a session with a master console. Later on this in the Master-Slave and Multiuser chapters.</li>
+</ul>
 </div>
 <div id="hardware" class="section level2 hasAnchor" number="7.4">
 <h2><span class="header-section-number">7.4</span> Hardware<a href="system-default-settings.html#hardware" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -579,16 +579,17 @@ This option was added to let the users empty the table in case they travel to a 
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FU3hN3WzAt97uaM12rHlu%2F7.5.webp?alt=media&amp;token=6c4fc2b1-e16e-4cac-aa83-524c93f2a99b" /></p>
 <p><strong>See:</strong></p>
 <ul>
-<li>7.5.1. Controller Settings</li>
-<li>7.5.2. Controller Actions</li>
-<li>7.5.3. Qlist Properties</li>
-<li>7.5.4. Chaser Properties</li>
-<li>7.5.5. Cue Settings</li>
-<li>7.5.6. Cue Store Options</li>
-<li>7.5.7. Scene Settings</li>
-<li>7.5.8. Scene Store Options</li>
-<li>7.5.9. Bank Library Options</li>
-<li>7.5.10. Snap Settings</li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#controller-settings">7.5.1. Controller Settings</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#controller-actions">7.5.2. Controller Actions</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#qlist-properties">7.5.3. Qlist Properties</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#chaser-properties">7.5.4. Chaser Properties</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#cue-settings">7.5.5. Cue Settings</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#cue-store-options">7.5.6. Cue Store Options</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#scene-settings">7.5.7. Scene Settings</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#scene-store-options">7.5.8. Scene Store Options</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#bank-library-options">7.5.9. Bank Library Options</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#snap-settings">7.5.10. Snap Settings</a></li>
+<li><a href="https://vibemanual.compulite.com/system-default-settings.html#effects">7.5.11. Effects</a></li>
 </ul>
 <div id="controller-settings" class="section level3 hasAnchor" number="7.5.1">
 <h3><span class="header-section-number">7.5.1</span> Controller Settings<a href="system-default-settings.html#controller-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -610,7 +611,7 @@ This option was added to let the users empty the table in case they travel to a 
 </ul>
 <p><strong>Defaults</strong> - Controller Settings: Properties</p>
 <ul>
-<li><p><strong>Exclude from Sna</strong>p - The controller will not be recorded in Snapshots.</p></li>
+<li><p><strong>Exclude from Snap</strong> - The controller will not be recorded in Snapshots.</p></li>
 <li><p><strong>Exclude from (Snap) Override</strong> - Snap commands will be ignored even if the controller was initially recorded in a snap.</p></li>
 <li><p><strong>Exclude from Free All</strong> - The controller will not be unloaded with a global [VIBE]+[FREE] command. It may only be unloaded with [FREE] [HERE].</p></li>
 <li><p><strong>Exclude from Release All</strong> - The controller will not be released with a global [VIBE]+[RELEASE] command. It may only be unloaded with [RELEASE] [HERE].</p></li>
@@ -628,11 +629,11 @@ This option was added to let the users empty the table in case they travel to a 
 </div>
 <div id="controller-actions" class="section level3 hasAnchor" number="7.5.2">
 <h3><span class="header-section-number">7.5.2</span> Controller Actions<a href="system-default-settings.html#controller-actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Defaults - Controller Default Actions</p>
+<p><strong>Defaults</strong> - Controller Default Actions</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2QY58B93PfbYXzS3G7uS%2F7.5.2.png?alt=media&amp;token=711da5cc-7dbb-4617-94a0-db040ba000fa" /></p>
 <p><strong>Qlists and Scenes:</strong></p>
 <ul>
-<li>The Default button assignments when a Qlist or Scene is assigned to a controller ( See: <a href="/s/3kS90tLsADGm1ocbe7q9/14.-playing-back-cues-and-scenes/14.-playing-back-cues-and-scenes/14.5.-configuring-controllers">14.5. Configuring Controllers</a>)</li>
+<li>The Default button assignments when a Qlist or Scene is assigned to a controller ( <strong>See:</strong> <a href="https://vibemanual.compulite.com/playback-controllers.html#configuring-controllers">14.5. Configuring Controllers</a>)</li>
 </ul>
 <p><strong>Bottom Controller Button for Submaster</strong></p>
 <p>The default behavior for submaster’s assignment on the bottom button is <em>Flash</em></p>
@@ -647,18 +648,18 @@ This option was added to let the users empty the table in case they travel to a 
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FHDjMWGWWZT6WTImJ7Lso%2F7.5.3.webp?alt=media&amp;token=0a31ada9-f9ae-4abb-ac7b-9a8931c25a6c" /></p>
 <p><strong>Qlist Mode:</strong></p>
 <ul>
-<li><p>Normal - Cues do not auto loop and all normal time functions are calculated.</p></li>
-<li><p>Chaser - Cues auto-loop from one to another. Only In-Time, and Delay-In Time are calculated. Parameter time is still valid.</p></li>
+<li><p><strong>Normal</strong> - Cues do not auto loop and all normal time functions are calculated.</p></li>
+<li><p><strong>Chaser</strong> - Cues auto-loop from one to another. Only In-Time, and Delay-In Time are calculated. Parameter time is still valid.</p></li>
 </ul>
 <p><strong>Qlist Direction:</strong></p>
 <ul>
-<li><p>Backward - Chasers and Qlists transition highest to lowest.</p></li>
-<li><p>Forward - Chases and Qlists transition lowest to highest.</p></li>
+<li><p><strong>Backward</strong> - Chasers and Qlists transition highest to lowest.</p></li>
+<li><p><strong>Forward</strong> - Chases and Qlists transition lowest to highest.</p></li>
 </ul>
 <p><strong>Tracking (Default):</strong></p>
 <ul>
 <li><p>ON - Normal tracking logic will be used.</p></li>
-<li><p>OFF (NOT QONLY) - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).</p></li>
+<li><p>OFF <span style="color:MediumSpringGreen">(NOT QONLY)</span> - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).</p></li>
 </ul>
 <p><strong>Defaults</strong> - Qlist Properties: Preferences</p>
 <ul>
@@ -669,66 +670,22 @@ This option was added to let the users empty the table in case they travel to a 
 <li><p><strong>Trigger</strong> - Toggles on/off the execution of Macros and Snaps that are attached to cues.</p></li>
 <li><p><strong>Look Ahead</strong> - Enable/Disable the Look Ahead function.</p></li>
 </ul>
+<hr />
 <p><strong>Defaults</strong> - Qlist Properties: Loop GO Behavior</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Behavior</strong></th>
-<th><strong>Function</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Go Next This is the default</td>
-<td>Pressing GO immediately fades to the next cue in the loop. The loop continues running.</td>
-</tr>
-<tr class="even">
-<td>Exit Loop At End</td>
-<td>GO immediately stops the current transition and fades to the first cue AFTER the loop.</td>
-</tr>
-<tr class="odd">
-<td>Fade To End Of Loop</td>
-<td>GO immediately stops the current transition and fades to the last cue in the loop. The loop count is ignored.</td>
-</tr>
-<tr class="even">
-<td>Finish Loop And Pause</td>
-<td>The current loop completes and stops at the END of the loop. Pressing GO will restart the loop. Loop count will be taken into consideration and at the end of the loop count, the next GO will exit the loop.</td>
-</tr>
-<tr class="odd">
-<td>Restart Loop</td>
-<td>Immediately Stops the cue transition and faders to the first cue in the loop and the loop continues running.</td>
-</tr>
-<tr class="even">
-<td>Finish Cue And Pause</td>
-<td>The current cue completes its transition and pauses. Pressing GO again will resume the loop.</td>
-</tr>
-<tr class="odd">
-<td>Finish cue and exit</td>
-<td>The current cue completes its transition and stops. Next Press of GO will fade to the first cue after the loop.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzTP4ECnWc9wORFtULApe%2Fuploads%2FjaXMWmwEteT1HZey8pXY%2F1.png?alt=media&amp;token=fc69dc17-3117-4da5-8650-dbc640747b56" /></p>
 <hr />
 <p><strong>Defaults</strong> - Release time</p>
 <ul>
-<li><strong>Virtual Wheel:</strong></li>
-</ul>
-<p>◾ Wheel at Default - System Default Release time is referenced.</p>
-<p>◾ Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off.</p>
-<p>◾ Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.</p>
+<li><p><strong>Virtual Wheel:</strong></p>
 <ul>
-<li><strong>Button under wheel:</strong> Toggles between Milliseconds, Seconds, Minutes, Hours.</li>
+<li><p>Wheel at Default - System Default Release time is referenced.</p></li>
+<li><p>Using virtual wheel - Rotate the wheel to set a Qlist specific time that a controller references to fade to off.</p></li>
+<li><p>Using keypad - Tap the inside of the virtual wheel until it turns red. Set a release value from the keypad.</p></li>
+</ul></li>
+<li><p><strong>Button under wheel:</strong> Toggles between Milliseconds, Seconds, Minutes, Hours.</p></li>
 </ul>
 <p><strong>Defaults</strong> - Qlist Properties:</p>
-<p>◾ <strong>Restore default</strong> - Resets Qlist properties to their last stored configuration.</p>
+<p><strong>Restore default</strong> - Resets Qlist properties to their last stored configuration.</p>
 </div>
 <div id="chaser-properties" class="section level3 hasAnchor" number="7.5.4">
 <h3><span class="header-section-number">7.5.4</span> Chaser Properties<a href="system-default-settings.html#chaser-properties" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -736,42 +693,46 @@ This option was added to let the users empty the table in case they travel to a 
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fx3HOw9fVBOsuOCVxbipY%2F7.5.4.png?alt=media&amp;token=e223a6ec-52ab-4896-b1d9-35dcb6425bac" /></p>
 <p><strong>Chase pattern:</strong></p>
 <ul>
-<li><p>Normal - Cues loop from one to another in order.</p></li>
-<li><p>Build - Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behaviour).</p></li>
-<li><p>Bounce - Cues transition from lowest cue number to highest, then reverse and transition from highest to lowest.</p></li>
-<li><p>Bounce Build - Cues are added on to each other lowest to highest are added to each other highest to lowest.</p></li>
-<li><p>Random - Cue Order is randomized.</p></li>
+<li><p><strong>Normal</strong> - Cues loop from one to another in order.</p></li>
+<li><p><strong>Build</strong> - <span style="color:Gray">Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behaviour).</span></p></li>
+<li><p><strong>Bounce</strong> - Cues transition from lowest cue number to highest, then reverse and transition from highest to lowest.</p></li>
+<li><p><strong>Bounce Build</strong> - <span style="color:Gray">Cues are added on to each other lowest to highest are added to each other highest to lowest.</span></p></li>
+<li><p><strong>Random</strong> - Cue Order is randomized.</p></li>
 </ul>
 <p><strong>Time:</strong></p>
 <ul>
-<li><p>Chase TIme: Independence in-time for dimmer when a chase is started.</p></li>
-<li><p>Units Button - Sets the units for time settings.</p></li>
-<li><p>Loop count: Repeats the chase loop the specified count and stops on the last cue.</p></li>
+<li><p><strong>Chase Time:</strong> <span style="color:Gray"> Independence in-time for dimmer when a chase is started.</span></p></li>
+<li><p><strong>Units Button</strong> - <span style="color:Gray">Sets the units for time settings.</span></p></li>
+<li><p><strong>Loop count:</strong> <span style="color:Gray">Repeats the chase loop the specified count and stops on the last cue.</span></p></li>
 </ul>
 <p><strong>Properties:</strong></p>
 <ul>
-<li><p>Int Limit: Proportionately limits the intensity output of the cues assigned to a controller.</p></li>
-<li><p>X-fade: Proportionately adjusts the crossfade curve of a chase from full crossfade to jump.</p></li>
+<li><p><strong>Int Limit:</strong> Proportionately limits the intensity output of the cues assigned to a controller.</p></li>
+<li><p><strong>X-fade:</strong> Proportionately adjusts the crossfade curve of a chase from full crossfade to jump.</p></li>
 </ul>
-<p><strong>Defaults</strong> - Properties: Restore default:</p>
+<hr />
+<p><strong>Defaults</strong> - Properties:</p>
+<p>Restore default:</p>
 <ul>
 <li><strong>Restores default</strong> - Resets Chase properties to their last stored configuration.</li>
 </ul>
 </div>
 <div id="cue-settings" class="section level3 hasAnchor" number="7.5.5">
 <h3><span class="header-section-number">7.5.5</span> Cue Settings<a href="system-default-settings.html#cue-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Default - Cue Settings</p>
+<p><strong>Default</strong> - Cue Settings</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FT8Zv89ZCvjgntdDbmiIZ%2F7.5.5.png?alt=media&amp;token=6d1f88b5-7abe-4c31-822d-8ad687c0dfd5" /></p>
 <p><strong>See:</strong></p>
 <ul>
-<li><strong>Time:</strong></li>
-</ul>
-<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.1.-assigning-cue-time">10.11.1. Assigning Cue Time</a></p>
-<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.11.2.-wait-and-follow-times">10.11.2. Wait and Follow Times</a></p>
+<li><p><strong>Time:</strong></p>
 <ul>
-<li><strong>Properties:</strong></li>
+<li><p><a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#assigning-cue-time">10.11.1. Assigning Cue Time</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#wait-and-follow-times">10.11.2. Wait and Follow Times</a></p></li>
+</ul></li>
+<li><p><strong>Properties:</strong></p>
+<ul>
+<li><a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#tracking-options">10.12.3. Tracking Options</a></li>
+</ul></li>
 </ul>
-<p>◾ <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options">10.12.3. Tracking Options</a></p>
 <p><strong>Update Popup</strong></p>
 <p>The default for the <em>New Values</em> is <em>Master PB Only</em></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FJVFqmv4vtVYVMeKmMG0X%2Fimage.png?alt=media&amp;token=bd3a09bd-086c-4a87-b389-b644b3076ee5" /></p>
@@ -780,41 +741,45 @@ This option was added to let the users empty the table in case they travel to a 
 <h3><span class="header-section-number">7.5.6</span> Cue Store Options<a href="system-default-settings.html#cue-store-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Default</strong> - Cue Store Options</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjkzU21qPYa1QeWdSjgIe%2F7.5.6.webp?alt=media&amp;token=f9d16c19-eb41-479b-9be3-e3a4d2dfd36c" /></p>
-<p><strong>See</strong>: <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options">10.7. Cue Store Options</a></p>
+<p><strong>See</strong>: <a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-store-options-1">10.7. Cue Store Options</a></p>
 </div>
 <div id="scene-settings" class="section level3 hasAnchor" number="7.5.7">
 <h3><span class="header-section-number">7.5.7</span> Scene Settings<a href="system-default-settings.html#scene-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Defaults</strong> - Scene Settings</p>
 <ul>
-<li><strong>Time In</strong> - Sets the default in-time for Scenes. The default value may be changed using:</li>
-</ul>
-<p>◾ Virtual wheel</p>
-<p>◾ Tapping in the centre of the wheel until it turns red then entering a value using the keypad</p>
+<li><p><strong>Time In</strong> - Sets the default in-time for Scenes. The default value may be changed using:</p>
 <ul>
-<li><strong>Units Button</strong> - Sets the time units (H/M/S/Mil)</li>
+<li><p>Virtual wheel</p></li>
+<li><p>Tapping in the centre of the wheel until it turns red then entering a value using the keypad</p></li>
+</ul></li>
+<li><p><strong>Units Button</strong> - Sets the time units (H/M/S/Mil)</p></li>
 </ul>
 </div>
 <div id="scene-store-options" class="section level3 hasAnchor" number="7.5.8">
 <h3><span class="header-section-number">7.5.8</span> Scene Store Options<a href="system-default-settings.html#scene-store-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>Default</strong> - Cue Store Options</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDgLaAhLr29G2p63xJTdO%2F7.5.8.webp?alt=media&amp;token=739d0f7d-3b86-45c5-a74c-5d035cab9acd" /></p>
-<p><strong>Similar to Cue Store Options. See:</strong> <a href="/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.7.-cue-store-options">10.7. Cue Store Options</a></p>
+<p><strong>Similar to Cue Store Options. See:</strong> <a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-store-options-1">10.7. Cue Store Options</a></p>
 </div>
 <div id="bank-library-options" class="section level3 hasAnchor" number="7.5.9">
 <h3><span class="header-section-number">7.5.9</span> Bank Library Options<a href="system-default-settings.html#bank-library-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Default - Lib Options</p>
+<p><strong>Default</strong> - Lib Options</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDVM7PFXkDxkbwqmaCdYE%2F7.5.9.webp?alt=media&amp;token=f4dd2186-436e-4398-8927-0f51c3c2a1c3" /></p>
-<p>Options are the same for the following:
-Intensity
-Position
-Color
-Beam
-Image
-Shape
-See:
-12.2. Store and Modify Bank Libraries</p>
-<p>Options for Effect include an additional option:
-Include Base - If toggled on, the start points of parameters will be stored with the Effect making them “Absolute Effects”.</p>
+<p><strong>Options are the same for the following:</strong></p>
+<ul>
+<li>Intensity</li>
+<li>Position</li>
+<li>Color</li>
+<li>Beam</li>
+<li>Image</li>
+<li>Shape</li>
+</ul>
+<p><strong>See:</strong><br />
+<a href="https://vibemanual.compulite.com/libraries.html#store-and-modify-bank-libraries">12.2. Store and Modify Bank Libraries</a></p>
+<p><strong>Options for Effect include an additional option:</strong></p>
+<ul>
+<li>Include Base - If toggled on, the start points of parameters will be stored with the Effect making them “Absolute Effects”.</li>
+</ul>
 </div>
 <div id="snap-settings" class="section level3 hasAnchor" number="7.5.10">
 <h3><span class="header-section-number">7.5.10</span> Snap Settings<a href="system-default-settings.html#snap-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -836,7 +801,7 @@ Include Base - If toggled on, the start points of parameters will be stored with
 <ul>
 <li>Sets the time units. (H/M/S/Mil)</li>
 </ul>
-<p>See: <a href="/s/3kS90tLsADGm1ocbe7q9/17.-snaps-snapshots/17.-snaps-snapshots">17. Snaps</a></p>
+<p>See: <a href="https://vibemanual.compulite.com/snaps-snapshots.html">17. Snaps</a></p>
 </div>
 <div id="effects" class="section level3 hasAnchor" number="7.5.11">
 <h3><span class="header-section-number">7.5.11</span> Effects<a href="system-default-settings.html#effects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -846,7 +811,7 @@ Include Base - If toggled on, the start points of parameters will be stored with
 </div>
 <div id="system" class="section level2 hasAnchor" number="7.6">
 <h2><span class="header-section-number">7.6</span> System<a href="system-default-settings.html#system" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Default - System</p>
+<p><strong>Default</strong> - System</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzvCIV8NuJjCwGBqHV4cv%2F7.6.png?alt=media&amp;token=2cc87dc5-332f-47eb-8ed2-cd59b916dd85" /></p>
 <p><strong>Vibe is made up of four modules:</strong></p>
 <ol style="list-style-type: decimal">

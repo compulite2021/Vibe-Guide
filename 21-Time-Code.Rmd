@@ -62,7 +62,8 @@ Supported frame rates are:
 
 When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiEYg2WqRWqRZXIcBO5Yc%2F21.2.webp?alt=media&token=5e38c8e0-da98-4242-9d22-be0c6f3a7eb6)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&token=86dd2f10-6d2a-4905-bfeb-baec212c85db)
+
 
 **Timeline view with two timeline tracks, the cursor, and a marker**
 
