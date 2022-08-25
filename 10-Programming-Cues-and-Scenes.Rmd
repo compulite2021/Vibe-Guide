@@ -16,8 +16,8 @@
 - [10.11. Cue Time Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-time-properties)
 - [10.12. Additional Cue Properties](https://vibemanual.compulite.com/programming-cues-and-scenes.html#additional-cue-properties)
 - [10.13. Parameter Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#parameter-time)
-- [10.14. Parameter Profile](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
-- 10.15.  Group Submasters
+- [10.14. Parameter Profile](https://vibemanual.compulite.com/programming-cues-and-scenes.html#parameter-profile)
+- [10.15.  Group Submasters](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
 
 ## What Are Qlists, Cues, Scenes, and Submasters?
 
@@ -1012,7 +1012,7 @@ All fixtures in the Scene will now act as Group Submasters. Scene fixture values
 
 1.  Press [GROUP] [#] [HERE] - To any button of the destination slider controller.
     
-2.   The top controller button will turn light blue to indicate that it is now a Group Submaster.
+2.  The top controller button will turn light blue to indicate that it is now a Group Submaster.
     
 
 **Assign a Group to a Slider Controller using Group softkeys:**

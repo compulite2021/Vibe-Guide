@@ -19,7 +19,7 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
     
 -   [21.6. Markers](https://vibemanual.compulite.com/working-with-time-code.html#markers)
 
--   21.7. Time Format
+-   [21.7. Time Format](https://vibemanual.compulite.com/time-code.html#time-format)
 
 ## Timecode and Timeline basics
 
