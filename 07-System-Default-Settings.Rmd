@@ -59,7 +59,7 @@ System Settings defaults are accessed by selecting {System Settings} from the {V
     
 -   {Clear Editor After Store} = Off
     
--   <span style="color:MediumSpringGreen">{Advance To Cue After Store} = Off</span>
+-   <span style="color:MediumAquaMarine">{Advance To Cue After Store} = Off</span>
     
 -   Qlist Behavior = {Non-Tracking}
     
@@ -112,7 +112,7 @@ Tracking - Non-Tracking:
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxFu9gzPgWtT8ffCJCekJ%2F7.1.2.webp?alt=media&token=72e6c0c4-49ed-42a1-9d51-e9e97d4823e3)
 
--   {Restore Popup Positions} - <span style="color:MediumSpringGreen">Currently redundant.</span>
+-   {Restore Popup Positions} - <span style="color:MediumAquaMarine">Currently redundant.</span>
     
 -   {Restore Defaults} - Restores settings changes to the last time {Apply to Defaults} was set.
     
@@ -163,13 +163,6 @@ Tracking - Non-Tracking:
 
 -   Default fade time for all controllers being initiated by the Snap.
     
-
-
-**Timing Properties - Snap** Section:
-
--   Default fade time for all controllers being initiated by the Snap.
-    
-
 
 **Timing Properties - System Time** Section:
 
@@ -385,7 +378,7 @@ The default behavior for submaster's assignment on the bottom button is _Flash_
 
 -   ON - Normal tracking logic will be used.
     
--   OFF <span style="color:MediumSpringGreen">(NOT QONLY)</span> - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).
+-   OFF <span style="color:MediumAquaMarine">(NOT QONLY)</span> - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).
     
 
 

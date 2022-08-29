@@ -1,3 +1,4 @@
+
 # Programming Concepts
 
 
@@ -17,53 +18,53 @@ The Vibe is an advanced lighting control system designed to simplify programming
     
 -   The dedicated graphical "Smart Screen" presents global pickers for most parameters including: 
 
-◾ HSV color picker (Hue, Saturation, Intensity) 
+	- HSV color picker (Hue, Saturation, Intensity) 
 
-◾ P/T XYZ Trackpad 
+	- P/T XYZ Trackpad 
 
-◾ Blade picker 
+	-  Blade picker 
 
-◾ Beam picker for Iris, Zoom, Focus and Frost effects 
+	-  Beam picker for Iris, Zoom, Focus and Frost effects 
 
-◾ General slider picker for GOBO, Color, Prism, and Animation wheels 
+	-  General slider picker for GOBO, Color, Prism, and Animation wheels 
 
-◾ Intensity picker for common intensity values and strobe effects
+	-  Intensity picker for common intensity values and strobe effects
     
 
 **Real World Units:**
 
 -   Where possible picker values are displayed in "Real World" units 
 
-◾ XYZ P/T in degrees 
+	-  <span style="color:Gray">XYZ P/T in degrees</span> 
 
-◾ Strobe in HZ 
+	-  Strobe in HZ 
 
-◾ Color in HSV 0-360 degrees 
+	-  <span style="color:Gray">Color in HSV 0-360 degrees</span> 
 
-◾ Zoom in degrees
+	-  <span style="color:Gray">Zoom in degrees</span>
     
 
 **Virtual Parameters:**
 
 -   To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture. Examples would be: 
 
-◾ HSV - As a common denominator for CMY, RGB, and Multi color LED fixtures such as RGBA, ETC Seven color, RGBW. 
+	-  HSV - As a common denominator for CMY, RGB, and Multi color LED fixtures such as RGBA, ETC Seven color, RGBW. 
 
-◾ Virtual Intensity - For controlling LED fixtures that do not have a dimmer parameter. 
+	-  Virtual Intensity - For controlling LED fixtures that do not have a dimmer parameter. 
 
-◾ XYZ - for calibration of fixtures that only have a physical Pan/Tilt
+	-  XYZ - for calibration of fixtures that only have a physical Pan/Tilt
     
 
 **Tracking:**
 
--   Vibe by default is a Tracking console and follows the conventions of modern theatrical consoles. Vibe also has a special track feature called SKIP. If cues are modified using SKIP, instead of Qonly, the relationship with the original hard value is maintained, and changes to the original value "Skip" over the modification and preserve the track.
+-   Vibe by default is a **Tracking** console and follows the conventions of modern theatrical consoles. Vibe also has a special track feature called **SKIP**. If cues are modified using **SKIP**, instead of **Qonly**, the relationship with the original hard value is maintained, and changes to the original value "**Skip**" over the modification and preserve the track.
     
 
-**Qonly Mode: Not implemented globally**
+**Qonly Mode:** <span style="color:Gray">Not implemented globally</span>
 
--   Modifications, insertions and deletions will be done Qonly by default
+-   <span style="color:Gray">Modifications, insertions and deletions will be done Qonly by default</span>
     
--   Move fades will still be valid
+-   <span style="color:Gray">Move fades will still be valid</span>
     
 
 **Non - Tracking Compulite Mode - Defaults are changed to:**
@@ -81,11 +82,11 @@ The Vibe is an advanced lighting control system designed to simplify programming
 
 -   The Vibe can work in three color spaces: 
 
-◾ HSV - Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (depending on the fixture type) will be displayed but not directly referenced in cues using HSV.
+	-  HSV - Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (depending on the fixture type) will be displayed but not directly referenced in cues using HSV.
 
-◾ RGB - If color values are set using the physical RGB parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced .
+	-  RGB - If color values are set using the physical RGB parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced .
 
-◾ CMY - If color values are set using the CMY parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced.
+	-  CMY - If color values are set using the CMY parameters, those values are stored in the cue and HSV values will be displayed but not directly referenced.
     
 
 **Color crossfading:**
@@ -99,6 +100,7 @@ The Vibe is an advanced lighting control system designed to simplify programming
     
 -   To clear the editor and selection, [VIBE] (Shift) + [RESET] must be pressed.
 
+
 ## Command Syntax
 
 Vibe uses a hybrid command syntax.
@@ -108,11 +110,13 @@ Vibe uses a hybrid command syntax.
 -   Source Objects ⟶  Filters ⟶  Options ⟶  Command Completes. (Action Completes Mode)
     
 
-e.g. [Group 1] [Full] [Library 2 (Position) 1] [Enter] [Cue 1] [Store Options] {Red + White} [Store]
+e.g. *[Group 1] [Full] [Library 2 (Position) 1] [Enter] [Cue 1] [Store Options] {Red + White} [Store]*
 
 **For softkeys and controllers where touching the object completes the sequence, the logic is:**
 
--   Source Object, Filter, Command, Options, Destination Object Completes (Here Mode) Completes {GROUP} [1][Full], [LIBRARY] {Position} [3] [Store] [Store Options] {Red Only} [Press any [Button] on Slider Controller 1].
+-   Source Object, Filter, Command, Options, Destination Object Completes (Here Mode) Completes
+
+ *{GROUP} [1][Full], [LIBRARY] {Position} [3] [Store] [Store Options] {Red Only} [Press any [Button] on Slider Controller 1].*
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FEmYCVzO9Xwt9HSC7m72H%2F8.2.webp?alt=media&token=1a34b4b3-592b-4fee-8b27-c3ae19208b19)
 
