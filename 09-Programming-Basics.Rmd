@@ -12,10 +12,11 @@
 
 
 ## Editor
+
 Editor Basics:
 
--   9.1.1. What is the Editor
--   9.1.2. Blind Editor
+-   [9.1.1. What is the Editor](https://vibemanual.compulite.com/programming-basics.html#what-is-the-editor)
+-   [9.1.2. Blind Editor](https://vibemanual.compulite.com/programming-basics.html#blind-editor)
 
 ###  What is the Editor
 
@@ -52,7 +53,7 @@ All manual parameter modification occurs in the **EDITOR**. (Programmer in some 
 -   Press [VIBE] + [RESET]
     
 
-See also: [9.3.10. Release and Home Sequences](/s/3kS90tLsADGm1ocbe7q9/9.-programming-basics/9.-programming-basics/9.3.10.-release-and-home-sequences)
+See also: [9.3.10. Release and Home Sequences](https://vibemanual.compulite.com/programming-basics.html#release-and-home-sequences)
 
 ### Blind Editor
 
@@ -67,7 +68,7 @@ Vibe has two Blind Editor behaviours:
 
 **To build a new cue in the Blind Editor:**
 
-1.  Press [Blind] key flashes yellow and the Command Line turns yellow
+1.  Press [Blind] key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
     
 2.  Program values using the Live Display for reference - no values will be outputted to the stage
     
@@ -87,9 +88,9 @@ Vibe has two Blind Editor behaviours:
 
 **To edit a cue in the Blind Editor:**
 
-1. Press [Blind] - key flashes yellow and the Command Line turns yellow
+1. Press [Blind] - key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
     
-2.  Press [QLIST] [#] [CUE] [#] [EDIT] - [UPDATE] flashes red
+2.  Press [QLIST] [#] [CUE] [#] [EDIT] - [UPDATE] flashes <span style="color:Red">red</span>.
     
 3. Make modifications to the cue
     
@@ -106,14 +107,14 @@ Vibe has two Blind Editor behaviours:
 
 **Editor Tools:**
 
--   9.2.1. Selections Tools
--   9.2.3. Transpose
--   9.2.4. Pattern
--   9.2.5. Fan Mode
--   9.2.6. Highlight Mode
--   9.2.7. Lowlight Mode
--   9.2.8. Remainder Dim {Rem Dim}
--   9.2.9 Home Scene
+-   [9.2.1. Selections Tools](https://vibemanual.compulite.com/programming-basics.html#selections-tools)
+-   [9.2.2. Transpose](https://vibemanual.compulite.com/programming-basics.html#pattern)
+-   [9.2.3. Pattern](https://vibemanual.compulite.com/programming-basics.html#fan-mode)
+-   [9.2.4. Fan Mode](https://vibemanual.compulite.com/programming-basics.html#fan-mode)
+-   [9.2.5. Highlight Mode](https://vibemanual.compulite.com/programming-basics.html#highlight-mode)
+-   [9.2.6. Lowlight Mode](https://vibemanual.compulite.com/programming-basics.html#lowlight-mode)
+-   [9.2.7. Remainder Dim {Rem Dim}](https://vibemanual.compulite.com/programming-basics.html#remainder-dim-rem-dim)
+-   [9.2.8 Home Scene](https://vibemanual.compulite.com/programming-basics.html#home-scene)
 
 ### Selections Tools 
 
@@ -133,12 +134,12 @@ Currently, Vibe has basic Selection Tools. Advanced tools are under development.
     
 -   {4/1} - Grouping of 4 starting at the first fixture of the range
     
--   {/} - Used as a separator. **Groupings of #/# Start fixture of the grouping**
+-   **{/}** - Used as a separator. **Groupings of #/# Start fixture of the grouping**
     
--   **E.g.** [Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13 (as soon as the {/} is pressed **EVERY 3/1** will be displayed on the command line).
+-   **E.g. -**  *[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13 (as soon as the {/} is pressed **EVERY 3/1** will be displayed on the command line).*
     
 
-[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).
+*[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).*
 
 ### Transpose
 
@@ -146,17 +147,17 @@ Transpose is accessed from the Editor Toolbar. It is used to reorder fixture sel
 
 **E.g. 1:**
 
--   Fixture 1 ⟶  12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12
+*-   Fixture 1 ⟶  12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12*
     
 
 **E.g. 2:**
 
--   Fixture 1 ⟶  12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12
+*-   Fixture 1 ⟶  12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12*
     
 
 **E.g. 3:**
 
--   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12
+*-   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12*
 
 ### Pattern
 Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
@@ -165,7 +166,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 
 1. Make a fixture selection
     
-2. Tap {Pattern} on the Editor Toolbar - The Pattern pop-up will open. 👉 This is not an effect even though it is a dynamic display.
+2. Tap {Pattern} on the Editor Toolbar - The Pattern pop-up will open. 👉 <span style="color:Red">This is not an effect even though it is a dynamic display.</span>
     
 3. Tap the indicator at the top of the displayed fixtures. - it should turn white.
     
@@ -182,7 +183,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 9.   Open the Advanced Effects editor and program the desired effect.
     
 
--   See: 13.3. Advanced Effects Editor
+-   See: [13.3. Advanced Effects Editor](https://vibemanual.compulite.com/effects-1.html#advanced-effects-editor)
     
 
 > Simple Block and Sub Block groupings may be created within both Effects Editors. The pattern is for advanced blocks and groupings
@@ -198,7 +199,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 2.  Using keypad syntax.
     
 
-See: 9.3.7. Fixture Selection (Detailed)
+See: [9.3.7. Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
 
 **Using [Fan] Mode:**
 
@@ -241,9 +242,9 @@ See: 9.3.7. Fixture Selection (Detailed)
     
 3. Select a Function from the sliding picker.
     
-4. Select Blocks of {#}
+4. Select **Blocks of {#}**
     
-5. Select Sub Blocks {#}
+5. Select **Sub Blocks {#}**
     
 6. Turn the encoder wheel of the parameter requiring fanning.
     
@@ -276,7 +277,7 @@ See: 9.3.7. Fixture Selection (Detailed)
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW2ZfOpxlsJUa56lG2mgQ%2F9.2.4.5.webp?alt=media&token=284e82aa-eec2-4e18-a210-4c1d01ff8752)
 
-Instead of fanning Blocks based on the selection, fixture Groups may also be used as Blocks.
+Instead of fanning Blocks based on the selection, fixture **Groups** may also be used as Blocks.
 
 **To Fan Blocks By Groups:**
 
@@ -286,7 +287,7 @@ Instead of fanning Blocks based on the selection, fixture Groups may also be use
     
 -   Use any of the above methods to fan parameters by Group Parameters may also be fanned using keypad syntax.
     
--   Fixture Selection (Detailed)
+-   [Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
 
 ### Highlight Mode
 
@@ -313,7 +314,9 @@ Highlight and Lowlight modes are used to help identify the positions of fixtures
 
 1. Select fixtures using keypad or using Groups.
     
-2. Press [H.LIGHT] - The key will flash in red to indicate the mode is active. **All** fixtures of the selection will be set as specified above.
+2. Press [H.LIGHT] - The key will flash in <span style="color:Red">red</span> to indicate the mode is active. 
+
+	**All** fixtures of the selection will be set as specified above.
     
 3. Press [NEXT] - The first fixture will remain "highlighted" and all other fixtures will return to their editor or stage values.
     
@@ -333,7 +336,7 @@ Highlight and Lowlight modes are used to help identify the positions of fixtures
 
 > Until [NEXT] [PREV] is pressed Groups will be appended to make up a larger Highlight selection.
 
-The Highlight may be customized when the default home values are too generic. Users may want to tighten the zoom or use a specific iris as a fixtures default.
+Highlight may be customized when the default home values are too generic. Users may want to tighten the zoom or use a specific iris as a fixtures default.
 
 **To create a custom Highlight Scene:**
 
@@ -352,7 +355,7 @@ The Highlight may be customized when the default home values are too generic. Us
 
 Lowlight mode is used when many fixtures are lit up and therefore Highlight is not helpful. **Lowlight Mode affects parameters and banks in the following way:**
 
--   Dimmer - 30% all fixtures except active fixture which will be at 100%
+-   Dimmer - 30% all fixtures **except** active fixture which will be at 100%
     
 -   Other Intensity parameters - home values and masked.
     
@@ -371,7 +374,7 @@ Lowlight mode is used when many fixtures are lit up and therefore Highlight is n
 
 1.   Select fixtures using the keypad or using Groups.
     
-2.  Press [L.LIGHT] - All dimmer parameters will go to 30%. [L.LIGHT] will flash in red to indicate the mode is active. All other fixtures of the selection will be set as specified above.
+2.  <span style="color:Red">Press [L.LIGHT] - All dimmer parameters will go to 30%. [L.LIGHT] will flash in red to indicate the mode is active. All other fixtures of the selection will be set as specified above.</span>
     
 3. Press [NEXT] - The first fixture will go to a dimmer value of 100% and all other fixtures dimmer values will remain at 30%. Other parameters will return to their editor or stage values.
     
@@ -381,9 +384,30 @@ Lowlight mode is used when many fixtures are lit up and therefore Highlight is n
     
 6.  Press [L.LIGHT] again to turn off Highlight Mode. The red light will go out and fixtures will return to their current editor or stage values.
 
+>Highlight/Lowlight may be entered before a selection is made.
+>Press [ENTER] to Highlight the selection.
+
+**To swap new fixtures into Lowlight:**
+
+- Select new fixtures or Groups and press [ENTER] while still in Highlight
+
+	Mode - the Highlight selection will be swapped.
+>Until [NEXT] [PREV] is pressed Groups will be appended to make up a larger Highlight selection.
+
+Lowlight may be customized when the default home values are are too generic. Frequently users set the Lowlight dimmer to Zero instead of the default 30% to create a solo effect.
+
+**To create a custom Lowlight Scene:**
+
+1. Set the values in the Editor similar to creating a Cue or a Scene.
+2. Press [SCENE] [L.LIGHT] [STORE]
+
+**To Delete the Highlight Scene:**
+
+- Press [SCENE] [L.LIGHT] [DELETE]
+
 ### Remainder Dim {Rem Dim}
 
-**REM DIM** is an Editor Tool commonly used in theatre environments but can be useful in many other situations.
+**REM DIM** is an Editor Tool commonly used in theatr environments but can be useful in many other situations.
 
 -   **{REM DIM}** Toggles all dimmer values to 0 except those that are selected. If no value is given in the editor, the selected fixtures will maintain their current values and not create a hard move.
     
@@ -417,25 +441,25 @@ By default released fixtures return to their home values as defined by the devic
 
 Working with Fixtures:
 
--   9.3.1. Fixture Selection basics
+-   [9.3.1. Fixture Selection basics](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-basics)
     
--   9.3.2. What are Parameters
+-   [9.3.2. What are Parameters](https://vibemanual.compulite.com/programming-basics.html#what-are-parameters)
     
--   9.3.3. Virtual Parameters
+-   [9.3.3. Virtual Parameters](https://vibemanual.compulite.com/programming-basics.html#virtual-parameters)
     
--   9.3.4. Smart Screen
+-   [9.3.4. Smart Screen](https://vibemanual.compulite.com/programming-basics.html#smart-screen-1)
     
--   9.3.5. Adjusting Parameters using the Wheel Picker
+-   [9.3.5. Adjusting Parameters using the Wheel Picker](https://vibemanual.compulite.com/programming-basics.html#adjusting-parameters-using-the-wheel-picker)
     
--   9.3.6. Grab
+-   [9.3.6. Grab](https://vibemanual.compulite.com/programming-basics.html#grab)
     
--   9.3.7. Fixture Selection (Detailed)
+-   [9.3.7. Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
     
--   9.3.8. Setting Parameters using Main Encoder Wheels
+-   [9.3.8. Setting Parameters using Main Encoder Wheels](https://vibemanual.compulite.com/programming-basics.html#setting-parameters-using-main-encoder-wheels)
     
--   9.3.9. Setting Parameters using Interactive Encoder Wheels
+-   [9.3.9. Setting Parameters using Interactive Encoder Wheels](https://vibemanual.compulite.com/programming-basics.html#setting-parameters-using-interactive-encoder-wheels)
     
--   9.3.10. Release and Home Sequences
+-   [9.3.10. Release and Home Sequences](https://vibemanual.compulite.com/programming-basics.html#release-and-home-sequences)
 
 ### Fixture Selection basics
 
