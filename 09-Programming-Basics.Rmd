@@ -571,7 +571,7 @@ The **Smart Screen** is dedicated to displaying:
 
 **The Smart Screen is divided into six sections:**
 
- **<p align=center> Smart Screen - Intensity Bank</p>**
+ <p align=center> Smart Screen - Intensity Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a)
 
@@ -579,29 +579,29 @@ The **Smart Screen** is dedicated to displaying:
 The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
 
 
-**<p align=center> Smart Screen - Position Bank</p>** 
+<p align=center> Smart Screen - Position Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
 
 
-**<p align=center> Smart Screen - Color Bank</p>** 
+<p align=center> Smart Screen - Color Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&token=6d819c90-c204-4edd-9731-4432337e32ec)
 
 
-**<p align=center> Smart Screen - Beam Bank</p>** 
+<p align=center> Smart Screen - Beam Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&token=c544d391-1994-41e0-bab8-5758ef3a4cce)
 
-**<p align=center> Smart Screen - Image Bank</p>** 
+<p align=center> Smart Screen - Image Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&token=40cee69d-bc7f-433a-b992-b123ee53b476)
 
-**<p align=center> Smart Screen - Shape Bank</p>** 
+<p align=center> Smart Screen - Shape Bank</p> 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&token=a78d7417-2ce5-4efa-8970-31d64ed3179b)
 
-**<p align=center> Smart Screen - Control</p>** 
+<p align=center> Smart Screen - Control</p> 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&token=f11d9d9f-6df7-4f09-bcba-9006ec853af6)
 
@@ -663,30 +663,36 @@ Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](https://v
 
 
 
-To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
+
+**To adjust fixture wheel parameter values:** (Interactive Wheel Picker method)
 
 1.   Select the fixtures to program
     
 2. Swipe or Drag the **Wheel Picker** on the right-hand side of the **Smart Screen** and browse to the wheel and slot you want to program. Common wheels are: 
 
-◾ Color Wheel 
+-  Color Wheel 
 
-◾ Static Gobo Wheel 
+-  Static Gobo Wheel 
 
-◾ Rotating Gobo Wheel 
+-  Rotating Gobo Wheel 
 
-◾ Animation Wheel 
+-  Animation Wheel 
 
-◾ Prism Wheel
+-  Prism Wheel
     
 3.  Tap the wheel slot you wish to program and the context sensitive area or the **Smart Screen** will open with the appropriate picker.
     
 4.  Adjust the virtual controls as needed.
-    
+  
+  
 
 > Most virtual controls are also mapped to the 4 physical wheels
 
-**To adjust parameter values: (standard programming method)**
+
+
+
+
+**To adjust parameter values:** (standard programming method)
 
 1.  Select the fixtures to program.
     
@@ -700,16 +706,19 @@ To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
     
 6.  Values may be added directly from the keypad by: 
 
-◾ Pushing a parameter wheel downward to select the parameter. 
+-  Pushing a parameter wheel downward to select the parameter. 
 
-◾ AT will appear on the command line 
+-  **AT** will appear on the command line 
 
-◾ Type a value from Zero ⟶  Full.
+- Type a value from Zero ⟶  Full.
     
 
 ><span style="color:red">@ is only used for the dimmer parameter</span>.
 
-A Parameter value must be entered in 2 digits or one digit and the [Enter] key for whole numbers. E.g. 05, 50, 5 [ENTER] =50
+><span style="color:Red">A Parameter value must be entered in 2 digits or one digit and the **[Enter]** key for whole numbers. E.g. 05, 50, 5 **[ENTER]** =50</span>.
+
+
+
 
 
 ### Grab
@@ -718,29 +727,29 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 -   **{Filters}:** 
 
-◾ {Stage} - Select anything that is live on the stage and meets the conditions below. 
+	-  {Stage} - Select anything that is live on the stage and meets the conditions below. 
 
-◾ {Editor} -Select anything that is in the Editor and meets the conditions below. 
+	-  {Editor} -Select anything that is in the Editor and meets the conditions below. 
 
-◾ {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
+	-  {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
     
 -   **{Conditions}:** 
 
-◾ {All Fixtures} - Selects all fixtures that have any changes via the editor. 
+	-   {All Fixtures} - Selects all fixtures that have any changes via the editor. 
 
-◾ {Active} - fixture has intensity value over zero. 
+	-   {Active} - fixture has intensity value over zero. 
 
-◾ {Invisible} - recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
+	-   {Invisible} - recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
 
-◾ {Inactive} (fixtures that have NO recorded values).
+	-  {Inactive} (fixtures that have NO recorded values).
     
 -   **{Parameter Selection}**:
 
-◾ {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+[GRAB]) 
+	-  {All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE]+[GRAB]) 
 
-◾ {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is [GRAB] + [ENTER]) 
+	-   {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is [GRAB] + [ENTER]) 
 
-◾ <span style="color:DodgerBlue">{Search & Replace}</span>.
+	-  <span style="color:Gray">{Search & Replace}</span>.
     
 -   [SET] [GRAB] selects all active fixtures filtered by set (Fixture/Channel/Spot/Matrix/Server/Custom)
     
@@ -776,6 +785,9 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 
 
+
+
+
 ### Fixture Selection (Detailed)
 
 
@@ -783,7 +795,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 > Default SET is changed by double pressing the appropriate SET key
 
-> Dimmer is implied, but parameter would normally be specified after  [+⟶  -] and before value.
+> Dimmer is implied, but parameter would normally be specified after  [+ ⟶ -] and before value.
 
 > **[CE]** will backspace the command line one character at a time. 
 > <span style="color:DodgerBlue">If more than one state is involved, the state will backspace right up until the idle state</span>.
