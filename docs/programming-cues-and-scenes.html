@@ -415,30 +415,37 @@
 <li><p>Cue may only exist within Qlists.</p></li>
 <li><p>Cues may be numbered from 0.001 ⟶ 999.999</p></li>
 <li><p>Cues cannot be stored without a Qlist destination.</p></li>
-<li><p>Cues may be assigned:</p></li>
+<li><p><strong>Cues may be assigned:</strong></p>
+<ul>
+<li><p>In Time</p></li>
+<li><p>Out Time</p></li>
+<li><p>Delay In Time</p></li>
+<li><p>Delay Out Time</p></li>
+<li><p>Text Label</p></li>
+</ul></li>
 </ul>
-<p>◾ In Time</p>
-<p>◾ Out Time</p>
-<p>◾ Delay In Time</p>
-<p>◾ Delay Out Time</p>
-<p>◾ Text Label</p>
 <p><strong>Scenes:</strong></p>
 <ul>
 <li><p>Scenes are essentially a QList and a Cue combined.</p></li>
 <li><p>Scenes may only contain a single “Look” of editor values.</p></li>
-<li><p>Scenes assigned to Slider Controllers are given the default settings of:</p></li>
-</ul>
-<p>◾ {GO + Jump Parameters}</p>
-<p>◾ {Release At Bottom}</p>
+<li><p><strong>Scenes assigned to Slider Controllers are given the default settings of:</strong></p>
 <ul>
+<li><p>{GO + Jump Parameters}</p></li>
+<li><p>{Release At Bottom}</p></li>
+</ul></li>
 <li><p>Scenes may only be assigned In-TIme.</p></li>
 <li><p>Scenes may be given Text Labels</p></li>
+</ul>
+<p>Submasters:
+- A special type of Scene where stored fixtures <strong>inhibit</strong> their dimmer values proportionate to their assigned slider controller’s value. All other parameter values are ignored.</p>
+<ul>
+<li>Groups may directly be assigned to controllers to create Group Submasters. <strong>Group Submasters</strong> reference the original Groups and update automatically if the Groups are modified.</li>
 </ul>
 </div>
 <div id="tracking-principals" class="section level2 hasAnchor" number="10.2">
 <h2><span class="header-section-number">10.2</span> Tracking Principals<a href="programming-cues-and-scenes.html#tracking-principals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses the Tracking/Move Fade philosophy common in most current lighting consoles. In tracking consoles, “Hard Values” (parameter values with stored information) track forward from cue to cue until new hard values are encountered.
-<strong>If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:</strong></p>
+<p>Vibe uses the <strong>Tracking/Move Fade</strong> philosophy common in most current lighting consoles. In tracking consoles, “Hard Values” (parameter values with stored information) track forward from cue to cue until new hard values are encountered.</p>
+<p><strong>If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:</strong></p>
 <ul>
 <li><p>“Hard Value” Cells</p></li>
 <li><p>“Tracking Cells” get their values by “seeing above” to the original hard values. They are basically transparent and only hard values are stored for a Cue. This is more efficient.</p></li>
@@ -446,7 +453,7 @@
 <p><strong>Storing Cue information on a cell basis has other advantages:</strong></p>
 <ul>
 <li><p>Each parameter cell can have its own individual time which overrides overall cue time. This allows, for example, Pan/Tilt to have a separate transition time or Color Wheels to snap to their values instead of using overall cue time.</p></li>
-<li><p>As Vibe’s default behaviour for parameters it LTP (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.</p></li>
+<li><p>As Vibe’s default behaviour for parameters it <strong>LTP</strong> (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.</p></li>
 </ul>
 <blockquote>
 <p>Some traditional theatre consoles call “Hard Values” “Move Instructions” and cells that are in transition, “Move Fades”.</p>
@@ -468,7 +475,7 @@
 <ul>
 <li><p><strong>{Skip}</strong> - Stores modified values as a special kind of cell that acts like a normal <strong>Tracking Cell</strong> until the <strong>Skip Cell</strong> is reached. The <strong>Skip Cell</strong> then behaves as if it has hard values and outputs its value to the stage. When the Qlist is advanced past a cue with the <strong>Skip Cells</strong>, they again behave as tracking cells, thus restoring the link to the original hard values.</p></li>
 <li><p>Storing a Cue modification using <strong>Skip</strong>, has the same apparent result as storing <strong>Qonly</strong>. The main difference is that with <strong>Qonly</strong>, the link to the original hard values is lost, and with <strong>Skip</strong>, the link is preserved.</p></li>
-<li><p>To make it easier for users to identify cues with <strong>Skip</strong> Cells, the parameter value with the <strong>Skip</strong> will be displayed in Magenta.</p></li>
+<li><p>To make it easier for users to identify cues with <strong>Skip</strong> Cells, the parameter value with the <strong>Skip</strong> will be displayed in <span style="color:Magenta">Magenta</span>.</p></li>
 </ul>
 <p><strong>Tracking examples:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUNCsyi8JpsI7oeqZi6ZK%2F10.2.0.webp?alt=media&amp;token=d2092292-5f80-49d7-bcf0-59e42d4535e6" /></p>
@@ -516,7 +523,6 @@
 <li><p>[HOLD] - Pauses the progress of a fade</p></li>
 <li><p>[GOTO] - Advances to the specified cue in system timing properties’ <strong>GOTO Time</strong>.</p></li>
 </ol>
-<p>​</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBHxc5Q4Nsp0bSvXoqXgY%2F10.4.webp?alt=media&amp;token=58f1929e-1d7d-4e60-b83f-94cc9678a3cc" /></p>
 <p><strong>Associated with but not limited to the controller assigned as the [SELECT] Controller are the following 3 buttons:</strong></p>
 <ol style="list-style-type: decimal">
@@ -539,8 +545,8 @@
 </blockquote>
 <p><strong>To assign a Qlist to a controller and make it the Master Controller:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Press [QLIST] [#] [HERE] (press any of the buttons of the destination controller) - The Qlist will be assigned to the controller.</p></li>
-<li><p>Press [SELECT] [HERE] (press any of the buttons of the destination controller) - The destination controller will now be the Master Controller and the [Second Button] of the “Selected” controller will turn dark blue to indicate that it is now assigned to the Master Controller. The top header of the Controller Display on the main monitor above the controller will also turn dark blue.</p></li>
+<li><p>Press [QLIST] [#] [HERE] (press <strong>any</strong> of the buttons of the destination controller) - The Qlist will be assigned to the controller.</p></li>
+<li><p>Press [SELECT] [HERE] (press any of the buttons of the destination controller) - The destination controller will now be the Master Controller and the [Second Button] of the “Selected” controller will turn dark blue to indicate that it is now assigned to the Master Controller. The top header of the Controller Display on the main monitor above the controller will also turn <span style="color:Blue">dark blue</span>.</p></li>
 </ol>
 <p><strong>To Store a cue to the Master Controller:</strong></p>
 <ol style="list-style-type: decimal">
@@ -550,12 +556,12 @@
 <li><p>Pressing [STORE] [STORE] or [STORE] [ENTER] will store editor values to the next whole number cue at the end of a Qlist. (Next spacing can be customized in system settings).</p></li>
 </ol>
 <blockquote>
-<p>Vibe uses the “Clear Editor After Store” behaviour common in most theatre consoles. The Controller will by default advance to the stored cue and clear the Editor. This behaviour may be disabled in System Settings.</p>
+<p>Vibe uses the “Clear Editor After Store” behaviour common in most theatre consoles.
+<span style="color:Red">The Controller will by default advance to the stored cue and clear the Editor</span>. This behaviour may be disabled in System Settings.</p>
 </blockquote>
 </div>
 <div id="storing-qlist-cues-to-any-controller" class="section level2 hasAnchor" number="10.6">
 <h2><span class="header-section-number">10.6</span> Storing Qlist Cues to any Controller<a href="programming-cues-and-scenes.html#storing-qlist-cues-to-any-controller" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>10.6. Storing Qlist Cues to any Controller</p>
 <blockquote>
 <p><span style="color:Red">The destination Qlist must be assigned to a controller in advance or after storing the first Cue, the destination Qlist will bump the current cue on the Master Controller out and replace it.</span>.</p>
 </blockquote>
@@ -563,16 +569,15 @@
 <ol style="list-style-type: decimal">
 <li><p>Press [Qlist] [#] [HERE] to any button of the destination controller. The Qlist will be assigned to the controller</p></li>
 <li><p>Set parameter levels in the Editor</p></li>
-</ol>
-<p>3.Press [Qlist] [#] [CUE] [#] [STORE]</p>
-<ol start="4" style="list-style-type: decimal">
+<li><p>Press [Qlist] [#] [CUE] [#] [STORE]</p></li>
 <li><p>Valid Cue numbers per Qlist = 000.001 → 999.999</p></li>
-<li><p>Addition cues may be stored via keypad syntax specifying the Qlist # in advance or <a href="https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.3.-storing-cues-and-scenes-directly-to-controllers">10.3. Storing Cues and Scenes Directly to Controllers</a>​</p></li>
+<li><p>Addition cues may be stored via keypad syntax specifying the Qlist # in advance or <a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-and-scenes-directly-to-controllers">10.3. Storing Cues and Scenes Directly to Controllers</a>​</p></li>
 </ol>
 </div>
 <div id="cue-store-options-1" class="section level2 hasAnchor" number="10.7">
 <h2><span class="header-section-number">10.7</span> Cue Store Options<a href="programming-cues-and-scenes.html#cue-store-options-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In the process of storing a cue, a number of filters and settings are available. <strong>To open the Store Options pop-up, two methods are available:</strong></p>
+<p>In the process of storing a cue, a number of filters and settings are available.</p>
+<p><strong>To open the Store Options pop-up, two methods are available:</strong></p>
 <ul>
 <li><strong>Store cues using keypad syntax:</strong></li>
 </ul>
@@ -585,12 +590,46 @@
 </ul>
 <ol style="list-style-type: decimal">
 <li><p>Set Values in the Editor.</p></li>
-<li><p>Press [STORE] [OPTIONS] Cue Options pop-up opens. Make selections and press [HERE] to any button on the destination controller.</p></li>
+<li><p>Press [STORE] [OPTIONS] <strong>Cue Options</strong> pop-up opens. Make selections and press [HERE] to any button on the destination controller.</p></li>
 </ol>
 <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FknletXzqZk4W9tZ8qBWq%2F10.7%20cue%20store%20options.png?alt=media&amp;token=d07a452b-3958-4a12-a42a-abad08bdaa5c" />
 <p align="center">
 Cue Store Options Pop-up
 </p>
+<p><strong>Options are:</strong></p>
+<ul>
+<li>Editor as Source:
+<ul>
+<li>{Red + Grey} Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored.</li>
+<li>{Store Stage} All fixtures outputting ANY DMX from the console will be stored. This includes tracked values, home values and dimmer values at zero.</li>
+<li>{Red Only} Only Editor values in <mark style="color:white;background-color:red;" >Red</mark> will be stored. This can be a useful way to filter parameters.</li>
+<li>{All Param For Selected} All parameters from the fixture selection will be turned red and stored in the cue.</li>
+<li>{All Param If Active} All parameters of all fixtures in the editor will be stored if the dimmer parameter is greater than zero (WYSIWYG).</li>
+</ul></li>
+<li>Additional:
+<ul>
+<li><span style="color:Gray">{DMX In} Takes a snapshot of incoming DMX and attaches it to the cue. </span></li>
+<li>{Force Black} When it is not desirable to see values move from one cue state to another, Force Black may be used to save programming time. In a cue tagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters they move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</li>
+</ul></li>
+<li>Filtering:
+<ul>
+<li>{Show Filters} Opens user prebuilt filters in the pop-up.</li>
+</ul></li>
+<li>Source behaviour when stored:
+<ul>
+<li>{Track} Normal system behaviour</li>
+<li>{Skip Cue} - <span style="color:Gray">Tags a cue as a skip cue in the case of inserting a new cue. In the case of updating a cue by storing to an existing cue, only the values being updated will be made into Skip cells. </span>.</li>
+<li><span style="color:MediumAquaMarine">{Qonly} Inserted cues will not affect the look of cues following them</span></li>
+</ul></li>
+<li>Look Ahead: (sometimes referred to as Mark Cue) <a href="https://vibemanual.compulite.com/dark-parameter-positioning.html#force-black">See: 15.3. Force Black</a>
+<ul>
+<li>Unlike having to Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in <strong>Cue Store Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</li>
+</ul></li>
+<li>Force Black - See: <a href="https://vibemanual.compulite.com/dark-parameter-positioning.html#look-ahead-move-in-dark">15.1. Look Ahead (Move in Dark)</a>
+<ul>
+<li>Tagged a cue as {Force Black} in Cue Store Options, is the same as setting the cue as {Force Black} in {Cue settings}.</li>
+</ul></li>
+</ul>
 </div>
 <div id="assigning-text-labels" class="section level2 hasAnchor" number="10.8">
 <h2><span class="header-section-number">10.8</span> Assigning Text Labels<a href="programming-cues-and-scenes.html#assigning-text-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -601,13 +640,19 @@ Cue Store Options Pop-up
 <li><p>Method 3 - Press the Qlist header above a loaded Controller, The Qlist Properties pop-up opens - Enter Qlist Text in the white box.</p></li>
 </ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXJQArmGsu0DelGLmqjg2%2F10.8%20Assigning%20text%20labels.png?alt=media&amp;token=b8729961-fa0a-49b3-9e67-d5547c6f59e6" /></p>
-<p>To assign a Text Label to a Cue:</p>
+<p><strong>To assign a Text Label to a Cue:</strong></p>
 <ul>
 <li><p>Method 1 - [QLIST] [#] [CUE] [#][TEXT] opens Text Entry pop-up.</p></li>
 <li><p>Method 2 - If assigned to the Master Controller, [CUE] [#] [TEXT] Opens Text Entry pop-up.</p></li>
 <li><p>Method 3 - [CUE] [#] [SETTINGS] opens {Cue Properties} tab of Cue Settings pop-up. Enter Qlist text in the Text Box.</p></li>
 <li><p>Method 4 - [TEXT] [HERE] press any button on the destination controller.</p></li>
-<li><p>Method 5</p></li>
+<li><p>Method 5 -</p>
+<ol style="list-style-type: decimal">
+<li>Press {Cue label} area of the display above the Controller - The Cue Properties pop-up opens.</li>
+<li>Select the desired cue.</li>
+<li>Enter cue text in the text box.</li>
+<li>Optionally notes may also be entered for the selected cue.</li>
+</ol></li>
 </ul>
 </div>
 <div id="modifying-cues-and-scenes" class="section level2 hasAnchor" number="10.9">

@@ -19,6 +19,7 @@
 - [10.14. Parameter Profile](https://vibemanual.compulite.com/programming-cues-and-scenes.html#parameter-profile)
 - [10.15.  Group Submasters](https://vibemanual.compulite.com/programming-cues-and-scenes.html#group-submasters)
 
+
 ## What Are Qlists, Cues, Scenes, and Submasters?
 
 
@@ -43,17 +44,17 @@
     
 -   Cues cannot be stored without a Qlist destination.
     
--   Cues may be assigned: 
+-   **Cues may be assigned:** 
 
-◾ In Time 
+	-   In Time 
 
-◾ Out Time 
+	-    Out Time 
 
-◾ Delay In Time 
+	-   Delay In Time 
 
-◾ Delay Out Time 
+	-   Delay Out Time 
 
-◾ Text Label
+	-   Text Label
     
 
 **Scenes:**
@@ -62,15 +63,21 @@
     
 -   Scenes may only contain a single "Look" of editor values.
     
--   Scenes assigned to Slider Controllers are given the default settings of: 
+-   **Scenes assigned to Slider Controllers are given the default settings of:** 
 
-◾ {GO + Jump Parameters} 
+	-    {GO + Jump Parameters} 
 
-◾ {Release At Bottom}
+	-   {Release At Bottom}
     
 -   Scenes may only be assigned In-TIme.
     
 -   Scenes may be given Text Labels
+
+Submasters:
+- A special type of Scene where stored fixtures **inhibit** their dimmer values proportionate to their assigned slider controller's value. All other parameter values are ignored.
+
+- Groups may directly be assigned to controllers to create Group Submasters. **Group Submasters** reference the original Groups and update automatically if the Groups are modified.
+
 
 
 
@@ -79,7 +86,8 @@
 
 
 
-Vibe uses the Tracking/Move Fade philosophy common in most current lighting consoles. In tracking consoles, "Hard Values" (parameter values with stored information) track forward from cue to cue until new hard values are encountered. 
+Vibe uses the **Tracking/Move Fade** philosophy common in most current lighting consoles. In tracking consoles, "Hard Values" (parameter values with stored information) track forward from cue to cue until new hard values are encountered. 
+
 **If we think of cues and values as a spreadsheet, basic tracking systems have two kinds of parameter value cells:**
 
 -   "Hard Value" Cells
@@ -91,7 +99,7 @@ Vibe uses the Tracking/Move Fade philosophy common in most current lighting cons
 
 -   Each parameter cell can have its own individual time which overrides overall cue time. This allows, for example, Pan/Tilt to have a separate transition time or Color Wheels to snap to their values instead of using overall cue time.
     
--   As Vibe's default behaviour for parameters it LTP (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.
+-   As Vibe's default behaviour for parameters it **LTP** (The last action takes precedent), a cell assigned its own time will continue to run its time until either the stored time runs out or it encounters a new hard value.
 
 >Some traditional theatre consoles call "Hard Values" "Move Instructions" and cells that are in transition, "Move Fades".
 
@@ -115,7 +123,7 @@ Vibe uses the Tracking/Move Fade philosophy common in most current lighting cons
     
 -   Storing a Cue modification using **Skip**, has the same apparent result as storing **Qonly**. The main difference is that with **Qonly**, the link to the original hard values is lost, and with **Skip**, the link is preserved.
     
--   To make it easier for users to identify cues with **Skip** Cells, the parameter value with the **Skip** will be displayed in Magenta.
+-   To make it easier for users to identify cues with **Skip** Cells, the parameter value with the **Skip** will be displayed in <span style="color:Magenta">Magenta</span>.
     
 
 **Tracking examples:**
@@ -186,7 +194,6 @@ In Vibe, at least one controller must be assigned as the [SELECT] controller. Th
 4.   [GOTO] - Advances to the specified cue in system timing properties' **GOTO Time**.
     
 
-​
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBHxc5Q4Nsp0bSvXoqXgY%2F10.4.webp?alt=media&token=58f1929e-1d7d-4e60-b83f-94cc9678a3cc)
 
@@ -202,6 +209,10 @@ In Vibe, at least one controller must be assigned as the [SELECT] controller. Th
 
 By default cues that do not have a Qlist or Controller specified in their destination will be stored to the controller selected as the Master Controller.
 
+
+
+
+
 ## Storing Cues to the Master Controller
 
 >A Qlist must be assigned to the [SELECT] controller before cues can be stored using theatre style keypad syntax
@@ -210,9 +221,9 @@ By default cues that do not have a Qlist or Controller specified in their destin
 
 **To assign a Qlist to a controller and make it the Master Controller:**
 
-1.  Press [QLIST] [#] [HERE] (press any of the buttons of the destination controller) - The Qlist will be assigned to the controller.
+1.  Press [QLIST] [#] [HERE] (press **any** of the buttons of the destination controller) - The Qlist will be assigned to the controller.
     
-2.   Press [SELECT] [HERE] (press any of the buttons of the destination controller) - The destination controller will now be the Master Controller and the [Second Button] of the "Selected" controller will turn dark blue to indicate that it is now assigned to the Master Controller. The top header of the Controller Display on the main monitor above the controller will also turn dark blue.
+2.   Press [SELECT] [HERE] (press any of the buttons of the destination controller) - The destination controller will now be the Master Controller and the [Second Button] of the "Selected" controller will turn dark blue to indicate that it is now assigned to the Master Controller. The top header of the Controller Display on the main monitor above the controller will also turn <span style="color:Blue">dark blue</span>.
     
 
 **To Store a cue to the Master Controller:**
@@ -225,12 +236,15 @@ By default cues that do not have a Qlist or Controller specified in their destin
     
 4.   Pressing [STORE] [STORE] or [STORE] [ENTER] will store editor values to the next whole number cue at the end of a Qlist. (Next spacing can be customized in system settings).
 
->Vibe uses the "Clear Editor After Store" behaviour common in most theatre consoles. The Controller will by default advance to the stored cue and clear the Editor. This behaviour may be disabled in System Settings.
+>Vibe uses the "Clear Editor After Store" behaviour common in most theatre consoles.
+<span style="color:Red">The Controller will by default advance to the stored cue and clear the Editor</span>. This behaviour may be disabled in System Settings.
+
+
+
+
+
 
 ## Storing Qlist Cues to any Controller
-
-
-10.6. Storing Qlist Cues to any Controller
 
 ><span style="color:Red">The destination Qlist must be assigned to a controller in advance or after storing the first Cue, the destination Qlist will bump the current cue on the Master Controller out and replace it.</span>.
 
@@ -240,18 +254,21 @@ By default cues that do not have a Qlist or Controller specified in their destin
     
 2.  Set parameter levels in the Editor
     
-3.Press [Qlist] [#] [CUE] [#] [STORE]
+3. Press [Qlist] [#] [CUE] [#] [STORE]
     
 4.  Valid Cue numbers per Qlist = 000.001 → 999.999
     
-5. Addition cues may be stored via keypad syntax specifying the Qlist # in advance or [10.3. Storing Cues and Scenes Directly to Controllers](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.3.-storing-cues-and-scenes-directly-to-controllers)​
+5. Addition cues may be stored via keypad syntax specifying the Qlist # in advance or [10.3. Storing Cues and Scenes Directly to Controllers](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-and-scenes-directly-to-controllers)​
+
 
 
 
 ## Cue Store Options
 
 
-In the process of storing a cue, a number of filters and settings are available. **To open the Store Options pop-up, two methods are available:**
+In the process of storing a cue, a number of filters and settings are available. 
+
+**To open the Store Options pop-up, two methods are available:**
 
 -   **Store cues using keypad syntax:**
     
@@ -266,11 +283,46 @@ In the process of storing a cue, a number of filters and settings are available.
 
 1.  Set Values in the Editor.
     
-2.  Press [STORE] [OPTIONS] Cue Options pop-up opens. Make selections and press [HERE] to any button on the destination controller.
+2.  Press [STORE] [OPTIONS] **Cue Options** pop-up opens. Make selections and press [HERE] to any button on the destination controller.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FknletXzqZk4W9tZ8qBWq%2F10.7%20cue%20store%20options.png?alt=media&token=d07a452b-3958-4a12-a42a-abad08bdaa5c)
 <p align=center> Cue Store Options Pop-up </p>
+
+**Options are:**
+
+-   Editor as Source: 
+	- {Red + Grey} Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
+	- {Store Stage} All fixtures outputting ANY DMX from the console will be stored. This includes tracked values, home values and dimmer values at zero. 
+	- {Red Only} Only Editor values in <mark style="color:white;background-color:red;" >Red</mark> will be stored. This can be a useful way to filter parameters. 
+	- {All Param For Selected} All parameters from the fixture selection will be turned red and stored in the cue. 
+	- {All Param If Active} All parameters of all fixtures in the editor will be stored if the dimmer parameter is greater than zero (WYSIWYG).
+    
+
+-   Additional: 
+	-  <span style="color:Gray">{DMX In} Takes a snapshot of incoming DMX and attaches it to the cue. </span>
+	- {Force Black} When it is not desirable to see values move from one cue state to another, Force Black may be used to save programming time. In a cue tagged as Force Black, the dimmer parameter is first "forced" to Black Out, parameters they move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.
+    
+
+-   Filtering: 
+	- {Show Filters} Opens user prebuilt filters in the pop-up.
+    
+
+-   Source behaviour when stored: 
+	- {Track} Normal system behaviour 
+	- {Skip Cue} - <span style="color:Gray">Tags a cue as a skip cue in the case of inserting a new cue. In the case of updating a cue by storing to an existing cue, only the values being updated will be made into Skip cells. </span>.
+	- <span style="color:MediumAquaMarine">{Qonly} Inserted cues will not affect the look of cues following them</span>
+    
+
+-   Look Ahead: (sometimes referred to as Mark Cue) [See: 15.3. Force Black](https://vibemanual.compulite.com/dark-parameter-positioning.html#force-black) 
+	- Unlike having to Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in **Cue Store Options** as {Look Ahead} will preposition dark parameters for just the tagged cue.
+    
+
+-   Force Black - See: [15.1. Look Ahead (Move in Dark)](https://vibemanual.compulite.com/dark-parameter-positioning.html#look-ahead-move-in-dark) 
+	-  Tagged a cue as {Force Black} in Cue Store Options, is the same as setting the cue as {Force Black} in {Cue settings}.
+
+
+
 
 
 
@@ -287,7 +339,7 @@ In the process of storing a cue, a number of filters and settings are available.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXJQArmGsu0DelGLmqjg2%2F10.8%20Assigning%20text%20labels.png?alt=media&token=b8729961-fa0a-49b3-9e67-d5547c6f59e6)
 
-To assign a Text Label to a Cue:
+**To assign a Text Label to a Cue:**
 
 -   Method 1 - [QLIST] [#] [CUE] [#][TEXT] opens Text Entry pop-up.
     
@@ -297,7 +349,11 @@ To assign a Text Label to a Cue:
     
 -   Method 4 - [TEXT] [HERE] press any button on the destination controller.
     
--   Method 5
+-   Method 5 - 
+	1. Press {Cue label} area of the display above the Controller - The Cue Properties pop-up opens.
+	2. Select the desired cue.
+	3. Enter cue text in the text box.
+	4. Optionally notes may also be entered for the selected cue.
 
 
 ## Modifying Cues and Scenes
