@@ -463,7 +463,7 @@ Working with Fixtures:
 
 ### Fixture Selection basics
 
-Fixtures are selected using the [FIXTURE] key on the keypad. They also may be stored and recalled using the [GROUP] key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.
+Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may be stored and recalled using the **[GROUP]** key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.
 
 -   **[+] [-]** ⟶  keys are valid with Fixture selections and Groups.
     
@@ -491,7 +491,7 @@ Fixtures are selected using the [FIXTURE] key on the keypad. They also may be st
     
 -   **Trackball [X LOCK] / [Y LOCK]** - Locks the X or Y axis of the trackball.
     
--   **[RES]** - Sets global encoder resolution. Blue = Low 8 bit, Green = Medium 10 bit (Default) Red = High 16 bit.
+-   **[RES]** - Sets global encoder resolution. <span style="color:Blue">Blue</span> = Low 8 bit, <span style="color:MediumAquaMarine">Green</span> = Medium 10 bit (Default) <span style="color:Red">red</span> = High 16 bit.
     
 
 > Holding the [VIBE] key down while turning an encoder temporarily sets the encoder to high resolution 16 bit.
@@ -531,7 +531,7 @@ In Vibe parameters are organized under six standard **Banks** and one special Ba
 6.  Shape
     
 7.  Control - A special bank as its parameters are not stored in cues. 
-Instead it sends "real time" messages to fixtures control functions).
+Instead it sends "real time" messages to fixtures control functions.
 
 8.  Media
     
@@ -545,7 +545,7 @@ Parameter values may be set using either Vibe's intuitive **Smart Screen** picke
 
 See:
 
--   8.1. Virtual Parameters
+-   [8.1. Virtual Parameters](https://vibemanual.compulite.com/programming-concepts.html#operational-philosophy)
 
 
 
@@ -571,80 +571,86 @@ The **Smart Screen** is dedicated to displaying:
 
 **The Smart Screen is divided into six sections:**
 
+ **<p align=center> Smart Screen - Intensity Bank</p>**
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a)
 
-**Smart Screen - Intensity Bank**
 
 The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
 
+
+**<p align=center> Smart Screen - Position Bank</p>** 
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
 
-**Smart Screen - Position Bank**
+
+**<p align=center> Smart Screen - Color Bank</p>** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&token=6d819c90-c204-4edd-9731-4432337e32ec)
 
-**Smart Screen - Color Bank**
+
+**<p align=center> Smart Screen - Beam Bank</p>** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&token=c544d391-1994-41e0-bab8-5758ef3a4cce)
 
-**Smart Screen - Beam Bank**
+**<p align=center> Smart Screen - Image Bank</p>** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&token=40cee69d-bc7f-433a-b992-b123ee53b476)
-**Smart Screen - Image Bank**
+
+**<p align=center> Smart Screen - Shape Bank</p>** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&token=a78d7417-2ce5-4efa-8970-31d64ed3179b)
 
-**Smart Screen - Shape Bank**
+**<p align=center> Smart Screen - Control</p>** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&token=f11d9d9f-6df7-4f09-bcba-9006ec853af6)
-**Smart Screen - Control**
+
 
 **Smart Screen Preferences:**
 
 -   **Settings:**
     
+	-  Home - Returns menus to Settings level.
 
-◾ Home - Returns menus to Settings level.
+	-  Format - Sets the view format for wheel displays. 
 
-◾ Format - Sets the view format for wheel displays. 
+		-   Percent 
 
--   Percent 
+		-   Decimal 
 
--   Decimal 
+		-   Text 
 
--   Text 
+		-   Text + Percent
 
--   Text + Percent
+	-  Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball 
 
-◾ Resolution - Sets the Global wheel resolution. This may also be set by toggling the [Res] key over the trackball 
+		-   8 bit - Blue on [Res] Key
 
--   8 bit - Blue on [Res] Key
+		-   10 bit - Green on [Res] key 
 
--   10 bit - Green on [Res] key 
+		-   12 bit - Red on [Res] key 
 
--   12 bit - Red on [Res] key 
+		-   16 bit - Yellow on [Res] key 
 
--   16 bit - Yellow on [Res] key 
+		-   24 bit - Magenta on [Res] key 
 
--   24 bit - Magenta on [Res] key 
+	-   View - Sets behaviour of smart screen views.
 
-◾ View - Sets behaviour of smart screen views.
+		-   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
 
--   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
+		-   Programming - Maintains the programming display even with the editor released. 
 
--   Programming - Maintains the programming display even with the editor released. 
+		-   Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.
 
--   Playbacks - Maintains the playback controller display even with fixtures in the editor. Wheels and wheel displays remain accessible.
+	-   Wheel Picker Display Modes: 
 
-◾ Wheel Picker Display Modes: 
+		-   Smart - All wheels for the selected fixture are shown in the interactive wheel picker area. 
 
--   Smart - All wheels for the selected fixture are shown in the interactive wheel picker area. 
+		-   Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
 
--   Parameter Steps - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
+		-   Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
 
--   Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
-
-Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor
+Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](https://vibemanual.compulite.com/effects-1.html#smart-screen-effects-editor)
 
 
 
@@ -655,7 +661,7 @@ Smart Screen Effects Editor - See: 13.2. Smart Screen Effects Editor
 
 **Smart Screen Picker Programming**
 
-​
+
 
 To adjust fixture wheel parameter values: (Interactive Wheel Picker method)
 
