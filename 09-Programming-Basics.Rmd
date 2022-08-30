@@ -788,6 +788,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 
 
+
 ### Fixture Selection (Detailed)
 
 
@@ -798,48 +799,51 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 > Dimmer is implied, but parameter would normally be specified after  [+ ⟶ -] and before value.
 
 > **[CE]** will backspace the command line one character at a time. 
-> <span style="color:DodgerBlue">If more than one state is involved, the state will backspace right up until the idle state</span>.
+> <span style="color:Gray">If more than one state is involved, the state will backspace right up until the idle state</span>.
 
 > **[Shift CE]** will clear the command line to the beginning and put the system in an idle state.
 
+- [Fixture] # [+ ⟶  -] [[Full]/[Zero] (@100 and @00 are valid if % or text display format).
+        
+- Fixture] # [+ ⟶  -] [@] enter value. Two digits are required to complete value entry.
+        
+- [Fixture] # [+ ⟶  -] [@] [@] will set values to Full.
+        
+- [Fixture] # [+ ⟶  -] [@] single value, [ENTER]. E.g. [Fixture] [1⟶ 6] [@] [5] [ENTER] will set a value of 50%. [@] [7] [ENTER] would set a value of 70%.
+        
+- Pressing [ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
+        
+- [Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon)Pop-up under the **Behavior** Tab
+        
+- [Fixture] # [+ ⟶  -] [@] [+] [value] or [@] [-] [value] will make a **relative** change to the stage value. E.g. {If the stage value is 50, @ + 10 will set the value to 60. @ - 30 would set the value to 20}. 
+The rules for single digit plus Enter will also apply.
+        
+- [Fixture] # [⟶ ] #, Parameter, [@] {value] [⟶ ] [value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].
+        
+- [Fixture] # [⟶ ] # Parameter, [@] [value] [⟶ ][⟶ ] [value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
+        
+- Fixture **Dot** = Restore last.  <span style="color:Gray">Will have a toolbar equivalent.</span>
+        
+- Fixture ⟶  = Reeelect Editor. <span style="color:Gray">Will have a toolbar equivalent. </span>
+        
+- Fixtures and Parameters may be deselected using [RELEASE/DE SEL] Key. This leaves values in the editor but not under the control of the wheels.
+        
+- [GROUP] # selects all fixtures that are recorded into the group. *The typed fixture order is preserved in a recorded group.
+        
+- With groups, parameters may be fanned via syntax as above, but their recorded order will be considered.
+        
+- Control without having to press Shift, Reset, which clears the values in the Editor.
+        
+- **{LIBRARY}, {LIBRARY}**, will select and enter values from a library into the Editor. This is especially useful when using position libraries as groups with positions.
 
- -   [Fixture] # [+ ⟶  -] [[Full]/[Zero] (@100 and @00 are valid if % or text display format).
-        
-    -   [Fixture] # [+ ⟶  -] [@] enter value. Two digits are required to complete value entry.
-        
-    -   [Fixture] # [+ ⟶  -] [@] [@] will set values to Full.
-        
-    -   [Fixture] # [+ ⟶  -] [@] single value, [ENTER]. E.g. [Fixture] [1⟶ 6] [@] [5] [ENTER] will set a value of 50%. [@] [7] [ENTER] would set a value of 70%.
-        
-    -   Pressing [ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
-        
-    -   [Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon)Pop-up under the **Behavior** Tab
-        
-    -   [Fixture] # [+ ⟶  -] [@] [+] [value] or [@] [-] [value] will make a relative change to the stage value. E.g. {If the stage value is 50, @ + 10 will set the value to 60. @ - 30 would set the value to 20}. The rules for single digit plus Enter will also apply.
-        
-    -   [Fixture] # [⟶ ] #, Parameter, [@] {value] [⟶ ] [value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].
-        
-    -   [Fixture] # [⟶ ] # Parameter, [@] [value] [⟶ ][⟶ ] [value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
-        
-    -   Fixture **Dot** = Restore last. Will have a toolbar equivalent.
-        
-    -   Fixture ⟶  = Reeelect Editor. Will have a toolbar equivalent.
-        
-    -   Fixtures and Parameters may be deselected using [RELEASE/DE SEL] Key. This leaves values in the editor but not under the control of the wheels.
-        
-    -   [GROUP] # selects all fixtures that are recorded into the group. *The typed fixture order is preserved in a recorded group.
-        
-    -   With groups, parameters may be fanned via syntax as above, but their recorded order will be considered.
-        
-    -   Control without having to press Shift, Reset, which clears the values in the Editor.
-        
-    -   **{LIBRARY}, {LIBRARY}**, will select and enter values from a library into the Editor. This is especially useful when using position libraries as groups with positions.
 
 
 
 ### Setting Parameters using Main Encoder Wheels
 
-Vibe features the Smart Window to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: Using parameter wheels:
+Vibe features the **Smart Window** to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: 
+
+**Using parameter wheels:**
 
 1.  Fixture # [+ ⟶  -] Tap {Parameter Bank} on the Smart Screen.
     
@@ -848,7 +852,7 @@ Vibe features the Smart Window to simplify programming. Programming may also be 
 3.  Turn the encoder wheel of the desired parameter to adjust values.
     
 
-> <span style="color:Red">Parameters other than dimmer do not use the @ key.</span>.
+> <span style="color:Red">Parameters other than dimmer do not use the @ key.</span>
 
 **Direct entry of absolute values:**
 
@@ -867,12 +871,29 @@ Vibe features the Smart Window to simplify programming. Programming may also be 
     
 3.   Enter value via keypad.
 
+**Select multiple parameters at the same time:**
+
+1. Fixture # [+ ⟶ -] Tap {Parameter Bank} on the Smart Screen.
+    
+2. Toggle multiple parameters ON/OFF by tapping {parameter Keys}, pressing physical wheel, or toggling desired live display headers. Select all relevant fixture parameters in a parameter bank:
+    
+**Select all relevant fixture parameters in a parameter bank:**
+
+-   Select Fixture # [+ ⟶ -], Hold [Vibe Key] and tap a {Parameter Bank Key}.
+    
+
+>Pressing and holding a {Parameter Bank} will pop-up three options: {HOME}, {ALL PARAMETERS}, {RELEASE ALL} {HOME} - Set the selected parmeters to "Home values". {All} - Selects all relevant parameters in the parameter bank. {RELEASE ALL} - Releases the selected parameter from the Editor.
+
+
+
 
 
 ### Setting Parameters using Interactive Encoder Wheels
 
 
-Vibe has 4 additional interactive push encoder wheels along the right hand side of the smart screen. The parameters assigned to the wheels are dependent on the bank and selected fixture type: **E.g:**
+Vibe has 4 additional interactive push encoder wheels along the right hand side of the smart screen. The parameters assigned to the wheels are dependent on the bank and selected fixture type: 
+
+**E.g:**
 
 -   Image assigns Focus and Zoom to the interactive wheels
     
@@ -882,16 +903,20 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
     
 -   Shape assigns Focus and Zoom to the interactive wheels In future releases it will be possible for users to customize the defaults.
 
+In future releases it will be possible for users to customize the defaults.
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDGXNEIrHnemjvPSftsn9%2F9.3.9.webp?alt=media&token=26fc8f97-07b6-488f-a54e-2e0234b4f8a8)
+
 
 
 ### Release and Home Sequences
 
 
-**Release - Removes fixtures or fixture parameter values from the editor Release all active fixtures:**
+**Release** - Removes fixtures or fixture parameter values from the editor 
+
+**Release all active fixtures:**
 
 -   Press {RELEASE] key
-    
 
 **Release fixtures:**
 
@@ -905,7 +930,40 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 **Release a Parameter Bank:**
 
--   Fixture # [+ ⟶  -] [VIBE] {Bank} [RELEASE] If a fixture is selected and then is made active (Red), the first press of release, releases the parameter and then the second press releases the whole fixture. All devices are assigned home values for parameters based on the manufacturer's DMX chart. By default, these home values are used to tell the system where fixture parameters should be when they are not in use. Vibe has two options for home values. They can be set in the System Settings pop-up in the {Editing Properties} tab under the Default Stage Values header. System settings is accessed via the Vibe Menu or by tapping on the {*****} icon in the lower right corner of the main monitor controller display.
+-   Fixture # [+ ⟶  -] [VIBE] {Bank} [RELEASE] 
+
+If a fixture is selected and then is made active (Red), the first press of release, releases the parameter and then the second press releases the whole fixture. 
+
+All devices are assigned home values for parameters based on the manufacturer's DMX chart. By default, these home values are used to tell the system where fixture parameters should be when they are not in use. Vibe has two options for home values. They can be set in the System Settings pop-up in the {Editing Properties} tab under the Default Stage Values header. System settings is accessed via the Vibe Menu or by tapping on the {✱} icon in the lower right corner of the main monitor controller display.
+
+
+1. {Use Home values} -Released parameters will be shown in grey and at their default home values.
+    
+
+2.  {Maintain Last Value} - Released parameters will be at the last value they were at before being released. 
+
+Selected fixtures and/or parameters may be sent to their defaults using the [HOME] key.
+ **Home** - Sets parameter values to home values as defined by the manufacturer or to custom values defined by the user **Home Scene**.
+    
+
+**Home works similar to Release:**
+
+-   First press "homes" the current parameter.
+    
+
+-   Second press "homes" all parameters for the selected fixtures.
+    
+    
+**It is also possible to set a custom "Home Scene" that overrides the default Home:**
+
+1. Set the values in the Editor similar to creating a Cue or a Scene.
+
+2. Press [SCENE] [HOME] [STORE]
+    
+    
+**To Delete a Home Scene:**
+
+-   Press [SCENE] [HOME] [DELETE]
 
 
 ## Groups
@@ -943,7 +1001,7 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 Group Settings Pop-up
 
->A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad. Press [STORE] then tap destination {Group} SK or Press [Group] [#] [STORE] to create the new Group. The new Group will not be linked to the original Groups
+>A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad. Press [STORE] then tap destination {Group} SK or Press [Group] [#] [STORE] to create the new Group. The new Group will not be linked to the original Groups.
 
 **Groups may be used to release fixtures:**
 
