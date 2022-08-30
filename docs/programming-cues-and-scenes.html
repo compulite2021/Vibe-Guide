@@ -663,9 +663,11 @@ Cue Store Options Pop-up
 <li><p>Press the [UPDATE] and the <strong>Update pop-up</strong> will open. Two columns will appear. The left column shows <strong>Cues</strong> available for updating and the right column shows <strong>Libraries</strong> available for updating. If affected values are not referencing a library, the Cue column will indicate the <strong>source</strong> cue that the modifications will be updated to.</p></li>
 <li><p>If the Editor parameter values are <strong>new</strong> to all active cues, destination cue. Will be dependent on the <strong>New Values</strong> setting:</p></li>
 </ol>
-<p>◾ If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column.</p>
-<p>◾ If {Master PB Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller.</p>
-<p>◾ If {Don’t Store} is selected, no new parameter values will be updated.</p>
+<ul>
+<li><p>If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column.</p></li>
+<li><p>If {Master <span style="color:MediumAquaMarine">PB</span> Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller.</p></li>
+<li><p>If {Don’t Store} is selected, no new parameter values will be updated.</p></li>
+</ul>
 <ol start="4" style="list-style-type: decimal">
 <li><p>Selected cues may be freely deselected in the Update pop-up.</p></li>
 <li><p>Set <strong>Tracking Options</strong> as required.</p></li>
@@ -674,14 +676,16 @@ Cue Store Options Pop-up
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWRLE1BnIrudwRn2IJP4Q%2F10.9.webp?alt=media&amp;token=03b6843d-4dae-45a1-b5e5-d505b514868b" /></p>
 <p><strong>UPDATE Source Filters:</strong></p>
-<p>{Master Controller} - Updates will only be made to the active cue on the controller assigned to the Master Controller.</p>
-<p>{Last Activated Controller} - Updates will be made to the last controller that asserter priority.</p>
-<p>{Grab All} - All Active Controllers will be shown in a list and the user must select the destination of the updates.</p>
+<ul>
+<li><p>{Master Controller} - Updates will only be made to the active cue on the controller assigned to the Master Controller.</p></li>
+<li><p>{Last Activated Controller} - Updates will be made to the last controller that asserter priority.</p></li>
+<li><p>{Grab All} - All Active Controllers will be shown in a list and the user must select the destination of the updates.</p></li>
+</ul>
 <p><strong>UPDATE Tracking Options:</strong></p>
 <ul>
 <li><p>{Default (Track)} - Changes will track forward to the next cue if it does not have a hard value.</p></li>
 <li><p>{Cue Only} - Changes will be made to “This Cue Only” preserving the look of the next cue (Hard values will be added to next cue).</p></li>
-<li><p>{Skip Cue} - Changes will be made to the current cue but the changes will be “skipped over” preserving the link to the original hard values.</p></li>
+<li><p>{Skip <span style="color:MediumAquaMarine">Cue</span>} - Changes will be made to the current cue but the changes will be “skipped over” preserving the link to the original hard values.</p></li>
 <li><p>{Back Track} - Updates the changes to the <strong>original</strong> hard value that made the stage look.</p></li>
 </ul>
 <p><strong>Update directly to a Controller:</strong></p>
@@ -696,25 +700,31 @@ Cue Store Options Pop-up
 <li><p>Make a change to parameter value outputting to the stage.</p></li>
 <li><p>Type [Qlist] [#] (if destination cue/cues are not on the Master Controller) [CUE] [+ ⟶ -] [CUE] [#] [UPDATE] - Modifications will now be updated to the destination cue selection.</p></li>
 </ol>
+<blockquote>
 <p>Cues may alternately be modified using the universal syntax below:</p>
+</blockquote>
 <p><strong>Modify cues using EDIT:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>[QLIST] [#] [CUE] [#] [EDIT] - Cue values will be placed in the Editor and the [UPDATE] key will flash red.</p></li>
 <li><p>Modify the parameters in the Editor as required.</p></li>
 <li><p>Press [UPDATE] to complete the edit and restore control to the source controller.</p></li>
 </ol>
+<blockquote>
 <p>This method may be used in [BLIND] and unlike live, fixtures may be released from the source cue. Effects may also be edited</p>
-<p><strong>Modifying cues using {Overwrite}, {Update}, or {Release} keys - (Traditional method common to most consoles)</strong></p>
+</blockquote>
+<p><strong>Modifying cues using {Overwrite}, {Update}, or {Release} keys -</strong> (Traditional method common to most consoles)</p>
 <ol style="list-style-type: decimal">
 <li><p>Make a change to parameter value outputting to the stage.</p></li>
 <li><p>Press [QLIST] (in not not on the Master Controller) [CUE] [#] [STORE].</p></li>
 <li><p>If the cue exits, the Cue Exists pop-up will appear with options for {Cancel, Update, Overwrite, Release}.</p></li>
 </ol>
-<p>◾ Tap {Overwrite} to replace all fixtures with those in the Editor.</p>
-<p>◾ Tap {Update} to merge the Editor into the selected cue.</p>
-<p>◾ Tap {Release} to remove the selected fixtures from the cue.</p>
+<ul>
+<li><p>Tap {Overwrite} to replace all fixtures with those in the Editor.</p></li>
+<li><p>Tap {Update} to merge the Editor into the selected cue.</p></li>
+<li><p>Tap {Release} to remove the selected fixtures from the cue.</p></li>
+</ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLorXIBo6svKGJIHyVcxC%2F10.9.1.webp?alt=media&amp;token=b9c11b6e-cbf7-401f-b5df-66dee8df863b" /></p>
-<p><strong>Cue Exists pop-up</strong></p>
+<p>Cue Exists pop-up</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfuG9DGIRoxtNWzrca99h%2F10.9.2.webp?alt=media&amp;token=3d8c1790-cce0-4db6-826c-0eee6ad81c06" /></p>
 <p>Cue Settings pop-up</p>
 <p><strong>Cue Settings for Text Label, Cue Time, Cue Linking and Looping, Cue Re-numbering and Cue Tracking options may be changed at any time after they are created using the Cue Settings pop-up:</strong></p>
@@ -733,19 +743,27 @@ Cue Store Options Pop-up
 <h2><span class="header-section-number">10.10</span> Creating New Cues from Existing Cue Data<a href="programming-cues-and-scenes.html#creating-new-cues-from-existing-cue-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>To Copy a Cue to a new Cue:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[CUE] [#] [COPY]</p></li>
-<li><p>The <strong>Copy Cue</strong> Pop-up will open</p></li>
-<li><p>Three Options are available:</p>
-<p>◾ {Actual Cue} - Copies cue properties as well as stored parameter values</p>
-<p>◾ {State} - Copies all of the hard values and tracked values that make up the source cue’s “End State” (Stage look)</p>
-<p>◾ {Values Only} - Copies only the hard values that are stored in the source cue</p></li>
-<li><p>[CUE] [#] [PASTE] - The Cue Only Pop-up will open</p></li>
-<li><p>Three Options are available:</p>
-<p>◾ {Paste} {Cue Only}</p>
-<p>◾ {Paste} {Skip}</p>
-<p>◾{OK}</p>
-<p>◾ {Cancel}</p></li>
-<li><p>Choose an option and the operation will be completed</p></li>
+<li><p><span style="color:Gray">[CUE] [#] [COPY]</span></p></li>
+<li><p><span style="color:Gray">The <strong>Copy Cue</strong> Pop-up will open</span></p></li>
+<li><p><span style="color:Gray">Three Options are available: </span></p></li>
+</ol>
+<ul>
+<li><p><span style="color:Gray">{Actual Cue} - Copies cue properties as well as stored parameter values</span></p></li>
+<li><p><span style="color:Gray">{State} - Copies all of the hard values and tracked values that make up the source cue’s “End State” (Stage look) </span></p></li>
+<li><p><span style="color:Gray">{Values Only} - Copies only the hard values that are stored in the source cue</span></p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p><span style="color:Gray">[CUE] [#] [PASTE] - The Cue Only Pop-up will open</span></p></li>
+<li><p><span style="color:Gray">Three Options are available:</span>:</p></li>
+</ol>
+<ul>
+<li><p><span style="color:Gray">{Paste} {Cue Only} </span></p></li>
+<li><p><span style="color:Gray">{Paste} {Skip} </span></p></li>
+<li><p><span style="color:Gray">{OK}</span></p></li>
+<li><p><span style="color:Gray">{Cancel}</span></p></li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Choose an option and the operation will be completed</li>
 </ol>
 <p><strong>To create a new cue using values from an existing cue, use one of the following two menu commands:</strong></p>
 <ul>

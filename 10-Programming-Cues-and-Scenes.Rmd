@@ -356,6 +356,7 @@ In the process of storing a cue, a number of filters and settings are available.
 	4. Optionally notes may also be entered for the selected cue.
 
 
+
 ## Modifying Cues and Scenes
 
 **Modify a Cue or Scene using [UPDATE]:**
@@ -367,11 +368,11 @@ In the process of storing a cue, a number of filters and settings are available.
 3.  If the Editor parameter values are **new** to all active cues, destination cue. Will be dependent on the **New Values** setting: 
 
 
-◾ If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column. 
+- If {All Selected Objects} is selected, a list of all possible active cues will appear in the Cue column. 
 
-◾ If {Master PB Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller. 
+- If {Master <span style="color:MediumAquaMarine">PB</span> Only} (controller) is selected, new values will be only be updated to the Qlist assigned as Master Controller. 
 
-◾ If {Don't Store} is selected, no new parameter values will be updated.
+- If {Don't Store} is selected, no new parameter values will be updated.
     
 
 4. Selected cues may be freely deselected in the Update pop-up.
@@ -387,11 +388,11 @@ In the process of storing a cue, a number of filters and settings are available.
 
 **UPDATE Source Filters:**
 
-{Master Controller} - Updates will only be made to the active cue on the controller assigned to the Master Controller.
+- {Master Controller} - Updates will only be made to the active cue on the controller assigned to the Master Controller.
 
-{Last Activated Controller} - Updates will be made to the last controller that asserter priority.
+- {Last Activated Controller} - Updates will be made to the last controller that asserter priority.
 
-{Grab All} - All Active Controllers will be shown in a list and the user must select the destination of the updates.
+- {Grab All} - All Active Controllers will be shown in a list and the user must select the destination of the updates.
 
 **UPDATE Tracking Options:**
 
@@ -399,7 +400,7 @@ In the process of storing a cue, a number of filters and settings are available.
     
 -   {Cue Only} - Changes will be made to "This Cue Only" preserving the look of the next cue (Hard values will be added to next cue).
     
--   {Skip Cue} - Changes will be made to the current cue but the changes will be "skipped over" preserving the link to the original hard values.
+-   {Skip <span style="color:MediumAquaMarine">Cue</span>} - Changes will be made to the current cue but the changes will be "skipped over" preserving the link to the original hard values.
     
 -   {Back Track} - Updates the changes to the **original** hard value that made the stage look.
     
@@ -422,7 +423,7 @@ In the process of storing a cue, a number of filters and settings are available.
 2.  Type [Qlist] [#] (if destination cue/cues are not on the Master Controller) [CUE] [+ ⟶ -] [CUE] [#] [UPDATE] - Modifications will now be updated to the destination cue selection.
     
 
-Cues may alternately be modified using the universal syntax below:
+>Cues may alternately be modified using the universal syntax below:
 
 **Modify cues using EDIT:**
 
@@ -433,9 +434,9 @@ Cues may alternately be modified using the universal syntax below:
 3. Press [UPDATE] to complete the edit and restore control to the source controller.
     
 
-This method may be used in [BLIND] and unlike live, fixtures may be released from the source cue. Effects may also be edited
+>This method may be used in [BLIND] and unlike live, fixtures may be released from the source cue. Effects may also be edited
 
-**Modifying cues using {Overwrite}, {Update}, or {Release} keys - (Traditional method common to most consoles)**
+**Modifying cues using {Overwrite}, {Update}, or {Release} keys -** (Traditional method common to most consoles)
 
 1.  Make a change to parameter value outputting to the stage.
     
@@ -443,16 +444,16 @@ This method may be used in [BLIND] and unlike live, fixtures may be released fro
     
 3.  If the cue exits, the Cue Exists pop-up will appear with options for {Cancel, Update, Overwrite, Release}. 
 
-◾ Tap {Overwrite} to replace all fixtures with those in the Editor. 
+-   Tap {Overwrite} to replace all fixtures with those in the Editor. 
 
-◾ Tap {Update} to merge the Editor into the selected cue. 
+-   Tap {Update} to merge the Editor into the selected cue. 
 
-◾ Tap {Release} to remove the selected fixtures from the cue.
+-   Tap {Release} to remove the selected fixtures from the cue.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLorXIBo6svKGJIHyVcxC%2F10.9.1.webp?alt=media&token=b9c11b6e-cbf7-401f-b5df-66dee8df863b)
 
-**Cue Exists pop-up**
+Cue Exists pop-up
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfuG9DGIRoxtNWzrca99h%2F10.9.2.webp?alt=media&token=3d8c1790-cce0-4db6-826c-0eee6ad81c06)
 
@@ -476,44 +477,46 @@ Cue Settings pop-up
 
 
 
+
 ## Creating New Cues from Existing Cue Data
 
 **To Copy a Cue to a new Cue:**
 
-1. [CUE] [#] [COPY]
+
+1. <span style="color:Gray">[CUE] [#] [COPY]</span>
     
-2.  The **Copy Cue** Pop-up will open
+2. <span style="color:Gray">The **Copy Cue** Pop-up will open</span>
     
-3.  Three Options are available: 
+3. <span style="color:Gray">Three Options are available: </span>
 
-    ◾ {Actual Cue} - Copies cue properties as well as stored parameter values 
+  - <span style="color:Gray">{Actual Cue} - Copies cue properties as well as stored parameter values</span> 
 
-    ◾ {State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) 
+  - <span style="color:Gray">{State} - Copies all of the hard values and tracked values that make up the source cue's "End State" (Stage look) </span> 
 
-    ◾ {Values Only} - Copies only the hard values that are stored in the source cue
+  - <span style="color:Gray">{Values Only} - Copies only the hard values that are stored in the source cue</span>
     
-5.   [CUE] [#] [PASTE] - The Cue Only Pop-up will open
+4.   <span style="color:Gray">[CUE] [#] [PASTE] - The Cue Only Pop-up will open</span>
     
-6.  Three Options are available: 
+5.  <span style="color:Gray">Three Options are available:</span>: 
 
-    ◾ {Paste} {Cue Only} 
+  - <span style="color:Gray">{Paste} {Cue Only} </span>
 
-    ◾ {Paste} {Skip} 
+  - <span style="color:Gray">{Paste} {Skip} </span>
 
-    ◾{OK} 
+  - <span style="color:Gray">{OK}</span>
 
-    ◾ {Cancel}
+  - <span style="color:Gray">{Cancel}</span>
     
-7.   Choose an option and the operation will be completed
+6.   Choose an option and the operation will be completed
     
 
 **To create a new cue using values from an existing cue, use one of the following two menu commands:**
 
--   [CUE] [#] {LOAD} - Loads the cue's **actual** hard values into the Editor. Tracked values are ignored. **Or**
+  - [CUE] [#] {LOAD} - Loads the cue's **actual** hard values into the Editor. Tracked values are ignored. **Or**
     
--   [CUE] [#] {LOAD STATE} - Loads the cue's hard values **and** current **tracked** values (Stage State) into the Editor.
+  - [CUE] [#] {LOAD STATE} - Loads the cue's hard values **and** current **tracked** values (Stage State) into the Editor.
     
--   Continue modifications and store as a new cue.
+  - Continue modifications and store as a new cue.
 
 
 
