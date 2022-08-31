@@ -267,7 +267,8 @@
 </ul></li>
 <li class="chapter" data-level="13.3" data-path="effects-1.html"><a href="effects-1.html#advanced-effects-editor"><i class="fa fa-check"></i><b>13.3</b> Advanced Effects Editor<span></span></a>
 <ul>
-<li class="chapter" data-level="13.3.1" data-path="effects-1.html"><a href="effects-1.html#building-effects-using-the-advanced-effects-editor"><i class="fa fa-check"></i><b>13.3.1</b> Building Effects Using the Advanced Effects Editor<span></span></a></li>
+<li class="chapter" data-level="13.3.1" data-path="effects-1.html"><a href="effects-1.html#build-a-basic-effect-in-the-advanced-effects-editor"><i class="fa fa-check"></i><b>13.3.1</b> Build a basic Effect in the Advanced Effects Editor<span></span></a></li>
+<li class="chapter" data-level="13.3.2" data-path="effects-1.html"><a href="effects-1.html#building-effects-using-the-advanced-effects-editor"><i class="fa fa-check"></i><b>13.3.2</b> Building Effects Using the Advanced Effects Editor<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="playback-controllers.html"><a href="playback-controllers.html"><i class="fa fa-check"></i><b>14</b> Playback Controllers<span></span></a>
@@ -392,24 +393,24 @@
 <h2><span class="header-section-number">12.1</span> What are Libraries<a href="libraries.html#what-are-libraries" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Vibe has two types of Libraries, Bank Libraries and Object Libraries:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Bank Libraries - Store commonly used parameter values for Intensity, Position, Color, Beam, Image, Shapers, and Video content. They correspond to the parameter banks. Libraries are essentially filtered cues that are referenced by recorded objects such as Scenes and Cues. There are also two special bank libraries, Custom, and Effects.</li>
-</ol>
+<li><p>Bank Libraries - Store commonly used parameter values for Intensity, Position, Color, Beam, Image, Shapers, and Video content. They correspond to the parameter banks. Libraries are essentially filtered cues that are referenced by recorded objects such as Scenes and Cues. There are also two special bank libraries, Custom, and Effects.</p>
 <ul>
 <li><p>Custom libraries are unfiltered and record whatever parameters are in the Editor. The system <a href="filters.html#filters">FILTERS</a> key function or user defined Filter object libraries may be used to limit which parameters are stored in Custom libraries.</p></li>
 <li><p>Effect libraries store effects parameters from the Editor so that they do not have to be manually rebuilt every time they are required.</p></li>
-</ul>
-<ol style="list-style-type: decimal">
-<li>Object Libraries - Pools of system object types.</li>
-</ol>
+</ul></li>
+<li><p>Object Libraries - Pools of system object types.</p>
 <ul>
 <li><p>Common Object Libraries are:</p>
-<p>◾ Group</p>
-<p>◾ Qlist</p>
-<p>◾ Scenes– Single non-Qliet “Looks”(Submasters on some consoles)</p>
-<p>◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots</p>
-<p>◾ Filters – Pool of user defined flters</p>
-<p>◾ Macro</p></li>
-</ul>
+<ul>
+<li><p>Group</p></li>
+<li><p>Qlist</p></li>
+<li><p>Scenes– Single non-Qliet “Looks”(Submasters on some consoles)</p></li>
+<li><p>Snaps – Snapshot controller states. Sometimes referred to as Snap Shots</p></li>
+<li><p>Filters – Pool of user defined flters</p></li>
+<li><p>Macro</p></li>
+</ul></li>
+</ul></li>
+</ol>
 <blockquote>
 <p>Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.</p>
 </blockquote>
@@ -432,11 +433,23 @@
 <li><p><strong>Pattern</strong> –Values will be applied to all matching parameter types and will keep the pattern of the values.</p></li>
 <li><p><strong>Device + Fixture</strong> – the first fixture will be used as a reference for all other similar fixture types. If values are changed for specific fixtures they will be stored in the library as if they were fixture specific. If a fixture other than the first fixture is released from the library, its values will again be referenced from the first fixture. If the first fixture is released, the next fixture will become the reference.</p></li>
 <li><p><strong>Device and Parameter</strong> – Values will be applied to fixtures of the same device type and the same parameter type.</p></li>
-<li><p><strong>Device and pattern</strong> – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.</p></li>
+<li><p><strong>Device and pattern</strong> – Values will be applied to fixtures of the same device type and keep the pattern of values.</p></li>
 </ol>
+<p>Library Bank SKs have default filters and behaviours based on the way they are commonly used.</p>
+<p><strong>Store directly to a Bank SK Library:</strong></p>
+<ol style="list-style-type: decimal">
+<li>[Fixture] [#] [+ ⟶ -] Select parameter {Bank} on Smart Screen.</li>
+<li>Use keypad, Smart Screen pickers, and/or adjust parameter wheels, to set values.</li>
+<li>Press [STORE] - The Library {Store Options} tab will appear on top right corner of SKs.</li>
+<li>Use the Library {Store Options} pop-up at the bottom on the Smart Screen to make option changes.</li>
+<li>Tap destination Library SK.</li>
+</ol>
+<blockquote>
+<p>If no option changes are required just directly tap the appropriate Library SK without tapping the Library {Store Options}.</p>
+</blockquote>
 <p><strong>Store a Library using keypad syntax:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Press [Fixture] [#] [+ à -] - Select parameter {Bank } on Smart Screen.</p></li>
+<li><p>Press [Fixture] [#] [+ ⟶ -] - Select parameter {Bank } on Smart Screen.</p></li>
 <li><p>Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.</p></li>
 <li><p>Press [LIBRARY] - Library {Store Options} pop-up will open at the bottom of the Smart Screen and {Banks} will appear on the Editor Toolbar.</p></li>
 </ol>
@@ -459,7 +472,9 @@
 <p>6 = Shape</p>
 <p>7 = Custom</p>
 <p>8 = Effect</p>
+<blockquote>
 <p>After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.</p>
+</blockquote>
 <p><strong>Modify a Library using [UPDATE]:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
@@ -467,8 +482,12 @@
 <li><p>Selected libraries may be freely deselected in the Update pop-up. If all Libraries are deselected, updates will become “hard” values in the source cue instead of the source libraries being updated.</p></li>
 <li><p>Press <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> or press [ENTER] to close the pop-up and complete the update.</p></li>
 </ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKeFZwX4YqebXrAJ6H335%2F12.2.png?alt=media&amp;token=97b093e2-f4c0-4b69-99f0-89e735f66480" /></p>
-<p><strong>Update pop-up</strong></p>
+<p align="center">
+<img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKeFZwX4YqebXrAJ6H335%2F12.2.png?alt=media&token=97b093e2-f4c0-4b69-99f0-89e735f66480">
+</p>
+<p align="center">
+Update pop-up
+</p>
 <p><strong>Overwrite, Update, or Release fixtures in Libraries via Softkey syntax:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.</p></li>
@@ -482,17 +501,27 @@
 <blockquote>
 <p>Alternately the sequence [LIBRARY] {Bank} from the Editor Toolbar [#] [STORE] to an existing library will work the same as above.</p>
 </blockquote>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&amp;token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425" /></p>
-<p><strong>Object Exists pop-up</strong></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTFtIlY02FdG9tk8XcTxR%2F12.2.1.png?alt=media&amp;token=52aca567-ad5b-42f0-9368-8dff44a526ea" /></p>
-<p><strong>Library Settings pop-up</strong></p>
+<p align="center">
+<img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425">
+</p>
+<p align="center">
+Object Exists pop-up
+</p>
+<p align="center">
+<img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTFtIlY02FdG9tk8XcTxR%2F12.2.1.png?alt=media&token=52aca567-ad5b-42f0-9368-8dff44a526ea">
+</p>
+<p align="center">
+Library Settings pop-up
+</p>
 <p>Library Settings may be changed at any time after they are created using the Library Settings pop-up.</p>
 <p><strong>There are two ways to do this:</strong></p>
 <ul>
 <li><p>Tap the Library {SK} you wish to modify and press [SETTINGS]. (This is invalid with Snaps and Macros as it will trigger them) Or</p></li>
 <li><p>Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open.</p>
-<p>◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it.</p>
-<p>◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.</p></li>
+<ul>
+<li><p>If Reference is selected, modifying the library will modify the values of ALL cues that reference it.</p></li>
+<li><p>If Timing is selected, any parameter cell times in the Editor will be stored with the library.</p></li>
+</ul></li>
 </ul>
 <p><strong>Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:</strong></p>
 <ul>
@@ -514,13 +543,13 @@
 </div>
 <div id="object-libraries" class="section level2 hasAnchor" number="12.3">
 <h2><span class="header-section-number">12.3</span> Object Libraries<a href="libraries.html#object-libraries" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>See:</p>
+<p><strong>See:</strong></p>
 <ul>
-<li><p>9.4. Groups</p></li>
-<li><p>10.1. What Are Qlists, Cues, Scenes, and Submasters?</p></li>
-<li><p>11.2. General Filters Tab</p></li>
-<li><p>16.1. Creating Macros</p></li>
-<li><p>17.1. Storing Snaps</p></li>
+<li><p><a href="https://vibemanual.compulite.com/programming-basics.html#groups">9.4. Groups</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/programming-cues-and-scenes.html#what-are-qlists-cues-scenes-and-submasters">10.1. What Are Qlists, Cues, Scenes, and Submasters?</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/filters.html#general-filters-tab">11.2. General Filters Tab</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/macros.html#creating-macros">16.1. Creating Macros</a></p></li>
+<li><p><a href="https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps">17.1. Storing Snaps</a></p></li>
 </ul>
 
 </div>

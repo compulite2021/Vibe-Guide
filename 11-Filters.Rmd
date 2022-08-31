@@ -33,7 +33,13 @@ On the Fly Filters are used to filter editor parameters when storing cues and sc
     
 6.  Store cue or scene. Deselected banks and parameters will not be included.
 
+Options:
 
+- {Select All} - Selects all banks and parameters
+- {Deselect All} - Deselects all banks and parameters
+- {Save as Default} - <span style="color:Gray">To be removed</span>
+- <span style="color:Gray">{Keep Filter till Reset} - Not implemented.</span>
+- <span style="color:Gray">{Save Filter and Apply} - Not yet implemented.</span>
 
 ## General Filters Tab
 
@@ -57,17 +63,17 @@ Filters may be created "blind" without a fixture and parameter selection. They m
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FxJGgGofSNiTwdWFtRk9V%2Fimage.png?alt=media&token=a0874eb0-9da7-44de-bd08-2cf099a2ea51)
 
-Create "Exclude" Filter - Only the parameters in the Available Parameters box will be used - The result is similar to On The Fly Filters.
+**Create "Exclude" Filter** - Only the parameters in the **Available Parameters** box will be used - The result is similar to **On The Fly** Filters.
 
 1.  Press [VIBE] + [FILTERS] to open the Blind Filters pop-up.
     
-2.  Make sure the General Tab in the lower left corner of the pop-up is selected.
+2.  Make sure the **General Tab** in the lower left corner of the pop-up is selected.
     
 3.  Press {New} - A new filter will be created with the name {1.Filter 1}.
     
 4.  Accept the name or type a new name in the white data entry box at the bottom of the Filter's column.
     
-5.  Tap all of the parameters except the ones you want to be excluded from recording to move them to the Filtered Parameters box - This is the inverse of "Include Filters".
+5.  Tap all of the parameters **except** the ones you want to be excluded from recording to move them to the **Filtered Parameters box** - This is the inverse of "Include Filters".
     
 6.  Press the {Apply} softkey to apply the filter and stay in the pop-up or press [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to apply the filter and close the pop-up.
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F5yCJCJMYORB9XLWXzCvn%2Fimage.png?alt=media&token=b9b9696b-e3ec-4df3-87c1-0203e434d459)

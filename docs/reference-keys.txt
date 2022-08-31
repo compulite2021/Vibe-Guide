@@ -134,6 +134,7 @@ effect-basics
 smart-screen-effects-editor
 building-effects-using-the-small-screen-editor
 advanced-effects-editor
+build-a-basic-effect-in-the-advanced-effects-editor
 building-effects-using-the-advanced-effects-editor
 playback-controllers
 controller-priority-logic

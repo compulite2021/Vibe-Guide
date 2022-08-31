@@ -1,3 +1,4 @@
+
 # Libraries
 
 
@@ -14,25 +15,25 @@
 1.  Bank Libraries - Store commonly used parameter values for Intensity, Position, Color, Beam, Image, Shapers, and Video content. They correspond to the parameter banks. Libraries are essentially filtered cues that are referenced by recorded objects such as Scenes and Cues. There are also two special bank libraries, Custom, and Effects.
     
 
--   Custom libraries are unfiltered and record whatever parameters are in the Editor. The system [FILTERS] key function or user defined Filter object libraries may be used to limit which parameters are stored in Custom libraries.
+	-  Custom libraries are unfiltered and record whatever parameters are in the Editor. The system [FILTERS] key function or user defined Filter object libraries may be used to limit which parameters are stored in Custom libraries.
     
--   Effect libraries store effects parameters from the Editor so that they do not have to be manually rebuilt every time they are required.
+	-  Effect libraries store effects parameters from the Editor so that they do not have to be manually rebuilt every time they are required.
     
 
-1.  Object Libraries - Pools of system object types.
--   Common Object Libraries are: 
+2.  Object Libraries - Pools of system object types.
+	-   Common Object Libraries are: 
 
-    ◾ Group 
+		- Group 
 
-    ◾ Qlist 
+		- Qlist 
 
-    ◾ Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
+		- Scenes– Single non-Qliet "Looks"(Submasters on some consoles) 
 
-    ◾ Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
+		- Snaps – Snapshot controller states. Sometimes referred to as Snap Shots 
 
-    ◾ Filters – Pool of user defined flters 
+		- Filters – Pool of user defined flters 
 
-    ◾ Macro
+		- Macro
 
 >Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.
 
@@ -47,7 +48,7 @@
 
 **Automatic Parameter Grouping:**
 
--   Vibe uses tee concept of "Auto Parameter Grouping" parameters when storing libraries. All parameters in Position, Color, and Shaper parameter banks will always be recorded into a library to guarantee that what was viewed on the stage is the same as what is recorded in the library.
+-  Vibe uses tee concept of "Auto Parameter Grouping" parameters when storing libraries. All parameters in Position, Color, and Shaper parameter banks will always be recorded into a library to guarantee that what was viewed on the stage is the same as what is recorded in the library.
     
 -   Filters may be applied to modify what is stored in a Library.
     
@@ -64,14 +65,25 @@
     
 5.  **Device and Parameter** – Values will be applied to fixtures of the same device type and the same parameter type.
     
-6.   **Device and pattern** – Values will be applied to fixtures of the same device type and keep the pattern of values. Library Bank SKs have default filters and behaviours based on the way they are commonly used.
+6.   **Device and pattern** – Values will be applied to fixtures of the same device type and keep the pattern of values. 
 
+Library Bank SKs have default filters and behaviours based on the way they are commonly used.
 
+**Store directly to a Bank SK Library:**
+
+1. [Fixture] [#] [+ ⟶ -] Select parameter {Bank} on Smart Screen.
+2. Use keypad, Smart Screen pickers, and/or adjust parameter wheels, to set values.
+3. Press [STORE] - The Library {Store Options} tab will appear on top right corner of SKs.
+4. Use the Library {Store Options} pop-up at the bottom on the Smart Screen to make option changes.
+5. Tap destination Library SK.
+    
+
+>If no option changes are required just directly tap the appropriate Library SK without tapping the Library {Store Options}.
 
 
 **Store a Library using keypad syntax:**
 
-1.  Press [Fixture] [#] [+ à -] - Select parameter {Bank } on Smart Screen.
+1.  Press [Fixture] [#] [+ ⟶ -] - Select parameter {Bank } on Smart Screen.
     
 2.  Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.
     
@@ -108,7 +120,7 @@
 
 8 = Effect
 
-After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.
+>After typing the first number, the bank name will appear on the command line. The next number typed will be the library number.
 
 **Modify a Library using [UPDATE]:**
 
@@ -121,9 +133,11 @@ After typing the first number, the bank name will appear on the command line. Th
 4.  Press <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>  or press [ENTER] to close the pop-up and complete the update.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKeFZwX4YqebXrAJ6H335%2F12.2.png?alt=media&token=97b093e2-f4c0-4b69-99f0-89e735f66480)
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FKeFZwX4YqebXrAJ6H335%2F12.2.png?alt=media&token=97b093e2-f4c0-4b69-99f0-89e735f66480"> 
+</p>
 
-**Update pop-up**
+<p align=center> Update pop-up</p>
 
 **Overwrite, Update, or Release fixtures in Libraries via Softkey syntax:**
 
@@ -140,13 +154,18 @@ After typing the first number, the bank name will appear on the command line. Th
 
 >Alternately the sequence [LIBRARY] {Bank} from the Editor Toolbar [#] [STORE] to an existing library will work the same as above.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425)
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FViZ86urYtuJEwYHs9Pz9%2Fimage.png?alt=media&token=5a876ccb-256d-40c6-afc6-8a4fe1bfd425"> 
+</p>
 
-**Object Exists pop-up**
+<p align=center> Object Exists pop-up</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTFtIlY02FdG9tk8XcTxR%2F12.2.1.png?alt=media&token=52aca567-ad5b-42f0-9368-8dff44a526ea)
 
-**Library Settings pop-up**
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTFtIlY02FdG9tk8XcTxR%2F12.2.1.png?alt=media&token=52aca567-ad5b-42f0-9368-8dff44a526ea"> 
+</p>
+
+<p align=center> Library Settings pop-up</p>
 
 Library Settings may be changed at any time after they are created using the Library Settings pop-up.
 
@@ -156,9 +175,9 @@ Library Settings may be changed at any time after they are created using the Lib
     
 -   Press [Library] tap {Bank} on the Editor Toolbar Press [#] [SETTINGS] - The Settings pop-up will also open. 
 
-    ◾ If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
+    - If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
 
-    ◾ If Timing is selected, any parameter cell times in the Editor will be stored with the library.
+    - If Timing is selected, any parameter cell times in the Editor will be stored with the library.
     
 
 **Text labels may be assigned at any time there is NOT an active selection in the Editor. Any of the following methods are valid:**
@@ -189,16 +208,16 @@ Library Settings may be changed at any time after they are created using the Lib
 ## Object Libraries
 
 
-See:
+**See:**
 
--   9.4. Groups
+-   [9.4. Groups](https://vibemanual.compulite.com/programming-basics.html#groups)
     
--   10.1. What Are Qlists, Cues, Scenes, and Submasters?
+-   [10.1. What Are Qlists, Cues, Scenes, and Submasters?](https://vibemanual.compulite.com/programming-cues-and-scenes.html#what-are-qlists-cues-scenes-and-submasters)
     
--   11.2. General Filters Tab
+-   [11.2. General Filters Tab](https://vibemanual.compulite.com/filters.html#general-filters-tab)
     
--   16.1. Creating Macros
+-   [16.1. Creating Macros](https://vibemanual.compulite.com/macros.html#creating-macros)
     
--   17.1. Storing Snaps
+-   [17.1. Storing Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps)
 
 
