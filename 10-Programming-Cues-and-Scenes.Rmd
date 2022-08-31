@@ -524,9 +524,9 @@ Cue Settings pop-up
 
 **Cue Time Properties:**
 
--   10.11.1. Assigning Cue Time
+-   [10.11.1. Assigning Cue Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assigning-cue-time)
     
--   10.11.2. Wait and Follow Times
+-   [10.11.2. Wait and Follow Times](https://vibemanual.compulite.com/programming-cues-and-scenes.html#wait-and-follow-times)
 
 
 
@@ -564,6 +564,39 @@ Assign a simple in/out time to the current cue:
     
 4.  Press [ENTER] or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) to exit the pop-up and assign the cue time.
 
+**Assign a separate {Time In} {Time Out}, and/or {Delay In} {Delay Out} times to the current cue:**
+
+1. Press [CUE] [#]
+    
+
+2. Press [TIME], the Time pop-up will appear.
+    
+
+3. Press [TIME] again and the display will advance to {Time In}.
+    
+
+4. Press [TIME] again and the display will advance to {Time Out}.
+    
+
+5.  Press [TIME] again and the display will advance to {Delay}.
+    
+
+6. Press [TIME] again and the display will advance to {Delay In}.
+    
+
+7. Press [TIME] again and the display will advance to {Delay Out}.
+    
+
+Alternately times can be randomly entering by tapping the desired time field and making a keypad entry or turning the virtual wheel.
+
+>When typing any time value, the time indicator of the virtual wheel will turn green for approximately 4 seconds. While it is <span style="color:MediumAquaMarine">**green**</span> time values may be entered in the format of: **Hour.Minute.Second.Millisecond**
+
+
+>If the {Enable} key is pressed, the user may manually toggle between time units using the {Units} key to the left of it.
+
+
+><span style="color:Red">Out times only apply to dimmer parameters.</span>
+
 
 
 ###  Wait and Follow Times
@@ -595,22 +628,26 @@ Assign a simple in/out time to the current cue:
 3.   Tap {Follow} and either type in the Follow Time or use the virtual time wheel to set the Follow Time.
 
 
+>To clear a Follow, turn the physical Follow Wheel until its display and the {Follow} display say N/A Press [ENTER}
+
 
 ## Additional Cue Properties
 
 Additional Cue Properties:
 
--   ​[10.12.1. Link](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.1.-link)​
+-   ​[10.12.1. Link](https://vibemanual.compulite.com/programming-cues-and-scenes.html#link)​
     
--   ​[10.12.2. Loop](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.2.-loop)​
+-   ​[10.12.2. Loop](https://vibemanual.compulite.com/programming-cues-and-scenes.html#loop)​
     
--   ​[10.12.3. Tracking Options](https://app.gitbook.com/s/3kS90tLsADGm1ocbe7q9/10.-programming-cues-and-scenes/10.-programming-cues-and-scenes/10.12.3.-tracking-options)
+-   ​[10.12.3. Tracking Options](https://vibemanual.compulite.com/programming-cues-and-scenes.html#tracking-options)
 
 
 
 ### Link
 
-Cues may be linked out of sequence using any of the following three methods: **Using keypad and Toolbar:**
+Cues may be linked out of sequence using any of the following three methods: 
+
+**Using keypad and Toolbar:**
 
 1.  Source [CUE] [#] {LINK} on the Editor Toolbar - The Link pop-up will appear.
     
@@ -635,7 +672,7 @@ Cues may be linked out of sequence using any of the following three methods: **U
 
 **Direct using the cue sheet:**
 
-1.  Tap in the Link field of the source cue in the Live Master Controller Cue Sheet
+1.  Tap in the Link field of the source cue in the **Live Master Controller Cue Sheet**
     
 2.  The Link pop-up will appear.
     
@@ -660,31 +697,33 @@ Cues may be linked out of sequence using any of the following three methods: **U
 2.  Press [RELEASE] to remove the link.
     
 
->If the source cue is forgotten, check the Link # field in the Live Master Controller Cue Sheet.
+>If the source cue is forgotten, check the **Link #** field in the Live Master Controller Cue Sheet.
+
+
 
 
 ### Loop
 
-
-10.12.2. Loop
-
 In many consoles, the only way to create a loop is to create a link from the end of a range of cues back to the beginning. Follow time must then be assigned to all of the cues. In Vibe this is also possible but a shorter more efficient method is also provided. **LOOP** is a function similar to **LINK**. It is assigned in the Loop pop-up or via the Cue Settings pop-up.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtaGuw1CXdzTKI1Xp6Cg1%2F10.12.2.webp?alt=media&token=2fdf1f53-5ec0-4759-965b-b1fc8019243c)
 
-Loop Pop-up
+<p align="center">
+  <img width="" height="" src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtaGuw1CXdzTKI1Xp6Cg1%2F10.12.2.webp?alt=media&token=2fdf1f53-5ec0-4759-965b-b1fc8019243c"> 
+</p>
+<p align=center> Loop Pop-up </p>
 
-**To assign a Loop:** Using keypad and Editor Toolbar:
+**To assign a Loop:** 
+
+**Using keypad and Editor Toolbar:**
 
 1. Start [CUE] [#] tap {LOOP} on the Editor Toolbar - The Loop pop-up will appear.
     
 2.   Type end [#] or use {To Cue No} field list to select the end cue.
     
-3. 
-     Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  to complete the operation.
+3. Press Enter or [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  to complete the operation.
     
 
-Using Cue Setting Pop-Up:
+**Using Cue Setting Pop-Up:**
 
 1.   Start [CUE] [#] [SETTINGS] - Cue Settings pop-up will open.
     
@@ -762,7 +801,8 @@ Using Cue Setting Pop-Up:
 
 1.  Force Black - When it is not desirable to see values move from one cue state to another, Force Black may be used to save programming time. In a cue tagged as Force Black, the dimmer parameter is first "forced" to Black Out, parameters then move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.
     
-2. <span style="color:blue">Look Ahead cue - When Look Ahead is disabled for a Qlist, Individual cues with dark values may be tagged to perform Look Ahead prepositioning.</span>.
+2. <span style="color:Gray">Look Ahead cue - When Look Ahead is disabled for a Qlist, Individual cues with dark values may be tagged to perform Look Ahead pre-positioning.</span>
+
 
 
 
@@ -772,11 +812,11 @@ Using Cue Setting Pop-Up:
 
 **Parameter Time:**
 
--   10.13.1. Assign Parameter Time During Cue Creation
+-   [10.13.1. Assign Parameter Time During Cue Creation](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assign-parameter-time-during-cue-creation)
     
--   10.13.2. Adding or Modifying Parameter Time after Cue Creation
+-   [10.13.2. Adding or Modifying Parameter Time after Cue Creation](https://vibemanual.compulite.com/programming-cues-and-scenes.html#adding-or-modifying-parameter-time-after-cue-creation)
     
--   10.13.3. Fanning Parameter Time
+-   [10.13.3. Fanning Parameter Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#fanning-parameter-time)
 
 
 ### Assign Parameter Time During Cue Creation
@@ -791,11 +831,11 @@ Using Cue Setting Pop-Up:
 4.  oggle on/off the parameters requiring Parameter Time 
 
   
-    ◾ Parameter view may be filtered by banks. 
+    - Parameter view may be filtered by banks. 
 
-    ◾ Fixtures may be selected and detected freely in the pop-up. 
+    - Fixtures may be selected and detected freely in the pop-up. 
 
-    ◾ Toggling the parameter header will select reselect all fixtures.
+    - Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -803,7 +843,11 @@ Using Cue Setting Pop-Up:
     
 7.  Selected fixtures will now show a clock icon in the Live Display.
     
-8.  Store the Cue using any of the methods described under: 10.3. Storing Cues and Scenes Directly to Controllers 10.5. Storing Cues to the Master Controller 10.6. Storing Qlist Cues to any Controller
+8.  Store the Cue using any of the methods described under: 
+
+-   [10.3. Storing Cues and Scenes Directly to Controllers](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-and-scenes-directly-to-controllers) 
+-   [10.5. Storing Cues to the Master Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-cues-to-the-master-controller) 
+-   [10.6. Storing Qlist Cues to any Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#storing-qlist-cues-to-any-controller)
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVMwWaGG9Qr6NDEWLQKOl%2F10.13.1%20parameter%20time.png?alt=media&token=55487d5d-9035-4083-a55e-a02b0b0573a4)
@@ -813,9 +857,8 @@ Using Cue Setting Pop-Up:
 
 
 
+
 ### Adding or Modifying Parameter Time after Cue Creation
-
-
 
 
 **Method 1:**
@@ -826,11 +869,11 @@ Using Cue Setting Pop-Up:
     
 3.  Toggle on/of the parameters that require Parameter Time.
 
--   Parameter view may be filtered by banks. 
+    -   Parameter view may be filtered by banks. 
 
--   Fixtures may be selected and detected freely in the pop-up. 
+	-   Fixtures may be selected and detected freely in the pop-up. 
 
--   Toggling the parameter header will select reselect all fixtures.
+	-   Toggling the parameter header will select reselect all fixtures.
     
 4.   Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -840,7 +883,7 @@ Using Cue Setting Pop-Up:
     
 7. Press [UPDATE]. 
 
-See Also: 10.9. Modifying Cues and Scenes
+See Also: [10.9. Modifying Cues and Scenes](https://vibemanual.compulite.com/programming-cues-and-scenes.html#modifying-cues-and-scenes)
     
 
 **Method 2:**
@@ -853,11 +896,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 4.  Toggle on/of the parameters that require Parameter Time. 
 
-    ◾ Parameter view may be filtered by banks. 
+    - Parameter view may be filtered by banks. 
 
-    ◾ Fixtures may be selected and detected freely in the pop-up. 
+    - Fixtures may be selected and detected freely in the pop-up. 
 
-    ◾ Toggling the parameter header will select reselect all fixtures.
+    - Toggling the parameter header will select reselect all fixtures.
     
 5.  Set the parameter time for the selected fixtures directly using the keypad, or by using the virtual or physical time wheels.
     
@@ -873,20 +916,21 @@ See Also: 10.9. Modifying Cues and Scenes
     
 4.  If they were not already selected, toggle on/of the parameters that require Parameter Time to be released. 
 
-    ◾ Parameter view may be filtered by banks. 
+    - Parameter view may be filtered by banks. 
 
-    ◾ Fixtures may be selected and detected freely in the pop-up. 
+    - Fixtures may be selected and detected freely in the pop-up. 
 
-    ◾ Toggling the parameter header will select reselect fixtures.
+    - Toggling the parameter header will select reselect fixtures.
     
 5.  Press either the {Release} key over the Time-In wheel or the {Release} over the Delay-In wheel.
     
 6.  Press the [UPDATE] again to complete the modification. The Update light will stop flashing and the  parameters will be released back to cue time.
 
 
+
+
+
 ### Fanning Parameter Time
-
-
 
 
 **Method 1:**
@@ -897,11 +941,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
 
-    ◾ Parameter view may be filtered by banks. 
+    - Parameter view may be filtered by banks. 
 
-    ◾ Fixtures may be selected and detected freely in the pop-up. 
+    - Fixtures may be selected and detected freely in the pop-up. 
 
-    ◾ Toggling the parameter header will select reselect all fixtures.
+    - Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.
     
@@ -928,11 +972,11 @@ See Also: 10.9. Modifying Cues and Scenes
     
 3.  Toggle on/of the parameters that require parameter or delay time. 
 
-    ◾ Parameter view may be filtered by banks. 
+    - Parameter view may be filtered by banks. 
 
-    ◾ Fixtures may be selected and detected freely in the pop-up. 
+    - Fixtures may be selected and detected freely in the pop-up. 
 
-    ◾ Toggling the parameter header will select reselect all fixtures.
+    - Toggling the parameter header will select reselect all fixtures.
     
 4.  Tap the Time-In or Delay-In virtual wheel.
     
@@ -946,9 +990,9 @@ See Also: 10.9. Modifying Cues and Scenes
 
 >The above sequence will also work with [CUE] [#] [EDIT] but step 8 is redundant.
 
+**Remove a fanned parameter time:** 
 
-**Remove a fanned parameter time: 
-See:** 10.13.2. Adding or Modifying Parameter Time after Cue Creation.
+See: [10.13.2. Adding or Modifying Parameter Time after Cue Creation](https://vibemanual.compulite.com/programming-cues-and-scenes.html#adding-or-modifying-parameter-time-after-cue-creation)
 
 
 **Cell Time Fan**
@@ -1009,16 +1053,17 @@ User may apply the popup with nothing selected on the options or with all the op
 
 
 
+
 ## Group Submasters
 
 
 **Group Submasters:**
 
--   10.15.1. Convert a Scene into a Group Submaster
+-   [10.15.1. Convert a Scene into a Group Submaster](https://vibemanual.compulite.com/programming-cues-and-scenes.html#convert-a-scene-into-a-group-submaster)
     
--   10.15.2. Assign a Group Submater directly to a Slider Controller
+-   [10.15.2. Assign a Group Submater directly to a Slider Controller](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assign-a-group-submater-directly-to-a-slider-controller)
     
--   10.15.3. Assign a Group Submaster using existing Groups
+-   [10.15.3. Assign a Group Submaster using existing Groups](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assign-a-group-submaster-using-existing-groups)
 
 
 ### Convert a Scene into a Group Submaster
@@ -1037,7 +1082,7 @@ Any Scene can be easily converted into a Group **Submaster** (Known in some cons
 
 ​
 
-3. Tap the middle {Button label}. By default, it should say {Intensity Master}. The Choose Control drop-down menu will appear.
+3. Tap the middle {Button label}. By default, it should say {Intensity Master}. The **Choose Control** drop-down menu will appear.
 
 4. Select the {Submaster} option with the Crown in front of it.
 
@@ -1051,6 +1096,7 @@ All fixtures in the Scene will now act as Group Submasters. Scene fixture values
 
 
 
+
 ### Assign a Group Submater directly to a Slider Controller
 
 
@@ -1058,10 +1104,10 @@ All fixtures in the Scene will now act as Group Submasters. Scene fixture values
     
 2.  Press [STORE] [SCENE] [HERE] to any button of the destination controller. [FIXTURE] [1] → [6] [STORE] [SCENE] press the [TOP Buton] of Fader Controller # 1
     
-3.  The [Top Controller Button] will now turn light blue to indicate that it is now a Group Submaster.
+3.  The [Top Controller Button] will now turn <span style="color:LightSkyBlue">light blue</span> to indicate that it is now a Group Submaster.
     
 
->When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue backlight will go steady.
+><span style="color:Red">When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue backlight will go steady.</span>
 
 
 ### Assign a Group Submaster using existing Groups
@@ -1076,21 +1122,12 @@ All fixtures in the Scene will now act as Group Submasters. Scene fixture values
 
 **Assign a Group to a Slider Controller using Group softkeys:**
 
-
-**Assign a Group to a Slider Controller using keypad syntax:**
-
-1.  Press [GROUP] [#] [HERE] - To any button of the destination slider controller.
-    
-2.   The top controller button will turn light blue to indicate that it is now a Group Submaster.
-    
-
-**Assign a Group to a Slider Controller using Group softkeys:**
-
 1.  Press a {GROUP} softkey.
     
 2.  Press [HERE] to any button of the destination slider controller.
     
 3.   The [Top Controller Button] will now turn light blue to indicate that it is now a Group Submaster.
     
->When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue back light will go steady.
+><span style="color:Red">When the slider handle is down, the [Top Button] will flash to indicate that levels are being inhibited. When it is at full, the button's blue back light will go steady.</span>
+
 
