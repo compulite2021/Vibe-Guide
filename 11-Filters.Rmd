@@ -1,6 +1,6 @@
 # Filters
 
-
+This chapter deals with filtering Editor parameters when storing objects and setting Bank Library default filters.
 
 **The following is covered in this chapter:**
 

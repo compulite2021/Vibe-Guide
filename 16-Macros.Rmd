@@ -1,5 +1,7 @@
+
 # Macros
 
+This chapter deals with creating and triggering Macros.
 
 **The following is covered in this chapter:**
 
@@ -20,7 +22,9 @@ Current Macros can only be created using the **Teach Macro** recorder. In future
     
 3.  Press [TEACH] again to terminate the recording - the [TEACH] key will stop flashing and the key presses are now stored in the Macro clipboard.
     
-4.  Press [STORE] [HERE] to a Macro Softkey. OR
+4.  Press [STORE] [HERE] to a Macro Softkey. 
+
+OR
     
 5.  Press [MACRO] [#] [STORE] - The Macro is now stored.
     
@@ -30,9 +34,9 @@ Current Macros can only be created using the **Teach Macro** recorder. In future
 **<span style="color:RoyalBlue">**Record a Macro including timing: Unimplemented**</span>.**
 
 
-1.  Use steps 1 ⟶  3 to store the macro to the Macro clipboard.
+1.   <span style="color:Gray">Use steps 1 ⟶  3 to store the macro to the Macro clipboard.</span>
     
-2.  Press [MACRO] [#] [TIME][STORE] - The Macro is now stored including it's timing.
+2.   <span style="color:Gray">Press [MACRO] [#] [TIME][STORE] - The Macro is now stored including it's timing.</span>
     
 
 >Macros may be viewed by adding the EXAM display to any of the **Workspace Template** pages.
@@ -42,8 +46,6 @@ Current Macros can only be created using the **Teach Macro** recorder. In future
 
 
 ## Triggrering Macros
-
-
 
 Macros may be directly triggered using the keypad or Macro Softkeys.
 
@@ -60,7 +62,7 @@ Macros may be directly triggered using the keypad or Macro Softkeys.
 <span style="color:RoyalBlue">**Trigger a Macro from a Qkey: Currently Unimplemented**</span>
 -   Assign the Macro to the Qkey by pressing [MACRO] [#] [HERE] to any Qkey button.
     
--   Press the Qkey button to activate.
+-   <span style="color:Gray">Press the Qkey button to activate. </span>
     
 
 
@@ -98,14 +100,13 @@ Macros may be attached and triggered from Qlist Cues.
 
 **Temporarily disable triggers:**
 
-1.  Tap the controller display header for the Qlist that contains Macro or Snap triggers - The Qlist Properties pop-up will appear. OR
+1.  Tap the controller display header for the Qlist that contains Macro or Snap triggers - The Qlist Properties pop-up will appear. 
+
+OR
     
-2.  [SETTINGS] [HERE] to any controller button and select the Qlist Properties tab.
+1.  [SETTINGS] [HERE] to any controller button and select the Qlist Properties tab.
     
-3.   Deselect the {Trigger} button - Triggering will be disabled for the incident of the Qlist assigned to that **specific** controller.
+2.   Deselect the {Trigger} button - Triggering will be disabled for the incident of the Qlist assigned to that **specific** controller.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnXGGqWyWr97MYj4YXvSe%2F16.3.webp?alt=media&token=961a30eb-a2db-4fdf-b0a3-9b710af7653d)
-
-
-

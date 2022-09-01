@@ -1,6 +1,7 @@
 
 # Programming Concepts
 
+This chapter deals with Vibe programming philosophy, command line behavior, and syntax conventions.
 
 **The following is covered in this chapter:**
 

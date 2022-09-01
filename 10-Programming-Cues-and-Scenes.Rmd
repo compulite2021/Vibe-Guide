@@ -1,5 +1,6 @@
 # Programming Cues, and Scenes
 
+This chapter deals with storing and editing Editor values.
 
 **The following is covered in this chapter:**
 

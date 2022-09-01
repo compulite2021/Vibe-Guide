@@ -1,7 +1,7 @@
 
 # Patch
 
-This chapter provides an overview of Vibe's Graphical User Interface (GUI).
+This chapter deals with creating and patching fixtures.
 
 **The following is covered in this chapter:**
 

@@ -1,4 +1,6 @@
+
 # XYZ Fixture Calibration
+
 Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtures are calibrated, you can specify a point of the stage in Vibe, and all fixtures will point to it. There are few things that need to be done in order to calibrate the fixtures, and it depends on which visualizer you use. 
 
 
@@ -10,14 +12,13 @@ Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtu
 ## Calibration in WYSIWYG
 
 
-
-Calibrate using WYSIWYG
+**Calibrate using WYSIWYG**
 
 1.  On Vibe, go to [PATCH] page and tap on {FIXTURE CALIBRATION}
     
 2.  Tap on {Stage} button and set the stage dimensions.
     
-3.   Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see <span style="color:blue">Blue Frame</span>), and select the option of 'Mover Ruler (Set View Origin)ʼ.
+3.   Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see <span style="color:LightSkyBlue">Blue Frame</span>), and select the option of 'Mover Ruler (Set View Origin)ʼ.
     
 4.  Select the center of your stage (see <span style="color:Red">Red Arrow</span> in the Picture)
     
@@ -36,9 +37,6 @@ Calibrate using WYSIWYG
 
 
 ## Calibration in Capture
-
-
-20.2. Calibration in Capture
 
 **Calibrate using Capture**
 

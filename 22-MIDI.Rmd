@@ -1,4 +1,6 @@
+
 # MIDI
+
 This chapter deals with configuring and assigning MIDI 
 
 **The following is covered in this chapter:**
@@ -37,26 +39,26 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 >E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ's frequently control lighting via MIDI touchpad controllers.
 
-**MIDI Show Control or MSC -** <span style="color:blue">Not yet implemented</span>
+**MIDI Show Control or MSC -** <span style="color:Gray">Not yet implemented</span>
 
 -   is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.
     
 -   The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia
     
 
-**MIDI Time Code** - <span style="color:blue">Not yet implemented</span>
+**MIDI Time Code** - <span style="color:Gray">Not yet implemented</span>
 
 -   MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.
     
 -   MIDI time code is available in the following frame rates: 
 
-    ◾ 24 frame/s (standard rate for film work) 
+    - 24 frame/s (standard rate for film work) 
 
-    ◾ 25 frame/s (standard rate for PAL video) 
+    - 25 frame/s (standard rate for PAL video) 
 
-    ◾ 29.97 frame/s (drop-frame timecode for NTSC video) 
+    - 29.97 frame/s (drop-frame timecode for NTSC video) 
 
-    ◾ 30 frame/s (non-drop timecode for NTSC video)
+    - 30 frame/s (non-drop timecode for NTSC video)
     
 
 >Vibe can receive MIDI time code but does not generate MIDI time code.
@@ -79,7 +81,6 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 ## General MIDI Configuration
 
 
-
 **I/O General:**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FLfFsHYyFscSxarwfepfu%2F22.2.webp?alt=media&token=7b0b4729-7618-47fb-819f-c2cc7c95c2ec)
@@ -90,11 +91,11 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
     
 2.  Toggle a MIDI Connection source 
 
-    ◾ Local MIDI. 
+   - Local MIDI. 
 
-    ◾ MIDI over USB/MIDI over Ethernet. 
+   - MIDI over USB/MIDI over Ethernet. 
 
-    ◾ Refresh looks for new connections if devices are added later.
+   - Refresh looks for new connections if devices are added later.
     
 3.  Press Apply to stay in I/O settings or Press the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png)  or press [ENTER] to close the pop-up.
 
@@ -210,7 +211,7 @@ Also supported on **receive** are:
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a)
 
 
-To receive MSC:
+**To receive MSC:**
 
 1.  Tap {Enable In}
     
@@ -218,7 +219,9 @@ To receive MSC:
     
 3.  If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.
     
-4.   If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. To Transmit MSC: This function is currently under development.
+4.   If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. 
+
+<span style="color:Gray">To Transmit MSC: This function is currently under development. </span>
     
 
 Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm
@@ -228,6 +231,4 @@ Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_ms
 ## MIDI Time Code
 
 See: 
-21.3. Configuring Timecode
-
-
+[21.3. Configuring Timecode](https://vibemanual.compulite.com/time-code.html#configuring-timecode)

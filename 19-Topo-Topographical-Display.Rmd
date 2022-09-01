@@ -1,4 +1,6 @@
+
 # Topo Topographical Display
+
 It is sometimes useful to organize fixture selection in a graphical manner instead of numerical lists. In Vibe this is referred to as the TOPO (Topographical) map display. Other console may refer to this feature as "Layouts", "Magic Sheets", or "Rig" Schematics".
 
 **The following is covered in this chapter:**
@@ -15,9 +17,9 @@ When starting a new show any Topo views stored in Layouts will be empty until th
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTDS2G9ZiwCKwHmLfetSe%2F19.1%20topo.png?alt=media&token=4bc1efc8-ebaa-4d30-8fe0-7c5ce82c1a5e)
 
-**Topo View in {LIVE} mode displaying the "Movers" Topo**
+ <p align=center> Topo View in {LIVE} mode displaying the "Movers" Topo</p>
 
-**To add a Topo view to a page:**
+**To add a Topo view to a page:** 
 
 1.  Tap {Vibe} on the monitor that will display the Topo - Vibe menu will open.
     
@@ -25,7 +27,11 @@ When starting a new show any Topo views stored in Layouts will be empty until th
     
 3. Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.
     
-4. On the screen with the blank workspace, open the {Vibe} menu again and select} ®{Display Objects} ® {Topo View} - A blank Topo view will appear on the workspace.
+4. On the screen with the blank workspace, open the {Vibe} menu again and select} 
+
+	⟶ {Display Objects} 
+
+	⟶ {Topo View} - A blank Topo view will appear on the workspace.
     
 5.  Size and drag the Topo display as required then tap {unlock/lock} icon to lock the Topo from further adjustment - Topo display is now ready to add fixtures to.
     
@@ -51,18 +57,16 @@ The Topo Menu is a hierarchical menu that provides the tools for creating and ed
 
 **The root menu provides the following sub-menus:**
 
-1.  
-    
-  Topo:
+1.  **Topo:**
     
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&token=7277a796-bf80-4991-a343-94ad8f13f621)
 
 ​
-2. Actions: 
+2. **Actions:** 
 
 a. {Add Elements} - accesses the following:
 
-1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. 6.1. Fixture Sets. 19.4. Adding fixtures to a Topo.
+1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. [6.1. Fixture Sets.](https://vibemanual.compulite.com/patch.html#fixture-sets)  ,   [19.4. Adding fixtures to a Topo.](https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo)
     
 2.   {Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps
 
@@ -101,11 +105,11 @@ c. {Tools}:
     
 7.  Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following: 
    
-    ◾ fixture location on the circumference 
+   - fixture location on the circumference 
     
-    ◾ Radius 
+   - Radius 
    
-    ◾ End point
+   - End point
     
 8.  Point to Point
 
@@ -134,18 +138,20 @@ c. {Tools}:
     
 3.  Presets are supplied for: 
     
-    ◾ Rotate 45° counterclockwise 
+    - Rotate 45° counterclockwise 
     
-    ◾ Rotate 45° clockwise 
+    - Rotate 45° clockwise 
     
-    ◾ Reset
+    - Reset
     
-4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. 20. XYZ Fixture Calibration.
+4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. [20. XYZ Fixture Calibration.](https://vibemanual.compulite.com/xyz-fixture-calibration.html)
 
 ## Creating a Topo
 
 
-**To create a new Topo:** Navigate to a Topo view
+**To create a new Topo:** 
+
+Navigate to a Topo view
 
 1.  Tap the {[<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/>](image.png)} key in the Topo Menu at the right hand side of the Topo view display - The "Create New Topo" pop-up will appear
     
@@ -163,7 +169,9 @@ c. {Tools}:
 
 ## Adding fixtures to a Topo
 
-There are two ways to add fixtures to a Topo **Using keypad selection**:
+There are two ways to add fixtures to a Topo 
+
+**Using keypad selection**:
 
 1.  Press zoom option {FIT STAGE TO SCREEN} on the toolbar at the bottom of the Topo View to see the whole stage area.
     
@@ -180,7 +188,7 @@ There are two ways to add fixtures to a Topo **Using keypad selection**:
 
 ><span style="color:Red">If the {From Editor} key is selected with a long press (held for a few seconds) the fixtures may be directly dragged from the {From Editor} area. Only a maximum of 5 fixture icons will be shown but the whole selection will actually be there. Drag the fixtures to a location on the Topo view and release. The actual fixtures will now appear on the Topo surface. **The reference point for dropping is the fixtures is the top left corner of the dragged fixture icons.**</span>
 
-Using {ADD ELELMENTS} from the Topo menu:
+**Using {ADD ELELMENTS} from the Topo menu:**
 
 1.  Create the Topo
     
@@ -194,13 +202,11 @@ Using {ADD ELELMENTS} from the Topo menu:
     
 6.  Press, hold and drag the fixtures onto the Topo surface.
     
-7.  Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.19.2. Topo Menu.
+7.  Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.[19.2. Topo Menu.](https://vibemanual.compulite.com/topo-topographical-display.html#topo-menu)
 
 
 
 ## Adding Pixel Maps
-
-
 
 The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. Matrix fixtures may be selected by blocks using the rectangle lasso selection tool, or free-form path tool.
 
@@ -219,7 +225,7 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
     
 2.   👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.
     
-3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. 19.4. Adding fixtures to a Topo
+3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. [19.4. Adding fixtures to a Topo](https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo)
     
 4.  Release the fixtures and they will populate the pixel map. 
 
@@ -234,7 +240,7 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
 
 1.  Multiple pixel mappers may be added to the same Topo along with other objects.
     
-2.  👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
+2.  >👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
 
 
 ## Adding text and background elements
@@ -275,4 +281,3 @@ Backgrounds such as studio layouts and rig elements may be added to the Topo.
 6.  Tap {Load}, [Enter] or tap  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.
     
 7.  To remove the background tap {Remove Background}
-

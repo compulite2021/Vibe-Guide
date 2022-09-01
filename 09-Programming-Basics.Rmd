@@ -2,6 +2,7 @@
 
 # Programming Basics
 
+This chapter deals with the fundamentals of building stage looks in the editor.
 
 **The following is covered in this chapter:**
 

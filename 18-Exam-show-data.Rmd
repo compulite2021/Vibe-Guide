@@ -1,6 +1,9 @@
+
 # Exam show data
 
-Virtually all Vibe show data can be viewed using the **Exam** display. The Exam display can be added to any Workspace Template using the Vibe Menu. **Path**: {Vibe}/{Display objects}/{Exam}. It can also opened as a pop-up using the [EXAM] key. The root menu is divided into two main sub menus, {Show} and {Patch} This chapter deals with viewing show and patch data.
+Virtually all Vibe show data can be viewed using the **Exam** display. The Exam display can be added to any Workspace Template using the Vibe Menu. 
+
+**Path**: {Vibe}/{Display objects}/{Exam}. It can also opened as a pop-up using the [EXAM] key. The root menu is divided into two main sub menus, {Show} and {Patch} This chapter deals with viewing show and patch data.
 
 **The following is covered in this chapter:**
 
@@ -21,25 +24,25 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 -   Qlist # Exam - Displays a Cue Sheet view for all cues in the Qlist.
     
--   Cue Exam - Displays a track sheet for the selected cue. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+	-   Cue Exam - Displays a track sheet for the selected cue. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
     
--   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
+		-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
     
 
 2. **Libraries Exam** -Lists all stored Libraries by type.
 
 -   Library Type Exam - Displays all libraries for the selected library type.
     
--   Library Fixtures Exam - Displays values for the fixtures stored in the library. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
+	-   Library Fixtures Exam - Displays values for the fixtures stored in the library. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
     
--   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
+		-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues**, and **Libraries** tabs at the bottom of the display.
 
 
 3. **Group Exam** -Lists all stored groups.
 
 -   Group # Exam - Displays all the fixtures in the group and their recorded selection order.
     
--   Individual group fixtures - N/A.
+	-   Individual group fixtures - N/A.
     
 
 4. **Snaps Exam** - Lists all recorded Snapshots.
@@ -49,22 +52,22 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 5. **Macro Exam** - Lists all stored Macros.
 
--   Macro # Exam - Opens a display of all macro steps, time (if enabled), macro state, and macro command (This will be editable in future versions).
+-   Macro # Exam - Opens a display of all macro steps, time (if enabled), macro state, and macro command  <span style="color:Gray">(This will be editable in future versions).</span>
     
 
-6. Time Lines - Not implemented yet.
+6. <span style="color:Gray">Time Lines - Not implemented yet. </span>
 
 7. **Look Ahead Mask Exam** - Displays which fixtures will be enabled for the Look Ahead feature. (Move in Black) .
 
-8. MIDI Notes - Shows patched midi notes (currently unimplemented use patch {I/0 Settings} as an alternative.)
+8. <span style="color:Gray">MIDI Notes - Shows patched midi notes (currently unimplemented use patch {I/0 Settings} as an alternative.) </span>
 
-9. Filters - Not Implemented.
+9.  <span style="color:Gray">Filters - Not Implemented.</span>
 
 10. **Scene Exam** - Lists all stored Scenes.
 
 -   Scene # Exam - Displays a track sheet for the selected Scene. Fixtures may be filtered using the **Sets Tabs** at the bottom of the screen.
     
--   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues,** and **Libraries** tabs at the bottom of the display.
+	-   Fixture - Displays the selected fixture's information organized by **Patch, Sets, Cues,** and **Libraries** tabs at the bottom of the display.
     
 
 11. **Submaster Exam** - Lists all stored Scenes that have been converted to Group Submasters.
@@ -98,7 +101,7 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 -   Individual Set Exam - Shows a list of all fixtures patched to the set with columns for **Fixture Name, Fixture #** (in this case unique system ID # not actual fixture #), **Set ID #, # in Set**, (User defined number in the set) , and **Device Name**.
     
 
-3. **DMX Out Exam** - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for **Universe #** <span style="color:green">(Port)</span>, Patched Fixture Count, and the **Number of Used DMX Address** out of 512.
+3. **DMX Out Exam** - Displays a list of all DMX universes that have fixtures patched to them. A table is provided with columns for **Universe #** <span style="color:MediumAquaMarine">(Port)</span>, Patched Fixture Count, and the **Number of Used DMX Address** out of 512.
 
 -   Individual Universe Exam - Displays a table of patched fixtures and their DMX properties.
     
@@ -113,4 +116,4 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 -   View Park by Dimmer (Address) or Fixture - Displays a list of all parked fixtures or dimmers and their parked dimmer values.
     
 
-6. **Curves** **Exam** (Functions) - Displays a graphical list of all read only and user created Functions. It also displays which functions are included in the favorites list.
+6. <span style="color:MediumAquaMarine">**Curves**</span> **Exam** (Functions) - Displays a graphical list of all read only and user created Functions. It also displays which functions are included in the favorites list.

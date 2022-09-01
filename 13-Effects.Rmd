@@ -1,6 +1,7 @@
 
 # Effects
 
+This chapter discusses Vibe's two effect editors.
 
 **The following is covered in this chapter:**
 

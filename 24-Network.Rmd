@@ -1,4 +1,5 @@
 # Network
+
 This chapter deals with configuring, transmitting and receiving DMX over Ethernet.
 
 **The following is covered in this chapter:**

@@ -1,13 +1,7 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-
 
 # Vibe Hardware
 
-This chapter covers basic specifications.
+This chapter provides an overview of Vibe hardware.
 
 **The following is covered in this chapter:**
 

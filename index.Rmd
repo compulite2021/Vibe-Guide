@@ -1,8 +1,4 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+
 # Introduction
 
 This chapter discusses getting started with your Compulite Vibe console.

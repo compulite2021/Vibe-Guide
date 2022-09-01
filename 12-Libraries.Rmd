@@ -1,6 +1,7 @@
 
 # Libraries
 
+This chapter deals with creating and editing Libraries.
 
 **The following is covered in this chapter:**
 
