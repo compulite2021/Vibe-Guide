@@ -22,6 +22,7 @@ github:
 bookdown::epub_book:
   fig_caption: FALSE
   toc_depth: 2
+  epub_version: "epub3"
 
 bookdown::pdf_book:
   fig_caption: FALSE
