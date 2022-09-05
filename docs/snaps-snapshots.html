@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 17 Snaps (Snapshots) | vibe-manual.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 17 Snaps (Snapshots) | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 17 Snaps (Snapshots) | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 17 Snaps (Snapshots) | Vibe Manual" />
   <meta property="og:type" content="book" />
-  
-  
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 17 Snaps (Snapshots) | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 17 Snaps (Snapshots) | Vibe Manual" />
   
-  
-  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
 
+<meta name="author" content="Compulite Systems (2000) Ltd" />
 
 
 
@@ -352,14 +353,6 @@
 <li class="chapter" data-level="24.4" data-path="network-1.html"><a href="network-1.html#rdm"><i class="fa fa-check"></i><b>24.4</b> RDM<span></span></a></li>
 <li class="chapter" data-level="24.5" data-path="network-1.html"><a href="network-1.html#citp"><i class="fa fa-check"></i><b>24.5</b> CITP<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="masterslave.html"><a href="masterslave.html"><i class="fa fa-check"></i><b>25</b> Master/Slave<span></span></a>
-<ul>
-<li class="chapter" data-level="25.1" data-path="masterslave.html"><a href="masterslave.html#masterslave-1"><i class="fa fa-check"></i><b>25.1</b> Master/Slave<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="26" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>26</b> Multi-User<span></span></a>
-<ul>
-<li class="chapter" data-level="26.1" data-path="multi-user.html"><a href="multi-user.html#multi-user-1"><i class="fa fa-check"></i><b>26.1</b> Multi-User<span></span></a></li>
-</ul></li>
 <li class="divider"></li>
 <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
 <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
@@ -373,7 +366,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
           </h1>
         </div>
 
@@ -383,6 +376,7 @@
             <section class="normal" id="section-">
 <div id="snaps-snapshots" class="section level1 hasAnchor" number="17">
 <h1><span class="header-section-number">Chapter 17</span> Snaps (Snapshots)<a href="snaps-snapshots.html#snaps-snapshots" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter deals with creating and triggering Snapshots.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
 <li><a href="https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps">17.1. Storing Snaps</a></li>
@@ -413,7 +407,7 @@
 <li><p>Press [STORE] [HERE] to any available {Snap} softkey.</p></li>
 </ol>
 <p>Or</p>
-<ol start="3" style="list-style-type: decimal">
+<ol start="2" style="list-style-type: decimal">
 <li><p>Press [SNAP] [#] [STORE].</p></li>
 <li><p>Press [TEXT] to open the Text Pop-up and label the Snap - this is only valid directly after storing the Snap. Alternately [SNAP] [#] [TEXT] may be used at any time to label the Snap.</p></li>
 </ol>
@@ -429,12 +423,12 @@
 <ul>
 <li>Tap the required {SNAP} softkey.</li>
 </ul>
-<p><strong>Trigger a Snap from a Qkey: Currently Unimplemented.</strong></p>
+<p><span style="color:Gray"><strong>Trigger a Snap from a Qkey: Currently Unimplemented.</strong></span></p>
 <ul>
-<li><p>Assign the Snap to the Qkey by pressing [SNAP] [#] [HERE] to any Qkey button.</p></li>
-<li><p>Press the Qkey button to activate.</p></li>
+<li><p><span style="color:Gray">Assign the Snap to the Qkey by pressing [SNAP] [#] [HERE] to any Qkey button.</span></p></li>
+<li><p><span style="color:Gray">Press the Qkey button to activate. </span></p></li>
 </ul>
-<p>Snaps on Vibe are currently <strong>absolute</strong> - All controllers are replaced with new loaded objects and controllers without new loaded objects are cleared. Future releases will have an option for “Page Holdover” where active objects will not be replaced until the controller is released.</p>
+<p>Snaps on Vibe are currently <strong>absolute</strong> - All controllers are replaced with new loaded objects and controllers without new loaded objects are cleared. <span style="color:Gray">Future releases will have an option for “Page Holdover” where active objects will not be replaced until the controller is released.</span></p>
 <p>Snaps may be assigned a time to “smooth” out their transitions.</p>
 <p><strong>Setting Snap Time:</strong></p>
 <ol style="list-style-type: decimal">
@@ -457,7 +451,8 @@
 </div>
 <div id="attaching-snaps" class="section level2 hasAnchor" number="17.3">
 <h2><span class="header-section-number">17.3</span> Attaching Snaps<a href="snaps-snapshots.html#attaching-snaps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Snaps may be attached and triggered from Qlist Cues Attach a Snap to a Cue.</p>
+<p>Snaps may be attached and triggered from Qlist Cues.</p>
+<p><strong>Attach a Snap to a Cue:</strong></p>
 <ul>
 <li>[CUE] [#] [SNAP] [#] [STORE]</li>
 </ul>
@@ -480,9 +475,12 @@
 </blockquote>
 <p><strong>Temporarily disable triggers:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Tap the controller display header for the Qlist that contains Macro or Snap triggers - The Qlist Properties pop-up will appear. OR</p></li>
+<li>Tap the controller display header for the Qlist that contains Macro or Snap triggers - The Qlist Properties pop-up will appear.</li>
+</ol>
+<p>OR</p>
+<ol style="list-style-type: decimal">
 <li><p>[SETTINGS] [HERE] to any controller button and select the Qlist Properties tab.</p></li>
-<li><p>Deselect the {Trigger} button - Triggering will be disabled for the incident of the Qlist assigned to that specific controller.</p></li>
+<li><p>Deselect the {Trigger} button - Triggering will be disabled for the incident of the Qlist assigned to that <strong>specific</strong> controller.</p></li>
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fd35SScD9jx2IIxZBd7cE%2F173..webp?alt=media&amp;token=eaf131f2-2835-4b49-bdfd-7332d407d98f" /></p>
 
@@ -536,7 +534,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["vibe-manual.epub"],
+"download": ["VibeManual.epub"],
 "search": {
 "engine": "fuse",
 "options": null

@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | vibe-manual.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 15 Dark Parameter Positioning | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | Vibe Manual" />
   <meta property="og:type" content="book" />
-  
-  
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | Vibe Manual" />
   
-  
-  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
 
+<meta name="author" content="Compulite Systems (2000) Ltd" />
 
 
 
@@ -352,14 +353,6 @@
 <li class="chapter" data-level="24.4" data-path="network-1.html"><a href="network-1.html#rdm"><i class="fa fa-check"></i><b>24.4</b> RDM<span></span></a></li>
 <li class="chapter" data-level="24.5" data-path="network-1.html"><a href="network-1.html#citp"><i class="fa fa-check"></i><b>24.5</b> CITP<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="masterslave.html"><a href="masterslave.html"><i class="fa fa-check"></i><b>25</b> Master/Slave<span></span></a>
-<ul>
-<li class="chapter" data-level="25.1" data-path="masterslave.html"><a href="masterslave.html#masterslave-1"><i class="fa fa-check"></i><b>25.1</b> Master/Slave<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="26" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>26</b> Multi-User<span></span></a>
-<ul>
-<li class="chapter" data-level="26.1" data-path="multi-user.html"><a href="multi-user.html#multi-user-1"><i class="fa fa-check"></i><b>26.1</b> Multi-User<span></span></a></li>
-</ul></li>
 <li class="divider"></li>
 <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
 <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
@@ -373,7 +366,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
           </h1>
         </div>
 
@@ -383,7 +376,7 @@
             <section class="normal" id="section-">
 <div id="dark-parameter-positioning" class="section level1 hasAnchor" number="15">
 <h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning<a href="dark-parameter-positioning.html#dark-parameter-positioning" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<p>There are three features that allow you to preset parameter values when a fixture’s dimmer is dark, thus avoiding visible parameter movement:</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
 <li><a href="https://vibemanual.compulite.com/dark-parameter-positioning.html#look-ahead-move-in-dark">15.1. Look Ahead (Move in Dark)</a></li>
@@ -392,10 +385,9 @@
 </ul>
 <div id="look-ahead-move-in-dark" class="section level2 hasAnchor" number="15.1">
 <h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark)<a href="dark-parameter-positioning.html#look-ahead-move-in-dark" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>15.1. Look Ahead (Move in Dark)</p>
 <p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
 <blockquote>
-<p><span style="color:Red">If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</span>.</p>
+<p>If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</p>
 </blockquote>
 <blockquote>
 <p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
@@ -425,7 +417,8 @@
 <li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
 <li><p>Press [DELETE].</p></li>
 </ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue. <strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
+<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue.</p>
+<p><strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
 <ol style="list-style-type: decimal">
 <li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
 <li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
@@ -445,10 +438,12 @@
 </div>
 <div id="look-ahead-cue-mark" class="section level2 hasAnchor" number="15.2">
 <h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark)<a href="dark-parameter-positioning.html#look-ahead-cue-mark" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Unimplemented</strong></p>
+<p><span style="color:Blue">Unimplemented</span></p>
 <ul>
-<li><p>Look Ahead: (sometimes referred to a Mark Cue)</p>
-<p>◾ Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</p></li>
+<li><p><span style="color:Gray">Look Ahead: (sometimes referred to a Mark Cue) </span></p>
+<ul>
+<li><span style="color:Gray">Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</span></li>
+</ul></li>
 </ul>
 </div>
 <div id="force-black" class="section level2 hasAnchor" number="15.3">
@@ -517,7 +512,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["vibe-manual.epub"],
+"download": ["VibeManual.epub"],
 "search": {
 "engine": "fuse",
 "options": null

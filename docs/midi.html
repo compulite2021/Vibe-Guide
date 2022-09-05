@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 22 MIDI | vibe-manual.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 22 MIDI | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 22 MIDI | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 22 MIDI | Vibe Manual" />
   <meta property="og:type" content="book" />
-  
-  
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 22 MIDI | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 22 MIDI | Vibe Manual" />
   
-  
-  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
 
+<meta name="author" content="Compulite Systems (2000) Ltd" />
 
 
 
@@ -352,14 +353,6 @@
 <li class="chapter" data-level="24.4" data-path="network-1.html"><a href="network-1.html#rdm"><i class="fa fa-check"></i><b>24.4</b> RDM<span></span></a></li>
 <li class="chapter" data-level="24.5" data-path="network-1.html"><a href="network-1.html#citp"><i class="fa fa-check"></i><b>24.5</b> CITP<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="masterslave.html"><a href="masterslave.html"><i class="fa fa-check"></i><b>25</b> Master/Slave<span></span></a>
-<ul>
-<li class="chapter" data-level="25.1" data-path="masterslave.html"><a href="masterslave.html#masterslave-1"><i class="fa fa-check"></i><b>25.1</b> Master/Slave<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="26" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>26</b> Multi-User<span></span></a>
-<ul>
-<li class="chapter" data-level="26.1" data-path="multi-user.html"><a href="multi-user.html#multi-user-1"><i class="fa fa-check"></i><b>26.1</b> Multi-User<span></span></a></li>
-</ul></li>
 <li class="divider"></li>
 <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
 <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
@@ -373,7 +366,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
           </h1>
         </div>
 
@@ -410,19 +403,21 @@
 <blockquote>
 <p>E.g. A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows, DJ’s frequently control lighting via MIDI touchpad controllers.</p>
 </blockquote>
-<p><strong>MIDI Show Control or MSC -</strong> <span style="color:blue">Not yet implemented</span></p>
+<p><strong>MIDI Show Control or MSC -</strong> <span style="color:Gray">Not yet implemented</span></p>
 <ul>
 <li><p>is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p></li>
 <li><p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. Just like musical MIDI, MSC does not transmit the actual show media - it simply transmits digital information about a multimedia performance.. * Courtesy Wikipedia</p></li>
 </ul>
-<p><strong>MIDI Time Code</strong> - <span style="color:blue">Not yet implemented</span></p>
+<p><strong>MIDI Time Code</strong> - <span style="color:Gray">Not yet implemented</span></p>
 <ul>
 <li><p>MIDI time code is similar to the SMPTE time code and is used to synchronize audio, video, and lighting equipment. Unlike SMPTE it does not use an audio signal.</p></li>
 <li><p>MIDI time code is available in the following frame rates:</p>
-<p>◾ 24 frame/s (standard rate for film work)</p>
-<p>◾ 25 frame/s (standard rate for PAL video)</p>
-<p>◾ 29.97 frame/s (drop-frame timecode for NTSC video)</p>
-<p>◾ 30 frame/s (non-drop timecode for NTSC video)</p></li>
+<ul>
+<li><p>24 frame/s (standard rate for film work)</p></li>
+<li><p>25 frame/s (standard rate for PAL video)</p></li>
+<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
+<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
+</ul></li>
 </ul>
 <blockquote>
 <p>Vibe can receive MIDI time code but does not generate MIDI time code.</p>
@@ -447,11 +442,15 @@
 <p><strong>General configuring Vibe MIDI:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source</p>
-<p>◾ Local MIDI.</p>
-<p>◾ MIDI over USB/MIDI over Ethernet.</p>
-<p>◾ Refresh looks for new connections if devices are added later.</p></li>
-<li><p>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</p></li>
+<li><p>Toggle a MIDI Connection source</p></li>
+</ol>
+<ul>
+<li><p>Local MIDI.</p></li>
+<li><p>MIDI over USB/MIDI over Ethernet.</p></li>
+<li><p>Refresh looks for new connections if devices are added later.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Press Apply to stay in I/O settings or Press the <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> or press [ENTER] to close the pop-up.</li>
 </ol>
 </div>
 <div id="configuring-midi-notes-and-commands" class="section level2 hasAnchor" number="22.3">
@@ -521,19 +520,20 @@
 <li><p>Moving lights</p></li>
 </ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1PsdpcqmxQCd0gcxgb4B%2F22.4.webp?alt=media&amp;token=60eaf457-aa95-4167-bc11-47d3aa3f3f1a" /></p>
-<p>To receive MSC:</p>
+<p><strong>To receive MSC:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Tap {Enable In}</p></li>
 <li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
 <li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
-<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. To Transmit MSC: This function is currently under development.</p></li>
+<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
 </ol>
+<p><span style="color:Gray">To Transmit MSC: This function is currently under development. </span></p>
 <p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
 </div>
 <div id="midi-time-code" class="section level2 hasAnchor" number="22.5">
 <h2><span class="header-section-number">22.5</span> MIDI Time Code<a href="midi.html#midi-time-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>See:
-21.3. Configuring Timecode</p>
+<a href="https://vibemanual.compulite.com/time-code.html#configuring-timecode">21.3. Configuring Timecode</a></p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["vibe-manual.epub"],
+"download": ["VibeManual.epub"],
 "search": {
 "engine": "fuse",
 "options": null

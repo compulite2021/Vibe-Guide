@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Playback Controllers | vibe-manual.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 14 Playback Controllers | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Playback Controllers | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 14 Playback Controllers | Vibe Manual" />
   <meta property="og:type" content="book" />
-  
-  
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Playback Controllers | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 14 Playback Controllers | Vibe Manual" />
   
-  
-  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
 
+<meta name="author" content="Compulite Systems (2000) Ltd" />
 
 
 
@@ -352,14 +353,6 @@
 <li class="chapter" data-level="24.4" data-path="network-1.html"><a href="network-1.html#rdm"><i class="fa fa-check"></i><b>24.4</b> RDM<span></span></a></li>
 <li class="chapter" data-level="24.5" data-path="network-1.html"><a href="network-1.html#citp"><i class="fa fa-check"></i><b>24.5</b> CITP<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="masterslave.html"><a href="masterslave.html"><i class="fa fa-check"></i><b>25</b> Master/Slave<span></span></a>
-<ul>
-<li class="chapter" data-level="25.1" data-path="masterslave.html"><a href="masterslave.html#masterslave-1"><i class="fa fa-check"></i><b>25.1</b> Master/Slave<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="26" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>26</b> Multi-User<span></span></a>
-<ul>
-<li class="chapter" data-level="26.1" data-path="multi-user.html"><a href="multi-user.html#multi-user-1"><i class="fa fa-check"></i><b>26.1</b> Multi-User<span></span></a></li>
-</ul></li>
 <li class="divider"></li>
 <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
 <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
@@ -373,7 +366,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
           </h1>
         </div>
 
@@ -383,7 +376,7 @@
             <section class="normal" id="section-">
 <div id="playback-controllers" class="section level1 hasAnchor" number="14">
 <h1><span class="header-section-number">Chapter 14</span> Playback Controllers<a href="playback-controllers.html#playback-controllers" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter provides an overview of Vibe’s Graphical User Interface (GUI).</p>
+<p>Cues and Scenes are played back using the 15 <strong>Motorized Slider Controllers</strong>, non-motorized <strong>A/B Dipless Crossfader</strong> , 15 <strong>Qkey Controllers</strong>, 20 <strong>Auxiliary Qkey Controllers</strong>, and 5 non-motorized <strong>Global Slider Controllers</strong>.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
 <li><a href="https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-priority-logic">14.1. Controller Priority Logic</a></li>
@@ -432,8 +425,8 @@
 <li><p>Scenes</p></li>
 <li><p>Group Submasters</p></li>
 <li><p>Libraries</p></li>
-<li><p>Macros</p></li>
-<li><p>Snaps</p></li>
+<li><p><span style="color:Gray">Macros</span></p></li>
+<li><p><span style="color:Gray">Snaps </span></p></li>
 </ul>
 <p><strong>Vibe has five controller types:</strong></p>
 <ol style="list-style-type: decimal">
@@ -444,7 +437,7 @@
 <li><p>A/B “theatre style” A/B dipless crossfader pair</p></li>
 </ol>
 <blockquote>
-<p>Vibe software makes no distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.</p>
+<p>Vibe software makes <strong>no</strong> distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.</p>
 </blockquote>
 <p><strong>Controller quantities and numbering:</strong> Physical and Virtual</p>
 <ul>
@@ -454,10 +447,14 @@
 <li><p>100 Non-motorized Global Sliders - Numbered 301 ⟶ 400</p></li>
 <li><p>1 Non-motorized A/B dipless crossfader - Numbered 401</p></li>
 </ul>
+<blockquote>
 <p>Controllers are numbered from right to left to facilitate continuous numbering with physical and virtual controller wings.</p>
+</blockquote>
 <p><strong>Compound Controllers:</strong></p>
 <ul>
-<li><strong>Controllers may be extended in width to make larger compound controllers.</strong> This is useful in creating additional crossfader pairs or adding controls for rate and effects. There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.</li>
+<li><strong>Controllers may be extended in width to make larger compound controllers.</strong>
+This is useful in creating additional crossfader pairs or adding controls for rate and effects.
+There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.</li>
 </ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F06WOI4jVCzRUG1Op7xtO%2F14.2.webp?alt=media&amp;token=40d4b958-9e44-4fb1-8fac-080edda51ca2" /></p>
 <p><strong>A/B Cross Faders:</strong></p>
@@ -470,14 +467,14 @@
 </div>
 <div id="master-controller-1" class="section level2 hasAnchor" number="14.3">
 <h2><span class="header-section-number">14.3</span> Master Controller<a href="playback-controllers.html#master-controller-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Master Controller:</p>
+<p><strong>Master Controller:</strong></p>
 <ul>
-<li>Any single Controller may be linked to the Master Controller by Pressing [SELECT] [HERE] to any of the buttons of the controller.</li>
+<li>Any single Controller may be linked to the Master Controller by Pressing <strong>[SELECT] [HERE]</strong> to any of the buttons of the controller.</li>
 </ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnvgTSy6VcG0Vk2ScI1UI%2F14.3.webp?alt=media&amp;token=1209fc8b-b080-408c-8f8f-3623e27e799b" /></p>
 <ul>
-<li><p>[GO] - Initiates a forward transition from one cue to another using Cue Time.</p></li>
-<li><p>[BACK] - Initiates a transition to the previous cue using system Default Back Time.</p></li>
+<li><p>[GO] - Initiates a forward transition from one cue to another using <strong>Cue Time</strong>.</p></li>
+<li><p>[BACK] - Initiates a transition to the previous cue using system <strong>Default Back Time</strong>.</p></li>
 <li><p>[HOLD] - Pauses a cue in transition. Pressing [HOLD] again resumes the transition. Pressing [GO] will resume the transition as well. Pressing [BACK] will fade to the previous cue.</p></li>
 </ul>
 <blockquote>
@@ -535,8 +532,8 @@
 </ol>
 <p><strong>Load a cue on the Master Controller</strong> - Method 2.</p>
 <ol style="list-style-type: decimal">
-<li><p>[CUE] [#] [LOAD] [LOAD]</p></li>
-<li><p>Press [GO] - Using Master Controller GO or GO of controller assigned as [SELECT]</p></li>
+<li><p><span style="color:Gray">[CUE] [#] [LOAD] [LOAD]</span></p></li>
+<li><p><span style="color:Gray">Press [GO] - Using Master Controller GO or GO of controller assigned as [SELECT] </span></p></li>
 </ol>
 <p><strong>LOAD a cue NOT on the Master Controller:</strong></p>
 <ol style="list-style-type: decimal">
@@ -555,18 +552,18 @@
 <p>​</p>
 <p><strong>Assigning Buttons and Slider Behavior:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Press [SETTINGS] [HERE] to any button of the controller that has an object assigned to it - The Slider Definitions pop-up will appear with the <strong>{Controller Definitions}</strong> tab selected.</li>
+<li>Press [SETTINGS] [HERE] to any button of the controller that has an object assigned to it - The <strong>Slider Definitions</strong> pop-up will appear with the <strong>{Controller Definitions}</strong> tab selected.</li>
 </ol>
 <blockquote>
-<p>Alternatively, tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider</p>
+<p>Alternatively, tap any of the controller {function labels} on the controller display on the monitor above the Scene Slider.</p>
 </blockquote>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0Grl8Q74Ts6ZFuDbvduY%2F14.5%201.png?alt=media&amp;token=d3d44aa4-4757-4921-a53b-0d2b33a80be2" /></p>
 <blockquote>
-<p><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span>.</p>
+<p><span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one.</span></p>
 </blockquote>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Tap one of the three assignable {Buttons} or the {Slider} button in the centre - A context sensitive drop down menu based on the object assigned and the specific button selected will appear.</p></li>
-<li><p>Choose a Control behaviour from the menu. Assignable Button</p></li>
+<li><p>Choose a Control behaviour from the menu.</p></li>
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fj6JDjNRFb7TWGRNNO9Y0%2F14.5.2.webp?alt=media&amp;token=9639a28e-b8fe-40cc-a602-83092ac7d617" /></p>
 <p><strong>Assignable Button Behavior:</strong></p>
@@ -574,7 +571,7 @@
 <p><strong>Assignable Slider Behavior:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fm5ysy6BoE6l3FCWVHrYn%2F14.5.4.webp?alt=media&amp;token=f6271bd6-0fe1-4576-ae64-f237d372b124" /></p>
 <blockquote>
-<p>Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See 7.5.1. Controller Settings</p>
+<p>Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See <a href="https://vibemanual.compulite.com/system-default-settings.html#controller-settings">7.5.1. Controller Settings</a>.</p>
 </blockquote>
 </div>
 <div id="controller-color-codes" class="section level2 hasAnchor" number="14.6">
@@ -588,17 +585,17 @@
 </div>
 <div id="working-with-controllers" class="section level2 hasAnchor" number="14.7">
 <h2><span class="header-section-number">14.7</span> Working With controllers<a href="playback-controllers.html#working-with-controllers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Controller types: Detailed</strong>
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPeyRlEeHQvF5HuUF6hYJ%2F14.7.webp?alt=media&amp;token=fa28a2ea-7020-4b6b-9600-666da021144b" /></p>
+<p><strong>Controller types:</strong> - Detailed</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPeyRlEeHQvF5HuUF6hYJ%2F14.7.webp?alt=media&amp;token=fa28a2ea-7020-4b6b-9600-666da021144b" /></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUS9LD2Ch0ruVmweAvB6p%2F14.7.1.webp?alt=media&amp;token=2c8f4681-8eb8-47cc-bc60-48e1b0139624" /></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fiul8UK0l8I5GRkUgjFt0%2F14.7.3.webp?alt=media&amp;token=f8b2c063-b524-43ab-9202-a9f27287647c" /></p>
-<p>Control Keys: Provide “On the Fly” access to button functions not directly assigned to controllers. Apply a Controller Key:</p>
+<p><strong>Control Keys:</strong> Provide “On the Fly” access to button functions not directly assigned to controllers. Apply a Controller Key:</p>
 <ol style="list-style-type: decimal">
 <li><p>Press a {Control Key}</p></li>
 <li><p>Press any destination [Controller Button] to apply the Control Key’s function</p></li>
 </ol>
 <blockquote>
-<p>In most cases<strong>,</strong> a double press of the Control Keys locks them on until pressed again.</p>
+<p>In most cases, double press of the Control Keys locks them on until pressed again.</p>
 </blockquote>
 <p><strong>Control Key Functions:</strong></p>
 <ul>
@@ -613,7 +610,7 @@
 <ul>
 <li><p><strong>ON</strong> - Instantly turns on a controller.</p></li>
 <li><p><strong>OFF</strong> - Instantly turns off a controller.</p></li>
-<li><p><strong>Latch</strong> - Currently unimplemented.</p></li>
+<li><p><span style="color:Gray"><strong>Latch</strong> - Currently unimplemented.</span></p></li>
 <li><p><strong>GO</strong> - Initiates a GO command.</p></li>
 <li><p><strong>ASSERT</strong> - Takes back control of parameters that have been “robbed” by other controllers.</p></li>
 <li><p><strong>HOLD/BACK</strong> - If a controller is running, pause the controller. If a controller is static, initiate a BACK command.</p></li>
@@ -639,11 +636,11 @@
 <ol style="list-style-type: decimal">
 <li><p>[QLIST] [#]</p></li>
 <li><p>[CUE] [#]</p></li>
-<li><p>[HERE] Press any of the controller’s buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: 7.5.2. Controller Actions</p></li>
+<li><p>[HERE] Press any of the controller’s buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: <a href="https://vibemanual.compulite.com/system-default-settings.html#controller-actions">7.5.2. Controller Actions</a></p></li>
 </ol>
 <p><strong>Release and unload Controllers:</strong></p>
 <ul>
-<li>See: 14.8. Controller Release and Free</li>
+<li>See: <a href="https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-release-and-free">14.8. Controller Release and Free</a></li>
 </ul>
 </div>
 <div id="controller-release-and-free" class="section level2 hasAnchor" number="14.8">
@@ -651,28 +648,28 @@
 <blockquote>
 <p>Vibe has two types of release functions, Editor Release and Controller Release. The following deals with Controller Release.</p>
 </blockquote>
-<p>Off - Instantly turns off a controller</p>
+<p><strong>Off -</strong> Instantly turns off a controller</p>
 <ul>
 <li>[OFF] [HERE] to any controller button.</li>
 </ul>
-<p>Release - Turns off a controller using release time.</p>
+<p><strong>Release -</strong> Turns off a controller using release time.</p>
 <ul>
 <li>[RELEASE] [HERE] to any controller button.</li>
 </ul>
-<p>Release All - Turns off all controllers using release time.</p>
+<p><strong>Release All -</strong> Turns off all controllers using release time.</p>
 <ul>
 <li>[VIBE] + [RELEASE]</li>
 </ul>
-<p>Release Time -</p>
+<p><strong>Release Time -</strong></p>
 <ul>
-<li><p>By default controllers use the Default Release Time set in System Settings Timing. See: 7.2. Timing</p></li>
-<li><p>Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: 7.5.3. Qlist Properties</p></li>
+<li><p>By default controllers use the Default Release Time set in System Settings Timing. See: <a href="https://vibemanual.compulite.com/system-default-settings.html#timing">7.2. Timing</a></p></li>
+<li><p>Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: <a href="https://vibemanual.compulite.com/system-default-settings.html#qlist-properties">7.5.3. Qlist Properties</a></p></li>
 </ul>
-<p>Free - Unloads a controller. It does not delete the loaded object.</p>
+<p><strong>Free -</strong> Unloads a controller. It does not delete the loaded object.</p>
 <ul>
 <li>[FREE] [HERE] to any controller button.</li>
 </ul>
-<p>Free All - Unloads all controllers.</p>
+<p><strong>Free All -</strong> Unloads all controllers.</p>
 <ul>
 <li>[VIBE] + [FREE]</li>
 </ul>
@@ -680,7 +677,7 @@
 <div id="controller-qlist-properties" class="section level2 hasAnchor" number="14.9">
 <h2><span class="header-section-number">14.9</span> Controller Qlist Properties<a href="playback-controllers.html#controller-qlist-properties" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>By default, the first incident of a Qlist being assigned to a controller will take its Qlist properties from the user default Qlist Properties.
-<strong>For Qlist Properties details, see:</strong> 7.5.3. Qlist Properties</p>
+<strong>For Qlist Properties details, see:</strong> <a href="https://vibemanual.compulite.com/system-default-settings.html#qlist-properties">7.5.3. Qlist Properties</a></p>
 <ul>
 <li><p>Each new incident of assigning the same Qlist to additional controllers will initially copy the Qlist properties from the first assignment.</p></li>
 <li><p>If changes are made to individual controller Qlist properties, those changes stay with the controller and are not copied or updated to other controller Qlist properties.</p></li>
@@ -697,33 +694,38 @@
 <li><p>[RATE] - The Rate of the fades, loops, effects, and chasers on the controller will be proportionally adjusted. Motorized faders will move to an optimized position of 32% allowing for proportional adjustment of a controller’s rate.</p></li>
 <li><p>[SIZE] - Proportionally adjusts the size of effects running on the controller.</p></li>
 <li><p>[OFFSET] - Adjusts the spread of the fixtures in running effects</p></li>
-<li><p>[PROTECT] - When implemented, must be held down before any of the fader modes may be changed.</p></li>
+<li><p><span style="color:Gray">[PROTECT] - When implemented, must be held down before any of the fader modes may be changed.</span></p></li>
 </ul>
 </div>
 <div id="rate-and-teach-keys" class="section level2 hasAnchor" number="14.11">
 <h2><span class="header-section-number">14.11</span> Rate and Teach Keys<a href="playback-controllers.html#rate-and-teach-keys" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The Rate function allows users to adjust controller rates or effects parameters in “real time”. This is very helpful in fine tuning chases and effects to synchronize with music, or to improvise performances “on the fly”. The Rate Screen operates outside of the editor and is non destructive. Changes made in the Rate Screen may not be stored in cues but may be stored and recalled in [Snaps].</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FASGNCmc8hdzIqKOE9fa2%2F4.11.webp?alt=media&amp;token=3a476108-bcb8-4f20-8965-4339044e1870" /></p>
-<p>Using the Rate Screen: Large encoder wheels:</p>
+<p><strong>Using the Rate Screen:</strong></p>
+<p><strong>Large encoder wheels:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Press the [Rate Key] - When opened, all loaded controllers will appear in the “Selected Controllers” section of the display. Initially all loaded controllers will be globally affected by the wheels and features in the Rate Screen.</p></li>
-<li><p>Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display.</p>
-<p>◾ {Select All} will reselect all loaded controllers for rate control.</p>
-<p>◾ {Deselect All} will release all selected controllers from rate control</p>
-<p>◾ {Show Active} will release all controllers in the “Selected Controllers” section that are not currently under the control of the rate wheels.</p></li>
+<li><p>Press the [Rate Key] - When opened, all loaded controllers will appear in the “Selected Controllers” section of the display. Initially all loaded controllers will be <strong>globally</strong> affected by the wheels and features in the Rate Screen.</p></li>
+<li><p>Pressing any [Key] of a controller will deselect all other controllers except the controller that was selected. Additional controllers may be toggled on or off as desired and they will appear in the selected Controllers display.</p></li>
+</ol>
+<ul>
+<li><p>{Select All} will reselect all loaded controllers for rate control.</p></li>
+<li><p>{Deselect All} will release all selected controllers from rate control</p></li>
+<li><p>{Show Active} will release all controllers in the “Selected Controllers” section that are not currently under the control of the rate wheels.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
 <li><p>Wheel 1 - {Controller Rate} speeds up or slows down the cross fade rate of the controller. This may be used for cue transitions, chases, or effects. Range: 0% (Stopped) ⟶ 3000% (effectively cut time)</p></li>
 <li><p>Wheel 2 - {X Fade %} adjusts the “fade vs jump percent of a chaser. Range: 0% (full jump) ⟶ 100% (full cross fade)</p></li>
 <li><p>Wheel 3 - {Intensity Limit} proportionally limits the intensity output of a controller. Range 0% (no intensity output) ⟶ 100% {Intensity controller full}</p></li>
-<li><p>Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom)</p></li>
+<li><p><span style="color:Gray"> Wheel 4 - {Library Editor Rate} currently unimplemented (adjusts the speed that Libraries are faded into the editor) Small encoder wheels: (top to bottom) </span></p></li>
 </ol>
-<p>Small encoder wheels: (top to bottom)</p>
+<p><strong>Small encoder wheels: (top to bottom)</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Small Wheel 1 - {FX Rate} adjusts the rate of effects that are running on the selected controllers.</p></li>
 <li><p>Small Wheel 2 - {FX Size} adjusts the size of effects that are running on the selected controllers.</p></li>
 <li><p>Small Wheel 3 - {FX Offset} adjusts the offset (Spread) of effects that are running on the selected controllers.</p></li>
 <li><p>Small Wheel 3 - {FX Base} adjusts the base values (start point) of parameters that are in running effects on the selected controllers.</p></li>
 </ol>
-<p>Reset keys:</p>
+<p><strong>Reset keys:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>{Reset Ctrl Rate} - Sets all controller rates back to their default of 100%</p></li>
 <li><p>{Reset FX Rate} - Sets controlled FX rates back to their stored values.</p></li>
@@ -731,14 +733,16 @@
 <li><p>{Reset FX Offset} - Resets controlled offsets of effects back to their stored values.</p></li>
 <li><p>{Reset FX Base} - Resets controlled effects base values back to their stored values.</p></li>
 </ol>
-<p>Freeze toggle keys:</p>
+<p><strong>Freeze toggle keys:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>{Freeze All} - Pauses all running chases and effects until the {Freeze All} key is toggled again.</p></li>
 <li><p>{Freeze Chase} - Pauses all running chases until the {Freeze Chase} key is toggled again.</p></li>
 <li><p>{Freeze Effect - Pauses all running effects until the {Freeze Effect} key is toggled again.</p></li>
 </ol>
-<p>Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: 13.3.1. Building Effects Using the Advanced Effects Editor</p>
-<p>Transport Bar:</p>
+<blockquote>
+<p>Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: <a href="https://vibemanual.compulite.com/effects-1.html#build-a-basic-effect-in-the-advanced-effects-editor">13.3.1. Building Effects Using the Advanced Effects Editor</a></p>
+</blockquote>
+<p><strong>Transport Bar:</strong></p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3tsI1uZbjqG5pxqzYh3r%2F14.11.2.webp?alt=media&amp;token=2658ea17-92cf-4afa-9028-74f319a5ce62" /></p>
 <p>When actively in the Rate Screen, physical controller keys are mapped to the rate interface and may not be used to activate Qlists, cues, or scenes. As an alternative, the transport bar may be used. To use the transport bar:</p>
 <ol style="list-style-type: decimal">
@@ -753,14 +757,14 @@
 <li><p>{&gt;} GO</p></li>
 <li><p>{&gt;&gt;} Step Forward</p></li>
 </ul>
-<ol style="list-style-type: decimal">
+<ol start="4" style="list-style-type: decimal">
 <li>{Release} may be tapped at any time to deactivate the selected controllers using release time.</li>
 </ol>
-<p>Teach keys: Currently unimplemented</p>
+<p><strong>Teach keys: Currently unimplemented</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>{Teach Enabled} - Enables the [Teach Key] for sampling and adjusting tap rate of chasers and effects in “real time”.</p></li>
-<li><p>{Tap X} keys set the sample rate for the teach function (number of presses to be averaged)</p></li>
-<li><p>When implemented, Teach time may also be set from the Rate Screen using the transport bar buttons.</p></li>
+<li><p><span style="color:Gray">{Teach Enabled} - Enables the [Teach Key] for sampling and adjusting tap rate of chasers and effects in “real time”.</span></p></li>
+<li><p><span style="color:Gray">{Tap X} keys set the sample rate for the teach function (number of presses to be averaged). </span></p></li>
+<li><p><span style="color:Gray">When implemented, Teach time may also be set from the Rate Screen using the transport bar buttons.</span></p></li>
 </ol>
 
 </div>
@@ -813,7 +817,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["vibe-manual.epub"],
+"download": ["VibeManual.epub"],
 "search": {
 "engine": "fuse",
 "options": null

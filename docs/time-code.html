@@ -4,22 +4,23 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 21 Time Code | vibe-manual.knit</title>
-  <meta name="description" content="" />
+  <title>Chapter 21 Time Code | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 21 Time Code | vibe-manual.knit" />
+  <meta property="og:title" content="Chapter 21 Time Code | Vibe Manual" />
   <meta property="og:type" content="book" />
-  
-  
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 21 Time Code | vibe-manual.knit" />
+  <meta name="twitter:title" content="Chapter 21 Time Code | Vibe Manual" />
   
-  
-  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
 
+<meta name="author" content="Compulite Systems (2000) Ltd" />
 
 
 
@@ -352,14 +353,6 @@
 <li class="chapter" data-level="24.4" data-path="network-1.html"><a href="network-1.html#rdm"><i class="fa fa-check"></i><b>24.4</b> RDM<span></span></a></li>
 <li class="chapter" data-level="24.5" data-path="network-1.html"><a href="network-1.html#citp"><i class="fa fa-check"></i><b>24.5</b> CITP<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="masterslave.html"><a href="masterslave.html"><i class="fa fa-check"></i><b>25</b> Master/Slave<span></span></a>
-<ul>
-<li class="chapter" data-level="25.1" data-path="masterslave.html"><a href="masterslave.html#masterslave-1"><i class="fa fa-check"></i><b>25.1</b> Master/Slave<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="26" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>26</b> Multi-User<span></span></a>
-<ul>
-<li class="chapter" data-level="26.1" data-path="multi-user.html"><a href="multi-user.html#multi-user-1"><i class="fa fa-check"></i><b>26.1</b> Multi-User<span></span></a></li>
-</ul></li>
 <li class="divider"></li>
 <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
 <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
@@ -373,7 +366,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
           </h1>
         </div>
 
@@ -385,7 +378,7 @@
 <h1><span class="header-section-number">Chapter 21</span> Time Code<a href="time-code.html#time-code" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.</p>
 <blockquote>
-<p><span style="color:Red">This feature is under development and this section is preliminary.</span>.</p>
+<p><span style="color:Red">This feature is under development and this section is preliminary.</span></p>
 </blockquote>
 <p><strong>The following is covered in this section:</strong></p>
 <ul>
@@ -423,48 +416,58 @@
 <h2><span class="header-section-number">21.2</span> Create a Timeline View<a href="time-code.html#create-a-timeline-view" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&amp;token=86dd2f10-6d2a-4905-bfeb-baec212c85db" /></p>
-<p><strong>Timeline view with two timeline tracks, the cursor, and a marker</strong></p>
+<p align="center">
+Timeline view with two timeline tracks, the cursor, and a marker
+</p>
 <p><strong>To add a Timeline view to a page:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.</p></li>
 <li><p>Tap {Pages} - Page display will open.</p></li>
 <li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
 <li><p>Tap the Lock/Unlock icon to enable adding a new view.</p></li>
-<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select} ⟶ {Display Objects} ⟶ {Timeline View} - A blank timeline view will appear on the workspace.</p></li>
+<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select}</p>
+<p>⟶ {Display Objects}
+⟶ {Timeline View} - A blank timeline view will appear on the workspace.</p></li>
 <li><p>Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.</p></li>
 </ol>
 </div>
 <div id="configuring-timecode" class="section level2 hasAnchor" number="21.3">
 <h2><span class="header-section-number">21.3</span> Configuring Timecode<a href="time-code.html#configuring-timecode" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Timecode connectors for the following:</p>
+<p><strong>Vibe has Timecode connectors for the following:</strong></p>
 <ul>
 <li><p>Audio input Combi Jack with:</p>
-<p>◾ Female unbalanced line level input on 1/4” Phone jack</p>
-<p>◾ Female 3 pin XLR balanced line level input.</p></li>
+<ul>
+<li><p>Female unbalanced line level input on 1/4” Phone jack</p></li>
+<li><p>Female 3 pin XLR balanced line level input.</p></li>
+</ul></li>
 <li><p>5 Pin DIN connector for MIDI and MIDI timecode input.</p></li>
 </ul>
-<p>Additionally, the following general purpose ports may be used for Timecode:</p>
+<p><strong>Additionally, the following general purpose ports may be used for Timecode:</strong></p>
 <ul>
 <li><p>USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.</p></li>
 <li><p>Compulite devices that support MIDI over Ethernet can also be used.</p></li>
 </ul>
-<p>Recommended quality and level for SMPTE:</p>
+<p><strong>Recommended quality and level for SMPTE:</strong></p>
 <ul>
 <li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
 <li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
 </ul>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
-<p><strong>1/O Settings Pop-up in Timecode Tab</strong></p>
+<p align="center">
+1/O Settings Pop-up in Timecode Tab
+</p>
 <p><strong>Enable Timecode:</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>From the patch toolbar tap {I/O Settings}</p></li>
 <li><p>For Tap {General} tab and select:</p>
-<p>◾ {Local MIDI} to enable the DIN connector MIDI.</p>
-<p>◾ {External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
+<ul>
+<li><p>{Local MIDI} to enable the DIN connector MIDI.</p></li>
+<li><p>{External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
+</ul></li>
 <li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
 <li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
 <li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
-<li><p>Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</p></li>
+<li><p><span style="color:Gray">Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</span></p></li>
 </ol>
 </div>
 <div id="recording-timeline-tracks" class="section level2 hasAnchor" number="21.4">
@@ -478,13 +481,17 @@
 <li><p>Select a timeline number and name.</p></li>
 <li><p>Choose Start from {Blank} Timeline as an option.</p></li>
 <li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p>
-<p>◾ Virtual Local - Use internal timecode clock.</p>
-<p>◾ Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p>
-<p>◾ Additional options will populate the list depending on the interfaced timecode device.</p></li>
+<ul>
+<li><p>Virtual Local - Use internal timecode clock.</p></li>
+<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
+<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
+</ul></li>
 <li><p>Enable the red {Record} button or the {+ Record} button.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p>
-<p>◾ Record overwrites existing events.</p>
-<p>◾ + Record adds events to existing events.</p></li>
+<ul>
+<li><p>Record overwrites existing events.</p></li>
+<li><p>(+) Record adds events to existing events.</p></li>
+</ul></li>
 <li><p>If using internal TC, press Play.</p></li>
 <li><p>If using external TC start the timecode source.</p></li>
 <li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
@@ -494,12 +501,12 @@
 <p><strong>Timeline Features</strong></p>
 <p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
 <p><strong>Grid View Filters</strong></p>
-<p>In the grid view of the Timeline<strong>,</strong> it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.</p>
+<p>In the grid view of the Timeline, it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.</p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&amp;token=7b352b8c-dfaf-402d-a9fc-5e986b395212" /></p>
 </div>
 <div id="executing-and-editing-events" class="section level2 hasAnchor" number="21.5">
 <h2><span class="header-section-number">21.5</span> Executing and Editing Events<a href="time-code.html#executing-and-editing-events" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>To Execute timeline events:</p>
+<p><strong>To Execute timeline events:</strong></p>
 <ul>
 <li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
 <li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
@@ -558,12 +565,12 @@
 </ol>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzgT27J7izwv0ermWLplh%2Fimage.png?alt=media&amp;token=8ebdbcb1-4cfc-4f5d-a4db-a219ef3f88d3" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Sequence may also end with:</p>
+<li><p><strong>Sequence may also end with:</strong></p>
 <p><strong>a.</strong> Store – will create the timelines if they are not already created</p>
 <p><strong>b.</strong> Delete – will delete the timelines if they exist</p>
 <p><strong>c.</strong> Text – will open text box to give a name to the selected timelines</p>
 <p><strong>d.</strong> Copy – will add the timelines to the clipboard</p>
-<p><strong>e.</strong>Paste – will paste the copied timelines from the clipboard</p></li>
+<p><strong>e.</strong> Paste – will paste the copied timelines from the clipboard</p></li>
 </ol>
 </div>
 <div id="markers" class="section level2 hasAnchor" number="21.6">
@@ -635,7 +642,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["vibe-manual.epub"],
+"download": ["VibeManual.epub"],
 "search": {
 "engine": "fuse",
 "options": null
