@@ -195,7 +195,3 @@ connecting-to-compulite-eports
 connecting-to-art-net-and-sacn-nodes
 rdm
 citp
-masterslave
-masterslave-1
-multi-user
-multi-user-1
