@@ -1,3 +1,10 @@
+---
+title: "Vibe Manual"
+author: "Compulite Systems (2000) Ltd"
+cover-image: Vibe-Guide-Cover.png
+description: Compulite Guide for Vibe Consoles
+url: https://vibemanual.compulite.com/
+---
 
 # Introduction
 

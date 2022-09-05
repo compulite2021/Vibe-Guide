@@ -21,9 +21,7 @@ github:
 
 bookdown::epub_book:
   fig_caption: FALSE
-  toc_depth: 2
+  toc: TRUE
+  toc_depth: 3
+  cover_image: Vibe-Guide-Cover.png
   epub_version: "epub3"
-
-bookdown::pdf_book:
-  fig_caption: FALSE
-  toc_depth: 2
