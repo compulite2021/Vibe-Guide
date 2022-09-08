@@ -6,18 +6,18 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 **The following is covered in this chapter:**
 
-- [4.1.   Introduction](https://vibemanual.compulite.com/graphical-user-interface-gui.html#introduction-1)
-- [4.2.   {VIBE} Menu](https://vibemanual.compulite.com/graphical-user-interface-gui.html#vibe-menu)
-- [4.3    Configuring WorkSpaces](https://vibemanual.compulite.com/graphical-user-interface-gui.html#configuring-workspaces)
-- [4.4.   Layouts](https://vibemanual.compulite.com/graphical-user-interface-gui.html#layouts)
-- [4.5.   Smart Screen](https://vibemanual.compulite.com/graphical-user-interface-gui.html#smart-screen)
-- [4.6.   Toolbars](https://vibemanual.compulite.com/graphical-user-interface-gui.html#toolbars)
-- [4.7.   Live Display](https://vibemanual.compulite.com/graphical-user-interface-gui.html#live-display)
-- [4.8.   Live Parameter Display](https://vibemanual.compulite.com/graphical-user-interface-gui.html#live-parameter-display)
+- [4.1.   Introduction](#Introduction-4.1)
+- [4.2.   {VIBE} Menu](#VIBE-Menu-4.2)
+- [4.3    Configuring WorkSpaces](#Configuring-WorkSpaces-4.3)
+- [4.4.   Layouts](#Layouts-4.4)
+- [4.5.   Smart Screen](#Smart-Screen-4.5)
+- [4.6.   Toolbars](#Toolbars-4.6)
+- [4.7.   Live Display](#Live-Display-4.7)
+- [4.8.   Live Parameter Display](#live-parameter-display-4.8)
 
 
 
-## Introduction
+## Introduction {#Introduction-4.1}
 
 Vibe uses a Multi-touch based interface with simple familiar gestures for navigation.
 
@@ -76,7 +76,7 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
 
-## VIBE Menu
+## VIBE Menu {#VIBE-Menu-4.2}
 
 
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
@@ -101,7 +101,7 @@ The Exit and Close buttons are located in the Windows sub-menu.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFV8W9WgLTCerYjssYKJD%2Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
 
-## Configuring WorkSpaces
+## Configuring WorkSpaces{#Configuring-WorkSpaces-4.3}
 
 
 ### Basics
@@ -136,7 +136,7 @@ This option is valid when the layout is unlocked and the view is selected. Showi
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9B5NTIysFGLAcAACtoIr%2Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
 
 
-## Layouts
+## Layouts{#Layouts-4.4}
 
 **Layouts:**
 
@@ -152,7 +152,7 @@ A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
 
 
 
-## Smart Screen
+## Smart Screen {#Smart-Screen-4.5}
 
 
 The 11.6" multi-touch monitor embedded in the upper section of the Vibe console is referred to as the **Smart Screen**. The **Smart Screen** is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. 
@@ -162,7 +162,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 [9.3.4. Smart Screen](https://compulite2021.github.io/Vibe-Guide/programming-basics.html#smart-screen-1)
 
 
-## Toolbars
+## Toolbars {#Toolbars-4.6}
 
 
 **The Editor Toolbar contains is a set of interactive Softkeys that are used to access less common commands:**
@@ -179,7 +179,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
-## Live Display
+## Live Display{#Live-Display-4.7}
 
 
 Vibe has two ways to display parameter data: 
@@ -338,7 +338,7 @@ Live View Settings pop-up - Display Tab.
 
 
 
-## Live Parameter Display
+## Live Parameter Display {#live-parameter-display-4.8}
 
 
 The Live Parameter Display shows values in a table format instead of spreadsheet format. 
