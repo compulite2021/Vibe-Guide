@@ -5,20 +5,20 @@ Cues and Scenes are played back using the 15 **Motorized Slider Controllers**, n
 
 **The following is covered in this chapter:**
 
-- [14.1. Controller Priority Logic](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-priority-logic)
-- [14.2. Controller Overview](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-overview)
-- [14.3. Master Controller](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#master-controller-1)
-- [14.4. GOTO and LOAD](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#goto-and-load)
-- [14.5. Configuring Controllers](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#configuring-controllers)
-- [14.6. Controller Color Codes](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-color-codes)
-- [14.7. Working With controllers](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#working-with-controllers)
-- [14.8. Controller Release and Free](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-release-and-free)
-- [14.9. Controller Qlist Properties](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-qlist-properties)
-- [14.10. Controller Modes](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-modes)
-- [14.11. Rate and Teach Keys](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#rate-and-teach-keys)
+- [14.1. Controller Priority Logic](#14.1.ControllerPriorityLogic)
+- [14.2. Controller Overview](#14.2.ControllerOverview)
+- [14.3. Master Controller](#14.3.MasterController)
+- [14.4. GOTO and LOAD](#14.4.GOTOandLOAD)
+- [14.5. Configuring Controllers](#14.5.ConfiguringControllers)
+- [14.6. Controller Color Codes](#14.6.ControllerColorCodes)
+- [14.7. Working With controllers](#14.7.WorkingWithcontrollers)
+- [14.8. Controller Release and Free](#14.8.ControllerReleaseandFree)
+- [14.9. Controller Qlist Properties](#14.9.ControllerQlistProperties)
+- [14.10. Controller Modes](#14.10.ControllerModes)
+- [14.11. Rate and Teach Keys](#14.11.RateandTeachKeys)
 
 
-## Controller Priority Logic
+## Controller Priority Logic {#14.1.ControllerPriorityLogic}
 
 
 
@@ -53,7 +53,8 @@ OR
 
 
 
-## Controller Overview
+## Controller Overview {#14.2.ControllerOverview}
+
 **Controllers are used to playback or execute a number of objects:**
 
 -   Cues
@@ -121,7 +122,7 @@ OR
 
 
 
-## Master Controller 
+## Master Controller {#14.3.MasterController}
 
 **Master Controller:**
 
@@ -142,7 +143,7 @@ OR
 
 
 
-## GOTO and LOAD
+## GOTO and LOAD {#14.4.GOTOandLOAD}
 
 GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO immediately transitions to the specified cue in the system **GOTO Time**. LOAD preloads controllers. The next [GO] will transition to the preloaded cue in **Cue Time**.
 
@@ -225,7 +226,7 @@ GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO im
 
 
 
-## Configuring Controllers
+## Configuring Controllers {#14.5.ConfiguringControllers}
 
 Controller buttons and sliders may be customized to allow maximum flexibility. When Qlists and Scenes are initially assigned to Controllers, the buttons are configured as per the **System Settings defaults** for Controller and Controller Action. Defaults are accessed by tapping the System Status area at the far right side of the controller display.
 
@@ -266,7 +267,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 
 
-## Controller Color Codes
+## Controller Color Codes {#14.6.ControllerColorCodes}
 
 
 
@@ -283,7 +284,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 
 
-## Working With controllers
+## Working With controllers {#14.7.WorkingWithcontrollers}
 
 **Controller types:** - Detailed
 
@@ -366,7 +367,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 -   See: [14.8. Controller Release and Free](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-release-and-free)
 
 
-## Controller Release and Free
+## Controller Release and Free {#14.8.ControllerReleaseandFree}
 
 
 
@@ -405,7 +406,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 -   [VIBE] + [FREE]
 
 
-## Controller Qlist Properties
+## Controller Qlist Properties {#14.9.ControllerQlistProperties}
 
 
 
@@ -422,7 +423,7 @@ By default, the first incident of a Qlist being assigned to a controller will ta
 
 
 
-## Controller Modes
+## Controller Modes {#14.10.ControllerModes}
 
 
 
@@ -441,7 +442,7 @@ The Controller Mode keys are located at the far left of the console beside the m
 -    <span style="color:Gray">[PROTECT] - When implemented, must be held down before any of the fader modes may be changed.</span>
 
 
-## Rate and Teach Keys
+## Rate and Teach Keys {#14.11.RateandTeachKeys}
 
 
 

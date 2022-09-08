@@ -4,11 +4,11 @@ This chapter deals with filtering Editor parameters when storing objects and set
 
 **The following is covered in this chapter:**
 
-- [11.1. On the Fly Filters](https://vibemanual.compulite.com/filters.html#on-the-fly-filters)
-- [11.2. General Filters Tab](https://vibemanual.compulite.com/filters.html#general-filters-tab)
-- [11.3 Library Defaults Tab](https://vibemanual.compulite.com/filters.html#library-defaults-tab)
+- [11.1. On the Fly Filters](#11.1.OntheFlyFilters)
+- [11.2. General Filters Tab](#11.2.GeneralFiltersTab)
+- [11.3 Library Defaults Tab](#11.3LibraryDefaultsTab)
 
-## On the Fly Filters
+## On the Fly Filters {#11.1.OntheFlyFilters}
 
 
 11.1. On the Fly Filters
@@ -41,7 +41,7 @@ Options:
 - <span style="color:Gray">{Keep Filter till Reset} - Not implemented.</span>
 - <span style="color:Gray">{Save Filter and Apply} - Not yet implemented.</span>
 
-## General Filters Tab
+## General Filters Tab {#11.2.GeneralFiltersTab}
 
 
 Filters may be created "blind" without a fixture and parameter selection. They may be "Include" or "Exclude" depending on how the filters are created. Filters are automatically saved in the **Filters Library.**
@@ -80,7 +80,7 @@ Filters may be created "blind" without a fixture and parameter selection. They m
 
 
 
-## Library Defaults Tab
+## Library Defaults Tab {#11.3LibraryDefaultsTab}
 
 When storing Bank Libraries, filters are used to exclude parameters from unrelated banks. The Library filter defaults are set under the **Filters** pop-up, **Library Defaults** tab.
 

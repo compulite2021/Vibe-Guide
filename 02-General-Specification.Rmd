@@ -5,12 +5,12 @@ This chapter covers basic specifications.
 
 **The following is covered in this chapter:**
 
--   [2.1. Controls](https://vibemanual.compulite.com/general-specification.html#controls)
--   [2.2. I/O](https://vibemanual.compulite.com/general-specification.html#io)
--   [2.3. Capacity](https://vibemanual.compulite.com/general-specification.html#capacity)
+-   [2.1. Controls](#Controls-2.1)
+-   [2.2. I/O](#I/O-2.2)
+-   [2.3. Capacity](#Capacity-2.3)
 
 
-## Controls
+## Controls {#Controls-2.1}
 
 -   4 large backlit push encoder wheels.
     
@@ -29,7 +29,7 @@ This chapter covers basic specifications.
 -   5 general purpose non-motorized **Global Faders**.
 
 
-##  I/O
+##  I/O {#I/O-2.2}
 
 -   8 Physical DMX 512 input/output ports (RDM supported).
     
@@ -58,7 +58,7 @@ This chapter covers basic specifications.
 -   2 DisplayPort video outputs.
 
 
-## Capacity
+## Capacity {#Capacity-2.3}
 
 -   100 physical/virtual motorized fader controllers.
     

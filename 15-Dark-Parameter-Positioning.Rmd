@@ -5,12 +5,12 @@ There are three features that allow you to preset parameter values when a fixtur
 
 **The following is covered in this chapter:**
 
-- [15.1. Look Ahead (Move in Dark)](https://vibemanual.compulite.com/dark-parameter-positioning.html#look-ahead-move-in-dark)
-- [15.2. Look Ahead Cue (Mark)](https://vibemanual.compulite.com/dark-parameter-positioning.html#look-ahead-cue-mark)
-- [15.3. Force Black](https://vibemanual.compulite.com/dark-parameter-positioning.html#force-black)
+- [15.1. Look Ahead (Move in Dark)](#15.1.LookAhead)
+- [15.2. Look Ahead Cue (Mark)](#15.2.LookAheadCue)
+- [15.3. Force Black](#15.3.ForceBlack)
 
 
-## Look Ahead (Move in Dark)
+## Look Ahead (Move in Dark) {#15.1.LookAhead}
 
 The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture's dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture's dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue's default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the **last** available opportunity before the dimmer turns on.
 
@@ -81,7 +81,7 @@ A Look Ahead cue is a cue that automatically pre-positions parameters when the d
 
 
 
-## Look Ahead Cue (Mark)
+## Look Ahead Cue (Mark) {#15.2.LookAheadCue}
 
 
  <span style="color:Blue">Unimplemented</span>
@@ -92,7 +92,7 @@ A Look Ahead cue is a cue that automatically pre-positions parameters when the d
 
 
 
-## Force Black
+## Force Black {#15.3.ForceBlack}
 
 
 

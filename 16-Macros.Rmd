@@ -5,11 +5,11 @@ This chapter deals with creating and triggering Macros.
 
 **The following is covered in this chapter:**
 
-- [16.1. Creating Macros](https://vibemanual.compulite.com/macros.html#creating-macros)
-- [16.2. Triggrering Macros](https://vibemanual.compulite.com/macros.html#triggrering-macros)
-- [16.3. Attaching Macros](https://vibemanual.compulite.com/macros.html#attaching-macros)
+- [16.1. Creating Macros](#16.1.CreatingMacros)
+- [16.2. Triggrering Macros](#16.2.TriggreringMacros)
+- [16.3. Attaching Macros](#16.3.AttachingMacros)
 
-## Creating Macros
+## Creating Macros {#16.1.CreatingMacros}
 
 
 Current Macros can only be created using the **Teach Macro** recorder. In future releases this will expand to include manually created macros. Macro time is automatically recorded with macros and the user may decide whether to enable time or ignore it.
@@ -45,7 +45,7 @@ OR
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FswUPSRgyKZ0jqq25xzak%2F16.1.webp?alt=media&token=4c86738f-6797-4c6e-a628-8533c9043595)
 
 
-## Triggrering Macros
+## Triggrering Macros {#16.2.TriggreringMacros}
 
 Macros may be directly triggered using the keypad or Macro Softkeys.
 
@@ -66,7 +66,7 @@ Macros may be directly triggered using the keypad or Macro Softkeys.
     
 
 
-## Attaching Macros
+## Attaching Macros {#16.3.AttachingMacros}
 
 
 Macros may be attached and triggered from Qlist Cues.

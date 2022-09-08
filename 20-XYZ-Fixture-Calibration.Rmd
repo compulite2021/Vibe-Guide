@@ -6,10 +6,10 @@ Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtu
 
 **The following is covered in this chapter:**
 
-- [20.1. Calibration in WYSIWYG](https://vibemanual.compulite.com/xyz-fixture-calibration.html#calibration-in-wysiwyg)
-- [20.2. Calibration in Capture](https://vibemanual.compulite.com/xyz-fixture-calibration.html#calibration-in-capture)
+- [20.1. Calibration in WYSIWYG](#20.1.CalibrationinWYSIWYG)
+- [20.2. Calibration in Capture](#20.2.CalibrationinCapture)
 
-## Calibration in WYSIWYG
+## Calibration in WYSIWYG {#20.1.CalibrationinWYSIWYG}
 
 
 **Calibrate using WYSIWYG**
@@ -36,7 +36,7 @@ Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtu
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FevwfnkgAvMLdIU4zgZBr%2F20.1.1.webp?alt=media&token=2ef469e1-b321-48d2-89f2-da906b386daf)
 
 
-## Calibration in Capture
+## Calibration in Capture {#20.2.CalibrationinCapture}
 
 **Calibrate using Capture**
 

@@ -3,9 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- [23.1 - Media Bank](https://vibemanual.compulite.com/media-servers.html#media-bank)
+- [23.1 - Media Bank](#23.1-MediaBank)
 
-## Media Bank
+## Media Bank {#23.1-MediaBank}
 
 There is a bank on the Small Screen Called Media. This bank was created to be able to handle media servers in a smart and easy way. In order to see content in this bank, users will need to create Media Server devices such as Green Hippo's Hippotizer. All virtual controls are also mapped to the physical wheels for easy use.
 

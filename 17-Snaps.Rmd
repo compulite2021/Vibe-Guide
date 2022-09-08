@@ -5,12 +5,12 @@ This chapter deals with creating and triggering Snapshots.
 
 **The following is covered in this chapter:**
 
-- [17.1. Storing Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps)
-- [17.2. Triggering Snap](https://vibemanual.compulite.com/snaps-snapshots.html#triggering-snap)
-- [17.3. Attaching Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#attaching-snaps)
+- [17.1. Storing Snaps](#17.1.StoringSnaps)
+- [17.2. Triggering Snap](#17.2.TriggeringSnap)
+- [17.3. Attaching Snaps](#17.3.AttachingSnaps)
 
 
-## Storing Snaps
+## Storing Snaps {#17.1.StoringSnaps}
 
 
 
@@ -57,7 +57,7 @@ Or
 
 
 
-## Triggering Snap
+## Triggering Snap {#17.2.TriggeringSnap}
 
 
 
@@ -112,7 +112,7 @@ Snaps may be assigned a time to "smooth" out their transitions.
 -   Exclude from Override - Even if recorded in a Snap, the controller will ignore Snap activation instructions.
 
 
-## Attaching Snaps
+## Attaching Snaps {#17.3.AttachingSnaps}
 
 Snaps may be attached and triggered from Qlist Cues.
 

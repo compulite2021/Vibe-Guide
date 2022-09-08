@@ -1,20 +1,20 @@
 
-# Patch
+# Patch 
 
 This chapter deals with creating and patching fixtures.
 
 **The following is covered in this chapter:**
 
--  [6.1.   Fixture Sets](https://vibemanual.compulite.com/patch.html#fixture-sets)
--  [6.2.   Import Devices](https://vibemanual.compulite.com/patch.html#import-devices)
--  [6.3.   Advanced Search](https://vibemanual.compulite.com/patch.html#advanced-search)
--  [6.4.   Create and Patch imported fixtures](https://vibemanual.compulite.com/patch.html#create-and-patch-imported-fixtures)
--  [6.5.   Configuring Physical DMX 1/0](https://vibemanual.compulite.com/patch.html#configuring-physical-dmx-10)
--  [6.6.   Patching Inputs](https://vibemanual.compulite.com/patch.html#patching-inputs)
--  [6.7.   Parking Addresses and Fixtures](https://vibemanual.compulite.com/patch.html#parking-addresses-and-fixtures)
+-  [6.1.   Fixture Sets](#6.1-Fixture-Sets)
+-  [6.2.   Import Devices](#6.2-Import-Devices)
+-  [6.3.   Advanced Search](#6.3-Advanced-Search)
+-  [6.4.   Create and Patch imported fixtures](#6.4-Create-and-Patch-imported-fixtures)
+-  [6.5.   Configuring Physical DMX 1/0](#6.5-Configuring-Physical-DMX-1/0)
+-  [6.6.   Patching Inputs](#6.6-Patching-Inputs)
+-  [6.7.   Parking Addresses and Fixtures](#6.7-Parking-Addresses-and-Fixtures)
 
 
-## Fixture Sets
+## Fixture Sets {#6.1-Fixture-Sets}
 
 Like other lighting consoles, Vibe contains an extensive **Device Library** with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. Before a device can be programmed it must be imported and patched to DMX addresses. Vibe has an advanced numbering system that allows devices to be grouped into five familiar categories called **SETS**. Custom **SETS** may also be created. Numbering in all sets may be freely changed if there are no overlapping numbers. Each Set has a unique ID.
 
@@ -49,7 +49,7 @@ c. Tap Sets
 
 
 
-## Import Devices
+## Import Devices {#6.2-Import-Devices}
 
 **Once the Patch Workspace is open:**
 
@@ -72,7 +72,7 @@ c. Tap Sets
     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&token=62e204dc-17b9-4fd2-8566-18780860a2b8)
     
 
-## Advanced Search
+## Advanced Search {#6.3-Advanced-Search}
 
 Fixtures may be searched directly by name using the Advanced Device Search. Searches may also be filtered by parameter order and DMX Channel Count to limit the search. The filters are very helpful in finding close matches for fixtures that are not currently in the device library.
 
@@ -95,7 +95,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW9vK61A11wEoGR23P58y%2F6.3.1.webp?alt=media&token=ac62e3aa-1045-4cc4-87d6-5715e511417d)
 
-## Create and Patch imported fixtures
+## Create and Patch imported fixtures {#6.4-Create-and-Patch-imported-fixtures}
 
 
 1. Import the desired device. (See [6.2. Import Devices](https://vibemanual.compulite.com/patch.html#import-devices)).
@@ -236,7 +236,7 @@ See:
 
     ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
 
-## Configuring Physical DMX 1/0
+## Configuring Physical DMX 1/0 {#6.5-Configuring-Physical-DMX-1/0}
 
 
  By default, DMX is mapped to the physical ports on a 1:1 basis. 
@@ -275,7 +275,7 @@ See:
 
    ◾ Vibe will aways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.
 
-## Patching Inputs
+## Patching Inputs {#6.6-Patching-Inputs}
 
 **The following objects may be mapped to DMX inputs**: 
 
@@ -358,7 +358,7 @@ See:
     
 3. Press [DELETE]
 
-## Parking Addresses and Fixtures
+## Parking Addresses and Fixtures {#6.7-Parking-Addresses-and-Fixtures}
 
 **Park an Address:**
 

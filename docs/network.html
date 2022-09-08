@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 Dark Parameter Positioning | Vibe Manual</title>
+  <title>Chapter 24 Network | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 Dark Parameter Positioning | Vibe Manual" />
+  <meta property="og:title" content="Chapter 24 Network | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 Dark Parameter Positioning | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 24 Network | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="playback-controllers.html"/>
-<link rel="next" href="macros.html"/>
+<link rel="prev" href="media-servers.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -374,93 +374,175 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="dark-parameter-positioning" class="section level1 hasAnchor" number="15">
-<h1><span class="header-section-number">Chapter 15</span> Dark Parameter Positioning<a href="dark-parameter-positioning.html#dark-parameter-positioning" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>There are three features that allow you to preset parameter values when a fixture’s dimmer is dark, thus avoiding visible parameter movement:</p>
+<div id="network" class="section level1 hasAnchor" number="24">
+<h1><span class="header-section-number">Chapter 24</span> Network<a href="network.html#network" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter deals with configuring, transmitting and receiving DMX over Ethernet.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="#15.1.LookAhead">15.1. Look Ahead (Move in Dark)</a></li>
-<li><a href="#15.2.LookAheadCue">15.2. Look Ahead Cue (Mark)</a></li>
-<li><a href="#15.3.ForceBlack">15.3. Force Black</a></li>
+<li><a href="#24.1.NetworkBasics">24.1. Network Basics</a></li>
+<li><a href="#24.2.ConnectingtoCompuliteePorts">24.2. Connecting to Compulite ePorts</a></li>
+<li><a href="#24.3.ConnectingtoArt-NetandsACNNodes">24.3. Connecting to Art-Net and sACN Nodes</a></li>
+<li><a href="#24.4.RDM">24.4. RDM</a></li>
+<li><a href="#24.5.CITP">24.5. CITP</a></li>
 </ul>
-<div id="look-ahead-move-in-dark-15.1.lookahead" class="section level2 hasAnchor" number="15.1">
-<h2><span class="header-section-number">15.1</span> Look Ahead (Move in Dark) {#15.1.LookAhead}<a href="dark-parameter-positioning.html#look-ahead-move-in-dark-15.1.lookahead" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The Look Ahead feature is used for automatic pre-positioning of selected parameters when the fixture’s dimmer is dark, thus avoiding visible p r meter movement. For Look Ahead to work, the fixture’s dimmer must be at ZR, and there must be a parameter moves from one cue to the next cue. Look Ahead fades can be set for a specified default time or user time, which is different than the cue’s default fade time. Before using Look Ahead, you must create a Look Ahead mask. The Look Ahead mask tells Vibe which spots, spot parameters, or scrollers are affected by the Look Ahead feature. If you have not specified parameters in the Look Ahead mask, all parameters will be affected. The Look Ahead mask can contain more than one parameter. Currently, the Look Ahead pre-positioning will happen at the <strong>last</strong> available opportunity before the dimmer turns on.</p>
+<div id="network-basics-24.1.networkbasics" class="section level2 hasAnchor" number="24.1">
+<h2><span class="header-section-number">24.1</span> Network Basics {#24.1.NetworkBasics}<a href="network.html#network-basics-24.1.networkbasics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>24.1. Network Basics</p>
+<p><strong>Vibe has two user accessible Ethernet networks:</strong></p>
+<ul>
+<li><p>Data Network - Accessible via the two etherCON connectors on the rear panel.</p>
+<p>◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.</p></li>
+<li><p>General Networks - Accessible via the two RJ45 connectors on the rear panel.</p>
+<p>◾ Used for Network storage of show files and remote diagnostics.</p></li>
+</ul>
+<p>Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the System Settings pop-up. It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP, (the start address), must match on all devices in the network. Devices on the same network must <strong>not</strong> have identical IP addresses.</p>
+<p><strong>Common Start addresses are:</strong></p>
+<ul>
+<li><p>10.x.x.x - Default for most ETC networks and alternate for Art-Net network IP.</p></li>
+<li><p>2.x.x.x - Default for Art-Net networks.</p></li>
+<li><p>192.x.x.x -Default for most MA consoles.</p></li>
+</ul>
+<p><strong>Subnet Mask</strong> - Identifies the network itself and in conjunction with the IP address can be used to properly route network devices.</p>
+<ul>
+<li><p>255.0.0.0. - Compulite Default. Only the first triplet must match.</p></li>
+<li><p>255.255.0.0 - Also common.</p></li>
+</ul>
 <blockquote>
-<p>If in specific cues you want to prevent applying the Look Ahead mask, give dimmers a value of 1%.</p>
+<p>Compulite uses the third triplet as a console identifier in some of the products.</p>
 </blockquote>
 <blockquote>
-<p><span style="color:Red">LED fixtures without physical dimmer parameters should not be included in the Look Ahead Mask.
-</span></p>
+<p>The Vibe can be used in networks using a DHCP server but cannot act as a DHCP server.</p>
 </blockquote>
-<p><strong>Enable or Disable Look Ahead on all controllers:</strong></p>
+<blockquote>
+<p><span style="color:Red">In all cases, the first triplets must match for devices to communicate with one another.</span>.</p>
+</blockquote>
+<p><strong>Switches</strong>:</p>
+<ul>
+<li><p>Vibe has two internal switches so single direct device to device connections are possible without a cross cable.</p></li>
+<li><p>When more than one device must be connected to the Vibe a good quality gigabit switch should be used.</p></li>
+</ul>
+<blockquote>
+<p><span style="color:Red">Many a system has gone down due to bad Ethernet cabling and cheap switches. It is recommended that etherCON connectors be used where possible in conjunction with professional grade switches designed for lighting and audio applications.</span>.</p>
+</blockquote>
+</div>
+<div id="connecting-to-compulite-eports-24.2.connectingtocompuliteeports" class="section level2 hasAnchor" number="24.2">
+<h2><span class="header-section-number">24.2</span> Connecting to Compulite ePorts {#24.2.ConnectingtoCompuliteePorts}<a href="network.html#connecting-to-compulite-eports-24.2.connectingtocompuliteeports" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Compulite manufactures the <strong>ePort</strong> brand of DMX over Ethernet nodes. <strong>Supported Protocols:</strong></p>
+<ul>
+<li><p>ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm)</p>
+<p>◾ Compulite VC protocol</p>
+<p>◾ Art-Net v2</p></li>
+<li><p>ePort-41 - Current</p>
+<p>◾ sACN pre-release and release versions</p>
+<p>◾ Art-Net 3</p>
+<p>◾ Compulite VC protocol</p></li>
+<li><p>ePort-8 and ePort-2</p>
+<p>◾ sACN pre-release and release versions</p>
+<p>◾ Art-Net 3</p>
+<p>◾ Compulite VC protocol For more product information, See: ePort Documents</p></li>
+</ul>
+<p>Before an ePort can be connected it should be configured using the CNET Manager software, available at the above link.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FazG0oFLuOppI8XrwMiK8%2F24.2.webp?alt=media&amp;token=439bc413-9d0a-487f-8fff-bc31e829c581" /></p>
+<p><strong>Configuring ePorts:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Open System Settings from the Vibe Menu or tap the status area of the main monitor - The System Settings pop-up will open.</p></li>
-<li><p>Tap the {Timing} tab to open the Timing Properties pop-up.</p></li>
-<li><p>Under the <strong>Look Ahead</strong> header enable or disable all controllers using {Set All Controllers ON} or {Set All Controllers OFF}.</p></li>
-<li><p>There is no confirmation of On/Off as these buttons basically toggle {Look Ahead} in <strong>all</strong> Qlist Properties pop-ups.</p></li>
-<li><p>If Look Ahead is globally turned off it may still be enabled on a per Qlist basis in the Qlist Properties pop-up.</p></li>
+<li><p>Make sure that the Vibe IP and the ePort IP are in the same range.</p></li>
+<li><p>Assign universes to each physical port by typing the universe number in the box below the icon of the physical connector.</p></li>
+<li><p>Select the DMX- ON-Ethernet protocol in the protocol list below the graphical display of the ePort.</p></li>
 </ol>
 <blockquote>
-<p>Look Ahead status for individual controllers may be viewed in the controller’s Qlist Properties.</p>
+<p>If the ePort is a newer model, sACN will also appear in the list. If Art-Net is selected make sure the Art-Net Subnet is also set. In most cases this will be set to 0 which allows the first 16 universes. It must be incremented by one with each new range of 16 universes</p>
 </blockquote>
-<p><strong>Create the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be in the Mask.</p></li>
-<li><p>Optionally select the parameters to be included in the Mask - If no parameters are selected, all parameters will be included.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [STORE].</p></li>
-</ol>
-<p><strong>Delete the Look Ahead Mask:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the fixtures to be deleted from the Mask.</p></li>
-<li><p>Tap {LOOK AHEAD MASK} on the Editor Toolbar.</p></li>
-<li><p>Press [DELETE].</p></li>
-</ol>
-<p>A Look Ahead cue is a cue that automatically pre-positions parameters when the dimmer is off. Currently only time can be set for a Look Ahead cue.</p>
-<p><strong>Set individual Look Ahead Time -</strong> Speed at which fixtures move in dark.</p>
-<ol style="list-style-type: decimal">
-<li><p>CUE] [#] [Time] - The Time pop-up will open.</p></li>
-<li><p>Tap {Look Ahead} - The indicator will turn green and Look Ahead will appear over the virtual time wheel.</p></li>
-<li><p>Set the time value using the virtual wheel or type the value directly on the keypad.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and store the Look Ahead time.</p></li>
-</ol>
-<blockquote>
-<p>Look Ahead time can also be changed using the [CUE ] [#] [SETTINGS] command. Default Look Ahead time can be set in System Settings/Defaults/Cue Settings.</p>
-</blockquote>
-<p><strong>Enable or Disable Look Ahead on individual controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Press [SETTINGS] [HERE] to any controller button of the controller you wish to enable or disable Look Ahead on - The Settings pop-up will open.</p></li>
-<li><p>Tap the {Qlist properties} tab - The Qlist Properties pop-up will open.</p></li>
-<li><p>Toggle Look Ahead on or off.</p></li>
-<li><p>Press [Enter] or tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up.</p></li>
+<ol start="4" style="list-style-type: decimal">
+<li>Tap {Update} to apply all changes.</li>
 </ol>
 </div>
-<div id="look-ahead-cue-mark-15.2.lookaheadcue" class="section level2 hasAnchor" number="15.2">
-<h2><span class="header-section-number">15.2</span> Look Ahead Cue (Mark) {#15.2.LookAheadCue}<a href="dark-parameter-positioning.html#look-ahead-cue-mark-15.2.lookaheadcue" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span style="color:Blue">Unimplemented</span></p>
+<div id="connecting-to-art-net-and-sacn-nodes-24.3.connectingtoart-netandsacnnodes" class="section level2 hasAnchor" number="24.3">
+<h2><span class="header-section-number">24.3</span> Connecting to Art-Net and sACN Nodes {#24.3.ConnectingtoArt-NetandsACNNodes}<a href="network.html#connecting-to-art-net-and-sacn-nodes-24.3.connectingtoart-netandsacnnodes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe currently supports transmission of 256 universes of DMX over Ethernet using the industry standards of Art-Net versions 1 ⟶ 3, ad eACN (ANSI E1.31-2016 standard).</p>
+<p><strong>Enable Art-Net or sACN output:</strong></p>
 <ul>
-<li><p><span style="color:Gray">Look Ahead: (sometimes referred to a Mark Cue) </span></p>
-<ul>
-<li><span style="color:Gray">Unlike having Look Ahead automatically preposition all dark parameters for all cues in a Qlist, a cue tagged in Cue Store <strong>Options</strong> as {Look Ahead} will preposition dark parameters for just the tagged cue.</span></li>
-</ul></li>
+<li>Tap {DMX SETTINGS} in the patch toolbar found at the bottom of the Patch Workspace Template. The DMX Properties Pop-up will open.</li>
 </ul>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzMGK8HmzzbLpRxRNYeh8%2F24.3.webp?alt=media&amp;token=4f56ee15-cc74-4574-b077-257de6f78a21" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRZbgxqeSNTYs9CfcabMm%2F24.3.1.webp?alt=media&amp;token=2fd64c6c-b903-4168-87d8-f19188f7342d" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Under the Protocol heading, Tap {Art-Net} or {sACN} - The selection will turn red.</p></li>
+<li><p>Under Broadcast Options (VC, Art-Net, sACN) tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the etherCON Data ports.</p></li>
+</ol>
+<p>The Vibe is capable of transmitting more than one protocol at a time. To save bandwidth it is also possible to enable only the universes for each protocol that are required. Vibe has separate universe patches for VCs, Art-Net, and sACN. By default, universes are patched 1 to 1 for each protocol. It is possible to reroute universe output destinations. Normally fixtures patched to console source universe 1 would be transmitted on Ethernet destination universe 1 but sometimes when multiple consoles are on line it is desirable to reroute universes to avoid conflicts. Source universe 1 for example could be rerouted to destination universe 101.</p>
+<blockquote>
+<p>The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ⟶ 256 providing the total amount of universes does not exceed the purchased license.</p>
+</blockquote>
+<p><strong>Reroute Console Universes:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Under the <strong>Source Universe</strong> header, scroll the list to the source console universe number you wish to route <strong>from</strong>. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.</p></li>
+<li><p>Under the <strong>Destination Universe</strong> header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.</p></li>
+</ol>
+<p><strong>Additional functions:</strong></p>
+<ul>
+<li><p>Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.</p></li>
+<li><p>Clear all destination universes - Select the protocol to clear. Tap {Clear All}.</p></li>
+<li><p>Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.</p></li>
+<li><p>Reset all defaults for the selected protocol - Tap {Config All}.</p></li>
+</ul>
+<p><strong>Art-Net Subnet View:</strong></p>
+<ul>
+<li>Art-Net is designed in blocks of 16 universes. The blocks starts at subnet 0 and increments by 1 every 16 universes. The Subnet number and fixture number in the subnet may be viewed by toggling {Subnet View}.</li>
+</ul>
+<p><strong>Unicast Option for Art-Net and VC</strong></p>
+<p>It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. Ports that are not defined as unicast will be still sent as broadcast. Each port can be configured to multiple IPs. Few ports can be sent to the same IP.</p>
+<p><strong>To configure Unicast send</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap Vibe menu button</p></li>
+<li><p>Tap Settings button</p></li>
+<li><p>Tap <em>DMX Settings</em> button</p></li>
+<li><p>Go to <em>VC’s Out</em> or <em>Art-Net</em></p></li>
+<li><p>Change the toggle to <em>Unicast Settings</em></p></li>
+<li><p>Tap Add to add a new configuration line</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUygtX7FrLFBuX7Jpr2t1%2Fimage.png?alt=media&amp;token=d54d8b49-b039-488e-a894-99812a32711e" /></p>
+<p>On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10</p>
+<p>On the second line – port 5 will be sent also to IP 172.16.10.11</p>
+<p>On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12</p>
 </div>
-<div id="force-black-15.3.forceblack" class="section level2 hasAnchor" number="15.3">
-<h2><span class="header-section-number">15.3</span> Force Black {#15.3.ForceBlack}<a href="dark-parameter-positioning.html#force-black-15.3.forceblack" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When it is not desirable to see parameter values move from one cue state to another, Force Black may be used to save programing time. In a cue flagged as Force Black, the dimmer parameter is first “forced” to Black Out, parameters them move in black, then the dimmer parameter is faded up again. The total speed of a Force Black operation is relative to the overall cue time.</p>
-<p><strong>To flag a cue as a Force Black Cue:</strong></p>
+<div id="rdm-24.4.rdm" class="section level2 hasAnchor" number="24.4">
+<h2><span class="header-section-number">24.4</span> RDM {#24.4.RDM}<a href="network.html#rdm-24.4.rdm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Currently, RDM is fully supported on the 8 physical DMX output ports and Compulite VC protocol. <strong>View RDM information:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} On - The indicator will turn green and the cue will be flagged as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Open Patch Workspace.</p></li>
+<li><p>Tap the RDM tab in the lower right corner of the workspace.</p></li>
+<li><p>Tap {Get Devices} - The system will scan and display RDM compliant devices.</p></li>
+<li><p>If new devices are added, press {Re Scan}. Full RDM management will be available in future releases.</p></li>
 </ol>
-<p><strong>To remove a Force Black flag:</strong></p>
+</div>
+<div id="citp-24.5.citp" class="section level2 hasAnchor" number="24.5">
+<h2><span class="header-section-number">24.5</span> CITP {#24.5.CITP}<a href="network.html#citp-24.5.citp" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>CITP Popup</strong></p>
+<p>This popup gathers all the CITP capabilities of the Vibe together.</p>
+<p><strong>To open the CITP Popup</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>[QLIST [#] (if not on Master Controller) [CUE] [#] [SETTINGS].</p></li>
-<li><p>Toggle {Force Black} Off - The indicator will turn off and the cue will no longer act as a Force Black cue.</p></li>
-<li><p>Press [Enter] or tap <a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/></a> to close the pop-up.</p></li>
+<li><p>Tap Vibe menu button</p></li>
+<li><p>In Settings, Tap CITP Settings</p></li>
 </ol>
+<p>In the popup there are 4 tabs:</p>
+<p><strong>General CITP Settings</strong></p>
+<p>This tab shows the general information about the console and gives the option to enable/disable CITP communication from/to this console.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwXqFHABn8Y02rKS0aClC%2Fimage.png?alt=media&amp;token=54609c14-83fb-4f2a-a0cc-c94f4407e39e" /></p>
+<p><strong>Media Servers</strong></p>
+<p>This tab shows a list of the detected Media Servers on the network. In order to connect to a media server and start a session, select a media server from the list and press <em>Connect</em>.</p>
+<p>In order to link a media server to a specific fixture, select a connected media server from the list and tap <em>Configure</em>. A popup will appear where you can choose which fixtures you want to link.</p>
+<p>In order to get all the available data from a media server, select a connected and linked media server from the list, and tap <em>Get Data</em>. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh3TOxEoJXcctMpwn2sJZ%2Fimage.png?alt=media&amp;token=9eb3bec8-bf79-43bf-97e1-dd79baf7da90" /></p>
+<p><strong>Visualizers</strong>
+This tab shows a list of the detected Visualizers on the network. In order to connect to a visualizer and start a session, select it from the list and tap Connect. In order to get the patch from a connected visualizer, select it from the list and tap Get Show. This action will clear the current show, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create it on your show.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUENsFjNTKcMOaF7bbOwM%2Fimage.png?alt=media&amp;token=39bb4fba-348e-4130-9df8-344239a287c5" /></p>
+<p><strong>Consoles</strong></p>
+<p>This tab shows a list of the detected consoles on the network that are using CITP and their state.
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFcpkKcW84Yay2mK4SL4y%2Fimage.png?alt=media&amp;token=70780c8c-d341-42d3-846f-36fe9e6be416" /></p>
+<p><strong>Auto Patch from Capture</strong></p>
+<p>It is possible to sync the show from Capture. In order to do that you need to set the Capture CITP settings to use Standard Multicast and select the relevant IP address.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FCt3bPG8w7qkGAHfPUj7l%2Fimage.png?alt=media&amp;token=ff89b3eb-5b62-4981-80f9-1a0c7cf599b0" /></p>
+<p>In addition, make sure Vibe and Capture are on the same subnet. After finishing preparing the show on Capture, go to Vibe, open the CITP popup, enable the CITP and connect to the Capture from the Visualizers tab. Then <em>Get Data</em> from Capture and you should be ready to go.</p>
 
 </div>
 </div>
@@ -469,8 +551,8 @@
           </div>
         </div>
       </div>
-<a href="playback-controllers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="macros.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="media-servers.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
