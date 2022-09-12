@@ -8,21 +8,21 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
 
 **The following is covered in this section:**
 
--   [21.1. Timecode and Timeline basics](#21.1.TimecodeandTimelinebasics)
+-   [21.1. Timecode and Timeline basics](#TimecodeandTimelinebasics-21.1.)
     
--   [21.2. Create a Timeline View](#21.2.CreateaTimelineView)
+-   [21.2. Create a Timeline View](#CreateaTimelineView-21.2.)
     
--   [21.3. Configuring Timecode](#21.3.ConfiguringTimecode)
+-   [21.3. Configuring Timecode](#ConfiguringTimecode-21.3.)
     
--   [21.4. Recording Timeline Tracks](#21.4.RecordingTimelineTracks)
+-   [21.4. Recording Timeline Tracks](#RecordingTimelineTracks-21.4.)
     
--   [21.5. Executing and Editing Events](#21.5.ExecutingandEditingEvents)
+-   [21.5. Executing and Editing Events](#ExecutingandEditingEvents-21.5.)
     
--   [21.6. Markers](#21.6.Markers)
+-   [21.6. Markers](#Markers-21.6.)
 
--   [21.7. Time Format](#21.7.TimeFormat)
+-   [21.7. Time Format](#TimeFormat-21.7.)
 
-## Timecode and Timeline basics {#21.1.TimecodeandTimelinebasics}
+## Timecode and Timeline basics {#TimecodeandTimelinebasics-21.1.}
 
 
 Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.
@@ -57,7 +57,7 @@ Supported frame rates are:
 -   30 FPS
 
 
-## Create a Timeline View {#21.2.CreateaTimelineView}
+## Create a Timeline View {#CreateaTimelineView-21.2.}
 
 
 When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.
@@ -85,7 +85,7 @@ When starting a new show any Timeline views stored in Layouts will be empty and 
 6.  Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.
 
 
-## Configuring Timecode {#21.3.ConfiguringTimecode}
+## Configuring Timecode {#ConfiguringTimecode-21.3.}
 
 **Vibe has Timecode connectors for the following:**
 
@@ -135,7 +135,7 @@ When starting a new show any Timeline views stored in Layouts will be empty and 
 6.  <span style="color:Gray">Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</span>
 
 
-## Recording Timeline Tracks {#21.4.RecordingTimelineTracks}
+## Recording Timeline Tracks {#RecordingTimelineTracks-21.4.}
 
 After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in "real time" and then edited.
 
@@ -190,7 +190,7 @@ In the grid view of the Timeline,  it is now possible to see all events from all
 
 
 
-## Executing and Editing Events {#21.5.ExecutingandEditingEvents}
+## Executing and Editing Events {#ExecutingandEditingEvents-21.5.}
 
 
 **To Execute timeline events:**
@@ -312,7 +312,7 @@ These commands will affect the selected timelines in the sequence. Some sequence
 	 **e.** Paste – 		 	will paste the copied timelines from the clipboard
 	
 
-## Markers {#21.6.Markers}
+## Markers {#Markers-21.6.}
 
 
 To aid in timeline navigation, Markers may be inserted.
@@ -331,7 +331,7 @@ To insert a marker:
 -   Press 🗑️ to delete a marker
 
 
-## Time Format {#21.7.TimeFormat}
+## Time Format {#TimeFormat-21.7.}
 
 It is possible to view the timeline and events data in different time
 formats.

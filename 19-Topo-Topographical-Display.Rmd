@@ -5,14 +5,14 @@ It is sometimes useful to organize fixture selection in a graphical manner inste
 
 **The following is covered in this chapter:**
 
-- [19.1. Creating a Topo View](#19.1.CreatingaTopoView)
-- [19.2. Topo Menu](#19.2.TopoMenu)
-- [19.3. Creating a Topo](#19.3.CreatingaTopo)
-- [19.4. Adding fixtures to a Topo](#19.4.AddingfixturestoaTopo)
-- [19.5. Adding Pixel Maps](#19.5.AddingPixelMaps)
-- [19.6. Adding text and background elements](#19.6.Addingtextandbackgroundelements)
+- [19.1. Creating a Topo View](#CreatingaTopoView-19.1.)
+- [19.2. Topo Menu](#TopoMenu-19.2.)
+- [19.3. Creating a Topo](#CreatingaTopo-19.3.)
+- [19.4. Adding fixtures to a Topo](#AddingfixturestoaTopo-19.4.)
+- [19.5. Adding Pixel Maps](#AddingPixelMaps-19.5.)
+- [19.6. Adding text and background elements](#Addingtextandbackgroundelements-19.6.)
 
-## Creating a Topo View {#19.1.CreatingaTopoView}
+## Creating a Topo View {#CreatingaTopoView-19.1.}
 When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTDS2G9ZiwCKwHmLfetSe%2F19.1%20topo.png?alt=media&token=4bc1efc8-ebaa-4d30-8fe0-7c5ce82c1a5e)
@@ -46,7 +46,7 @@ When starting a new show any Topo views stored in Layouts will be empty until th
 
 
 
-## Topo Menu {#19.2.TopoMenu}
+## Topo Menu {#TopoMenu-19.2.}
 
 
 The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.
@@ -146,7 +146,7 @@ c. {Tools}:
     
 4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. [20. XYZ Fixture Calibration.](https://vibemanual.compulite.com/xyz-fixture-calibration.html)
 
-## Creating a Topo {#19.3.CreatingaTopo}
+## Creating a Topo {#CreatingaTopo-19.3.}
 
 
 **To create a new Topo:** 
@@ -167,7 +167,7 @@ Navigate to a Topo view
 5. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) aor press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.
 
 
-## Adding fixtures to a Topo {#19.4.AddingfixturestoaTopo}
+## Adding fixtures to a Topo {#AddingfixturestoaTopo-19.4.}
 
 There are two ways to add fixtures to a Topo 
 
@@ -206,7 +206,7 @@ There are two ways to add fixtures to a Topo
 
 
 
-## Adding Pixel Maps {#19.5.AddingPixelMaps}
+## Adding Pixel Maps {#AddingPixelMaps-19.5.}
 
 The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. Matrix fixtures may be selected by blocks using the rectangle lasso selection tool, or free-form path tool.
 
@@ -243,7 +243,7 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
 2.  >👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
 
 
-## Adding text and background elements {#19.6.Addingtextandbackgroundelements}
+## Adding text and background elements {#Addingtextandbackgroundelements-19.6.}
 
 
 Additional elements may be added to a Topo. Currently available are {Text Label} and {Add Background} To add

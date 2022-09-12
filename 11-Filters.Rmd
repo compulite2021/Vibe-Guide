@@ -4,11 +4,11 @@ This chapter deals with filtering Editor parameters when storing objects and set
 
 **The following is covered in this chapter:**
 
-- [11.1. On the Fly Filters](#11.1.OntheFlyFilters)
-- [11.2. General Filters Tab](#11.2.GeneralFiltersTab)
-- [11.3 Library Defaults Tab](#11.3LibraryDefaultsTab)
+- [11.1. On the Fly Filters](#OntheFlyFilters-11.1.)
+- [11.2. General Filters Tab](#GeneralFiltersTab-11.2.)
+- [11.3 Library Defaults Tab](#LibraryDefaultsTab-11.3)
 
-## On the Fly Filters {#11.1.OntheFlyFilters}
+## On the Fly Filters {#OntheFlyFilters-11.1.}
 
 
 11.1. On the Fly Filters
@@ -41,7 +41,7 @@ Options:
 - <span style="color:Gray">{Keep Filter till Reset} - Not implemented.</span>
 - <span style="color:Gray">{Save Filter and Apply} - Not yet implemented.</span>
 
-## General Filters Tab {#11.2.GeneralFiltersTab}
+## General Filters Tab {#GeneralFiltersTab-11.2.}
 
 
 Filters may be created "blind" without a fixture and parameter selection. They may be "Include" or "Exclude" depending on how the filters are created. Filters are automatically saved in the **Filters Library.**
@@ -80,7 +80,7 @@ Filters may be created "blind" without a fixture and parameter selection. They m
 
 
 
-## Library Defaults Tab {#11.3LibraryDefaultsTab}
+## Library Defaults Tab {#LibraryDefaultsTab-11.3}
 
 When storing Bank Libraries, filters are used to exclude parameters from unrelated banks. The Library filter defaults are set under the **Filters** pop-up, **Library Defaults** tab.
 

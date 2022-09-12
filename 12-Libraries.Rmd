@@ -5,12 +5,12 @@ This chapter deals with creating and editing Libraries.
 
 **The following is covered in this chapter:**
 
-- [12.1. What are Libraries](#12.1.WhatareLibraries)
-- [12.2. Store and Modify Bank Libraries](#12.2.StoreandModifyBankLibraries)
-- [12.3. Object Libraries](#12.3.ObjectLibraries)
+- [12.1. What are Libraries](#WhatareLibraries-12.1.)
+- [12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.)
+- [12.3. Object Libraries](#ObjectLibraries-12.3.)
 
 
-## What are Libraries {#12.1.WhatareLibraries}
+## What are Libraries {#WhatareLibraries-12.1.}
 
 **Vibe has two types of Libraries, Bank Libraries and Object Libraries:**
 
@@ -40,7 +40,7 @@ This chapter deals with creating and editing Libraries.
 >Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.
 
 
-## Store and Modify Bank Libraries {#12.2.StoreandModifyBankLibraries}
+## Store and Modify Bank Libraries {#StoreandModifyBankLibraries-12.2.}
 
 
 12.2. Store and Modify Bank Libraries
@@ -207,7 +207,7 @@ Library Settings may be changed at any time after they are created using the Lib
 >For most Delete functions, pressing [DELETE] [DELETE] will do the same as pressing [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to complete the operation.
 
 
-## Object Libraries {#12.3.ObjectLibraries}
+## Object Libraries {#ObjectLibraries-12.3.}
 
 
 **See:**

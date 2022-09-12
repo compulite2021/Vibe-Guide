@@ -6,11 +6,11 @@ This chapter deals with saving and loading Vibe show files as well as the import
 
 **The following is covered in this chapter:**
 
--  [5.1 Show Menu](#5.1-Show-Menu)
--  [5.2 Load Vector Show](#5.2-Load-Vector-Show)
+-  [5.1 Show Menu](#Show-Menu-5.1)
+-  [5.2 Load Vector Show](#Load-Vector-Show-5.2)
 
 
-## Show Menu {#5.1-Show-Menu}
+## Show Menu {#Show-Menu-5.1}
 
 
 The Show menu is the first item of the {VIBE} Menu. It contains 5 sub menus:
@@ -32,7 +32,7 @@ The Show menu is the first item of the {VIBE} Menu. It contains 5 sub menus:
 
 5. **{Load Vector Show}** - ([5.2 Load Vector Show](https://vibemanual.compulite.com/file-management.html#load-vector-show)).
 
-## Load Vector Show {#5.2-Load-Vector-Show}
+## Load Vector Show {#Load-Vector-Show-5.2}
 
 
 Vector Shows may be loaded with the following limitations:

@@ -5,12 +5,12 @@ This chapter discusses Vibe's two effect editors.
 
 **The following is covered in this chapter:**
 
-- [13.1. Effect Basics](#13.1.EffectBasics)
-- [13.2. Smart Screen Effects Editor](#13.2.SmartScreenEffectsEditor)
-- [13.3. Advanced Effects Editor](#13.3.AdvancedEffectsEditor)
+- [13.1. Effect Basics](#EffectBasics-13.1.)
+- [13.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-13.2.)
+- [13.3. Advanced Effects Editor](#AdvancedEffectsEditor-13.3.)
 
 
-## Effect Basics {#13.1.EffectBasics}
+## Effect Basics {#EffectBasics-13.1.}
 
 
 
@@ -138,7 +138,7 @@ Vibe **Effects** are made up of **Effect Events** running along horizontal **Eff
 
 
 
-## Smart Screen Effects Editor {#13.2.SmartScreenEffectsEditor}
+## Smart Screen Effects Editor {#SmartScreenEffectsEditor-13.2.}
 
 The Smart Screen Effects Editor allows users to quickly build effects within the normal work flow of the console while still having access to the main live displays. **Effect Tracks** are created for every selected parameter but they are hidden to remove screen clutter. Some advance operations are removed to speed up programming of simple effects.
 
@@ -231,7 +231,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 
 
-## Advanced Effects Editor {#13.3.AdvancedEffectsEditor}
+## Advanced Effects Editor {#AdvancedEffectsEditor-13.3.}
 
 Both Effect Editors write to the same Effect Engine. Either or both may be used to create effects. Whichever is opened at the time will be synchronized to the Effects Engine, but only **one** Effect Editor may open at a time.
 

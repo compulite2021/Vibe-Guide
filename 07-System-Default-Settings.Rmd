@@ -5,14 +5,14 @@ This chapter deals with customizing system settings to suit programming styles.
 
 **The following is covered in this chapter:**
 
--  [7.1. Editing](#7.1.Editing)
--  [7.2. Timing](#7.2.Timing)
--  [7.3. Network](#7.3.Network)
--  [7.4. Hardware](#7.4.Hardware)
--  [7.5. Defaults](#7.5.Defaults)
--  [7.6. System](#7.6.System)
+-  [7.1. Editing](#Editing-7.1.)
+-  [7.2. Timing](#Timing-7.2.)
+-  [7.3. Network](#Network-7.3.)
+-  [7.4. Hardware](#Hardware-7.4.)
+-  [7.5. Defaults](#Defaults-7.5.)
+-  [7.6. System](#System-7.6.)
 
-## Editing {#7.1.Editing}
+## Editing {#Editing-7.1.}
 
 
 System Settings defaults are accessed by selecting {System Settings} from the {Vibe} menu or by tapping the {System Status} area at the far right side of the controller displays.
@@ -120,7 +120,7 @@ Tracking - Non-Tracking:
     
 -   {Apply to Defaults} -Updates system setting changes to **show specific** defaults without exiting the pop-up.
 
-## Timing {#7.2.Timing}
+## Timing {#Timing-7.2.}
 
 
 **Timing Properties** - Cue Section
@@ -169,7 +169,7 @@ Tracking - Non-Tracking:
 -   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
 
 
-## Network {#7.3.Network}
+## Network {#Network-7.3.}
 
 
 **Network Properties** - Local
@@ -217,7 +217,7 @@ Tracking - Non-Tracking:
 - Related to starting or ending a session with a master console. Later on this in the Master-Slave and Multiuser chapters.
 
 
-## Hardware {#7.4.Hardware}
+## Hardware {#Hardware-7.4.}
 
 
 **Hardware Properties** - Panel Backlight
@@ -242,7 +242,7 @@ Tracking - Non-Tracking:
 
 -   Opens relevant Windows setting screen.
 
-## Defaults {#7.5.Defaults}
+## Defaults {#Defaults-7.5.}
 
 
 **Defaults** - Initial settings for most system objects.
@@ -600,7 +600,7 @@ When using pre-built effects on Pan & Tilt parameters, the default size of the e
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSvpUbdsjf1qb4sbjxjRD%2F7.5.11.png?alt=media&token=4263c8e1-10ed-415f-a5e4-b32fdae53458)
 
 
-## System {#7.6.System}
+## System {#System-7.6.}
 
 **Default** - System
 

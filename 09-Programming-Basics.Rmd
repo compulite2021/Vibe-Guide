@@ -6,13 +6,13 @@ This chapter deals with the fundamentals of building stage looks in the editor.
 
 **The following is covered in this chapter:**
 
-- [9.1. Editor](#9.1.Editor)
-- [ 9.2. Editor Tools](#9.2.EditorTools)
-- [9.3. Working with Fixtures](#9.3.WorkingwithFixtures)
-- [9.4. Groups](#9.4.Groups)
+- [9.1. Editor](#Editor-9.1.)
+- [ 9.2. Editor Tools](#EditorTools-9.2.)
+- [9.3. Working with Fixtures](#WorkingwithFixtures-9.3.)
+- [9.4. Groups](#Groups-9.4.)
 
 
-## Editor {#9.1.Editor}
+## Editor {#Editor-9.1.}
 
 Editor Basics:
 
@@ -104,7 +104,7 @@ Vibe has two Blind Editor behaviours:
     
 2. Toggle [VIBE ]+[BLIND] - Copies the contents of the Blind Editor to the Live Editor (The original contents stay in the Blind Editor
 
-## Editor Tools {#9.2.EditorTools}
+## Editor Tools {#EditorTools-9.2.}
 
 **Editor Tools:**
 
@@ -438,7 +438,7 @@ By default released fixtures return to their home values as defined by the devic
 
 1.  Press [SCENE] [HOME] [DELETE] - Home values will return to the device profile's home values.
 
-## Working with Fixtures {#9.3.WorkingwithFixtures}
+## Working with Fixtures {#WorkingwithFixtures-9.3.}
 
 Working with Fixtures:
 
@@ -967,7 +967,7 @@ Selected fixtures and/or parameters may be sent to their defaults using the [HOM
 -   Press [SCENE] [HOME] [DELETE]
 
 
-## Groups {#9.4.Groups}
+## Groups {#Groups-9.4.}
 
 
 > <span style="color:Red">The order that fixtures are typed is stored with a group</span>.
