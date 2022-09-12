@@ -159,7 +159,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 **For more detail see:**
 
-[9.3.4. Smart Screen](https://compulite2021.github.io/Vibe-Guide/programming-basics.html#smart-screen-1)
+[9.3.4. Smart Screen](#Smart-Screen-9.3.4)
 
 
 ## Toolbars {#Toolbars-4.6}
@@ -193,7 +193,7 @@ Vibe has two ways to display parameter data:
 
 **The Live Display has a number of options that may be set under the Options field:**
 
--   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)     - Opens Live View Settings. (See [4.6.1.Live View Settings](/s/3kS90tLsADGm1ocbe7q9/~/changes/WdkBzgj8gGqCInAC3DkK/4.-graphical-user-interface-gui/4.-graphical-user-interface-gui/4.8.1.-live-view-settings).)
+-   [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvaysqarWpQc0R3bboy5Z%2Fimage.png?alt=media&token=57f74f8f-179a-4217-ac6f-8100c9e8cb9b" width="30"/>](image.png)     - Opens Live View Settings. (See [4.6.1.Live View Settings](#Live-View-Settings-4.6.1).)
     
 -   **Fit** - Opens column width options. 
 
@@ -230,7 +230,7 @@ Vibe has two ways to display parameter data:
     
     ◾ Text + Percentage
 
-### Live View Settings
+### Live View Settings {#Live-View-Settings-4.6.1}
 
 
 

@@ -54,7 +54,7 @@ All manual parameter modification occurs in the **EDITOR**. (Programmer in some 
 -   Press [VIBE] + [RESET]
     
 
-See also: [9.3.10. Release and Home Sequences](https://vibemanual.compulite.com/programming-basics.html#release-and-home-sequences)
+See also: [9.3.10. Release and Home Sequences](#Release-and-Home -Sequences-9.3.1)
 
 ### Blind Editor
 
@@ -76,15 +76,15 @@ Vibe has two Blind Editor behaviours:
 3.  Store objects as usual - See also:
     
 
--   9.4. Creating and Applying Groups
+-   [9.4. Creating and Applying Groups](#Groups-9.4.) 
     
--   10.3. Storing Cues and Scenes Directly to Controllers
+-   [10.3. Storing Cues and Scenes Directly to Controllers](#StoringCuesandScenesDirectlytoControllers-10.3.)
     
--   10.5. Storing Cues to the Master Controller
+-   [10.5. Storing Cues to the Master Controller](#StoringCuestotheMasterController-10.5.)
     
--   10.6. Storing Qlist Cues to any Controller
+-   [10.6. Storing Qlist Cues to any Controller](#StoringQlistCuestoanyController-10.6.)
     
--   12.2. Store and Modify Bank Libraries
+-   [12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.)
     
 
 **To edit a cue in the Blind Editor:**
@@ -184,7 +184,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 9.   Open the Advanced Effects editor and program the desired effect.
     
 
--   See: [13.3. Advanced Effects Editor](https://vibemanual.compulite.com/effects-1.html#advanced-effects-editor)
+-   See: [13.3. Advanced Effects Editor](#AdvancedEffectsEditor-13.3.)
     
 
 > Simple Block and Sub Block groupings may be created within both Effects Editors. The pattern is for advanced blocks and groupings
@@ -200,7 +200,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 2.  Using keypad syntax.
     
 
-See: [9.3.7. Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
+See: [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
 
 **Using [Fan] Mode:**
 
@@ -288,7 +288,7 @@ Instead of fanning Blocks based on the selection, fixture **Groups** may also be
     
 -   Use any of the above methods to fan parameters by Group Parameters may also be fanned using keypad syntax.
     
--   [Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
+-   [Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
 
 ### Highlight Mode
 
@@ -442,27 +442,27 @@ By default released fixtures return to their home values as defined by the devic
 
 Working with Fixtures:
 
--   [9.3.1. Fixture Selection basics](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-basics)
+-   [9.3.1. Fixture Selection basics](#Fixture-Selection-basics-9.3.11)
     
--   [9.3.2. What are Parameters](https://vibemanual.compulite.com/programming-basics.html#what-are-parameters)
+-   [9.3.2. What are Parameters](#What-are-Parameters-9.3.2.)
     
--   [9.3.3. Virtual Parameters](https://vibemanual.compulite.com/programming-basics.html#virtual-parameters)
+-   [9.3.3. Virtual Parameters](#Virtual-Parameters-9.3.3)
     
--   [9.3.4. Smart Screen](https://vibemanual.compulite.com/programming-basics.html#smart-screen-1)
+-   [9.3.4. Smart Screen](#Smart-Screen-9.3.4)
     
--   [9.3.5. Adjusting Parameters using the Wheel Picker](https://vibemanual.compulite.com/programming-basics.html#adjusting-parameters-using-the-wheel-picker)
+-   [9.3.5. Adjusting Parameters using the Wheel Picker](#Adjusting-Parameters-using-the-Wheel-Picker-9.3.5)
     
--   [9.3.6. Grab](https://vibemanual.compulite.com/programming-basics.html#grab)
+-   [9.3.6. Grab](#Grab-9.3.6.)
     
--   [9.3.7. Fixture Selection (Detailed)](https://vibemanual.compulite.com/programming-basics.html#fixture-selection-detailed)
+-   [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
     
--   [9.3.8. Setting Parameters using Main Encoder Wheels](https://vibemanual.compulite.com/programming-basics.html#setting-parameters-using-main-encoder-wheels)
+-   [9.3.8. Setting Parameters using Main Encoder Wheels](#Setting-Parameters-using-Main Encoder-Wheels-9.3.8.)
     
--   [9.3.9. Setting Parameters using Interactive Encoder Wheels](https://vibemanual.compulite.com/programming-basics.html#setting-parameters-using-interactive-encoder-wheels)
+-   [9.3.9. Setting Parameters using Interactive Encoder Wheels](#Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.)
     
--   [9.3.10. Release and Home Sequences](https://vibemanual.compulite.com/programming-basics.html#release-and-home-sequences)
+-   [9.3.10. Release and Home Sequences](#Release-and-Home-Sequences-9.3.1)
 
-### Fixture Selection basics
+### Fixture Selection basics {#Fixture-Selection-basics-9.3.11}
 
 Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may be stored and recalled using the **[GROUP]** key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.
 
@@ -499,7 +499,7 @@ Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may b
 
 > Vibe uses a precision algorithm for encoders. Based on the starting resolution, the slower an encoder is turned, the more resolution it has.
 
-### What are Parameters 
+### What are Parameters {#What-are-Parameters-9.3.2.}
 
 
 Parameters are any features of a device that may be manipulated and stored in an object. Examples of parameters would be:
@@ -542,7 +542,7 @@ Parameter values may be set using either Vibe's intuitive **Smart Screen** picke
 
 
 
-### Virtual Parameters
+### Virtual Parameters {#Virtual-Parameters-9.3.3}
 
 See:
 
@@ -550,7 +550,7 @@ See:
 
 
 
-### Smart Screen
+### Smart Screen {#Smart-Screen-9.3.4}
 
 
 The 11.6" multi-touch monitor directly above the 4 encoder wheels is referred to as the **Smart Screen.**
@@ -651,11 +651,11 @@ The Context sensitive area changes depending on the bank and fixture type. Where
 
 		-   Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
 
-Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](https://vibemanual.compulite.com/effects-1.html#smart-screen-effects-editor)
+Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-13.2.)
 
 
 
-### Adjusting Parameters using the Wheel Picker
+### Adjusting Parameters using the Wheel Picker {#Adjusting-Parameters-using-the-Wheel-Picker-9.3.5}
 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYRrblpqrjOFnaCqFguQy%2F9.3.5.webp?alt=media&token=35ce4615-8aa3-4192-a5c6-7db4e70d41c8)
@@ -722,7 +722,7 @@ Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](https://v
 
 
 
-### Grab
+### Grab {#Grab-9.3.6.}
 
 Grab is a powerful tool for selecting fixtures that meet a number of conditions. By default [GRAB] selects all fixtures with intensity or virtual intensity values above Zero **Pressing [GRAB] without a selection opens up a pop-up on the Smart Screen. It contains the following options:**
 
@@ -790,7 +790,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 
 
-### Fixture Selection (Detailed)
+### Fixture Selection (Detailed) {#Fixture-Selection-(Detailed)-9.3.7}
 
 
 > FIn this guide, FIXTURE will be the default SET but any SET (Channel, Spot, Matrix, Server, User) should also be applicable.
@@ -840,7 +840,7 @@ The rules for single digit plus Enter will also apply.
 
 
 
-### Setting Parameters using Main Encoder Wheels
+### Setting Parameters using Main Encoder Wheels {#Setting-Parameters-using-Main Encoder-Wheels-9.3.8.}
 
 Vibe features the **Smart Window** to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: 
 
@@ -889,7 +889,7 @@ Vibe features the **Smart Window** to simplify programming. Programming may also
 
 
 
-### Setting Parameters using Interactive Encoder Wheels
+### Setting Parameters using Interactive Encoder Wheels {#Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.}
 
 
 Vibe has 4 additional interactive push encoder wheels along the right hand side of the smart screen. The parameters assigned to the wheels are dependent on the bank and selected fixture type: 
@@ -910,7 +910,7 @@ In future releases it will be possible for users to customize the defaults.
 
 
 
-### Release and Home Sequences
+### Release and Home Sequences {#Release-and-Home-Sequences-9.3.1}
 
 
 **Release** - Removes fixtures or fixture parameter values from the editor 

@@ -9,7 +9,7 @@ This chapter provides an overview of Vibe hardware.
 -   [3.2. Editor Controls](#Editor-Controls-3.2)
 -   [3.3. Motorized Sliders and Qkeys](#Motorized-Sliders-and-Qkeys-3.3)
 -   [3.4. Master Controller and Control Keys](#Master-Controller-and-Control-Keys-3.4)
--   [3.5. Aux Qkeys, Grand Master, and Global Controllers](#Aux-Qkeys-Grand Master-and-Global-Controllers-3.5)
+-   [3.5. Aux Qkeys, Grand Master, and Global Controllers](#Aux-Qkeys-Grand-Master-and-Global-Controllers-3.5)
 
 
 ## Console {#Console-3.1}
@@ -112,7 +112,7 @@ Editor Controls are used to program and edit parameter values for all fixtures a
  • **[TEACH]** for BBM tap time
 
 
-## Aux Qkeys, Grand Master, and Global Controllers {#Aux-Qkeys-Grand Master-and-Global-Controllers-3.5}
+## Aux Qkeys, Grand Master, and Global Controllers {#Aux-Qkeys-Grand-Master-and-Global-Controllers-3.5}
 
 <p align="center">
   <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0sZ9sO4ZJRnSUlSMY8jv%2F3.5.webp?alt=media&token=35001380-7789-4973-bd6a-e0c6eeeb6edb">
