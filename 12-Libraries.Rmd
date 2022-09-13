@@ -212,14 +212,14 @@ Library Settings may be changed at any time after they are created using the Lib
 
 **See:**
 
--   [9.4. Groups](https://vibemanual.compulite.com/programming-basics.html#groups)
+-   [9.4. Groups](#Groups-9.4.)
     
--   [10.1. What Are Qlists, Cues, Scenes, and Submasters?](https://vibemanual.compulite.com/programming-cues-and-scenes.html#what-are-qlists-cues-scenes-and-submasters)
+-   [10.1. What Are Qlists, Cues, Scenes, and Submasters?](WhatAreQlists-Cues-Scenes-andSubmasters-10.1.)
     
--   [11.2. General Filters Tab](https://vibemanual.compulite.com/filters.html#general-filters-tab)
+-   [11.2. General Filters Tab](#GeneralFiltersTab-11.2.)
     
--   [16.1. Creating Macros](https://vibemanual.compulite.com/macros.html#creating-macros)
+-   [16.1. Creating Macros](#CreatingMacros-16.1.)
     
--   [17.1. Storing Snaps](https://vibemanual.compulite.com/snaps-snapshots.html#storing-snaps)
+-   [17.1. Storing Snaps](#StoringSnaps-17.1.)
 
 

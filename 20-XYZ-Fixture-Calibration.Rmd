@@ -1,5 +1,5 @@
 
-# XYZ Fixture Calibration
+# XYZ-Fixture-Calibration {#XYZ-Fixture-Calibration-20.0.}
 
 Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtures are calibrated, you can specify a point of the stage in Vibe, and all fixtures will point to it. There are few things that need to be done in order to calibrate the fixtures, and it depends on which visualizer you use. 
 

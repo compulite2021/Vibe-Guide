@@ -66,7 +66,7 @@ The Topo Menu is a hierarchical menu that provides the tools for creating and ed
 
 a. {Add Elements} - accesses the following:
 
-1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. [6.1. Fixture Sets.](https://vibemanual.compulite.com/patch.html#fixture-sets)  ,   [19.4. Adding fixtures to a Topo.](https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo)
+1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. [6.1. Fixture Sets.](#Fixture-Sets-6.1)  ,   [19.4. Adding fixtures to a Topo.](#AddingfixturestoaTopo-19.4.)
     
 2.   {Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps
 
@@ -144,7 +144,7 @@ c. {Tools}:
     
     - Reset
     
-4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. [20. XYZ Fixture Calibration.](https://vibemanual.compulite.com/xyz-fixture-calibration.html)
+4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. [20. XYZ Fixture Calibration.](#XYZ-Fixture-Calibration-20.0.)
 
 ## Creating a Topo {#CreatingaTopo-19.3.}
 
@@ -202,7 +202,7 @@ There are two ways to add fixtures to a Topo
     
 6.  Press, hold and drag the fixtures onto the Topo surface.
     
-7.  Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.[19.2. Topo Menu.](https://vibemanual.compulite.com/topo-topographical-display.html#topo-menu)
+7.  Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.[19.2. Topo Menu.](#TopoMenu-19.2.)
 
 
 
@@ -225,7 +225,7 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
     
 2.   👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.
     
-3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. [19.4. Adding fixtures to a Topo](https://vibemanual.compulite.com/topo-topographical-display.html#adding-fixtures-to-a-topo)
+3.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix. Usually, this will be to the top left corner. [19.4. Adding fixtures to a Topo](#AddingfixturestoaTopo-19.4.)
     
 4.  Release the fixtures and they will populate the pixel map. 
 

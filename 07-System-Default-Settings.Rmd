@@ -254,21 +254,21 @@ Tracking - Non-Tracking:
 
 **See:**
 
--  [7.5.1. Controller Settings](https://vibemanual.compulite.com/system-default-settings.html#controller-settings)
--  [7.5.2. Controller Actions](https://vibemanual.compulite.com/system-default-settings.html#controller-actions)
--  [7.5.3. Qlist Properties](https://vibemanual.compulite.com/system-default-settings.html#qlist-properties)
--  [7.5.4. Chaser Properties](https://vibemanual.compulite.com/system-default-settings.html#chaser-properties)
--  [7.5.5. Cue Settings](https://vibemanual.compulite.com/system-default-settings.html#cue-settings)
--  [7.5.6. Cue Store Options](https://vibemanual.compulite.com/system-default-settings.html#cue-store-options)
--  [7.5.7. Scene Settings](https://vibemanual.compulite.com/system-default-settings.html#scene-settings)
--  [7.5.8. Scene Store Options](https://vibemanual.compulite.com/system-default-settings.html#scene-store-options)
--  [7.5.9. Bank Library Options](https://vibemanual.compulite.com/system-default-settings.html#bank-library-options)
--  [7.5.10. Snap Settings](https://vibemanual.compulite.com/system-default-settings.html#snap-settings)
--  [7.5.11. Effects](https://vibemanual.compulite.com/system-default-settings.html#effects)
+-  [7.5.1. Controller Settings](#controller-settings-7.5.1.)
+-  [7.5.2. Controller Actions](#controller-actions-7.5.2.)
+-  [7.5.3. Qlist Properties](#qlist-properties-7.5.3.)
+-  [7.5.4. Chaser Properties](#chaser-properties-7.5.4.)
+-  [7.5.5. Cue Settings](#cue-settings-7.5.5.)
+-  [7.5.6. Cue Store Options](#cue-store-options-7.5.6.)
+-  [7.5.7. Scene Settings](#scene-settings-7.5.7.)
+-  [7.5.8. Scene Store Options](#scene-store-options-7.5.8.)
+-  [7.5.9. Bank Library Options](#bank-library-options-7.5.9.)
+-  [7.5.10. Snap Settings](#snap-settings-7.5.10.)
+-  [7.5.11. Effects](#effects-7.5.11.)
 
 
 
-### Controller Settings
+### Controller Settings {#controller-settings-7.5.1.}
 
 
 
@@ -326,7 +326,7 @@ Tracking - Non-Tracking:
 -   **Restores settings** - Resets Controller settings to their last stored configuration.
 
 
-### Controller Actions
+### Controller Actions {#controller-actions-7.5.2.}
 
 
 **Defaults** - Controller Default Actions
@@ -335,7 +335,7 @@ Tracking - Non-Tracking:
 
 **Qlists and Scenes:**
 
--   The Default button assignments when a Qlist or Scene is assigned to a controller ( **See:** [14.5. Configuring Controllers](https://vibemanual.compulite.com/playback-controllers.html#configuring-controllers))
+-   The Default button assignments when a Qlist or Scene is assigned to a controller ( **See:** [14.5. Configuring Controllers](#ConfiguringControllers-14.5.))
     
 **Bottom Controller Button for Submaster**
 
@@ -350,7 +350,7 @@ The default behavior for submaster's assignment on the bottom button is _Flash_
 
 
 
-### Qlist Properties
+### Qlist Properties {#qlist-properties-7.5.3.}
 
 
 
@@ -426,7 +426,7 @@ ___
 
 **Restore default** - Resets Qlist properties to their last stored configuration.
 
-### Chaser Properties
+### Chaser Properties {#chaser-properties-7.5.4.}
 
 
 **Defaults** - Chase Properties
@@ -472,7 +472,7 @@ Restore default:
 
 
 
-### Cue Settings
+### Cue Settings {#cue-settings-7.5.5.}
 
 
 
@@ -484,13 +484,13 @@ Restore default:
 
 -   **Time:**
  
-    - [10.11.1. Assigning Cue Time](https://vibemanual.compulite.com/programming-cues-and-scenes.html#assigning-cue-time)
+  - [10.11.1. Assigning Cue Time](#assigning-cue-time-10.11.1.)
  
-	 - [10.11.2. Wait and Follow Times](https://vibemanual.compulite.com/programming-cues-and-scenes.html#wait-and-follow-times)
+	 - [10.11.2. Wait and Follow Times](#wait-and-follow-times-10.11.2.)
     
 -   **Properties:** 
 
-	- [10.12.3. Tracking Options](https://vibemanual.compulite.com/programming-cues-and-scenes.html#tracking-options)
+	- [10.12.3. Tracking Options](#tracking-options-10.12.3.)
 
 
 **Update Popup**
@@ -502,18 +502,18 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Cue Store Options
+### Cue Store Options {#cue-store-options-7.5.6.}
 
 
 **Default** - Cue Store Options
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjkzU21qPYa1QeWdSjgIe%2F7.5.6.webp?alt=media&token=f9d16c19-eb41-479b-9be3-e3a4d2dfd36c)
 
-**See**: [10.7. Cue Store Options](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-store-options-1)
+**See**: [10.7. Cue Store Options](#CueStoreOptions-10.7.)
 
 
 
-### Scene Settings
+### Scene Settings {#scene-settings-7.5.7.}
 
 
 **Defaults** - Scene Settings
@@ -527,18 +527,18 @@ The default for the _New Values_ is _Master PB Only_
 -   **Units Button** - Sets the time units (H/M/S/Mil)
 
 
-### Scene Store Options
+### Scene Store Options {#scene-store-options-7.5.8.}
 
 
 **Default** - Cue Store Options
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDgLaAhLr29G2p63xJTdO%2F7.5.8.webp?alt=media&token=739d0f7d-3b86-45c5-a74c-5d035cab9acd)
 
-**Similar to Cue Store Options. See:** [10.7. Cue Store Options](https://vibemanual.compulite.com/programming-cues-and-scenes.html#cue-store-options-1)
+**Similar to Cue Store Options. See:** [10.7. Cue Store Options](#CueStoreOptions-10.7.)
 
 
 
-### Bank Library Options
+### Bank Library Options {#bank-library-options-7.5.9.}
 
 **Default** - Lib Options
 
@@ -554,7 +554,7 @@ The default for the _New Values_ is _Master PB Only_
 - Shape
 
 **See:**  
-[12.2. Store and Modify Bank Libraries](https://vibemanual.compulite.com/libraries.html#store-and-modify-bank-libraries) 
+[12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.) 
 
 **Options for Effect include an additional option:** 
 
@@ -562,7 +562,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Snap Settings
+### Snap Settings {#snap-settings-7.5.10.}
 
 **Default** - Snap Settings
 
@@ -588,11 +588,11 @@ The default for the _New Values_ is _Master PB Only_
 -   Sets the time units. (H/M/S/Mil)
     
 
-See: [17. Snaps](https://vibemanual.compulite.com/snaps-snapshots.html)
+See: [17. Snaps](#Snaps-17.0.)
 
 
 
-### Effects
+### Effects {#effects-7.5.11.}
 
 
 When using pre-built effects on Pan & Tilt parameters, the default size of the effect is 20%.

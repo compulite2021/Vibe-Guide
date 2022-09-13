@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 21 Time Code | Vibe Manual</title>
+  <title>Chapter 20 XYZ-Fixture-Calibration | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 21 Time Code | Vibe Manual" />
+  <meta property="og:title" content="Chapter 20 XYZ-Fixture-Calibration | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 21 Time Code | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 20 XYZ-Fixture-Calibration | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="XYZ-Fixture-Calibration-20.0..html"/>
-<link rel="next" href="midi.html"/>
+<link rel="prev" href="topo-topographical-display.html"/>
+<link rel="next" href="time-code.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -374,223 +374,48 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="time-code" class="section level1 hasAnchor" number="21">
-<h1><span class="header-section-number">Chapter 21</span> Time Code<a href="time-code.html#time-code" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.</p>
-<blockquote>
-<p><span style="color:Red">This feature is under development and this section is preliminary.</span></p>
-</blockquote>
-<p><strong>The following is covered in this section:</strong></p>
+<div id="XYZ-Fixture-Calibration-20.0." class="section level1 hasAnchor" number="20">
+<h1><span class="header-section-number">Chapter 20</span> XYZ-Fixture-Calibration<a href="XYZ-Fixture-Calibration-20.0..html#XYZ-Fixture-Calibration-20.0." class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Fixtures can be calibrated easily using XYZ values of the Visualizer. When fixtures are calibrated, you can specify a point of the stage in Vibe, and all fixtures will point to it. There are few things that need to be done in order to calibrate the fixtures, and it depends on which visualizer you use.</p>
+<p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><p><a href="time-code.html#TimecodeandTimelinebasics-21.1.">21.1. Timecode and Timeline basics</a></p></li>
-<li><p><a href="time-code.html#CreateaTimelineView-21.2.">21.2. Create a Timeline View</a></p></li>
-<li><p><a href="time-code.html#ConfiguringTimecode-21.3.">21.3. Configuring Timecode</a></p></li>
-<li><p><a href="time-code.html#RecordingTimelineTracks-21.4.">21.4. Recording Timeline Tracks</a></p></li>
-<li><p><a href="time-code.html#ExecutingandEditingEvents-21.5.">21.5. Executing and Editing Events</a></p></li>
-<li><p><a href="time-code.html#Markers-21.6.">21.6. Markers</a></p></li>
-<li><p><a href="time-code.html#TimeFormat-21.7.">21.7. Time Format</a></p></li>
+<li><a href="XYZ-Fixture-Calibration-20.0..html#CalibrationinWYSIWYG-20.1.">20.1. Calibration in WYSIWYG</a></li>
+<li><a href="XYZ-Fixture-Calibration-20.0..html#CalibrationinCapture-20.2.">20.2. Calibration in Capture</a></li>
 </ul>
-<div id="TimecodeandTimelinebasics-21.1." class="section level2 hasAnchor" number="21.1">
-<h2><span class="header-section-number">21.1</span> Timecode and Timeline basics<a href="time-code.html#TimecodeandTimelinebasics-21.1." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.</p>
-<p>Vibe can read the following sources:</p>
-<ul>
-<li><p>Virtual Local - Internally generated timecode.</p></li>
-<li><p>Physical Local - SMPTE or MIDI timecode received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
-<li><p>USB MIDI class compliant timecode.</p></li>
-<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
-<li><p>Input sources from remote multi-User consoles and devices</p></li>
-</ul>
-<p>Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&amp;token=b585f40e-5bdb-4475-8098-b00bb3ebce08" /></p>
-<p>Vibe automatically matches frame rates to the incoming source.</p>
-<p>Supported frame rates are:</p>
-<ul>
-<li><p>24 FPS</p></li>
-<li><p>25 FPS</p></li>
-<li><p>29.97 FPS drop-frame</p></li>
-<li><p>30 FPS</p></li>
-</ul>
+<div id="CalibrationinWYSIWYG-20.1." class="section level2 hasAnchor" number="20.1">
+<h2><span class="header-section-number">20.1</span> Calibration in WYSIWYG<a href="XYZ-Fixture-Calibration-20.0..html#CalibrationinWYSIWYG-20.1." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Calibrate using WYSIWYG</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>On Vibe, go to <a href="patch.html#patch">PATCH</a> page and tap on {FIXTURE CALIBRATION}</p></li>
+<li><p>Tap on {Stage} button and set the stage dimensions.</p></li>
+<li><p>Specify the drawing origin point at the center of the stage. For this, it will be necessary to work in the CAD tab using the TOP view. Press on the top left corner (that connects the vertical ruler and the horizontal ruler – (see <span style="color:LightSkyBlue">Blue Frame</span>), and select the option of ’Mover Ruler (Set View Origin)ʼ.</p></li>
+<li><p>Select the center of your stage (see <span style="color:Red">Red Arrow</span> in the Picture)</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXCTVpvo6MK4hT6KirGey%2F20.1.webp?alt=media&amp;token=539a482f-4d3b-40ea-a25e-3199c557973b" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Go to ‘Data tab’.</p></li>
+<li><p>When in the Data tab, press on Option (in the toolbar) ⟶ Document Options ⟶ Draw Defaults - and change the units to metric.</p></li>
+<li></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FevwfnkgAvMLdIU4zgZBr%2F20.1.1.webp?alt=media&amp;token=2ef469e1-b321-48d2-89f2-da906b386daf" /></p>
 </div>
-<div id="CreateaTimelineView-21.2." class="section level2 hasAnchor" number="21.2">
-<h2><span class="header-section-number">21.2</span> Create a Timeline View<a href="time-code.html#CreateaTimelineView-21.2." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&amp;token=86dd2f10-6d2a-4905-bfeb-baec212c85db" /></p>
-<p align="center">
-Timeline view with two timeline tracks, the cursor, and a marker
-</p>
-<p><strong>To add a Timeline view to a page:</strong></p>
+<div id="CalibrationinCapture-20.2." class="section level2 hasAnchor" number="20.2">
+<h2><span class="header-section-number">20.2</span> Calibration in Capture<a href="XYZ-Fixture-Calibration-20.0..html#CalibrationinCapture-20.2." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Calibrate using Capture</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.</p></li>
-<li><p>Tap {Pages} - Page display will open.</p></li>
-<li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
-<li><p>Tap the Lock/Unlock icon to enable adding a new view.</p></li>
-<li><p>On the screen with the blank workspace, open the {Vibe} menu again and select}</p>
-<p>⟶ {Display Objects}
-⟶ {Timeline View} - A blank timeline view will appear on the workspace.</p></li>
-<li><p>Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.</p></li>
+<li><p>On Vibe, go to patch and tap on ‘Fixture Calibration’.</p></li>
+<li><p>Tap on ‘Stage’ button and set the stage dimensions.</p></li>
+<li><p>Place your center of the stage in the intersect point of the 2 Bold Axis (when the CAD displays a view from the Top).</p></li>
 </ol>
-</div>
-<div id="ConfiguringTimecode-21.3." class="section level2 hasAnchor" number="21.3">
-<h2><span class="header-section-number">21.3</span> Configuring Timecode<a href="time-code.html#ConfiguringTimecode-21.3." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Vibe has Timecode connectors for the following:</strong></p>
-<ul>
-<li><p>Audio input Combi Jack with:</p>
-<ul>
-<li><p>Female unbalanced line level input on 1/4” Phone jack</p></li>
-<li><p>Female 3 pin XLR balanced line level input.</p></li>
-</ul></li>
-<li><p>5 Pin DIN connector for MIDI and MIDI timecode input.</p></li>
-</ul>
-<p><strong>Additionally, the following general purpose ports may be used for Timecode:</strong></p>
-<ul>
-<li><p>USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.</p></li>
-<li><p>Compulite devices that support MIDI over Ethernet can also be used.</p></li>
-</ul>
-<p><strong>Recommended quality and level for SMPTE:</strong></p>
-<ul>
-<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
-<li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
-</ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
-<p align="center">
-1/O Settings Pop-up in Timecode Tab
-</p>
-<p><strong>Enable Timecode:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>From the patch toolbar tap {I/O Settings}</p></li>
-<li><p>For Tap {General} tab and select:</p>
-<ul>
-<li><p>{Local MIDI} to enable the DIN connector MIDI.</p></li>
-<li><p>{External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
-</ul></li>
-<li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
-<li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
-<li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
-<li><p><span style="color:Gray">Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</span></p></li>
-</ol>
-</div>
-<div id="RecordingTimelineTracks-21.4." class="section level2 hasAnchor" number="21.4">
-<h2><span class="header-section-number">21.4</span> Recording Timeline Tracks<a href="time-code.html#RecordingTimelineTracks-21.4." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in “real time” and then edited.</p>
-<p><strong>To create a timeline track:</strong></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&amp;token=6d042dc3-2c94-47b0-910d-e5481466fa85" /></p>
-<ol style="list-style-type: decimal">
-<li><p>Open a Time Line View.</p></li>
-<li><p>Tap {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} - The “Create New Timeline” pop-up will open.</p></li>
-<li><p>Select a timeline number and name.</p></li>
-<li><p>Choose Start from {Blank} Timeline as an option.</p></li>
-<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p>
-<ul>
-<li><p>Virtual Local - Use internal timecode clock.</p></li>
-<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
-<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
-</ul></li>
-<li><p>Enable the red {Record} button or the {+ Record} button.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p>
-<ul>
-<li><p>Record overwrites existing events.</p></li>
-<li><p>(+) Record adds events to existing events.</p></li>
-</ul></li>
-<li><p>If using internal TC, press Play.</p></li>
-<li><p>If using external TC start the timecode source.</p></li>
-<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
-<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
-</ol>
-<p><strong>Timeline Features</strong></p>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
-<p><strong>Grid View Filters</strong></p>
-<p>In the grid view of the Timeline, it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&amp;token=7b352b8c-dfaf-402d-a9fc-5e986b395212" /></p>
-</div>
-<div id="ExecutingandEditingEvents-21.5." class="section level2 hasAnchor" number="21.5">
-<h2><span class="header-section-number">21.5</span> Executing and Editing Events<a href="time-code.html#ExecutingandEditingEvents-21.5." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>To Execute timeline events:</strong></p>
-<ul>
-<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
-<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
-<li><p>The control bar may be used to stop and rewind events when the source is internal Editing timecode events</p></li>
-<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
-<li><p>Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
-</ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&amp;token=985e10f0-a809-4482-8112-763a2766724b" /></p>
-<p><strong>Moving Events</strong></p>
-<p>It is possible to change selected event times via the physical wheels.</p>
-<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
-<p>This option is available under the <em>Move Selection</em> sub-menu of the Timeline view (<em>Wheel On, Wheel Off</em>).</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&amp;token=5e0244e3-c571-48b0-b1c1-2d72b0778999" /></p>
-<p>Then there will be 2 physical wheels that are available for use:</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&amp;token=f1407bc6-fecc-4f8c-9615-f8a7541966dd" /></p>
-<p>The left one is for moving the selected events.</p>
-<p>The right one is to change the time resolution for the current time movement.</p>
-<p><strong>Events Selection</strong></p>
-<p>To Select timeline events:</p>
-<ul>
-<li><p>Tap on a single event – toggles the event selection</p></li>
-<li><p>Tap on a playback box – toggles the playback selection</p></li>
-<li><p>Tap on a marker – toggles the marker selection</p></li>
-<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
-<li><p>Double-tap an empty area – clear the selection</p></li>
-<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
-<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
-<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
-<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
-</ul>
-<p><span style="color:Red"><strong>Important!</strong></span></p>
-<p>Selecting one object type (i.e. Playback, Event, Marker…) will clear all other objects selection.</p>
-<p>Selection can have only one type of objects at a time.</p>
-<p><strong>State Machine Support</strong></p>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&amp;token=87396a0f-bdd3-4e7c-aee1-65341332d0e3" /></p>
-<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
-<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
-<p><span style="color:Red"><strong>Important!</strong></span></p>
-<p>Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</p>
-<p>The available commands from the panel or the Editor Toolbar are split into 2 levels:</p>
-<p><strong>Commands for the View</strong></p>
-<p>These commands will affect the Active Timeline View.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press <em>Timeline</em> from the panel</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&amp;token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204" /></p>
-<p><strong>Commands for Timelines</strong></p>
-<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzgT27J7izwv0ermWLplh%2Fimage.png?alt=media&amp;token=8ebdbcb1-4cfc-4f5d-a4db-a219ef3f88d3" /></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn5Wiw7EBsgJNFC9bYVRx%2F20.2.webp?alt=media&amp;token=3224f209-dfa7-440e-8e84-4b5e88866f58" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p><strong>Sequence may also end with:</strong></p>
-<p><strong>a.</strong> Store – will create the timelines if they are not already created</p>
-<p><strong>b.</strong> Delete – will delete the timelines if they exist</p>
-<p><strong>c.</strong> Text – will open text box to give a name to the selected timelines</p>
-<p><strong>d.</strong> Copy – will add the timelines to the clipboard</p>
-<p><strong>e.</strong> Paste – will paste the copied timelines from the clipboard</p></li>
+<li><p>Go to Tools ⟶ Options and change the measurements to metric.</p></li>
+<li><p>Select a fixture in the Capture, and you will see the XYZ coordinates when the table is showing ’Selected Itemsʼ.
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F35qZUCLtAwnVv9zjMkVV%2F20.2.1.webp?alt=media&amp;token=d469868d-cd70-496f-9573-6623cd50040f" /></p></li>
+<li><p>Copy these values (manually) to the Fixture calibration table in Vibe.</p></li>
+<li><p>Copy the column X to the column X the column Y to the column Z the column Z to the column Y</p></li>
+<li><p>After all values are in the Vibe fixture calibration table, select the X column (by tapping the header) and press [-], and select the Y column and press [-]. Fixtures should now be calibrated.</p></li>
 </ol>
-</div>
-<div id="Markers-21.6." class="section level2 hasAnchor" number="21.6">
-<h2><span class="header-section-number">21.6</span> Markers<a href="time-code.html#Markers-21.6." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>To aid in timeline navigation, Markers may be inserted.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&amp;token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00" /></p>
-<p>To insert a marker:</p>
-<ul>
-<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
-<li><p>Press ⟵ to move backwards through the markers.</p></li>
-<li><p>Press ⟶ to move forwards through the markers.</p></li>
-<li><p>Press 🗑️ to delete a marker</p></li>
-</ul>
-</div>
-<div id="TimeFormat-21.7." class="section level2 hasAnchor" number="21.7">
-<h2><span class="header-section-number">21.7</span> Time Format<a href="time-code.html#TimeFormat-21.7." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>It is possible to view the timeline and events data in different time
-formats.</p>
-<p>The default time format is milliseconds, but it is also possible to use FPS format. The time format selection is possible via the view’s menu.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbo29Yc2ouM4IM1uP84Nl%2Fimage.png?alt=media&amp;token=103f9e9d-1202-4ccc-bf97-7694f1762c3a" /></p>
 
 </div>
 </div>
@@ -599,8 +424,8 @@ formats.</p>
           </div>
         </div>
       </div>
-<a href="XYZ-Fixture-Calibration-20.0..html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="midi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="topo-topographical-display.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="time-code.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

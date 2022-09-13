@@ -231,4 +231,4 @@ Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_ms
 ## MIDI Time Code {#MIDITimeCode-22.5}
 
 See: 
-[21.3. Configuring Timecode](https://vibemanual.compulite.com/time-code.html#configuring-timecode)
+[21.3. Configuring Timecode](#ConfiguringTimecode-21.3.)

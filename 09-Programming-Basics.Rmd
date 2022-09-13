@@ -16,10 +16,10 @@ This chapter deals with the fundamentals of building stage looks in the editor.
 
 Editor Basics:
 
--   [9.1.1. What is the Editor](https://vibemanual.compulite.com/programming-basics.html#what-is-the-editor)
--   [9.1.2. Blind Editor](https://vibemanual.compulite.com/programming-basics.html#blind-editor)
+-   [9.1.1. What is the Editor](#what-is-the-editor-9.1.1.)
+-   [9.1.2. Blind Editor](#blind-editor-9.1.2.)
 
-###  What is the Editor
+###  What is the Editor {#what-is-the-editor-9.1.1.}
 
 All manual parameter modification occurs in the **EDITOR**. (Programmer in some other consoles). The **Live Displays** show all values from **both** Controller outputs (Playbacks or Executors on some consoles) and fixtures in the Editor. Color coding is used to distinguish between values coming from the controllers and values in the **EDITOR**.
 
@@ -56,7 +56,7 @@ All manual parameter modification occurs in the **EDITOR**. (Programmer in some 
 
 See also: [9.3.10. Release and Home Sequences](#Release-and-Home -Sequences-9.3.1)
 
-### Blind Editor
+### Blind Editor {#blind-editor-9.1.2.}
 
 The Blind Editor is used to create or modify objects without outputting values to the stage
 
@@ -108,16 +108,16 @@ Vibe has two Blind Editor behaviours:
 
 **Editor Tools:**
 
--   [9.2.1. Selections Tools](https://vibemanual.compulite.com/programming-basics.html#selections-tools)
--   [9.2.2. Transpose](https://vibemanual.compulite.com/programming-basics.html#pattern)
--   [9.2.3. Pattern](https://vibemanual.compulite.com/programming-basics.html#fan-mode)
--   [9.2.4. Fan Mode](https://vibemanual.compulite.com/programming-basics.html#fan-mode)
--   [9.2.5. Highlight Mode](https://vibemanual.compulite.com/programming-basics.html#highlight-mode)
--   [9.2.6. Lowlight Mode](https://vibemanual.compulite.com/programming-basics.html#lowlight-mode)
--   [9.2.7. Remainder Dim {Rem Dim}](https://vibemanual.compulite.com/programming-basics.html#remainder-dim-rem-dim)
--   [9.2.8 Home Scene](https://vibemanual.compulite.com/programming-basics.html#home-scene)
+-   [9.2.1. Selections Tools](#selections-tools-9.2.1.)
+-   [9.2.2. Transpose](#Transpose-9.2.2.)
+-   [9.2.3. Pattern](#Pattern-9.2.3.)
+-   [9.2.4. Fan Mode](#fan-mode-9.2.4.)
+-   [9.2.5. Highlight Mode](#highlight-mode-9.2.5.)
+-   [9.2.6. Lowlight Mode](#lowlight-mode-9.2.6.)
+-   [9.2.7. Remainder Dim {Rem Dim}](#remainder-dim-rem-dim-9.2.7.)
+-   [9.2.8 Home Scene](#home-scene-9.2.8)
 
-### Selections Tools 
+### Selections Tools {#selections-tools-9.2.1.}
 
 Currently, Vibe has basic Selection Tools. Advanced tools are under development.
 
@@ -142,7 +142,7 @@ Currently, Vibe has basic Selection Tools. Advanced tools are under development.
 
 *[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).*
 
-### Transpose
+### Transpose {#Transpose-9.2.2.}
 
 Transpose is accessed from the Editor Toolbar. It is used to reorder fixture selection based on a specified offset. This is particularly useful in creating interesting effects and fanning.
 
@@ -160,7 +160,7 @@ Transpose is accessed from the Editor Toolbar. It is used to reorder fixture sel
 
 *-   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12*
 
-### Pattern
+### Pattern {#Pattern-9.2.3.}
 Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
 
 **To set a pattern:**
@@ -189,7 +189,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 
 > Simple Block and Sub Block groupings may be created within both Effects Editors. The pattern is for advanced blocks and groupings
 
-### Fan Mode
+### Fan Mode {#fan-mode-9.2.4.}
 
 **Vibe has two methods to fan fixture parameters:**
 
@@ -290,7 +290,7 @@ Instead of fanning Blocks based on the selection, fixture **Groups** may also be
     
 -   [Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
 
-### Highlight Mode
+### Highlight Mode {#highlight-mode-9.2.5.}
 
 Highlight and Lowlight modes are used to help identify the positions of fixtures so that they may be edited more easily.
 
@@ -352,7 +352,7 @@ Highlight may be customized when the default home values are too generic. Users 
 
 -   Press [SCENE] [H.LIGHT] [DELETE]
 
-### Lowlight Mode
+### Lowlight Mode {#lowlight-mode-9.2.6.}
 
 Lowlight mode is used when many fixtures are lit up and therefore Highlight is not helpful. **Lowlight Mode affects parameters and banks in the following way:**
 
@@ -406,7 +406,7 @@ Lowlight may be customized when the default home values are are too generic. Fre
 
 - Press [SCENE] [L.LIGHT] [DELETE]
 
-### Remainder Dim {Rem Dim}
+### Remainder Dim {#remainder-dim-rem-dim-9.2.7.}
 
 **REM DIM** is an Editor Tool commonly used in theatr environments but can be useful in many other situations.
 
@@ -423,7 +423,7 @@ Lowlight may be customized when the default home values are are too generic. Fre
 -   Cues may be stored with {REM DIM} on but once stored, {REM DIM} is turned off.
 
 
-### Home Scene
+### Home Scene {#home-scene-9.2.8}
 
 By default released fixtures return to their home values as defined by the device's fixture profile. The device profile is usually based on the manufacturer's suggested defaults, but sometimes the defaults are not appropriate. Vibe allows users to customize Home Values by building a Home Scene. When a fixture is programmed in a Home Scene it will take preference over its home values in the device profile.
 
@@ -546,7 +546,7 @@ Parameter values may be set using either Vibe's intuitive **Smart Screen** picke
 
 See:
 
--   [8.1. Virtual Parameters](https://vibemanual.compulite.com/programming-concepts.html#operational-philosophy)
+-   [8.1. Virtual Parameters](#OperationalPhilosophy-8.1.)
 
 
 

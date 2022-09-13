@@ -263,7 +263,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fm5ysy6BoE6l3FCWVHrYn%2F14.5.4.webp?alt=media&token=f6271bd6-0fe1-4576-ae64-f237d372b124)
 
->Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See [7.5.1. Controller Settings](https://vibemanual.compulite.com/system-default-settings.html#controller-settings).
+>Default settings for controllers assigned Qlists, Scenes, and Submasters may be set in the Defaults section of the System Settings Pop-up. See [7.5.1. Controller Settings](#controller-settings-7.5.1.).
 
 
 
@@ -359,12 +359,12 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
     
 2.  [CUE] [#]
     
-3.  [HERE] Press any of the controller's buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: [7.5.2. Controller Actions](https://vibemanual.compulite.com/system-default-settings.html#controller-actions)
+3.  [HERE] Press any of the controller's buttons - The Qlist and Cue will be assigned to the Controller and default controller configuration and settings will be applied. See: [7.5.2. Controller Actions](#controller-actions-7.5.2.)
     
 
 **Release and unload Controllers:**
 
--   See: [14.8. Controller Release and Free](https://vibemanual.compulite.com/playing-back-cues-and-scenes.html#controller-release-and-free)
+-   See: [14.8. Controller Release and Free](#ControllerReleaseandFree-14.8.)
 
 
 ## Controller Release and Free {#ControllerReleaseandFree-14.8.}
@@ -390,9 +390,9 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 **Release Time -**
 
--   By default controllers use the Default Release Time set in System Settings Timing. See: [7.2. Timing](https://vibemanual.compulite.com/system-default-settings.html#timing)
+-   By default controllers use the Default Release Time set in System Settings Timing. See: [7.2. Timing](#Timing-7.2.)
     
--   Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: [7.5.3. Qlist Properties](https://vibemanual.compulite.com/system-default-settings.html#qlist-properties)
+-   Release time may also be set on a Qlist basis using the Qlist Properties Pop-up. See: [7.5.3. Qlist Properties](#qlist-properties-7.5.3.)
     
 
 **Free -** Unloads a controller. It does not delete the loaded object.
@@ -411,7 +411,7 @@ Controller buttons and sliders may be customized to allow maximum flexibility. W
 
 
 By default, the first incident of a Qlist being assigned to a controller will take its Qlist properties from the user default Qlist Properties. 
-**For Qlist Properties details, see:** [7.5.3. Qlist Properties](https://vibemanual.compulite.com/system-default-settings.html#qlist-properties)
+**For Qlist Properties details, see:** [7.5.3. Qlist Properties](#qlist-properties-7.5.3.)
 
 -   Each new incident of assigning the same Qlist to additional controllers will initially copy the Qlist properties from the first assignment.
     
@@ -506,7 +506,7 @@ The Rate function allows users to adjust controller rates or effects parameters 
 3.  {Freeze Effect - Pauses all running effects until the {Freeze Effect} key is toggled again.
     
 
->Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: [13.3.1. Building Effects Using the Advanced Effects Editor](https://vibemanual.compulite.com/effects-1.html#build-a-basic-effect-in-the-advanced-effects-editor)
+>Freeze only effects chases and effects at the playback level. To permanently release an effect from a cue see: [13.3.1. Building Effects Using the Advanced Effects Editor](#build-a-basic-effect-in-the-advanced-effects-editor-13.3.1.)
 
 **Transport Bar:**
 

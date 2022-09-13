@@ -30,7 +30,7 @@ The Show menu is the first item of the {VIBE} Menu. It contains 5 sub menus:
 
  <p align=center> Save Show/Load Show Browser</p>
 
-5. **{Load Vector Show}** - ([5.2 Load Vector Show](https://vibemanual.compulite.com/file-management.html#load-vector-show)).
+5. **{Load Vector Show}** - ([5.2 Load Vector Show](#Load-Vector-Show-5.2)).
 
 ## Load Vector Show {#Load-Vector-Show-5.2}
 

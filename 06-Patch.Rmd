@@ -31,6 +31,7 @@ Each **SET** may have Fixtures numbered from 1 ⟶ 999999 To patch a device, you
 
 
 ### Edit Sets
+
 There is an option to edit a user-created set. This is done via the Sets browser view.
 
 **To Edit a Set**
@@ -98,7 +99,7 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 ## Create and Patch imported fixtures {#Create-and-Patch-imported-fixtures-6.4}
 
 
-1. Import the desired device. (See [6.2. Import Devices](https://vibemanual.compulite.com/patch.html#import-devices)).
+1. Import the desired device. (See [6.2. Import Devices](#Import-Devices-6.2)).
     
 2. The device will now be in the list below the Imported Devices header.
     
@@ -154,7 +155,7 @@ Using the **INTERVAL** field, a custom interval may be set.
 
 **Drag and Drop from the Fixtures tab:**
 
-1. Create fixtures - (See: [6.4. Create and patch imported fixtures](https://vibemanual.compulite.com/patch.html#create-and-patch-imported-fixtures)).
+1. Create fixtures - (See: [6.4. Create and patch imported fixtures](#Create-and-Patch-imported-fixtures-6.4)).
     
 2. Select the Fixture **Set** you wish to patch from in the lower right of the main patch workspace.
     
@@ -224,7 +225,7 @@ Once patched fixtures can be modified using keypad syntax or using the two Patch
     ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
       
 See: 
-[20. XYZ Fixture Calibration](https://vibemanual.compulite.com/xyz-fixture-calibration.html) 
+[20. XYZ Fixture Calibration](#XYZ-Fixture-Calibration-20.0.) 
 
     ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
 
@@ -393,7 +394,7 @@ See:
 
 **View parked fixtures and address:**
 
-(See: [18.2. Patch Exam](https://vibemanual.compulite.com/exam-show-data.html#patch-exam))
+See: [18.2. Patch Exam](#PatchExam-18.2.)
     
 
 ><span style="color:Red">> The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key **will** blackout parked addresses and fixtures.</span>
