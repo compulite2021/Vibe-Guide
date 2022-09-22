@@ -7,6 +7,9 @@ Releases-1.5
 r.3.0
 version-highlights
 bug-fixes
+r.4.0
+version-highlights-1
+bug-fixes-1
 general-specification
 Controls-2.1
 IO-2.2
