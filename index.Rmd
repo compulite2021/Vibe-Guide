@@ -680,145 +680,287 @@ Version R_4.0 brings new and updated features as listed below:
 #### Bug Fixes
 
 - Crash on CITP when getting empty data
+
 - Load layout is stuck if the layout is too old
+
+
 - Load layout is stuck if loading a layout with less windows that are currently on
+
 - Crash when entering geometry bank when using hippo viewport
+
 - Crash in timeline when changing timeline name.
+
 - Crash in timeline when dragging hidden disabled events.
+
 - Crash on HAL when pressing multiple times on Swap Display
+
 - Small Screen wheels could disappear in some sequences.
+
 - Big performance improvements.
+
 - Store/Update/Delete cue bugs with all options (tracking, cue only and more)
+
 - Releasing cue cells had wrong effect on qlists.
+
 - Cues manipulation with physical vs. virtual params caused wrong behavior in certain sequences
+
 - Library manipulation on cues had issues with the tracking data
+
 - A/B fader issues
+
 - CITP errors with unpatched fixtures or fixtures with the same number or fixtures with the same patch.
+
 - GO within GO did not proceed 2 cues
+
 - If there was a situation of BACK within BACK until the empty cue then the playback made double fade to empty.
+
 - Update device popup after load show did take all changes into consideration and some updated devices were not shown
+
 - Parameter adjustment that happened not on the first parameter page made a jump back to the first page.
+
 - Echoline did not show the current set when using [.].
+
 - Echoline is not displaying the correct fixture number after having a selection and Next or Prev.
+
 - Storing a library from the popup did not consider the number on the popup.
+
 - [TEXT, SCENE SK] – did not display the scene name on the popup.
+
 - Cue text popup did not display the cue name correctly.
+
 - Timeline did not show object names correctly on text popup.
+
 - Scrollable views scrollbar thumb was too small and was broken.
+
 - There was no scrollbar option in Universe View.
+
 - When there is more than 1 device and 'Headers per device' option is enabled, disable the 'Active on stage' should change the live view scroll bar to its original size.
+
 - Topo View background no longer resets after changing name/resolution
+
 - Topo View spread center of selection calculation fixed
+
 - Set a cell time to a color layer will set the cell time to next color layer
+
 - Views that need to keep their ratio did not do it correctly
+
 - Maximize did not consider View's ratio
+
 - Sometimes Wheel Picker was not refreshing correctly from DMX values
+
 - Window buttons (page toggles) was not working right on external windows
+
 - Unlocked icon was not synced with the current edit state
+
 - Save layout when in all pages caused pages to disappear
+
 - If a device has more than one dimmer param, tapping on the dimmer values in Intensity bank should apply the values to all dimmer params.
+
 - When there is more than one context view, you can get to a state that they are showing different views
+
 - When getting to a Lib view in context, the only way that context will be released is by selecting fixtures
+
 - After assigning a Lib on a group using context view, context view jumps back
+
 - When selecting a group from context view, it should select the fixtures immediately
+
 - Cannot delete timeline marker
+
 - When tapping on smart screen functions, after creating an effect with randomized fixtures, effect is changed, and fixtures are no longer randomized
+
 - When changing between wheels in smart screen, the position of the fader that is in charge to the wheel or frame spin speed doesn't change to its right position
+
 - Adjusting the grand master virtual fader is out of proportion.
+
 - When storing a cue in Compulite mode, it should not advance to it.
+
 - When choosing fixtures using ⟶⟶ it should display the selection in echoline
+
 - When choosing all fixtures using 1 ⟶⟶ it should display all the selected fixtures in echoline
+
 - ⟶⟶ did not work on parameters other than dimmer
+
 - Topo view is not saved like the last use (zoom and position)
+
 - Topo (0,0) point is different from the (0,0) point in the Fixture calibration.
+
 - When creating a TOPO with big dimensions its loading a lot of time and crashes.
+
 - Topo crosslines and frame lines disappearing when playing with the zoom
+
 - Can't type values in small effect engine
+
 - When clearEditorAfterStore was off, sometimes Qlists were not set in PB.
+
 - When Auto Param Grouping is off, changing virtual parameter while others are empty will not calculate the output correctly
+
 - Tabbing a view to the Live controller view or to Live master controller view, is creating more tabs than should with wrong names.
+
 - When views are tabbed and on their minimum size possible, the tabs are hiding the bottom of the views
+
 - Column resize did not work correctly on some views
+
 - Issues fixed with 'dot cues' in some sequences
+
 - GM led was not refreshed on new/load show and opening the console
+
 - GM Value was not matched after new/load show or on startup
+
 - Resolution button LED is off when Vibe is coming up
+
 - Snap activation bugs with timings and fader levels
+
 - Png images Red and Blue were switched
+
 - Fixture # Address # could not put a number more than 2 digits on the address
+
 - Cue time popup should not change times if they were not changed by user. (It affected range selection of cues and ruined their timing data)
+
 - Cue dot (last) made cue selection to be invalid in some popups
+
 - Applying libraries on selection while in selection tools did not work
+
 - Manual fade to cue that also had mark time and autofollow time caused the autofollow to trigger although it shouldn't
+
 - load show on a non-empty show kept garbage in the data and made the live playback displays to show this garbage
+
 - If a library had on the same fixture type mix of physical and virtual parameters, then it can cause a problem when you try to select fixtures and apply the library on them.
+
 - Dirty cells in cues with virtual functions from old shows could cause strange behavior
+
 - After creating new fixtures, the indication for the libraries of type Parameter Specific and Pattern were not updated
+
 - Some LEDs blinked when shift+reset was pressed
+
 - Timeline wheels could stuck the wheels from being shown
+
 - Cant release fixtures from Group using [Edit]
+
 - Values are released when giving grouped parameter a direct value
+
 - Blind editor values were not shown in live if active on stage or active in editor were on
+
 - Removing parameters from library would not release the parameters from cues using the library
+
 - Apply library with device + fixture would work like fixture only when VFunc doesn't exist
+
 - Re-Selecting fixture and applying library did not keep the order
+
 - Free All could not work if one of the playbacks had "exclude from paging"
+
 - Playback leds were blinking even if fade ended on some occasions
+
 - Dimmer wheel changing value only for first parameter on fixtures with many dimmers.
+
 - Dragging fixtures that their patch size is 1 to the universe view did not work
+
 - Dimmer wheel did not affect devices with Virtual Dimmer parameter or without dimmer at all
+
 - Delete Cue could delete cues from other qlists
+
 - Sliders mode did not bring back the position of the slider if it was submaster
+
 - After using other editors (like blind) moving sliders and storing objects did not work
+
 - Topo View some objects would stay floating after drop into Topo
+
 - Topo menu objects would seem as if they still selected after closing the menu
+
 - In some cases output and CITP was not working
+
 - Master Slave:
+
 	- Disconnect button on settings popup logic changed
+
 	- Disconnection cleanup fixes
+
 	- Added small progress to disconnect process
+
 	- Master-Slave sync did not sync images folder
+
 	- Disconnect after unexpected crash
+
 	- Master-Slave false disconnect detection fixed
+
 	- Reconnect or false detection of disconnection could cause Slave to get stuck
+
 	- After connecting to master, all async calls did not work
+
 	- Sync lpu refresh depends on console state
+
 	- Fixed images sync that image did not appear
+
 	- Images sync did not work if slave did not have images folder before the sync
+
 	- Fixed an issue when messages could get corrupted when receiving them in IPC
+
 	- Fixed Crashes when switching to master but not connecting to a partner and then settings protect/topo image
+
 	- Fixed protect images resetting to default on systemSettingsPopup open
+
 	- Added Master standby state to differentiate between master with partner and master without partner
+
 	- Fixed lpu's not connecting after network cut lpu crash
+
 	- Fixed reconnect issues
+
 	- Sometimes when recovering from crash or reconnect, the partner IP was not set right
+	
 	- Stuck or crashed on sync if show file size was big
+
 - Fixture Builder
+	
 	- When there are collisions in steps values it does not popup a message
+	
 	- Unsupported notes are now disabled
+	
 	- Add a step after renaming a step will not rename the step name.
+	
 	- Changing the text in the text boxes is sometimes not saved
+	
 	- When you create more than 1 mode while Vibe is running, it writes next to one mode a huge number of fixtures
+	
 	- When adding color or position params it should automatically create the virtual params
+	
 	- When Fixture builder is opened via Vibe, touching the smart screen will stuck the system.
+	
 	- Edit a mode that is not the first on the list using the fixture builder from the Vibe cause a crash to the fixture builder
+	
 	- Storing changes sometimes crashed the fixture builder.
+	
 	- Edit device tab now reopens without losing unsaved data
+	
 	- When mapping the shutter control, it is not possible to map a step as Open
+	
 	- Changing home/empty/highlight/lowlight values in fixture builder did not fix it in the existing fixtures
+	
 	- Fix crash on store from EditDeviceTab
 - Vector Show conversion
+	
 	- If vector show was in Fixture mode, then the fixture numbers on Vibe are incorrect
+	
 	- When auto converting Vector device to vibe the empty value of the dimmer is not right
+	
 	- If Vector device had empty parameter vibe did not consider it in the convert match process
+	
 	- If vector external patch was together with channel patch vibe did not patch converted show
+	
 	- Vector device match was wrong after first conversion
+	
 	- Vector convert did not take the look ahead mask correctly
+	
 	- Converting Vector libraries was wrong if the library had a value from another library (nested on Vector)
+	
 	- Did not take the invert property for parameters if the device was taken from the exiting Vibe devices
+	
 	- Blade parameters did not convert correctly from Vector shows
+	
 	- Also showed devices that had no fixtures in the show
+	
 	- Added more devices to the auto convert inventory
+	
 	- Highlight and Lowlight cues were not converted correctly
+	
 	- Could make a mix of parameter type indexes if certain types were in the device
+	
 
