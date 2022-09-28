@@ -59,6 +59,9 @@ address-test
 Configuring-Physical-DMX-1-0-6.5
 Patching-Inputs-6.6
 Parking-Addresses-and-Fixtures-6.7
+Clone-Fixtures-6.8
+device-replacement-device-replacement--6.9
+dmx-output-input-views-dmx-output--input-views-6.10
 system-default-settings
 Editing-7.1.
 Timing-7.2.
@@ -141,6 +144,7 @@ libraries
 WhatareLibraries-12.1.
 StoreandModifyBankLibraries-12.2.
 ObjectLibraries-12.3.
+Auto-Generate-12.4.
 effects
 EffectBasics-13.1.
 SmartScreenEffectsEditor-13.2.

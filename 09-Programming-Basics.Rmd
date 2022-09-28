@@ -570,8 +570,17 @@ The **Smart Screen** is dedicated to displaying:
 -   Displays for Fan feature.
     
 
+
 **The Smart Screen is divided into six sections:**
 
+
+**Intensity**
+
+Intensity bank has parameters like Dimmer, Shutter and Strobe.
+
+The dimmer level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the predefined incremental steps.
+
+The strobe and shutter level, mode and frequency can be set in the smart screen with the macros showing the selected fixtures' properties.
  <p align=center> Smart Screen - Intensity Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a)
@@ -580,31 +589,130 @@ The **Smart Screen** is dedicated to displaying:
 The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
 
 
+
+**Position**
+
+Position bank has parameters like Pan and Tilt.
+
+The fixtures' position can be set either with the editor keys, wheels, and trackball, and through the smart screen by using the virtual sliders and the position picker.
+
+The position is calculated at the same time on Pan/Tilt values and on virtual XYZ values, based on the fixture's calibration on the stage.
+
+Independently from the fixture's pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.
+
 <p align=center> Smart Screen - Position Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
 
+
+<![endif]-->
+
+**Color**
+
+Color bank has parameters like Color Mix (RGB, CMY, RGBW, ...) and Color Wheels.
+
+The color level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders in "Params" screen, the color picker in "Virtual" screen, or the color presets.
+
+The color mix is calculated at the same time on the color values and on virtual HSI values, based on the fixture's color mixing system.
+
+Independently from the fixture's color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture's colors.
+
+The color wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features.
+
+The color mix can also be set by using the predefined preset combinations and Vibe's smart features.
 
 <p align=center> Smart Screen - Color Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&token=6d819c90-c204-4edd-9731-4432337e32ec)
 
 
+**Lee and Rosco** **Picker**
+
+Color bank has a Lee and a Rosco section to assign colors based on the most used brands of gel filters.
+
+**Kelvin Picker**
+
+Color bank has a Kelvin picker for a fast adjust of any color temperature between 1000K and 20000K, linearly or by incremental steps.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fv3T3QxvTjRkoJyXfrKqL%2Fimage.png?alt=media&token=32a91438-266e-42b0-bd99-957dc3a7bb43)
+
+This feature is recommended for working in television studios and photography environments.
+
+**Vibe Mood Picker**
+
+Color bank has a Vibe mood picker for a fast reproduction of a color taken from a picture.
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FgzMFOJYf4o5c61Rmy9kX%2Fimage.png?alt=media&token=8451d6a9-b83f-494d-8251-08c9a725bcf2)
+
+This feature is recommended if working with assigned color palettes, for example in cinema or theater shows, to create color libraries directly from the scene's and costumes' pictures.
+
+**To get a color from an image**
+
+1. Load an image file to the Vibe mood picker
+
+2. Zoom the section of the target color
+
+3. Select the color to assign to the fixture selection
+
+**Beam**
+
+Beam bank has parameters like Focus, Zoom, Frost and Prism.
+
+The beam parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the beam picker.
+
+The beam picker automatically enables the features available on the selected fixtures, offering an intuitive control system to set the mode, speed and type of transition related to the controlled parameter.
+
+The prisms are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the wheel picker to get complete control on the prism wheels' features.
+
 <p align=center> Smart Screen - Beam Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&token=c544d391-1994-41e0-bab8-5758ef3a4cce)
+
+
+**Image**
+
+Image bank has parameters like Gobo and Effect wheel.
+
+The image parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the image picker.
+
+The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features. The image picker can be also accessed by pressing the Virtual button on image bank's screen.
+
+On the image picker's right side, it is possible to visualize and select each fixture's wheel, on the left side can be set the indexing and rotation speed of the whole wheel or the single frame.
+
+The interactive wheel picker shows all the graphic frames related to the selected wheel to allow fast interchange operations.
+
 
 <p align=center> Smart Screen - Image Bank</p>
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&token=40cee69d-bc7f-433a-b992-b123ee53b476)
 
+
+**Shape**
+
+Shape bank has parameters like Blade movement and rotation.
+
+The blades' depth and angle can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the blade picker.
+
+The blade picker features a smart graphic control of the blade, independently from the fixture's blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
 <p align=center> Smart Screen - Shape Bank</p> 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&token=a78d7417-2ce5-4efa-8970-31d64ed3179b)
 
+**Control**
+
+Control bank has parameters related to the fixture's functions, like Lamp on/off and Reset.
+
+The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.
+
 <p align=center> Smart Screen - Control</p> 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&token=f11d9d9f-6df7-4f09-bcba-9006ec853af6)
+
+
+**Media**
+
+Media bank is the bank designed for an intuitive media server programming.
+
+See the dedicated Chapter  [23 - Media Servers](#MediaBank-23.1).
 
 
 **Smart Screen Preferences:**

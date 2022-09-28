@@ -160,6 +160,9 @@
 <li class="chapter" data-level="6.5" data-path="patch.html"><a href="patch.html#Configuring-Physical-DMX-1-0-6.5"><i class="fa fa-check"></i><b>6.5</b> Configuring Physical DMX 1/0<span></span></a></li>
 <li class="chapter" data-level="6.6" data-path="patch.html"><a href="patch.html#Patching-Inputs-6.6"><i class="fa fa-check"></i><b>6.6</b> Patching Inputs<span></span></a></li>
 <li class="chapter" data-level="6.7" data-path="patch.html"><a href="patch.html#Parking-Addresses-and-Fixtures-6.7"><i class="fa fa-check"></i><b>6.7</b> Parking Addresses and Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.8" data-path="patch.html"><a href="patch.html#Clone-Fixtures-6.8"><i class="fa fa-check"></i><b>6.8</b> Clone Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.9" data-path="patch.html"><a href="patch.html#device-replacement-device-replacement--6.9"><i class="fa fa-check"></i><b>6.9</b> Device Replacement {#Device-Replacement -6.9}<span></span></a></li>
+<li class="chapter" data-level="6.10" data-path="patch.html"><a href="patch.html#dmx-output-input-views-dmx-output--input-views-6.10"><i class="fa fa-check"></i><b>6.10</b> DMX Output &amp; Input Views {#DMX-Output-&amp;-Input-Views-6.10}<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="system-default-settings.html"><a href="system-default-settings.html"><i class="fa fa-check"></i><b>7</b> System Default Settings<span></span></a>
 <ul>
@@ -270,6 +273,7 @@
 <li class="chapter" data-level="12.1" data-path="libraries.html"><a href="libraries.html#WhatareLibraries-12.1."><i class="fa fa-check"></i><b>12.1</b> What are Libraries<span></span></a></li>
 <li class="chapter" data-level="12.2" data-path="libraries.html"><a href="libraries.html#StoreandModifyBankLibraries-12.2."><i class="fa fa-check"></i><b>12.2</b> Store and Modify Bank Libraries<span></span></a></li>
 <li class="chapter" data-level="12.3" data-path="libraries.html"><a href="libraries.html#ObjectLibraries-12.3."><i class="fa fa-check"></i><b>12.3</b> Object Libraries<span></span></a></li>
+<li class="chapter" data-level="12.4" data-path="libraries.html"><a href="libraries.html#Auto-Generate-12.4."><i class="fa fa-check"></i><b>12.4</b> Auto Generate<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="effects.html"><a href="effects.html"><i class="fa fa-check"></i><b>13</b> Effects<span></span></a>
 <ul>
@@ -807,35 +811,89 @@ Instead it sends “real time” messages to fixtures control functions.</p></li
 <li><p>Displays for Fan feature.</p></li>
 </ul>
 <p><strong>The Smart Screen is divided into six sections:</strong></p>
+<p><strong>Intensity</strong></p>
+<p>Intensity bank has parameters like Dimmer, Shutter and Strobe.</p>
+<p>The dimmer level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the predefined incremental steps.</p>
+The strobe and shutter level, mode and frequency can be set in the smart screen with the macros showing the selected fixtures’ properties.
 <p align="center">
 Smart Screen - Intensity Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&amp;token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a" /></p>
 <p>The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe’s universal fixture model. This means that is not necessary to memorize the manufacturer’s specification of each fixture, as all fixtures are programmed in a similar consistent way.</p>
+<p><strong>Position</strong></p>
+<p>Position bank has parameters like Pan and Tilt.</p>
+<p>The fixtures’ position can be set either with the editor keys, wheels, and trackball, and through the smart screen by using the virtual sliders and the position picker.</p>
+<p>The position is calculated at the same time on Pan/Tilt values and on virtual XYZ values, based on the fixture’s calibration on the stage.</p>
+<p>Independently from the fixture’s pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.</p>
 <p align="center">
 Smart Screen - Position Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&amp;token=46d06b06-759b-4bda-9b64-6cc16ae1abb5" /></p>
+<p>&lt;[endif]–&gt;</p>
+<p><strong>Color</strong></p>
+<p>Color bank has parameters like Color Mix (RGB, CMY, RGBW, …) and Color Wheels.</p>
+<p>The color level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders in “Params” screen, the color picker in “Virtual” screen, or the color presets.</p>
+<p>The color mix is calculated at the same time on the color values and on virtual HSI values, based on the fixture’s color mixing system.</p>
+<p>Independently from the fixture’s color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture’s colors.</p>
+<p>The color wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels’ features.</p>
+<p>The color mix can also be set by using the predefined preset combinations and Vibe’s smart features.</p>
 <p align="center">
 Smart Screen - Color Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&amp;token=6d819c90-c204-4edd-9731-4432337e32ec" /></p>
+<p><strong>Lee and Rosco</strong> <strong>Picker</strong></p>
+<p>Color bank has a Lee and a Rosco section to assign colors based on the most used brands of gel filters.</p>
+<p><strong>Kelvin Picker</strong></p>
+<p>Color bank has a Kelvin picker for a fast adjust of any color temperature between 1000K and 20000K, linearly or by incremental steps.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fv3T3QxvTjRkoJyXfrKqL%2Fimage.png?alt=media&amp;token=32a91438-266e-42b0-bd99-957dc3a7bb43" /></p>
+<p>This feature is recommended for working in television studios and photography environments.</p>
+<p><strong>Vibe Mood Picker</strong></p>
+<p>Color bank has a Vibe mood picker for a fast reproduction of a color taken from a picture.
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FgzMFOJYf4o5c61Rmy9kX%2Fimage.png?alt=media&amp;token=8451d6a9-b83f-494d-8251-08c9a725bcf2" /></p>
+<p>This feature is recommended if working with assigned color palettes, for example in cinema or theater shows, to create color libraries directly from the scene’s and costumes’ pictures.</p>
+<p><strong>To get a color from an image</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Load an image file to the Vibe mood picker</p></li>
+<li><p>Zoom the section of the target color</p></li>
+<li><p>Select the color to assign to the fixture selection</p></li>
+</ol>
+<p><strong>Beam</strong></p>
+<p>Beam bank has parameters like Focus, Zoom, Frost and Prism.</p>
+<p>The beam parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the beam picker.</p>
+<p>The beam picker automatically enables the features available on the selected fixtures, offering an intuitive control system to set the mode, speed and type of transition related to the controlled parameter.</p>
+<p>The prisms are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the wheel picker to get complete control on the prism wheels’ features.</p>
 <p align="center">
 Smart Screen - Beam Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&amp;token=c544d391-1994-41e0-bab8-5758ef3a4cce" /></p>
+<p><strong>Image</strong></p>
+<p>Image bank has parameters like Gobo and Effect wheel.</p>
+<p>The image parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the image picker.</p>
+<p>The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels’ features. The image picker can be also accessed by pressing the Virtual button on image bank’s screen.</p>
+<p>On the image picker’s right side, it is possible to visualize and select each fixture’s wheel, on the left side can be set the indexing and rotation speed of the whole wheel or the single frame.</p>
+<p>The interactive wheel picker shows all the graphic frames related to the selected wheel to allow fast interchange operations.</p>
 <p align="center">
 Smart Screen - Image Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&amp;token=40cee69d-bc7f-433a-b992-b123ee53b476" /></p>
+<p><strong>Shape</strong></p>
+<p>Shape bank has parameters like Blade movement and rotation.</p>
+<p>The blades’ depth and angle can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the blade picker.</p>
+The blade picker features a smart graphic control of the blade, independently from the fixture’s blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
 <p align="center">
 Smart Screen - Shape Bank
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&amp;token=a78d7417-2ce5-4efa-8970-31d64ed3179b" /></p>
+<p><strong>Control</strong></p>
+<p>Control bank has parameters related to the fixture’s functions, like Lamp on/off and Reset.</p>
+<p>The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.</p>
 <p align="center">
 Smart Screen - Control
 </p>
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FV9SuNwD08jogFABBHvBw%2F9.3.4.6.webp?alt=media&amp;token=f11d9d9f-6df7-4f09-bcba-9006ec853af6" /></p>
+<p><strong>Media</strong></p>
+<p>Media bank is the bank designed for an intuitive media server programming.</p>
+<p>See the dedicated Chapter <a href="media-servers.html#MediaBank-23.1">23 - Media Servers</a>.</p>
 <p><strong>Smart Screen Preferences:</strong></p>
 <ul>
 <li><p><strong>Settings:</strong></p>

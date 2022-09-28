@@ -160,6 +160,9 @@
 <li class="chapter" data-level="6.5" data-path="patch.html"><a href="patch.html#Configuring-Physical-DMX-1-0-6.5"><i class="fa fa-check"></i><b>6.5</b> Configuring Physical DMX 1/0<span></span></a></li>
 <li class="chapter" data-level="6.6" data-path="patch.html"><a href="patch.html#Patching-Inputs-6.6"><i class="fa fa-check"></i><b>6.6</b> Patching Inputs<span></span></a></li>
 <li class="chapter" data-level="6.7" data-path="patch.html"><a href="patch.html#Parking-Addresses-and-Fixtures-6.7"><i class="fa fa-check"></i><b>6.7</b> Parking Addresses and Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.8" data-path="patch.html"><a href="patch.html#Clone-Fixtures-6.8"><i class="fa fa-check"></i><b>6.8</b> Clone Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.9" data-path="patch.html"><a href="patch.html#device-replacement-device-replacement--6.9"><i class="fa fa-check"></i><b>6.9</b> Device Replacement {#Device-Replacement -6.9}<span></span></a></li>
+<li class="chapter" data-level="6.10" data-path="patch.html"><a href="patch.html#dmx-output-input-views-dmx-output--input-views-6.10"><i class="fa fa-check"></i><b>6.10</b> DMX Output &amp; Input Views {#DMX-Output-&amp;-Input-Views-6.10}<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="system-default-settings.html"><a href="system-default-settings.html"><i class="fa fa-check"></i><b>7</b> System Default Settings<span></span></a>
 <ul>
@@ -270,6 +273,7 @@
 <li class="chapter" data-level="12.1" data-path="libraries.html"><a href="libraries.html#WhatareLibraries-12.1."><i class="fa fa-check"></i><b>12.1</b> What are Libraries<span></span></a></li>
 <li class="chapter" data-level="12.2" data-path="libraries.html"><a href="libraries.html#StoreandModifyBankLibraries-12.2."><i class="fa fa-check"></i><b>12.2</b> Store and Modify Bank Libraries<span></span></a></li>
 <li class="chapter" data-level="12.3" data-path="libraries.html"><a href="libraries.html#ObjectLibraries-12.3."><i class="fa fa-check"></i><b>12.3</b> Object Libraries<span></span></a></li>
+<li class="chapter" data-level="12.4" data-path="libraries.html"><a href="libraries.html#Auto-Generate-12.4."><i class="fa fa-check"></i><b>12.4</b> Auto Generate<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="effects.html"><a href="effects.html"><i class="fa fa-check"></i><b>13</b> Effects<span></span></a>
 <ul>
@@ -817,10 +821,10 @@
 <p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzvCIV8NuJjCwGBqHV4cv%2F7.6.png?alt=media&amp;token=2cc87dc5-332f-47eb-8ed2-cd59b916dd85" /></p>
 <p><strong>Vibe is made up of four modules:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p><strong>GUI</strong> - Desktop Graphical Interface application.</p></li>
-<li><p><strong>LPU</strong> (Light Processing Unit) - Calculates core “real time” calculations.</p></li>
-<li><p><strong>SQL</strong> DataBase - Data management. (There is no option to Auto Recover the database as it is always up to date)</p></li>
-<li><p><strong>HAL</strong> - Hardware Access Layer.</p></li>
+<li><p><strong>GUI - Graphic User Interface</strong> - The windows app with the Vibe graphics.</p></li>
+<li><p><strong>LPU - Lighting Processing Unit</strong> - Calculates and outputs the show data.</p></li>
+<li><p><strong>HAL - Hardware Access Layer</strong> - Connects the panels and devices to the Vibe.</p></li>
+<li><p><strong>SQL</strong> DataBase - Data management.</p></li>
 </ol>
 <p><strong>Auto Save</strong></p>
 <p>The show file can be automatically saved at predefined time intervals.</p>
@@ -835,7 +839,8 @@
 </ol>
 <p><strong>Auto Recover:</strong></p>
 <ul>
-<li>In the case of an unexpected halt, the toggled on modules will attempt a restart.</li>
+<li><p>In the case of an unexpected halt, the toggled on modules will attempt a restart.</p></li>
+<li><p>There is no option to Auto Recover the database as it is always up to date.</p></li>
 </ul>
 <p><strong>Lock Screen Image</strong></p>
 <p>The Lock Screen Image can be customized.</p>

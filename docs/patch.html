@@ -160,6 +160,9 @@
 <li class="chapter" data-level="6.5" data-path="patch.html"><a href="patch.html#Configuring-Physical-DMX-1-0-6.5"><i class="fa fa-check"></i><b>6.5</b> Configuring Physical DMX 1/0<span></span></a></li>
 <li class="chapter" data-level="6.6" data-path="patch.html"><a href="patch.html#Patching-Inputs-6.6"><i class="fa fa-check"></i><b>6.6</b> Patching Inputs<span></span></a></li>
 <li class="chapter" data-level="6.7" data-path="patch.html"><a href="patch.html#Parking-Addresses-and-Fixtures-6.7"><i class="fa fa-check"></i><b>6.7</b> Parking Addresses and Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.8" data-path="patch.html"><a href="patch.html#Clone-Fixtures-6.8"><i class="fa fa-check"></i><b>6.8</b> Clone Fixtures<span></span></a></li>
+<li class="chapter" data-level="6.9" data-path="patch.html"><a href="patch.html#device-replacement-device-replacement--6.9"><i class="fa fa-check"></i><b>6.9</b> Device Replacement {#Device-Replacement -6.9}<span></span></a></li>
+<li class="chapter" data-level="6.10" data-path="patch.html"><a href="patch.html#dmx-output-input-views-dmx-output--input-views-6.10"><i class="fa fa-check"></i><b>6.10</b> DMX Output &amp; Input Views {#DMX-Output-&amp;-Input-Views-6.10}<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="system-default-settings.html"><a href="system-default-settings.html"><i class="fa fa-check"></i><b>7</b> System Default Settings<span></span></a>
 <ul>
@@ -270,6 +273,7 @@
 <li class="chapter" data-level="12.1" data-path="libraries.html"><a href="libraries.html#WhatareLibraries-12.1."><i class="fa fa-check"></i><b>12.1</b> What are Libraries<span></span></a></li>
 <li class="chapter" data-level="12.2" data-path="libraries.html"><a href="libraries.html#StoreandModifyBankLibraries-12.2."><i class="fa fa-check"></i><b>12.2</b> Store and Modify Bank Libraries<span></span></a></li>
 <li class="chapter" data-level="12.3" data-path="libraries.html"><a href="libraries.html#ObjectLibraries-12.3."><i class="fa fa-check"></i><b>12.3</b> Object Libraries<span></span></a></li>
+<li class="chapter" data-level="12.4" data-path="libraries.html"><a href="libraries.html#Auto-Generate-12.4."><i class="fa fa-check"></i><b>12.4</b> Auto Generate<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="effects.html"><a href="effects.html"><i class="fa fa-check"></i><b>13</b> Effects<span></span></a>
 <ul>
@@ -398,6 +402,9 @@
 <li><a href="patch.html#Configuring-Physical-DMX-1-0-6.5">6.5. Configuring Physical DMX 1/0</a></li>
 <li><a href="patch.html#Patching-Inputs-6.6">6.6. Patching Inputs</a></li>
 <li><a href="patch.html#Parking-Addresses-and-Fixtures-6.7">6.7. Parking Addresses and Fixtures</a></li>
+<li><a href="patch.html#Clone-Fixtures-6.8">6.8. Clone Fixtures</a></li>
+<li><a href="#Device-Replacement%20-6.9">6.9. Device Replacement</a></li>
+<li><a href="#DMX-Output-&amp;-Input-Views-6.10">6.10. DMX Output &amp; Input Views</a></li>
 </ul>
 <div id="Fixture-Sets-6.1" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Fixture Sets<a href="patch.html#Fixture-Sets-6.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -571,6 +578,10 @@ Using the <strong>INTERVAL</strong> field, a custom interval may be set.</p>
 </div>
 <div id="address-test" class="section level3 hasAnchor" number="6.4.3">
 <h3><span class="header-section-number">6.4.3</span> Address Test<a href="patch.html#address-test" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAGyTdWpcZi3HPwmU0rnL%2Fimage.png?alt=media&amp;token=ccc28500-51db-468b-b47a-a93e7b304cc7" /></p>
+<p>Sometimes, especially in theater environments, it is useful to check if a DMX channel is empty or not. This can be done from the console by enabling the Address Test function on the header of the Universe View.</p>
+<p>In Address Test mode each selected channel is visualized with a yellow background and it is forced to jump at full intensity.</p>
+<p>Once the function is disabled all the channels come back to their normal state.</p>
 </div>
 </div>
 <div id="Configuring-Physical-DMX-1-0-6.5" class="section level2 hasAnchor" number="6.5">
@@ -687,6 +698,63 @@ DMX is always transmitted but can be remapped to anyone of the supported 256 DMX
 <blockquote>
 <p><span style="color:Red">&gt; The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key <strong>will</strong> blackout parked addresses and fixtures.</span></p>
 </blockquote>
+</div>
+<div id="Clone-Fixtures-6.8" class="section level2 hasAnchor" number="6.8">
+<h2><span class="header-section-number">6.8</span> Clone Fixtures<a href="patch.html#Clone-Fixtures-6.8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Implemented smart and advanced fixture clone features.</p>
+<p>The Fixture Cloning feature allows to copy all the stored data from a selection of fixtures to another one.</p>
+<p>To open the fixture cloning popup, press the dedicated button in Patch page’s Editor Toolbar.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fv22YcHyYGopTWuQX2DnN%2Fimage.png?alt=media&amp;token=d71e788a-c5b8-4a4e-8689-2db96cc5b62f" /></p>
+<p>Choose the order of source fixtures on the left column and the order of destination fixtures on the right column, then press Done.</p>
+<p>Vibe will provide a smart fixture cloning keeping the fixtures’ data as similar as possible.</p>
+<p>Selection Rules:</p>
+<ul>
+<li><p>All source fixtures must be of the same type.</p></li>
+<li><p>All destination fixtures must be of the same type.</p></li>
+<li><p>Many fixtures can be cloned to many fixtures, but the amount must be the same.</p></li>
+<li><p>It is possible to select 1 source and many destinations.</p></li>
+</ul>
+<p>The fixture cloning operation is not reversible, so there is no undo once hitting the DONE button.</p>
+<p><strong>Exchange Clone</strong></p>
+<p>The Cloning option on the top can be set as a one sided or a two-sided clone.</p>
+<p>A one-sided clone copies the stored data from the source to the destination fixtures only.</p>
+<p>A two-sided clone, called Exchange Clone, makes a smart replacement of data from the source fixtures to the destination fixtures and vice versa.</p>
+<p><strong>Advanced Clone</strong></p>
+<p>The Advanced fixture cloning option on the top enables access to a pair of Next popup windows where the matching parameters can be filtered, forced, and customized by the user.</p>
+<p>The next step shows the Parameter Selection window.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvvpN8eujaS0Dh0zIjP4b%2Fimage.png?alt=media&amp;token=fee33c32-7594-4dfc-85d1-6955092bba47" /></p>
+<p>The cloning can be based on raw values, preserving the parameters’ levels, or on smart values, preserving the fixture’s functions. Raw values means that Vibe will match between parameter types and copy the raw value. Smart means that Vibe will try to find the real data information of the parameter and convert the values to match the destination fixture to look the same. Default is Smart.</p>
+<p>On the right side there is a match table between the source and destination fixtures parameters. This table is dynamic and shows the data set from the left side. User can also change matching parameters manually, but this is only to very special cases and anyway it is not recommended. SMART will anyway overrule the table in case there is a parameter that is included in the smart.</p>
+<p>The next step shows the Data window.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1HzpKFZgeKASMmpZs2LG%2Fimage.png?alt=media&amp;token=9ec4c019-b93f-4c0c-b817-8986bf9c060d" /></p>
+<p>The Data window permits to filter the Groups, Libraries, Qlists, Scenes and Submasters, to apply the cloning only to the selected contents. Default is that all are selected.</p>
+<p>NOTE: on the exchange option, these lists will show objects from both source and destination fixtures.</p>
+<p>There is an option to clone the calibration data, so the destination fixture will get the same location coordinates as the source fixture. Default is Disabled, because in real world 2 fixtures cannot have the same physical position, but can be enabled, for example in case of fixture switches or if working on a 3D visualizer trying different lighting setups on the same rig.</p>
+<p>There is an option to clone the look ahead mask so if the source fixture is in the mask, then the destination fixtures will also be in the mask. Default is Enabled.</p>
+<p>There is an option to choose what to do with the parameters of the destination fixtures that are not included in the clone because they were not matched or any other reason. Merge means to keep these values, overwrite will delete the values. Default is Overwrite.</p>
+</div>
+<div id="device-replacement-device-replacement--6.9" class="section level2 hasAnchor" number="6.9">
+<h2><span class="header-section-number">6.9</span> Device Replacement {#Device-Replacement -6.9}<a href="patch.html#device-replacement-device-replacement--6.9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Implemented smart and advanced device replacement.</p>
+<p>The Device replacement feature allows to replace a device with another one, keeping all the matching data stored.</p>
+<p>To open the device replacement popup, press the dedicated button in Patch page’s Editor Toolbar.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzPe1UTIUN6xwnSuzr1rK%2Fimage.png?alt=media&amp;token=970e04e6-ca5e-4eb1-878f-c926b0ffd378" /></p>
+<p>Choose the Source device on the left column and the new device from the Imported Devices on the right column, then press Done.</p>
+<p>Vibe will provide a smart device replacement keeping the fixtures’ data as similar as possible.</p>
+<p>The device replacement operation is not reversible, so there is no undo once hitting the DONE button.</p>
+<p><strong>Advanced Replacement</strong></p>
+<p>The Advanced replacement option on the top enables access to a Next popup window where the matching parameters can be filtered, forced and customized by the user.</p>
+<p>The next step shows the Parameter Selection window.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0XJztm0t2HZbXa4JolJL%2Fimage.png?alt=media&amp;token=6af26fa4-6e1d-4fa4-ae70-f9b479bde6c3" /></p>
+<p>Each bank has its option to enable/disable. Enabled means it will be included in the Device replacement and disabled means it will not be included. Default is enabled.</p>
+<p>The replacement can be based on raw values, preserving the parameters’ levels, or on smart values, preserving the fixture’s functions. Raw values means that Vibe will match between parameter types and copy the raw value. Smart means that Vibe will try to find the real data information of the parameter and convert the values to match the destination fixture to look the same. Default is Smart.</p>
+<p>On the right side there is a match table between the source and destination fixtures parameters. This table is dynamic and shows the data set from the left side. User can also change matching parameters manually, but this is only to very special cases and anyway it is not recommended. SMART will anyway overrule the table in case there is a parameter that is included in the smart.</p>
+</div>
+<div id="dmx-output-input-views-dmx-output--input-views-6.10" class="section level2 hasAnchor" number="6.10">
+<h2><span class="header-section-number">6.10</span> DMX Output &amp; Input Views {#DMX-Output-&amp;-Input-Views-6.10}<a href="patch.html#dmx-output-input-views-dmx-output--input-views-6.10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>DMX Output and DMX Input views are meant to show in real time the output and input values of each DMX channel of the selected universe.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FkgRh2KCyKzGA5X2nfmRs%2Fimage.png?alt=media&amp;token=c5e90163-9614-4f6e-bd69-d3dcd638736f" /></p>
+<p>DMX values can be shown in numeric or in graphic visualization.</p>
 
 </div>
 </div>

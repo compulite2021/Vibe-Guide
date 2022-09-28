@@ -8,7 +8,7 @@ This chapter deals with creating and editing Libraries.
 - [12.1. What are Libraries](#WhatareLibraries-12.1.)
 - [12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.)
 - [12.3. Object Libraries](#ObjectLibraries-12.3.)
-
+- [12.4. Auto Generate](#Auto-Generate-12.4.)
 
 ## What are Libraries {#WhatareLibraries-12.1.}
 
@@ -223,3 +223,22 @@ Library Settings may be changed at any time after they are created using the Lib
 -   [17.1. Storing Snaps](#StoringSnaps-17.1.)
 
 
+## Auto Generate {#Auto-Generate-12.4.}
+
+The option to Auto Generate Groups and Libraries is on the Editor Toolbar in Patch pages. It permits a smart and fast creation of the most common libraries.
+
+The user can configure the numbering and the number of libraries to be created, by selecting the generate options in the popup menu.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FgpYYgkcJxyiMp3Rq0xtt%2Fimage.png?alt=media&token=4109d5d6-e5af-4da3-a65c-b5f9e59b7360)
+
+
+
+It is possible to merge or to overwrite the auto generated libraries with the already existing ones.
+
+Libraries can be named using system names or library numbers, and customized for example using the device's name.
+
+Libraries can be numbered starting from a desired number or appended for the first available position.
+
+Libraries of different fixture types can be spaced with the desired interleave.
+
+Auto generated libraries are created when pressing the GENERATE button on the down right corner. It is possible to check the preferred options on each bank page and then generate them in a single click, as well as to generate them step by step for each device or for each bank.

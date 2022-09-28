@@ -107,7 +107,14 @@ The Exit and Close buttons are located in the Windows sub-menu.
 ## Pages {#Pages-4.3}
 
 
-As mentioned, Vibe has 3 types of workspace templates, organized in the **Pages** screen.
+As mentioned, Vibe has 3 types of workspace templates, organized in the Page screen.
+
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfYgdOdvm8QjxtpB31GPk%2Fimage.png?alt=media&token=a2f4234b-2008-4931-94c4-d5d7e29e2937)
+
+
+
 
 -   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
     

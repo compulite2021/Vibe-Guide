@@ -608,13 +608,13 @@ When using pre-built effects on Pan & Tilt parameters, the default size of the e
 
 **Vibe is made up of four modules:**
 
-1.  **GUI** - Desktop Graphical Interface application.
+1.  **GUI - Graphic User Interface** -  The windows app with the Vibe graphics.
     
-2.  **LPU** (Light Processing Unit) - Calculates core "real time" calculations.
+2.  **LPU - Lighting Processing Unit** - Calculates and outputs the show data.
     
-3. **SQL** DataBase - Data management. (There is no option to Auto Recover the database as it is always up to date)
-    
-4. **HAL** - Hardware Access Layer.
+3.  **HAL - Hardware Access Layer** -  Connects the panels and devices to the Vibe.
+
+4.  **SQL** DataBase - Data management. 
     
 
 **Auto Save**
@@ -637,9 +637,15 @@ Auto save function can be enabled or disabled in the system settings tab, with t
 4.  Choose between the auto save interval options
 
 
+
+
 **Auto Recover:**
 
 -   In the case of an unexpected halt, the toggled on modules will attempt a restart.
+
+-   There is no option to Auto Recover the database as it is always up to date.
+
+
 
 
 
