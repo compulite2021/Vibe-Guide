@@ -617,7 +617,47 @@ When using pre-built effects on Pan & Tilt parameters, the default size of the e
 4. **HAL** - Hardware Access Layer.
     
 
+**Auto Save**
+
+The show file can be automatically saved at predefined time intervals.
+
+Auto save function can be enabled or disabled in the system settings tab, with the option to assign saving time intervals.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmBc6pN8gUwKYLCtK13fU%2Fimage.png?alt=media&token=39a56a76-909d-4268-abeb-1ab5d0405c54)
+
+
+**To configure Auto Save**
+
+1. Open system settings popup
+
+2. Select the System tab
+
+3. Enable Auto Save in the top left corner
+
+4.  Choose between the auto save interval options
+
+
 **Auto Recover:**
 
 -   In the case of an unexpected halt, the toggled on modules will attempt a restart.
 
+
+
+**Lock Screen Image**
+
+The Lock Screen Image can be customized.
+
+Lock screen is shown when system is locked or when Vibe is waiting for the Fixture Builder to be exit.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F8yx4VsoMNStCFwzqezec%2Fimage.png?alt=media&token=2dd98e2a-9cb4-4723-867a-cebf6043e0c4)
+
+
+**To load a lock screen image**
+
+1. Open system settings popup
+
+2. Select the System tab
+
+3. Press Load Image button in the top right corner
+
+4. Load the image to be visualized when Vibe screens are locked

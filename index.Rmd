@@ -615,7 +615,7 @@ Version R_4.0 brings new and updated features as listed below:
 
 - **Report** - {Report} - Opens a popup where it is possible to create excel files with the data of the show, such as Groups, Libraries, Qlists and Scenes content.
 
-- **Error Report** - {Error Report} - Creates an Error Report file that can be shared with Compulite Support in case of software problems.
+- **Error Report** - {Error Report} - Creates an Error Report file that can be shared with  Compulite Support in case of software problems.
 
 - **LPU and HAL Recovery** - LPU and HAL can be recovered manually from the System Settings popup.
 

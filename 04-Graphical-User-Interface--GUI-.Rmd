@@ -8,12 +8,13 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 
 - [4.1.   Introduction](#Introduction-4.1)
 - [4.2.   {VIBE} Menu](#VIBE-Menu-4.2)
-- [4.3    Configuring WorkSpaces](#Configuring-WorkSpaces-4.3)
-- [4.4.   Layouts](#Layouts-4.4)
-- [4.5.   Smart Screen](#Smart-Screen-4.5)
-- [4.6.   Toolbars](#Toolbars-4.6)
-- [4.7.   Live Display](#Live-Display-4.7)
-- [4.8.   Live Parameter Display](#live-parameter-display-4.8)
+- [4.3.   Pages](#Pages-4.3)
+- [4.4    Configuring WorkSpaces](#Configuring-WorkSpaces-4.4)
+- [4.5.   Layouts](#Layouts-4.5)
+- [4.6.   Smart Screen](#Smart-Screen-4.6)
+- [4.7.   Toolbars](#Toolbars-4.7)
+- [4.8.   Live Display](#Live-Display-4.8)
+- [4.9.   Live Parameter Display](#live-parameter-display-4.9)
 
 
 
@@ -101,7 +102,60 @@ The Exit and Close buttons are located in the Windows sub-menu.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFV8W9WgLTCerYjssYKJD%2Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
 
-## Configuring WorkSpaces{#Configuring-WorkSpaces-4.3}
+
+
+## Pages {#Pages-4.3}
+
+
+As mentioned, Vibe has 3 types of workspace templates, organized in the **Pages** screen.
+
+-   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
+    
+
+-   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
+    
+
+-   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
+    
+
+**Home Pages**
+
+Layout home page buttons are a fast recall for up to three main pages.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FQky1ma4eRNeqE5jGk280%2Fimage.png?alt=media&token=42e0dc5d-20f9-481c-baa3-768dcc0142a8)
+
+Any page can be stored as a Home Page on the Editor Toolbar, near the VIBE menu button.
+
+### 
+
+To set up home pages
+
+1. Open the Vibe menu and press Pages button on the editor toolbar
+
+2. Enable Selection in the Pages view
+
+3. Select a Page and assign it as a Home Page on the Toolbar
+
+F1 keyboard button also switches between the three Home Pages.
+
+**Clone Pages**
+
+Clone layout pages for a faster building of a similar layout page.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlDXYtoUIjhPr8tUsT75w%2Fimage.png?alt=media&token=3fe39aee-cb63-4874-a0f4-64bf6f18b2e1)
+
+
+
+**To clone a page**
+
+1. Open the Vibe menu and press Pages button on the editor toolbar
+
+2. Enable Selection in the Pages view
+
+3. Select a Page and clone it with the button on the Toolbar
+
+
+## Configuring WorkSpaces{#Configuring-WorkSpaces-4.4}
 
 
 ### Basics
@@ -116,6 +170,8 @@ The Exit and Close buttons are located in the Windows sub-menu.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRgauawhpMT9fs8UyREov%2F4.2.1.webp?alt=media&token=9ba0114d-9b28-4942-b8cc-835d775dae8b)
+
+Some of the views have their own settings that can be accessed when layout is in edit mode, the view is selected and tapping the {Settings} button on the toolbar.
 
 
 ### Show/Hide View Headers
@@ -136,7 +192,84 @@ This option is valid when the layout is unlocked and the view is selected. Showi
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9B5NTIysFGLAcAACtoIr%2Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
 
 
-## Layouts{#Layouts-4.4}
+
+### Toggle Scrollbar
+
+The Toggle Scrollbar button, in the scrollable views’ settings, adds or removes a scrollbar to/from the view.
+
+### Toggle Frame
+
+The Toggle Frame button adds or removes the frame to/from the view.
+
+
+### Frame Color
+
+Frames colors can be customized for a better graphical separation between the views.
+
+
+### Softkey Settings
+
+Any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FTsArpvt37X2Hqhoy9XuB%2Fimage.png?alt=media&token=86155389-1dcd-489e-b94d-6f18e449be0d)
+
+Softkey settings are used to change the size, font and color of the softkeys’ text and background.
+
+The settings can be saved as Pre-Built and applied to the other views of the same tab, page, or to the softkey views in all the pages.
+
+The settings can also be saved as default, and it’s always possible to come back to the default or to reset the changes.
+
+Some special color options are available to show color library softkeys with the softkey color either with the color or the colors that are stored in the library.
+
+**Softkeys Auto Text Color Setting**
+
+The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FBHt6AywtdcG99a9eV2iA%2Fimage.png?alt=media&token=b855a76e-6e0f-4aa8-b649-2bf2c160e53f)
+
+
+This is useful for the color libraries if combined with the Mixed Color option.
+
+**Context Options**
+
+Context view can show or hide the visualized objects depending on the user’s settings or on the smart option.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F70lkKxffNFSVWCAVKyM6%2Fimage.png?alt=media&token=7d254a1c-0c14-4857-af00-8928be7d8a63)
+
+The Context Normal Mode filters the visualized objects according to the enabled buttons.
+
+The Context Smart Mode filters the visualized objects automatically avoiding the softkeys that are already visible in the page.
+
+
+
+### Single Button Settings
+
+
+Any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fuj6BxllgyscXHVE7lrkR%2Fimage.png?alt=media&token=0a6618cd-3942-4530-9975-5fdf41ec67d8)
+
+
+Specific settings, such as color and text size, can be assigned to each single button.
+
+The settings can be saved as Pre-Built and applied to the other single buttons of the same tab, page, or to the buttons in all the pages.
+
+The settings can also be saved as default, and it’s always possible to come back to the default or to reset the changes.
+
+
+
+### Hide Menu
+The Close Menu button is an option to hide menus in menuable views, such as Topo, Live, Created fixtures, Timeline, etc.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDRfu5SG85jpNnKASgBRs%2Fimage.png?alt=media&token=46ee6c9e-7e0a-4d29-8172-959adbac6a34)
+
+The hidden menu button can be placed wherever on the view with a long click gesture and drag.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuVLiIOcvpMOYjooj2WIc%2Fimage.png?alt=media&token=b2f848c4-1218-44f3-a2b9-bb4ee5643a44)
+
+
+
+## Layouts{#Layouts-4.5}
 
 **Layouts:**
 
@@ -152,7 +285,7 @@ A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
 
 
 
-## Smart Screen {#Smart-Screen-4.5}
+## Smart Screen {#Smart-Screen-4.6}
 
 
 The 11.6" multi-touch monitor embedded in the upper section of the Vibe console is referred to as the **Smart Screen**. The **Smart Screen** is dedicated to displaying context sensitive interactive bank, wheel, and parameter information. 
@@ -162,7 +295,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 [9.3.4. Smart Screen](#Smart-Screen-9.3.4)
 
 
-## Toolbars {#Toolbars-4.6}
+## Toolbars {#Toolbars-4.7}
 
 
 **The Editor Toolbar contains is a set of interactive Softkeys that are used to access less common commands:**
@@ -179,7 +312,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fn6vIb0nGIrhdgceYRjec%2F4.5.2.webp?alt=media&token=0ef6d1a9-45f8-4015-b8c0-c1e3a115df30)
 
-## Live Display{#Live-Display-4.7}
+## Live Display{#Live-Display-4.8}
 
 
 Vibe has two ways to display parameter data: 
@@ -338,7 +471,7 @@ Live View Settings pop-up - Display Tab.
 
 
 
-## Live Parameter Display {#live-parameter-display-4.8}
+## Live Parameter Display {#live-parameter-display-4.9}
 
 
 The Live Parameter Display shows values in a table format instead of spreadsheet format. 
