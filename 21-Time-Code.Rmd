@@ -318,7 +318,7 @@ These commands will affect the selected timelines in the sequence. Some sequence
 
 
 
-## Execute Timeline Events {Execute-Timeline-Events-21.6}
+## Execute Timeline Events {#Execute-Timeline-Events-21.6}
 
 -   If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.
     

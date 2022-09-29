@@ -202,7 +202,7 @@ Configure-Timecode-21.2.
 timeline-view-timeline-view-21.3.
 Record-a-Timeline-21.4.
 Edit-Timeline-Events-21.5.
-execute-timeline-events-execute-timeline-events-21.6
+Execute-Timeline-Events-21.6
 Markers-21.7.
 TimeFormat-21.8.
 midi
