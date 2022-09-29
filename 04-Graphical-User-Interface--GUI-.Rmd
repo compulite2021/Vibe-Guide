@@ -69,13 +69,6 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
     
 
--   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
-    
-
--   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
-    
-
--   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
 
 ## VIBE Menu {#VIBE-Menu-4.2}
 

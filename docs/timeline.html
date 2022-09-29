@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 24 Network | Vibe Manual</title>
+  <title>Chapter 21 Timeline | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 24 Network | Vibe Manual" />
+  <meta property="og:title" content="Chapter 21 Timeline | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 24 Network | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 21 Timeline | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="media-servers.html"/>
-
+<link rel="prev" href="XYZ-Fixture-Calibration-20.0..html"/>
+<link rel="next" href="midi.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -400,175 +400,246 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="network" class="section level1 hasAnchor" number="24">
-<h1><span class="header-section-number">Chapter 24</span> Network<a href="network.html#network" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter deals with configuring, transmitting and receiving DMX over Ethernet.</p>
-<p><strong>The following is covered in this chapter:</strong></p>
-<ul>
-<li><a href="network.html#NetworkBasics-24.1.">24.1. Network Basics</a></li>
-<li><a href="network.html#ConnectingtoCompuliteePorts-24.2.">24.2. Connecting to Compulite ePorts</a></li>
-<li><a href="network.html#ConnectingtoArt-NetandsACNNodes-24.3.">24.3. Connecting to Art-Net and sACN Nodes</a></li>
-<li><a href="network.html#RDM-24.4.">24.4. RDM</a></li>
-<li><a href="network.html#CITP-24.5.">24.5. CITP</a></li>
-</ul>
-<div id="NetworkBasics-24.1." class="section level2 hasAnchor" number="24.1">
-<h2><span class="header-section-number">24.1</span> Network Basics<a href="network.html#NetworkBasics-24.1." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>24.1. Network Basics</p>
-<p><strong>Vibe has two user accessible Ethernet networks:</strong></p>
-<ul>
-<li><p>Data Network - Accessible via the two etherCON connectors on the rear panel.</p>
-<p>◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.</p></li>
-<li><p>General Networks - Accessible via the two RJ45 connectors on the rear panel.</p>
-<p>◾ Used for Network storage of show files and remote diagnostics.</p></li>
-</ul>
-<p>Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the System Settings pop-up. It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP, (the start address), must match on all devices in the network. Devices on the same network must <strong>not</strong> have identical IP addresses.</p>
-<p><strong>Common Start addresses are:</strong></p>
-<ul>
-<li><p>10.x.x.x - Default for most ETC networks and alternate for Art-Net network IP.</p></li>
-<li><p>2.x.x.x - Default for Art-Net networks.</p></li>
-<li><p>192.x.x.x -Default for most MA consoles.</p></li>
-</ul>
-<p><strong>Subnet Mask</strong> - Identifies the network itself and in conjunction with the IP address can be used to properly route network devices.</p>
-<ul>
-<li><p>255.0.0.0. - Compulite Default. Only the first triplet must match.</p></li>
-<li><p>255.255.0.0 - Also common.</p></li>
-</ul>
+<div id="timeline" class="section level1 hasAnchor" number="21">
+<h1><span class="header-section-number">Chapter 21</span> Timeline<a href="timeline.html#timeline" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.</p>
 <blockquote>
-<p>Compulite uses the third triplet as a console identifier in some of the products.</p>
+<p><span style="color:Red">This feature is under development and this section is preliminary.</span></p>
 </blockquote>
-<blockquote>
-<p>The Vibe can be used in networks using a DHCP server but cannot act as a DHCP server.</p>
-</blockquote>
-<blockquote>
-<p><span style="color:Red">In all cases, the first triplets must match for devices to communicate with one another.</span>.</p>
-</blockquote>
-<p><strong>Switches</strong>:</p>
+<p><strong>The following is covered in this section:</strong></p>
 <ul>
-<li><p>Vibe has two internal switches so single direct device to device connections are possible without a cross cable.</p></li>
-<li><p>When more than one device must be connected to the Vibe a good quality gigabit switch should be used.</p></li>
+<li><p><a href="timeline.html#Basics-21.1.">21.1. Basics</a></p></li>
+<li><p><a href="timeline.html#Configure-Timecode-21.2.">21.2. Configure Timecode</a></p></li>
+<li><p><a href="#Timeline%20View-21.3.">21.3. Timeline View</a></p></li>
+<li><p><a href="timeline.html#Record-a-Timeline-21.4.">21.4. Record a Timeline</a></p></li>
+<li><p><a href="timeline.html#Edit-Timeline-Events-21.5.">21.5. Edit Timeline Events</a></p></li>
+<li><p><a href="#Execute-Timeline-Events-21.6">21.6. Execute Timeline Events</a></p></li>
+<li><p><a href="timeline.html#Markers-21.7.">21.7. Markers</a></p></li>
+<li><p><a href="timeline.html#TimeFormat-21.8.">21.8. Time Format</a></p></li>
 </ul>
-<blockquote>
-<p><span style="color:Red">Many a system has gone down due to bad Ethernet cabling and cheap switches. It is recommended that etherCON connectors be used where possible in conjunction with professional grade switches designed for lighting and audio applications.</span>.</p>
-</blockquote>
+<div id="Basics-21.1." class="section level2 hasAnchor" number="21.1">
+<h2><span class="header-section-number">21.1</span> Basics<a href="timeline.html#Basics-21.1." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.</p>
+<p>Vibe can read the following sources:</p>
+<ul>
+<li><p>Virtual Local - Internally generated timecode.</p></li>
+<li><p>Physical Local - SMPTE or MIDI timecode received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
+<li><p>USB MIDI class compliant timecode.</p></li>
+<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
+<li><p>Input sources from remote multi-User consoles and devices</p></li>
+</ul>
+<p>Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. Vibe also supports fader automation on timeline tracks.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&amp;token=b585f40e-5bdb-4475-8098-b00bb3ebce08" /></p>
+<p>Vibe automatically matches frame rates to the incoming source.</p>
+<p>Supported frame rates are:</p>
+<ul>
+<li><p>24 FPS</p></li>
+<li><p>25 FPS</p></li>
+<li><p>29.97 FPS drop-frame</p></li>
+<li><p>30 FPS</p></li>
+</ul>
+<p><strong>Vibe has Timecode connectors for the following:</strong></p>
+<ul>
+<li><p>Audio input Combi Jack with:</p>
+<ul>
+<li><p>Female unbalanced line level input on 1/4” Phone jack</p></li>
+<li><p>Female 3 pin XLR balanced line level input.</p></li>
+</ul></li>
+<li><p>5 Pin DIN connector for MIDI and MIDI timecode input.</p></li>
+</ul>
+<p><strong>Additionally, the following general purpose ports may be used for Timecode:</strong></p>
+<ul>
+<li><p>USB 2 and USB 3 ports can be used for USB class compliant MIDI over USB.</p></li>
+<li><p>Compulite devices that support MIDI over Ethernet can also be used.</p></li>
+</ul>
+<p><strong>Recommended quality and level for SMPTE:</strong></p>
+<ul>
+<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
+<li><p>As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+</ul>
 </div>
-<div id="ConnectingtoCompuliteePorts-24.2." class="section level2 hasAnchor" number="24.2">
-<h2><span class="header-section-number">24.2</span> Connecting to Compulite ePorts<a href="network.html#ConnectingtoCompuliteePorts-24.2." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Compulite manufactures the <strong>ePort</strong> brand of DMX over Ethernet nodes. <strong>Supported Protocols:</strong></p>
-<ul>
-<li><p>ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm)</p>
-<p>◾ Compulite VC protocol</p>
-<p>◾ Art-Net v2</p></li>
-<li><p>ePort-41 - Current</p>
-<p>◾ sACN pre-release and release versions</p>
-<p>◾ Art-Net 3</p>
-<p>◾ Compulite VC protocol</p></li>
-<li><p>ePort-8 and ePort-2</p>
-<p>◾ sACN pre-release and release versions</p>
-<p>◾ Art-Net 3</p>
-<p>◾ Compulite VC protocol For more product information, See: ePort Documents</p></li>
-</ul>
-<p>Before an ePort can be connected it should be configured using the CNET Manager software, available at the above link.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FazG0oFLuOppI8XrwMiK8%2F24.2.webp?alt=media&amp;token=439bc413-9d0a-487f-8fff-bc31e829c581" /></p>
-<p><strong>Configuring ePorts:</strong></p>
+<div id="Configure-Timecode-21.2." class="section level2 hasAnchor" number="21.2">
+<h2><span class="header-section-number">21.2</span> Configure Timecode<a href="timeline.html#Configure-Timecode-21.2." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To trigger a timeline with a timecode source, the
+Open the {Vibe} menu and select: {Settings} ⟶ {I/O Settings}</p>
+<p>A popup will open, where the connections and protocols can be configured and enabled or disabled.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&amp;token=4d637f49-7313-454e-8b8e-9214d8d1b707" /></p>
+<p align="center">
+1/O Settings Pop-up in Timecode Tab
+</p>
+<p>In General tab it is possible to enable or disable local and external midi connections.</p>
+<p>In Notes/Commands tab it is possible to assign specific commands to the midi notes.</p>
+<p>In Midi Show Control tab it is possible to enable and configure the MSC devices.</p>
+<p>In Timecode tab it is possible to enable and disable the Midi Time Code (MTC) and the SMPTE.</p>
+<p><strong>Enable Timecode:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Make sure that the Vibe IP and the ePort IP are in the same range.</p></li>
-<li><p>Assign universes to each physical port by typing the universe number in the box below the icon of the physical connector.</p></li>
-<li><p>Select the DMX- ON-Ethernet protocol in the protocol list below the graphical display of the ePort.</p></li>
+<li><p>From the patch toolbar tap {I/O Settings}</p></li>
+<li><p>For Tap {General} tab and select:</p>
+<ul>
+<li><p>{Local MIDI} to enable the DIN connector MIDI.</p></li>
+<li><p>{External MIDI} to enable USB MIDI or MIDI over Ethernet.</p></li>
+</ul></li>
+<li><p>Tap the {Timecode} tab, the Timecode pop-up will appear.</p></li>
+<li><p>Enable {MTC In} to enable any type of MIDI timecode input.</p></li>
+<li><p>Enable {SMPTE In} to receive LTC audio timecode. (Frames are automatically matched to the incoming frame rate}</p></li>
+<li><p><span style="color:Gray">Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</span></p></li>
 </ol>
-<blockquote>
-<p>If the ePort is a newer model, sACN will also appear in the list. If Art-Net is selected make sure the Art-Net Subnet is also set. In most cases this will be set to 0 which allows the first 16 universes. It must be incremented by one with each new range of 16 universes</p>
-</blockquote>
+</div>
+<div id="timeline-view-timeline-view-21.3." class="section level2 hasAnchor" number="21.3">
+<h2><span class="header-section-number">21.3</span> Timeline View {#Timeline View-21.3.}<a href="timeline.html#timeline-view-timeline-view-21.3." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the workspace layout. Unlimited timecode views may be created, but they will all be synchronized and show the same tracks and options.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&amp;token=86dd2f10-6d2a-4905-bfeb-baec212c85db" /></p>
+<p align="center">
+Timeline view with two timeline tracks, the cursor, and a marker
+</p>
+<p><strong>To add a Timeline view to a page:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.</p></li>
+<li><p>Tap {Pages} - Page display will open.</p></li>
+<li><p>Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.</p></li>
+<li><p>Tap the Lock/Unlock icon to enable adding a new view.</p></li>
+<li><p>Open the {Vibe} menu and select: {Program Views} ⟶ {Timeline View}
+A blank timeline view will appear on the workspace.</p></li>
+<li><p>Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.</p></li>
+</ol>
+</div>
+<div id="Record-a-Timeline-21.4." class="section level2 hasAnchor" number="21.4">
+<h2><span class="header-section-number">21.4</span> Record a Timeline<a href="timeline.html#Record-a-Timeline-21.4." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in “real time” and then edited.</p>
+<p><strong>To create a timeline track:</strong></p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&amp;token=6d042dc3-2c94-47b0-910d-e5481466fa85" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Open the Timeline View menu.</p></li>
+<li><p>Tap {<a href="image.png"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/></a>} - The “Create New Timeline” pop-up will open.</p></li>
+<li><p>Select a timeline number and name.</p></li>
+<li><p>Choose Start from {Blank} or {Existing} Timeline and Apply.</p></li>
+<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p>
+<ul>
+<li><p>Virtual Local - Use internal timecode clock.</p></li>
+<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
+<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
+</ul></li>
+<li><p>Enable the red {Record} button or the {+ Record} button.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fl4fNaYR34NAoNMJxt3HL%2F21.4.1.webp?alt=media&amp;token=fb24e6fe-6798-432f-a7d7-b454cf666b76" /></p>
+<ul>
+<li><p>Record overwrites existing events.</p></li>
+<li><p>(+) Record adds events to existing events.</p></li>
+</ul></li>
+<li><p>If using internal TC, press Play.</p></li>
+<li><p>If using external TC start the timecode source.</p></li>
+<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
+<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
+<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
+</ol>
+<p><strong>Timeline Features</strong></p>
+<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<p><strong>Grid View Filters</strong></p>
+<p>Switch from the Graphical to the Grid view with the left button on the control bar.</p>
+<p>In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&amp;token=7b352b8c-dfaf-402d-a9fc-5e986b395212" /></p>
+</div>
+<div id="Edit-Timeline-Events-21.5." class="section level2 hasAnchor" number="21.5">
+<h2><span class="header-section-number">21.5</span> Edit Timeline Events<a href="timeline.html#Edit-Timeline-Events-21.5." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Events Selection</strong></p>
+<p>To Select timeline events:</p>
+<ul>
+<li><p>Tap on a single event – toggles the event selection</p></li>
+<li><p>Tap on a playback box – toggles the playback selection</p></li>
+<li><p>Tap on a marker – toggles the marker selection</p></li>
+<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
+<li><p>Double-tap an empty area – clear the selection</p></li>
+<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
+<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
+<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
+<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
+</ul>
+<p><span style="color:Red"><strong>Important!</strong></span></p>
+<p>Selecting one object type (i.e. Playback, Event, Marker…) will clear all other objects selection.</p>
+<p>Selection can have only one type of objects at a time.</p>
+<p><strong>Actions</strong></p>
+<p>All the events can be moved on the timeline with drag&amp;drop commands in the graphical view, or by assigning a different time in the grid bar.</p>
+<p>The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfR30nB675vPr3V3MbmKF%2Fimage.png?alt=media&amp;token=068aeed6-708a-4203-a7b6-c626b451a4d8" /></p>
+<p><strong>Reset Slider Value</strong></p>
+<p>Timelines record the slider values, but in the Actions menu there is the option to reset the value to from a playback and set it to a fixed value between zero and full.</p>
+<p><strong>To clear the slider value from a timeline</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Open a timelines</p></li>
+<li><p>Select the target playback</p></li>
+<li><p>On the menu, open the Actions</p></li>
+<li><p>Press Reset Slider</p></li>
+<li><p>Assign the slider value on the virtual slider popup</p></li>
+</ol>
+<p><strong>Move Selection</strong></p>
+<p>It is possible to change selected event times via the physical wheels.</p>
+<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
+<p>This option is available under the <em>Move Selection</em> sub-menu of the Timeline view (<em>Wheel On, Wheel Off</em>).</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&amp;token=5e0244e3-c571-48b0-b1c1-2d72b0778999" /></p>
+<p>Then there will be 2 physical wheels that are available for use:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&amp;token=f1407bc6-fecc-4f8c-9615-f8a7541966dd" /></p>
+<p>The left one is for moving the selected events.</p>
+<p>The right one is to change the time resolution for the current time movement.</p>
+<p><strong>Commands for Timelines</strong></p>
+<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to idle state</p></li>
+<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
+<li><p>You see on the Editor Toolbar the available commands:</p></li>
+</ol>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzgT27J7izwv0ermWLplh%2Fimage.png?alt=media&amp;token=8ebdbcb1-4cfc-4f5d-a4db-a219ef3f88d3" /></p>
 <ol start="4" style="list-style-type: decimal">
-<li>Tap {Update} to apply all changes.</li>
+<li><p><strong>Sequence may also end with:</strong></p>
+<p><strong>a.</strong> Store – will create the timelines if they are not already created</p>
+<p><strong>b.</strong> Delete – will delete the timelines if they exist</p>
+<p><strong>c.</strong> Text – will open text box to give a name to the selected timelines</p>
+<p><strong>d.</strong> Copy – will add the timelines to the clipboard</p>
+<p><strong>e.</strong> Paste – will paste the copied timelines from the clipboard</p></li>
 </ol>
 </div>
-<div id="ConnectingtoArt-NetandsACNNodes-24.3." class="section level2 hasAnchor" number="24.3">
-<h2><span class="header-section-number">24.3</span> Connecting to Art-Net and sACN Nodes<a href="network.html#ConnectingtoArt-NetandsACNNodes-24.3." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe currently supports transmission of 256 universes of DMX over Ethernet using the industry standards of Art-Net versions 1 ⟶ 3, ad eACN (ANSI E1.31-2016 standard).</p>
-<p><strong>Enable Art-Net or sACN output:</strong></p>
+<div id="execute-timeline-events-execute-timeline-events-21.6" class="section level2 hasAnchor" number="21.6">
+<h2><span class="header-section-number">21.6</span> Execute Timeline Events {Execute-Timeline-Events-21.6}<a href="timeline.html#execute-timeline-events-execute-timeline-events-21.6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Tap {DMX SETTINGS} in the patch toolbar found at the bottom of the Patch Workspace Template. The DMX Properties Pop-up will open.</li>
+<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
+<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
+<li><p>The control bar may be used to stop and rewind events when the source is internal.</p></li>
+<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
+<li><p>forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
 </ul>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzMGK8HmzzbLpRxRNYeh8%2F24.3.webp?alt=media&amp;token=4f56ee15-cc74-4574-b077-257de6f78a21" /></p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRZbgxqeSNTYs9CfcabMm%2F24.3.1.webp?alt=media&amp;token=2fd64c6c-b903-4168-87d8-f19188f7342d" /></p>
+<p><strong>State Machine Support</strong></p>
+<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&amp;token=87396a0f-bdd3-4e7c-aee1-65341332d0e3" /></p>
+<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
+<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
+<p><span style="color:Red"><strong>Important!</strong></span></p>
+<p>Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</p>
+<p>The available commands from the panel or the Editor Toolbar are split into 2 levels:</p>
+<p><strong>Commands for the View</strong></p>
+<p>These commands will affect the Active Timeline View.</p>
 <ol style="list-style-type: decimal">
-<li><p>Under the Protocol heading, Tap {Art-Net} or {sACN} - The selection will turn red.</p></li>
-<li><p>Under Broadcast Options (VC, Art-Net, sACN) tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the etherCON Data ports.</p></li>
+<li><p>Go to idle state</p></li>
+<li><p>Press <em>Timeline</em> from the panel</p></li>
+<li><p>You see on the Editor Toolbar the available commands:</p></li>
 </ol>
-<p>The Vibe is capable of transmitting more than one protocol at a time. To save bandwidth it is also possible to enable only the universes for each protocol that are required. Vibe has separate universe patches for VCs, Art-Net, and sACN. By default, universes are patched 1 to 1 for each protocol. It is possible to reroute universe output destinations. Normally fixtures patched to console source universe 1 would be transmitted on Ethernet destination universe 1 but sometimes when multiple consoles are on line it is desirable to reroute universes to avoid conflicts. Source universe 1 for example could be rerouted to destination universe 101.</p>
-<blockquote>
-<p>The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ⟶ 256 providing the total amount of universes does not exceed the purchased license.</p>
-</blockquote>
-<p><strong>Reroute Console Universes:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Under the <strong>Source Universe</strong> header, scroll the list to the source console universe number you wish to route <strong>from</strong>. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.</p></li>
-<li><p>Under the <strong>Destination Universe</strong> header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.</p></li>
-</ol>
-<p><strong>Additional functions:</strong></p>
-<ul>
-<li><p>Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.</p></li>
-<li><p>Clear all destination universes - Select the protocol to clear. Tap {Clear All}.</p></li>
-<li><p>Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.</p></li>
-<li><p>Reset all defaults for the selected protocol - Tap {Config All}.</p></li>
-</ul>
-<p><strong>Art-Net Subnet View:</strong></p>
-<ul>
-<li>Art-Net is designed in blocks of 16 universes. The blocks starts at subnet 0 and increments by 1 every 16 universes. The Subnet number and fixture number in the subnet may be viewed by toggling {Subnet View}.</li>
-</ul>
-<p><strong>Unicast Option for Art-Net and VC</strong></p>
-<p>It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. Ports that are not defined as unicast will be still sent as broadcast. Each port can be configured to multiple IPs. Few ports can be sent to the same IP.</p>
-<p><strong>To configure Unicast send</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap Vibe menu button</p></li>
-<li><p>Tap Settings button</p></li>
-<li><p>Tap <em>DMX Settings</em> button</p></li>
-<li><p>Go to <em>VC’s Out</em> or <em>Art-Net</em></p></li>
-<li><p>Change the toggle to <em>Unicast Settings</em></p></li>
-<li><p>Tap Add to add a new configuration line</p></li>
-</ol>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUygtX7FrLFBuX7Jpr2t1%2Fimage.png?alt=media&amp;token=d54d8b49-b039-488e-a894-99812a32711e" /></p>
-<p>On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10</p>
-<p>On the second line – port 5 will be sent also to IP 172.16.10.11</p>
-<p>On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&amp;token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204" /></p>
 </div>
-<div id="RDM-24.4." class="section level2 hasAnchor" number="24.4">
-<h2><span class="header-section-number">24.4</span> RDM<a href="network.html#RDM-24.4." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Currently, RDM is fully supported on the 8 physical DMX output ports and Compulite VC protocol. <strong>View RDM information:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Open Patch Workspace.</p></li>
-<li><p>Tap the RDM tab in the lower right corner of the workspace.</p></li>
-<li><p>Tap {Get Devices} - The system will scan and display RDM compliant devices.</p></li>
-<li><p>If new devices are added, press {Re Scan}. Full RDM management will be available in future releases.</p></li>
-</ol>
+<div id="Markers-21.7." class="section level2 hasAnchor" number="21.7">
+<h2><span class="header-section-number">21.7</span> Markers<a href="timeline.html#Markers-21.7." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To aid in timeline navigation, Markers may be inserted.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSou2Iz4861ze8cyJBkg4%2F21.6.webp?alt=media&amp;token=346cd8e4-e42b-492b-acf2-8dbb33e9ab00" /></p>
+<p>To insert a marker:</p>
+<ul>
+<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
+<li><p>Press ⟵ to move backwards through the markers.</p></li>
+<li><p>Press ⟶ to move forwards through the markers.</p></li>
+<li><p>Press 🗑️ to delete a marker</p></li>
+</ul>
 </div>
-<div id="CITP-24.5." class="section level2 hasAnchor" number="24.5">
-<h2><span class="header-section-number">24.5</span> CITP<a href="network.html#CITP-24.5." class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>CITP Popup</strong></p>
-<p>This popup gathers all the CITP capabilities of the Vibe together.</p>
-<p><strong>To open the CITP Popup</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap Vibe menu button</p></li>
-<li><p>In Settings, Tap CITP Settings</p></li>
-</ol>
-<p>In the popup there are 4 tabs:</p>
-<p><strong>General CITP Settings</strong></p>
-<p>This tab shows the general information about the console and gives the option to enable/disable CITP communication from/to this console.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FwXqFHABn8Y02rKS0aClC%2Fimage.png?alt=media&amp;token=54609c14-83fb-4f2a-a0cc-c94f4407e39e" /></p>
-<p><strong>Media Servers</strong></p>
-<p>This tab shows a list of the detected Media Servers on the network. In order to connect to a media server and start a session, select a media server from the list and press <em>Connect</em>.</p>
-<p>In order to link a media server to a specific fixture, select a connected media server from the list and tap <em>Configure</em>. A popup will appear where you can choose which fixtures you want to link.</p>
-<p>In order to get all the available data from a media server, select a connected and linked media server from the list, and tap <em>Get Data</em>. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fh3TOxEoJXcctMpwn2sJZ%2Fimage.png?alt=media&amp;token=9eb3bec8-bf79-43bf-97e1-dd79baf7da90" /></p>
-<p><strong>Visualizers</strong>
-This tab shows a list of the detected Visualizers on the network. In order to connect to a visualizer and start a session, select it from the list and tap Connect. In order to get the patch from a connected visualizer, select it from the list and tap Get Show. This action will clear the current show, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create it on your show.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUENsFjNTKcMOaF7bbOwM%2Fimage.png?alt=media&amp;token=39bb4fba-348e-4130-9df8-344239a287c5" /></p>
-<p><strong>Consoles</strong></p>
-<p>This tab shows a list of the detected consoles on the network that are using CITP and their state.
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFcpkKcW84Yay2mK4SL4y%2Fimage.png?alt=media&amp;token=70780c8c-d341-42d3-846f-36fe9e6be416" /></p>
-<p><strong>Auto Patch from Capture</strong></p>
-<p>It is possible to sync the show from Capture. In order to do that you need to set the Capture CITP settings to use Standard Multicast and select the relevant IP address.</p>
-<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FCt3bPG8w7qkGAHfPUj7l%2Fimage.png?alt=media&amp;token=ff89b3eb-5b62-4981-80f9-1a0c7cf599b0" /></p>
-<p>In addition, make sure Vibe and Capture are on the same subnet. After finishing preparing the show on Capture, go to Vibe, open the CITP popup, enable the CITP and connect to the Capture from the Visualizers tab. Then <em>Get Data</em> from Capture and you should be ready to go.</p>
+<div id="TimeFormat-21.8." class="section level2 hasAnchor" number="21.8">
+<h2><span class="header-section-number">21.8</span> Time Format<a href="timeline.html#TimeFormat-21.8." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is possible to view the timeline and events data in different time
+formats.</p>
+<p>The default time format is milliseconds, but it is also possible to use FPS format. The time format selection is possible via the view’s menu.</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fbo29Yc2ouM4IM1uP84Nl%2Fimage.png?alt=media&amp;token=103f9e9d-1202-4ccc-bf97-7694f1762c3a" /></p>
 
 </div>
 </div>
@@ -577,8 +648,8 @@ This tab shows a list of the detected Visualizers on the network. In order to co
           </div>
         </div>
       </div>
-<a href="media-servers.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="XYZ-Fixture-Calibration-20.0..html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="midi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -16,7 +16,8 @@ Cues and Scenes are played back using the 15 **Motorized Slider Controllers**, n
 - [14.9. Controller Qlist Properties](#ControllerQlistProperties-14.9.)
 - [14.10. Controller Modes](#ControllerModes-14.10.)
 - [14.11. Rate and Teach Keys](#RateandTeachKeys-14.11.)
-
+- [14.12. Playback Master](#Playback-Master-14.12.)
+- [14.13. Move Controllers](#Move-Controllers-14.13.)
 
 ## Controller Priority Logic {#ControllerPriorityLogic-14.1.}
 
@@ -542,3 +543,54 @@ When actively in the Rate Screen, physical controller keys are mapped to the rat
 2.   <span style="color:Gray">{Tap X} keys set the sample rate for the teach function (number of presses to be averaged). </span>
     
 3.   <span style="color:Gray">When implemented, Teach time may also be set from the Rate Screen using the transport bar buttons.</span>
+
+
+## Playback Master {#Playback-Master-14.12.}
+
+
+A Playback Master is a controller that masters other controllers.
+
+LED and theme color for the playback master object is blue.
+
+Any key command on the master will be triggered on the controlled Playbacks (GO, BACK, etc.).
+
+Any fader behavior movement becomes a master to the other sliders (rate, intensity, etc.).
+
+Playback Masters can also be stored in snaps.
+
+
+**To Set Up a Master PB**
+
+1. Press [PLAYBACK]
+
+2. Tap [MASTER] from the toolbar
+
+3. Select the playbacks to be mastered by pressing any of their keys
+
+4. Press [STORE]
+
+5. Press any key of the Controller you wish to be the Master.
+
+
+
+## Move Controllers {#Move-Controllers-14.13.}
+
+
+Implemented MOVE function on controllers.
+
+Use the Move button to rearrange the controllers.
+
+A controller can be moved to any other controller, even if it's a different type.
+
+The controller will be moved with all its settings and state, including intensity value etc.
+
+**Attention:** moving a Slider controller with intensity <> 100% to a QKey controller will make it not possible to change the intensity of this object since there is no fader for QKey controller.
+
+
+**To Move Controllers**
+
+- [MOVE, Controller selection (occupied controllers), Empty controller]
+
+- [MOVE, Controller selection (occupied controllers), @, Any controller]
+
+- [PLAYBACK, #, MOVE, PLAYBACK, #, PASTE]

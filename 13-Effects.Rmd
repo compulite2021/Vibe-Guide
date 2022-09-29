@@ -8,7 +8,7 @@ This chapter discusses Vibe's two effect editors.
 - [13.1. Effect Basics](#EffectBasics-13.1.)
 - [13.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-13.2.)
 - [13.3. Advanced Effects Editor](#AdvancedEffectsEditor-13.3.)
-
+- [13.4. Library Effects](#AdvancedEffectsEditor-13.4.)
 
 ## Effect Basics {#EffectBasics-13.1.}
 
@@ -559,3 +559,33 @@ See [13.2.1. Building Effects Using the Small Screen Editor](#building-effects-u
 7.  Make sure the proper cue is selected in the Cue column.
     
 8.  Tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>  or press [ENTER] - Completes the update operation.
+
+
+## Library Effects {#AdvancedEffectsEditor-13.4.}
+
+
+It is possible to create effects between libraries.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRf23K9hGHiQCSzD6l0aa%2Fimage.png?alt=media&token=373152b8-1291-436e-94be-5896a2962a06)
+
+**To create a library effect**
+
+1. Select the fixtures
+
+2. Press the Effect button to open the Effect window
+
+3. Press Advanced to open the Advanced Effect window
+
+4. Choose Library Effects
+
+5. Filter the bank and choose a library
+
+6. Tap the line to add the starting library
+
+7. Choose another library
+
+8. Tap the right side of the effect to add the ending library
+
+9. Assign fade curves and pattern curves to the effect
+
+An effect between libraries can be stored in the effect library and managed as a normal effect, but it keeps the library references. Editing any of the reference libraries will automatically update the library effect (same as Cues and Scenes stored with library references).

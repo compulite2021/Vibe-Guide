@@ -1,5 +1,5 @@
 
-# Time Code
+# Timeline
 
 Time code is used to synchronize Vibe events with the internal timeline or external SMPTE linear timecode (LTC) or MIDI timecode.
 
@@ -8,21 +8,24 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
 
 **The following is covered in this section:**
 
--   [21.1. Timecode and Timeline basics](#TimecodeandTimelinebasics-21.1.)
-    
--   [21.2. Create a Timeline View](#CreateaTimelineView-21.2.)
-    
--   [21.3. Configuring Timecode](#ConfiguringTimecode-21.3.)
-    
--   [21.4. Recording Timeline Tracks](#RecordingTimelineTracks-21.4.)
-    
--   [21.5. Executing and Editing Events](#ExecutingandEditingEvents-21.5.)
-    
--   [21.6. Markers](#Markers-21.6.)
+-   [21.1. Basics](#Basics-21.1.)
 
--   [21.7. Time Format](#TimeFormat-21.7.)
+-   [21.2. Configure Timecode](#Configure-Timecode-21.2.)    
 
-## Timecode and Timeline basics {#TimecodeandTimelinebasics-21.1.}
+-   [21.3. Timeline View](#Timeline View-21.3.)
+    
+-   [21.4. Record a Timeline](#Record-a-Timeline-21.4.)
+    
+-   [21.5. Edit Timeline Events](#Edit-Timeline-Events-21.5.)
+
+-   [21.6. Execute Timeline Events](#Execute-Timeline-Events-21.6)
+    
+-   [21.7. Markers](#Markers-21.7.)
+
+-   [21.8. Time Format](#TimeFormat-21.8.)
+
+
+## Basics {#Basics-21.1.}
 
 
 Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.
@@ -40,7 +43,7 @@ Vibe can read the following sources:
 -   Input sources from remote multi-User consoles and devices
     
 
-Unlike some consoles, Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. There is no need to create event lists. Vibe also supports fader automation on timeline tracks.
+Vibe can record data from multiple controllers simultaneously. Additional timeline subtracks will be created on a per controller basis. Vibe also supports fader automation on timeline tracks.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fxr8dXGMjsyLAZDoyef5I%2F21.1.webp?alt=media&token=b585f40e-5bdb-4475-8098-b00bb3ebce08)
 
@@ -56,36 +59,6 @@ Supported frame rates are:
     
 -   30 FPS
 
-
-## Create a Timeline View {#CreateaTimelineView-21.2.}
-
-
-When starting a new show any Timeline views stored in Layouts will be empty and no timecode devices will be connected to the Timeline View. If no layout contains a Timeline view, a view must be added to a blank page. Virtually unlimited timecode views may be created but they will all be synchronized and show the same tracks and options.
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&token=86dd2f10-6d2a-4905-bfeb-baec212c85db)
-
-
- <p align=center> Timeline view with two timeline tracks, the cursor, and a marker</p>
-
-**To add a Timeline view to a page:**
-
-1.  Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.
-    
-2.  Tap {Pages} - Page display will open.
-    
-3.  Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.
-    
-4.  Tap the Lock/Unlock icon to enable adding a new view.
-    
-5.  On the screen with the blank workspace, open the {Vibe} menu again and select} 
-
-	⟶ {Display Objects} 
-	⟶  {Timeline View} - A blank timeline view will appear on the workspace.
-    
-6.  Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.
-
-
-## Configuring Timecode {#ConfiguringTimecode-21.3.}
 
 **Vibe has Timecode connectors for the following:**
 
@@ -112,9 +85,26 @@ When starting a new show any Timeline views stored in Layouts will be empty and 
 -   As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.
     
 
+## Configure Timecode {#Configure-Timecode-21.2.}
+
+To trigger a timeline with a timecode source, the 
+Open the {Vibe} menu and select: {Settings} ⟶ {I/O Settings} 
+
+A popup will open, where the connections and protocols can be configured and enabled or disabled.
+
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FvlG4GstkXKltPKieBniE%2F21.3.webp?alt=media&token=4d637f49-7313-454e-8b8e-9214d8d1b707)
 
  <p align=center> 1/O Settings Pop-up in Timecode Tab</p>
+
+In General tab it is possible to enable or disable local and external midi connections.
+
+In Notes/Commands tab it is possible to assign specific commands to the midi notes.
+
+In Midi Show Control tab it is possible to enable and configure the MSC devices.
+
+In Timecode tab it is possible to enable and disable the Midi Time Code (MTC) and the SMPTE.
+
 
 **Enable Timecode:**
 
@@ -135,7 +125,36 @@ When starting a new show any Timeline views stored in Layouts will be empty and 
 6.  <span style="color:Gray">Currently, Vibe is only capable of being a timecode Slave but will be able to be the MIDI timecode Master in future releases.</span>
 
 
-## Recording Timeline Tracks {#RecordingTimelineTracks-21.4.}
+
+
+## Timeline View {#Timeline View-21.3.}
+
+
+If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the workspace layout. Unlimited timecode views may be created, but they will all be synchronized and show the same tracks and options.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnGLpgXe9CBaHIDAeyvZq%2Fimage.png?alt=media&token=86dd2f10-6d2a-4905-bfeb-baec212c85db)
+
+
+ <p align=center> Timeline view with two timeline tracks, the cursor, and a marker</p>
+
+**To add a Timeline view to a page:**
+
+1.  Tap {Vibe} on the monitor that will display the Timeline - Vibe menu will open.
+    
+2.  Tap {Pages} - Page display will open.
+    
+3.  Add a blank page from either the {Programming} or {Playback} work space templates - A blank workspace will open.
+    
+4.  Tap the Lock/Unlock icon to enable adding a new view.
+    
+5.  Open the {Vibe} menu and select: {Program Views} ⟶ {Timeline View} 
+    A blank timeline view will appear on the workspace.
+
+6.  Size and drag the Timeline view as required then tap {unlock/lock} icon to lock the Topo from further adjustment - The Timeline view is now ready to add tracks to.
+
+
+
+## Record a Timeline {#Record-a-Timeline-21.4.}
 
 After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in "real time" and then edited.
 
@@ -143,13 +162,13 @@ After a Timeline View has been created, timeline tracks may be recorded. Current
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FAiiso4f15WODVxfvLcZf%2F21.4.webp?alt=media&token=6d042dc3-2c94-47b0-910d-e5481466fa85)
 
-1.  Open a Time Line View.
+1.  Open the Timeline View menu.
     
 2. Tap {[<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F2ksINLMhyiTpYXZCPpf9%2Fimage.png?alt=media&token=81dd37e7-b60f-4d2d-9d59-a41d6c0ecf20" width="30"/>](image.png)} - The "Create New Timeline" pop-up will open.
     
 3.  Select a timeline number and name.
     
-4.  Choose Start from {Blank} Timeline as an option.
+4.  Choose Start from {Blank} or {Existing} Timeline and Apply.
     
 5.  Tap the {Select Clock} drop down in the top left corner and select the timecode source. 
 
@@ -184,47 +203,16 @@ To trigger Timeline commands via the panel and Editor Toolbar there is an "Activ
 
 **Grid View Filters**
 
-In the grid view of the Timeline,  it is now possible to see all events from all timelines (as before) and in addition to filter events by Timeline and see only its own events.
+Switch from the Graphical to the Grid view with the left button on the control bar.
+
+In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.
+
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F1GcF6cL317OyaygZLFZV%2Fimage.png?alt=media&token=7b352b8c-dfaf-402d-a9fc-5e986b395212)
 
 
 
-## Executing and Editing Events {#ExecutingandEditingEvents-21.5.}
-
-
-**To Execute timeline events:**
-
--   If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.
-    
--   If the source is internal, tap {Play} on the timecode view's control bar. The internal timecode will start and events will execute.
-    
--   The control bar may be used to stop and rewind events when the source is internal Editing timecode events
-    
--   Record may be enabled and disabled "on the fly" to overwrite sections of a timeline track.
-    
--   Events may also be moved forwards and backward using the Set Delta pop-up in the Actions drop down.
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FI3VD6eGtDp8buWi0NKAg%2F21.5.webp?alt=media&token=985e10f0-a809-4482-8112-763a2766724b)
-
-
-**Moving Events**
-
-It is possible to change selected event times via the physical wheels.
-
-There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.
-
-This option is available under the *Move Selection* sub-menu of the Timeline view (*Wheel On, Wheel Off*).
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&token=5e0244e3-c571-48b0-b1c1-2d72b0778999)
-
-Then there will be 2 physical wheels that are available for use:
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&token=f1407bc6-fecc-4f8c-9615-f8a7541966dd)
-
-The left one is for moving the selected events.
-
-The right one is to change the time resolution for the current time movement.
+## Edit Timeline Events {#Edit-Timeline-Events-21.5.}
 
 
 **Events Selection**
@@ -256,34 +244,50 @@ Selecting one object type (i.e. Playback, Event, Marker…) will clear all other
 Selection can have only one type of objects at a time.
 
 
-**State Machine Support**
 
-To trigger Timeline commands via the panel and Editor Toolbar there is an "Active Timeline View" indicator:
+**Actions**
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&token=87396a0f-bdd3-4e7c-aee1-65341332d0e3)
+All the events can be moved on the timeline with drag&drop commands in the graphical view, or by assigning a different time in the grid bar.
+
+The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfR30nB675vPr3V3MbmKF%2Fimage.png?alt=media&token=068aeed6-708a-4203-a7b6-c626b451a4d8)
+
+**Reset Slider Value**
+
+Timelines record the slider values, but in the Actions menu there is the option to reset the value to from a playback and set it to a fixed value between zero and full.
 
 
-If there are more than 1 Timeline Views on the layout, only 1 of them can be the "Active" one.
+**To clear the slider value from a timeline**
 
-Tapping the white header of the view will select the current view as the "Active" and will remove the Active sign from the other views.
+1. Open a timelines
 
-<span style="color:Red">**Important!**</span>
+2. Select the target playback
 
-Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.
+3. On the menu, open the Actions
 
-The available commands from the panel or the Editor Toolbar are split into 2 levels:
+4. Press Reset Slider
 
-**Commands for the View**
+5. Assign the slider value on the virtual slider popup
 
-These commands will affect the Active Timeline View.
 
-1. Go to idle state
+**Move Selection**
 
-2. Press *Timeline* from the panel
+It is possible to change selected event times via the physical wheels.
 
-3. You see on the Editor Toolbar the available commands:
+There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204)
+This option is available under the *Move Selection* sub-menu of the Timeline view (*Wheel On, Wheel Off*).
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0PRTpcVpuXr0euSzyomY%2Fimage.png?alt=media&token=5e0244e3-c571-48b0-b1c1-2d72b0778999)
+
+Then there will be 2 physical wheels that are available for use:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZYiJxaCTcXmcfomXlZuM%2Fimage.png?alt=media&token=f1407bc6-fecc-4f8c-9615-f8a7541966dd)
+
+The left one is for moving the selected events.
+
+The right one is to change the time resolution for the current time movement.
 
 
 **Commands for Timelines**
@@ -312,7 +316,54 @@ These commands will affect the selected timelines in the sequence. Some sequence
 	 **e.** Paste – 		 	will paste the copied timelines from the clipboard
 	
 
-## Markers {#Markers-21.6.}
+
+
+## Execute Timeline Events {Execute-Timeline-Events-21.6}
+
+-   If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.
+    
+-   If the source is internal, tap {Play} on the timecode view's control bar. The internal timecode will start and events will execute.
+    
+-   The control bar may be used to stop and rewind events when the source is internal.
+
+-   Record may be enabled and disabled "on the fly" to overwrite sections of a timeline track.
+    
+-   forwards and backward using the Set Delta pop-up in the Actions drop down.
+
+
+**State Machine Support**
+
+To trigger Timeline commands via the panel and Editor Toolbar there is an "Active Timeline View" indicator:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FlKeiPK6tnS5KxOAvwPwp%2Fimage.png?alt=media&token=87396a0f-bdd3-4e7c-aee1-65341332d0e3)
+
+
+If there are more than 1 Timeline Views on the layout, only 1 of them can be the "Active" one.
+
+Tapping the white header of the view will select the current view as the "Active" and will remove the Active sign from the other views.
+
+<span style="color:Red">**Important!**</span>
+
+Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.
+
+The available commands from the panel or the Editor Toolbar are split into 2 levels:
+
+
+**Commands for the View**
+
+These commands will affect the Active Timeline View.
+
+1. Go to idle state
+
+2. Press *Timeline* from the panel
+
+3. You see on the Editor Toolbar the available commands:
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FWK0w3FLBG2M0FsJd9FEY%2Fimage.png?alt=media&token=cdbedd39-d8ff-44a3-8f84-68a0ed7a2204)
+
+
+
+## Markers {#Markers-21.7.}
 
 
 To aid in timeline navigation, Markers may be inserted.
@@ -331,7 +382,7 @@ To insert a marker:
 -   Press 🗑️ to delete a marker
 
 
-## Time Format {#TimeFormat-21.7.}
+## Time Format {#TimeFormat-21.8.}
 
 It is possible to view the timeline and events data in different time
 formats.

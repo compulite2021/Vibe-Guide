@@ -10,6 +10,7 @@ This chapter deals with the fundamentals of building stage looks in the editor.
 - [ 9.2. Editor Tools](#EditorTools-9.2.)
 - [9.3. Working with Fixtures](#WorkingwithFixtures-9.3.)
 - [9.4. Groups](#Groups-9.4.)
+- [9.5. Undo](#Undo-9.5.)
 
 
 ## Editor {#Editor-9.1.}
@@ -489,6 +490,8 @@ Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may b
 -   **[VIBE]+[RESET]** - Releases all parameters from the Editor and releases all selected fixtures.
     
 -   **[NEXT]/ [PREV]** - Increments or decrements fixtures in a selection. When used with a Group, will be confined to the fixtures in the Group.
+
+-   **[VIBE]+[NEXT]/ [PREV]** - Increments or decrements fixtures in a selection, keeping the fixtures' amount and distance.
     
 -   **Trackball [X LOCK] / [Y LOCK]** - Locks the X or Y axis of the trackball.
     
@@ -605,7 +608,6 @@ Independently from the fixture's pan and tilt range, the virtual XYZ coordinates
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
 
 
-<![endif]-->
 
 **Color**
 
@@ -713,6 +715,11 @@ The control bank is a special bank as its parameters are not stored in cues. Ins
 Media bank is the bank designed for an intuitive media server programming.
 
 See the dedicated Chapter  [23 - Media Servers](#MediaBank-23.1).
+
+
+**Command Line**
+
+The Smart Screen command line shows the active fixture selection.
 
 
 **Smart Screen Preferences:**
@@ -1140,3 +1147,31 @@ Group Settings Pop-up
 -   [GROUP] # [DELETE]
     
 -   Tap {GROUP} [#] [DELETE]
+
+
+## Undo {#Undo-9.5.}
+
+Undo button directly rolls back the last actions.
+
+Every parameter programmed in the editor can come back to its previous status by pressing the UNDO button.
+Pressing Undo button multiple times will restore step by step the last actions.
+Undo function can be used to recover the editor status after a Shift + Reset command, and to restore show elements such as groups, libraries, qlists, cues and scenes, that have been stored, deleted, or updated.
+Undo button works also with Home and High/Lowlight actions.
+
+
+### Undo History 
+
+
+Settings ⟶ Undo opens the Undo/Redo list to review and restore the last actions.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fw4OnMhBCJEW53CMHMHj3%2Fimage.png?alt=media&token=68a5f641-18d7-4ec8-bb4b-5f9bd64aa386)
+
+To Undo more operations at a time, access the Undo history with the sequence [Vibe + Settings, Undo]
+
+In the Undo popup’s left column are listed all the undoable actions, and in case an undo command has been done, the list on the right shows the redo able actions.
+
+Each action reports the date and time when it has been done.
+
+Select one or more actions, than press undo or redo to come back to the desired status.
+
+The popup does not close until the apply or restore buttons are pressed.

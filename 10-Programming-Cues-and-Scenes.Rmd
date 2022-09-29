@@ -702,7 +702,7 @@ Cues may be linked out of sequence using any of the following three methods:
 >If the source cue is forgotten, check the **Link #** field in the Live Master Controller Cue Sheet.
 
 
-
+>In cue sheet, cues that are disabled because of a Link are grayed out.
 
 ### Loop {#loop-10.12.2.}
 
@@ -784,6 +784,8 @@ In many consoles, the only way to create a loop is to create a link from the end
 -   Press [RELEASE] to remove the loop.
 
 
+>In live playback view, cues that are set as Loop Cues have an orange color.
+
 ### Tracking Options {#tracking-options-10.12.3.}
 
 
@@ -805,6 +807,8 @@ In many consoles, the only way to create a loop is to create a link from the end
     
 2. <span style="color:Gray">Look Ahead cue - When Look Ahead is disabled for a Qlist, Individual cues with dark values may be tagged to perform Look Ahead pre-positioning.</span>
 
+>In live playback view, cues that are set as Block Cues have a blue color.
+In live playback view, cues that are set as Skip Cues have a magenta color.
 
 
 

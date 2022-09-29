@@ -8,9 +8,11 @@ It is sometimes useful to organize fixture selection in a graphical manner inste
 - [19.1. Creating a Topo View](#CreatingaTopoView-19.1.)
 - [19.2. Topo Menu](#TopoMenu-19.2.)
 - [19.3. Creating a Topo](#CreatingaTopo-19.3.)
-- [19.4. Adding fixtures to a Topo](#AddingfixturestoaTopo-19.4.)
+- [19.4. Adding fixtures](#Adding-fixtures-19.4.)
 - [19.5. Adding Pixel Maps](#AddingPixelMaps-19.5.)
-- [19.6. Adding text and background elements](#Addingtextandbackgroundelements-19.6.)
+- [19.6. Adding Softkeys](#Adding-Softkeys-19.6.)
+- [19.7. Adding Text Elements](#Adding-Text-Elements-19.7.)
+- [19.8. Adding Background Image](#Adding-Background-Image-19.8.)
 
 ## Creating a Topo View {#CreatingaTopoView-19.1.}
 When starting a new show any Topo views stored in Layouts will be empty until the system is patched and fixtures are assigned to a Topo. If no layout contains a Topo view, a Topo view must be added to a blank page. Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures may be shared by Topos.
@@ -49,102 +51,68 @@ When starting a new show any Topo views stored in Layouts will be empty until th
 ## Topo Menu {#TopoMenu-19.2.}
 
 
-The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled.
+
+The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. If the {LIVE} mode is enabled the Topo is in active mode and can be used to select objects and trigger elements. To Edit objects, the {EDIT} mode button in the bottom right area of the Topo view must be enabled. The menu and control bar frames will switch from green to red color.
+
+The root menu provides the following sub-menus:
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FXFlu7uvTzBI5S6Apzy3g%2F19.2.png?alt=media&token=3b60e416-8286-4949-b75a-a8223de3da3a)
 
-​
 
-**The root menu provides the following sub-menus:**
+**{Add Elements}** - Accesses the following objects:
 
-1.  **Topo:**
-    
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0EQ43jhWPlZ0HLJZdDHD%2F19.2.1.webp?alt=media&token=7277a796-bf80-4991-a343-94ad8f13f621)
+- {Sets} Opens the filter of all available fixture sets: Global fixture, Channels, Spots, Matrix, Servers, and users created sets.
 
-​
-2. **Actions:** 
+- {Groups} Opens the filter of all available groups.
 
-a. {Add Elements} - accesses the following:
+- {Libraries} Opens the filter of all available libraries (Intensity, Position, Color, ...).
 
-1. {Sets} Opens drop down of all available fixture sets, Global fixture set, Channels, Spots, Matrix, Servers, and users created sets. [6.1. Fixture Sets.](#Fixture-Sets-6.1)  ,   [19.4. Adding fixtures to a Topo.](#AddingfixturestoaTopo-19.4.)
-    
-2.   {Pixel Mapper} - Adds a User definable Pixel Map matrix to the Topo surface 19.5. Adding Pixel Maps
+- {Macros} Opens the filter of all available macros.
 
-b. {Selection} - May be used in Live mode or Edit mode.
+- {Snaps} Opens the filter of all available snaps.
 
->Selections must start out side of the fixture.
+- {Filters} Opens the filter of all available filters.
 
-1.  Select by creating a rectangular lasso. - Dragging from left to right or right to left to create a rectangle around or through the objects.
-    
-2.  Select by creating a free-form path, dragging through objects.
-    
-3.  De-select all.
-    
-4.  Delete selected (only valid in Edit Mode).
-    
-5.  Snap to grid - Fixtures and object will snap to the nearest grid node.
-    
-6.  Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.
-    
+- {Pixel Mapper} Adds a User definable Pixel Map matrix to the Topo surface. Refer to chapter 19.5. Adding Pixel Maps
 
-c. {Tools}:
+- {From Editor} Allows to Drag&Drop on the Topo the elements that are selected in Vibe’s editor.
 
-1. {Align}:
+- {Text Label} Opens a popup to create a customizable text label.
 
-1.  Left
-    
-2.  Center
-    
-3.  Right
-    
-4.  Top
-    
-5.  Middle
-    
-6.  Bottom
-    
-7.  Circular - When selected, a set of modifier horizontal virtual wheels will be available for the following: 
-   
-   - fixture location on the circumference 
-    
-   - Radius 
-   
-   - End point
-    
-8.  Point to Point
+- {Line} Adds a customizable line to the Topo.
 
-2. {Align to Point} - A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.
+- {Background} Adds a customizable background to the Topo.
 
-3. {Spread} (Fan) - When Spread is selected, a horizontal virtual modifier wheel will appear. The following spread options are available:
 
-1.  Spread horizontally from left
-    
-2.  Spread horizontally from center
-    
-3.  Spread horizontally from right
-    
-4.  spread vertically from top
-    
-5.  Spread vertically from middle
-    
-6.  Spread vertically from bottom
-    
+**{Selection}** – Accesses the selection options
 
-4. {Transform} - Used to modify size and rotation of Topo objects. Horizontal virtual wheels will appear for the following:
+- Rectangle: Select by creating a rectangular lasso, dragging from left to right or right to left to create a rectangle around or through the objects.
 
-1.  Scale
-    
-2.  Rotate
-    
-3.  Presets are supplied for: 
-    
-    - Rotate 45° counterclockwise 
-    
-    - Rotate 45° clockwise 
-    
-    - Reset
-    
-4.  {Arrange Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. [20. XYZ Fixture Calibration.](#XYZ-Fixture-Calibration-20.0.)
+- Lasso: Select by creating a free-form path, dragging through objects.
+
+- De-select all.
+
+- Delete selected (only valid in Edit Mode).
+
+- Snap to Grid - Fixtures and object will snap to the nearest grid node.
+
+- Sync to Editor - In edit mode, fixtures can be selected using the embedded keypad.
+
+- Selection may be used in Live mode or Edit mode.
+
+- All types of selection must start outside of the fixture icons.
+
+**{Tools}** -  Accesses the smart adjustment options
+
+- {Align}: Aligns the selected elements horizontally to the left, center or right, and vertically to the top, middle or bottom. The alignment can also be set on a circular or a square shape and between two points it is possible to adjust the element location on the shape, the radius and the ending point.
+
+- {Align to Point}: A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.
+
+- {Spread} (Fan): Spreads the selected elements horizontally from the left, center or right, and vertically from the top, middle or bottom. When Spread is selected, a virtual modifier wheel will appear.
+
+- {Transform} - Modifies size and rotation of the objects to scale and rotate and to rotate of 45 degrees clockwise or counterclockwise. The last icon is to resets the transform options.
+
+- {Arrange by Calibration} - When tapped, selected Topo fixtures get their positions from the XYZ calibration. See chapter [20. XYZ Fixture Calibration.](#XYZ-Fixture-Calibration-20.0.)
 
 ## Creating a Topo {#CreatingaTopo-19.3.}
 
@@ -167,7 +135,7 @@ Navigate to a Topo view
 5. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) aor press [ENTER] - This closes the pop-up, enters Topo {Edit} mode, and the grid will be displayed.
 
 
-## Adding fixtures to a Topo {#AddingfixturestoaTopo-19.4.}
+## Adding fixtures {#Adding-fixtures-19.4}
 
 There are two ways to add fixtures to a Topo 
 
@@ -243,10 +211,19 @@ The pixel mapper creates a matrix of fixtures. The aspect ratio of the pixel map
 2.  >👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
 
 
-## Adding text and background elements {#Addingtextandbackgroundelements-19.6.}
+## Adding Softkeys {#Adding-Softkeys-19.6.}
 
 
-Additional elements may be added to a Topo. Currently available are {Text Label} and {Add Background} To add
+There is an option to add softkeys of any type to the Topo with dragging and dropping items from the menu.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FgBSfE229KO8LBfOtKGYF%2Fimage.png?alt=media&token=98c7fd39-cf06-4b67-bac1-7f8329d59d1a)
+
+
+
+
+
+## Adding Text Elements {#Adding-Text-Elements-19.7.} 
+
 
 **Text labels:**
 
@@ -265,6 +242,12 @@ Additional elements may be added to a Topo. Currently available are {Text Label}
 
 Backgrounds such as studio layouts and rig elements may be added to the Topo. 
 
+
+
+
+## Adding Background Image {#Adding-Background-Image-19.8.}
+
+
 **To add a Background to a Topo:**
 
 
@@ -281,3 +264,9 @@ Backgrounds such as studio layouts and rig elements may be added to the Topo.
 6.  Tap {Load}, [Enter] or tap  <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to close the pop-up and place the content as a background to the Topo.
     
 7.  To remove the background tap {Remove Background}
+
+
+Topo background images can be edited in size and position.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FPFecuxQ4pAFDDs3imbNA%2Fimage.png?alt=media&token=a3c87311-d00c-4cae-8f6c-4a842f6f04a6)
+
