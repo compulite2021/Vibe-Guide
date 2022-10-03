@@ -75,25 +75,124 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 The **{VIBE}** Menu is a hierarchical menu containing logically grouped sub-menus. It is used to access common system functions such as **Save** and **System Settings** as well as configure **Workspace Template** displays.
 
+Vibe Menu can be opened at any time by tapping on the Vibe key in the low left corner of the screen.
+
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhnmbOYCxpKpFeS3PTChB%2F4.2.webp?alt=media&token=127302c8-d5cc-43aa-92f1-7eee592f68a8)
 
-### Exit Button
+
+### Show Menu
+
+
+Open the Show Menu to access the following options.
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fv7rbFyii8gEXNLDikOqH%2Fimage.png?alt=media&token=c83cbcc2-00d1-42c2-9311-60989315111e)
+
+
+{New Show} - Starts a new show.
+
+{Save Show} - Saves the current show.
+
+{Save Show As...} - Opens a popup to name and save the current show, on Vibe or on an external device.
+
+{Load Show} - Opens a popup to load a saved show file.
+
+{Load Vector Show} - Opens a popup to load and convert a show from Compulite Vector.
+
+After selecting the Vector show file, the popup will guide you through the process of device-matching and show conversion options.
+
+{Clean Up Show} - Opens a popup where it is possible to check and delete the data that are not being used in the show.
+
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FP8sazjSCK25Dd6eUk6Wc%2Fimage.png?alt=media&token=d4f8ce81-7947-4a0f-9361-4b7f0629ded3)
+
+
+{Report} - Opens a popup where it is possible to create excel files with the data of the show, such as Groups, Libraries, Qlists and Scenes content.
+
+
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDbJ8QAIAPGjLTrjwhAJD%2Fimage.png?alt=media&token=96ff511b-8eab-4e1f-bf27-2b3c4594158a)
+
+
+The Report file can be generated for all the data or just for the selected objects.
+
+The Reports are saved in the Reports Folder inside WorkDir.
+
+{Error Report} - Creates an Error Report file that can be shared with Compulite Support in case of software problems.
+
+
+
+
+### Layout and Views Menus
+
+
+Open the Layout menu to access the layout options.
+
+Open the Patch, Program and Playback Views Menus to access all the views to configure Vibe’s workspace.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FhLxNHs4cSMsz8zshRMVJ%2Fimage.png?alt=media&token=f36a1edc-8610-404e-9208-68a75bd68b24)
+
+Learn more about configuring the workspace and layouts in the dedicated chapters.
+
+
+
+### Windows Menu
+
+
+Open the Windows menu to access the following options.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fs196TPLojeRStJxF70rv%2Fimage.png?alt=media&token=43b846b6-4b42-4338-81b7-5159621be565)
+
+- Add a smart window and external windows to be placed on additional screens.
+
+- Show / Hide the windows title bar to the window.
+
+- Enter / Exit the full screen mode.
+
+- Open the Fixture Builder's- Open the Offline Tool
+
+- Exit Vibe (main window) or Close Window (external windows)
+
+
+**Exit Button**
 
 The Exit and Close buttons are located in the Windows sub-menu.
 
-
-**To exit Vibe or close a window**
+To exit Vibe or close a window
 
 1. Open Vibe menu from the Vibe button
-    
 
 2. Tap Windows
-    
 
 3. Tap Exit/Close
-    
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFV8W9WgLTCerYjssYKJD%2Fimage.png?alt=media&token=a171e965-52eb-47d5-b975-7bd50df1ac00)
+A popup will remind to save the show before closing.
+
+
+
+### Settings Menu 
+
+
+Open the Settings menu to access the following options.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk24ISQvJvl4pfHhqGpSM%2Fimage.png?alt=media&token=d1baab7c-7007-4eb1-8929-8b9682584a21)
+
+{System Settings} - Opens a popup where it is possible to configure all the general system settings. This window is also directly accessible from the control area in the low right corner of the screen.
+
+{DMX Settings} - Opens a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.
+
+{I/O Settings} - Opens a popup to enable, disable and configure the MIDI notes, commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
+
+{CITP Settings} - Opens a popup to enable, disable and configure the CITP settings. Learn more about configuring CITP in the dedicated chapters.
+
+
+
+
+### Version 
+
+Tap the Version button to open a popup listing the installed version of Vibe software and components.
+
 
 
 
@@ -174,22 +273,11 @@ Clone layout pages for a faster building of a similar layout page.
 Some of the views have their own settings that can be accessed when layout is in edit mode, the view is selected and tapping the {Settings} button on the toolbar.
 
 
-### Show/Hide View Headers
+### View Settings
 
-This option is valid when the layout is unlocked and the view is selected. Showing or hiding a view's header is saved in the layout once layout is saved. Loading old layouts will load view with their headers as they were stored before. 
+The views have their own settings that can be accessed when the layout is in edit mode and the view is selected, by tapping the buttons on the toolbar.
 
-
-**To Show/Hide View Header:**
-
-1. Go to edit mode by tapping the Vibe button and unlocking the layout
-    
-
-2. Select the view you want to toggle its header on or off
-    
-3. Tap the Toggle Header button
-    
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F9B5NTIysFGLAcAACtoIr%2Fimage.png?alt=media&token=f0d63ddd-259d-43c7-bd02-709fb7315cc1)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FnSFeWaARpDOGjPdwn5gY%2Fimage.png?alt=media&token=36b5923e-c03c-4c9a-9390-bf176a8cf774)
 
 
 

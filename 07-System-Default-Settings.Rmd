@@ -667,3 +667,12 @@ Lock screen is shown when system is locked or when Vibe is waiting for the Fixtu
 3. Press Load Image button in the top right corner
 
 4. Load the image to be visualized when Vibe screens are locked
+
+
+
+**LPU and HAL Status**
+
+LPU and HAL Status leds are on the status box, in the down right corner of the screen.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FdEQaHp6MHm4klSZ8eOxU%2Fimage.png?alt=media&token=5b3be7da-9cc0-469a-8f34-82fa3a4ee7e0)
+

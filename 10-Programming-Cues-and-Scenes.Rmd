@@ -457,7 +457,9 @@ In the process of storing a cue, a number of filters and settings are available.
 
 Cue Exists pop-up
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfuG9DGIRoxtNWzrca99h%2F10.9.2.webp?alt=media&token=3d8c1790-cce0-4db6-826c-0eee6ad81c06)
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FbVOdzVMkxkE0EvKgTybS%2Fimage.png?alt=media&token=d3354844-b38c-46e5-a436-cedc2e18b7e2)
+
 
 Cue Settings pop-up
 

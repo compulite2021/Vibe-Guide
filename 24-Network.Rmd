@@ -237,7 +237,8 @@ In order to get all the available data from a media server, select a connected a
 **Visualizers**
 This tab shows a list of the detected Visualizers on the network. In order to connect to a visualizer and start a session, select it from the list and tap Connect. In order to get the patch from a connected visualizer, select it from the list and tap Get Show. This action will clear the current show, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create it on your show.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FUENsFjNTKcMOaF7bbOwM%2Fimage.png?alt=media&token=39bb4fba-348e-4130-9df8-344239a287c5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fw9iWhFvPQSeBTFuNplIB%2Fimage.png?alt=media&token=1bfc7f02-6b35-474c-ab37-a0d3728db2d6)
+
 
 **Consoles**
 
@@ -253,3 +254,7 @@ It is possible to sync the show from Capture. In order to do that you need to se
 
 In addition, make sure Vibe and Capture are on the same subnet. After finishing preparing the show on Capture, go to Vibe, open the CITP popup, enable the CITP and connect to the Capture from the Visualizers tab. Then _Get Data_ from Capture and you should be ready to go.
 
+
+**Capture Protocol**
+
+It is possible to choose which output protocol will be listened by Capture while in a CITP session.
