@@ -517,6 +517,8 @@ Version R_4.0 brings new and updated features as listed below:
 
 **Settings**
 
+- **Auto Save** - Auto save show file can be enabled or disabled in the system settings tab, with the option to assign save time intervals.
+
 - **Layout Home Pages** - Any page can be stored as a Home Page on the 3 Home Page buttons on the Editor Toolbar, near the VIBE menu button. F1 switches between the Home Pages.
 
 - **Toggle Scrollbar** - Toggle Scrollbar, in layout edit mode, adds or removes a scrollbar to/from the view.
