@@ -14,7 +14,7 @@ This chapter deals with creating and patching fixtures.
 -  [6.7.   Parking Addresses and Fixtures](#Parking-Addresses-and-Fixtures-6.7)
 -  [6.8.   Clone Fixtures](#Clone-Fixtures-6.8)
 -  [6.9.   Device Replacement](#Device-Replacement-6.9)
--  [6.10.  DMX Output & Input Views](#DMX-Output-&-Input-Views-6.10)
+-  [6.10.  DMX Output & Input Views](#DMX-Output-and-Input-Views-6.10)
 
 ## Fixture Sets {#Fixture-Sets-6.1}
 
@@ -514,7 +514,7 @@ The replacement can be based on raw values, preserving the parameters' levels, o
 On the right side there is a match table between the source and destination fixtures parameters. This table is dynamic and shows the data set from the left side. User can also change matching parameters manually, but this is only to very special cases and anyway it is not recommended. SMART will anyway overrule the table in case there is a parameter that is included in the smart.
 
 
-## DMX Output & Input Views {#DMX-Output-&-Input-Views-6.10}
+## DMX Output & Input Views {#DMX-Output-and-Input-Views-6.10}
 
 
 DMX Output and DMX Input views are meant to show in real time the output and input values of each DMX channel of the selected universe.

@@ -64,7 +64,7 @@ Patching-Inputs-6.6
 Parking-Addresses-and-Fixtures-6.7
 Clone-Fixtures-6.8
 Device-Replacement-6.9
-dmx-output-input-views-dmx-output--input-views-6.10
+DMX-Output-and-Input-Views-6.10
 system-default-settings
 Editing-7.1.
 Timing-7.2.
