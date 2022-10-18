@@ -225,9 +225,9 @@ Layout home page buttons are a fast recall for up to three main pages.
 
 Any page can be stored as a Home Page on the Editor Toolbar, near the VIBE menu button.
 
-### 
 
-To set up home pages
+
+**To set up home pages**
 
 1. Open the Vibe menu and press Pages button on the editor toolbar
 

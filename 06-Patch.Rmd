@@ -13,7 +13,7 @@ This chapter deals with creating and patching fixtures.
 -  [6.6.   Patching Inputs](#Patching-Inputs-6.6)
 -  [6.7.   Parking Addresses and Fixtures](#Parking-Addresses-and-Fixtures-6.7)
 -  [6.8.   Clone Fixtures](#Clone-Fixtures-6.8)
--  [6.9.   Device Replacement](#Device-Replacement -6.9)
+-  [6.9.   Device Replacement](#Device-Replacement-6.9)
 -  [6.10.  DMX Output & Input Views](#DMX-Output-&-Input-Views-6.10)
 
 ## Fixture Sets {#Fixture-Sets-6.1}
@@ -481,8 +481,7 @@ There is an option to clone the look ahead mask so if the source fixture is in t
 There is an option to choose what to do with the parameters of the destination fixtures that are not included in the clone because they were not matched or any other reason. Merge means to keep these values, overwrite will delete the values. Default is Overwrite.
 
 
-## Device Replacement {#Device-Replacement -6.9}
-
+## Device Replacement {#Device-Replacement-6.9}
 
 
 Implemented smart and advanced device replacement.
