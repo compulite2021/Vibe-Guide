@@ -455,9 +455,9 @@ Working with Fixtures:
     
 -   [9.3.6. Grab](#Grab-9.3.6.)
     
--   [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
+-   [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-Detailed-9.3.7)
     
--   [9.3.8. Setting Parameters using Main Encoder Wheels](#Setting-Parameters-using-Main Encoder-Wheels-9.3.8.)
+-   [9.3.8. Setting Parameters using Main Encoder Wheels](#Setting-Parameters-using-Main-Encoder-Wheels-9.3.8.)
     
 -   [9.3.9. Setting Parameters using Interactive Encoder Wheels](#Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.)
     
