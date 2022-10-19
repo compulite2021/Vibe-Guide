@@ -107,15 +107,15 @@ Virtual-Parameters-9.3.3
 Smart-Screen-9.3.4
 Adjusting-Parameters-using-the-Wheel-Picker-9.3.5
 Grab-9.3.6.
-fixture-selection-detailed-fixture-selection-detailed-9.3.7
-setting-parameters-using-main-encoder-wheels-setting-parameters-using-main-encoder-wheels-9.3.8.
+Fixture-Selection-Detailed-9.3.7
+Setting-Parameters-using-Main-Encoder-Wheels-9.3.8.
 Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.
 Release-and-Home-Sequences-9.3.1
 Groups-9.4.
 Undo-9.5.
 undo-history
 programming-cues-and-scenes
-what-are-qlists-cues-scenes-and-submasters-whatareqlists-cues-scenes-andsubmasters-10.1.
+WhatAreQlists-Cues-Scenes-andSubmasters-10.1.
 TrackingPrincipals-10.2.
 StoringCuesandScenesDirectlytoControllers-10.3.
 MasterController-10.4.
@@ -135,7 +135,7 @@ tracking-options-10.12.3.
 ParameterTime-10.13.
 assign-parameter-time-during-cue-creation-10.13.1.
 Adding-or-Modifying-Parameter-Time-after-Cue-Creation-10.13.2.
-fanning-parameter-time-fanning-parameter-time-10.13.3.
+fanning-parameter-time-10.13.3.
 ParameterProfile-10.14.
 GroupSubmasters-10.15.
 convert-a-scene-into-a-group-submaster-10.15.1.
@@ -162,7 +162,7 @@ playback-controllers
 ControllerPriorityLogic-14.1.
 ControllerOverview-14.2.
 MasterController-14.3.
-goto-and-load-gotoandload-14.4.
+GOTOandLOAD-14.4.
 ConfiguringControllers-14.5.
 ControllerColorCodes-14.6.
 WorkingWithcontrollers-14.7.
@@ -202,7 +202,7 @@ CalibrationinCapture-20.2.
 timeline
 Basics-21.1.
 Configure-Timecode-21.2.
-timeline-view-timeline-view-21.3.
+Timeline-View-21.3.
 Record-a-Timeline-21.4.
 Edit-Timeline-Events-21.5.
 Execute-Timeline-Events-21.6

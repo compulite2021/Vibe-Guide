@@ -905,7 +905,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 
 
-### Fixture Selection (Detailed) {#Fixture-Selection-(Detailed)-9.3.7}
+### Fixture Selection (Detailed) {#Fixture-Selection-Detailed-9.3.7}
 
 
 > FIn this guide, FIXTURE will be the default SET but any SET (Channel, Spot, Matrix, Server, User) should also be applicable.
@@ -955,7 +955,7 @@ The rules for single digit plus Enter will also apply.
 
 
 
-### Setting Parameters using Main Encoder Wheels {#Setting-Parameters-using-Main Encoder-Wheels-9.3.8.}
+### Setting Parameters using Main Encoder Wheels {#Setting-Parameters-using-Main-Encoder-Wheels-9.3.8.}
 
 Vibe features the **Smart Window** to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: 
 

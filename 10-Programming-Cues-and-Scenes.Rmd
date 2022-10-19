@@ -21,7 +21,7 @@ This chapter deals with storing and editing Editor values.
 - [10.15.  Group Submasters](#GroupSubmasters-10.15.)
 
 
-## What Are Qlists, Cues, Scenes, and Submasters? {WhatAreQlists-Cues-Scenes-andSubmasters-10.1.}
+## What Are Qlists, Cues, Scenes, and Submasters? {#WhatAreQlists-Cues-Scenes-andSubmasters-10.1.}
 
 
 **Qlists:**
@@ -938,7 +938,7 @@ See Also: [10.9. Modifying Cues and Scenes](#ModifyingCuesandScenes-10.9.)
 
 
 
-### Fanning Parameter Time #fanning-parameter-time-10.13.3.
+### Fanning Parameter Time {#fanning-parameter-time-10.13.3.}
 
 
 **Method 1:**

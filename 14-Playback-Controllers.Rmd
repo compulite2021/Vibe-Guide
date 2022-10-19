@@ -144,7 +144,7 @@ OR
 
 
 
-## GOTO and LOAD {GOTOandLOAD-14.4.}
+## GOTO and LOAD {#GOTOandLOAD-14.4.}
 
 GOTO and LOAD are used to crossfade to cues out of sequence. By default, GOTO immediately transitions to the specified cue in the system **GOTO Time**. LOAD preloads controllers. The next [GO] will transition to the preloaded cue in **Cue Time**.
 

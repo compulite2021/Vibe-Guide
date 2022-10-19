@@ -12,7 +12,7 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
 
 -   [21.2. Configure Timecode](#Configure-Timecode-21.2.)    
 
--   [21.3. Timeline View](#Timeline View-21.3.)
+-   [21.3. Timeline View](#Timeline-View-21.3.)
     
 -   [21.4. Record a Timeline](#Record-a-Timeline-21.4.)
     
@@ -127,7 +127,7 @@ In Timecode tab it is possible to enable and disable the Midi Time Code (MTC) an
 
 
 
-## Timeline View {#Timeline View-21.3.}
+## Timeline View {#Timeline-View-21.3.}
 
 
 If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the workspace layout. Unlimited timecode views may be created, but they will all be synchronized and show the same tracks and options.
