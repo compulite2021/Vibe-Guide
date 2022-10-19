@@ -132,7 +132,7 @@ Vibe **Effects** are made up of **Effect Events** running along horizontal **Eff
 
 -   Once effects have been created then may be directly stored in cues and scenes or saved in Effects Libraries for future use.
     
--   Effect Libraries are stored similar to normal Libraries [Store and Modify Bank Libraries](https://vibemanual.compulite.com/libraries.html#store-and-modify-bank-libraries).
+-   Effect Libraries are stored similar to normal Libraries [Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.).
     
 -   Effects libraries have one additional option to allow users to include the base values. This is useful when effects must start from an absolute value.
 
@@ -161,7 +161,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 1.  Select the the fixtures to be used in the Effect.
     
-2.  Select the **parameter/parameters** to be in the Effect [9.4.2. What are Parameters](https://vibemanual.compulite.com/programming-basics.html#what-are-parameters)
+2.  Select the **parameter/parameters** to be in the Effect [9.4.2. What are Parameters](#What-are-Parameters-9.3.2.)
     
 3.  Press [EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.
     
@@ -187,7 +187,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
     
     - 0% = all fixtures transition in unison.
     
-8.  Set Swing (In Base) as needed [13.1. Effects Basics](https://vibemanual.compulite.com/effects-1.html#effect-basics)
+8.  Set Swing (In Base) as needed [13.1. Effects Basics](#EffectBasics-13.1.)
     
 9.  Adjust Size and Base to set the Low and High ranges of the values
     
