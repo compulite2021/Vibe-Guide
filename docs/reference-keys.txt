@@ -42,7 +42,7 @@ Layouts-4.5
 Smart-Screen-4.6
 Toolbars-4.7
 Live-Display-4.8
-Live-View-Settings-4.6.1
+Live-View-Settings-4.8.1
 live-parameter-display-4.9
 parameter-mode
 bank-mode
