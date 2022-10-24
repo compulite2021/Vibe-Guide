@@ -7,11 +7,11 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 **The following is covered in this chapter:**
 
-- [18.1. Show Exam](#ShowExam-18.1.)
-- [18.2. Patch Exam](#PatchExam-18.2.)
+- [17.1. Show Exam](#ShowExam-17.1.)
+- [17.2. Patch Exam](#PatchExam-17.2.)
 
 
-## Show Exam {#ShowExam-18.1.}
+## Show Exam {#ShowExam-17.1.}
 
 
 
@@ -83,7 +83,7 @@ Virtually all Vibe show data can be viewed using the **Exam** display. The Exam 
 
 
 
-## Patch Exam {#PatchExam-18.2.}
+## Patch Exam {#PatchExam-17.2.}
 
 
 **The Patch Exam Menu has 6 items:**

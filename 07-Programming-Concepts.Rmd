@@ -5,11 +5,11 @@ This chapter deals with Vibe programming philosophy, command line behavior, and 
 
 **The following is covered in this chapter:**
 
--  [8.1. Operational Philosophy](#OperationalPhilosophy-8.1.)
--  [8.2. Command Syntax](#CommandSyntax-8.2.)
--  [8.3. Command Line](#CommandLine-8.3.)
+-  [7.1. Operational Philosophy](#OperationalPhilosophy-7.1.)
+-  [7.2. Command Syntax](#CommandSyntax-7.2.)
+-  [7.3. Command Line](#CommandLine-7.3.)
 
-## Operational Philosophy {#OperationalPhilosophy-8.1.}
+## Operational Philosophy {#OperationalPhilosophy-7.1.}
 
 The Vibe is an advanced lighting control system designed to simplify programming in all styles of Entertainment lighting.
 
@@ -102,7 +102,7 @@ The Vibe is an advanced lighting control system designed to simplify programming
 -   To clear the editor and selection, [VIBE] (Shift) + [RESET] must be pressed.
 
 
-## Command Syntax {#CommandSyntax-8.2.}
+## Command Syntax {#CommandSyntax-7.2.}
 
 Vibe uses a hybrid command syntax.
 
@@ -121,7 +121,7 @@ e.g. *[Group 1] [Full] [Library 2 (Position) 1] [Enter] [Cue 1] [Store Options] 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FEmYCVzO9Xwt9HSC7m72H%2F8.2.webp?alt=media&token=1a34b4b3-592b-4fee-8b27-c3ae19208b19)
 
-## Command Line {#CommandLine-8.3.}
+## Command Line {#CommandLine-7.3.}
 
 The **Command Line** is the area where commands appear as they are entered. When in Live it is bounded in grey on the big monitor and blue on the small monitor. When in BLIND, both command lines are bounded in yellow. Commands may be backspaced using the Clear Entry [CE] key, The command line can be clear back to the beginning using the [CLEAR] key ([VIBE]+[CE]) Command are also augmented with the interactive toolbar beside the command line on the big screen.
 

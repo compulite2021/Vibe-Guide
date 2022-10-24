@@ -1,16 +1,16 @@
 
-# Snaps (Snapshots) {#Snaps-17.0.}
+# Snaps (Snapshots) {#Snaps-16.0.}
 
 This chapter deals with creating and triggering Snapshots.
 
 **The following is covered in this chapter:**
 
-- [17.1. Storing Snaps](#StoringSnaps-17.1.)
-- [17.2. Triggering Snap](#TriggeringSnap-17.2.)
-- [17.3. Attaching Snaps](#AttachingSnaps-17.3.)
+- [16.1. Storing Snaps](#StoringSnaps-16.1.)
+- [16.2. Triggering Snap](#TriggeringSnap-16.2.)
+- [16.3. Attaching Snaps](#AttachingSnaps-16.3.)
 
 
-## Storing Snaps {#StoringSnaps-17.1.}
+## Storing Snaps {#StoringSnaps-16.1.}
 
 
 
@@ -57,7 +57,7 @@ Or
 
 
 
-## Triggering Snap {#TriggeringSnap-17.2.}
+## Triggering Snap {#TriggeringSnap-16.2.}
 
 
 
@@ -112,7 +112,7 @@ Snaps may be assigned a time to "smooth" out their transitions.
 -   Exclude from Override - Even if recorded in a Snap, the controller will ignore Snap activation instructions.
 
 
-## Attaching Snaps {#AttachingSnaps-17.3.}
+## Attaching Snaps {#AttachingSnaps-16.3.}
 
 Snaps may be attached and triggered from Qlist Cues.
 

@@ -5,14 +5,14 @@ This chapter deals with customizing system settings to suit programming styles.
 
 **The following is covered in this chapter:**
 
--  [7.1. Editing](#Editing-7.1.)
--  [7.2. Timing](#Timing-7.2.)
--  [7.3. Network](#Network-7.3.)
--  [7.4. Hardware](#Hardware-7.4.)
--  [7.5. Defaults](#Defaults-7.5.)
--  [7.6. System](#System-7.6.)
+-  [6.1. Editing](#Editing-6.1.)
+-  [6.2. Timing](#Timing-6.2.)
+-  [6.3. Network](#Network-6.3.)
+-  [6.4. Hardware](#Hardware-6.4.)
+-  [6.5. Defaults](#Defaults-6.5.)
+-  [6.6. System](#System-6.6.)
 
-## Editing {#Editing-7.1.}
+## Editing {#Editing-6.1.}
 
 
 System Settings defaults are accessed by selecting {System Settings} from the {Vibe} menu or by tapping the {System Status} area at the far right side of the controller displays.
@@ -41,7 +41,7 @@ System Settings defaults are accessed by selecting {System Settings} from the {V
 
 **Clear Editor After Store:**
 
--   Default editor behaviour when in Compulite Mode - After storing a cue, values remain in the editor until [RESET] or [VIBE]+[RESET] is pressed.
+-   Default editor behavior when in Compulite Mode - After storing a cue, values remain in the editor until [RESET] or [VIBE]+[RESET] is pressed.
     
 
 **Editor Flash:**
@@ -120,7 +120,7 @@ Tracking - Non-Tracking:
     
 -   {Apply to Defaults} -Updates system setting changes to **show specific** defaults without exiting the pop-up.
 
-## Timing {#Timing-7.2.}
+## Timing {#Timing-6.2.}
 
 
 **Timing Properties** - Cue Section
@@ -169,7 +169,7 @@ Tracking - Non-Tracking:
 -   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
 
 
-## Network {#Network-7.3.}
+## Network {#Network-6.3.}
 
 
 **Network Properties** - Local
@@ -217,7 +217,7 @@ Tracking - Non-Tracking:
 - Related to starting or ending a session with a master console. Later on this in the Master-Slave and Multiuser chapters.
 
 
-## Hardware {#Hardware-7.4.}
+## Hardware {#Hardware-6.4.}
 
 
 **Hardware Properties** - Panel Backlight
@@ -242,7 +242,7 @@ Tracking - Non-Tracking:
 
 -   Opens relevant Windows setting screen.
 
-## Defaults {#Defaults-7.5.}
+## Defaults {#Defaults-6.5.}
 
 
 **Defaults** - Initial settings for most system objects.
@@ -254,21 +254,21 @@ Tracking - Non-Tracking:
 
 **See:**
 
--  [7.5.1. Controller Settings](#controller-settings-7.5.1.)
--  [7.5.2. Controller Actions](#controller-actions-7.5.2.)
--  [7.5.3. Qlist Properties](#qlist-properties-7.5.3.)
--  [7.5.4. Chaser Properties](#chaser-properties-7.5.4.)
--  [7.5.5. Cue Settings](#cue-settings-7.5.5.)
--  [7.5.6. Cue Store Options](#cue-store-options-7.5.6.)
--  [7.5.7. Scene Settings](#scene-settings-7.5.7.)
--  [7.5.8. Scene Store Options](#scene-store-options-7.5.8.)
--  [7.5.9. Bank Library Options](#bank-library-options-7.5.9.)
--  [7.5.10. Snap Settings](#snap-settings-7.5.10.)
--  [7.5.11. Effects](#effects-7.5.11.)
+-  [6.5.1. Controller Settings](#controller-settings-6.5.1.)
+-  [6.5.2. Controller Actions](#controller-actions-6.5.2.)
+-  [6.5.3. Qlist Properties](#qlist-properties-6.5.3.)
+-  [6.5.4. Chaser Properties](#chaser-properties-6.5.4.)
+-  [6.5.5. Cue Settings](#cue-settings-6.5.5.)
+-  [6.5.6. Cue Store Options](#cue-store-options-6.5.6.)
+-  [6.5.7. Scene Settings](#scene-settings-6.5.7.)
+-  [6.5.8. Scene Store Options](#scene-store-options-6.5.8.)
+-  [6.5.9. Bank Library Options](#bank-library-options-6.5.9.)
+-  [6.5.10. Snap Settings](#snap-settings-6.5.10.)
+-  [6.5.11. Effects](#effects-6.5.11.)
 
 
 
-### Controller Settings {#controller-settings-7.5.1.}
+### Controller Settings {#controller-settings-6.5.1.}
 
 
 
@@ -276,7 +276,7 @@ Tracking - Non-Tracking:
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIRko0Ph6QW39QUTMFEaI%2F7.5.1.webp?alt=media&token=c11c81e4-d394-4237-bd78-b63dacce9566)
 
-**Flash behaviour:**
+**Flash behavior:**
 
 -   **Release On Release** - While a Flash button is depressed, the controller will assert its values, when released the controller will be released from affecting the stage.
     
@@ -287,7 +287,7 @@ Tracking - Non-Tracking:
 -   **Latch** - Flash key toggles ON/OFF.
     
 
-**Slider Behaviour:**
+**Slider behavior:**
 
 -   **Intensity Only** - Slider only controls the intensity.
     
@@ -326,7 +326,7 @@ Tracking - Non-Tracking:
 -   **Restores settings** - Resets Controller settings to their last stored configuration.
 
 
-### Controller Actions {#controller-actions-7.5.2.}
+### Controller Actions {#controller-actions-6.5.2.}
 
 
 **Defaults** - Controller Default Actions
@@ -335,7 +335,7 @@ Tracking - Non-Tracking:
 
 **Qlists and Scenes:**
 
--   The Default button assignments when a Qlist or Scene is assigned to a controller ( **See:** [14.5. Configuring Controllers](#ConfiguringControllers-14.5.))
+-   The Default button assignments when a Qlist or Scene is assigned to a controller ( **See:** [13.5. Configuring Controllers](#ConfiguringControllers-13.5.))
     
 **Bottom Controller Button for Submaster**
 
@@ -350,11 +350,11 @@ The default behavior for submaster's assignment on the bottom button is _Flash_
 
 
 
-### Qlist Properties {#qlist-properties-7.5.3.}
+### Qlist Properties {#qlist-properties-6.5.3.}
 
 
 
-7.5.3. Qlist Properties
+6.5.3. Qlist Properties
 
 **Defaults** - Qlist Properties
 
@@ -426,7 +426,7 @@ ___
 
 **Restore default** - Resets Qlist properties to their last stored configuration.
 
-### Chaser Properties {#chaser-properties-7.5.4.}
+### Chaser Properties {#chaser-properties-6.5.4.}
 
 
 **Defaults** - Chase Properties
@@ -438,7 +438,7 @@ ___
 
 -   **Normal** - Cues loop from one to another in order.
     
--   **Build** - <span style="color:Gray">Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behaviour).</span>
+-   **Build** - <span style="color:Gray">Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behavior).</span>
     
 -   **Bounce** - Cues transition from lowest cue number to highest, then reverse and transition from highest to lowest.
     
@@ -472,7 +472,7 @@ Restore default:
 
 
 
-### Cue Settings {#cue-settings-7.5.5.}
+### Cue Settings {#cue-settings-6.5.5.}
 
 
 
@@ -484,13 +484,13 @@ Restore default:
 
 -   **Time:**
  
-  - [10.11.1. Assigning Cue Time](#assigning-cue-time-10.11.1.)
+  - [9.11.1. Assigning Cue Time](#assigning-cue-time-9.11.1.)
  
-	 - [10.11.2. Wait and Follow Times](#wait-and-follow-times-10.11.2.)
+	 - [9.11.2. Wait and Follow Times](#wait-and-follow-times-9.11.2.)
     
 -   **Properties:** 
 
-	- [10.12.3. Tracking Options](#tracking-options-10.12.3.)
+	- [9.12.3. Tracking Options](#tracking-options-9.12.3.)
 
 
 **Update Popup**
@@ -502,18 +502,18 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Cue Store Options {#cue-store-options-7.5.6.}
+### Cue Store Options {#cue-store-options-6.5.6.}
 
 
 **Default** - Cue Store Options
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FjkzU21qPYa1QeWdSjgIe%2F7.5.6.webp?alt=media&token=f9d16c19-eb41-479b-9be3-e3a4d2dfd36c)
 
-**See**: [10.7. Cue Store Options](#CueStoreOptions-10.7.)
+**See**: [9.7. Cue Store Options](#CueStoreOptions-9.7.)
 
 
 
-### Scene Settings {#scene-settings-7.5.7.}
+### Scene Settings {#scene-settings-6.5.7.}
 
 
 **Defaults** - Scene Settings
@@ -527,18 +527,18 @@ The default for the _New Values_ is _Master PB Only_
 -   **Units Button** - Sets the time units (H/M/S/Mil)
 
 
-### Scene Store Options {#scene-store-options-7.5.8.}
+### Scene Store Options {#scene-store-options-6.5.8.}
 
 
 **Default** - Cue Store Options
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDgLaAhLr29G2p63xJTdO%2F7.5.8.webp?alt=media&token=739d0f7d-3b86-45c5-a74c-5d035cab9acd)
 
-**Similar to Cue Store Options. See:** [10.7. Cue Store Options](#CueStoreOptions-10.7.)
+**Similar to Cue Store Options. See:** [9.7. Cue Store Options](#CueStoreOptions-9.7.)
 
 
 
-### Bank Library Options {#bank-library-options-7.5.9.}
+### Bank Library Options {#bank-library-options-6.5.9.}
 
 **Default** - Lib Options
 
@@ -554,7 +554,8 @@ The default for the _New Values_ is _Master PB Only_
 - Shape
 
 **See:**  
-[12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.) 
+
+[11.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-11.2.) 
 
 **Options for Effect include an additional option:** 
 
@@ -562,7 +563,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Snap Settings {#snap-settings-7.5.10.}
+### Snap Settings {#snap-settings-6.5.10.}
 
 **Default** - Snap Settings
 
@@ -588,11 +589,11 @@ The default for the _New Values_ is _Master PB Only_
 -   Sets the time units. (H/M/S/Mil)
     
 
-See: [17. Snaps](#Snaps-17.0.)
+See: [16. Snaps](#Snaps-16.0.)
 
 
 
-### Effects {#effects-7.5.11.}
+### Effects {#effects-6.5.11.}
 
 
 When using pre-built effects on Pan & Tilt parameters, the default size of the effect is 20%.
@@ -600,7 +601,7 @@ When using pre-built effects on Pan & Tilt parameters, the default size of the e
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSvpUbdsjf1qb4sbjxjRD%2F7.5.11.png?alt=media&token=4263c8e1-10ed-415f-a5e4-b32fdae53458)
 
 
-## System {#System-7.6.}
+## System {#System-6.6.}
 
 **Default** - System
 

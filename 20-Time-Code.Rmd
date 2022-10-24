@@ -8,24 +8,24 @@ Time code is used to synchronize Vibe events with the internal timeline or exter
 
 **The following is covered in this section:**
 
--   [21.1. Basics](#Basics-21.1.)
+-   [20.1. Basics](#Basics-20.1.)
 
--   [21.2. Configure Timecode](#Configure-Timecode-21.2.)    
+-   [20.2. Configure Timecode](#Configure-Timecode-20.2.)    
 
--   [21.3. Timeline View](#Timeline-View-21.3.)
+-   [20.3. Timeline View](#Timeline-View-20.3.)
     
--   [21.4. Record a Timeline](#Record-a-Timeline-21.4.)
+-   [20.4. Record a Timeline](#Record-a-Timeline-20.4.)
     
--   [21.5. Edit Timeline Events](#Edit-Timeline-Events-21.5.)
+-   [20.5. Edit Timeline Events](#Edit-Timeline-Events-20.5.)
 
--   [21.6. Execute Timeline Events](#Execute-Timeline-Events-21.6)
+-   [20.6. Execute Timeline Events](#Execute-Timeline-Events-20.6)
     
--   [21.7. Markers](#Markers-21.7.)
+-   [20.7. Markers](#Markers-20.7.)
 
--   [21.8. Time Format](#TimeFormat-21.8.)
+-   [20.8. Time Format](#TimeFormat-20.8.)
 
 
-## Basics {#Basics-21.1.}
+## Basics {#Basics-20.1.}
 
 
 Vibe uses a philosophy of Timeline Tracks. There is no practice limit to the number of Timeline Tracks that may be recorded in a show but graphic performance may suffer with more than 16 Timeline Tracks. Each timeline may have its own timecode source.
@@ -85,7 +85,7 @@ Supported frame rates are:
 -   As the console SMPTE input is high impedance, If long runs are to be used, it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.
     
 
-## Configure Timecode {#Configure-Timecode-21.2.}
+## Configure Timecode {#Configure-Timecode-20.2.}
 
 To trigger a timeline with a timecode source, the 
 Open the {Vibe} menu and select: {Settings} ⟶ {I/O Settings} 
@@ -127,7 +127,7 @@ In Timecode tab it is possible to enable and disable the Midi Time Code (MTC) an
 
 
 
-## Timeline View {#Timeline-View-21.3.}
+## Timeline View {#Timeline-View-20.3.}
 
 
 If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the workspace layout. Unlimited timecode views may be created, but they will all be synchronized and show the same tracks and options.
@@ -154,7 +154,7 @@ If no layout contains a Timeline view, the first step to create a Timeline is to
 
 
 
-## Record a Timeline {#Record-a-Timeline-21.4.}
+## Record a Timeline {#Record-a-Timeline-20.4.}
 
 After a Timeline View has been created, timeline tracks may be recorded. Currently, timeline events are recorded in "real time" and then edited.
 
@@ -212,7 +212,7 @@ In the grid view it is possible to see all events from all timelines or to filte
 
 
 
-## Edit Timeline Events {#Edit-Timeline-Events-21.5.}
+## Edit Timeline Events {#Edit-Timeline-Events-20.5.}
 
 
 **Events Selection**
@@ -318,7 +318,7 @@ These commands will affect the selected timelines in the sequence. Some sequence
 
 
 
-## Execute Timeline Events {#Execute-Timeline-Events-21.6}
+## Execute Timeline Events {#Execute-Timeline-Events-20.6}
 
 -   If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.
     
@@ -363,7 +363,7 @@ These commands will affect the Active Timeline View.
 
 
 
-## Markers {#Markers-21.7.}
+## Markers {#Markers-20.7.}
 
 
 To aid in timeline navigation, Markers may be inserted.
@@ -382,7 +382,7 @@ To insert a marker:
 -   Press 🗑️ to delete a marker
 
 
-## Time Format {#TimeFormat-21.8.}
+## Time Format {#TimeFormat-20.8.}
 
 It is possible to view the timeline and events data in different time
 formats.

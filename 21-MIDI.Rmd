@@ -5,14 +5,14 @@ This chapter deals with configuring and assigning MIDI
 
 **The following is covered in this chapter:**
 
-- [22.1. What is MIDI](#WhatisMIDI-22.1.)
-- [22.2. General MIDI Configuration](#GeneralMIDIConfiguration-22.2.)
-- [22.3 Configuring MIDI Notes and Commands](#ConfiguringMIDINotesandCommands-22.3.)
-- [22.4. MIDI Show Control](#MIDIShowControl-22.4.)
-- [22.5 MIDI Time Code](#MIDITimeCode-22.5)
+- [21.1. What is MIDI](#WhatisMIDI-21.1.)
+- [21.2. General MIDI Configuration](#GeneralMIDIConfiguration-21.2.)
+- [21.3 Configuring MIDI Notes and Commands](#ConfiguringMIDINotesandCommands-21.3.)
+- [21.4. MIDI Show Control](#MIDIShowControl-21.4.)
+- [21.5 MIDI Time Code](#MIDITimeCode-21.5)
 
 
-## What is MIDI {#WhatisMIDI-22.1.}
+## What is MIDI {#WhatisMIDI-21.1.}
 
 MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer. It is a control protocol and does not transmit audio. Over the years the MIDI protocol has evolved to also be a popular way to synchronize and "Play" lighting equipment. MIDI is based around a 7-bit architecture and therefore has a theoretical 127 possible notes for a keyboard. (Most pianos use 88 notes and synthesizers use even less)
 
@@ -78,7 +78,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 -   Windows class compliant MIDI over Ethernet is supported. Compulite VC MIDI over Ethernet is also supported.
 
 
-## General MIDI Configuration {#GeneralMIDIConfiguration-22.2.}
+## General MIDI Configuration {#GeneralMIDIConfiguration-21.2.}
 
 
 **I/O General:**
@@ -101,7 +101,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 
 
-## Configuring MIDI Notes and Commands {#ConfiguringMIDINotesandCommands-22.3.}
+## Configuring MIDI Notes and Commands {#ConfiguringMIDINotesandCommands-21.3.}
 
 
 
@@ -187,7 +187,7 @@ MIDI (Musical Instrument Digital Interface) is a protocol that was originally de
 
 
 
-## MIDI Show Control {#MIDIShowControl-22.4.}
+## MIDI Show Control {#MIDIShowControl-21.4.}
 
 
 Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices. Basic MSC commands are:
@@ -228,7 +228,7 @@ Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_ms
 
 
 
-## MIDI Time Code {#MIDITimeCode-22.5}
+## MIDI Time Code {#MIDITimeCode-21.5}
 
 See: 
-[21.3. Configuring Timecode](#ConfiguringTimecode-21.3.)
+[20.3. Configuring Timecode](#ConfiguringTimecode-20.3.)

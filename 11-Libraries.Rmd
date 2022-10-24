@@ -5,12 +5,12 @@ This chapter deals with creating and editing Libraries.
 
 **The following is covered in this chapter:**
 
-- [12.1. What are Libraries](#WhatareLibraries-12.1.)
-- [12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.)
-- [12.3. Object Libraries](#ObjectLibraries-12.3.)
-- [12.4. Auto Generate](#Auto-Generate-12.4.)
+- [11.1. What are Libraries](#WhatareLibraries-11.1.)
+- [11.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-11.2.)
+- [11.3. Object Libraries](#ObjectLibraries-11.3.)
+- [11.4. Auto Generate](#Auto-Generate-11.4.)
 
-## What are Libraries {#WhatareLibraries-12.1.}
+## What are Libraries {#WhatareLibraries-11.1.}
 
 **Vibe has two types of Libraries, Bank Libraries and Object Libraries:**
 
@@ -40,10 +40,10 @@ This chapter deals with creating and editing Libraries.
 >Scenes are like Submasters or Group Masters on other consoles. They may be set as additive or subtractive.
 
 
-## Store and Modify Bank Libraries {#StoreandModifyBankLibraries-12.2.}
+## Store and Modify Bank Libraries {#StoreandModifyBankLibraries-11.2.}
 
 
-12.2. Store and Modify Bank Libraries
+11.2. Store and Modify Bank Libraries
 
 >Compulite Libraries are similar to Presets or Palettes on other consoles.
 
@@ -55,7 +55,7 @@ This chapter deals with creating and editing Libraries.
 -   Filters may be applied to modify what is stored in a Library.
     
 
-**Libraries can be assigned one of six behaviours:**
+**Libraries can be assigned one of six behaviors:**
 
 1.   **Fixture Specific** – Values only applied only to specific stored fixtures.
     
@@ -69,7 +69,7 @@ This chapter deals with creating and editing Libraries.
     
 6.   **Device and pattern** – Values will be applied to fixtures of the same device type and keep the pattern of values. 
 
-Library Bank SKs have default filters and behaviours based on the way they are commonly used.
+Library Bank SKs have default filters and behaviors based on the way they are commonly used.
 
 **Store directly to a Bank SK Library:**
 
@@ -207,23 +207,23 @@ Library Settings may be changed at any time after they are created using the Lib
 >For most Delete functions, pressing [DELETE] [DELETE] will do the same as pressing [ENTER] or <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/> to complete the operation.
 
 
-## Object Libraries {#ObjectLibraries-12.3.}
+## Object Libraries {#ObjectLibraries-11.3.}
 
 
 **See:**
 
--   [9.4. Groups](#Groups-9.4.)
+-   [8.4. Groups](#Groups-8.4.)
     
--   [10.1. What Are Qlists, Cues, Scenes, and Submasters?](WhatAreQlists-Cues-Scenes-andSubmasters-10.1.)
+-   [9.1. What Are Qlists, Cues, Scenes, and Submasters?](WhatAreQlists-Cues-Scenes-andSubmasters-9.1.)
     
--   [11.2. General Filters Tab](#GeneralFiltersTab-11.2.)
+-   [10.2. General Filters Tab](#GeneralFiltersTab-10.2.)
     
--   [16.1. Creating Macros](#CreatingMacros-16.1.)
+-   [15.1. Creating Macros](#CreatingMacros-15.1.)
     
--   [17.1. Storing Snaps](#StoringSnaps-17.1.)
+-   [16.1. Storing Snaps](#StoringSnaps-16.1.)
 
 
-## Auto Generate {#Auto-Generate-12.4.}
+## Auto Generate {#Auto-Generate-11.4.}
 
 The option to Auto Generate Groups and Libraries is on the Editor Toolbar in Patch pages. It permits a smart and fast creation of the most common libraries.
 

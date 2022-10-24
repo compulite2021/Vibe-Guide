@@ -3,9 +3,9 @@
 
 **The following is covered in this chapter:**
 
-- [23.1 - Media Bank](#MediaBank-23.1)
+- [22.1 - Media Bank](#MediaBank-22.1)
 
-## Media Bank {#MediaBank-23.1}
+## Media Bank {#MediaBank-22.1}
 
 There is a bank on the Small Screen Called Media. This bank was created to be able to handle media servers in a smart and easy way. In order to see content in this bank, users will need to create Media Server devices such as Green Hippo's Hippotizer. All virtual controls are also mapped to the physical wheels for easy use.
 
@@ -16,7 +16,7 @@ This bank has 5 types of sub-banks:
 
 **Media – Media Bank**
 
-This sub-bank includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play. By default, all the folders and subfolders are visible, but once synchronizing the data with the media server through CITP (see: [CITP Popup](#CITP-24.5.) then thumbnails will be shown.
+This sub-bank includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play. By default, all the folders and subfolders are visible, but once synchronizing the data with the media server through CITP (see: [CITP Popup](#CITP-23.5.) then thumbnails will be shown.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FZuTcpOKXTIeetfKrHMc9%2Fimage.png?alt=media&token=cb71bf19-0489-4924-8a80-038c875e9548)
 

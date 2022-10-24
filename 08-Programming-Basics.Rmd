@@ -6,21 +6,21 @@ This chapter deals with the fundamentals of building stage looks in the editor.
 
 **The following is covered in this chapter:**
 
-- [9.1. Editor](#Editor-9.1.)
-- [ 9.2. Editor Tools](#EditorTools-9.2.)
-- [9.3. Working with Fixtures](#WorkingwithFixtures-9.3.)
-- [9.4. Groups](#Groups-9.4.)
-- [9.5. Undo](#Undo-9.5.)
+- [8.1. Editor](#Editor-8.1.)
+- [8.2. Editor Tools](#EditorTools-8.2.)
+- [8.3. Working with Fixtures](#WorkingwithFixtures-8.3.)
+- [8.4. Groups](#Groups-8.4.)
+- [8.5. Undo](#Undo-8.5.)
 
 
-## Editor {#Editor-9.1.}
+## Editor {#Editor-8.1.}
 
 Editor Basics:
 
--   [9.1.1. What is the Editor](#what-is-the-editor-9.1.1.)
--   [9.1.2. Blind Editor](#blind-editor-9.1.2.)
+-   [8.1.1. What is the Editor](#what-is-the-editor-8.1.1.)
+-   [8.1.2. Blind Editor](#blind-editor-8.1.2.)
 
-###  What is the Editor {#what-is-the-editor-9.1.1.}
+###  What is the Editor {#what-is-the-editor-8.1.1.}
 
 All manual parameter modification occurs in the **EDITOR**. (Programmer in some other consoles). The **Live Displays** show all values from **both** Controller outputs (Playbacks or Executors on some consoles) and fixtures in the Editor. Color coding is used to distinguish between values coming from the controllers and values in the **EDITOR**.
 
@@ -55,17 +55,17 @@ All manual parameter modification occurs in the **EDITOR**. (Programmer in some 
 -   Press [VIBE] + [RESET]
     
 
-See also: [9.3.10. Release and Home Sequences](#Release-and-Home -Sequences-9.3.1)
+See also: [8.3.10. Release and Home Sequences](#Release-and-Home -Sequences-8.3.1)
 
-### Blind Editor {#blind-editor-9.1.2.}
+### Blind Editor {#blind-editor-8.1.2.}
 
 The Blind Editor is used to create or modify objects without outputting values to the stage
 
-Vibe has two Blind Editor behaviours:
+Vibe has two Blind Editor behaviors:
 
 1.  Blind acts as a discrete editor separate from the live editor
     
-2. Blind emulates the behaviour of single editor consoles where the main editors output is just disabled
+2. Blind emulates the behavior of single editor consoles where the main editors output is just disabled
     
 
 **To build a new cue in the Blind Editor:**
@@ -77,15 +77,15 @@ Vibe has two Blind Editor behaviours:
 3.  Store objects as usual - See also:
     
 
--   [9.4. Creating and Applying Groups](#Groups-9.4.) 
+-   [8.4. Creating and Applying Groups](#Groups-8.4.) 
     
--   [10.3. Storing Cues and Scenes Directly to Controllers](#StoringCuesandScenesDirectlytoControllers-10.3.)
+-   [9.3. Storing Cues and Scenes Directly to Controllers](#StoringCuesandScenesDirectlytoControllers-9.3.)
     
--   [10.5. Storing Cues to the Master Controller](#StoringCuestotheMasterController-10.5.)
+-   [9.5. Storing Cues to the Master Controller](#StoringCuestotheMasterController-9.5.)
     
--   [10.6. Storing Qlist Cues to any Controller](#StoringQlistCuestoanyController-10.6.)
+-   [9.6. Storing Qlist Cues to any Controller](#StoringQlistCuestoanyController-9.6.)
     
--   [12.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.)
+-   [11.2. Store and Modify Bank Libraries](#StoreandModifyBankLibraries-11.2.)
     
 
 **To edit a cue in the Blind Editor:**
@@ -105,20 +105,20 @@ Vibe has two Blind Editor behaviours:
     
 2. Toggle [VIBE ]+[BLIND] - Copies the contents of the Blind Editor to the Live Editor (The original contents stay in the Blind Editor
 
-## Editor Tools {#EditorTools-9.2.}
+## Editor Tools {#EditorTools-8.2.}
 
 **Editor Tools:**
 
--   [9.2.1. Selections Tools](#selections-tools-9.2.1.)
--   [9.2.2. Transpose](#Transpose-9.2.2.)
--   [9.2.3. Pattern](#Pattern-9.2.3.)
--   [9.2.4. Fan Mode](#fan-mode-9.2.4.)
--   [9.2.5. Highlight Mode](#highlight-mode-9.2.5.)
--   [9.2.6. Lowlight Mode](#lowlight-mode-9.2.6.)
--   [9.2.7. Remainder Dim {Rem Dim}](#remainder-dim-rem-dim-9.2.7.)
--   [9.2.8 Home Scene](#home-scene-9.2.8)
+-   [8.2.1. Selections Tools](#selections-tools-8.2.1.)
+-   [8.2.2. Transpose](#Transpose-8.2.2.)
+-   [8.2.3. Pattern](#Pattern-8.2.3.)
+-   [8.2.4. Fan Mode](#fan-mode-8.2.4.)
+-   [8.2.5. Highlight Mode](#highlight-mode-8.2.5.)
+-   [8.2.6. Lowlight Mode](#lowlight-mode-8.2.6.)
+-   [8.2.7. Remainder Dim {Rem Dim}](#remainder-dim-rem-dim-8.2.7.)
+-   [8.2.8 Home Scene](#home-scene-8.2.8)
 
-### Selections Tools {#selections-tools-9.2.1.}
+### Selections Tools {#selections-tools-8.2.1.}
 
 Currently, Vibe has basic Selection Tools. Advanced tools are under development.
 
@@ -143,7 +143,7 @@ Currently, Vibe has basic Selection Tools. Advanced tools are under development.
 
 *[Fixture] [1] [⟶ ] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14 (as soon as the {/} is pressed **EVERY 3/2** will be displayed on the command line).*
 
-### Transpose {#Transpose-9.2.2.}
+### Transpose {#Transpose-8.2.2.}
 
 Transpose is accessed from the Editor Toolbar. It is used to reorder fixture selection based on a specified offset. This is particularly useful in creating interesting effects and fanning.
 
@@ -161,7 +161,7 @@ Transpose is accessed from the Editor Toolbar. It is used to reorder fixture sel
 
 *-   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12*
 
-### Pattern {#Pattern-9.2.3.}
+### Pattern {#Pattern-8.2.3.}
 Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
 
 **To set a pattern:**
@@ -185,12 +185,12 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 9.   Open the Advanced Effects editor and program the desired effect.
     
 
--   See: [13.3. Advanced Effects Editor](#AdvancedEffectsEditor-13.3.)
+-   See: [12.3. Advanced Effects Editor](#AdvancedEffectsEditor-12.3.)
     
 
 > Simple Block and Sub Block groupings may be created within both Effects Editors. The pattern is for advanced blocks and groupings
 
-### Fan Mode {#fan-mode-9.2.4.}
+### Fan Mode {#fan-mode-8.2.4.}
 
 **Vibe has two methods to fan fixture parameters:**
 
@@ -201,7 +201,7 @@ Is accessed from the Editor Toolbar. It can be used prior to entering the Advanc
 2.  Using keypad syntax.
     
 
-See: [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
+See: [8.3.7. Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-8.3.7)
 
 **Using [Fan] Mode:**
 
@@ -289,9 +289,9 @@ Instead of fanning Blocks based on the selection, fixture **Groups** may also be
     
 -   Use any of the above methods to fan parameters by Group Parameters may also be fanned using keypad syntax.
     
--   [Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-9.3.7)
+-   [Fixture Selection (Detailed)](#Fixture-Selection-(Detailed)-8.3.7)
 
-### Highlight Mode {#highlight-mode-9.2.5.}
+### Highlight Mode {#highlight-mode-8.2.5.}
 
 Highlight and Lowlight modes are used to help identify the positions of fixtures so that they may be edited more easily.
 
@@ -353,7 +353,7 @@ Highlight may be customized when the default home values are too generic. Users 
 
 -   Press [SCENE] [H.LIGHT] [DELETE]
 
-### Lowlight Mode {#lowlight-mode-9.2.6.}
+### Lowlight Mode {#lowlight-mode-8.2.6.}
 
 Lowlight mode is used when many fixtures are lit up and therefore Highlight is not helpful. **Lowlight Mode affects parameters and banks in the following way:**
 
@@ -407,7 +407,7 @@ Lowlight may be customized when the default home values are are too generic. Fre
 
 - Press [SCENE] [L.LIGHT] [DELETE]
 
-### Remainder Dim {#remainder-dim-rem-dim-9.2.7.}
+### Remainder Dim {#remainder-dim-rem-dim-8.2.7.}
 
 **REM DIM** is an Editor Tool commonly used in theatr environments but can be useful in many other situations.
 
@@ -424,7 +424,7 @@ Lowlight may be customized when the default home values are are too generic. Fre
 -   Cues may be stored with {REM DIM} on but once stored, {REM DIM} is turned off.
 
 
-### Home Scene {#home-scene-9.2.8}
+### Home Scene {#home-scene-8.2.8}
 
 By default released fixtures return to their home values as defined by the device's fixture profile. The device profile is usually based on the manufacturer's suggested defaults, but sometimes the defaults are not appropriate. Vibe allows users to customize Home Values by building a Home Scene. When a fixture is programmed in a Home Scene it will take preference over its home values in the device profile.
 
@@ -439,31 +439,31 @@ By default released fixtures return to their home values as defined by the devic
 
 1.  Press [SCENE] [HOME] [DELETE] - Home values will return to the device profile's home values.
 
-## Working with Fixtures {#WorkingwithFixtures-9.3.}
+## Working with Fixtures {#WorkingwithFixtures-8.3.}
 
 Working with Fixtures:
 
--   [9.3.1. Fixture Selection basics](#Fixture-Selection-basics-9.3.11)
+-   [8.3.1. Fixture Selection basics](#Fixture-Selection-basics-8.3.11)
     
--   [9.3.2. What are Parameters](#What-are-Parameters-9.3.2.)
+-   [8.3.2. What are Parameters](#What-are-Parameters-8.3.2.)
     
--   [9.3.3. Virtual Parameters](#Virtual-Parameters-9.3.3)
+-   [8.3.3. Virtual Parameters](#Virtual-Parameters-8.3.3)
     
--   [9.3.4. Smart Screen](#Smart-Screen-9.3.4)
+-   [8.3.4. Smart Screen](#Smart-Screen-8.3.4)
     
--   [9.3.5. Adjusting Parameters using the Wheel Picker](#Adjusting-Parameters-using-the-Wheel-Picker-9.3.5)
+-   [8.3.5. Adjusting Parameters using the Wheel Picker](#Adjusting-Parameters-using-the-Wheel-Picker-8.3.5)
     
--   [9.3.6. Grab](#Grab-9.3.6.)
+-   [8.3.6. Grab](#Grab-8.3.6.)
     
--   [9.3.7. Fixture Selection (Detailed)](#Fixture-Selection-Detailed-9.3.7)
+-   [8.3.7. Fixture Selection (Detailed)](#Fixture-Selection-Detailed-8.3.7)
     
--   [9.3.8. Setting Parameters using Main Encoder Wheels](#Setting-Parameters-using-Main-Encoder-Wheels-9.3.8.)
+-   [8.3.8. Setting Parameters using Main Encoder Wheels](#Setting-Parameters-using-Main-Encoder-Wheels-8.3.8.)
     
--   [9.3.9. Setting Parameters using Interactive Encoder Wheels](#Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.)
+-   [8.3.9. Setting Parameters using Interactive Encoder Wheels](#Setting-Parameters-using-Interactive-Encoder-Wheels-8.3.9.)
     
--   [9.3.10. Release and Home Sequences](#Release-and-Home-Sequences-9.3.1)
+-   [8.3.10. Release and Home Sequences](#Release-and-Home-Sequences-8.3.1)
 
-### Fixture Selection basics {#Fixture-Selection-basics-9.3.11}
+### Fixture Selection basics {#Fixture-Selection-basics-8.3.11}
 
 Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may be stored and recalled using the **[GROUP]** key. Fixtures may also be interactively selected via the Live Display or Live Parameter Display.
 
@@ -502,7 +502,7 @@ Fixtures are selected using the **[FIXTURE]** key on the keypad. They also may b
 
 > Vibe uses a precision algorithm for encoders. Based on the starting resolution, the slower an encoder is turned, the more resolution it has.
 
-### What are Parameters {#What-are-Parameters-9.3.2.}
+### What are Parameters {#What-are-Parameters-8.3.2.}
 
 
 Parameters are any features of a device that may be manipulated and stored in an object. Examples of parameters would be:
@@ -545,15 +545,15 @@ Parameter values may be set using either Vibe's intuitive **Smart Screen** picke
 
 
 
-### Virtual Parameters {#Virtual-Parameters-9.3.3}
+### Virtual Parameters {#Virtual-Parameters-8.3.3}
 
 See:
 
--   [8.1. Virtual Parameters](#OperationalPhilosophy-8.1.)
+-   [8.1. Virtual Parameters](#OperationalPhilosophy-7.1.)
 
 
 
-### Smart Screen {#Smart-Screen-9.3.4}
+### Smart Screen {#Smart-Screen-8.3.4}
 
 
 The 11.6" multi-touch monitor directly above the 4 encoder wheels is referred to as the **Smart Screen.**
@@ -714,7 +714,7 @@ The control bank is a special bank as its parameters are not stored in cues. Ins
 
 Media bank is the bank designed for an intuitive media server programming.
 
-See the dedicated Chapter  [23 - Media Servers](#MediaBank-23.1).
+See the dedicated Chapter  [22 - Media Servers](#MediaBank-22.1).
 
 
 **Command Line**
@@ -750,7 +750,7 @@ The Smart Screen command line shows the active fixture selection.
 
 		-   24 bit - Magenta on [Res] key 
 
-	-   View - Sets behaviour of smart screen views.
+	-   View - Sets behavior of smart screen views.
 
 		-   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
 
@@ -766,11 +766,11 @@ The Smart Screen command line shows the active fixture selection.
 
 		-   Extra Wheels - Displays wheel information for the additional context sensitive encoder wheels
 
-Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-13.2.)
+Smart Screen Effects Editor - See: [12.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-12.2.)
 
 
 
-### Adjusting Parameters using the Wheel Picker {#Adjusting-Parameters-using-the-Wheel-Picker-9.3.5}
+### Adjusting Parameters using the Wheel Picker {#Adjusting-Parameters-using-the-Wheel-Picker-8.3.5}
 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYRrblpqrjOFnaCqFguQy%2F9.3.5.webp?alt=media&token=35ce4615-8aa3-4192-a5c6-7db4e70d41c8)
@@ -837,7 +837,7 @@ Smart Screen Effects Editor - See: [13.2. Smart Screen Effects Editor](#SmartScr
 
 
 
-### Grab {#Grab-9.3.6.}
+### Grab {#Grab-8.3.6.}
 
 Grab is a powerful tool for selecting fixtures that meet a number of conditions. By default [GRAB] selects all fixtures with intensity or virtual intensity values above Zero **Pressing [GRAB] without a selection opens up a pop-up on the Smart Screen. It contains the following options:**
 
@@ -905,7 +905,7 @@ Grab is a powerful tool for selecting fixtures that meet a number of conditions.
 
 
 
-### Fixture Selection (Detailed) {#Fixture-Selection-Detailed-9.3.7}
+### Fixture Selection (Detailed) {#Fixture-Selection-Detailed-8.3.7}
 
 
 > FIn this guide, FIXTURE will be the default SET but any SET (Channel, Spot, Matrix, Server, User) should also be applicable.
@@ -955,7 +955,7 @@ The rules for single digit plus Enter will also apply.
 
 
 
-### Setting Parameters using Main Encoder Wheels {#Setting-Parameters-using-Main-Encoder-Wheels-9.3.8.}
+### Setting Parameters using Main Encoder Wheels {#Setting-Parameters-using-Main-Encoder-Wheels-8.3.8.}
 
 Vibe features the **Smart Window** to simplify programming. Programming may also be done traditionally using {Bank} keys and the 4 large push wheels: 
 
@@ -1004,7 +1004,7 @@ Vibe features the **Smart Window** to simplify programming. Programming may also
 
 
 
-### Setting Parameters using Interactive Encoder Wheels {#Setting-Parameters-using-Interactive-Encoder-Wheels-9.3.9.}
+### Setting Parameters using Interactive Encoder Wheels {#Setting-Parameters-using-Interactive-Encoder-Wheels-8.3.9.}
 
 
 Vibe has 4 additional interactive push encoder wheels along the right hand side of the smart screen. The parameters assigned to the wheels are dependent on the bank and selected fixture type: 
@@ -1021,11 +1021,11 @@ Vibe has 4 additional interactive push encoder wheels along the right hand side 
 
 In future releases it will be possible for users to customize the defaults.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDGXNEIrHnemjvPSftsn9%2F9.3.9.webp?alt=media&token=26fc8f97-07b6-488f-a54e-2e0234b4f8a8)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FDGXNEIrHnemjvPSftsn9%2F9.3.8.webp?alt=media&token=26fc8f97-07b6-488f-a54e-2e0234b4f8a8)
 
 
 
-### Release and Home Sequences {#Release-and-Home-Sequences-9.3.1}
+### Release and Home Sequences {#Release-and-Home-Sequences-8.3.1}
 
 
 **Release** - Removes fixtures or fixture parameter values from the editor 
@@ -1082,7 +1082,7 @@ Selected fixtures and/or parameters may be sent to their defaults using the [HOM
 -   Press [SCENE] [HOME] [DELETE]
 
 
-## Groups {#Groups-9.4.}
+## Groups {#Groups-8.4.}
 
 
 > <span style="color:Red">The order that fixtures are typed is stored with a group</span>.
@@ -1149,7 +1149,7 @@ Group Settings Pop-up
 -   Tap {GROUP} [#] [DELETE]
 
 
-## Undo {#Undo-9.5.}
+## Undo {#Undo-8.5.}
 
 Undo button directly rolls back the last actions.
 

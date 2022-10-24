@@ -9,7 +9,7 @@ This chapter provides an overview of Vibe's Graphical User Interface (GUI).
 - [4.1.   Introduction](#Introduction-4.1)
 - [4.2.   {VIBE} Menu](#VIBE-Menu-4.2)
 - [4.3.   Pages](#Pages-4.3)
-- [4.4    Configuring WorkSpaces](#Configuring-WorkSpaces-4.4)
+- [4.4    WorkSpaces](#WorkSpaces-4.4)
 - [4.5.   Layouts](#Layouts-4.5)
 - [4.6.   Smart Screen](#Smart-Screen-4.6)
 - [4.7.   Toolbars](#Toolbars-4.7)
@@ -59,11 +59,11 @@ Vibe uses a Multi-touch based interface with simple familiar gestures for naviga
 
 -   Workspace Templates are organized into three familiar categories, each with a dedicated display key. These keys are found above the top left corner of the **Smart Screen**: 
 
-    ◾  **[PATCH]**
+    - **[PATCH]**
 	
-    ◾  **[PROG]** - (Program) 
+    - **[PROG]** - (Program) 
 	
-    ◾  **[PLAY-B]** - (Playback Controllers)
+    - **[PLAY-B]** - (Playback Controllers)
     
 
 -   The Workspace Template Keys are specific to the monitor that has focus (last touched or selected via a mouse).
@@ -89,26 +89,76 @@ Open the Show Menu to access the following options.
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fv7rbFyii8gEXNLDikOqH%2Fimage.png?alt=media&token=c83cbcc2-00d1-42c2-9311-60989315111e)
 
 
-{New Show} - Starts a new show.
+**{New Show}** - Starts a new show.
 
-{Save Show} - Saves the current show.
+**{Save Show}** - Saves the current show.
 
-{Save Show As...} - Opens a popup to name and save the current show, on Vibe or on an external device.
+**{Save Show As...}** - Opens a popup to name and save the current show, on Vibe or on an external device.
 
-{Load Show} - Opens a popup to load a saved show file.
+**{Load Show}** - Opens a popup to load a saved show file.
 
-{Load Vector Show} - Opens a popup to load and convert a show from Compulite Vector.
+**{Load Vector Show}** - Opens a popup to load and convert a show from Compulite Vector.
 
 After selecting the Vector show file, the popup will guide you through the process of device-matching and show conversion options.
 
-{Clean Up Show} - Opens a popup where it is possible to check and delete the data that are not being used in the show.
+Vector Shows may be loaded with the following limitations:
+
+**Devices:**
+
+  - If a matching device exists in Vibe that device will be used. Modes will be matched. 
+
+  - If a similar device exists, it will be used. Modes will try to be matched. 
+
+  - If no match or close match is found, a generic device will be created.
+
+**Patch:**
+
+  - Vector device parameter DMX will be mapped to Vibe parameter DMX.
+
+**Qlists**:
+
+  - Qlists will be matched.
+
+**Cues and Cue Values:**
+
+  - Matching Cues will be created with Vector cue parameter values matched to Vibe cue parameter values.
+
+**Temp Cues:**
+
+  - Temp Cues are converted to Vibe Scenes.
+
+**Vector Submasters:**
+
+  - Submasters are converted to Vibe Scene Submasters.
+
+**Groups:**
+
+  - Groups will be matched.
+
+**Snaps:**
+
+  - Snaps will be mapped with Vector physical playbacks being mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.
+
+**Macros:**
+
+  - Currently not supported.
+
+**Effects:**
+
+  - Currently not supported but under development.
+
+**Vector Playbacks** ⟶ **Vibe Controllers:**
+
+  - Paging is matched and all button functions common to Vector and Vibe are matched.
+
+**{Clean Up Show}** - Opens a popup where it is possible to check and delete the data that are not being used in the show.
 
 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FP8sazjSCK25Dd6eUk6Wc%2Fimage.png?alt=media&token=d4f8ce81-7947-4a0f-9361-4b7f0629ded3)
 
 
-{Report} - Opens a popup where it is possible to create excel files with the data of the show, such as Groups, Libraries, Qlists and Scenes content.
+**{Report}** - Opens a popup where it is possible to create excel files with the data of the show, such as Groups, Libraries, Qlists and Scenes content.
 
 
 
@@ -119,7 +169,7 @@ The Report file can be generated for all the data or just for the selected objec
 
 The Reports are saved in the Reports Folder inside WorkDir.
 
-{Error Report} - Creates an Error Report file that can be shared with Compulite Support in case of software problems.
+**{Error Report}** - Creates an Error Report file that can be shared with Compulite Support in case of software problems.
 
 
 
@@ -178,13 +228,13 @@ Open the Settings menu to access the following options.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk24ISQvJvl4pfHhqGpSM%2Fimage.png?alt=media&token=d1baab7c-7007-4eb1-8929-8b9682584a21)
 
-{System Settings} - Opens a popup where it is possible to configure all the general system settings. This window is also directly accessible from the control area in the low right corner of the screen.
+**{System Settings}** - Opens a popup where it is possible to configure all the general system settings. This window is also directly accessible from the control area in the low right corner of the screen.
 
-{DMX Settings} - Opens a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.
+**{DMX Settings}** - Opens a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.
 
-{I/O Settings} - Opens a popup to enable, disable and configure the MIDI notes, commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
+**{I/O Settings}** - Opens a popup to enable, disable and configure the MIDI notes, commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
 
-{CITP Settings} - Opens a popup to enable, disable and configure the CITP settings. Learn more about configuring CITP in the dedicated chapters.
+**{CITP Settings}** - Opens a popup to enable, disable and configure the CITP settings. Learn more about configuring CITP in the dedicated chapters.
 
 
 
@@ -254,7 +304,7 @@ Clone layout pages for a faster building of a similar layout page.
 3. Select a Page and clone it with the button on the Toolbar
 
 
-## Configuring WorkSpaces{#Configuring-WorkSpaces-4.4}
+## WorkSpaces{#WorkSpaces-4.4}
 
 
 ### Basics
@@ -380,7 +430,7 @@ The 11.6" multi-touch monitor embedded in the upper section of the Vibe console 
 
 **For more detail see:**
 
-[9.3.4. Smart Screen](#Smart-Screen-9.3.4)
+[8.3.4. Smart Screen](#Smart-Screen-8.3.4)
 
 
 ## Toolbars {#Toolbars-4.7}
@@ -418,13 +468,13 @@ Vibe has two ways to display parameter data:
     
 -   **Fit** - Opens column width options. 
 
-    ◾ Fit to Window 
+  - Fit to Window 
 
-    ◾ Fit to Value 
+  - Fit to Value 
 
-    ◾ Fix by Text 
+  - Fix by Text 
 
-    ◾ Default
+  - Default
     
 -   **Active on Stage** - Only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
     
@@ -433,23 +483,23 @@ Vibe has two ways to display parameter data:
 
 -   **Sets** - Select which of the fixture sets to display. 
 
-    ◾ Fixture s Channel
+    - Fixture s Channel
 
-    ◾ Spot s Matrix
+    - Spot s Matrix
 
-    ◾ Media Server 
+    - Media Server 
 
-    ◾ Other custom Sets if created
+    - Other custom Sets if created
     
 -   **Format** - Controls what format the data is displayed in. 
 
-    ◾ % - Values in percentage 
+    - % - Values in percentage 
 
-    ◾ Decimal - DMX values 0 ⟶ 255 
+    - Decimal - DMX values 0 ⟶ 255 
 
-    ◾ Text - Parameter step text 
+    - Text - Parameter step text 
     
-    ◾ Text + Percentage
+    - Text + Percentage
 
 ### Live View Settings {#Live-View-Settings-4.6.1}
 

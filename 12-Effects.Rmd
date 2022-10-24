@@ -5,12 +5,12 @@ This chapter discusses Vibe's two effect editors.
 
 **The following is covered in this chapter:**
 
-- [13.1. Effect Basics](#EffectBasics-13.1.)
-- [13.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-13.2.)
-- [13.3. Advanced Effects Editor](#AdvancedEffectsEditor-13.3.)
-- [13.4. Library Effects](#AdvancedEffectsEditor-13.4.)
+- [12.1. Effect Basics](#EffectBasics-12.1.)
+- [12.2. Smart Screen Effects Editor](#SmartScreenEffectsEditor-12.2.)
+- [12.3. Advanced Effects Editor](#AdvancedEffectsEditor-12.3.)
+- [12.4. Library Effects](#AdvancedEffectsEditor-12.4.)
 
-## Effect Basics {#EffectBasics-13.1.}
+## Effect Basics {#EffectBasics-12.1.}
 
 
 
@@ -138,7 +138,7 @@ Vibe **Effects** are made up of **Effect Events** running along horizontal **Eff
 
 
 
-## Smart Screen Effects Editor {#SmartScreenEffectsEditor-13.2.}
+## Smart Screen Effects Editor {#SmartScreenEffectsEditor-12.2.}
 
 The Smart Screen Effects Editor allows users to quickly build effects within the normal work flow of the console while still having access to the main live displays. **Effect Tracks** are created for every selected parameter but they are hidden to remove screen clutter. Some advance operations are removed to speed up programming of simple effects.
 
@@ -155,13 +155,13 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 
 
-### Building Effects Using the Small Screen Editor {#building-effects-using-the-small-screen-editor-13.2.1.}
+### Building Effects Using the Small Screen Editor {#building-effects-using-the-small-screen-editor-12.2.1.}
 
 **To build an Effect in the Smart Screen Effects Editor:**
 
 1.  Select the the fixtures to be used in the Effect.
     
-2.  Select the **parameter/parameters** to be in the Effect [9.4.2. What are Parameters](#What-are-Parameters-9.3.2.)
+2.  Select the **parameter/parameters** to be in the Effect [8.3.2. What are Parameters](#What-are-Parameters-8.3.2.)
     
 3.  Press [EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.
     
@@ -187,7 +187,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
     
     - 0% = all fixtures transition in unison.
     
-8.  Set Swing (In Base) as needed [13.1. Effects Basics](#EffectBasics-13.1.)
+8.  Set Swing (In Base) as needed [12.1. Effects Basics](#EffectBasics-12.1.)
     
 9.  Adjust Size and Base to set the Low and High ranges of the values
     
@@ -231,7 +231,7 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 
 
-## Advanced Effects Editor {#AdvancedEffectsEditor-13.3.}
+## Advanced Effects Editor {#AdvancedEffectsEditor-12.3.}
 
 Both Effect Editors write to the same Effect Engine. Either or both may be used to create effects. Whichever is opened at the time will be synchronized to the Effects Engine, but only **one** Effect Editor may open at a time.
 
@@ -296,13 +296,13 @@ Building Effects in the Advanced Editor differs from the Smart Screen Editor in 
 
 7. Tap a blank space in the **Effect Event Column** - an Effect Event will be created with a Primitive and Pattern .
 
-8. Adjust Pattern and Primitive settings - See [13.1. Effects Basics](#EffectBasics-13.1.)
+8. Adjust Pattern and Primitive settings - See [12.1. Effects Basics](#EffectBasics-12.1.)
 
 9. Close the Advanced editor using the ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiqDovif3XQdSLCRmPgLg%2Fimage.png?alt=media&token=5fda6a67-cd96-4687-aa9e-78c3ae594e41) in the upper right corner.
 
 10. Store final Effect directly to a cue/scene or to the Effects Library.
 
-**Grouping:** See [13.2.1. Building Effects Using the Small Screen Editor](#building-effects-using-the-small-screen-editor-13.2.1.) 
+**Grouping:** See [12.2.1. Building Effects Using the Small Screen Editor](#building-effects-using-the-small-screen-editor-12.2.1.) 
 
 **Blocks by Groups:**  Groups may be substituted for individual fixtures using this option.
 
@@ -411,10 +411,10 @@ Building Effects in the Advanced Editor differs from the Smart Screen Editor in 
 
 
 
-### Building Effects Using the Advanced Effects Editor {#build-a-basic-effect-in-the-advanced-effects-editor-13.3.1.}
+### Building Effects Using the Advanced Effects Editor {#build-a-basic-effect-in-the-advanced-effects-editor-12.3.1.}
 
 
-13.3.1. Building Effects Using the Advanced Effects Editor
+12.3.1. Building Effects Using the Advanced Effects Editor
 
 **Build a basic Effect in the Advanced Effects Editor:**
 
@@ -443,7 +443,7 @@ Building Effects in the Advanced Editor differs from the Smart Screen Editor in 
 
 7. Tap a blank space in the Effect Event Column - an Effect Event will be created with a Primitive and Pattern .
 
-8. Adjust Pattern and Primitive settings - See 13.1. Effects Basics
+8. Adjust Pattern and Primitive settings - See 12.1. Effects Basics
 
 9. Close the Advanced editor using the ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiqDovif3XQdSLCRmPgLg%2Fimage.png?alt=media&token=5fda6a67-cd96-4687-aa9e-78c3ae594e41) in the upper right corner.
 
@@ -451,7 +451,7 @@ Building Effects in the Advanced Editor differs from the Smart Screen Editor in 
 
 **Grouping:**  
 
-See [13.2.1. Building Effects Using the Small Screen Editor](#building-effects-using-the-small-screen-editor-13.2.1.)
+See [12.2.1. Building Effects Using the Small Screen Editor](#building-effects-using-the-small-screen-editor-12.2.1.)
 
 **Blocks by Groups:** - Groups may be substituted for individual fixtures using this option.
 
@@ -561,7 +561,7 @@ See [13.2.1. Building Effects Using the Small Screen Editor](#building-effects-u
 8.  Tap <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>  or press [ENTER] - Completes the update operation.
 
 
-## Library Effects {#AdvancedEffectsEditor-13.4.}
+## Library Effects {#AdvancedEffectsEditor-12.4.}
 
 
 It is possible to create effects between libraries.

@@ -5,18 +5,18 @@ This chapter deals with creating and patching fixtures.
 
 **The following is covered in this chapter:**
 
--  [6.1.   Fixture Sets](#Fixture-Sets-6.1)
--  [6.2.   Import Devices](#Import-Devices-6.2)
--  [6.3.   Advanced Search](#Advanced-Search-6.3)
--  [6.4.   Create and Patch imported fixtures](#Create-and-Patch-imported-fixtures-6.4)
--  [6.5.   Configuring Physical DMX 1/0](#Configuring-Physical-DMX-1-0-6.5)
--  [6.6.   Patching Inputs](#Patching-Inputs-6.6)
--  [6.7.   Parking Addresses and Fixtures](#Parking-Addresses-and-Fixtures-6.7)
--  [6.8.   Clone Fixtures](#Clone-Fixtures-6.8)
--  [6.9.   Device Replacement](#Device-Replacement-6.9)
--  [6.10.  DMX Output & Input Views](#DMX-Output-and-Input-Views-6.10)
+-  [5.1.   Fixture Sets](#Fixture-Sets-5.1)
+-  [5.2.   Import Devices](#Import-Devices-5.2)
+-  [5.3.   Advanced Search](#Advanced-Search-5.3)
+-  [5.4.   Create and Patch imported fixtures](#Create-and-Patch-imported-fixtures-5.4)
+-  [5.5.   Configuring Physical DMX 1/0](#Configuring-Physical-DMX-1-0-5.5)
+-  [5.6.   Patching Inputs](#Patching-Inputs-5.6)
+-  [5.7.   Parking Addresses and Fixtures](#Parking-Addresses-and-Fixtures-5.7)
+-  [5.8.   Clone Fixtures](#Clone-Fixtures-5.8)
+-  [5.9.   Device Replacement](#Device-Replacement-5.9)
+-  [5.10.  DMX Output & Input](#DMX-Output-and-Input-5.10)
 
-## Fixture Sets {#Fixture-Sets-6.1}
+## Fixture Sets {#Fixture-Sets-5.1}
 
 Like other lighting consoles, Vibe contains an extensive **Device Library** with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. Before a device can be programmed it must be imported and patched to DMX addresses. Vibe has an advanced numbering system that allows devices to be grouped into five familiar categories called **SETS**. Custom **SETS** may also be created. Numbering in all sets may be freely changed if there are no overlapping numbers. Each Set has a unique ID.
 
@@ -52,7 +52,7 @@ c. Tap Sets
 
 
 
-## Import Devices {#Import-Devices-6.2}
+## Import Devices {#Import-Devices-5.2}
 
 **Once the Patch Workspace is open:**
 
@@ -75,7 +75,7 @@ c. Tap Sets
     ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FrcWDm2caVqizbpYrIRBb%2F6.2.2.webp?alt=media&token=62e204dc-17b9-4fd2-8566-18780860a2b8)
     
 
-## Advanced Search {#Advanced-Search-6.3}
+## Advanced Search {#Advanced-Search-5.3}
 
 Fixtures may be searched directly by name using the Advanced Device Search. Searches may also be filtered by parameter order and DMX Channel Count to limit the search. The filters are very helpful in finding close matches for fixtures that are not currently in the device library.
 
@@ -93,15 +93,15 @@ Fixtures may be searched directly by name using the Advanced Device Search. Sear
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F4CX90yhir4RUCFfG8kNP%2F6.3.png?alt=media&token=38c25f2a-507d-4f3b-99cd-6208f5cc4863)
 
 5. The DMX Modes pop-up will open. 
-6. Review the DMX implementation and select the desired mode. 
+5. Review the DMX implementation and select the desired mode. 
 7. Tap [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F6EE8U1Wvt91iKCQ8V0Na%2Fimage.png?alt=media&token=896910e2-8a35-4b58-b0fe-3602ba6f5411.png" width="30"/>](image.png) or press [ENTER] to close the pop-up and add the fixture to the Imported Devices list.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FW9vK61A11wEoGR23P58y%2F6.3.1.webp?alt=media&token=ac62e3aa-1045-4cc4-87d6-5715e511417d)
 
-## Create and Patch imported fixtures {#Create-and-Patch-imported-fixtures-6.4}
+## Create and Patch imported fixtures {#Create-and-Patch-imported-fixtures-5.4}
 
 
-1. Import the desired device. (See [6.2. Import Devices](#Import-Devices-6.2)).
+1. Import the desired device. (See [5.2. Import Devices](#Import-Devices-5.2)).
     
 2. The device will now be in the list below the Imported Devices header.
     
@@ -139,13 +139,13 @@ Using the **INTERVAL** field, a custom interval may be set.
 
 **Theatrical Multi-Patching can also be done manually using keypad syntax:**
 
-    ◾ Toggle off the **{MAIN PATCH}** key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.
+  - Toggle off the **{MAIN PATCH}** key at the top of the DMX patch wizard before closing the pop-up. The fixtures will be created but will remain unpatched.
 
 **To Patch fixtures using traditional keypad syntax:**
 
-    ◾ [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
+  - [FIXTURE] [#] [ADDRESS] [#].[#] (👉 By default, the first available DMX address of the selected Universe will be shown in the **ADDRESS** field. If the default start address is not appropriate, type or scroll the list to the desired start address and tap it.Universe.Address), [STORE]. **Or** 
 
-    ◾ [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].
+  - [ADDRESS] [#].[#] +/ - ⟶ [#].[#] [FIXTURE] [#] [STORE].
 
 >👉 Addresses may also be typed in absolute format: 1 ⟶ 32,768 (64U niverses standard). The system will automatically assign the correct universe.
  
@@ -157,7 +157,7 @@ Using the **INTERVAL** field, a custom interval may be set.
 
 **Drag and Drop from the Fixtures tab:**
 
-1. Create fixtures - (See: [6.4. Create and patch imported fixtures](#Create-and-Patch-imported-fixtures-6.4)).
+1. Create fixtures - (See: [5.4. Create and patch imported fixtures](#Create-and-Patch-imported-fixtures-5.4)).
     
 2. Select the Fixture **Set** you wish to patch from in the lower right of the main patch workspace.
     
@@ -208,36 +208,36 @@ Once patched fixtures can be modified using keypad syntax or using the two Patch
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FYBzeJ8a39N937xjx5S3n%2F6.4.2.png?alt=media&token=d1b58421-5fff-40dd-8c9a-f14f6944e6c8)
 
-    ◾ {CLEAR PATCH} - Opens up Clear Patch pop-up. 
+  - {CLEAR PATCH} - Opens up Clear Patch pop-up. 
     
-    ◾ {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
+  - {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up. 
 
-    ◾ {ADD FIXTURE} - Opens the Create And Patch pop-up. 
+  - {ADD FIXTURE} - Opens the Create And Patch pop-up. 
 
-    ◾ {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
+  - {DELETE FIXTURE} - Opens up Delete Fixtures pop-up.
 
 **Toolbar with fixture selection:**
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FFrU1z04uJEKhtVcZTvFA%2F6.4.2.1.webp?alt=media&token=4f322af9-9116-4d1e-b01b-cc15538d482a)
 
-    ◾ [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
+  - [FIXTURE] [#] {PATCH} - Opens up Patch Fixture pop-up. 
 
-    ◾ [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
+  - [FIXTURE] [#] {RENUMBER} - Opens up RENUMBER: FIXTURE pop-up with fixture already selected. 
 
-    ◾ [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
+  - [FIXTURE] [#] {FIXTURE CALIBRATION} - Opens up Fixture Calibration pop-up with the fixture selected. 
       
 See: 
-[20. XYZ Fixture Calibration](#XYZ-Fixture-Calibration-20.0.) 
+[19. XYZ Fixture Calibration](#XYZ-Fixture-Calibration-19.0.) 
 
-    ◾ [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
+  - [FIXTURE] [#] {CLEAR PATCH} - Opens the Clear Patch confirmation popup 
 
-    ◾ [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
+  - [FIXTURE] [#] {DELETE FIXTURE} - Opens the Delete Fixture confirmation pop-up
 
 **Modify the patch using keypad syntax:** 
 
-    ◾ [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
+  - [FIXTURE] [#] {CLEAR PATCH} - From the Editor toolbar. 
 
-    ◾ [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
+  - [FIXTURE] [#] [DELETE] - Only works in the Patch Workspace.
     
     
     
@@ -256,7 +256,7 @@ Once the function is disabled all the channels come back to their normal state.
 
     
 
-## Configuring Physical DMX 1/0 {#Configuring-Physical-DMX-1-0-6.5}
+## Configuring Physical DMX 1/0 {#Configuring-Physical-DMX-1-0-5.5}
 
 
  By default, DMX is mapped to the physical ports on a 1:1 basis. 
@@ -279,9 +279,9 @@ Once the function is disabled all the channels come back to their normal state.
 
 1. Tap a patched output - Two additional options will appear below the Output Destination Universe box. 
 
-    ◾ {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
+  - {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
 
-    ◾ {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
+  - {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
     
 
 **Change input back to output:**
@@ -295,7 +295,7 @@ Once the function is disabled all the channels come back to their normal state.
 
    ◾ Vibe will aways transmit DMX at the fastest refresh rate it can (38 - 44Hz). Sometimes older equipment cannot handle the high refresh rate, so it may be reduced using the DMX Max Rate wheel. It is not recommended to go below 28Hz as some jitter may be observed.
 
-## Patching Inputs {#Patching-Inputs-6.6}
+## Patching Inputs {#Patching-Inputs-5.6}
 
 **The following objects may be mapped to DMX inputs**: 
 
@@ -378,7 +378,7 @@ Once the function is disabled all the channels come back to their normal state.
     
 3. Press [DELETE]
 
-## Parking Addresses and Fixtures {#Parking-Addresses-and-Fixtures-6.7}
+## Parking Addresses and Fixtures {#Parking-Addresses-and-Fixtures-5.7}
 
 **Park an Address:**
 
@@ -413,16 +413,16 @@ Once the function is disabled all the channels come back to their normal state.
 
 **View parked fixtures and address:**
 
-See: [18.2. Patch Exam](#PatchExam-18.2.)
+See: [17.2. Patch Exam](#PatchExam-17.2.)
     
 
 ><span style="color:Red">> The Grandmaster does not affect parked addresses and fixtures. The [B.O.] key **will** blackout parked addresses and fixtures.</span>
 
 
-## Clone Fixtures {#Clone-Fixtures-6.8}
+## Clone Fixtures {#Clone-Fixtures-5.8}
 
 
-Implemented smart and advanced fixture clone features.
+Vibe has smart and advanced clone features.
 
 The Fixture Cloning feature allows to copy all the stored data from a selection of fixtures to another one.
 
@@ -481,10 +481,10 @@ There is an option to clone the look ahead mask so if the source fixture is in t
 There is an option to choose what to do with the parameters of the destination fixtures that are not included in the clone because they were not matched or any other reason. Merge means to keep these values, overwrite will delete the values. Default is Overwrite.
 
 
-## Device Replacement {#Device-Replacement-6.9}
+## Device Replacement {#Device-Replacement-5.9}
 
 
-Implemented smart and advanced device replacement.
+Vibe has smart and advanced device replacement.
 
 The Device replacement feature allows to replace a device with another one, keeping all the matching data stored.
 
@@ -514,7 +514,7 @@ The replacement can be based on raw values, preserving the parameters' levels, o
 On the right side there is a match table between the source and destination fixtures parameters. This table is dynamic and shows the data set from the left side. User can also change matching parameters manually, but this is only to very special cases and anyway it is not recommended. SMART will anyway overrule the table in case there is a parameter that is included in the smart.
 
 
-## DMX Output & Input Views {#DMX-Output-and-Input-Views-6.10}
+## DMX Output & Input {#DMX-Output-and-Input-5.10}
 
 
 DMX Output and DMX Input views are meant to show in real time the output and input values of each DMX channel of the selected universe.
