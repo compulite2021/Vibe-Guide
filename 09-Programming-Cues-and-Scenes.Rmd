@@ -13,7 +13,7 @@ This chapter deals with storing and editing Editor values.
 - [9.7. Cue Store Options](#CueStoreOptions-9.7.)
 - [9.8. Assigning Text Labels](#AssigningTextLabels-9.8.)
 - [9.9. Modifying Cues and Scenes](#ModifyingCuesandScenes-9.9.)
-- [9.9. Creating New Cues from Existing Cue Data](#CreatingNewCuesfromExistingCueData-9.10.)
+- [9.10. Creating New Cues from Existing Cue Data](#CreatingNewCuesfromExistingCueData-9.10.)
 - [9.11. Cue Time Properties](#CueTimeProperties-9.11.)
 - [9.12. Additional Cue Properties](#AdditionalCueProperties-9.12.)
 - [9.13. Parameter Time](#ParameterTime-9.13.)
@@ -535,7 +535,7 @@ Cue Settings pop-up
 
 
 
-###  Assigning Cue Time {#assigning-cue-time-9.11.1}
+###  Assigning Cue Time {(#assigning-cue-time-9.11.1.}
 
 **Cues may be assigned the following time properties:**
 

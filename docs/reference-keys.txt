@@ -107,7 +107,7 @@ Grab-8.3.6.
 Fixture-Selection-Detailed-8.3.7
 Setting-Parameters-using-Main-Encoder-Wheels-8.3.8.
 Setting-Parameters-using-Interactive-Encoder-Wheels-8.3.9.
-Release-and-Home-Sequences-8.3.1
+Release-and-Home-Sequences-8.3.10
 Groups-8.4.
 Undo-8.5.
 undo-history
@@ -123,7 +123,7 @@ AssigningTextLabels-9.8.
 ModifyingCuesandScenes-9.9.
 CreatingNewCuesfromExistingCueData-9.10.
 CueTimeProperties-9.11.
-assigning-cue-time-9.11.1
+assigning-cue-time-assigning-cue-time-9.11.1.
 wait-and-follow-times-9.11.2.
 AdditionalCueProperties-9.12.
 link-9.12.1.
@@ -188,7 +188,7 @@ topo-topographical-display
 CreatingaTopoView-18.1.
 TopoMenu-18.2.
 CreatingaTopo-18.3.
-Adding-fixtures-18.4
+Adding-fixtures-18.4.
 AddingPixelMaps-18.5.
 Adding-Softkeys-18.6.
 Adding-Text-Elements-18.7.

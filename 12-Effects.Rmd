@@ -132,7 +132,7 @@ Vibe **Effects** are made up of **Effect Events** running along horizontal **Eff
 
 -   Once effects have been created then may be directly stored in cues and scenes or saved in Effects Libraries for future use.
     
--   Effect Libraries are stored similar to normal Libraries [Store and Modify Bank Libraries](#StoreandModifyBankLibraries-12.2.).
+-   Effect Libraries are stored similar to normal Libraries [Store and Modify Bank Libraries](#StoreandModifyBankLibraries-11.2.).
     
 -   Effects libraries have one additional option to allow users to include the base values. This is useful when effects must start from an absolute value.
 

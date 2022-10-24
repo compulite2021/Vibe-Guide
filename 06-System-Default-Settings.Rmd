@@ -484,7 +484,7 @@ Restore default:
 
 -   **Time:**
  
-  - [9.11.1. Assigning Cue Time](#assigning-cue-time-9.11.1.)
+   - [9.11.1. Assigning Cue Time](#assigning-cue-time-9.11.1.)
  
 	 - [9.11.2. Wait and Follow Times](#wait-and-follow-times-9.11.2.)
     

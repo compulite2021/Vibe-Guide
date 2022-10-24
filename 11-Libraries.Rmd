@@ -214,7 +214,7 @@ Library Settings may be changed at any time after they are created using the Lib
 
 -   [8.4. Groups](#Groups-8.4.)
     
--   [9.1. What Are Qlists, Cues, Scenes, and Submasters?](WhatAreQlists-Cues-Scenes-andSubmasters-9.1.)
+-   [9.1. What Are Qlists, Cues, Scenes, and Submasters?](#WhatAreQlists-Cues-Scenes-andSubmasters-9.1.)
     
 -   [10.2. General Filters Tab](#GeneralFiltersTab-10.2.)
     
