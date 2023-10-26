@@ -1102,7 +1102,7 @@ All fixtures in the Scene will now act as Group Submasters. Scene fixture values
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FOuyVOQxYJMWbKHgwvB0k%2F10.14.1.2.webp?alt=media&token=30ab6c49-3e31-4c10-a2f8-72c1ed587c59)
 
 
-
+When a Scene is a Group Submaster, its softkey shows that information with the label "GRP M".
 
 
 ### Assign a Group Submater directly to a Slider Controller {#assign-a-group-submater-directly-to-a-slider-controller-9.15.2.}

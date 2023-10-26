@@ -9,7 +9,7 @@ This chapter deals with creating and patching fixtures.
 -  [5.2.   Import Devices](#Import-Devices-5.2)
 -  [5.3.   Advanced Search](#Advanced-Search-5.3)
 -  [5.4.   Create and Patch imported fixtures](#Create-and-Patch-imported-fixtures-5.4)
--  [5.5.   Configuring Physical DMX 1/0](#Configuring-Physical-DMX-1-0-5.5)
+-  [5.5.   Configuring Physical DMX I/0](#Configuring-Physical-DMX-1-0-5.5)
 -  [5.6.   Patching Inputs](#Patching-Inputs-5.6)
 -  [5.7.   Parking Addresses and Fixtures](#Parking-Addresses-and-Fixtures-5.7)
 -  [5.8.   Clone Fixtures](#Clone-Fixtures-5.8)
@@ -256,7 +256,7 @@ Once the function is disabled all the channels come back to their normal state.
 
     
 
-## Configuring Physical DMX 1/0 {#Configuring-Physical-DMX-1-0-5.5}
+## Configuring Physical DMX I/0 {#Configuring-Physical-DMX-1-0-5.5}
 
 
  By default, DMX is mapped to the physical ports on a 1:1 basis. 
@@ -266,7 +266,7 @@ Once the function is disabled all the channels come back to their normal state.
 
 **Remap Physical outputs:**
 
-1. With no fixtures selected, tap {DMX SETTINGS} on the patch toolbar - The DMX Properties pop-up will open.
+1. Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties pop-up will open.
     
 2. In the Protocol column, Tap {Physical output}.
     
@@ -318,7 +318,7 @@ Once the function is disabled all the channels come back to their normal state.
 4. Press [STORE]
     
 
-> **E.g**. [ADDRERSS] [1] {INPUT PATCH TO} [ADDRESS] [1] [STORE] - When DMX 1 is received from an external source like a console, DMX 1 will directly output to the Vibes DMX output. No values will be shown in the live display as no actual parameters are involved.
+> **E.g**. [ADDRESS] [1] {INPUT PATCH TO} [ADDRESS] [1] [STORE] - When DMX 1 is received from an external source like a console, DMX 1 will directly output to the Vibes DMX output. No values will be shown in the live display as no actual parameters are involved.
 
 **Map a range of DMX outputs to a range of DMX inputs:**
 

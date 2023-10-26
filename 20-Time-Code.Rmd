@@ -381,6 +381,9 @@ To insert a marker:
     
 -   Press 🗑️ to delete a marker
 
+In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.
+
+>>>>> IMAGE TO ADD <<<<<
 
 ## Time Format {#TimeFormat-20.8.}
 

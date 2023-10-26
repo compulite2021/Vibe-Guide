@@ -1,5 +1,5 @@
 
-# System Default Settings
+# System Settings
 
 This chapter deals with customizing system settings to suit programming styles.
 
@@ -7,10 +7,9 @@ This chapter deals with customizing system settings to suit programming styles.
 
 -  [6.1. Editing](#Editing-6.1.)
 -  [6.2. Timing](#Timing-6.2.)
--  [6.3. Network](#Network-6.3.)
--  [6.4. Hardware](#Hardware-6.4.)
--  [6.5. Defaults](#Defaults-6.5.)
--  [6.6. System](#System-6.6.)
+-  [6.3. Hardware](#Hardware-6.3.)
+-  [6.4. Defaults](#Defaults-6.4.)
+-  [6.5. System](#System-6.5.)
 
 ## Editing {#Editing-6.1.}
 
@@ -169,55 +168,7 @@ Tracking - Non-Tracking:
 -   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
 
 
-## Network {#Network-6.3.}
-
-
-**Network Properties** - Local
-
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmRl35Hvba9wSFzljF7Ap%2F7.3.png?alt=media&token=458921a0-d441-4211-a5dc-b0c6819d1772)
-
-**Local:**
-
--   Option to set the local information of the console such as IP and name.
-    
-
-**Console State:**
-
--   There are 2 possible individual states:
-    - Stand Alone (Default) – Console is not in a session but networking for outputs, remotes and external connections is active. 
-    - Local (Offline) – Same as Stand Alone but disables the DMX over ethernet.
-    
-**User ID:**
-
-- <span style="color:blue">Not yet implemented</span>.
-
-**Start Session:**
-
--  The console becomes a Master console, meaning it's hosting a session. Later on this in the Master-Slave and Multiuser chapters.
-
-**Online IP Devises:**
-
-- Displays all Valid IP based devices active on the network.
-
-
-**Delete Selected / Clear Device IP History**
-
-- Can either select a device to remove from the list or clear the whole list.
-
-**To clear Device IP History**
-
-1. Open System Settings.
-
-2. Go to Network tab.
-
-3. Tap *Clear IP Devices.*
-
-**Connect As … / Disconnect:**
-
-- Related to starting or ending a session with a master console. Later on this in the Master-Slave and Multiuser chapters.
-
-
-## Hardware {#Hardware-6.4.}
+## Hardware {#Hardware-6.3.}
 
 
 **Hardware Properties** - Panel Backlight
@@ -242,7 +193,7 @@ Tracking - Non-Tracking:
 
 -   Opens relevant Windows setting screen.
 
-## Defaults {#Defaults-6.5.}
+## Defaults {#Defaults-6.4.}
 
 
 **Defaults** - Initial settings for most system objects.
@@ -254,21 +205,21 @@ Tracking - Non-Tracking:
 
 **See:**
 
--  [6.5.1. Controller Settings](#controller-settings-6.5.1.)
--  [6.5.2. Controller Actions](#controller-actions-6.5.2.)
--  [6.5.3. Qlist Properties](#qlist-properties-6.5.3.)
--  [6.5.4. Chaser Properties](#chaser-properties-6.5.4.)
--  [6.5.5. Cue Settings](#cue-settings-6.5.5.)
--  [6.5.6. Cue Store Options](#cue-store-options-6.5.6.)
--  [6.5.7. Scene Settings](#scene-settings-6.5.7.)
--  [6.5.8. Scene Store Options](#scene-store-options-6.5.8.)
--  [6.5.9. Bank Library Options](#bank-library-options-6.5.9.)
--  [6.5.10. Snap Settings](#snap-settings-6.5.10.)
--  [6.5.11. Effects](#effects-6.5.11.)
+-  [6.4.1. Controller Settings](#controller-settings-6.4.1.)
+-  [6.4.2. Controller Actions](#controller-actions-6.4.2.)
+-  [6.4.3. Qlist Properties](#qlist-properties-6.4.3.)
+-  [6.4.4. Chaser Properties](#chaser-properties-6.4.4.)
+-  [6.4.5. Cue Settings](#cue-settings-6.4.5.)
+-  [6.4.6. Cue Store Options](#cue-store-options-6.4.6.)
+-  [6.4.7. Scene Settings](#scene-settings-6.4.7.)
+-  [6.4.8. Scene Store Options](#scene-store-options-6.4.8.)
+-  [6.4.9. Bank Library Options](#bank-library-options-6.4.9.)
+-  [6.4.10. Snap Settings](#snap-settings-6.4.10.)
+-  [6.4.11. Effects](#effects-6.4.11.)
 
 
 
-### Controller Settings {#controller-settings-6.5.1.}
+### Controller Settings {#controller-settings-6.4.1.}
 
 
 
@@ -326,7 +277,7 @@ Tracking - Non-Tracking:
 -   **Restores settings** - Resets Controller settings to their last stored configuration.
 
 
-### Controller Actions {#controller-actions-6.5.2.}
+### Controller Actions {#controller-actions-6.4.2.}
 
 
 **Defaults** - Controller Default Actions
@@ -348,13 +299,8 @@ The default behavior for submaster's assignment on the bottom button is _Flash_
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fw0e6FlJP0dNlpzuujuot%2F7.5.2.1.webp?alt=media&token=43cdc4db-7246-48fd-82cb-3fe8db74aa4c)
 
 
+### Qlist Properties {#qlist-properties-6.4.3.}
 
-
-### Qlist Properties {#qlist-properties-6.5.3.}
-
-
-
-6.5.3. Qlist Properties
 
 **Defaults** - Qlist Properties
 
@@ -426,7 +372,7 @@ ___
 
 **Restore default** - Resets Qlist properties to their last stored configuration.
 
-### Chaser Properties {#chaser-properties-6.5.4.}
+### Chaser Properties {#chaser-properties-6.4.4.}
 
 
 **Defaults** - Chase Properties
@@ -472,7 +418,7 @@ Restore default:
 
 
 
-### Cue Settings {#cue-settings-6.5.5.}
+### Cue Settings {#cue-settings-6.4.5.}
 
 
 
@@ -502,7 +448,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Cue Store Options {#cue-store-options-6.5.6.}
+### Cue Store Options {#cue-store-options-6.4.6.}
 
 
 **Default** - Cue Store Options
@@ -513,7 +459,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Scene Settings {#scene-settings-6.5.7.}
+### Scene Settings {#scene-settings-6.4.7.}
 
 
 **Defaults** - Scene Settings
@@ -527,7 +473,7 @@ The default for the _New Values_ is _Master PB Only_
 -   **Units Button** - Sets the time units (H/M/S/Mil)
 
 
-### Scene Store Options {#scene-store-options-6.5.8.}
+### Scene Store Options {#scene-store-options-6.4.8.}
 
 
 **Default** - Cue Store Options
@@ -538,7 +484,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Bank Library Options {#bank-library-options-6.5.9.}
+### Bank Library Options {#bank-library-options-6.4.9.}
 
 **Default** - Lib Options
 
@@ -563,7 +509,7 @@ The default for the _New Values_ is _Master PB Only_
 
 
 
-### Snap Settings {#snap-settings-6.5.10.}
+### Snap Settings {#snap-settings-6.4.10.}
 
 **Default** - Snap Settings
 
@@ -593,7 +539,7 @@ See: [16. Snaps](#Snaps-16.0.)
 
 
 
-### Effects {#effects-6.5.11.}
+### Effects {#effects-6.4.11.}
 
 
 When using pre-built effects on Pan & Tilt parameters, the default size of the effect is 20%.
@@ -601,7 +547,7 @@ When using pre-built effects on Pan & Tilt parameters, the default size of the e
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FSvpUbdsjf1qb4sbjxjRD%2F7.5.11.png?alt=media&token=4263c8e1-10ed-415f-a5e4-b32fdae53458)
 
 
-## System {#System-6.6.}
+## System {#System-6.5.}
 
 **Default** - System
 

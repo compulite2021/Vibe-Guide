@@ -111,7 +111,7 @@ Vibe has two Blind Editor behaviors:
 
 -   [8.2.1. Selections Tools](#selections-tools-8.2.1.)
 -   [8.2.2. Transpose](#Transpose-8.2.2.)
--   [8.2.3. Pattern](#Pattern-8.2.3.)
+-   [8.2.3. Order and Selection](#Order and Selection-8.2.3.)
 -   [8.2.4. Fan Mode](#fan-mode-8.2.4.)
 -   [8.2.5. Highlight Mode](#highlight-mode-8.2.5.)
 -   [8.2.6. Lowlight Mode](#lowlight-mode-8.2.6.)
@@ -161,10 +161,35 @@ Transpose is accessed from the Editor Toolbar. It is used to reorder fixture sel
 
 *-   Fixture 1⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12*
 
-### Pattern {#Pattern-8.2.3.}
-Is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
+### Order and Selection {#Order and Selection-8.2.3.}
 
-**To set a pattern:**
+**Order**
+
+The Order button allows to make changes to the fixtures' selection order.
+Press ORDER on Program and Playback pages’ toolbar to access the features.
+
+>>>> IMAGE TO ADD <<<<<
+
+Press RESTORE to get back to the original selection order.
+Press PATTERN to access the Pattern popup, with more advanced reordering tools.
+Press the CE/CLEAR button to return to the upper toolbar’s menu.
+
+**Selection**
+
+The Selection button allows to split the fixtures' selection.
+Press SELECTION on Prog and Play pages’ toolbar to access the features.
+
+>>>> IMAGE TO ADD <<<<<
+
+Press RESTORE to get back to the original selection.
+Press LOCK to make the current selection as the new base selection.
+Press the CE/CLEAR button to return to the upper toolbar’s menu.
+
+
+**Pattern:**
+
+Pattern feature is accessed from the Editor Toolbar. It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
+Pattern popup is used to edit the selection order through smart functions and a graphical interface. 
 
 1. Make a fixture selection
     
@@ -572,6 +597,12 @@ The **Smart Screen** is dedicated to displaying:
     
 -   Displays for Fan feature.
     
+The Bank buttons on the Smart Screen, used to access the different parameters of the selected fixtures, have the following behavior:
+- Bank buttons 1-6 are always enabled. (i.e., to access libraries in the Context view)
+- If the Bank is enabled and active (there are parameters for the current selection in this bank), it has White text.
+- If the Bank is enabled and inactive (there are no parameters for the current selection in this bank), it has Black text.
+- If the Bank is disabled (not functional in the current selection), it is grayed out and not accessible.
+- If the Bank is currently selected, it has a colored background.
 
 
 **The Smart Screen is divided into six sections:**

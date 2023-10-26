@@ -173,7 +173,11 @@ There are two ways to add fixtures to a Topo
     
 7.  Double tap in a blank area of the Topo to deselect the fixtures. Topo tools are provided to edit topo fixture placement and appearance.[18.2. Topo Menu.](#TopoMenu-18.2.)
 
+**Add Sub Devices to the Topo View**
 
+Topo view supports the fixture layers, so sub-devices of a Fixture (for example 70, such as fixture 70.1 -> 70.7), can be added as independent objects.
+
+>>>>> IMAGE TO ADD <<<<<
 
 ## Adding Pixel Maps {#AddingPixelMaps-18.5.}
 

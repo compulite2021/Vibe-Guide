@@ -9,6 +9,7 @@ This chapter deals with configuring, transmitting and receiving DMX over Etherne
 - [23.3. Connecting to Art-Net and sACN Nodes](#ConnectingtoArt-NetandsACNNodes-23.3.)
 - [23.4. RDM](#RDM-23.4.)
 - [23.5. CITP](#CITP-23.5.)
+- [23.6. OSC](#OSC-23.6.)
 
 
 ## Network Basics {#NetworkBasics-23.1.}
@@ -60,11 +61,54 @@ Each network device must have its own unique static IP address in the form of fo
 ><span style="color:Red">Many a system has gone down due to bad Ethernet cabling and cheap switches. It is recommended that etherCON connectors be used where possible in conjunction with professional grade switches designed for lighting and audio applications.</span>.
 
 
+**Network Properties** 
+
+Open the {NETWORK SETTINGS} from Vibe Menu > Settings or tap the Network Settings button - The Network pop-up will open.
+
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FmRl35Hvba9wSFzljF7Ap%2F7.3.png?alt=media&token=458921a0-d441-4211-a5dc-b0c6819d1772)
+
+**Local:**
+
+-   Option to set the local information of the console such as IP and name.
+    
+
+**Console State:**
+
+-   There are 2 possible individual states:
+    - Stand Alone (Default) – Console is not in a session but networking for outputs, remotes and external connections is active. 
+    - Local (Offline) – Same as Stand Alone but disables the DMX over ethernet.
+    
+**User ID:**
+
+- <span style="color:blue">Not yet implemented</span>.
+
+**Start Session:**
+
+-  The console becomes a Master console, meaning it's hosting a session. Later on this in the Master-Slave and Multiuser chapters.
+
+**Online IP Devices:**
+
+- Displays all Valid IP based devices active on the network.
+
+
+**Delete Selected / Clear Device IP History**
+
+- Can either select a device to remove from the list or clear the whole list.
+
+**To clear Device IP History**
+
+1. Open System Settings.
+
+2. Go to Network tab.
+
+3. Tap *Clear IP Devices.*
+
+**Connect As … / Disconnect:**
+
+- Related to starting or ending a session with a master console. Later on this in the Master-Slave and Multiuser chapters.
 
 
 ## Connecting to Compulite ePorts {#ConnectingtoCompuliteePorts-23.2.}
-
-
 
 Compulite manufactures the **ePort** brand of DMX over Ethernet nodes. **Supported Protocols:**
 
@@ -116,7 +160,7 @@ Vibe currently supports transmission of 256 universes of DMX over Ethernet using
 
 **Enable Art-Net or sACN output:**
 
--   Tap {DMX SETTINGS} in the patch toolbar found at the bottom of the Patch Workspace Template. The DMX Properties Pop-up will open.
+- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties pop-up will open.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FzMGK8HmzzbLpRxRNYeh8%2F24.3.webp?alt=media&token=4f56ee15-cc74-4574-b077-257de6f78a21)
@@ -258,3 +302,36 @@ In addition, make sure Vibe and Capture are on the same subnet. After finishing 
 **Capture Protocol**
 
 It is possible to choose which output protocol will be listened by Capture while in a CITP session.
+
+
+
+## OSC {#OSC-23.6.}
+
+**What is OSC**
+
+OSC (Open Sound Control) is a protocol for networking with sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. 
+OSC enables a text string based exchange of commands and triggers between different devices via a network connection, that is used to establish the synchronization between different systems.
+Connections with OSC can use TCP or UDP protocol for direct communication over the network.
+
+
+**OSC Input**
+
+Vibe supports the OSC input protocol, using TCP, UDP, or both.
+In the I/O settings popup there is the list of supported OSC strings as well as
+OSC ports and protocols.
+OSC strings can be customized by the user.
+
+>>>>> IMAGE TO ADD <<<<<
+
+**OSC Output**
+
+Vibe supports the OSC input protocol, using TCP, UDP, or both.
+The OSC view shows the existing commands, allowing the user to create and edit custom commands, and to send immediate commands and use keyboard arrows to re-send commands from the cache.
+OSC commands can be attached to Cues with the syntax: 
+[QLIST, #, CUE, #, ATTACH_OSC (toolbar)].
+
+
+>>>>> IMAGE TO ADD <<<<<
+
+
+

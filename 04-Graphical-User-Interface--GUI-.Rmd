@@ -230,9 +230,11 @@ Open the Settings menu to access the following options.
 
 **{System Settings}** - Opens a popup where it is possible to configure all the general system settings. This window is also directly accessible from the control area in the low right corner of the screen.
 
+**{Network Settings}** - Opens a popup to configure the Console name and IP Address, find other Vibe systems on the same Network, and create a Client based connection such as the Master / Slave.
+
 **{DMX Settings}** - Opens a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.
 
-**{I/O Settings}** - Opens a popup to enable, disable and configure the MIDI notes, commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
+**{I/O Settings}** - Opens a popup to enable, disable and configure the MIDI notes, OSC commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
 
 **{CITP Settings}** - Opens a popup to enable, disable and configure the CITP settings. Learn more about configuring CITP in the dedicated chapters.
 
@@ -249,23 +251,24 @@ Tap the Version button to open a popup listing the installed version of Vibe sof
 ## Pages {#Pages-4.3}
 
 
-As mentioned, Vibe has 3 types of workspace templates, organized in the Page screen.
+Vibe has 3 types of workspace templates, organized in the Page screen.
 
+-   **The Patch Template** 
 
+-   **The Program Template** 
+
+-   **The Playback Template** 
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfYgdOdvm8QjxtpB31GPk%2Fimage.png?alt=media&token=a2f4234b-2008-4931-94c4-d5d7e29e2937)
 
 
+The Page screen can be accesses by tapping Vibe Menu and then Pages on the toolbar, or by pressing the VIEW button.
 
+All the Page types can be composed with any view, independently from where the view is located in the Vibe Menu.
+The pages can also be switched from one type to another, as soon as one of the 4 spaces per type is available.
 
--   **The Patch Template** by default has a fixed command line and patch tool bar at the bottom, and a pre-built patch display on page 1. Except for the bottom toolbar, the patch display may be freely customized via the **{VIBE}** Menu.
-    
+On the Console it is recommended to set views such as the System Status and the Playback Status on the bottom of the Program and Playback pages, to have them in correspondence to the physical controllers.
 
--   **The Program Template** contains a command line and fixed display of the 15 motorized Slider controllers. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller display may be toggled to display the Qkey controller display using the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
-    
-
--   **The Playback Template** contains a command line and a fixed display of both the 15 motorized fader controllers and the 15 Qkey controllers at the same time. Everything above this fixed display is user customizable via the **{VIBE}** Menu. The controller displays may be swapped to display the Qkey controllers on the bottom row via the **[SWAP DISPLAY]** key at the top left corner of the controller panel.
-    
 
 **Home Pages**
 
@@ -286,6 +289,7 @@ Any page can be stored as a Home Page on the Editor Toolbar, near the VIBE menu 
 3. Select a Page and assign it as a Home Page on the Toolbar
 
 F1 keyboard button also switches between the three Home Pages.
+
 
 **Clone Pages**
 
@@ -359,6 +363,11 @@ The settings can also be saved as default, and it’s always possible to come ba
 
 Some special color options are available to show color library softkeys with the softkey color either with the color or the colors that are stored in the library.
 
+The icon in the view's header can be clicked to quickly jump to the top of the scrollable softkey views.
+
+>>>>> IMAGE TO ADD <<<<<
+
+
 **Softkeys Auto Text Color Setting**
 
 The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.
@@ -419,7 +428,10 @@ A Sub-menu will open with options to **{SAVE LAYOUT}**, **{LOAD LAYOUT}**.
     
 -   Layouts remember the configuration of external monitors and a warning message will appear if the system is booted without the expected external monitor.
 
+**Layout Settings**
 
+Open the Vibe Menu and tap Settings to access the Layout Settings popup.
+From here it is possible to change the Vibe Theme, move the Taskbar to top or bottom position on all the pages, and set Default View Settings such as the Headers, the Frames and the Scrollbars. 
 
 
 

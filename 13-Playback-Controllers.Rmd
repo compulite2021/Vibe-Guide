@@ -75,14 +75,15 @@ OR
 
 1.  Three button Motorized Slider Controllers
     
-2.   Single button Qkey Controllers
+2.  Single button Qkey Controllers (or pressable knob)
     
-3.   Single Auxiliary Qkey Controllers
+3.  Single Auxiliary Qkey Controllers
     
-4.   Non-Motorized Global Slider Controllers
+4.  Non-Motorized Global Slider Controllers
     
-5.   A/B "theatre style" A/B dipless crossfader pair
+5.  A/B "theatre style" A/B dipless crossfader pair
     
+QKeys and AuxKeys can also have a virtual button, a virtual fader, or a virtual set of fader and button.
 
 >Vibe software makes **no** distinction between physical and virtual controllers. This allows the system hardware to be scaled. Below is a list of total quantities of physical and virtual controllers that are supported.
 
@@ -103,12 +104,16 @@ OR
 
 **Compound Controllers:**
 
--   **Controllers may be extended in width to make larger compound controllers.** 
+-   **Controllers may be extended in width and height to make larger compound controllers.** 
 	This is useful in creating additional crossfader pairs or adding controls for rate and effects. 
 	There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.
     
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F06WOI4jVCzRUG1Op7xtO%2F14.2.webp?alt=media&token=40d4b958-9e44-4fb1-8fac-080edda51ca2)
+
+If Playback slider controllers and Qkey buttons are linked to the same object, it could be comfortable to synchronize the paging of Sliders and Qkeys. 
+This is possible to do by pressing SHIFT button together with the Up/Down paging buttonsof either Playbacks or Qkeys.
+
 
 **A/B Cross Faders:**
 
