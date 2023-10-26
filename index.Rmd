@@ -8,7 +8,7 @@ url: https://vibemanual.compulite.com/
 
 # Introduction
 
-This test2 chapter discusses getting started with your Compulite Vibe console.
+This chapter discusses getting started with your Compulite Vibe console.
 
 **The following is covered in this chapter:**
 
