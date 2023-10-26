@@ -109,7 +109,7 @@ QKeys and AuxKeys can also have a virtual button, a virtual fader, or a virtual 
 	There is no limit as to how wide a controller may be, but for practical purposes, a limit of 6 wide is suggested.
     
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F06WOI4jVCzRUG1Op7xtO%2F14.2.webp?alt=media&token=40d4b958-9e44-4fb1-8fac-080edda51ca2)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FtRqkQSIMCv9t0zFzK18d%2F13.2.webp?alt=media&token=df752eb0-0360-43bb-9131-60f15fb4bbc9)
 
 If Playback slider controllers and Qkey buttons are linked to the same object, it could be comfortable to synchronize the paging of Sliders and Qkeys. 
 This is possible to do by pressing SHIFT button together with the Up/Down paging buttonsof either Playbacks or Qkeys.

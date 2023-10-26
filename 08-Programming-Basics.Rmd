@@ -617,7 +617,7 @@ The dimmer level can be set either with the editor keys and wheels, and through 
 The strobe and shutter level, mode and frequency can be set in the smart screen with the macros showing the selected fixtures' properties.
  <p align=center> Smart Screen - Intensity Bank</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F188nxyEpMFr3MU2W1LEI%2F9.3.4.webp?alt=media&token=194df2d9-fd6e-4a6b-b12b-5a65490fcb0a)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F0GXVq4t1bY5T7JQLMOu3%2F8.3.4%20intensity.webp?alt=media&token=504f1895-55b0-476a-8982-503e55203f65)
 
 
 The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
@@ -636,7 +636,7 @@ Independently from the fixture's pan and tilt range, the virtual XYZ coordinates
 
 <p align=center> Smart Screen - Position Bank</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F3fe22ksDN8BgJyU2QVcK%2F9.3.4.1.webp?alt=media&token=46d06b06-759b-4bda-9b64-6cc16ae1abb5)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVUceNsLLdwPVGZ11itQh%2F8.3.4%20position.webp?alt=media&token=5fd28b86-a97d-423f-acbd-abaa08e63939)
 
 
 
@@ -656,12 +656,12 @@ The color mix can also be set by using the predefined preset combinations and Vi
 
 <p align=center> Smart Screen - Color Bank</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FNN3kRu2VbdAgDsxCJQtE%2F9.3.4%20smart%20screen%20-%20color%20bank.png?alt=media&token=6d819c90-c204-4edd-9731-4432337e32ec)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfunSMQHGk7AHnqECQeAT%2F8.3.4%20color.webp?alt=media&token=009dbc5b-c3d6-4c73-8982-cbe73b5a594d)
 
 
-**Lee and Rosco** **Picker**
+**Lee and Other Filters** **Picker**
 
-Color bank has a Lee and a Rosco section to assign colors based on the most used brands of gel filters.
+Color bank has a Lee and a Other filters section to assign colors based on the most used brands of gel filters.
 
 **Kelvin Picker**
 
@@ -698,7 +698,7 @@ The prisms are visualized in the interactive wheel picker on the right and can b
 
 <p align=center> Smart Screen - Beam Bank</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FVVhIXwirfKvdmFyImJQi%2F9.3.4.1.png?alt=media&token=c544d391-1994-41e0-bab8-5758ef3a4cce)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FITGfe3x5MQDGvxJ7XlNq%2F8.3.4%20beam.webp?alt=media&token=0c9ac505-b9bf-491f-a792-d442fc0e8b1e)
 
 
 **Image**
@@ -716,7 +716,7 @@ The interactive wheel picker shows all the graphic frames related to the selecte
 
 <p align=center> Smart Screen - Image Bank</p>
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FuyC5g599gLzYJcAYWgU3%2F9.3.4.2.png?alt=media&token=40cee69d-bc7f-433a-b992-b123ee53b476)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FiLaVqMhop4x99h4QGUOj%2F8.3.4%20image.webp?alt=media&token=5e0c7d67-96c1-489c-be45-d6e0ac0707d7)
 
 
 **Shape**
@@ -728,7 +728,7 @@ The blades' depth and angle can be set either with the editor keys and wheels, a
 The blade picker features a smart graphic control of the blade, independently from the fixture's blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
 <p align=center> Smart Screen - Shape Bank</p> 
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FpBKNZb06EnOt8VsQf87s%2F9.3.4.3.png?alt=media&token=a78d7417-2ce5-4efa-8970-31d64ed3179b)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FfQ11fCiVBdq4yMn9BomL%2F8.3.4%20shape.webp?alt=media&token=804d3fef-bb75-4851-a787-a4324ae419fe)
 
 **Control**
 

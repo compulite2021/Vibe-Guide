@@ -177,7 +177,7 @@ There are two ways to add fixtures to a Topo
 
 Topo view supports the fixture layers, so sub-devices of a Fixture (for example 70, such as fixture 70.1 -> 70.7), can be added as independent objects.
 
->>>>> IMAGE TO ADD <<<<<
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fc2Cj8zYZ4x9RTlXR7N1E%2F18.4.webp?alt=media&token=2a8e29e8-4d89-4117-8087-2c32560bbf31)
 
 ## Adding Pixel Maps {#AddingPixelMaps-18.5.}
 

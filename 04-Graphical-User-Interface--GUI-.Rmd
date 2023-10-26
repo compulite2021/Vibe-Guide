@@ -226,7 +226,7 @@ A popup will remind to save the show before closing.
 
 Open the Settings menu to access the following options.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fk24ISQvJvl4pfHhqGpSM%2Fimage.png?alt=media&token=d1baab7c-7007-4eb1-8929-8b9682584a21)
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2F7mozLDjiI8dbsiqe58vI%2F4.2.4.webp?alt=media&token=afb5af3b-f773-458a-bbf7-bf260a7deccb)
 
 **{System Settings}** - Opens a popup where it is possible to configure all the general system settings. This window is also directly accessible from the control area in the low right corner of the screen.
 
@@ -365,7 +365,7 @@ Some special color options are available to show color library softkeys with the
 
 The icon in the view's header can be clicked to quickly jump to the top of the scrollable softkey views.
 
->>>>> IMAGE TO ADD <<<<<
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2Fr0AMR5ZrQc53tTQicuj7%2F4.4.6.webp?alt=media&token=1c054677-aa6d-4fa1-9365-8b41b8bb59ac)
 
 
 **Softkeys Auto Text Color Setting**

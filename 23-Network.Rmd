@@ -321,7 +321,7 @@ In the I/O settings popup there is the list of supported OSC strings as well as
 OSC ports and protocols.
 OSC strings can be customized by the user.
 
->>>>> IMAGE TO ADD <<<<<
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FIw9OuBbdPcFD4TPaJsKE%2F23.6-A.webp?alt=media&token=caa5aaaf-d590-4899-93e3-7791529dce01)
 
 **OSC Output**
 
@@ -331,7 +331,7 @@ OSC commands can be attached to Cues with the syntax:
 [QLIST, #, CUE, #, ATTACH_OSC (toolbar)].
 
 
->>>>> IMAGE TO ADD <<<<<
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FRqMaRcsLLxMaVnsnF5IY%2F23.6-B.webp?alt=media&token=6e0aa466-aaee-44a2-bed3-f217c270955b)
 
 
 

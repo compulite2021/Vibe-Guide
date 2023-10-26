@@ -383,7 +383,7 @@ To insert a marker:
 
 In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.
 
->>>>> IMAGE TO ADD <<<<<
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3kS90tLsADGm1ocbe7q9%2Fuploads%2FGiKI3XEjndjkpVNp82Gk%2F20.7.webp?alt=media&token=48f1d7c0-01c8-41a7-b0e5-d1c66e5c51ba)
 
 ## Time Format {#TimeFormat-20.8.}
 
