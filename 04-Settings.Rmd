@@ -1,0 +1,616 @@
+
+# Settings
+
+This chapter provides a description of Vibe's software settings that can be customized.
+
+**The following is covered in this chapter:**
+
+-  [4.1 System Settings](#System-Settings-4.1)
+-  [4.2 Network Settings](#Network-Settings-4.2)
+-  [4.3 DMX Settings](#DMX-Settings-4.3)
+-  [4.4 I/O Settings](#I-O-Settings-4.4)
+-  [4.5 CITP Settings](#CITP-Settings-4.5)
+
+
+## System Settings {#System-Settings-4.1}
+
+
+System Settings popup is accessed by selecting {System Settings} from the Vibe Menu, by tapping the \[System Settings] single button key, or by tapping the {System Status} area in the system status view.
+
+
+### Editing
+
+**Editing Properties**
+
+<p align=center> ![4.1-Editing](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNNoYXU4i6e6QscExGbkj%2F4.1-Editing.webp?alt=media&token=c0fecb69-5272-499d-b6a5-930d888583cf) </p>
+
+**Default Stage Value:**
+
+-   Home Value: when released fixtures parameters return to their home values as specified in the device's definition or user **Home Scene**.
+    
+-   Maintain Last Value: when released fixture parameters remain at their current value, except for the dimmer.
+    
+**Auto Param Grouping:**
+
+-   When enabled, parameters are grouped as follows:
+
+|  **Bank** |              **Parameters**              | **Grouping** |
+|:---------:|:----------------------------------------:|:------------:|
+| Intensity |                                          |  Not Grouped |
+|  Position |                 Pan, Tilt                |    Grouped   |
+|  Position |               Virtual X/Y/Z              |    Grouped   |
+|   Color   |               All Color Mix              |    Grouped   |
+|   Color   |               CMY Color Mix              |    Grouped   |
+|   Color   |  Color Wheels, Color Correction and misc |  Not Grouped |
+|    Beam   |                 Any Param                |  Not Grouped |
+|   Image   |                 Any Param                |  Not Grouped |
+|   Shape   | Blade Depth, Angle, Rotation - Per Blade |    Grouped   |
+
+
+**Clear Editor After Store:**
+
+- After storing a cue, values remain in the editor until \[RESET] or \[VIBE] + \[RESET] is pressed.
+
+**Automatically Assign Cues to PB:**
+
+- After storing a cue, it is automatically assigned to the Master Controller.
+
+**Editor Flash:**
+
+Sets default values for toolbar {FLASH} feature.
+    
+-   {Base} = Start point (low value) {Time} = Flash duration {Size} = Amplitude (high values)
+    
+-   Defaults are {Base} 0.2 (20%) {Time} 2 seconds {Size} 0.6 (80%)
+
+**Qlist Behaviour:**
+
+Tracking / Non-Tracking:
+
+-   Tracking: 
+
+    - Values track forward. The stage look is made up of a combination of hard and tracked values.
+    
+-   Non-Tracking: 
+
+    - Only hard values are recorded and zero dimmer values is treated as a hard zero.
+    
+> <span style="color:Red">In Non-Tracking mode, parameter values that are not given values will still output to the stage where they were last left. This can accidentally lead to mistakes where when played back, the cue does not look the same as it did when it was recorded. It is suggested that the **Store Options** {All Parameters if Active} or {All Parameters if Selected} are used whenever possible to avoid errors.</span>
+
+**Clear Editor on Master GO:**
+
+-   The editor will be reset when **GO** on the **Master Controller** is pressed.
+    
+**Store Scene by Default:**
+
+-   By default \[STORE] \[HERE] (press any controller button) will create and assign the first available Scene to the controller instead of a Qlist and Cue.
+    
+-   Qlists may then be stored by using the syntax \[STORE] \[CUE] \[HERE] (press any controller button).
+    
+**Next Cue Increment:**
+
+-   When \[Store] \[Here], \[STORE] \[STORE], or \[STORE] \[ENTER] are used to append a new cue to the end of a Qlist, the specified spacing will be used.
+    
+> If the increment is 1 and the last cue is 10, the new cue would be 11. If the increment is 10, then the new cue would be 20.
+
+**Apply Compulite Mode:** 
+
+Sets a number of default settings to emulate the traditional non-tracking Compulite Mode.
+
+-   Default Stage Values = {Maintain Last Value}
+    
+-   {Clear Editor After Store} = Off
+    
+-   {Automatically Assign Cues to PB} = Off
+    
+-   Qlist Behavior = {Non-Tracking}
+    
+**ON Value:**
+
+-   Virtual wheel sets the default editor value for the dimmer parameter when the \[ON] key is pressed.
+    
+-   <span style="color:Gray">{First ON Recalls Last} - Pressing \[ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.</span>
+    
+**Restore Defaults:**
+
+-   {Restore Popup Positions} - Restores the position of the popups that have been moved.
+    
+-   {Restore Defaults} - Restores settings changes to the last time {Apply to Defaults} was set.
+    
+-   {Restore Factory} - Restores settings changes to factory defaults.
+    
+-   {Apply to Defaults} -Updates system setting changes to **show specific defaults**.
+
+
+### Timing
+
+**Timing Properties**
+
+<p align=center> ![4.1-Timing](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIcR1gofMK7RVnA9oJDAe%2F4.1-Timing.webp?alt=media&token=6be55950-ae48-40de-bd03-3f92bc95c8b5) </p>
+
+**Default Back Time:**
+
+-   Default Time used when the \[Back] or [Hold Back] Buttons are pressed.
+    
+**Default Assert:**
+
+-   Default Time used when a controller's parameters are reasserted with the \[ASSERT] \[HERE] command.
+    
+**Default GOTO Time:**
+
+-   Default Time used whith the GOTO command. GOTO time can be overridden using command \[GOTO] \[CUE] \[#] \[TIME] \[Value] \[ENTER]. 
+    
+**Default Release Time:**
+
+-   Default Fade out time for parameters being released from the editor using the \[RESET] or \[RELEASE] keys, or Controllers being released from the stage using the controller \[RELEASE] button.
+
+**Use Cue Time:**
+
+-   The Back, Asset and GOTO times may be seet to use the Cue Time as default by enabling the \[Use Cue Time] button.
+    
+**Look Ahead:**
+
+-   Set All Controllers On will enable the Look Ahead function for all controllers.
+    
+-   Set All Controllers Off will disable the Look Ahead function for all controllers.
+    
+> Once all is set ON individual controllers may disable Look Ahead at any time. 
+
+> Once all is set OFF individual controllers may enable Look Ahead at any time.
+
+**System Time:** 
+
+-   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
+
+
+### Hardware
+
+**Hardware Properties**
+
+<p align=center> ![4.1-Hardware](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FA7h4cZw0skedOgA6pIcp%2F4.1-Hardware.webp?alt=media&token=a871977d-901a-4a7d-ac9f-e67182b8d174) </p>
+
+**Panel Backlight:**
+
+-   **Inactive keys:** Adjusts the LED backlight level of keys that are not valid in the current operational state and the LED backlight level of controllers that are unassigned.
+    
+-   **Active Keys:** Adjusts the LED backlight level of keys that may be used in the current operational state and the LED backlight level of controllers that have objects assigned.
+    
+**Operating System:**
+
+-   Opens relevant Windows setting screen to adjust the OS settings.
+
+
+### Defaults
+
+-   **Defaults** are the customizable initial settings for most system objects.
+
+<p align=center> ![4.1-Defaults](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FKDaS981KDVSrsiwlWZSk%2F4.1-Defaults.webp?alt=media&token=75b911d3-d967-4f6c-9a1e-ef825da0d05a) </p>
+
+#### Controller Settings
+
+**Default Controller Settings**
+
+The popup contains all the settings referred to the controller, independently from the object loaded.
+
+Controller Settings are divided into:
+
+- Flash Behavior
+
+- Slider Behavior
+
+- Properties
+
+- Priority
+
+<p align=center> ![4.1-Default-Controller-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeJSJU05B38fe0SESH83r%2F4.1-Default-Controller-Settings.webp?alt=media&token=54fb6d4e-fd9c-4976-84f8-54db9993077e) </p>
+
+**Flash behavior:**
+
+-   **Release On Release** - While a Flash button is depressed, the controller will assert its values, when released the controller will be released from affecting the stage.
+    
+-   **Pure LTP** - Pressing a Flash key reasserts overridden LTP values from another controller but does not release them when the flash key is released.
+    
+-   **Go On Flash** - If a slider is down it will flash the intensity to full and advance the Qlist in cue time with every press of the Flash key.
+    
+-   **Latch** - Flash key toggles ON/OFF.
+    
+**Slider behavior:**
+
+-   **Intensity Only** - Slider only controls the intensity.
+    
+-   **Go + Fade Parameters** - Moving the slider off zero will initiate a GO command. All parameters, except intensity, will fade to their recorded values using cue time. Intensity will remain under the control of the slider.
+    
+-   **Go + Jump Parameters** - Parameters Jump to their values as soon as the slider moves off zero. Intensity will remain under the control of the slider.
+    
+-   **Release At Bottom** - The controller will be released from affecting the stage when the slider reaches zero. Default System Release Time or Qlist Release Time will be used.
+    
+**Properties**
+
+-   **Exclude from Snap** - The controller will not be recorded in Snapshots.
+    
+-   **Exclude from (Snap) Override** - Snap commands will be ignored even if the controller was initially recorded in a snap.
+    
+-   **Exclude from Free All** - The controller will not be unloaded with a global \[VIBE] + \[FREE] command. It may only be unloaded with \[FREE] \[HERE].
+    
+-   **Exclude from Release All** - The controller will not be released with a global \[VIBE] + \[RELEASE] command. It may only be unloaded with \[RELEASE] \[HERE].
+    
+-   **Prevent from Paging** - Locks a Qlist or Scene to the current page. Paging ⤴ or ⤵ will not affect the Qlist or Scene on the controller.
+    
+-   **Prevent from Grab** - The Grab command will not capture the controller's active parameters.
+    
+**Priority**
+
+-   **Virtual Priority Wheel** - Sets the controller's LTP group number. Controllers assigned higher numbers cannot be overridden by lower numbers. Controllers assigned the same number will be LTP among themselves. Values may be entered using the virtual wheel or directly by tapping the middle of the center area of the wheel and typing a value from the keypad.
+    
+**Restore defaults**
+
+-   Resets Controller settings to their last stored configuration.
+
+#### Controller Actions
+
+**Default Controller Actions**
+
+The popup contains all the actions that can be assigned to the controller, depending on the object type (Qlist, Chaser, Scene, Submaster).
+
+Controller Actions are divided into:
+
+- Slider Controller: 1 fader + 3 buttons
+
+- A/B Crossfader: dual fader + 2 buttons
+
+- Other Controllers: 1 fader + 1 button
+
+<p align=center> ![4.1-Default-Controller-Actions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzmQEnfWzoNY3Fobqo8e2%2F4.1-Default-Controller-Actions.webp?alt=media&token=5593432d-0d35-4560-9396-fa55d142c7cd) </p>
+
+-   When a Scene is configured as a **Group Submaster** it has a unique set of functions and button options.
+
+#### Snap Settings
+
+<p align=center> ![4.1-Default-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3nnpfbC4r4vxD8OBMKLZ%2F4.1-Default-Snap-Settings.webp?alt=media&token=9ecb6875-a49c-449e-854e-04312bcd8906) </p>
+
+**Load Pages:**
+
+-   Snap will change the current page to the page the Snap was stored in.
+    
+**Load Master Controller:**
+
+-   Snap will change the \[Select] to the controller that was Master Controller at the time of the Snap.
+    
+**Snap Time:**
+
+-   Default fade time for all controllers being initiated by the Snap.
+    
+**Unit Button:**
+
+-   Toggles the virtual time wheel units between Milliseconds, Seconds, Minutes, Hours
+    
+#### Qlist Settings
+
+<p align=center> ![4.1-Default-Qlist-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fck5k6sMuxvbeUviTC7AD%2F4.1-Default-Qlist-Settings.webp?alt=media&token=b64275d3-be33-480e-af8f-6177b269cd87) </p>
+
+**Qlist Mode:**
+
+-   **Normal** - Cues do not auto loop and all normal time functions are calculated.
+    
+-   **Chaser** - Cues auto-loop from one to another. Only In-Time, and Delay-In Time are calculated. Parameter time is still valid.
+    
+**Qlist Direction:**
+
+-   **Backward** - Chasers and Qlists transition highest to lowest.
+    
+-   **Forward** - Chases and Qlists transition lowest to highest.
+    
+**Tracking:**
+
+-   **ON** - Normal tracking logic will be used.
+    
+-   **OFF** - Tracking is not calculated and dimmer at zero is treated as a hard zero (Compulite Mode).
+    
+**Preferences**
+
+-   **Back to top on release** - After a controller is released, it will reset to the first cue in the Qlist.
+    
+-   **Sequence** - If toggled on, pressing GO will advance the Qlist.
+    
+-   **Mark cue at top of the list.** - The Qlist will start with a Mark Cue to preposition the parameters.
+    
+-   **Loop back to first** - The Qlist will loop from the end to the beginning of the list when GO is pressed.
+    
+-   **Trigger** - Toggles on/off the execution of Macros and Snaps that are attached to cues.
+    
+-   **Look Ahead** - Enable/Disable the Look Ahead function.
+    
+**Loop GO Behavior:**
+
+<p align=center> ![4.1-LoopGO-Behaviour](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmnROkDiIWiBGnQj6vf9p%2F4.1-LoopGO-Behaviour.webp?alt=media&token=429b11fd-daba-4984-a08c-d509d46804fb) </p>
+
+**Release time:**
+
+- Wheel at Default - System Default Release time is referenced. 
+
+- Rotate the wheel to set a Qlist specific time that a controller references to fade to off. 
+
+- Tap the inside of the virtual wheel until it turns red and set a release value from the keypad.
+	
+- **Unit Button** Toggles the virtual time wheel units between Milliseconds, Seconds, Minutes, Hours.
+    
+**Restore default** 
+
+- Resets Qlist properties to their last stored configuration.
+
+#### Chaser Settings
+
+<p align=center> ![4.1-Default-Chase-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FvxkccbPIvdCgANBMXEzS%2F4.1-Default-Chase-Settings.webp?alt=media&token=7b979868-fdf9-448e-8483-3ecf061590a6) </p>
+
+**Chase pattern:**
+
+-   **Normal** - Cues loop from one to another in order.
+    
+-   **Build** - Cues are added on to each other until the end of the Qlist and then the build is repeated. (Normal tracking behavior).
+    
+-   **Bounce** - Cues transition from lowest cue number to highest, then reverse and transition from highest to lowest.
+    
+-   **Bounce Build** - Cues are added on to each other lowest to highest are added to each other highest to lowest.
+    
+-   **Random** - Cue Order is randomized.
+    
+**Time:**
+
+-   **Chase Time** Independent in-time for dimmer when a chase is started.
+    
+-   **Unit Button** Sets the units for time settings.
+    
+-   **Loop count** Repeats the chase loop the specified count and stops on the last cue.
+    
+**Properties:**
+
+-   **Int Limit** Proportionately limits the intensity output of the cues assigned to a controller.
+    
+-   **X-fade** Proportionately adjusts the crossfade curve of a chase from full crossfade to jump.
+
+-   **Restores default** - Resets Chase properties to their last stored configuration.
+
+#### Cue Settings
+
+<p align=center> ![4.1-Default-Cue-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpHSVuqdBonoFWnbbWTUN%2F4.1-Default-Cue-Settings.webp?alt=media&token=0afb16ab-8712-46b2-9220-6895c876b66c) </p>
+
+**Time:**
+ 
+  - Behavior selects the target time between Wait, Follow, Look Ahead, Time In/Out, Delay In/Out.
+ 
+  - Virtual time Wheel assigns the time value, using the Unit button to set the unit for time settings.
+    
+**Properties:** 
+
+	- Tracking options for the stored cues. Default is Track.
+	
+	- Force Black button adds a Force Black Cue before the stored Cue.
+
+#### Cue Store Options
+
+<p align=center> ![4.1-Default-Cue-Store-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjWAWEK3nEiBmULkPSP6F%2F4.1-Default-Cue-Store-Options.webp?alt=media&token=90da10a5-7534-4158-a406-5c0fff738cf6) </p>
+
+- **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
+
+- **{Red Only}** Only Editor values in <mark style="color:white;background-color:red;" >Red</mark> will be stored. This can be a useful way to filter parameters. 
+
+- **{All Param If Active}** All parameters of all fixtures in the editor will be stored if the dimmer parameter is greater than zero.
+
+- **{Store Stage}** All fixtures outputting ANY DMX value from the console will be stored. This includes tracked values, home values and dimmer values at zero. 
+
+- **{All Param For Selected}** All parameters from the fixture selection will be turned red and stored in the cue. 
+
+#### Scene Settings
+
+<p align=center> ![4.1-Default-Scene-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fdwk5MAhgJ5EXEVuoOD8J%2F4.1-Default-Scene-Settings.webp?alt=media&token=ef2c6700-7c85-4096-88c5-145c73758a82) </p>
+
+**Time In** 
+
+   - Sets the default in-time for Scenes. The default value may be changed using: 
+
+   - Virtual time Wheel assigns the time value, using the Unit button to set the unit for time settings.
+	
+#### Scene Store Options
+
+<p align=center> ![4.1-Default-Scene-Store-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQa6h7JqvZ5TZNiBmBwYu%2F4.1-Default-Scene-Store-Options.webp?alt=media&token=9a406b38-ecce-44d2-838e-1ec546a53038) </p>
+
+- **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
+
+- **{Red Only}** Only Editor values in <mark style="color:white;background-color:red;" >Red</mark> will be stored. This can be a useful way to filter parameters. 
+
+- **{All Param If Active}** All parameters of all fixtures in the editor will be stored if the dimmer parameter is greater than zero.
+
+- **{Store Stage}** All fixtures outputting ANY DMX value from the console will be stored. This includes tracked values, home values and dimmer values at zero. 
+
+- **{All Param For Selected}** All parameters from the fixture selection will be turned red and stored in the cue. 
+
+#### Library Store Options
+
+**Library settings are the same for all the following library types:**
+
+- Intensity
+
+- Position
+
+- Color
+
+- Beam
+
+- Image
+
+- Shape
+
+- Custom
+
+***Default Library Settings:**  
+
+<p align=center> ![4.1-Default-Library-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FteX7SwGf3UUSES72cXKF%2F4.1-Default-Library-Settings.webp?alt=media&token=af8a9292-5cb6-4ed9-9a99-0918e09f25b0) </p>
+
+- Library Type - Set the library behavior between Fixture Specific, Parameter Specific, Pattern, Device+Fixture, Device+Parameter, Device+Pattern.
+
+- Reference - Set the library to be referenced in Cues, Scenes and Effects.
+
+- Timing - Set the library to include time values or not.
+
+- Filters - Open the Library Filters popup.
+
+**Effect Library settings also include two additional options:** 
+
+- Include Base - If toggled on, the start points of parameters will be stored with the Effect making them "Absolute Effects".
+
+- Randomize - If toggled on, every time the library is assigned in the editor the order of selected fixtures will be randomized. When storing a randomized effect into a Scene or a Cue, the order will be kept as it was at the moment of storing.
+
+#### Library Filters
+
+**Library Defaults:**  
+
+- The popup window is used to edit, for each bank, which parameters will be filtered by the library.
+
+<p align=center> ![4.1-Default-Library-Filters](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqBYlFdRyWMWzhHj2ifyL%2F4.1-Default-Library-Filters.webp?alt=media&token=b3e032bb-6080-435d-95e0-80d4eb6dedf2) </p>
+
+- Select the library bank from the Library column, then tap the parameters in the **Available** box to add them to the **Filtered** box, so that the library will store them.
+
+- Select the library bank from the Library column, then tap the parameters in the **Filtered** box to add them to the **Available** box, so that the library will NOT store them.
+
+- **Restore Defaults** button will recover the default parameters assignment.
+
+**General:**  
+
+- The popup window is used to create and edit the **Filters** that can be used on-the-fly when storing libraries, cues and scenes. 
+
+<p align=center> ![4.1-Filters-General](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fyu15qaiGxeWPhXSieCZq%2F4.1-Filters-General.webp?alt=media&token=5eadeb0d-8a9c-467a-aa7e-d30f93d7d5e0) </p>
+
+- The keys on the left side are used to create, delete or renumber Filters and to assign them a name and a specific softkey color.
+
+- The Available and Filtered parameters boxes are used to defin the parameters that the filter is going to be applied to.
+
+### System
+
+<p align=center> ![4.1-System](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeFUNtLcN6IF29kE81jdN%2F4.1-System.webp?alt=media&token=1b093e18-8e27-4734-9c81-62dfe130be64) </p>
+
+**Auto Save:**
+
+-   The show file can be automatically saved at predefined time intervals.
+
+-   Auto save function can be enabled or disabled in the system settings tab, with the option to assign saving time intervals.
+
+**System Units:**
+
+-   Vibe can be set to use either **metric** or **imperial** units for stage measurement.
+
+**Auto Recover:**
+
+Vibe is made up of four modules:
+
+1.  **GUI - Graphic User Interface** -  The windows app with the Vibe graphics.
+    
+2.  **LPU - Lighting Processing Unit** - Calculates and outputs the show data.
+    
+3.  **HAL - Hardware Access Layer** -  Connects the panels and devices to the Vibe.
+
+4.  **SQL** DataBase - Data management. 
+    
+**LPU and HAL Status** LEDs are on the status box:
+
+<p align=center> ![4.1-Status-Box](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEEgMYGBUYvlQoKYOy5Z3%2F4.1-Status-Box.webp?alt=media&token=dd629a94-7ae5-44a3-926e-942ae16bf75f) </p>
+
+-   In the case of an unexpected halt, the toggled on modules will attempt a restart.
+
+-   In the case of an unexpected halt with modules untoggled, the user can attempt a restart manually by tapping the Recover keys.
+
+-   There is no option to Auto Recover the database as it is always up to date.
+
+**Lock Screen Image**
+
+-   The Lock Screen Image can be customized by loading a different image.
+
+-   Lock screen is shown when system is locked or when Vibe is waiting for the Fixture Builder to be exit.
+
+
+## Network Settings {#Network-Settings-4.2}
+
+
+Network Settings popup is accessed by selecting {Network Settings} from the Vibe Menu or by tapping the \[Network Settings] single button key.
+
+Network Settings popup has 2 tabs:
+
+  - Network
+
+  - Users
+
+For Network management, please refer to the **Network Chapter**.
+
+### Network
+
+<p align=center> ![4.2-Network](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEIiETLGveQLErBHgewSm%2F4.2-Network.webp?alt=media&token=fda464b2-7add-4c98-b5a5-d7dbfa84626f) </p>
+
+### Users
+
+<span style="color:Gray"> **(Not implemented yet)** </span>
+
+<p align=center> ![4.2-Users](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FswKGGvGy2yKlNJnD0vtH%2F4.2-Users.webp?alt=media&token=8b774634-623c-4d66-8b89-459b889301d0) </p>
+
+
+## DMX Settings {#DMX-Settings-4.3}
+
+
+DMX Settings popup is accessed by selecting {DMX Settings} from the Vibe Menu or by tapping the \[DMX Settings] single button key.
+
+<p align=center> ![4.3-DMX-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9KxUiz9C7AY5U7ywKL1g%2F4.3-DMX-Settings.webp?alt=media&token=3754ef73-3dd4-4bad-8c33-d033cb317a14) </p>
+
+DMX Settings popup has 4 tabs:
+
+  - Local Output
+
+  - VCs
+
+  - ArtNet
+
+  - sACN
+
+For DMX output management, physical or over network protocols, please refer to the **Patch Chapter**.
+
+
+## I/O Settings {#I-O-Settings-4.4}
+
+
+I/O Settings popup is accessed by selecting {I/O Settings} from the Vibe Menu or by tapping the \[I/O Settings] single button key.
+
+<p align=center> ![4.4-IO-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJszbz4pK6iV9Dnv9ojI%2F4.4-IO-Settings.webp?alt=media&token=8c3fb391-77ef-4825-8758-cf6aec3184b5) </p>
+
+I/O Settings popup has 4 tabs:
+
+  - MIDI
+
+  - Notes/Commands
+
+  - OSC
+
+  - SMPTE
+
+For MIDI management and MIDI Notes configuration, please refer to the **Timeline Chapter**.
+
+For OSC protocol management, please refer to the **Network Chapter**.
+
+For SMPTE protocol management, please refer to the **Timeline Chapter**.
+
+
+## CITP Settings {#CITP-Settings-4.5}
+
+
+CITP Settings popup is accessed by selecting {CITP Settings} from the Vibe Menu or by tapping the \[CITP Settings] single button key.
+
+<p align=center> ![4.5-CITP-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fw7f698U195608dVtoKzv%2F4.5-CITP-Settings.webp?alt=media&token=4555a47d-d81d-4a62-b63f-ba6bd5247f2f) </p>
+
+CITP Settings popup has 4 tabs:
+
+  - General
+
+  - Media Servers
+
+  - Visualizers
+
+  - Consoles
+
+For CITP protocol management, please refer to the **Network Chapter**.
+

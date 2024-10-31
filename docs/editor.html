@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Timeline | Vibe Manual</title>
+  <title>Chapter 6 Editor | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta property="og:title" content="Chapter 6 Editor | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 6 Editor | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="macro.html"/>
-<link rel="next" href="topo.html"/>
+<link rel="prev" href="patch.html"/>
+<link rel="next" href="program.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -556,441 +556,399 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="timeline" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Timeline<a href="timeline.html#timeline" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.</p>
+<div id="editor" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Editor<a href="editor.html#editor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter introduces to the editor, explaining the concept and syntax, then describing the ways of making fixture selections.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="timeline.html#Timelines-14.1">14.1 Timelines</a></li>
-<li><a href="timeline.html#Time-Code-14.2">14.2 Time Code</a></li>
-<li><a href="timeline.html#MIDI-14.3">14.3 MIDI</a></li>
+<li><a href="editor.html#Concept-6.1">6.1 Concept</a></li>
+<li><a href="editor.html#Syntax-6.2">6.2 Syntax</a></li>
+<li><a href="editor.html#Selection-6.3">6.3 Selection</a></li>
+<li><a href="editor.html#Editor-6.4">6.4 Editor</a></li>
+<li><a href="editor.html#Groups-6.5">6.5 Groups</a></li>
+<li><a href="editor.html#Grab-6.6">6.6 Grab</a></li>
 </ul>
-<div id="Timelines-14.1" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Timelines<a href="timeline.html#Timelines-14.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses a philosophy of Timeline Tracks.</p>
-<p>There is no limit to the number of Timeline Tracks that may be recorded in a show.</p>
-<p>Timelines can be added to a Timeline View and played simultaneously following an internal or external Time Code.</p>
-<p><strong>Vibe can read the following Time Code sources</strong>:</p>
+<div id="Concept-6.1" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Concept<a href="editor.html#Concept-6.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Vibe is an advanced lighting control system designed to simplify programming in all styles of Entertainment lighting.</p>
 <ul>
-<li><p>Virtual Local - Internally generated Time Code.</p></li>
-<li><p>Physical Local - SMPTE or MIDI Time Code received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
-<li><p>USB MIDI class compliant Time Code.</p></li>
-<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
-<li><p>Input sources from remote Multi-User consoles and devices</p></li>
+<li><p>To simplify programming, Vibe uses an abstract layer that allows fixtures of different hardware types to be presented to the user in a universal way.</p></li>
+<li><p>Fixtures are programmed on the <strong>Editor</strong> either by using the programming syntax with the HardKeys or the Smart Screen pickers and features.</p></li>
+<li><p>The dedicated graphical “Smart Screen” presents global pickers for most parameters including:</p></li>
+<li><p>Intensity picker for dimmer values and strobe effects</p></li>
+<li><p>Position picker with P/T and XYZ Trackpad</p></li>
+<li><p>HSV color picker (Hue, Saturation, Intensity)</p></li>
+<li><p>Wheel picker for Gobo, Prism, Animation and Color wheels</p></li>
+<li><p>Beam picker for Iris, Zoom, Focus and Frost effects</p></li>
+<li><p>Blade picker for framing system</p></li>
 </ul>
-<p>Vibe can record data from multiple controllers simultaneously.</p>
-<p>Additional timeline subtracks will be created on a per controller basis.</p>
-<p>Vibe also supports fader automation on timeline tracks.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyNOEZfLp8MiQtJSklmZ3%2F14.1-TL-Recorded.webp?alt=media&amp;token=7985f2a7-5a46-4d2e-b1c2-f55e3fd4059f" alt="14.1-TL-Recorded" />
-</p>
-<p>Vibe automatically matches frame rates to the incoming source.</p>
-<p>Supported frame rates are:</p>
+<p><strong>Real World Units</strong></p>
+<p>Where possible picker values are displayed in “Real World” units</p>
 <ul>
-<li><p>24 FPS</p></li>
-<li><p>25 FPS</p></li>
-<li><p>29.97 FPS drop-frame</p></li>
-<li><p>30 FPS</p></li>
+<li><p>XYZ P/T in degrees</p></li>
+<li><p>Strobe in HZ</p></li>
+<li><p>Color in HSV 0-360 degrees</p></li>
+<li><p>Zoom in degrees</p></li>
 </ul>
-<div id="view" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> View<a href="timeline.html#view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the layout.</p>
-<p>Unlimited Timeline views may be created and each Timeline View may have its own <strong>Time Code</strong>.</p>
-<p>As long as more Timeline views are set on different clock sources, they can load different Timelines and moved independently.</p>
-<p>If Timeline views are based on the same clock source, they will be synchronized and will load the same tracks and options.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOh7gGt5br6lurFzsNdes%2F14.1-TL-View.webp?alt=media&amp;token=d7eb125f-df73-4bc3-9126-0e860424f46a" alt="14.1-TL-View" />
-</p>
-<p>The Timeline view shows all the active Timelines and allows to enable and disable them, or play in “solo” mode.</p>
-<p>Use the Timeline view’s menu to load the Timelines on the view, as well as to create, edit or delete Timelines.</p>
-</div>
-<div id="record" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Record<a href="timeline.html#record" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After a Timeline View has been created, timeline tracks may be recorded.
-Timeline events may be recorded in “real time” and then edited afterwards.</p>
-<p><strong>Create a timeline track:</strong></p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoNmp9u7TitOInt5iiRuA%2F14.1-Create-Timeline.webp?alt=media&amp;token=b5395505-25d3-43c0-bd94-cce6a48cf8eb" alt="14.1-Create-Timeline" />
-</p>
-<ol style="list-style-type: decimal">
-<li><p>Open the Timeline View menu.</p></li>
-<li><p>Tap + and the “Create New Timeline” popup will open.</p></li>
-<li><p>Select a timeline number and name.</p></li>
-<li><p>Choose Start from {Blank} or {Existing} Timeline and Apply.</p></li>
-<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p></li>
-</ol>
+<p><strong>Virtual Parameters</strong></p>
+<p>To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture.</p>
+<p>Some examples are:</p>
 <ul>
-<li><p>Virtual Local - Use internal timecode clock.</p></li>
-<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
-<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
+<li><p>Virtual Intensity for controlling LED fixtures that do not have a dimmer parameter.</p></li>
+<li><p>Virtual HSV as a common denominator for all color mixing systems of Multi-color fixtures, such as CMY, RGB, RGBA, RGBW, RGBACL, …</p></li>
+<li><p>Virtual XYZ coordinates for calibration of fixtures that only have physical Pan/Tilt parameters.</p></li>
 </ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Enable the red {Record} button or the {+ Record} button.</li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGYHhuOgYXG6ubGBALCOi%2F14.1-TL-Transport-Bar.webp?alt=media&amp;token=69968ead-6581-4b19-821a-3e6cd3992072" alt="14.1-TL-Transport-Bar" />
-</p>
+<p><strong>Tracking Mode</strong></p>
+<p>Vibe by default is a tracking console and follows the conventions of modern show lighting.</p>
+<p>Vibe also has a special track feature called <strong>SKIP</strong>: if cues are modified using <strong>SKIP</strong>, instead of <strong>Qonly</strong>, the relationship with the original hard value is maintained and changes to the original value skip over the modification and preserve the track.</p>
+<p><strong>Qonly Mode</strong></p>
 <ul>
-<li><p>{Record} overwrites the existing events.</p></li>
-<li><p>{+ Record} adds new events to the existing ones.</p></li>
+<li><p>Modifications, insertions and deletions will be done Qonly by default.</p></li>
+<li><p>Move fades will still be valid.</p></li>
 </ul>
-<ol start="7" style="list-style-type: decimal">
-<li><p>If using internal TC, press Play.</p></li>
-<li><p>If using external TC start the timecode source.</p></li>
-<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
-<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
-</ol>
-<p><strong>Trigger a Timeline</strong></p>
-<p>Timelines can be triggered and zoomed via the Timeline view’s transport bar.</p>
-<p>Timeline commands can be also triggered via the Editor Toolbar in Program and Playback pages.</p>
-<p><strong>Grid View Filters</strong></p>
-<p>Switch from the Graphical to the Grid view and viceversa with the toggle button on the control bar.</p>
-<p>In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFgICJWgLaaX6zER5xarw%2F14.1-TL-Grid-View.webp?alt=media&amp;token=f3f48320-4168-415b-b8b7-51364667e4fd" alt="14.1-TL-Grid-View" />
-</p>
-</div>
-<div id="commands" class="section level3 hasAnchor" number="14.1.3">
-<h3><span class="header-section-number">14.1.3</span> Commands<a href="timeline.html#commands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
-<p><strong>Commands for the Timeline</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
-<li><p>The Editor Toolbar shows the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FK81XHaBtDHoweY0dr0ha%2F14.1-TL%23-Toolbar.webp?alt=media&amp;token=98266616-4265-455e-ae8f-27b14ad120c5" alt="14.1-TL#-Toolbar" />
-</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqrhzxvT6qCnsbkgnIlFZ%2F14.1-TL-Commands.webp?alt=media&amp;token=f5e4caba-b4ea-4c3c-afd6-6c6ad4934ba4" alt="14.1-TL-Commands" />
-</p>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Sequence may also end with:</p>
+<p><strong>Non-Tracking or Compulite Mode</strong></p>
+<p>Vibe can also program without tracking, by applying the Compulite Mode.</p>
+<p>Using Compulite Mode the defaults are changed to:</p>
 <ul>
-<li><p>Store – will create the timelines if they are not already created</p></li>
-<li><p>Delete – will delete the timelines if they exist</p></li>
-<li><p>Text – will open text box to give a name to the selected timelines</p></li>
-<li><p>Copy – will add the timelines to the clipboard</p></li>
-<li><p>Paste – will paste the copied timelines from the clipboard</p></li>
-</ul></li>
-</ol>
-<ul>
-<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
-<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
-<li><p>The control bar may be used to stop and rewind events when the source is internal.</p></li>
-<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
-<li><p>forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
+<li><p>Tracking turned off.</p></li>
+<li><p>Editor is not cleared after a Store.</p></li>
+<li><p>After Reset, Editor values mantain their last position instead of returning to home values.</p></li>
+<li><p>Controllers do not advance to the Cue after a Store.</p></li>
 </ul>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FooORahO1pS6AfEhuTM4N%2F14.1-TL-Menu-Active.webp?alt=media&amp;token=d6f12de1-9913-47e5-afe8-1cc6d37df1f9" alt="14.1-TL-Menu-Active" />
-</p>
-<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
-<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
-<p><span style="color:Red">Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</span></p>
-<p><strong>Commands for the Active Timeline</strong></p>
-<p>These commands will affect the Active Timeline View.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press <em>Timeline</em> from the panel</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTkMpw8g30Tv9mF8IqxRU%2F14.1-TL-Toolbar.webp?alt=media&amp;token=a8c3ff09-6899-4d4d-9a64-31da6908fe93" alt="14.1-TL-Toolbar" />
-</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIW9PDydVEqT1xPV762gX%2F14.1-TL-Options.webp?alt=media&amp;token=ba20f806-44a5-4f5f-9336-44e66361f273" alt="14.1-TL-Options" />
-</p>
-</div>
-<div id="gestures" class="section level3 hasAnchor" number="14.1.4">
-<h3><span class="header-section-number">14.1.4</span> Gestures<a href="timeline.html#gestures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Use the following <strong>gestures</strong> on the timeline view to manage the events:</p>
+<p><strong>Color spaces</strong></p>
+<p>Vibe can work in three color spaces:</p>
 <ul>
-<li><p>Tap on a single event – toggles the event selection</p></li>
-<li><p>Tap on a playback box – toggles the playback selection</p></li>
-<li><p>Tap on a marker – toggles the marker selection</p></li>
-<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
-<li><p>Double-tap an empty area – clear the selection</p></li>
-<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
-<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
-<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
-<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
+<li><p>HSV: Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (or any color mixing parameter of the fixture) will be displayed, but not directly referenced in cues using virtual HSV.</p></li>
+<li><p>RGB, CMY, other: If color values are set by using the real color mixing parameters, physical values are stored in the cue and HSV values will be displayed but not directly referenced.</p></li>
 </ul>
-<p><span style="color:Red">Selection can have only one type of objects at a time. Selecting a timeline object (i.e. Playback, Event, Marker…) will clear all other objects selections.</span></p>
-</div>
-<div id="markers" class="section level3 hasAnchor" number="14.1.5">
-<h3><span class="header-section-number">14.1.5</span> Markers<a href="timeline.html#markers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To aid in timeline navigation, Markers may be inserted.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FggiIzrGJjJMxB3Fbdsza%2F14.1-TL-Menu-Markers.webp?alt=media&amp;token=62f8c69f-b460-4be9-b647-968161c40d0e" alt="14.1-TL-Menu-Markers" />
-</p>
-<p>To insert a marker:</p>
+<p><strong>Virtual crossfading</strong></p>
+<p>By default the color and position crossfading is done by using the physical color parameters, but any Cue can be assigned to crossfade the virtual parameters instead.</p>
+<p><strong>Maintain Selection</strong></p>
 <ul>
-<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
-<li><p>Press ⟵ to move backwards through the markers.</p></li>
-<li><p>Press ⟶ to move forwards through the markers.</p></li>
-<li><p>Press 🗑️ to delete a marker</p></li>
-</ul>
-<p>In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpJj4vHB3xXkARDK8pZdx%2F14.1-TL-Markers.webp?alt=media&amp;token=40c53b8f-a748-4251-a9df-f90ee07b59cf" alt="14.1-TL-Markers" />
-</p>
-<p>The Timeline Grid View shows the list of Markers on a dedicated tab, where they can be named.
-Markers’ names will appear also in the graphical view, on the bottom of the marker.</p>
-</div>
-<div id="move-selection" class="section level3 hasAnchor" number="14.1.6">
-<h3><span class="header-section-number">14.1.6</span> Move Selection<a href="timeline.html#move-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Move Selection submenu offers options to set move the selected events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5NzYriXZGQ5lQFov0s0m%2F14.1-TL-Menu-Move-Selection.webp?alt=media&amp;token=6e3f6889-4946-458d-aae1-87fd10bdaf64" alt="14.1-TL-Menu-Move-Selection" />
-</p>
-<p>It is possible to change selected event times via the physical wheels.</p>
-<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
-<p>There are 2 physical wheels that are available for use:</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FucIYRJuwszY9q3vzIVvX%2F14.1-TL-Encoders.webp?alt=media&amp;token=9f852a86-a315-47df-a33f-df86c046278b" alt="14.1-TL-Encoders" />
-</p>
-<p>The left one is for moving the selected events.</p>
-<p>The right one is to change the time resolution for the current time movement.</p>
-</div>
-<div id="actions" class="section level3 hasAnchor" number="14.1.7">
-<h3><span class="header-section-number">14.1.7</span> Actions<a href="timeline.html#actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Actions submenu offers options to manage the selected events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVaRfzYUgas3u9aqWSNrI%2F14.1-TL-Menu-Actions.webp?alt=media&amp;token=a27019f0-9f02-4c76-887a-16a9a938e9a8" alt="14.1-TL-Menu-Actions" />
-</p>
-<p>All the events can be moved on the timeline with drag&amp;drop commands in the graphical view, or by assigning a different time in the grid bar.</p>
-<p>The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fuc6wVYJVfy0govj8h7t9%2F14.1-TL-Actions.webp?alt=media&amp;token=345e65d9-2208-4d36-a515-d2c7207292b7" alt="14.1-TL-Actions" />
-</p>
-<p>In the Actions menu there is the option to <strong>Reset Slider Value</strong> from a playback and set it to a fixed value between zero and full.</p>
-<p>To clear the slider value from a timeline:</p>
-<ol style="list-style-type: decimal">
-<li><p>Open a timelines</p></li>
-<li><p>Select the target playback</p></li>
-<li><p>On the menu, open the Actions</p></li>
-<li><p>Press Reset Slider</p></li>
-<li><p>Assign the slider value on the virtual slider popup</p></li>
-</ol>
-</div>
-<div id="timestamp" class="section level3 hasAnchor" number="14.1.8">
-<h3><span class="header-section-number">14.1.8</span> TimeStamp<a href="timeline.html#timestamp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is possible to view the timeline and events data in different time formats.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F420TffgJLrwJeoJCoOWM%2F14.1-TL-Menu-Timestamp.webp?alt=media&amp;token=99428212-3196-47b1-81a9-450b1c32f7fe" alt="14.1-TL-Menu-Timestamp" />
-</p>
-<p>The default time format is milliseconds, but it is also possible to use FPS format.</p>
-<p>The time format selection can be set on the Timestamp View sub-menu.</p>
-</div>
-<div id="audio-track" class="section level3 hasAnchor" number="14.1.9">
-<h3><span class="header-section-number">14.1.9</span> Audio Track<a href="timeline.html#audio-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Timelines can load Audio Tracks in common file formats such as .mp3 and .wav.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F513QLPh853sZ8nuDuBoz%2F14.1-TL-Audiotrack.webp?alt=media&amp;token=46ff16b6-b731-4596-8edb-b4520d162b36" alt="14.1-TL-Audiotrack" />
-</p>
-<p>To add an audio track to a timeline:</p>
-<ul>
-<li><p>open the Audio section on the menu</p></li>
-<li><p>tap ADD</p></li>
-<li><p>select the target timeline on the selection popup and tap Apply</p></li>
-<li><p>select the audio file on the load popup and tap Apply</p></li>
-</ul>
-<p>The Audio Track will be loaded on the top line of the Timeline, showing the file name and the audio spectrum.</p>
-</div>
-</div>
-<div id="Time-Code-14.2" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Time Code<a href="timeline.html#Time-Code-14.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).</p>
-<div id="connections" class="section level3 hasAnchor" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Connections<a href="timeline.html#connections" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Vibe has Time Code connectors for the following:</p>
-<ul>
-<li><p>Audio Combi Jack connector for SMPTE input with:</p>
-<ul>
-<li><p>Female unbalanced line level input on 1/4” phone jack</p></li>
-<li><p>Female 3 pin XLR balanced line level input.</p></li>
-</ul></li>
-<li><p>Female 5 Pin DIN connector for MIDI input.</p></li>
-<li><p>Female 5 Pin DIN connector for MIDI output.</p></li>
-<li><p>USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.</p></li>
-<li><p>RJ45 ports for MIDI over Ethernet (Compulite devices)</p></li>
+<li><p>To avoid reselecting fixtures after a STORE command, Vibe maintains its selection on reset of the editor.</p></li>
+<li><p>To clear the editor and the fixture selection [VIBE] (Shift) + [RESET] must be pressed.</p></li>
 </ul>
 </div>
-<div id="ltc" class="section level3 hasAnchor" number="14.2.2">
-<h3><span class="header-section-number">14.2.2</span> LTC<a href="timeline.html#ltc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>LTC</strong> or <strong>Linear Time Code</strong> source, the SMPTE input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The SMPTE Tab contains the toggle button to enable or disable the LTC input.</p>
+<div id="Syntax-6.2" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Syntax<a href="editor.html#Syntax-6.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe uses a hybrid command syntax, called action syntax, that does not need an “enter” command to complete the sequences</p>
+<p>For keypad command line driven operations the command completes the sequence, the logic is:</p>
+<ul>
+<li>Source Object, Filter, Options, Command (Action Completes)</li>
+</ul>
+<p>[Group 1] [Full] [Library 2 (Position) 1] [Cue 1] [Store Options] {Red + White} [Store]</p>
+<p>For softkeys and controllers driven operations touching the object completes the sequence, the logic is:</p>
+<ul>
+<li>Source Object, Filter, Command, Options, Destination (Object Completes)</li>
+</ul>
+<p>{GROUP} [1] [Full] [LIBRARY] {Position} [3] [Store] [Store Options] {Red Only} press any button on [Controller 1]</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fg4bDJOgnX88CaU1CqrnZ%2F14.2-IO-Settings-SMPTE.webp?alt=media&amp;token=2cadb1ad-2382-4443-89cc-1c5d971dfb75" alt="14.2-IO-Settings-SMPTE" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1KDPKeQ4NluvD0wiyguI%2F6.2-Syntax.webp?alt=media&amp;token=31aee10a-5f67-486f-acf9-74a07ce7a760" alt="6.2-Syntax" />
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span></p>
-<p><strong>Recommended quality and level for SMPTE:</strong></p>
+<p>The <strong>Command Line</strong> is the area where commands appear as they are entered.</p>
 <ul>
-<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
-<li><p>As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+<li><p>It is located on the Toolbar on the side of the [VIBE] menu.</p></li>
+<li><p>When in BLIND Mode the command line is bounded in yellow.</p></li>
 </ul>
-</div>
-<div id="mtc" class="section level3 hasAnchor" number="14.2.3">
-<h3><span class="header-section-number">14.2.3</span> MTC<a href="timeline.html#mtc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>MTC</strong> or <strong>Midi Time Code</strong> source, the MTC input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The MIDI Tab contains the toggle button to enable or disable the MTC input.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC7IvLw0Gqs94XcmfKDVa%2F14.2-IO-Settings-MTC.webp?alt=media&amp;token=75cc712a-9336-4d0e-bef4-57683b1502c2" alt="14.2-IO-Settings-MTC" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkDZJqae8mjnHHGV0Fjcl%2F6.2-Command-Line.webp?alt=media&amp;token=95e5e157-52d8-47cb-858a-4704459dd89d" alt="6.2-Command-Line" />
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span></p>
-<p><strong>MIDI Time Code</strong> is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.</p>
-<p>MTC is available in the following frame rates:</p>
+<p>The <strong>Selection Line</strong> is the area where the active fixture selection appears.</p>
 <ul>
-<li><p>24 frame/s (standard rate for film work)</p></li>
-<li><p>25 frame/s (standard rate for PAL video)</p></li>
-<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
-<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
+<li><p>It is located on the Smart Screen.</p></li>
+<li><p>It shows the current fixture selection in the selection order.</p></li>
 </ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfWUDfU4FDXBtuSYI0Tlv%2F6.2-Selection-Line.webp?alt=media&amp;token=e764e16c-1329-4221-aa21-e628e5604f0e" alt="6.2-Selection-Line" />
+</p>
 </div>
-</div>
-<div id="MIDI-14.3" class="section level2 hasAnchor" number="14.3">
-<h2><span class="header-section-number">14.3</span> MIDI<a href="timeline.html#MIDI-14.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer.</p>
-<p>MIDI is a control protocol and does not transmit audio.</p>
-<p>Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment.</p>
-<p>MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)</p>
-<p><strong>MIDI implementation:</strong></p>
+<div id="Selection-6.3" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Selection<a href="editor.html#Selection-6.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this guide FIXTURE will be the default SET, but any SET (Channel, Spot, Matrix, Server, User Sets) could also be applicable.</p>
+<p>Default SET is changed by double pressing the appropriate SET key</p>
+<p>Dimmer is implied, but parameter would normally be specified after [+ ⟶ -] and before value.</p>
+<p><strong>[CE]</strong> will backspace the command line one character at a time.</p>
+<p><strong>[Shift CE]</strong> will clear the command line to the beginning and put the system in an idle state.</p>
+<p>Fixtures are selected using the <strong>[FIXTURE]</strong> key on the keypad.</p>
+<p>Fixtures on different Sets may be selected using the syntax <strong>[SET] [#] [FIXTURE] [#]</strong>.</p>
+<p>Fixtures may be stored in Groups and recalled using the <strong>[GROUP]</strong> key.</p>
+<p>Fixtures may also be interactively selected via the Live, the Live Parameter and the Topo views.</p>
 <ul>
-<li><p>16 independent MIDI channels - The channels systems listen to.</p></li>
-<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
-<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
-<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
-<li><p>After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.</p></li>
-<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.</p></li>
-<li><p>Patch changes from 0 ⟶ 127 - Change from one instrument to another.</p></li>
-<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
-<li><p>A section for MIDI time code and other manufacturer’s “System Exclusive” information.</p></li>
+<li><p><strong>[+] [-]</strong> keys are valid with Fixture selections and Groups.</p></li>
+<li><p><strong>[FIXTURE]</strong> . (dot) reselects the last selection.</p></li>
+<li><p><strong>[FIXTURE]</strong> reselects all fixtures in the Editor.</p></li>
+<li><p><strong>[CE]</strong> backspaces the command line one character at a time, but currently will not go back one command at a time.</p></li>
+<li><p><strong>[VIBE] + [CE/CLEAR]</strong> clears the command line.</p></li>
+<li><p><strong>[RELEASE]</strong> removes the parameters from the Editor.</p></li>
+<li><p>First press releases the active parameters (last adjusted) for selected fixtures.</p></li>
+<li><p>Second press releases all remaining parameters for selected fixtures.</p></li>
+<li><p><strong>[DESEL]</strong> deselects all fixtures but maintains the values in the Editor.</p></li>
 </ul>
-<div id="midi-settings" class="section level3 hasAnchor" number="14.3.1">
-<h3><span class="header-section-number">14.3.1</span> MIDI Settings<a href="timeline.html#midi-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To receive and generate Midi signals each protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.</p>
-<p><strong>Configure MIDI:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source:</p></li>
-</ol>
-<ul>
-<li><p><strong>Local MIDI</strong> is generated and received from the 5 pin DIN connectors on the back of the console.</p></li>
-<li><p><strong>MIDI over USB</strong> is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</p></li>
-<li><p><strong>MIDI over Ethernet</strong> is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.</p></li>
-<li><p><strong>Refresh MIDI Connection</strong> looks for new connections if devices have been added later.</p></li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Press Apply to stay in I/O settings, press [ENTER] or tap the Apply icon to close the popup.</li>
-</ol>
-</div>
-<div id="midi-notes" class="section level3 hasAnchor" number="14.3.2">
-<h3><span class="header-section-number">14.3.2</span> MIDI Notes<a href="timeline.html#midi-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In lighting MIDI notes and controllers from external sources are matched to the console’s controllers, buttons and wheels to synchronize the playback.</p>
 <blockquote>
-<p>A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ’s frequently control lighting via MIDI touchpad controllers.</p>
+<p>This function is usually used to protect the operator from accidentally adjusting parameters in the Editor when they are temporarily captured. It may also be used to “idle” the command line to allow [TEXT] {SK} function while fixtures are still in the Editor.</p>
 </blockquote>
-<p>To configure <strong>MIDI Notes</strong> open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.</p>
-<p>In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.</p>
 <ul>
-<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
-<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
-<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
+<li><p><strong>[RESET]</strong> releases all parameters from the Editor.</p></li>
+<li><p><strong>[VIBE] + [RESET]</strong> releases all parameters from the Editor and deselects all the fixtures.</p></li>
+<li><p><strong>[NEXT] / [PREV]</strong> increments or decrements fixtures in a selection. When used with a Group, will be confined to the fixtures in the Group.</p></li>
+<li><p><strong>[VIBE] + [NEXT] / [PREV]</strong> increments or decrements fixtures in a selection, keeping the fixtures’ amount and distance.</p></li>
 </ul>
-<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+<p><strong>Command logic and shortcuts</strong></p>
+<ul>
+<li><p>[Fixture] # [+ ⟶ -] [Full] / [Zero] (<span class="citation">@100</span> and <span class="citation">@00</span>).</p></li>
+<li><p>[Fixture] # [+ ⟶ -] [@] enter value. Two digits are required to complete value entry.</p></li>
+<li><p>[Fixture] # [+ ⟶ -] [@] [@] will set values to Full.</p></li>
+<li><p>[Fixture] # [+ ⟶ -] [@] single value, [ENTER].
+&gt; [Fixture] [1⟶ 6] [@] [5] [ENTER] will set a value of 50%.
+&gt; [Fixture] [1⟶ 6] [@] [7] [ENTER] will set a value of 70%.</p></li>
+<li><p>Pressing [ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.</p></li>
+<li><p>[Fixture] # will jump the <strong>live display</strong> screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the <strong>Live Display, {Tools}</strong> (Wrench icon) popup under the <strong>Behavior</strong> Tab</p></li>
+<li><p>[Fixture] # [+ ⟶ -] [@] [+] [value] or [@] [-] [value] will make a <strong>relative</strong> change to the stage value.
+&gt; {If the stage value is 50, @ + 10 will set the value to 60, @ - 30 would set the value to 20}.</p></li>
+</ul>
+<p>The rules for single digit plus Enter will also apply.</p>
+<ul>
+<li><p>[Fixture] # [⟶ ] #, Parameter, [@] {value] [⟶] [value] will <strong>fan</strong> the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as [Zero] and [Full].</p></li>
+<li><p>[Fixture] # [⟶ ] # Parameter, [@] [value] [⟶] [⟶] [value] will <strong>mirror</strong> fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}</p></li>
+<li><p>Fixture <strong>Dot</strong> = Restore last. (There’s a toolbar equivalent)</p></li>
+<li><p>Fixture ⟶ = Reselect Editor. (There’s a toolbar equivalent)</p></li>
+<li><p>Fixtures and Parameters may be deselected using [RELEASE / DESEL] Key. This leaves values in the editor but not under the control of the wheels.</p></li>
+<li><p>[GROUP] # selects all fixtures that are recorded into the group. *The typed fixture order is preserved in a recorded group.</p></li>
+<li><p>With groups, parameters may be fanned via syntax as above, but their recorded order will be considered.</p></li>
+<li><p>Control without having to press Shift, Reset, which clears the values in the Editor.</p></li>
+<li><p>{LIBRARY} {LIBRARY}, will select and enter values from a library into the Editor. This is especially useful when using position libraries as groups with positions.</p></li>
+</ul>
+<div id="selection-tools" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Selection Tools<a href="editor.html#selection-tools" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Selection</strong> button allows to split the fixtures’ selection.</p>
+<p>Press [SELECTION] on Prog and Play pages’ toolbar to access the features.</p>
+<p>Press [RESTORE] to get back to the original selection.</p>
+<p>Press [LOCK] to make the current selection as the new base selection.</p>
+<p>Press [CE/CLEAR] to return to the upper toolbar’s menu.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0qfxuNCNVAbnJvsQuIf3%2F14.3-IO-Settings-MIDI-Notes.webp?alt=media&amp;token=dec7af76-bb68-46d8-b305-5eadbf31491c" alt="14.3-IO-Settings-MIDI-Notes" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FYwUeTwMPXiXgJgUPKeaz%2F6.3-Selection-Toolbar.webp?alt=media&amp;token=b2540237-7697-457b-b51d-f63bd482aca5" alt="6.3-Selection-Toolbar" />
 </p>
-<p><strong>Assign MIDI Notes to Controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>In Midi Tab enable Notes In or Notes Out.</p></li>
-<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
-<li><p>In Notes/Commands Tab select the tab for the type of MIDI message to be received.</p></li>
-</ol>
-<p>Possible messages types are:</p>
+<p>Selection toolbar has the following Selection Tools.</p>
 <ul>
-<li><p><strong>Note</strong> (Note ON = press down on controller key, Note OFF = release of controller key).</p></li>
-<li><p><strong>After Touch</strong></p></li>
-<li><p><strong>Continuous Controller</strong></p></li>
-<li><p><strong>Path Change</strong></p></li>
-<li><p><strong>Channel Pressure</strong></p></li>
-<li><p><strong>Pitch Bend</strong></p></li>
+<li><p>{ODDS} - Absolute odd number in the range</p></li>
+<li><p>{EVENS} - Absolute even numbers in the range</p></li>
+<li><p>{2/1} - Grouping of 2 starting at the first fixture of the range (relative odd numbers)</p></li>
+<li><p>{2/2} - Grouping of 2 starting at the second fixture of the range (relative even numbers)</p></li>
+<li><p>{3/1} - Grouping of 3 starting at the first fixture of the range</p></li>
+<li><p>{4/1} - Grouping of 4 starting at the first fixture of the range</p></li>
+<li><p>{ / } - Grouping of #/# starting at the # fixture of the range</p></li>
 </ul>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign Macros to a MIDI note:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press [MACRO] - The Macro selector popup will appear.</p></li>
-<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Additional functions:</strong></p>
+<blockquote>
+<p>[Fixture] [1] [⟶] [14] {Selection Tools} [3] {/} [1] - would select fixtures 1,4,7,10,13
+as soon as the {/} is pressed EVERY 3/1 will be displayed on the selection line.</p>
+</blockquote>
+<blockquote>
+<p>[Fixture] [1] [⟶] [14] {Section Tools} [3] {/} [2] - would select fixtures 2,5,8,11,14
+as soon as the {/} is pressed EVERY 3/2 will be displayed on the selection line.</p>
+</blockquote>
+</div>
+<div id="order-tools" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Order Tools<a href="editor.html#order-tools" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Order</strong> button allows to make changes to the fixtures’ selection order.</p>
+<p>Press [ORDER] on Program and Playback pages’ toolbar to access the features.</p>
+<p>Press [RESTORE] to get back to the original selection.</p>
+<p>Press [CE/CLEAR] to return to the upper toolbar’s menu.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHJZmcLO2KUe07AgJbfel%2F6.3-Order-Toolbar.webp?alt=media&amp;token=e4ba881b-b2a3-494b-a497-f8375dffb035" alt="6.3-Order-Toolbar" />
+</p>
+<p>Order toolbar has the following Ordering Tools.</p>
 <ul>
-<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
-<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
-<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
-<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
+<li><p>{INVERT} - Inverts the selection order linearly</p></li>
+<li><p>{MIRROR IN} - Mirrors the selection order from the extremes to the center</p></li>
+<li><p>{MIRROR OUT} - Mirrors the selection order from the center to the extremes</p></li>
+<li><p>{TRANSPOSE} - Transposes the raws and columns of the selection order (useful for matrixes)</p></li>
+<li><p>{PATTERN} - Opens the Pattern popup with more advanced reordering tools</p></li>
+</ul>
+<p><strong>Transpose</strong></p>
+<p>Transpose feature is used to reorder fixture selection based on a specified offset.
+This is particularly useful for creating interesting effects and fanning.</p>
+<blockquote>
+<p>Fixture 1 ⟶ 12 {Transpose} 2 [ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12</p>
+</blockquote>
+<blockquote>
+<p>Fixture 1 ⟶ 12 {Transpose} 3 [ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12</p>
+</blockquote>
+<blockquote>
+<p>Fixture 1 ⟶ 12 {Transpose} 4 [ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12</p>
+</blockquote>
+<p><strong>Pattern</strong></p>
+<p>Pattern feature is used to edit the selection order by using smart functions on a graphical interface.
+The Pattern popup also includes all the other Order Tools.
+It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a fixture selection</p></li>
+<li><p>Tap {Pattern} on the Editor Toolbar - The Pattern popup will open.</p></li>
+</ol>
+<p>👉 <span style="color:Red">This is not an effect even though it is a dynamic display.</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Tap the indicator at the top of the displayed fixtures. - it turns white.</p></li>
+<li><p>Select a number under the Block Size header.</p></li>
+<li><p>Tap the {Spread} icon. - the columns will expand to show the new fixture order.</p></li>
+<li><p>If desired make further order changes under the Offset Header and tap {offset} icon.</p></li>
+<li><p>Make further modifications or reset the selection with the {Reset} {Invert} {Transpose} and {Invert Columns} keys.</p></li>
+<li><p>Once finished, exit the popup by pressing Apply or [ENTER].</p></li>
+<li><p>Open the Advanced Effects editor and program the desired effect.</p></li>
+</ol>
+<p>👉 Simple Block and Sub Block groupings may be created in both Effects Editors with no need of using order tools, but the pattern feature allows more advanced blocks and groupings.</p>
+</div>
+</div>
+<div id="Editor-6.4" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Editor<a href="editor.html#Editor-6.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>All fixture selections and parameter modifications occur in the <strong>Editor</strong> (also called Programmer in other consoles).</p>
+<p>The HardKeys panel, both virtual and physical, and the Smart Screen, are the most important components used to program the Editor.</p>
+<p>The <strong>Live View</strong> shows all values from both the fixtures in the Editor and the output from Controllers (also called Playbacks or Executors on other consoles).</p>
+<p>Color coding is used to distinguish between values coming from the controllers and values in the Editor.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbmMY5e60fqLGaFDsXh2p%2F6.4-Editor-Color-Coding.webp?alt=media&amp;token=b9c294e2-4f13-465f-8eff-3d7efec4891b" alt="6.4-Editor-Color-Coding" />
+</p>
+<p>The Editor priority is always higher than the Playback priority, so any parameter moved in the Editor will overcome the values coming from any controller.
+Release the parameter or the fixture from the Editor to get back to the controller’s output values.</p>
+<div id="hardkeys" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> HardKeys<a href="editor.html#hardkeys" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Editor Hardkeys are the buttons on the Vibe Panel use to program.</p>
+<p>Vibe is a touch-based system, allowing efficient fixture manipulation through its smart on-screen features, but it is also possible to program it in a traditional syntax based way by pressing the hardkeys in the proper sequence.</p>
+<p>As all the other panel’s physical components (buttons and controllers), also the Hardkeys may be added to the layout by using the <strong>Virtual HardKeys</strong> View.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1iTnAReM8On90f9vBQn2%2F6.4-Virtual-Hardkeys.webp?alt=media&amp;token=08d5f9d2-db3e-46cb-8fd5-00d85317a9fc" alt="6.4-Virtual-Hardkeys" />
+</p>
+</div>
+<div id="blind-editor" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Blind Editor<a href="editor.html#blind-editor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Blind Editor is a parallel Editor used to create or modify objects without outputting values to the stage.</p>
+<p>When using Blind Editor the [Blind] key flashes <strong><span style="color:Gold">yellow</span></strong> and the Command Line turns <strong><mark>yellow</mark></strong>.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMJkpGXULgJw7gqMw1YN1%2F6.4-Blind-Editor.webp?alt=media&amp;token=55950c16-663c-4616-b097-e7ce825aaa23" alt="6.4-Blind-Editor" />
+</p>
+<p>In Blind Editor the syntax and operations on the Objects, such as Store and Update, can be done exactly like in the Live Editor, but with no output on stage.
+If a change is stored on content that is currently in Playback, then the output will be affected.</p>
+<p>Vibe has two Blind Editor behaviors:</p>
+<ol style="list-style-type: decimal">
+<li><p>Blind acts as an independent editor, separate from the live editor.</p></li>
+<li><p>Blind grabs the values from the live editor and viceversa. This is used to emulate the behavior of single editor consoles, where the main editor output is disabled while using the Blind Editor.</p></li>
+</ol>
+<p><strong>To open the blind editor:</strong></p>
+<ul>
+<li><p>Press [BLIND] to open the Blind Editor empty, or as leaved at the last access.</p></li>
+<li><p>Press [VIBE] + [BLIND] to open the Blind Editor in single editor mode. The Live Editor contents are copied to the Blind Editor.</p></li>
+</ul>
+<p><strong>To exit the blind editor:</strong></p>
+<ul>
+<li><p>Press [BLIND] to close the Blind Editor and get back to the Live Editor. The contents in the Blind Editor are kept.</p></li>
+<li><p>Press [VIBE] + [BLIND] to exit the Blind Editor in single editor mode. The Blind Editor contents are copied and merged to the Live Editor. The contents in the Blind Editor are also kept.</p></li>
 </ul>
 </div>
-<div id="msc" class="section level3 hasAnchor" number="14.3.3">
-<h3><span class="header-section-number">14.3.3</span> MSC<a href="timeline.html#msc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>MIDI Show Control</strong> is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard.</p>
-<p>MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p>
-<p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications.</p>
-<p>Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia</p>
-<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices.</p>
-<p>Basic MSC commands are:</p>
+</div>
+<div id="Groups-6.5" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Groups<a href="editor.html#Groups-6.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Groups are objects used to speed up the fixture selections, stored into the Groups Library.</p>
+<p>A Group allows to recall all the fixtures included in it by tapping on the softkey or pressing [GROUP] [#].</p>
+<p>👉 <span style="color:Red">The order that fixtures are selected is stored in the group.</span>.</p>
+<p><strong>Store Groups to SKs:</strong></p>
 <ul>
-<li><p>Go</p></li>
-<li><p>Stop</p></li>
-<li><p>Fire (Generally used for macros)</p></li>
+<li>[FIXTURE] [#] [+ ⟶ -] [STORE] tap desired {Group Softkey} - it does not matter if levels are set, they will be ignored.</li>
 </ul>
-<p>Also supported on receive are:</p>
+<p><strong>Label SK Groups:</strong></p>
 <ul>
-<li><p>All fixtures</p></li>
-<li><p>General lights</p></li>
-<li><p>Moving lights</p></li>
+<li><p>Directly after storing a group, start typing from the keyboard and a Text Entry popup will open.</p></li>
+<li><p>At any time, pressing the [TEXT] key followed by tapping the SK will open the Text Entry popup.</p></li>
 </ul>
-<p><strong>Receive MSC:</strong></p>
+<p><strong>Store Groups via keypad syntax:</strong></p>
+<ul>
+<li><p>[FIXTURE] [#] [+ ⟶ -] [#] [GROUP] [#] [STORE].</p></li>
+<li><p>Pressing the [TEXT] key after any Group store will open the Text Entry popup.</p></li>
+</ul>
+<p><strong>Modify Groups using Group Settings popup:</strong></p>
+<p>Range text labeling may be done via this method.</p>
+<ul>
+<li><p>Using keypad, press [GROUP] [#] [Settings] - the Group Settings pop-up will open.</p></li>
+<li><p>Using SKs, tap the source {GROUP} SK and then press [Settings] key.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F76OfTXzWffC4XNPTWe2e%2F6.5-Group-Settings.webp?alt=media&amp;token=7353486e-99d2-4d4f-bd7f-a66442fff2f1" alt="6.5-Group-Settings" />
+</p>
+<p><strong>Store Groups from existent Groups:</strong></p>
+<p>A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad.</p>
+<p>Press [STORE] then tap destination {Group} SK or Press [Group] [#] [STORE] to create the new Group.</p>
+<p>The new Group will not be linked nor referenced to the original Groups.</p>
+<p><strong>Groups may be used to release fixtures:</strong></p>
+<ul>
+<li><p>With keypad, [GROUP] [#] [RELEASE]</p></li>
+<li><p>With SKs, {Group #} <a href="program.html#release">Release</a></p></li>
+</ul>
+<p><strong>Release a fixture from a Group Method 1:</strong></p>
+<ul>
+<li><p>With keypad, Fixture # [+ ⟶ -], [GROUP], #, [STORE], Group popup appears, select {Release}</p></li>
+<li><p>With SKs, Fixture # [+ ⟶ -], <a href="scene-qlist.html#store">STORE</a>, {Group SK}, Group popup appears, select {Release}</p></li>
+</ul>
+<p><strong>Release a fixture from a Group Method 2:</strong></p>
+<ul>
+<li><p>[GROUP] [#] [EDIT], [UPDATE] key flashes red ([EDIT] tap {GROUP SK} is also valid)</p></li>
+<li><p>[FIXTURE] [#] [RELEASE]</p></li>
+<li><p>Press [UPDATE] to complete the sequence</p></li>
+</ul>
+<p><strong>To Delete a Group:</strong></p>
+<ul>
+<li><p>With keypad, [GROUP] # [DELETE]</p></li>
+<li><p>With SKs, {GROUP} [#] [DELETE]</p></li>
+</ul>
+</div>
+<div id="Grab-6.6" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Grab<a href="editor.html#Grab-6.6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Grab is a powerful tool for selecting fixtures that meet a number of conditions.</p>
+<p>By default [GRAB] selects all fixtures with intensity or virtual intensity values above Zero.</p>
+<p>Pressing [GRAB] without a selection opens a popup on the Smart Screen with the following options.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLCIvikmAZUIsjxuJ0KkP%2F6.6-Grab.webp?alt=media&amp;token=337448df-67ee-4040-8d69-0238ae5b1db3" alt="6.6-Grab" />
+</p>
+<ul>
+<li><p><strong>{Filters}</strong></p>
+<ul>
+<li><p>{Stage} - Select anything that is live on the stage and meets the conditions below.</p></li>
+<li><p>{Editor} - Select anything that is in the Editor and meets the conditions below.</p></li>
+<li><p>{Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.</p></li>
+</ul></li>
+<li><p><strong>{Conditions}</strong></p>
+<ul>
+<li><p>{All Fixtures} - Selects all fixtures that have any changes via the editor.</p></li>
+<li><p>{Active} - Fixture has intensity value over zero.</p></li>
+<li><p>{Invisible} - Recorded “hard” parameter values for fixtures that do NOT have an intensity value over zero.</p></li>
+<li><p>{Inactive} - Fixtures that have NO recorded values.</p></li>
+</ul></li>
+<li><p><strong>{Parameter Selection}</strong></p>
+<ul>
+<li><p>{All for Selected} Grabs all parameters for selected fixtures (shortcut is [VIBE] + [GRAB])</p></li>
+<li><p>{Active (ENTER)} Select all “Active” fixtures and enters them into the Editor. (Shortcut is [GRAB] + [ENTER])</p></li>
+<li><p>{Search &amp; Replace}.</p></li>
+</ul></li>
+<li><p>[SET] [GRAB] selects all active fixtures filtered by Set.</p></li>
+</ul>
+<p><strong>Grab Fixtures from a Controller:</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Tap {MTC In} in the I/O Settings popup, Midi Tab.</p></li>
-<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
-<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
-<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
+<li><p>Press [GRAB] - Grab Options popup will open.</p></li>
+<li><p>Press any Slider/Qkey/Aux Qkey controller button - All fixtures that are in the Controller’s active cue and have dimmer levels above Zero (or meet the Grab conditions selected in the popup) will be selected.</p></li>
 </ol>
-<p><strong>Transmit MSC:</strong></p>
-<p><span style="color:Gray">Not implemented yet.</span></p>
-<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+<p>👉 Pressing ENTER will put the selection in the EDITOR.</p>
+<p><strong>Grab Fixtures in a cue based on a {Library} SK selection:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Press [GRAB], tap a {Library} SK - All fixtures with matching libraries will be selected.</p></li>
+<li><p>Tap another {Library} SK - The Library will be swapped to the new library.</p></li>
+</ol>
+<p>👉 This is especially useful for quickly swapping colors in cues containing libraries</p>
+<p><strong>Select all parameters for a fixture selection:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures</p></li>
+<li><p>Press [VIBE] + [GRAB]</p></li>
+</ol>
+<p><strong>Select all Parameters with hard and tracked values outputting to the stage:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Press [GRAB] [ENTER]</li>
+</ol>
 
-</div>
 </div>
 </div>
             </section>
@@ -998,8 +956,8 @@ Markers’ names will appear also in the graphical view, on the bottom of the ma
           </div>
         </div>
       </div>
-<a href="macro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="topo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="patch.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="program.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

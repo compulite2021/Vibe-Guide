@@ -1,0 +1,522 @@
+
+# Editor 
+
+This chapter introduces to the editor, explaining the concept and syntax, then describing the ways of making fixture selections.
+
+**The following is covered in this chapter:**
+
+-  [6.1 Concept](#Concept-6.1)
+-  [6.2 Syntax](#Syntax-6.2)
+-  [6.3 Selection](#Selection-6.3)
+-  [6.4 Editor](#Editor-6.4)
+-  [6.5 Groups](#Groups-6.5)
+-  [6.6 Grab](#Grab-6.6)
+
+
+## Concept {#Concept-6.1}
+
+
+The Vibe is an advanced lighting control system designed to simplify programming in all styles of Entertainment lighting.
+
+- To simplify programming, Vibe uses an abstract layer that allows fixtures of different hardware types to be presented to the user in a universal way.
+    
+- Fixtures are programmed on the **Editor** either by using the programming syntax with the HardKeys or the Smart Screen pickers and features.
+
+-   The dedicated graphical "Smart Screen" presents global pickers for most parameters including: 
+
+-   Intensity picker for dimmer values and strobe effects
+
+-   Position picker with P/T and XYZ Trackpad 
+
+-   HSV color picker (Hue, Saturation, Intensity) 
+
+-   Wheel picker for Gobo, Prism, Animation and Color wheels 
+
+-   Beam picker for Iris, Zoom, Focus and Frost effects 
+
+-   Blade picker for framing system  
+
+**Real World Units**
+
+Where possible picker values are displayed in "Real World" units 
+
+-  XYZ P/T in degrees 
+
+-  Strobe in HZ 
+
+-  Color in HSV 0-360 degrees 
+
+-  Zoom in degrees
+
+**Virtual Parameters**
+
+To make it easier to work with fixtures using different color systems and XYZ tracking systems, Vibe creates virtual parameters that may not exist in the physical fixture. 
+
+Some examples are: 
+
+-  Virtual Intensity for controlling LED fixtures that do not have a dimmer parameter. 
+
+-  Virtual HSV as a common denominator for all color mixing systems of Multi-color fixtures, such as CMY, RGB, RGBA, RGBW, RGBACL, ... 
+
+-  Virtual XYZ coordinates for calibration of fixtures that only have physical Pan/Tilt parameters.
+    
+**Tracking Mode**
+
+Vibe by default is a tracking console and follows the conventions of modern show lighting. 
+
+Vibe also has a special track feature called **SKIP**: if cues are modified using **SKIP**, instead of **Qonly**, the relationship with the original hard value is maintained and changes to the original value skip over the modification and preserve the track.
+    
+**Qonly Mode**
+
+-   Modifications, insertions and deletions will be done Qonly by default.
+
+-   Move fades will still be valid.
+
+**Non-Tracking or Compulite Mode**
+
+Vibe can also program without tracking, by applying the Compulite Mode.
+
+Using Compulite Mode the defaults are changed to:
+
+-   Tracking turned off.
+
+-   Editor is not cleared after a Store.
+
+-   After Reset, Editor values mantain their last position instead of returning to home values.
+
+-   Controllers do not advance to the Cue after a Store.
+    
+**Color spaces**
+
+Vibe can work in three color spaces: 
+
+-  HSV: Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (or any color mixing parameter of the fixture) will be displayed, but not directly referenced in cues using virtual HSV.
+
+-  RGB, CMY, other: If color values are set by using the real color mixing parameters, physical values are stored in the cue and HSV values will be displayed but not directly referenced.
+
+**Virtual crossfading**
+
+By default the color and position crossfading is done by using the physical color parameters, but any Cue can be assigned to crossfade the virtual parameters instead.
+    
+**Maintain Selection**
+
+-   To avoid reselecting fixtures after a STORE command, Vibe maintains its selection on reset of the editor.
+
+-   To clear the editor and the fixture selection \[VIBE] (Shift) + \[RESET] must be pressed.
+
+
+## Syntax {#Syntax-6.2}
+
+
+Vibe uses a hybrid command syntax, called action syntax, that does not need an "enter" command to complete the sequences
+
+For keypad command line driven operations the command completes the sequence, the logic is:
+
+- Source Object, Filter, Options, Command (Action Completes)
+    
+\[Group 1] \[Full] \[Library 2 (Position) 1] \[Cue 1] \[Store Options] {Red + White} \[Store]
+
+For softkeys and controllers driven operations touching the object completes the sequence, the logic is:
+
+- Source Object, Filter, Command, Options, Destination (Object Completes)
+
+{GROUP} \[1] \[Full] \[LIBRARY] {Position} \[3] \[Store] \[Store Options] {Red Only} press any button on \[Controller 1]
+
+<p align=center> ![6.2-Syntax](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1KDPKeQ4NluvD0wiyguI%2F6.2-Syntax.webp?alt=media&token=31aee10a-5f67-486f-acf9-74a07ce7a760) </p>
+
+The **Command Line** is the area where commands appear as they are entered.
+
+- It is located on the Toolbar on the side of the \[VIBE] menu.
+
+- When in BLIND Mode the command line is bounded in yellow. 
+
+<p align=center> ![6.2-Command-Line](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkDZJqae8mjnHHGV0Fjcl%2F6.2-Command-Line.webp?alt=media&token=95e5e157-52d8-47cb-858a-4704459dd89d) </p>
+
+The **Selection Line** is the area where the active fixture selection appears.
+
+- It is located on the Smart Screen.
+
+- It shows the current fixture selection in the selection order.
+
+<p align=center> ![6.2-Selection-Line](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfWUDfU4FDXBtuSYI0Tlv%2F6.2-Selection-Line.webp?alt=media&token=e764e16c-1329-4221-aa21-e628e5604f0e) </p>
+
+
+## Selection {#Selection-6.3}
+
+
+In this guide FIXTURE will be the default SET, but any SET (Channel, Spot, Matrix, Server, User Sets) could also be applicable.
+
+Default SET is changed by double pressing the appropriate SET key
+
+Dimmer is implied, but parameter would normally be specified after  \[+ ⟶ -] and before value.
+
+ **\[CE]** will backspace the command line one character at a time. 
+
+ **\[Shift CE]** will clear the command line to the beginning and put the system in an idle state.
+
+Fixtures are selected using the **\[FIXTURE]** key on the keypad. 
+
+Fixtures on different Sets may be selected using the syntax **\[SET] \[#] \[FIXTURE] \[#]**. 
+
+Fixtures may be stored in Groups and recalled using the **\[GROUP]** key. 
+
+Fixtures may also be interactively selected via the Live, the Live Parameter and the Topo views.
+
+-   **\[+] \[-]** keys are valid with Fixture selections and Groups.
+    
+-   **\[FIXTURE]** . (dot) reselects the last selection.
+    
+-   **\[FIXTURE]** reselects all fixtures in the Editor.
+    
+-   **\[CE]** backspaces the command line one character at a time, but currently will not go back one command at a time.
+    
+-   **\[VIBE] + \[CE/CLEAR]** clears the command line.
+    
+-   **\[RELEASE]** removes the parameters from the Editor.
+
+  - First press releases the active parameters (last adjusted) for selected fixtures. 
+
+  - Second press releases all remaining parameters for selected fixtures.
+    
+-   **\[DESEL]** deselects all fixtures but maintains the values in the Editor. 
+
+> This function is usually used to protect the operator from accidentally adjusting parameters in the Editor when they are temporarily captured. It may also be used to "idle" the command line to allow \[TEXT] {SK} function while fixtures are still in the Editor.
+    
+-   **\[RESET]** releases all parameters from the Editor.
+    
+-   **\[VIBE] + \[RESET]** releases all parameters from the Editor and deselects all the fixtures.
+    
+-   **\[NEXT] / \[PREV]** increments or decrements fixtures in a selection. When used with a Group, will be confined to the fixtures in the Group.
+
+-   **\[VIBE] + \[NEXT] / \[PREV]** increments or decrements fixtures in a selection, keeping the fixtures' amount and distance.
+    
+**Command logic and shortcuts**
+
+- \[Fixture] # \[+ ⟶  -] \[Full] / \[Zero] (@100 and @00).
+        
+- \[Fixture] # \[+ ⟶  -] \[@] enter value. Two digits are required to complete value entry.
+        
+- \[Fixture] # \[+ ⟶  -] \[@] \[@] will set values to Full.
+        
+- \[Fixture] # \[+ ⟶  -] \[@] single value, \[ENTER]. 
+  > \[Fixture] \[1⟶ 6] \[@] \[5] \[ENTER] will set a value of 50%. 
+  > \[Fixture] \[1⟶ 6] \[@] \[7] \[ENTER] will set a value of 70%.
+        
+- Pressing \[ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
+        
+- \[Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon) popup under the **Behavior** Tab
+        
+- \[Fixture] # \[+ ⟶  -] \[@] \[+] \[value] or \[@] \[-] \[value] will make a **relative** change to the stage value. 
+  > {If the stage value is 50, @ + 10 will set the value to 60, @ - 30 would set the value to 20}. 
+
+The rules for single digit plus Enter will also apply.
+        
+- \[Fixture] # \[⟶ ] #, Parameter, \[@] {value] \[⟶] \[value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as \[Zero] and \[Full].
+        
+- \[Fixture] # \[⟶ ] # Parameter, \[@] \[value] \[⟶] \[⟶] \[value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
+        
+- Fixture **Dot** = Restore last. (There's a toolbar equivalent)
+        
+- Fixture ⟶  = Reselect Editor. (There's a toolbar equivalent)
+        
+- Fixtures and Parameters may be deselected using \[RELEASE / DESEL] Key. This leaves values in the editor but not under the control of the wheels.
+        
+- \[GROUP] # selects all fixtures that are recorded into the group. *The typed fixture order is preserved in a recorded group.
+        
+- With groups, parameters may be fanned via syntax as above, but their recorded order will be considered.
+        
+- Control without having to press Shift, Reset, which clears the values in the Editor.
+        
+- {LIBRARY} {LIBRARY}, will select and enter values from a library into the Editor. This is especially useful when using position libraries as groups with positions.
+
+### Selection Tools
+
+**Selection** button allows to split the fixtures' selection.
+
+Press \[SELECTION] on Prog and Play pages’ toolbar to access the features.
+
+Press \[RESTORE] to get back to the original selection.
+
+Press \[LOCK] to make the current selection as the new base selection.
+
+Press \[CE/CLEAR] to return to the upper toolbar’s menu.
+
+<p align=center> ![6.3-Selection-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FYwUeTwMPXiXgJgUPKeaz%2F6.3-Selection-Toolbar.webp?alt=media&token=b2540237-7697-457b-b51d-f63bd482aca5) </p>
+
+Selection toolbar has the following Selection Tools.
+
+-   {ODDS} - Absolute odd number in the range
+    
+-   {EVENS} - Absolute even numbers in the range
+    
+-   {2/1} - Grouping of 2 starting at the first fixture of the range (relative odd numbers)
+    
+-   {2/2} - Grouping of 2 starting at the second fixture of the range (relative even numbers)
+    
+-   {3/1} - Grouping of 3 starting at the first fixture of the range
+    
+-   {4/1} - Grouping of 4 starting at the first fixture of the range
+    
+-   { / } - Grouping of #/# starting at the # fixture of the range
+    
+> \[Fixture] \[1] \[⟶] \[14] {Selection Tools} \[3] {/} \[1] - would select fixtures 1,4,7,10,13
+as soon as the {/} is pressed EVERY 3/1 will be displayed on the selection line.
+    
+> \[Fixture] \[1] \[⟶] \[14] {Section Tools} \[3] {/} \[2] - would select fixtures 2,5,8,11,14
+as soon as the {/} is pressed EVERY 3/2 will be displayed on the selection line.
+
+### Order Tools
+
+**Order** button allows to make changes to the fixtures' selection order.
+
+Press \[ORDER] on Program and Playback pages’ toolbar to access the features.
+
+Press \[RESTORE] to get back to the original selection.
+
+Press \[CE/CLEAR] to return to the upper toolbar’s menu.
+
+<p align=center> ![6.3-Order-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHJZmcLO2KUe07AgJbfel%2F6.3-Order-Toolbar.webp?alt=media&token=e4ba881b-b2a3-494b-a497-f8375dffb035) </p>
+
+Order toolbar has the following Ordering Tools.
+
+-   {INVERT} - Inverts the selection order linearly
+    
+-   {MIRROR IN} - Mirrors the selection order from the extremes to the center
+    
+-   {MIRROR OUT} - Mirrors the selection order from the center to the extremes 
+
+-   {TRANSPOSE} - Transposes the raws and columns of the selection order (useful for matrixes)
+    
+-   {PATTERN} - Opens the Pattern popup with more advanced reordering tools
+    
+**Transpose**
+
+Transpose feature is used to reorder fixture selection based on a specified offset. 
+This is particularly useful for creating interesting effects and fanning.
+
+> Fixture 1 ⟶ 12 {Transpose} 2 \[ENTER] = 1+3+5+7+9+11+2+4+6+8+10+12
+
+> Fixture 1 ⟶ 12 {Transpose} 3 \[ENTER] = 1+4+7+10+2+5+8+11+3+6+9+12
+
+> Fixture 1 ⟶ 12 {Transpose} 4 \[ENTER] = 1+5+9+2+6+10+3+7+11+4+8+12
+
+**Pattern**
+
+Pattern feature is used to edit the selection order by using smart functions on a graphical interface. 
+The Pattern popup also includes all the other Order Tools.
+It can be used prior to entering the Advanced Effects editor to create more complex block patterns that are available using the basic {Block Of} and {Sub-Block Of} key in the effects editor.
+
+1. Make a fixture selection
+    
+2. Tap {Pattern} on the Editor Toolbar - The Pattern popup will open. 
+
+👉 <span style="color:Red">This is not an effect even though it is a dynamic display.</span>
+    
+3. Tap the indicator at the top of the displayed fixtures. - it turns white.
+    
+4. Select a number under the Block Size header.
+    
+5. Tap the {Spread} icon. - the columns will expand to show the new fixture order.
+    
+6. If desired make further order changes under the Offset Header and tap {offset} icon.
+    
+7. Make further modifications or reset the selection with the {Reset} {Invert} {Transpose} and {Invert Columns} keys.
+    
+8. Once finished, exit the popup by pressing Apply or \[ENTER].
+    
+9. Open the Advanced Effects editor and program the desired effect.
+
+👉 Simple Block and Sub Block groupings may be created in both Effects Editors with no need of using order tools, but the pattern feature allows more advanced blocks and groupings.
+
+
+## Editor {#Editor-6.4}
+
+
+All fixture selections and parameter modifications occur in the **Editor** (also called Programmer in other consoles). 
+
+The HardKeys panel, both virtual and physical, and the Smart Screen, are the most important components used to program the Editor.
+
+The **Live View** shows all values from both the fixtures in the Editor and the output from Controllers (also called Playbacks or Executors on other consoles). 
+
+Color coding is used to distinguish between values coming from the controllers and values in the Editor.
+
+<p align=center> ![6.4-Editor-Color-Coding](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbmMY5e60fqLGaFDsXh2p%2F6.4-Editor-Color-Coding.webp?alt=media&token=b9c294e2-4f13-465f-8eff-3d7efec4891b) </p>
+
+The Editor priority is always higher than the Playback priority, so any parameter moved in the Editor will overcome the values coming from any controller. 
+Release the parameter or the fixture from the Editor to get back to the controller's output values.
+
+### HardKeys
+
+The Editor Hardkeys are the buttons on the Vibe Panel use to program. 
+
+Vibe is a touch-based system, allowing efficient fixture manipulation through its smart on-screen features, but it is also possible to program it in a traditional syntax based way by pressing the hardkeys in the proper sequence.
+
+As all the other panel's physical components (buttons and controllers), also the Hardkeys may be added to the layout by using the **Virtual HardKeys** View.
+
+<p align=center> ![6.4-Virtual-Hardkeys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1iTnAReM8On90f9vBQn2%2F6.4-Virtual-Hardkeys.webp?alt=media&token=08d5f9d2-db3e-46cb-8fd5-00d85317a9fc) </p>
+
+### Blind Editor
+
+The Blind Editor is a parallel Editor used to create or modify objects without outputting values to the stage.
+
+When using Blind Editor the \[Blind] key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
+
+<p align=center> ![6.4-Blind-Editor](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMJkpGXULgJw7gqMw1YN1%2F6.4-Blind-Editor.webp?alt=media&token=55950c16-663c-4616-b097-e7ce825aaa23) </p>
+
+In Blind Editor the syntax and operations on the Objects, such as Store and Update, can be done exactly like in the Live Editor, but with no output on stage. 
+If a change is stored on content that is currently in Playback, then the output will be affected.
+
+Vibe has two Blind Editor behaviors:
+
+1. Blind acts as an independent editor, separate from the live editor.
+    
+2. Blind grabs the values from the live editor and viceversa. This is used to emulate the behavior of single editor consoles, where the main editor output is disabled while using the Blind Editor.
+    
+**To open the blind editor:**
+
+- Press \[BLIND] to open the Blind Editor empty, or as leaved at the last access.
+    
+- Press \[VIBE] + \[BLIND] to open the Blind Editor in single editor mode. The Live Editor contents are copied to the Blind Editor.
+
+**To exit the blind editor:**
+
+- Press \[BLIND] to close the Blind Editor and get back to the Live Editor. The contents in the Blind Editor are kept.
+    
+- Press \[VIBE] + \[BLIND] to exit the Blind Editor in single editor mode. The Blind Editor contents are copied and merged to the Live Editor. The contents in the Blind Editor are also kept.
+
+
+## Groups {#Groups-6.5}
+
+
+Groups are objects used to speed up the fixture selections, stored into the Groups Library.
+
+A Group allows to recall all the fixtures included in it by tapping on the softkey or pressing \[GROUP] \[#].
+
+👉 <span style="color:Red">The order that fixtures are selected is stored in the group.</span>.
+
+**Store Groups to SKs:**
+
+-   \[FIXTURE] \[#] \[+ ⟶ -] \[STORE] tap desired {Group Softkey} - it does not matter if levels are set, they will be ignored.
+    
+**Label SK Groups:**
+
+-   Directly after storing a group, start typing from the keyboard and a Text Entry popup will open.
+
+-   At any time, pressing the \[TEXT] key followed by tapping the SK will open the Text Entry popup.
+    
+**Store Groups via keypad syntax:**
+
+-   \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[GROUP] \[#] \[STORE].
+
+-   Pressing the \[TEXT] key after any Group store will open the Text Entry popup.
+    
+**Modify Groups using Group Settings popup:**
+
+Range text labeling may be done via this method.
+
+-   Using keypad, press \[GROUP] \[#] \[Settings] - the Group Settings pop-up will open. 
+
+-   Using SKs, tap the source {GROUP} SK and then press \[Settings] key.
+
+<p align=center> ![6.5-Group-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F76OfTXzWffC4XNPTWe2e%2F6.5-Group-Settings.webp?alt=media&token=7353486e-99d2-4d4f-bd7f-a66442fff2f1) </p>
+
+**Store Groups from existent Groups:**
+
+A new Group may be created from existing Groups by selecting multiple Groups using Group SKs or via keypad. 
+
+Press \[STORE] then tap destination {Group} SK or Press \[Group] \[#] \[STORE] to create the new Group. 
+
+The new Group will not be linked nor referenced to the original Groups.
+
+**Groups may be used to release fixtures:**
+
+-   With keypad, \[GROUP] \[#] \[RELEASE]
+
+-   With SKs, {Group #} [Release]
+    
+**Release a fixture from a Group Method 1:**
+
+-   With keypad, Fixture # \[+ ⟶ -], \[GROUP], #, \[STORE], Group popup appears, select {Release}
+
+-   With SKs, Fixture # [+ ⟶  -], [STORE], {Group SK}, Group popup appears, select {Release}
+
+**Release a fixture from a Group Method 2:**
+
+-   \[GROUP] \[#] \[EDIT], \[UPDATE] key flashes red (\[EDIT] tap {GROUP SK} is also valid)
+
+-   \[FIXTURE] \[#] \[RELEASE]
+
+-   Press \[UPDATE] to complete the sequence
+    
+**To Delete a Group:**
+
+-   With keypad, \[GROUP] # \[DELETE]
+
+-   With SKs, {GROUP} \[#] \[DELETE]
+
+
+## Grab {#Grab-6.6}
+
+
+Grab is a powerful tool for selecting fixtures that meet a number of conditions. 
+
+By default \[GRAB] selects all fixtures with intensity or virtual intensity values above Zero.
+
+Pressing \[GRAB] without a selection opens a popup on the Smart Screen with the following options.
+
+<p align=center> ![6.6-Grab](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLCIvikmAZUIsjxuJ0KkP%2F6.6-Grab.webp?alt=media&token=337448df-67ee-4040-8d69-0238ae5b1db3) </p>
+
+-   **{Filters}** 
+
+	-  {Stage} - Select anything that is live on the stage and meets the conditions below. 
+
+	-  {Editor} - Select anything that is in the Editor and meets the conditions below. 
+
+	-  {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
+    
+-   **{Conditions}** 
+
+	-   {All Fixtures} - Selects all fixtures that have any changes via the editor. 
+
+	-   {Active} - Fixture has intensity value over zero. 
+
+	-   {Invisible} - Recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
+
+	-   {Inactive} - Fixtures that have NO recorded values.
+    
+-   **{Parameter Selection}**
+
+	-  {All for Selected} Grabs all parameters for selected fixtures (shortcut is \[VIBE] + \[GRAB]) 
+
+	-  {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is \[GRAB] + \[ENTER]) 
+
+	-  {Search & Replace}.
+    
+-   \[SET] \[GRAB] selects all active fixtures filtered by Set.
+    
+**Grab Fixtures from a Controller:**
+
+1. Press \[GRAB] - Grab Options popup will open.
+
+2. Press any Slider/Qkey/Aux Qkey controller button - All fixtures that are in the Controller's active cue and have dimmer levels above Zero (or meet the Grab conditions selected in the popup) will be selected.
+    
+👉 Pressing ENTER will put the selection in the EDITOR.
+
+**Grab Fixtures in a cue based on a {Library} SK selection:**
+
+1. Press \[GRAB], tap a {Library} SK - All fixtures with matching libraries will be selected.
+
+2. Tap another {Library} SK - The Library will be swapped to the new library.
+    
+👉 This is especially useful for quickly swapping colors in cues containing libraries
+
+**Select all parameters for a fixture selection:**
+
+1.  Select the fixtures
+
+2.  Press \[VIBE] + \[GRAB]
+    
+**Select all Parameters with hard and tracked values outputting to the stage:**
+
+1.   Press \[GRAB] \[ENTER]
+

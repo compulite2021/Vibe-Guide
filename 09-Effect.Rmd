@@ -1,0 +1,539 @@
+
+# Effect
+
+This chapter deals with managing the effect engines and curves to create dynamic effects.
+
+**The following is covered in this chapter:**
+
+-  [9.1 Curves](#Curves-9.1)
+-  [9.2 Effect Editor](#Effect-Editor-9.2)
+-  [9.3 Pre-Built Effects](#Pre-Built-Effects-9.3)
+-  [9.4 Basic Effects](#Basic-Effects-9.4)
+-  [9.5 Advanced Effects](#Advanced-Effects-9.5)
+-  [9.6 Library Effects](#Library-Effects-9.6)
+-  [9.7 Effect Library](#Effect-Library-9.7)
+
+
+## Curves {#Curves-9.1}
+
+
+**Effects** are built from the following components:
+
+-   Parameters - selected from the created fixtures' available params.
+
+-   Patterns - curves that affect the fixture selection's order.
+
+-   Primitives - curves that affect the parameter's output values.
+
+The same Curves database, containing pre-built curves and user-created custom curves, is used by different features on Vibe:
+
+  - the **Effect Engine** to assign the curve to an effect
+
+  - the **Fan Mode** to set pattern curves to the parameter fanning
+
+  - the **Address View** to set specific curves to DMX addresses, such as dimmer curves
+
+All the **Curves** are listed in the **Curves View**
+
+<p align=center> ![9.1-Curves](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fq3lhjXPwsY2sz6YPJ8mZ%2F9.1-Curves.webp?alt=media&token=34e680d8-dda7-42b0-b806-539f97a31f7e) </p>
+
+The Curves View header has options to manage the Curves:
+
+  - New - to create a new curve
+
+  - Edit - to modify an existing curve
+
+  - Delete - to delete a custom curve; pre-built curves cannot be deleted
+
+  - Duplicate - to make a copy of an existing curve
+
+  - Favourite - to assign the **Favourite** tag to the curve, setting it in higher position on the list
+
+A Curve creation or editing will open the **Curve Editor** popup.
+
+<p align=center> ![9.1-Curve-Editor](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fe6g1ggJHcFJJhyMUY835%2F9.1-Curve-Editor.webp?alt=media&token=7c93e95a-35c0-48b4-8f58-17459aabe80c) </p>
+
+Tap the graphic to add anchor points.
+
+Tap the {Remove Point} button to remove anchor points.
+
+Tap an anchor point to select and move it on the grid.
+
+Tap the {Anchor/Control} button to switch between straight and curved lines between the points.
+
+A curved line can be made on both directions and be spread with the red linked buttons.
+
+{Snap Horizontally} and {Snap Vertically} buttons fix the anchor points to the grid's rows and columns.
+
+The Name box is to write a name for the curve.
+
+Tap Apply to store the Curve or Cancel to discard it.
+
+
+## Effect Editor {#Effects-Editor-9.2} 
+
+
+**Effects** are the combination of Parameters, Patterns and Primitives.
+
+Vibe has 2 Effect Engines that provide up to 4 ways of effect building.
+
+A **Basic** Effect Engine opens on the Smart Screen and allows the creation of:
+
+  - **Pre-built effects**
+
+  - **Basic effects**
+
+  To access the Basic Engine press the \[EFFECT] button with an active fixture selection and optionally a param selection.
+
+<p align=center> ![9.2-Basic-FX](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHUbNhTVfHlZ3RQPxOyDZ%2F9.2-Basic-FX.webp?alt=media&token=eac650bd-1007-471b-88f5-9bb8915f471c) </p>
+
+An **Advanced** Effect Engine opens on the Wide Screen and allows the creation of:
+
+  - **Advanced effects**
+
+  - **Library effects**
+
+  To access the Advanced Engine press the \[VIBE] + \[EFFECT] buttons with an active fixture selection and optionally a param selection.
+
+<p align=center> ![9.2-Advanced-FX](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyMP0qZtoDYvRxISKUSBO%2F9.2-Advanced-FX.webp?alt=media&token=dd28fa59-0a85-4068-9891-b863de84b10b) </p>
+
+Once a Fixture Selection is active, the effect editors can be opened even without a parameter selection, as that can be done afterwards, directly on the effect views.
+
+This is not valid for the Basic Effects, that will be based on the Params selected at the moment that the \[EFFECT] button is pressed.
+
+### Attributes 
+
+The Effect Editor on the Smart Screen has 2 tabs available:
+
+-   **Attributes** - Used for managing Effect, Pattern and Primitive Settings.
+    
+-   **Grouping** - Used for setting **Blocks Of** and **Sub Blocks**, to split the fixture selection order.
+
+Effect Settings can be applied in two modes:
+
+-   **Relative** - Changes are applied maintaining the offsets between the curves' settings.
+
+-   **Absolute** - Changes are applied with values that are equal for all the selection.
+
+The toggle choice between Relative and Absolute can be found both in the Basic and in the Advanced Effect Engine.
+
+**Effect Settings**
+
+Many different Settings can be used to customize the effect's cycle and the curves' distribution through the fixtures and the parameters involved.
+
+The following Effect Settings affect both the Pattern and the Primitives:
+
+-   **Offset All** - Moves the start time of the Effect Event along the X axis of the Effect Track.
+    
+-   **Param Spread** - Is a toggle button that enables the proportional offsetting of the start times of multiple Effect Tracks at the same time.
+
+👉 {Param Spread} is a quick way to make CMY or RGB effects where colors need to spread apart so as not to mix to black or white.
+
+**Pattern Settings**
+
+Some Effect Settings apply only to the Pattern, so they are called Pattern Settings.
+
+The **Pattern** is the curve that sets the order of fixture selection during its transitions across the effect.
+
+The Basic Effect Engine provides a selection of 4 Pattern possibilities:
+
+  - Fade In = Linear order
+
+  - Fade Out = Inverted order
+
+  - Saw Tooth = Mirrored order from sides to center
+
+  - Mirror = Mirrored order from center to sides
+
+The Advanced Effect Engine permits to assign any curve from the Curves database as the Pattern.
+
+The following Settings affect the Pattern:
+
+-   **Spread** - Sets the percentage of offset between each fixture in a selection. 100% would evenly divide up the selection's transition across the Primitive, while 0% would have all fixtures transitioning in unison.
+    
+-   **UP** - Based on the UP group #, each UP group will complete a full cycle across the Primitive before the next UP group can start.
+
+> With a selection of 8 fixtures assigned to a sine wave curve and a spread of 100%:
+> - if UP is set to 1, fixture 1 will have to complete its full cycle before fixture 2 will begin,
+> - if UP is set to 2, fixture 1 and 2 will split the cycle before the next two fixtures start.
+
+**Primitive Settings**
+
+Some Effect Settings apply only to the Primitive, so they are called Primitive Settings.
+
+The **Primitive** is the curve applied to the parameter, that makes its values changing accordingly to the curve's shape during the transitions cycle.
+
+The following Settings affect the Primitive:
+
+-   **Time** - The duration of time it takes each fixture to complete one cycle across the primitive.
+    
+-   **Size** - The amplitude of the primitive's curve, stating the param range of values.
+    
+-   **Base** - The start point of the primitive, stating the starting param values.
+    
+-   **Swing** - The direction from the parameters start point (Base).
+
+-   **Swing {Up} {Center} {Down}** - The keys to set the Swing at 0%, -50%, -100%.
+    
+> If the Base value of tilt is 50% (0°) and the **Swing** is **Center (-50%)**, tilt would split center with a sine wave primitive assigned to it. **Up (0%)** would send the tilt from strait down to full out into the audience. **Down (-100%)** would send the tilt from strait down to full up upstage.
+
+### Grouping
+
+Grouping tab allows to split the fixture selection order.
+
+1. Tap the {Grouping} key - The Grouping tab will show
+    
+2. If the Offset Pattern Spread is not above 0%, tap the {Wave On} key. The Spread will be changed to 100%.
+    
+3. Set the {Blocks Of} \[#] - This interleaves the Pattern into Groupings. 
+   
+  - The Default for **Blocks** and **Sub Block** is 1/0 - No Groupings. 
+   
+  - When {Blocks Of} is set to 1 or above, the Sub Blocks will move to 1 and Interleave Groups will be possible. 
+   
+  > 2/1 would interleave a selection into Odds/Evens. 
+   
+  > 3/1 would interleave a selection of 12 fixtures into \[1+4+7+10] - \[2+5+8+11] - \[3+6+9+12]
+    
+4. Set the {Sub Blocks Of} - Combines fixture in a selection, to act like single fixtures. 
+
+  > 12/2 would combine \[1+2] - \[3+4] - \[5+6] - \[7+8] - \[9+10] - \[11+12]
+
+👉 For Grouping to be noticeable there must be a Pattern Spread above 0%.
+
+👉 As a shortcut, Setting {Sub Block Of} back to 0 allows {Blocks Of} to combine fixtures instead of interleaving - 2/0 would combine \[1+2] - \[3+4] - \[5+6] - \[7+8] - \[9+10] - \[11+12]
+
+**Blocks by Groups** is a toggle option that allows to use Vibe Groups instead of Blocks and Sub Blocks.
+
+👉 This feature is very useful when an effect needs to run synchronized between groups of fixtures that don't have the same amount of fixtures.
+
+To Block by Groups, select the Groups as Fixture Selection before entering the Effect Editor.
+
+👉 Make sure {Sub Blocks Of} is set to 0 or the groups will act as interleave instead of blocks.
+
+
+## Pre-Built Effects {#Pre-Built-Effects-9.3}
+
+
+- **Pre-Built Effects** are the quickest and simplest way to build effects on Vibe.
+
+- They are based on pre-configured Parameters, Primitives and Effect Settings.
+
+- However the user can customize Pre-Built effects by editing all the available settings, using the Pre-Built library as a source to built new effects without starting from scratch.
+
+<p align=center> ![9.3-Basic-FX-Prebuilt](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FXiHJPVAF1tduGXAHaaNJ%2F9.3-Basic-FX-Prebuilt.webp?alt=media&token=d54f9b7f-8c4e-4ff1-b676-b2076a85a5d8) </p>
+
+To create a **Pre-Built Effect**:
+
+1.   Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] 
+
+2.   Press \[EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with No Effect Events.
+
+3.   Tap on {Pre Built} key on the right of the Smart Screen
+
+4.   Choose the parameter Bank on the bottom of the column
+
+5.   Tap on the desired Effect to launch it
+
+6.   The Params and Curves involved will be loaded on the Effect Engine
+
+The Smart Screen Effects Editor allows users to quickly build effects within the normal work flow of the console while still having access to the main live displays. 
+
+**Effect Tracks** are created for every selected parameter, but they are hidden from the view to get more space on the screen, and some advance operations are removed to speed up programming of simple effects.
+
+After programming an Effect, Close the editor using the Red X in the upper right corner.
+
+
+## Basic Effects {#Basic-Effects-9.4}
+
+
+- **Basic Effects** are built by using the Basic Effect Editor on the Small Screen.
+
+- A Basic Effect is obtained by applying a Pattern and a Primitive to the selected Parameters.
+
+<p align=center> ![9.3-Basic-FX-Curves](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2fwHGuG4TtLoOOPeWXrg%2F9.4-Basic-FX-Curves.webp?alt=media&token=dfd29926-584f-42ea-8a19-dfd0e974baeb) </p>
+
+To create a **Basic Effect**:
+
+1.   Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] 
+    
+2.  Select the Parameter or Parameters to be involved
+    
+3.  Press \[EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.
+    
+4.  Tap on {Curves} key on the right of the Smart Screen
+    
+5.  Tap on the desired Primitive - The Function shown on the Primitive will be loaded with a default linear Pattern.
+    
+6.  The Pattern may be changed by by tapping any of the following: 
+    
+  - / Fixtures move in a positive direction across the selection. 
+
+  - \ Fixture move in a negative direction across the selection. 
+
+  - /\ Fixture are mirrored from the center. 
+
+  - \/ Fixture are mirrored from the extremes.
+    
+7.  Set the Offset {Pattern Spread} - Default is 100%. 
+    
+  - 100% = Selection is divided 100% transitioning across the Primitive.
+
+  - 0% = all fixtures transition in unison.
+    
+8.  Set Swing Up, Center, Down, or at a specific level
+    
+9.  Adjust Size and Base to set the Low and High ranges of the values
+    
+10.  Set the Time and Rate - Rate is a multiplier of the time value. Default Effect Time is 4 seconds to complete the cycle
+
+👉 Similar results to inverting the pattern functions may be achieved by reversing the selection direction with the direction {⟵ Negative}, {Positive ⟶ } keys.
+
+👉 If more options are needed, the Advanced Effects Editor may be opened at any time by pressing \[VIBE] + \[EFFECTS] or the {Advanced...} key. All the Effects running in the Basic Effects Editor will be synchronized with the Advanced Effect Editor.
+
+
+## Advanced Effects {#Basic-Effects-9.5}
+
+
+- **Advanced Effects** are built by using the Advanced Effect Editor on the Wide Screen, as a popup that opens over the screen's page.
+
+- Both Basic and Advanced Effect Editors work on the same Effect Engine. Whichever is opened will be synchronized between the Effects Engines, but only one Effect Editor may opened at a time.
+
+- An Advanced Effect is also obtained by applying a Pattern and a Primitive to the selected Parameters, but it allows many more possibilities as it is characterized by independent and simultaneous **Effect Tracks**.
+
+- Each Effect Track can contain many different frames, called **Effect Events**, with independent primitives, patterns and settings. The result of an advanced effect can be someway similar to a Timeline of effects.
+
+<p align=center> ![9.5-Advanced-FX-Sample](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhcxZf2PRDNeIYg0GDAkk%2F9.5-Advanced-FX-Sample.webp?alt=media&token=3e17bd75-29e4-41fa-bbf6-eae7776bac74) </p>
+
+- Effect Tracks are made up of Effect Events running horizontally. 
+
+- Each Track must have:
+  - At least one Parameter. Additional parameters may be added but they will respond simultaneously to the Effect.
+  - At least one Effect Event. Additional events may be added to the track each with its own time base, or they may be merged and share the same time base.
+
+**Multi-track effects** are effects requiring more than one parameter may be stacked on separate Effects Tracks.
+    
+> Examples of Multi-track effects would be: 
+
+	- CMY and RGB color effects 
+
+	- Pan/Tilt Circles 
+
+	- Blade effects
+    
+-   It is possible to make simultaneous changes to Primitive, Pattern, and Effect settings by toggling them on/off. The selected elements will get a red background.
+
+<p align=center> ![9.5-Advanced-FX-Track](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ZbOmktpintRIcComkgd%2F9.5-Advanced-FX-Track.webp?alt=media&token=eac82de1-58be-48b6-8ddc-bb7fde160c86) </p>
+
+- The Advanced Effect Editor differs from the Basic Effect Editor in the following ways:
+
+ - Parameter selection is made in the Effects Editor not before entering it.
+
+ - Effect Tracks are shown.
+
+ - Multiple Parameters may be assigned to the same Effect Track.
+
+<p align=center> ![9.5-Advanced-FX-Param](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPHFYFoRqs5m2USGbfunU%2F9.5-Advanced-FX-Param.webp?alt=media&token=88dbc825-b78a-42fa-8379-ff9c43dcbb08) </p>
+
+ - Multiple Events may be assigned to the same Effect Track.
+
+<p align=center> ![9.5-Advanced-FX-Curve](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNb8KNveRezoyrFOltOPe%2F9.5-Advanced-FX-Curve.webp?alt=media&token=a38975d6-1eb1-4508-af59-3d316245fb09) </p>
+
+ - Effect sharing the same Effect Track can uses separate patterns or share patterns.
+    
+ - Pattern Size, Rate, and Base may be spread to create randomized looking effects.
+    
+ - Repeat allows to set the number of times each Effect Event repeats before moving on the the next Effects Event, when they are on the same Effect Track.
+
+ - Only a fixture selection is needed before entering the editor. Parameters are selected on the effect editor using the {Filter} and {Choose Parameter} keys.
+
+<p align=center> ![9.5-Advanced-FX-Params](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQ9DFENGAmwZS4avceKwt%2F9.5-Advanced-FX-Params.webp?alt=media&token=f065998c-2e83-47d0-a1b3-2b49b5822bfc) </p>
+
+To create an **Advanced Effect**:
+
+1.  Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶  -] \[#] 
+    
+2.  Press \[VIBE] + \[EFFECT] to open the Advanced Effect Editor
+
+3.  Select a Banks in the Filter area
+    
+4.  Select a Parameter in the Choose Parameter area - the parameter background will turn purple.
+    
+5.  Tap a blank space in the Parameter Column of an unassigned Effect Track - the parameter will be assigned to the Attributes Column.
+
+6. Tap a Curve from the Favorites tab or the All Curves tab - the primitive curve background will turn purple.
+
+7. Tap a blank space in the Effect Event Column - an Effect Event will be created with a Primitive and a Pattern.
+
+8. To adjust Pattern and Primitive settings, tap on them and set the options with the virtual sliders in the right area
+
+9. To adjust Effect settings, tap on the Track's empty area and set the options with the virtual sliders in the right area
+
+10. Close the Advanced editor using the Red X in the upper right corner.
+
+11. Store the whole Effect directly to a cue or scene or to an Effects Library.
+
+- Advanced Effects can have many Effect Events on the same Effect Track based on different parameters.
+
+- Advanced Effects can have many Effect Tracks based on different parameters that will run simultaneously, but only **one track per Param** is allowed.
+
+**Combine Parameters**:
+
+1.  Tap a parameter bank in the Filters area
+    
+2.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple
+    
+3.  Tap a space in the Parameter Column already containing a parameter - the parameter will be merged into the parameter column 
+
+- All Primitives and Patterns will affect both parameters.
+
+**Stack Effects Events**:
+
+1.  Tap a Function from the Favorites tab or All Functions tab - the Function background will turn purple
+    
+2.  Tap the space to the right of an existing Effect Even - a new Effect Event will be stacked beside the existing one
+
+- Each Stacked Effect Event can have its own Primitive and Pattern.
+
+**Combine Effects Events**:
+
+1.  Drag and drop the primitive of an Effect Event over an adjacent primitive - the primitives will be merged into the same event
+
+- The primitives will now be combined and will share the pattern settings.
+    
+**Duplicate Effects Events**:
+
+1.  Tap either the pattern or primitive are of an Effect Event - the background of the pattern or primitive will turn red and the Effects Toolbar will open under the Effects Tracks.
+    
+2.  Tap {+ Duplicate} - a duplicate of the Effect Event will be added to the right of the source Effect Event
+
+**Copy an Effect Track**:
+
+Copies the Effect Event settings to a new parameter, this will synchronize the effect between the parameters.
+
+1.  Tap a parameter bank in the Filters area
+    
+2.  Tap a parameter in the Choose Parameter area - the parameter background will turn purple
+    
+3.  Tap a blank space in the Parameter Column below an assigned Effect Track - the parameter will be assigned
+    
+4.  Press the empty area to the right of the source Effect Event - the blank area will turn light blue and the Effects Toolbar will open under the Effects Tracks
+    
+5.  Tap {Copy} - the source Effect Event's settings will be copied
+    
+6.  Tap in the blank area to the right of the new parameter - the area will turn blue and the Effects Toolbar will open under the Effects Tracks
+    
+7.  Tap {Paste} - the source Effect Event settings will be pasted to the new parameter.
+
+**Delete an Effect Event**:
+
+1.  Tap either the pattern or primitive of the event to be deleted - the background will turn red
+    
+2.  Tap {Delete} on the Effects Toolbar below the Effect Tracks
+
+**Release a parameter from an effect**:
+
+Effect Parameters may be released using Edit Cue or Update pop-up.
+
+-   **Edit Cue**
+
+👉 Cue must be active on a controller or it will be loaded to the Master Controller and bump its current Qlist out.
+
+1.  \[QLIST] \[#] \[CUE] \[#] \[EDIT] - Cue values will be placed in the Editor and the \[UPDATE] key will flash red.
+    
+2.  Press \[VIBE] + \[EFFECT] - The Advanced Effect Editor will open.
+    
+3.  Select the fixtures requiring parameters to be released.
+    
+4.  Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6.  Press \[UPDATE] to complete the edit and restore control to the source controller.
+
+-   **Update** 
+
+👉 Cue being edited must be active on a controller.
+    
+1.  Select the fixtures requiring parameters to be released.
+    
+2.  Press the the parameter's push wheel, or tap the wheel display above the wheel, to select the parameter.
+    
+3.  Press \[VIBE] + \[EFFECT] - opens Advanced Editor.
+    
+4.  Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.
+    
+5.  Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - Stage values will be returned to their recorded base values or home values if they had no programmed base values.
+    
+6.  Press \[UPDATE] - The Update popup will open.
+    
+7.  Make sure the proper cue is selected in the Cue column.
+    
+8.  Tap Apply or press \[ENTER] to complete the update operation.
+
+
+## Library Effects {#Library-Effects-9.6}
+
+
+- **Library Effects** are built by using the Advanced Effect Editor on the Wide Screen.
+
+- Library Effects are effects between libraries that can be stored in cues and scenes as well as in the effect library and managed as a normal effects, but they keep the library references.
+
+- Editing any of the reference libraries will automatically update the library effect (same as Cues and Scenes stored with library references).
+
+<p align=center> ![9.6-Library-FX](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F7kpfiUYHHVTWvqRG9lRY%2F9.6-Library-FX.webp?alt=media&token=a2ca09d2-c4c5-4544-9cb2-ae517dd5910e) </p>
+
+To create a **Library Effect**:
+
+1.  Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶  -] \[#] 
+
+2.  Press \[VIBE] + \[EFFECT] to open the Advanced Effect Editor
+
+3.  Tap {Library Effects}
+
+4.  Select a Banks in the Filter area
+    
+5.  Select a Library in the Choose Library area - the library background will turn purple.
+    
+6.  Tap the effect track to add the starting library
+
+7.  Choose another Library in the Choose Library area
+
+8.  Tap the right side of the effect event to add the ending library
+
+9.  Tap a Curve from the Favorites tab or the All Curves tab - the primitive curve background will turn purple.
+
+10.  Tap on the effect event to assign the fading curve between the libraries  - an Effect Event will be created with a Primitive and a Pattern.
+
+11.  To adjust Pattern and Primitive settings, tap on them and set the options with the virtual sliders in the right area
+
+12.  To adjust Effect settings, tap on the Track's empty area and set the options with the virtual sliders in the right area
+
+13.  Close the Advanced editor using the Red X in the upper right corner.
+
+14.  Store the whole Effect directly to a cue or scene or to an Effects Library.
+
+- Same as Advanced Effects, Library Effects can have many Effect Events on the same Effect Track based on different libraries.
+
+- Same as Advanced Effects, Library Effects can have many Effect Tracks based on different libraries that will run simultaneously, but only **one track per Bank** is allowed.
+
+- An Effect can have both Advanced and Library Events, but the same parameter cannot be on more Tracks at the same time.
+
+- Library Effect settings and operations are managed in the same way as Advanced Effect settings and operations are done.
+
+
+## Effect Library {#Effect-Library-9.7}
+
+
+- Once an effect has been created, it may be directly stored in cues and scenes or saved in **Effect Libraries** for future use.
+
+- Effect Libraries are stored like any other Library and have a specific Effect Library Sofkey view to recall them.
+
+- By Default Effect Libraries are "Parameter Specific" with disabled Reference, Timing and Base, and they filter and store all parameter types.
+
+- Default Settings for Effect Libraries can be changed in System Settings popup, in the Defaults tab. Individual settings can be set on each stored Effect Library.
+
+- Effect Libraries have an additional option to include or exclude the base values. Include Base is useful when effects must start from an absolute value.
+
+- Effect Libraries operations are managed in the same way as all other library operations are done.
+

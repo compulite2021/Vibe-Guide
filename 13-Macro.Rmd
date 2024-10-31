@@ -1,0 +1,110 @@
+
+# Macro
+
+This chapter deals with creating and triggering custom command sequences called Macros.
+
+**The following is covered in this chapter:**
+
+-  [13.1 Teach Macros](#Teach-Macros-13.1)
+-  [13.2 Trigger Macros](#Trigger-Macros-13.2)
+-  [13.3 Attach Macros](#Attach-Macros-13.3)
+-  [13.4 Macro Time](#Macro-Time-13.4)
+
+
+## Teach Macros {#Teach-Macros-13.1}
+
+
+Macros can be created using the **Teach Macro** recorder. 
+In future releases this will expand to include manually editable macros, where the macro time is automatically recorded with macros and the user may decide whether to enable time or ignore it.
+
+**Store a Macro:**
+
+1.  Press \[TEACH] - Vibe will enter Teach Macro record mode and the \[TEACH] key will flash red.
+    
+2.  Press editor keys or controller buttons as required.
+    
+3.  Press \[TEACH] again to terminate the recording - the \[TEACH] key will stop flashing and the key presses are now stored in the Macro clipboard.
+    
+4.  Press \[STORE] \[HERE] to a Macro Softkey. 
+
+OR  Press \[MACRO] \[#] \[STORE] - The Macro is now stored.
+    
+5.  Press \[TEXT] to open the Text popup and label the Macro - this is only valid directly after storing the Macro, otherwise \[MACRO] \[#] \[TEXT] may be used at any time.
+
+Macros may be viewed on the Exam view:
+
+<p align=center> ![13.1-Macro-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBzuKpOpf14wLkGEEhTVA%2F13.1-Macro-Exam.webp?alt=media&token=55197489-cdbe-4beb-bdf7-e7331b615336) </p>
+
+
+## Trigger Macros {#Trigger-Macros-13.2}
+
+
+Macros may be directly triggered using the keypad or the Macro Softkeys.
+
+**Trigger a Macro using the keypad:**
+
+-   \[MACRO] \[#] \[ENTER]
+    
+**Trigger a Macro using Macro Softkeys:**
+
+-   Tap the required {Macro} Softkey.
+    
+**Trigger a Macro from a Qkey:** 
+
+-   Assign the Macro to the Qkey by pressing \[MACRO] \[#] \[HERE] to any Qkey button.
+    
+-   Press the Qkey button to trigger.
+
+    
+## Attach Macros {#Attach-Macros-13.3}
+
+
+Macros may be attached and triggered from Cues.
+Macros are triggered when:
+
+-   The Qlist is advanced to the cue with the trigger.
+    
+-   \[GOTO] commands are used.
+    
+-   \[CUE] \[#] \[GO] is used.
+    
+<span style="color:Red">Back commands will not trigger Macros.</span>
+
+**Attach a Macro to a Cue:**
+
+-   \[CUE] \[#] \[MACRO] \[#] \[STORE]
+    
+**Release a Macro from a Cue:**
+
+-   \[CUE] \[#] \[MACRO] \[#] \[RELEASE]
+    
+**Release all Macros from a Cue:**
+
+-   \[CUE] \[#] \[MACRO] \[RELEASE]
+    
+**Disable triggers:**
+
+1.    Tap the controller display header for the Qlist that contains Macro or Snap triggers
+
+OR    \[SETTINGS] \[HERE] to any controller button and select the Qlist Properties tab.
+
+ - The Qlist Properties popup will appear. 
+    
+2.   Deselect the {Trigger} button.
+
+ - Triggering will be disabled for the Qlist assigned to that specific controller.
+    
+<p align=center> ![13.3-Qlist-Preferences](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F188nTOMZ5WJxMWy80rKd%2F13.3-Qlist-Preferences.webp?alt=media&token=107a342e-1465-4763-ba67-de2ec7348262) </p>
+
+
+## Macro Time {#Macro-Time-13.4}
+
+
+**Set a Macro Time:**
+
+<span style="color:Gray">Not implemented yet.</span>
+
+1.   <span style="color:Gray">Use steps 1 ⟶  3 to store the macro to the Macro clipboard.</span>
+    
+2.   <span style="color:Gray">Press \[MACRO] \[#] \[TIME] \[STORE] - The Macro is now stored including it's timing.</span>
+    

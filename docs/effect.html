@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Timeline | Vibe Manual</title>
+  <title>Chapter 9 Effect | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta property="og:title" content="Chapter 9 Effect | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 9 Effect | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="macro.html"/>
-<link rel="next" href="topo.html"/>
+<link rel="prev" href="library.html"/>
+<link rel="next" href="scene-qlist.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -556,441 +556,428 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="timeline" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Timeline<a href="timeline.html#timeline" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.</p>
+<div id="effect" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Effect<a href="effect.html#effect" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter deals with managing the effect engines and curves to create dynamic effects.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="timeline.html#Timelines-14.1">14.1 Timelines</a></li>
-<li><a href="timeline.html#Time-Code-14.2">14.2 Time Code</a></li>
-<li><a href="timeline.html#MIDI-14.3">14.3 MIDI</a></li>
+<li><a href="effect.html#Curves-9.1">9.1 Curves</a></li>
+<li><a href="#Effect-Editor-9.2">9.2 Effect Editor</a></li>
+<li><a href="effect.html#Pre-Built-Effects-9.3">9.3 Pre-Built Effects</a></li>
+<li><a href="effect.html#Basic-Effects-9.4">9.4 Basic Effects</a></li>
+<li><a href="#Advanced-Effects-9.5">9.5 Advanced Effects</a></li>
+<li><a href="effect.html#Library-Effects-9.6">9.6 Library Effects</a></li>
+<li><a href="effect.html#Effect-Library-9.7">9.7 Effect Library</a></li>
 </ul>
-<div id="Timelines-14.1" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Timelines<a href="timeline.html#Timelines-14.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses a philosophy of Timeline Tracks.</p>
-<p>There is no limit to the number of Timeline Tracks that may be recorded in a show.</p>
-<p>Timelines can be added to a Timeline View and played simultaneously following an internal or external Time Code.</p>
-<p><strong>Vibe can read the following Time Code sources</strong>:</p>
+<div id="Curves-9.1" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Curves<a href="effect.html#Curves-9.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Effects</strong> are built from the following components:</p>
 <ul>
-<li><p>Virtual Local - Internally generated Time Code.</p></li>
-<li><p>Physical Local - SMPTE or MIDI Time Code received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
-<li><p>USB MIDI class compliant Time Code.</p></li>
-<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
-<li><p>Input sources from remote Multi-User consoles and devices</p></li>
+<li><p>Parameters - selected from the created fixtures’ available params.</p></li>
+<li><p>Patterns - curves that affect the fixture selection’s order.</p></li>
+<li><p>Primitives - curves that affect the parameter’s output values.</p></li>
 </ul>
-<p>Vibe can record data from multiple controllers simultaneously.</p>
-<p>Additional timeline subtracks will be created on a per controller basis.</p>
-<p>Vibe also supports fader automation on timeline tracks.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyNOEZfLp8MiQtJSklmZ3%2F14.1-TL-Recorded.webp?alt=media&amp;token=7985f2a7-5a46-4d2e-b1c2-f55e3fd4059f" alt="14.1-TL-Recorded" />
-</p>
-<p>Vibe automatically matches frame rates to the incoming source.</p>
-<p>Supported frame rates are:</p>
+<p>The same Curves database, containing pre-built curves and user-created custom curves, is used by different features on Vibe:</p>
 <ul>
-<li><p>24 FPS</p></li>
-<li><p>25 FPS</p></li>
-<li><p>29.97 FPS drop-frame</p></li>
-<li><p>30 FPS</p></li>
+<li><p>the <strong>Effect Engine</strong> to assign the curve to an effect</p></li>
+<li><p>the <strong>Fan Mode</strong> to set pattern curves to the parameter fanning</p></li>
+<li><p>the <strong>Address View</strong> to set specific curves to DMX addresses, such as dimmer curves</p></li>
 </ul>
-<div id="view" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> View<a href="timeline.html#view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the layout.</p>
-<p>Unlimited Timeline views may be created and each Timeline View may have its own <strong>Time Code</strong>.</p>
-<p>As long as more Timeline views are set on different clock sources, they can load different Timelines and moved independently.</p>
-<p>If Timeline views are based on the same clock source, they will be synchronized and will load the same tracks and options.</p>
+<p>All the <strong>Curves</strong> are listed in the <strong>Curves View</strong></p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOh7gGt5br6lurFzsNdes%2F14.1-TL-View.webp?alt=media&amp;token=d7eb125f-df73-4bc3-9126-0e860424f46a" alt="14.1-TL-View" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fq3lhjXPwsY2sz6YPJ8mZ%2F9.1-Curves.webp?alt=media&amp;token=34e680d8-dda7-42b0-b806-539f97a31f7e" alt="9.1-Curves" />
 </p>
-<p>The Timeline view shows all the active Timelines and allows to enable and disable them, or play in “solo” mode.</p>
-<p>Use the Timeline view’s menu to load the Timelines on the view, as well as to create, edit or delete Timelines.</p>
+<p>The Curves View header has options to manage the Curves:</p>
+<ul>
+<li><p>New - to create a new curve</p></li>
+<li><p>Edit - to modify an existing curve</p></li>
+<li><p>Delete - to delete a custom curve; pre-built curves cannot be deleted</p></li>
+<li><p>Duplicate - to make a copy of an existing curve</p></li>
+<li><p>Favourite - to assign the <strong>Favourite</strong> tag to the curve, setting it in higher position on the list</p></li>
+</ul>
+<p>A Curve creation or editing will open the <strong>Curve Editor</strong> popup.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fe6g1ggJHcFJJhyMUY835%2F9.1-Curve-Editor.webp?alt=media&amp;token=7c93e95a-35c0-48b4-8f58-17459aabe80c" alt="9.1-Curve-Editor" />
+</p>
+<p>Tap the graphic to add anchor points.</p>
+<p>Tap the {Remove Point} button to remove anchor points.</p>
+<p>Tap an anchor point to select and move it on the grid.</p>
+<p>Tap the {Anchor/Control} button to switch between straight and curved lines between the points.</p>
+<p>A curved line can be made on both directions and be spread with the red linked buttons.</p>
+<p>{Snap Horizontally} and {Snap Vertically} buttons fix the anchor points to the grid’s rows and columns.</p>
+<p>The Name box is to write a name for the curve.</p>
+<p>Tap Apply to store the Curve or Cancel to discard it.</p>
 </div>
-<div id="record" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Record<a href="timeline.html#record" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After a Timeline View has been created, timeline tracks may be recorded.
-Timeline events may be recorded in “real time” and then edited afterwards.</p>
-<p><strong>Create a timeline track:</strong></p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoNmp9u7TitOInt5iiRuA%2F14.1-Create-Timeline.webp?alt=media&amp;token=b5395505-25d3-43c0-bd94-cce6a48cf8eb" alt="14.1-Create-Timeline" />
-</p>
-<ol style="list-style-type: decimal">
-<li><p>Open the Timeline View menu.</p></li>
-<li><p>Tap + and the “Create New Timeline” popup will open.</p></li>
-<li><p>Select a timeline number and name.</p></li>
-<li><p>Choose Start from {Blank} or {Existing} Timeline and Apply.</p></li>
-<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p></li>
-</ol>
+<div id="Effects-Editor-9.2" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Effect Editor<a href="effect.html#Effects-Editor-9.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Effects</strong> are the combination of Parameters, Patterns and Primitives.</p>
+<p>Vibe has 2 Effect Engines that provide up to 4 ways of effect building.</p>
+<p>A <strong>Basic</strong> Effect Engine opens on the Smart Screen and allows the creation of:</p>
 <ul>
-<li><p>Virtual Local - Use internal timecode clock.</p></li>
-<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
-<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
+<li><p><strong>Pre-built effects</strong></p></li>
+<li><p><strong>Basic effects</strong></p></li>
 </ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Enable the red {Record} button or the {+ Record} button.</li>
-</ol>
+<p>To access the Basic Engine press the [EFFECT] button with an active fixture selection and optionally a param selection.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGYHhuOgYXG6ubGBALCOi%2F14.1-TL-Transport-Bar.webp?alt=media&amp;token=69968ead-6581-4b19-821a-3e6cd3992072" alt="14.1-TL-Transport-Bar" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHUbNhTVfHlZ3RQPxOyDZ%2F9.2-Basic-FX.webp?alt=media&amp;token=eac650bd-1007-471b-88f5-9bb8915f471c" alt="9.2-Basic-FX" />
 </p>
+<p>An <strong>Advanced</strong> Effect Engine opens on the Wide Screen and allows the creation of:</p>
 <ul>
-<li><p>{Record} overwrites the existing events.</p></li>
-<li><p>{+ Record} adds new events to the existing ones.</p></li>
+<li><p><strong>Advanced effects</strong></p></li>
+<li><p><strong>Library effects</strong></p></li>
+</ul>
+<p>To access the Advanced Engine press the [VIBE] + [EFFECT] buttons with an active fixture selection and optionally a param selection.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyMP0qZtoDYvRxISKUSBO%2F9.2-Advanced-FX.webp?alt=media&amp;token=dd28fa59-0a85-4068-9891-b863de84b10b" alt="9.2-Advanced-FX" />
+</p>
+<p>Once a Fixture Selection is active, the effect editors can be opened even without a parameter selection, as that can be done afterwards, directly on the effect views.</p>
+<p>This is not valid for the Basic Effects, that will be based on the Params selected at the moment that the [EFFECT] button is pressed.</p>
+<div id="attributes" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Attributes<a href="effect.html#attributes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Effect Editor on the Smart Screen has 2 tabs available:</p>
+<ul>
+<li><p><strong>Attributes</strong> - Used for managing Effect, Pattern and Primitive Settings.</p></li>
+<li><p><strong>Grouping</strong> - Used for setting <strong>Blocks Of</strong> and <strong>Sub Blocks</strong>, to split the fixture selection order.</p></li>
+</ul>
+<p>Effect Settings can be applied in two modes:</p>
+<ul>
+<li><p><strong>Relative</strong> - Changes are applied maintaining the offsets between the curves’ settings.</p></li>
+<li><p><strong>Absolute</strong> - Changes are applied with values that are equal for all the selection.</p></li>
+</ul>
+<p>The toggle choice between Relative and Absolute can be found both in the Basic and in the Advanced Effect Engine.</p>
+<p><strong>Effect Settings</strong></p>
+<p>Many different Settings can be used to customize the effect’s cycle and the curves’ distribution through the fixtures and the parameters involved.</p>
+<p>The following Effect Settings affect both the Pattern and the Primitives:</p>
+<ul>
+<li><p><strong>Offset All</strong> - Moves the start time of the Effect Event along the X axis of the Effect Track.</p></li>
+<li><p><strong>Param Spread</strong> - Is a toggle button that enables the proportional offsetting of the start times of multiple Effect Tracks at the same time.</p></li>
+</ul>
+<p>👉 {Param Spread} is a quick way to make CMY or RGB effects where colors need to spread apart so as not to mix to black or white.</p>
+<p><strong>Pattern Settings</strong></p>
+<p>Some Effect Settings apply only to the Pattern, so they are called Pattern Settings.</p>
+<p>The <strong>Pattern</strong> is the curve that sets the order of fixture selection during its transitions across the effect.</p>
+<p>The Basic Effect Engine provides a selection of 4 Pattern possibilities:</p>
+<ul>
+<li><p>Fade In = Linear order</p></li>
+<li><p>Fade Out = Inverted order</p></li>
+<li><p>Saw Tooth = Mirrored order from sides to center</p></li>
+<li><p>Mirror = Mirrored order from center to sides</p></li>
+</ul>
+<p>The Advanced Effect Engine permits to assign any curve from the Curves database as the Pattern.</p>
+<p>The following Settings affect the Pattern:</p>
+<ul>
+<li><p><strong>Spread</strong> - Sets the percentage of offset between each fixture in a selection. 100% would evenly divide up the selection’s transition across the Primitive, while 0% would have all fixtures transitioning in unison.</p></li>
+<li><p><strong>UP</strong> - Based on the UP group #, each UP group will complete a full cycle across the Primitive before the next UP group can start.</p></li>
+</ul>
+<blockquote>
+<p>With a selection of 8 fixtures assigned to a sine wave curve and a spread of 100%:
+- if UP is set to 1, fixture 1 will have to complete its full cycle before fixture 2 will begin,
+- if UP is set to 2, fixture 1 and 2 will split the cycle before the next two fixtures start.</p>
+</blockquote>
+<p><strong>Primitive Settings</strong></p>
+<p>Some Effect Settings apply only to the Primitive, so they are called Primitive Settings.</p>
+<p>The <strong>Primitive</strong> is the curve applied to the parameter, that makes its values changing accordingly to the curve’s shape during the transitions cycle.</p>
+<p>The following Settings affect the Primitive:</p>
+<ul>
+<li><p><strong>Time</strong> - The duration of time it takes each fixture to complete one cycle across the primitive.</p></li>
+<li><p><strong>Size</strong> - The amplitude of the primitive’s curve, stating the param range of values.</p></li>
+<li><p><strong>Base</strong> - The start point of the primitive, stating the starting param values.</p></li>
+<li><p><strong>Swing</strong> - The direction from the parameters start point (Base).</p></li>
+<li><p><strong>Swing {Up} {Center} {Down}</strong> - The keys to set the Swing at 0%, -50%, -100%.</p></li>
+</ul>
+<blockquote>
+<p>If the Base value of tilt is 50% (0°) and the <strong>Swing</strong> is <strong>Center (-50%)</strong>, tilt would split center with a sine wave primitive assigned to it. <strong>Up (0%)</strong> would send the tilt from strait down to full out into the audience. <strong>Down (-100%)</strong> would send the tilt from strait down to full up upstage.</p>
+</blockquote>
+</div>
+<div id="grouping" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> Grouping<a href="effect.html#grouping" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Grouping tab allows to split the fixture selection order.</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap the {Grouping} key - The Grouping tab will show</p></li>
+<li><p>If the Offset Pattern Spread is not above 0%, tap the {Wave On} key. The Spread will be changed to 100%.</p></li>
+<li><p>Set the {Blocks Of} [#] - This interleaves the Pattern into Groupings.</p></li>
+</ol>
+<ul>
+<li><p>The Default for <strong>Blocks</strong> and <strong>Sub Block</strong> is 1/0 - No Groupings.</p></li>
+<li><p>When {Blocks Of} is set to 1 or above, the Sub Blocks will move to 1 and Interleave Groups will be possible.</p></li>
+</ul>
+<blockquote>
+<p>2/1 would interleave a selection into Odds/Evens.</p>
+</blockquote>
+<blockquote>
+<p>3/1 would interleave a selection of 12 fixtures into [1+4+7+10] - [2+5+8+11] - [3+6+9+12]</p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li>Set the {Sub Blocks Of} - Combines fixture in a selection, to act like single fixtures.</li>
+</ol>
+<blockquote>
+<p>12/2 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]</p>
+</blockquote>
+<p>👉 For Grouping to be noticeable there must be a Pattern Spread above 0%.</p>
+<p>👉 As a shortcut, Setting {Sub Block Of} back to 0 allows {Blocks Of} to combine fixtures instead of interleaving - 2/0 would combine [1+2] - [3+4] - [5+6] - [7+8] - [9+10] - [11+12]</p>
+<p><strong>Blocks by Groups</strong> is a toggle option that allows to use Vibe Groups instead of Blocks and Sub Blocks.</p>
+<p>👉 This feature is very useful when an effect needs to run synchronized between groups of fixtures that don’t have the same amount of fixtures.</p>
+<p>To Block by Groups, select the Groups as Fixture Selection before entering the Effect Editor.</p>
+<p>👉 Make sure {Sub Blocks Of} is set to 0 or the groups will act as interleave instead of blocks.</p>
+</div>
+</div>
+<div id="Pre-Built-Effects-9.3" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Pre-Built Effects<a href="effect.html#Pre-Built-Effects-9.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><strong>Pre-Built Effects</strong> are the quickest and simplest way to build effects on Vibe.</p></li>
+<li><p>They are based on pre-configured Parameters, Primitives and Effect Settings.</p></li>
+<li><p>However the user can customize Pre-Built effects by editing all the available settings, using the Pre-Built library as a source to built new effects without starting from scratch.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FXiHJPVAF1tduGXAHaaNJ%2F9.3-Basic-FX-Prebuilt.webp?alt=media&amp;token=d54f9b7f-8c4e-4ff1-b676-b2076a85a5d8" alt="9.3-Basic-FX-Prebuilt" />
+</p>
+<p>To create a <strong>Pre-Built Effect</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a Fixture Selection: [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#]</p></li>
+<li><p>Press [EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with No Effect Events.</p></li>
+<li><p>Tap on {Pre Built} key on the right of the Smart Screen</p></li>
+<li><p>Choose the parameter Bank on the bottom of the column</p></li>
+<li><p>Tap on the desired Effect to launch it</p></li>
+<li><p>The Params and Curves involved will be loaded on the Effect Engine</p></li>
+</ol>
+<p>The Smart Screen Effects Editor allows users to quickly build effects within the normal work flow of the console while still having access to the main live displays.</p>
+<p><strong>Effect Tracks</strong> are created for every selected parameter, but they are hidden from the view to get more space on the screen, and some advance operations are removed to speed up programming of simple effects.</p>
+<p>After programming an Effect, Close the editor using the Red X in the upper right corner.</p>
+</div>
+<div id="Basic-Effects-9.4" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Basic Effects<a href="effect.html#Basic-Effects-9.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><strong>Basic Effects</strong> are built by using the Basic Effect Editor on the Small Screen.</p></li>
+<li><p>A Basic Effect is obtained by applying a Pattern and a Primitive to the selected Parameters.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2fwHGuG4TtLoOOPeWXrg%2F9.4-Basic-FX-Curves.webp?alt=media&amp;token=dfd29926-584f-42ea-8a19-dfd0e974baeb" alt="9.3-Basic-FX-Curves" />
+</p>
+<p>To create a <strong>Basic Effect</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a Fixture Selection: [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#]</p></li>
+<li><p>Select the Parameter or Parameters to be involved</p></li>
+<li><p>Press [EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.</p></li>
+<li><p>Tap on {Curves} key on the right of the Smart Screen</p></li>
+<li><p>Tap on the desired Primitive - The Function shown on the Primitive will be loaded with a default linear Pattern.</p></li>
+<li><p>The Pattern may be changed by by tapping any of the following:</p></li>
+</ol>
+<ul>
+<li><p>/ Fixtures move in a positive direction across the selection.</p></li>
+<li><p> Fixture move in a negative direction across the selection.</p></li>
+<li><p>/ Fixture are mirrored from the center.</p></li>
+<li><p>/ Fixture are mirrored from the extremes.</p></li>
 </ul>
 <ol start="7" style="list-style-type: decimal">
-<li><p>If using internal TC, press Play.</p></li>
-<li><p>If using external TC start the timecode source.</p></li>
-<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
-<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
+<li>Set the Offset {Pattern Spread} - Default is 100%.</li>
 </ol>
-<p><strong>Trigger a Timeline</strong></p>
-<p>Timelines can be triggered and zoomed via the Timeline view’s transport bar.</p>
-<p>Timeline commands can be also triggered via the Editor Toolbar in Program and Playback pages.</p>
-<p><strong>Grid View Filters</strong></p>
-<p>Switch from the Graphical to the Grid view and viceversa with the toggle button on the control bar.</p>
-<p>In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFgICJWgLaaX6zER5xarw%2F14.1-TL-Grid-View.webp?alt=media&amp;token=f3f48320-4168-415b-b8b7-51364667e4fd" alt="14.1-TL-Grid-View" />
-</p>
-</div>
-<div id="commands" class="section level3 hasAnchor" number="14.1.3">
-<h3><span class="header-section-number">14.1.3</span> Commands<a href="timeline.html#commands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
-<p><strong>Commands for the Timeline</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
-<li><p>The Editor Toolbar shows the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FK81XHaBtDHoweY0dr0ha%2F14.1-TL%23-Toolbar.webp?alt=media&amp;token=98266616-4265-455e-ae8f-27b14ad120c5" alt="14.1-TL#-Toolbar" />
-</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqrhzxvT6qCnsbkgnIlFZ%2F14.1-TL-Commands.webp?alt=media&amp;token=f5e4caba-b4ea-4c3c-afd6-6c6ad4934ba4" alt="14.1-TL-Commands" />
-</p>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Sequence may also end with:</p>
 <ul>
-<li><p>Store – will create the timelines if they are not already created</p></li>
-<li><p>Delete – will delete the timelines if they exist</p></li>
-<li><p>Text – will open text box to give a name to the selected timelines</p></li>
-<li><p>Copy – will add the timelines to the clipboard</p></li>
-<li><p>Paste – will paste the copied timelines from the clipboard</p></li>
+<li><p>100% = Selection is divided 100% transitioning across the Primitive.</p></li>
+<li><p>0% = all fixtures transition in unison.</p></li>
+</ul>
+<ol start="8" style="list-style-type: decimal">
+<li><p>Set Swing Up, Center, Down, or at a specific level</p></li>
+<li><p>Adjust Size and Base to set the Low and High ranges of the values</p></li>
+<li><p>Set the Time and Rate - Rate is a multiplier of the time value. Default Effect Time is 4 seconds to complete the cycle</p></li>
+</ol>
+<p>👉 Similar results to inverting the pattern functions may be achieved by reversing the selection direction with the direction {⟵ Negative}, {Positive ⟶ } keys.</p>
+<p>👉 If more options are needed, the Advanced Effects Editor may be opened at any time by pressing [VIBE] + [EFFECTS] or the {Advanced…} key. All the Effects running in the Basic Effects Editor will be synchronized with the Advanced Effect Editor.</p>
+</div>
+<div id="Basic-Effects-9.5" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> Advanced Effects<a href="effect.html#Basic-Effects-9.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><strong>Advanced Effects</strong> are built by using the Advanced Effect Editor on the Wide Screen, as a popup that opens over the screen’s page.</p></li>
+<li><p>Both Basic and Advanced Effect Editors work on the same Effect Engine. Whichever is opened will be synchronized between the Effects Engines, but only one Effect Editor may opened at a time.</p></li>
+<li><p>An Advanced Effect is also obtained by applying a Pattern and a Primitive to the selected Parameters, but it allows many more possibilities as it is characterized by independent and simultaneous <strong>Effect Tracks</strong>.</p></li>
+<li><p>Each Effect Track can contain many different frames, called <strong>Effect Events</strong>, with independent primitives, patterns and settings. The result of an advanced effect can be someway similar to a Timeline of effects.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhcxZf2PRDNeIYg0GDAkk%2F9.5-Advanced-FX-Sample.webp?alt=media&amp;token=3e17bd75-29e4-41fa-bbf6-eae7776bac74" alt="9.5-Advanced-FX-Sample" />
+</p>
+<ul>
+<li><p>Effect Tracks are made up of Effect Events running horizontally.</p></li>
+<li><p>Each Track must have:</p>
+<ul>
+<li>At least one Parameter. Additional parameters may be added but they will respond simultaneously to the Effect.</li>
+<li>At least one Effect Event. Additional events may be added to the track each with its own time base, or they may be merged and share the same time base.</li>
 </ul></li>
-</ol>
-<ul>
-<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
-<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
-<li><p>The control bar may be used to stop and rewind events when the source is internal.</p></li>
-<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
-<li><p>forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
 </ul>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FooORahO1pS6AfEhuTM4N%2F14.1-TL-Menu-Active.webp?alt=media&amp;token=d6f12de1-9913-47e5-afe8-1cc6d37df1f9" alt="14.1-TL-Menu-Active" />
-</p>
-<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
-<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
-<p><span style="color:Red">Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</span></p>
-<p><strong>Commands for the Active Timeline</strong></p>
-<p>These commands will affect the Active Timeline View.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press <em>Timeline</em> from the panel</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTkMpw8g30Tv9mF8IqxRU%2F14.1-TL-Toolbar.webp?alt=media&amp;token=a8c3ff09-6899-4d4d-9a64-31da6908fe93" alt="14.1-TL-Toolbar" />
-</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIW9PDydVEqT1xPV762gX%2F14.1-TL-Options.webp?alt=media&amp;token=ba20f806-44a5-4f5f-9336-44e66361f273" alt="14.1-TL-Options" />
-</p>
-</div>
-<div id="gestures" class="section level3 hasAnchor" number="14.1.4">
-<h3><span class="header-section-number">14.1.4</span> Gestures<a href="timeline.html#gestures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Use the following <strong>gestures</strong> on the timeline view to manage the events:</p>
-<ul>
-<li><p>Tap on a single event – toggles the event selection</p></li>
-<li><p>Tap on a playback box – toggles the playback selection</p></li>
-<li><p>Tap on a marker – toggles the marker selection</p></li>
-<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
-<li><p>Double-tap an empty area – clear the selection</p></li>
-<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
-<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
-<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
-<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
-</ul>
-<p><span style="color:Red">Selection can have only one type of objects at a time. Selecting a timeline object (i.e. Playback, Event, Marker…) will clear all other objects selections.</span></p>
-</div>
-<div id="markers" class="section level3 hasAnchor" number="14.1.5">
-<h3><span class="header-section-number">14.1.5</span> Markers<a href="timeline.html#markers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To aid in timeline navigation, Markers may be inserted.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FggiIzrGJjJMxB3Fbdsza%2F14.1-TL-Menu-Markers.webp?alt=media&amp;token=62f8c69f-b460-4be9-b647-968161c40d0e" alt="14.1-TL-Menu-Markers" />
-</p>
-<p>To insert a marker:</p>
-<ul>
-<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
-<li><p>Press ⟵ to move backwards through the markers.</p></li>
-<li><p>Press ⟶ to move forwards through the markers.</p></li>
-<li><p>Press 🗑️ to delete a marker</p></li>
-</ul>
-<p>In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpJj4vHB3xXkARDK8pZdx%2F14.1-TL-Markers.webp?alt=media&amp;token=40c53b8f-a748-4251-a9df-f90ee07b59cf" alt="14.1-TL-Markers" />
-</p>
-<p>The Timeline Grid View shows the list of Markers on a dedicated tab, where they can be named.
-Markers’ names will appear also in the graphical view, on the bottom of the marker.</p>
-</div>
-<div id="move-selection" class="section level3 hasAnchor" number="14.1.6">
-<h3><span class="header-section-number">14.1.6</span> Move Selection<a href="timeline.html#move-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Move Selection submenu offers options to set move the selected events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5NzYriXZGQ5lQFov0s0m%2F14.1-TL-Menu-Move-Selection.webp?alt=media&amp;token=6e3f6889-4946-458d-aae1-87fd10bdaf64" alt="14.1-TL-Menu-Move-Selection" />
-</p>
-<p>It is possible to change selected event times via the physical wheels.</p>
-<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
-<p>There are 2 physical wheels that are available for use:</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FucIYRJuwszY9q3vzIVvX%2F14.1-TL-Encoders.webp?alt=media&amp;token=9f852a86-a315-47df-a33f-df86c046278b" alt="14.1-TL-Encoders" />
-</p>
-<p>The left one is for moving the selected events.</p>
-<p>The right one is to change the time resolution for the current time movement.</p>
-</div>
-<div id="actions" class="section level3 hasAnchor" number="14.1.7">
-<h3><span class="header-section-number">14.1.7</span> Actions<a href="timeline.html#actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Actions submenu offers options to manage the selected events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVaRfzYUgas3u9aqWSNrI%2F14.1-TL-Menu-Actions.webp?alt=media&amp;token=a27019f0-9f02-4c76-887a-16a9a938e9a8" alt="14.1-TL-Menu-Actions" />
-</p>
-<p>All the events can be moved on the timeline with drag&amp;drop commands in the graphical view, or by assigning a different time in the grid bar.</p>
-<p>The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fuc6wVYJVfy0govj8h7t9%2F14.1-TL-Actions.webp?alt=media&amp;token=345e65d9-2208-4d36-a515-d2c7207292b7" alt="14.1-TL-Actions" />
-</p>
-<p>In the Actions menu there is the option to <strong>Reset Slider Value</strong> from a playback and set it to a fixed value between zero and full.</p>
-<p>To clear the slider value from a timeline:</p>
-<ol style="list-style-type: decimal">
-<li><p>Open a timelines</p></li>
-<li><p>Select the target playback</p></li>
-<li><p>On the menu, open the Actions</p></li>
-<li><p>Press Reset Slider</p></li>
-<li><p>Assign the slider value on the virtual slider popup</p></li>
-</ol>
-</div>
-<div id="timestamp" class="section level3 hasAnchor" number="14.1.8">
-<h3><span class="header-section-number">14.1.8</span> TimeStamp<a href="timeline.html#timestamp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is possible to view the timeline and events data in different time formats.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F420TffgJLrwJeoJCoOWM%2F14.1-TL-Menu-Timestamp.webp?alt=media&amp;token=99428212-3196-47b1-81a9-450b1c32f7fe" alt="14.1-TL-Menu-Timestamp" />
-</p>
-<p>The default time format is milliseconds, but it is also possible to use FPS format.</p>
-<p>The time format selection can be set on the Timestamp View sub-menu.</p>
-</div>
-<div id="audio-track" class="section level3 hasAnchor" number="14.1.9">
-<h3><span class="header-section-number">14.1.9</span> Audio Track<a href="timeline.html#audio-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Timelines can load Audio Tracks in common file formats such as .mp3 and .wav.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F513QLPh853sZ8nuDuBoz%2F14.1-TL-Audiotrack.webp?alt=media&amp;token=46ff16b6-b731-4596-8edb-b4520d162b36" alt="14.1-TL-Audiotrack" />
-</p>
-<p>To add an audio track to a timeline:</p>
-<ul>
-<li><p>open the Audio section on the menu</p></li>
-<li><p>tap ADD</p></li>
-<li><p>select the target timeline on the selection popup and tap Apply</p></li>
-<li><p>select the audio file on the load popup and tap Apply</p></li>
-</ul>
-<p>The Audio Track will be loaded on the top line of the Timeline, showing the file name and the audio spectrum.</p>
-</div>
-</div>
-<div id="Time-Code-14.2" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Time Code<a href="timeline.html#Time-Code-14.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).</p>
-<div id="connections" class="section level3 hasAnchor" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Connections<a href="timeline.html#connections" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Vibe has Time Code connectors for the following:</p>
-<ul>
-<li><p>Audio Combi Jack connector for SMPTE input with:</p>
-<ul>
-<li><p>Female unbalanced line level input on 1/4” phone jack</p></li>
-<li><p>Female 3 pin XLR balanced line level input.</p></li>
-</ul></li>
-<li><p>Female 5 Pin DIN connector for MIDI input.</p></li>
-<li><p>Female 5 Pin DIN connector for MIDI output.</p></li>
-<li><p>USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.</p></li>
-<li><p>RJ45 ports for MIDI over Ethernet (Compulite devices)</p></li>
-</ul>
-</div>
-<div id="ltc" class="section level3 hasAnchor" number="14.2.2">
-<h3><span class="header-section-number">14.2.2</span> LTC<a href="timeline.html#ltc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>LTC</strong> or <strong>Linear Time Code</strong> source, the SMPTE input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The SMPTE Tab contains the toggle button to enable or disable the LTC input.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fg4bDJOgnX88CaU1CqrnZ%2F14.2-IO-Settings-SMPTE.webp?alt=media&amp;token=2cadb1ad-2382-4443-89cc-1c5d971dfb75" alt="14.2-IO-Settings-SMPTE" />
-</p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span></p>
-<p><strong>Recommended quality and level for SMPTE:</strong></p>
-<ul>
-<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
-<li><p>As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
-</ul>
-</div>
-<div id="mtc" class="section level3 hasAnchor" number="14.2.3">
-<h3><span class="header-section-number">14.2.3</span> MTC<a href="timeline.html#mtc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>MTC</strong> or <strong>Midi Time Code</strong> source, the MTC input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The MIDI Tab contains the toggle button to enable or disable the MTC input.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC7IvLw0Gqs94XcmfKDVa%2F14.2-IO-Settings-MTC.webp?alt=media&amp;token=75cc712a-9336-4d0e-bef4-57683b1502c2" alt="14.2-IO-Settings-MTC" />
-</p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span></p>
-<p><strong>MIDI Time Code</strong> is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.</p>
-<p>MTC is available in the following frame rates:</p>
-<ul>
-<li><p>24 frame/s (standard rate for film work)</p></li>
-<li><p>25 frame/s (standard rate for PAL video)</p></li>
-<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
-<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
-</ul>
-</div>
-</div>
-<div id="MIDI-14.3" class="section level2 hasAnchor" number="14.3">
-<h2><span class="header-section-number">14.3</span> MIDI<a href="timeline.html#MIDI-14.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer.</p>
-<p>MIDI is a control protocol and does not transmit audio.</p>
-<p>Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment.</p>
-<p>MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)</p>
-<p><strong>MIDI implementation:</strong></p>
-<ul>
-<li><p>16 independent MIDI channels - The channels systems listen to.</p></li>
-<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
-<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
-<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
-<li><p>After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.</p></li>
-<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.</p></li>
-<li><p>Patch changes from 0 ⟶ 127 - Change from one instrument to another.</p></li>
-<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
-<li><p>A section for MIDI time code and other manufacturer’s “System Exclusive” information.</p></li>
-</ul>
-<div id="midi-settings" class="section level3 hasAnchor" number="14.3.1">
-<h3><span class="header-section-number">14.3.1</span> MIDI Settings<a href="timeline.html#midi-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To receive and generate Midi signals each protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.</p>
-<p><strong>Configure MIDI:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source:</p></li>
-</ol>
-<ul>
-<li><p><strong>Local MIDI</strong> is generated and received from the 5 pin DIN connectors on the back of the console.</p></li>
-<li><p><strong>MIDI over USB</strong> is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</p></li>
-<li><p><strong>MIDI over Ethernet</strong> is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.</p></li>
-<li><p><strong>Refresh MIDI Connection</strong> looks for new connections if devices have been added later.</p></li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Press Apply to stay in I/O settings, press [ENTER] or tap the Apply icon to close the popup.</li>
-</ol>
-</div>
-<div id="midi-notes" class="section level3 hasAnchor" number="14.3.2">
-<h3><span class="header-section-number">14.3.2</span> MIDI Notes<a href="timeline.html#midi-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In lighting MIDI notes and controllers from external sources are matched to the console’s controllers, buttons and wheels to synchronize the playback.</p>
+<p><strong>Multi-track effects</strong> are effects requiring more than one parameter may be stacked on separate Effects Tracks.</p>
 <blockquote>
-<p>A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ’s frequently control lighting via MIDI touchpad controllers.</p>
+<p>Examples of Multi-track effects would be:</p>
 </blockquote>
-<p>To configure <strong>MIDI Notes</strong> open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.</p>
-<p>In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.</p>
-<ul>
-<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
-<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
-<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
-</ul>
-<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0qfxuNCNVAbnJvsQuIf3%2F14.3-IO-Settings-MIDI-Notes.webp?alt=media&amp;token=dec7af76-bb68-46d8-b305-5eadbf31491c" alt="14.3-IO-Settings-MIDI-Notes" />
-</p>
-<p><strong>Assign MIDI Notes to Controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>In Midi Tab enable Notes In or Notes Out.</p></li>
-<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
-<li><p>In Notes/Commands Tab select the tab for the type of MIDI message to be received.</p></li>
-</ol>
-<p>Possible messages types are:</p>
-<ul>
-<li><p><strong>Note</strong> (Note ON = press down on controller key, Note OFF = release of controller key).</p></li>
-<li><p><strong>After Touch</strong></p></li>
-<li><p><strong>Continuous Controller</strong></p></li>
-<li><p><strong>Path Change</strong></p></li>
-<li><p><strong>Channel Pressure</strong></p></li>
-<li><p><strong>Pitch Bend</strong></p></li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign Macros to a MIDI note:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press [MACRO] - The Macro selector popup will appear.</p></li>
-<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Additional functions:</strong></p>
-<ul>
-<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
-<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
-<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
-<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
-</ul>
-</div>
-<div id="msc" class="section level3 hasAnchor" number="14.3.3">
-<h3><span class="header-section-number">14.3.3</span> MSC<a href="timeline.html#msc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>MIDI Show Control</strong> is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard.</p>
-<p>MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p>
-<p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications.</p>
-<p>Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia</p>
-<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices.</p>
-<p>Basic MSC commands are:</p>
-<ul>
-<li><p>Go</p></li>
-<li><p>Stop</p></li>
-<li><p>Fire (Generally used for macros)</p></li>
-</ul>
-<p>Also supported on receive are:</p>
-<ul>
-<li><p>All fixtures</p></li>
-<li><p>General lights</p></li>
-<li><p>Moving lights</p></li>
-</ul>
-<p><strong>Receive MSC:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap {MTC In} in the I/O Settings popup, Midi Tab.</p></li>
-<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
-<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
-<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
-</ol>
-<p><strong>Transmit MSC:</strong></p>
-<p><span style="color:Gray">Not implemented yet.</span></p>
-<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+<pre><code>- CMY and RGB color effects 
 
+- Pan/Tilt Circles 
+
+- Blade effects</code></pre>
+<ul>
+<li>It is possible to make simultaneous changes to Primitive, Pattern, and Effect settings by toggling them on/off. The selected elements will get a red background.</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ZbOmktpintRIcComkgd%2F9.5-Advanced-FX-Track.webp?alt=media&amp;token=eac82de1-58be-48b6-8ddc-bb7fde160c86" alt="9.5-Advanced-FX-Track" />
+</p>
+<ul>
+<li><p>The Advanced Effect Editor differs from the Basic Effect Editor in the following ways:</p></li>
+<li><p>Parameter selection is made in the Effects Editor not before entering it.</p></li>
+<li><p>Effect Tracks are shown.</p></li>
+<li><p>Multiple Parameters may be assigned to the same Effect Track.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPHFYFoRqs5m2USGbfunU%2F9.5-Advanced-FX-Param.webp?alt=media&amp;token=88dbc825-b78a-42fa-8379-ff9c43dcbb08" alt="9.5-Advanced-FX-Param" />
+</p>
+<ul>
+<li>Multiple Events may be assigned to the same Effect Track.</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNb8KNveRezoyrFOltOPe%2F9.5-Advanced-FX-Curve.webp?alt=media&amp;token=a38975d6-1eb1-4508-af59-3d316245fb09" alt="9.5-Advanced-FX-Curve" />
+</p>
+<ul>
+<li><p>Effect sharing the same Effect Track can uses separate patterns or share patterns.</p></li>
+<li><p>Pattern Size, Rate, and Base may be spread to create randomized looking effects.</p></li>
+<li><p>Repeat allows to set the number of times each Effect Event repeats before moving on the the next Effects Event, when they are on the same Effect Track.</p></li>
+<li><p>Only a fixture selection is needed before entering the editor. Parameters are selected on the effect editor using the {Filter} and {Choose Parameter} keys.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQ9DFENGAmwZS4avceKwt%2F9.5-Advanced-FX-Params.webp?alt=media&amp;token=f065998c-2e83-47d0-a1b3-2b49b5822bfc" alt="9.5-Advanced-FX-Params" />
+</p>
+<p>To create an <strong>Advanced Effect</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a Fixture Selection: [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#]</p></li>
+<li><p>Press [VIBE] + [EFFECT] to open the Advanced Effect Editor</p></li>
+<li><p>Select a Banks in the Filter area</p></li>
+<li><p>Select a Parameter in the Choose Parameter area - the parameter background will turn purple.</p></li>
+<li><p>Tap a blank space in the Parameter Column of an unassigned Effect Track - the parameter will be assigned to the Attributes Column.</p></li>
+<li><p>Tap a Curve from the Favorites tab or the All Curves tab - the primitive curve background will turn purple.</p></li>
+<li><p>Tap a blank space in the Effect Event Column - an Effect Event will be created with a Primitive and a Pattern.</p></li>
+<li><p>To adjust Pattern and Primitive settings, tap on them and set the options with the virtual sliders in the right area</p></li>
+<li><p>To adjust Effect settings, tap on the Track’s empty area and set the options with the virtual sliders in the right area</p></li>
+<li><p>Close the Advanced editor using the Red X in the upper right corner.</p></li>
+<li><p>Store the whole Effect directly to a cue or scene or to an Effects Library.</p></li>
+</ol>
+<ul>
+<li><p>Advanced Effects can have many Effect Events on the same Effect Track based on different parameters.</p></li>
+<li><p>Advanced Effects can have many Effect Tracks based on different parameters that will run simultaneously, but only <strong>one track per Param</strong> is allowed.</p></li>
+</ul>
+<p><strong>Combine Parameters</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a parameter bank in the Filters area</p></li>
+<li><p>Tap a parameter in the Choose Parameter area - the parameter background will turn purple</p></li>
+<li><p>Tap a space in the Parameter Column already containing a parameter - the parameter will be merged into the parameter column</p></li>
+</ol>
+<ul>
+<li>All Primitives and Patterns will affect both parameters.</li>
+</ul>
+<p><strong>Stack Effects Events</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a Function from the Favorites tab or All Functions tab - the Function background will turn purple</p></li>
+<li><p>Tap the space to the right of an existing Effect Even - a new Effect Event will be stacked beside the existing one</p></li>
+</ol>
+<ul>
+<li>Each Stacked Effect Event can have its own Primitive and Pattern.</li>
+</ul>
+<p><strong>Combine Effects Events</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Drag and drop the primitive of an Effect Event over an adjacent primitive - the primitives will be merged into the same event</li>
+</ol>
+<ul>
+<li>The primitives will now be combined and will share the pattern settings.</li>
+</ul>
+<p><strong>Duplicate Effects Events</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap either the pattern or primitive are of an Effect Event - the background of the pattern or primitive will turn red and the Effects Toolbar will open under the Effects Tracks.</p></li>
+<li><p>Tap {+ Duplicate} - a duplicate of the Effect Event will be added to the right of the source Effect Event</p></li>
+</ol>
+<p><strong>Copy an Effect Track</strong>:</p>
+<p>Copies the Effect Event settings to a new parameter, this will synchronize the effect between the parameters.</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a parameter bank in the Filters area</p></li>
+<li><p>Tap a parameter in the Choose Parameter area - the parameter background will turn purple</p></li>
+<li><p>Tap a blank space in the Parameter Column below an assigned Effect Track - the parameter will be assigned</p></li>
+<li><p>Press the empty area to the right of the source Effect Event - the blank area will turn light blue and the Effects Toolbar will open under the Effects Tracks</p></li>
+<li><p>Tap {Copy} - the source Effect Event’s settings will be copied</p></li>
+<li><p>Tap in the blank area to the right of the new parameter - the area will turn blue and the Effects Toolbar will open under the Effects Tracks</p></li>
+<li><p>Tap {Paste} - the source Effect Event settings will be pasted to the new parameter.</p></li>
+</ol>
+<p><strong>Delete an Effect Event</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap either the pattern or primitive of the event to be deleted - the background will turn red</p></li>
+<li><p>Tap {Delete} on the Effects Toolbar below the Effect Tracks</p></li>
+</ol>
+<p><strong>Release a parameter from an effect</strong>:</p>
+<p>Effect Parameters may be released using Edit Cue or Update pop-up.</p>
+<ul>
+<li><strong>Edit Cue</strong></li>
+</ul>
+<p>👉 Cue must be active on a controller or it will be loaded to the Master Controller and bump its current Qlist out.</p>
+<ol style="list-style-type: decimal">
+<li><p>[QLIST] [#] [CUE] [#] [EDIT] - Cue values will be placed in the Editor and the [UPDATE] key will flash red.</p></li>
+<li><p>Press [VIBE] + [EFFECT] - The Advanced Effect Editor will open.</p></li>
+<li><p>Select the fixtures requiring parameters to be released.</p></li>
+<li><p>Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.</p></li>
+<li><p>Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - stage values will be returned to their recorded base values or home values if they had no programmed base values.</p></li>
+<li><p>Press [UPDATE] to complete the edit and restore control to the source controller.</p></li>
+</ol>
+<ul>
+<li><strong>Update</strong></li>
+</ul>
+<p>👉 Cue being edited must be active on a controller.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures requiring parameters to be released.</p></li>
+<li><p>Press the the parameter’s push wheel, or tap the wheel display above the wheel, to select the parameter.</p></li>
+<li><p>Press [VIBE] + [EFFECT] - opens Advanced Editor.</p></li>
+<li><p>Tap the parameter or parameters in the parameter column to select the parameters - the parameters will turn purple.</p></li>
+<li><p>Tap {Release} on the Effects Toolbar - Parameters will disappear from the Effect Editor - Stage values will be returned to their recorded base values or home values if they had no programmed base values.</p></li>
+<li><p>Press [UPDATE] - The Update popup will open.</p></li>
+<li><p>Make sure the proper cue is selected in the Cue column.</p></li>
+<li><p>Tap Apply or press [ENTER] to complete the update operation.</p></li>
+</ol>
 </div>
+<div id="Library-Effects-9.6" class="section level2 hasAnchor" number="9.6">
+<h2><span class="header-section-number">9.6</span> Library Effects<a href="effect.html#Library-Effects-9.6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p><strong>Library Effects</strong> are built by using the Advanced Effect Editor on the Wide Screen.</p></li>
+<li><p>Library Effects are effects between libraries that can be stored in cues and scenes as well as in the effect library and managed as a normal effects, but they keep the library references.</p></li>
+<li><p>Editing any of the reference libraries will automatically update the library effect (same as Cues and Scenes stored with library references).</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F7kpfiUYHHVTWvqRG9lRY%2F9.6-Library-FX.webp?alt=media&amp;token=a2ca09d2-c4c5-4544-9cb2-ae517dd5910e" alt="9.6-Library-FX" />
+</p>
+<p>To create a <strong>Library Effect</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Make a Fixture Selection: [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#]</p></li>
+<li><p>Press [VIBE] + [EFFECT] to open the Advanced Effect Editor</p></li>
+<li><p>Tap {Library Effects}</p></li>
+<li><p>Select a Banks in the Filter area</p></li>
+<li><p>Select a Library in the Choose Library area - the library background will turn purple.</p></li>
+<li><p>Tap the effect track to add the starting library</p></li>
+<li><p>Choose another Library in the Choose Library area</p></li>
+<li><p>Tap the right side of the effect event to add the ending library</p></li>
+<li><p>Tap a Curve from the Favorites tab or the All Curves tab - the primitive curve background will turn purple.</p></li>
+<li><p>Tap on the effect event to assign the fading curve between the libraries - an Effect Event will be created with a Primitive and a Pattern.</p></li>
+<li><p>To adjust Pattern and Primitive settings, tap on them and set the options with the virtual sliders in the right area</p></li>
+<li><p>To adjust Effect settings, tap on the Track’s empty area and set the options with the virtual sliders in the right area</p></li>
+<li><p>Close the Advanced editor using the Red X in the upper right corner.</p></li>
+<li><p>Store the whole Effect directly to a cue or scene or to an Effects Library.</p></li>
+</ol>
+<ul>
+<li><p>Same as Advanced Effects, Library Effects can have many Effect Events on the same Effect Track based on different libraries.</p></li>
+<li><p>Same as Advanced Effects, Library Effects can have many Effect Tracks based on different libraries that will run simultaneously, but only <strong>one track per Bank</strong> is allowed.</p></li>
+<li><p>An Effect can have both Advanced and Library Events, but the same parameter cannot be on more Tracks at the same time.</p></li>
+<li><p>Library Effect settings and operations are managed in the same way as Advanced Effect settings and operations are done.</p></li>
+</ul>
+</div>
+<div id="Effect-Library-9.7" class="section level2 hasAnchor" number="9.7">
+<h2><span class="header-section-number">9.7</span> Effect Library<a href="effect.html#Effect-Library-9.7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Once an effect has been created, it may be directly stored in cues and scenes or saved in <strong>Effect Libraries</strong> for future use.</p></li>
+<li><p>Effect Libraries are stored like any other Library and have a specific Effect Library Sofkey view to recall them.</p></li>
+<li><p>By Default Effect Libraries are “Parameter Specific” with disabled Reference, Timing and Base, and they filter and store all parameter types.</p></li>
+<li><p>Default Settings for Effect Libraries can be changed in System Settings popup, in the Defaults tab. Individual settings can be set on each stored Effect Library.</p></li>
+<li><p>Effect Libraries have an additional option to include or exclude the base values. Include Base is useful when effects must start from an absolute value.</p></li>
+<li><p>Effect Libraries operations are managed in the same way as all other library operations are done.</p></li>
+</ul>
+
 </div>
 </div>
             </section>
@@ -998,8 +985,8 @@ Markers’ names will appear also in the graphical view, on the bottom of the ma
           </div>
         </div>
       </div>
-<a href="macro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="topo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="library.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="scene-qlist.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

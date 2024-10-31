@@ -1,0 +1,277 @@
+
+# Topo 
+
+This chapter deals with creating a Topographical Map to select the fixtures and trigger the objects.
+
+**The following is covered in this chapter:**
+
+-  [15.1 Topo View](#Topo-View-15.1)
+-  [15.2 Topo Menu](#TopoMenu-15.2)
+-  [15.3 Create Topo](#Create-Topo-15.3)
+
+
+## Topo View {#Topo-View-15.1}
+
+
+Topo is the short name for "Topographical Display", it is a view used to make fast and intuitive the process of fixture selection and the triggering of stored objects.
+
+Practical samples of some Topo applications can be:
+
+   - show the light plan to other users (also as a patch-map for technicians),
+
+   - make graphical fixture selections (and forget about fixtures' IDs),
+
+   - leave a smart interactive control screen to "not-expert" users,
+
+   - check the fixtures' live status on the stage and easily program offline.
+
+When starting a new show any Topo view stored in the layout will be empty until the system is patched and fixtures are assigned to a Topo. 
+
+Virtually unlimited Topos may be created and displayed in a Topo view. Fixtures and objects may be shared by different Topos.
+
+<p align=center> ![15.1-Topo-View](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fl5bwVl1vJDcnyL1s8ZPU%2F15.1-Topo-View.webp?alt=media&token=085292df-b6a9-41bd-9a00-6333f4e9b3d9) </p>
+
+Topo view's toolbar collects some visualization options to fastly center the stage and fit it to the screen, as well as an horizontal slider to zoom manually at the desired distance.
+
+The {Show Address} / {Show Name} button toggles between the visualization of the patched addresses and the fixtures names on the icons.
+
+The Topo view has 2 operating modes, switchable with the toggle button on the bottom right:
+
+   - **{LIVE}**: Topo toolbar and menu get a <span style="color:green">Green</span> frame. Enables fixture selection and object triggering, locks the Topo editing.
+   
+   - **{EDIT}**: Topo toolbar and menu get a <span style="color:red">Red</span> frame. Enables all the Topo editing options, disables fixture selection and object triggering.
+
+
+## Topo Menu {#TopoMenu-15.2}
+
+
+The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. 
+
+It provides the **TOPO** selection, with options to create, edit, duplicate and delete topos, and following sub-menus:
+
+   - Add Elements
+
+   - Selection
+
+   - Tools
+
+<p align=center> ![15.2-Topo-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAwCnvgmLzpTfL2nRVlgc%2F15.2-Topo-Menu.webp?alt=media&token=7201f78f-8776-4e06-8675-b4c67f59a00a) </p>
+
+**{Add Elements}** - Accesses the available objects:
+
+- {Sets} Opens the filter of all available sets: Fixture, Channels, Spots, Matrix, Servers, and users created sets.
+
+- {Groups} Opens the filter of all available groups.
+
+- {Libraries} Opens the filter of all available libraries (Intensity, Position, Color, ...).
+
+- {Macros} Opens the filter of all available macros.
+
+- {Snaps} Opens the filter of all available snaps.
+
+- {Filters} Opens the filter of all available filters.
+
+- {Pixel Mapper} Adds a User definable matrix to be used for Pixel Mapping.
+
+- {From Editor} Allows to Drag&Drop on the Topo the elements that are selected in Vibe’s editor.
+
+- {Text Label} Opens a popup to create a customizable text label.
+
+- {Line} Adds a customizable line.
+
+- {Background} Adds/Removes a customizable and adjustable background image.
+
+**{Selection}** – Accesses the selection options:
+
+👉 All types of selection must start outside of the fixture icons.
+
+- Rectangle: Selection by creating a rectangular shape, dragging from left to right or right to left to surround the target objects.
+
+- Lasso: Selection by creating a free-form path, dragging through the target objects.
+
+- Circle with X: De-selection of all selected icons all. The same operation can be done with a double tap on an empty area of the Topo.
+
+- Delete selected (only in Edit Mode).
+
+- Snap to Grid: Fixtures and object will snap to the nearest grid node.
+
+- Sync to Editor: Fixtures can be selected using the embedded keypad (only in Edit Mode).
+
+**{Tools}** - Accesses the smart adjustment options:
+
+- {Align}: Aligns the selected elements horizontally to the left, center or right, and vertically to the top, middle or bottom. The alignment can also be set on a circular or a square shape and between two points it is possible to adjust the element location on the shape, the radius and the ending point.
+
+- {Align to Point}: A base point must be specified on the Topo surface as a starting reference. The options are the same as Align except there is no point to point.
+
+- {Spread} (Fan): Spreads the selected elements horizontally from the left, center or right, and vertically from the top, middle or bottom. When Spread is selected, a virtual modifier wheel will appear.
+
+- {Transform} - Modifies size and rotation of the objects to scale and rotate and to rotate of 45 degrees clockwise or counterclockwise. The last icon is to resets the transform options.
+
+- {Arrange by Calibration} - When tapped, selected fixture icons get their positions from the XYZ calibration.
+
+
+## Create Topo {#Create-Topo-15.3}
+
+
+**To create a new Topo:** 
+
+Navigate to a Topo view
+
+1.  Tap the {+} key in the Topo Menu. - The "Create New Topo" popup will appear.
+
+<p align=center> ![15.3-Create-Topo](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fn8kYLQviS9jVJQpIe6hh%2F15.3-Create-Topo.webp?alt=media&token=1117f3db-155e-4b5e-947d-5b136f144499) </p>
+
+2. Select the desired Topo number, and give the Topo a unique name.
+
+3. Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings popup.
+
+4. Select the stage point of view. The default is Top view.
+
+5. Tap Apply or press \[ENTER] - This closes the popup, enters Topo {Edit} mode, and the grid will be displayed.
+
+### Add Fixtures
+
+There are two ways to add fixtures to a Topo 
+
+**Using keypad selection**:
+
+1.  Press zoom option {FIT STAGE TO SCREEN} on the toolbar at the bottom of the Topo View to see the whole stage area.
+
+2.  Select the fixtures using the keypad or a group.
+
+3. Tap {FROM EDITOR} on the toolbar at the bottom of the Topo View.
+
+4.  Selected fixtures will now appear in the top right section of the Topo.
+
+5.  The fixtures will be selected (outlined in red), and can be dragged freely into place.
+
+6.  Double tap in a clear space on the TOPO to deselect.
+    
+<span style="color:Red">If the {From Editor} key is selected with a long press (held for a few seconds) the fixtures may be directly dragged from the {From Editor} area. Only a maximum of 5 fixture icons will be shown but the whole selection will actually be there. Drag the fixtures to a location on the Topo view and drop. The fixture icons will now appear on the Topo surface. **The reference point for dropping the fixtures is the top left corner of the dragged fixture icons.**</span>
+
+**Using {ADD ELEMENTS} from the Topo menu:**
+
+1.  Create the Topo
+
+2.  From the Topo menu tap {ADD ELEMENTS}
+
+3.  From the drop down, tap {SETS}
+
+4.  From the next drop down, select a fixture set - A list of the fixture in the set will drop down.
+
+5.  From the fixture list, select the fixtures to drag onto the Topo.
+
+6.  Press, hold and drag the fixtures onto the Topo surface.
+
+7.  Double tap in a blank area of the Topo to deselect the fixtures.
+
+**Add Sub Devices to the Topo View**
+
+Topo view supports the fixture layers, so sub-devices of a fixture (for example 70, such as fixture 70.1 -> 70.7), can be added as independent objects.
+
+<p align=center> ![15.3-Topo-SubDevices](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fxv9B4Km3xx7gYbOU5JOv%2F15.3-Topo-SubDevices.webp?alt=media&token=2a07a9f5-57db-44ac-9af4-8cdc80785ff9) </p>
+
+### Add Softkeys
+
+There is an option to add softkeys of any type to the Topo with dragging and dropping items from the menu.
+
+Using the same methods for adding fixtures to the Topo, drag the objects into the grid.
+
+Softkey objects that can be currently added to the Topo include:
+
+  - Groups
+
+  - Libraries
+
+  - Macros
+
+  - Snaps
+
+  - Filters
+
+Softkey object icons can be arranged on the Topo in the same way the fixture icons are.
+
+### Add Pixel Maps
+
+The pixel mapper creates a matrix of fixtures. 
+
+The aspect ratio of the pixel map is controlled by the number of columns and rows that are created. 
+Matrix fixtures may be selected by blocks using the rectangle or the lasso selection tools.
+
+**Create a new pixel mapper:**
+
+1.  From the Topo Actions menu, tap {Add Elements}
+
+2.  From the {Add Elements} drop down, tap {Pixel Mapper} - The Create New Pixel Mapper popup will appear.
+
+<p align=center> ![15.3-Add-Pixel-Map](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F8UNP0d8uTLyIOVUF4YZt%2F15.3-Add-Pixel-Map.webp?alt=media&token=3fa65b6f-b76a-434c-8f04-2e4fcc7e2664) </p>
+
+3. Fill in the number of columns and rows and set the start position and direction.
+
+4.  Press \[ENTER] or tap Apply to close the popup and create the blank pixel map.
+
+5.   👉 <span style="color:Red">Currently, the pixel map will appear in the top right corner and in some cases, a zoom out will be needed to find the pixel map and drag it back to the desired location.</span>.
+
+6.  Using the same methods for adding fixtures to the Topo, drag the fixtures into the pixel map matrix.
+
+7.  Release the fixtures and they will populate the pixel map. 
+👉 <span style="color:Red">The number of fixtures must not exceed the number of pixel mapper cells.</span>.
+
+8.  The populated matrix in {Edit} Mode will display the fixture numbers in each cell. In {Live} Mode, the fixture's color mix will be shown. CMY, RGB, and HSV color spaces are supported.
+
+<p align=center> ![15.3-Pixel-Map-Edit](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhsdMn5ORpFnytVg5G5nt%2F15.3-Pixel-Map-Edit.webp?alt=media&token=0d13e0bb-fa5a-4cea-9e04-e3ee0d35f544){height=500px} </p>
+
+<p align=center> ![15.3-Pixel-Map-Live](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIIlErgA7cLfkvEBog3jE%2F15.3-Pixel-Map-Live.webp?alt=media&token=b80d44ce-503d-4d8c-a3de-c8afa28e8e07){height=500px} </p>
+
+👉 Multiple pixel mappers may be added to the same Topo along with other objects.
+    
+👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
+
+### Add Text Labels
+
+Text labels of any color can be added don the Topo, for example to put notes, descriptions, or important information.
+
+**Create a new text label:**
+
+1.  From the Topo Actions menu, tap {Add Elements}
+
+2.  From the drop down, tap {Text Label} - The Create Label pop-up will appear.
+
+<p align=center> ![15.3-Add-Label](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FXGvDWTcDhcNoyYh55Uyc%2F15.3-Add-Label.webp?alt=media&token=2bfe1aeb-3ff8-4871-aeef-87703ac8176b) </p>
+
+3. Close the pop-up and the test label will appear on the Topo surface.
+
+4. Drag the label to the desired location.
+
+5. Transpose tools may be used to size and rotate the label.
+
+### Add Background
+
+Backgrounds images, such as studio layouts, renderings and rig elements, may be added to the Topo. 
+
+**Add a new background:**
+
+1.  Prepare a USB stick with a JPEG, BMP, or PNG file content.
+
+2.  Insert the USB stick into one of the Vibe's USB ports.
+
+3.  Tap {Add Elements} on the Topo menu.
+
+4.  Tap {Add Background} - A browser popup will appear.
+
+5.  Select the USB stick and click on the desired content - Once imported, the content may be found in the default local directory on the hard-drive under D:\Vibe\Compulite\WorkDir\show\Images\Topo\
+
+6.  Tap {Load}, \[ENTER] or tap Apply to close the popup and place the content as a background to the Topo.
+
+**Remove a background:**
+
+1.  Tap {Add Elements} on the Topo menu.
+
+2.  Tap {Remove Background}.
+
+**Edit a background:**
+
+Topo background images can be edited in size and position, through the tools under the Add/Remove Background buttons.
+
+<p align=center> ![15.3-Topo-Menu-Background](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgQBsIkQ4KtJPBm5nTMqq%2F15.3-Topo-Menu-Background.webp?alt=media&token=e869af6a-e0ce-46ee-8a9e-d1149a87c693) </p>
+

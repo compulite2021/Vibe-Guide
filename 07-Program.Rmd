@@ -1,0 +1,1087 @@
+
+# Program
+
+This chapter deals with using the editor and the smart screen for fixture manipulation and parameter control.
+
+**The following is covered in this chapter:**
+
+-  [7.1 Parameters](#Parameters-7.1)
+-  [7.2 Smart Screen](#Smart-Screen-7.2)
+-  [7.3 Editor Features](#Editor-Features-7.3)
+-  [7.4 Live](#Live-7.4)
+
+
+## Parameters {#Parameters-7.1}
+
+
+Parameters are any feature of a device that may be manipulated and stored into an object. 
+
+Examples of parameters are:
+
+-   Dimmer
+
+-   Pan/Tilt
+
+-   Cyan/Yellow/Magenta
+
+-   Zoom/Focus
+
+-   Gobo Wheel
+
+-   Blade Rotation
+
+To control properly any fixture, the Vibe device needs to be built according to the DMX chart of the fixture's parameters, that is usually reported in the manufacturer's user manual.
+
+### Param Banks
+
+Vibe organizes the fixtures' parameters under 6 standard **Banks** and 2 special Banks:
+
+
+Standard Banks are:
+
+1.  Intensity
+
+    - for params related to the power and rate of the light output
+
+    - typical parameters are Dimmer, Shutter, Strobe
+
+2.  Position
+
+    - for params related to the movement and focusing
+
+    - typical parameters are Pan, Tilt, Move speed
+
+3.  Color
+
+    - for params related to the light's colors and tints
+
+    - typical parameters are Red, Green, Blue, White, Cyan Magenta, Yellow, CTC
+
+4.  Beam
+
+    - for params related to the angle and size of the light beam
+
+    - typical parameters are Zoom, Focus, Iris, Prism
+
+5.  Image
+
+    - for params related to the pictures that may be applied to the light beam
+
+    - typical parameters are Gobo wheel, Gobo rotation, Animation wheel
+
+6.  Shape
+
+    - for params related to the framing system that cuts the light output
+
+    - typical parameters are Blade depth, Blade angle, Blade rotation
+
+Special Banks are:
+
+1.  Control 
+
+    - a param that sends "real time" messages to fixtures control functions
+
+    - typical functions are Lamp On, Lamp Off, Reset
+
+    - it is a special bank because its parameters are not stored in cues, scenes and libraries
+
+2.  Media
+
+    - a bank that collects specific features to control media servers
+
+    - it is a special bank because its parameters are actually included in the standard banks 
+
+### Virtual Params
+
+Vibe automatically adds to the fixtures the relevant virtual parameters, that allow controlling the corresponding real parameters in a smart and effective way.
+
+Virtual controls are also mapped to the 4 physical wheels.
+
+Virtual parameters are the following:
+
+  - **Virtual Dimmer**: assigned to fixtures that don't have a specific dimmer parameter, usually RGB LEDs, it controls the light output intensity by adjusting the color values proportionally.
+
+  - **Virtual HSI**: assigned to fixtures with any kind of color mixing system, it's a set of 3 params (Hue, Saturation, Intensity) that controls the color output by adjusting the real color values. 
+
+👉  It comes particularly useful when a fixture needs to be switched with another having a completely different color mixing system, for example an CMY to an RGBA.
+
+  - **Virtual XYZ**: assigned to fixtures with Pan/Tilt parameters, it's a set of 3 params (VX, VY, VZ) that controls the focusing by adjusting the position values. If based on a correct fixture **calibration** it allows to focus the fixtures on any stage point by simply tapping on the screen.
+
+👉  It comes particularly useful when a fixture needs to be switched with another having a different Pan and Tilt range.
+
+
+### Fixture Manipulation
+
+The manipulation of any fixture's parameter values may be set by using either Vibe's intuitive **Smart Screen** picker system or the conventional encoder wheels and the keypad method.
+
+The switch between banks can be done either from the Smart Screen or through the combination SHIFT + # where the # represents the bank number.
+
+**Standard programming:**
+
+Programming may be done traditionally by using {Bank} keys and the 4 large push wheels.
+
+1.  Select the fixtures to program: Fixture # \[+ ⟶ -] 
+    
+2.  Select the **{BANK}** of the parameter you wish to adjust.
+    
+3.  Banks may contain more than 4 wheels of parameters. Tap the **{BANK}** key or push the encoder wheel again to page to the next set of 4 parameter wheels.
+    
+4.  Select the Param to adjust either on the touch screen or by pushing the correspondent encoder wheel. The wheel display turns red.
+
+5.  Rotate the encoder wheel of the parameter you wish to adjust, or directly add values with the keypad: 
+  - Push a parameter wheel to select the parameter
+  - **AT** will appear on the command line 
+  - Type a value from Zero ⟶  Full.
+    
+><span style="color:red">**@** is only used for the dimmer, parameters other than dimmer do not use the @ key.</span>
+
+><span style="color:Red">A Parameter value must be entered in 2 digits or one digit and the \[Enter] key for whole numbers: 05, 50, 5 \[ENTER] = 50.</span>
+
+**Interactive programming:**
+
+Programming may be done interactively by using {Bank} keys and the 4 large push wheels.
+
+1. Select the fixtures to program: Fixture # \[+ ⟶  -] 
+    
+2. Select the **{BANK}** of the parameter you wish to adjust OR Drag the **Wheel Picker** on the right side of the **Smart Screen** and browse to the wheel and slot you want to program. 
+    
+3. Tap the tab of the feature OR Tap the wheel slot that you wish to program. The context sensitive area on the **Smart Screen** will open with the appropriate picker.
+    
+4. Adjust the virtual controls through the options shown in the picker, that will be grayed out if not available in the current fixture selection.
+
+**Select multiple parameters:**
+
+- After making a fixture selection, toggle multiple parameters ON/OFF by tapping {Parameter Keys}, pressing encoder wheels, or toggling desired live display headers.
+    
+**Manipulate all parameters in a bank:**
+
+- After making a fixture selection, hold \[SHIFT] and tap a {Parameter Bank Key}.
+    
+- Pressing and holding a {Parameter Bank} will popup three options:
+
+  - {HOME} - Sets the bank's parameters to Home values.
+
+  - {ALL PARAMS} - Selects all parameters in the parameter bank.
+
+  - {RELEASE} - Releases the bank's parameter from the Editor.
+
+### Editor Controls
+
+-   **Dimmer Wheel** is always controlling the selected fixtures' Dimmer params, independently from the currently selected bank and parameters.
+
+-   **Trackball** is always controlling the selected fixtures' Pan and Tilt params, independently from the currently selected bank and parameters.
+
+-   **\[PREV] / \[NEXT]** keys have the same functions of the Next and Prev hardkeys, but are positioned near the trackball and the dimmer wheel to make the adjustment of these params fast and comfortable.
+
+-   **\[X LOCK] / \[Y LOCK]** keys lock the X or Y axis of the trackball, allowing to move individually Pan or Tilt instead of both.
+    
+-   **\[RES]** - Sets global encoder resolution. 
+
+  <span style="color:Blue">Blue</span> = Low 8 bit, 
+
+  <span style="color:MediumAquaMarine">Green</span> = Medium 10 bit (Default) 
+
+  <span style="color:Red">Red</span> = Higher 12 bit.
+
+  <span style="color:Gold">Yellow</span> = High 16 bit.
+
+  <span style="color:Magenta">Magenta</span> = Highest 24 bit.
+
+  👉 Holding the \[VIBE] key down while turning an encoder temporarily sets the encoder to high resolution 16 bit.
+
+-   **Encoder Wheels** the 4 interactive encoder wheels control the 4 params currently shown on the Smart Screen's wheels display and allow to select or deselect the parameters by pushing the wheels.
+
+👉 Vibe uses a precision algorithm for encoders. Based on the starting resolution, the slower an encoder is turned, the more resolution it has.
+
+-   **Extra Wheels** the 4 additional interactive encoder wheels on the Smart Screen's right side control 4 additional params, that are dependent on the bank and selected fixture type.
+
+  -   Position, Image and Shape assign Focus and Zoom to the interactive wheels.
+
+  -   Color assigns Color Wheels and CTC to the interactive wheels.
+
+  -   Beam assigns Prism and Prism Rotate to the interactive wheels.
+
+
+## Smart Screen {#Smart-Screen-7.2}
+
+
+The 11.6" multi-touch monitor directly above the 4 encoder wheels is referred to as the **Smart Screen.**
+
+The **Smart Screen** is dedicated to displaying:
+
+-   Context sensitive interactive bank, and parameter information.
+
+-   Encoder wheel displays.
+
+-   Playback information for the controllers that are directly above it.
+
+-   Special popups for Libraries, Store options and Grab functions.
+
+-   A simplified Effects editor.
+
+-   Displays for Fan feature.
+    
+**Smart Screen is divided into sections corresponding to the Parameter Banks.**
+
+The Bank buttons on the Smart Screen, used to access the different parameters of the selected fixtures, have the following behavior:
+
+- Bank buttons 1-6 are always enabled. (i.e., to access libraries in the Context view)
+
+- If the Bank is enabled and active (there are parameters for the current selection in this bank), it has White text.
+
+- If the Bank is enabled and inactive (there are no parameters for the current selection in this bank), it has Black text.
+
+- If the Bank is disabled (not functional in the current selection), it is grayed out and not accessible.
+
+- If the Bank is currently selected, it has a colored background.
+
+### Intensity
+
+Intensity bank has parameters like Dimmer, Shutter and Strobe.
+
+The dimmer level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the predefined incremental steps.
+
+The strobe and shutter level, mode and frequency can be set in the smart screen with the macros showing the selected fixtures' properties.
+
+<p align=center>**Smart Screen - Intensity Bank**</p>
+<p align=center> ![7.2-Intensity-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ODIRQRoX8R3lUkEDXDK%2F7.2-Intensity-Bank.webp?alt=media&token=09031393-72b2-4afc-9c8c-89ebba241c58) </p>
+
+The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
+
+### Position
+
+Position bank has parameters like Pan and Tilt.
+
+The fixtures' position can be set either with the editor keys, wheels, and trackball, and through the smart screen by using the virtual sliders and the position picker.
+
+The position is calculated at the same time on Pan/Tilt values and on virtual XYZ values, based on the fixture's calibration on the stage.
+
+Independently from the fixture's pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.
+
+<p align=center>**Smart Screen - Position Bank**</p>
+<p align=center> ![7.2-Position-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcxXl4nzaySnknNJLRVzk%2F7.2-Position-Bank.webp?alt=media&token=bdd6d8a7-f0a4-4807-98b5-a195429fa499) </p>
+
+### Color
+
+Color bank has parameters like Color Mix (RGB, CMY, RGBW, ...) and Color Wheels.
+
+The color level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders in "Params" screen, the color picker in "Virtual" screen, or the color presets.
+
+The color mix is calculated at the same time on the color values and on virtual HSI values, based on the fixture's color mixing system.
+
+Independently from the fixture's color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture's colors.
+
+The color wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features.
+
+The color mix can also be set by using the predefined preset combinations and Vibe's smart features.
+
+<p align=center>**Smart Screen - Color Bank**</p>
+<p align=center> ![7.2-Color-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUAQAtMSTZNGJfNL3hiQs%2F7.2-Color-Bank.webp?alt=media&token=37233298-6edb-41c8-9321-84119d35f86d) </p>
+
+**Filters Picker**
+
+Color bank has a Lee and an Other filters section to assign colors based on the most used brands of gel filters.
+
+**Kelvin Picker**
+
+Color bank has a Kelvin picker for a fast adjust of any color temperature between 1000K and 20000K, linearly or by incremental steps.
+
+<p align=center> ![7.2-Kelvin-Picker](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F6HVYnqAGm4BNl8vUKHzQ%2F7.2-Kelvin-Picker.webp?alt=media&token=b4bdbc15-0ebe-4091-8f3e-188670b69a81) </p>
+
+This feature is recommended for working in television studios and photography environments.
+
+**Vibe Mood Picker**
+
+Color bank has a Vibe mood picker for a fast reproduction of a color taken from a picture.
+
+<p align=center> ![7.2-Mood-Picker](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fa0xtuFjdwfBdQmE9JJlJ%2F7.2-Mood-Picker.webp?alt=media&token=aa3853ad-e7a0-4dc5-aa36-d5a1b6ce87b2) </p>
+
+This feature is recommended if working with assigned color palettes, for example in cinema or theater shows, to create color libraries directly from the scene's and costumes' pictures.
+
+To get a color from an image:
+
+1. Load an image file to the Vibe mood picker
+
+2. Zoom the section of the target color
+
+3. Select the color to assign to the fixture selection
+
+👉 The system provides an inbuilt database of 10 default images that can be used to check the Vibe Mood Picker and create Color Libraries based on the images' tones.
+
+### Beam
+
+Beam bank has parameters like Focus, Zoom, Frost and Prism.
+
+The beam parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the beam picker.
+
+The beam picker automatically enables the features available on the selected fixtures, offering an intuitive control system to set the mode, speed and type of transition related to the controlled parameter.
+
+The prisms are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the wheel picker to get complete control on the prism wheels' features.
+
+<p align=center>**Smart Screen - Beam Bank**</p>
+<p align=center> ![7.2-Beam-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2sh3eddaipBQZyzMFEaZ%2F7.2-Beam-Bank.webp?alt=media&token=d658226f-7061-4d9d-916b-95529e9e1067) </p>
+
+### Image
+
+Image bank has parameters like Gobo and Effect wheel.
+
+The image parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the image picker.
+
+The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features. The image picker can be also accessed by pressing the Virtual button on image bank's screen.
+
+On the image picker's right side, it is possible to visualize and select each fixture's wheel, on the left side can be set the indexing and rotation speed of the whole wheel or the single frame.
+
+The interactive wheel picker shows all the graphic frames related to the selected wheel to allow fast interchange operations.
+
+<p align=center>**Smart Screen - Image Bank**</p>
+<p align=center> ![7.2-Image-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiwsphMY7h92U1agUZdTw%2F7.2-Image-Bank.webp?alt=media&token=130d89e7-2636-4499-95e6-cc2c2bd6aa13) </p>
+
+### Shape
+
+Shape bank has parameters like Blade movement and rotation.
+
+The blades' depth and angle can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the blade picker.
+
+The blade picker features a smart graphic control of the blade, independently from the fixture's blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
+
+<p align=center>**Smart Screen - Shape Bank**</p>
+<p align=center> ![7.2-Shape-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlFJYfyfv9GX4MoOVlIiK%2F7.2-Shape-Bank.webp?alt=media&token=883721f1-4ad7-47ea-bd32-148aa6073666) </p>
+
+### Wheel Picker
+
+Wheel Picker is used to control any kind of wheel, such as Color, Prism, Gobo and Animation.
+The values will be stored into libraries, scenes and cues according to the parameter's bank.
+
+<p align=center>**Smart Screen - Wheel Picker**</p>
+<p align=center> ![7.2-Wheel-Picker](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fk4ddGPRblIR165mXK6Mn%2F7.2-Wheel-Picker.webp?alt=media&token=f98fa9d6-394e-4a61-8b2a-63d81cfad125) </p>
+
+The wheels adjusted with the wheel picker will reflect into values assigned to the wheel's parameters, usually the wheel's positioning and rotation and the whell's frame selection, index and rotation.
+
+Any wheel of the fixtures can be controlled through the wheel picker in the same way, using the Smart Screen's "Smart" visualization mode to visualize and select the frames' icons directly in the right side column.
+
+### Control
+
+Control bank has parameters related to the fixture's functions, like Lamp on/off and Reset.
+
+The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.
+
+<p align=center>**Smart Screen - Control Bank**</p>
+<p align=center> ![7.2-Control-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FYOhykSfJYRVLDIr5lo4K%2F7.2-Control-Bank.webp?alt=media&token=67d196a9-9c5a-4cc3-bf4b-b9a6df2849e0) </p>
+
+### Media
+
+Media Bank is the picker designed for an intuitive **Media Server** programming, to handle media contents in a smart and easy way. In order to see the content in this bank, users will need to create Media Server fixtures such as Green Hippo's Hippotizer. 
+
+All virtual controls are also mapped to the physical wheels for easy use.
+
+This bank has 5 types of pickers:
+
+**Media**
+
+This picker includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play. 
+By default all the folders and subfolders are visible, and once synchronizing the data with the media server through CITP the file's thumbnails will be shown.
+
+<p align=center>**Smart Screen - Media Bank**</p>
+<p align=center> ![7.2-Media-Bank-File](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FxKWCsh9JnAWKx5I8vsAf%2F7.2-Media-Bank-File.webp?alt=media&token=e08e89ea-d994-4b8f-b72c-7f40079974a7) </p>
+
+**FX (Effect)**
+
+This picker includes the effects available on the media server. There are media servers with more than 1 effect engine (layer) and for each effect there will be a numbered FX Bank button.
+
+The FX Bank includes a list of effects that are possible to trigger on the server and a list of parameters to control the effect. The parameters will be dynamically changed according to the selected effect.
+
+<p align=center> ![7.2-Media-Bank-Effect](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fzn01ps0c5gZGjDGdjxrR%2F7.2-Media-Bank-Effect.webp?alt=media&token=8ad6deae-2239-4b7a-a795-9c06f6b05007) </p>
+
+**Keystone**
+
+This picker includes a graphic interface to control the keystoning of the server. 
+There are 4 points available for movement in order to control the position of each corner of the keystone control. 
+The selected point that is assigned to the physical wheels is marked in red.
+
+<p align=center> ![7.2-Media-Bank-Keystone](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Ff1DltbHtsKqR2GSLNYx7%2F7.2-Media-Bank-Keystone.webp?alt=media&token=3311291a-40ca-4c4c-a40e-65d14a673e54) </p>
+
+**Generator**
+
+This picker is specifically made for Hippotizer. On this bank, users can control the picture that is sent from the server's layer on the Generator engine. 
+The bank acts the same as the Media FX bank by selecting the Generator from the Generators list and then moving the Generator's parameters accordingly.
+
+<p align=center> ![7.2-Media-Bank-Generator](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FejpUBCP4eaHQAPtihcAU%2F7.2-Media-Bank-Generator.webp?alt=media&token=1586bc5c-112a-4429-bb5b-d0c67c7b5781) </p>
+
+**Geometry**
+
+This picker includes an interface to control most of the geometric functions of the media server. 
+
+There are options to control:
+
+- Aspect Mode of the layer.
+
+- Zoom
+
+- Rotation, Indexed or Rotating with speed control
+
+- Aspect Ratio
+
+- Positioning, both X and Y
+
+In addition there is a graphic preview to show the approximate result of the geometric parameters.
+
+<p align=center> ![7.2-Media-Bank-Geometry](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9hVknUQBXvotM5BxmTrY%2F7.2-Media-Bank-Geometry.webp?alt=media&token=bd477f09-7a20-4a39-bd8f-c093e61f2344) </p>
+
+### Smart Settings
+
+**Smart Screen's Settings** are accessed by tapping the {Settings} key.
+
+The options are divided in 3 menus: 
+
+  - Format
+
+  - Resolution
+
+  - View
+
+The {Home} key returns menus to the upper level.
+
+- **Format** - Sets the view format for wheel displays:
+
+	-   Percent 
+
+	-   Decimal 
+
+	-   Text 
+
+	-   Text + Percent
+
+- **Resolution** - Sets the wheels' and the virtual pickers' control resolution:
+
+	-   8 bit - Blue on \[Res] Key
+
+	-   10 bit - Green on \[Res] key 
+
+	-   12 bit - Red on \[Res] key 
+
+	-   16 bit - Yellow on \[Res] key 
+
+	-   24 bit - Magenta on \[Res] key 
+
+	👉 This may also be set by toggling the \[Res] key over the trackball.
+
+- **View** - Sets the behavior of the smart screen views:
+
+	-   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
+
+	-   Programming - Maintains the programming display even with the editor released. 
+
+	-   Playbacks - Maintains the playback controller display even with fixtures in the editor.
+
+**Smart Screen's Preferences** are accessed by tapping the {Smart} {Param Steps} and {Extra Wheels} keys near the {Settings} key.
+
+The preferences affect the visualization display in the right side column of the smart screen:
+
+-   **Smart** - All wheels for the selected fixture are shown in the interactive wheel picker area.
+	
+-   **Parameter Steps** - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture. 
+
+-   **Extra Wheels** - Displays wheel information for the additional context sensitive encoder wheels.
+
+
+## Editor Features {#Editor-Features-7.3}
+
+
+### Clear
+
+To clear the last command or key pressed from the **Command Line**
+
+-   Press \[CE] key
+
+To clear the **Command Line** without releasing the fixture selection and the param values assigned on the editor
+
+-   Press \[VIBE] + \[CLEAR] keys
+
+### De-Select
+
+To de-select the current **Fixture Selection** without releasing the param values assigned on the editor
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + \[DESEL] keys
+
+To re-select the last **Fixture Selection**
+
+-   Press \[.] key
+
+### Release
+
+To release all the selected fixtures' parameters from the **Editor**
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[RELEASE]
+    
+To release the entire bank of parameters of the selected fixtures from the Editor
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {Bank} \[RELEASE] 
+
+To release a fixture parameter (or the active parameters) of the selected fixtures from the Editor
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] {BANK} {PARAMETER} \[RELEASE]
+    
+If a fixture is selected and active (Red), the first press of \[RELEASE] releases the parameter and then the second press releases the whole fixture. 
+
+### Reset
+
+To reset the **Editor**, releasing all the param values without releasing the fixture selection
+
+-   Press \[RESET] key
+    
+To reset the **Editor**, releasing both the fixture selection and the param values
+
+-   Press \[VIBE] + \[RESET] keys
+    
+### Home
+
+When a parameter is not in use, meaning it is not in the Editor, neither triggered from any Playback, the values used by Vibe to tell where the fixture parameters should be set can be based on the fixture's home values or on the last value assigned.
+
+Vibe has two options to set uncontrolled parameters' values, that can be set in the System Settings popup in the {Editing Properties} tab under the Default Stage Values header:
+
+  - {Use Home values} sets the uncontrolled parameters to their **Home Value**
+
+  - {Maintain Last Value}  leaves the uncontrolled parameters to **Maintain the Last Value** they were at before being released
+
+All the devices have default home values for parameters based on the manufacturer's DMX chart. 
+
+Selected fixtures or parameters may be sent to their defaults using the \[HOME] key.
+
+ **Home** - Sets parameter values to home values as defined by the manufacturer or to custom values defined by the user **Home Scene**.
+
+The \[HOME] button brings the fixture, bank or parameter home value in the Editor.
+
+To **Home** selected fixtures in the **Editor**
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[HOME]
+    
+To Home the entire bank of parameters of the selected fixtures in the Editor
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {BANK} \[HOME]
+
+To Home a fixture parameter (or the active parameters) of the selected fixtures in the Editor
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] {BANK} {PARAMETER} \[HOME]
+
+If a fixture is selected and active (Red), the first press of \[HOME] homes the parameter and then the second press homes the whole fixture. 
+    
+### Highlight
+
+Highlight is used to help identify the positions of fixtures, so they may be edited more easily.
+
+Highlight Mode affects parameters and banks in the following way:
+
+-   Dimmer - Full
+
+-   Other Intensity parameters - home values and masked
+
+-   Position - unchanged and editable
+
+-   Color - home values and masked
+
+-   Beam - home values and masked
+
+-   Image - home values and masked
+
+-   Shape - home values and masked
+
+To Highlight Fixtures or Groups:
+
+1. Select fixtures using keypad or using Groups.
+    
+2. Press \[H.LIGHT] - The key will flash in <span style="color:Red">red</span> to indicate the mode is active. 
+
+All the Fixture selection will be set as specified above.
+    
+3. Press \[NEXT] - The first fixture will remain "highlighted" and all other fixtures will return to their editor or stage values.
+    
+4.  Adjust Pan/Tilt as required and press \[NEXT] to move to the next fixture.
+    
+5. Continue through the fixture selection using \[NEXT] \[PREV] until all fixtures are focused.
+    
+6. Press \[H.LIGHT] again to turn off Highlight Mode. The red light will go out and fixtures will return to their current editor or stage values.
+
+Highlight may be entered before a selection is made.
+Press \[ENTER] to Highlight the selection.
+
+To swap new fixtures into Highlight:
+
+-   Select new fixtures or Groups and press \[ENTER] while still in Highlight Mode - the Highlight selection will be swapped.
+
+Until \[NEXT] \[PREV] is pressed Groups will be appended to make up a larger Highlight selection.
+
+Highlight may be customized when the default home values are too generic. 
+
+👉 Frequently users tighten the zoom or use a closer iris value as default to better focus the center of the beam.
+
+### Lowlight
+
+Lowlight is used when many fixtures are lit up and therefore Highlight is not helpful.
+
+Lowlight Mode affects parameters and banks in the following way:
+
+-   Dimmer - 30% all fixtures **except** active fixture which will be at 100%
+
+-   Other Intensity parameters - home values and masked.
+
+-   Position - unchanged and editable
+
+-   Color - home values and masked
+
+-   Beam - home values and masked
+
+-   Image - home values and masked
+
+-   Shape - home values and masked Unlike Highlight, Lowlight maintains a value of 30% for dimmers while active.
+
+To Lowlight Fixtures or Groups:
+
+1.   Select fixtures using the keypad or using Groups.
+    
+2.  Press \[L.LIGHT] - The key will flash in <span style="color:Red">red</span> to indicate the mode is active.
+    
+3. Press \[NEXT] - The first fixture will go to a dimmer value of 100% and all other fixtures dimmer values will remain at 30%. Other parameters will return to their editor or stage values.
+    
+4. Adjust Pan/Tilt as required and press \[NEXT] to move to the next fixture.
+    
+5. Continue through the fixture selection using \[NEXT] \[PREV] until all fixtures are focused.
+    
+6.  Press \[L.LIGHT] again to turn off Lowlight Mode. The red light will go out and fixtures will return to their current editor or stage values.
+
+Lowlight may be entered before a selection is made.
+
+Press \[ENTER] to Lowlight the selection.
+
+To swap new fixtures into Lowlight:
+
+- Select new fixtures or Groups and press \[ENTER] while still in Lowlight Mode - the Lowlight selection will be swapped.
+
+Until \[NEXT] \[PREV] is pressed Groups will be appended to make up a larger Lowlight selection.
+
+Lowlight may be customized when the default home values are are too generic. 
+
+👉 Frequently users set the Lowlight dimmer to Zero instead of the default 30% to create a solo effect.
+
+### Rem Dim
+
+**Remainder Dim** is an Editor Tool commonly used in theater environments but can be useful in many other situations.
+
+**{REM DIM}** Toggles all dimmer values to 0 except those that are selected. 
+
+If no value is given in the editor, the selected fixtures will maintain their current values.
+
+Find {REM DIM} key on the toolbar when there's a Fixture Selection active.
+    
+-   While in {REM DIM} is ON, \[Next] / \[Prev] will swap the Rem Dim fixture forwards or backwards.
+    
+-   If a selection of multiple fixtures is made followed by {REM DIM} all unselected fixtures will go to 0%. The selected fixtures will not be changed or entered into the editor.
+    
+-   If a selection of multiple fixtures is made, \[Next] / \[Prev] will force all but the first fixture in the selection to 0. The next press of \[Next] / \[Prev] will force the first fixture to 0 and release the next fixture's dimmer. Fixtures in the selection will continue to swap from 0 to release with each press of \[Next] / \[Prev].
+    
+-   Pressing REM DIM again toggles the feature off and restores the stage look.
+    
+-   Cues may be stored with {REM DIM} ON and the dimmers forced to 0% by Rem Dim will not be stored. 
+
+Once stored, {REM DIM} is turned off.
+
+### Undo
+
+Undo button directly rolls back the last actions.
+
+Every parameter programmed in the editor can come back to its previous status by pressing the UNDO button.
+
+Pressing Undo button multiple times will restore step by step the last actions.
+
+Undo function can be used to recover the editor status after a Shift + Reset command, and to restore objects that have been stored, deleted, or updated, such as groups, libraries, qlists, cues and scenes.
+
+Undo button works also with Home and High/Lowlight actions.
+
+**Undo History**
+
+Settings ⟶ Undo opens the Undo/Redo list to review and restore the last actions.
+
+<p align=center>**Undo History**</p>
+<p align=center> ![7.3-Undo-History](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FaaFMuHiXrwg3n1mWf7SL%2F7.3-Undo-History.webp?alt=media&token=50c86b8e-4d72-4fa6-8534-b5b559f62702) </p>
+
+To Undo more operations at a time, access the Undo history with the sequence \[Vibe] + \[Settings], \[Undo]
+
+In the Undo popup’s left column are listed all the undoable actions, and in case an undo command has been done, the list on the right shows the redo able actions.
+
+Each action reports the date and time when it has been done.
+
+Select one or more actions, than press undo or redo to come back to the desired status.
+
+The popup does not close until the apply or restore buttons are pressed.
+
+### Fan
+
+Fan is used to apply a distribution of values to the Fixture Selection.
+
+Fan of the selected fixtures' parameters can be done either through the keypad syntax or by using the \[Fan] key and Smart Screen's interface.
+
+<p align=center> ![7.3-Fan-Mode](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FksUNhoKmMfJPGeIEnQHl%2F7.3-Fan-Mode.webp?alt=media&token=9c3a99c0-0b24-4a5e-bda1-1799cdb7f036) </p>
+
+To enter the **Fan** Mode
+
+1. Select the range of fixtures to be fanned.
+    
+2. Press \[FAN] to enter Fan Mode. - The key will flash in <span style="color:Red">red</span> to indicate the mode is active.
+    
+3. Select a Curve from the Fan Mode picker on the Smart Screen's right side.
+    
+4. Turn the encoder wheel of the parameter. - The param's values will be set fanned proportionally to the curve applied the order of selection.
+    
+5. Toggle \[FAN] OR Select a different parameter to turn Fan mode off.
+
+Frequently used **Fan curves**:
+
+-   {Fade In} / = lowest to highest
+
+-   {Fade Out} \ = highest to lowest
+
+-   {Diagonal} -/- = Standard PAN Fan
+
+-   {Saw Tooth} /\ = Mirror lowest on ends to highest in middle
+
+-   {Mirror} \/ = Highest on ends to lowest in middle
+
+Curves can be freely changes while in Fan Mode to check the different results.
+
+Any Curve created in the Curves Editor may be applied to Fan.
+
+The Fixture Selection can be splitted to get fanned in **Blocks of** and **Sub Blocks**:
+
+1. Select the range of fixtures to be fanned.
+    
+2. Press \[FAN].
+    
+3. Select a Curve from the Fan Mode.
+    
+4. Select **Blocks of {#}**
+    
+5. Select **Sub Blocks {#}**
+    
+6. Turn the encoder wheel of the parameter requiring fanning.
+    
+7. Toggle \[FAN] to turn off Fan Mode.
+    
+**Examples of Blocks and Sub Blocks:**
+
+-   {Fade In} - Blocks of 1 and no Sub Block
+
+<p align=center> ![7.3-Fan-Blocks-1](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNIYGLi5Z3mtZPS5uV907%2F7.3-Fan-Blocks-1.webp?alt=media&token=f20908a0-3050-4546-80e5-700d937b768e) </p>
+
+-   {Fade In} - Blocks of 4 no Sub Blocks
+
+<p align=center> ![7.3-Fan-Blocks-2](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FP5fT2dCktnN8oFTcFlMK%2F7.3-Fan-Blocks-2.webp?alt=media&token=6d61ebdf-c946-4a8d-8a61-aabf6aaa7957) </p>
+
+-   {Fade In} - Blocks of 6, Sub Blocks of 2
+
+<p align=center> ![7.3-Fan-Blocks-3](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FllvDi6StFjRL6Y2YMBMD%2F7.3-Fan-Blocks-3.webp?alt=media&token=6d06ff0b-86cc-411d-9f41-cdda41bdbf22) </p>
+
+-   {Saw Tooth} - (Low-High Mirror) Blocks of 12, Sub Blocks 2
+
+<p align=center> ![7.3-Fan-Blocks-4](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTqOFB3yJ3ihK3VTeVAL1%2F7.3-Fan-Blocks-4.webp?alt=media&token=b4bfaaef-9ed0-4c1c-9494-5035867a4ba6) </p>
+
+-   Moving Light Fixture with {Fade In} Dimmer and Color Fan, and {Diagonal} Pan Fan
+
+<p align=center> ![7.3-Fan-Blocks-5](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FU981qcnwTo3prZBO4VAH%2F7.3-Fan-Blocks-5.webp?alt=media&token=6be1a186-b9b8-4f22-8565-923e5d4eae31) </p>
+
+Fixture **Groups** may also be used as Blocks.
+
+To Fan Blocks By Groups:
+
+1. Select the Groups
+
+2. Press \[FAN].
+    
+3. Tap {Blocks By Group} under the Fan Mode picker.
+    
+4. Use any of the above methods to fan parameters by Group.
+
+### Copy / Paste
+
+\[COPY] and \[PASTE] are used to make copies of any object, such as Groups, Libraries, Scenes, Cues and Qlists, and store them in the desired positions.
+
+The syntax to copy and paste an object is:
+
+{Object} \[COPY] {Target} \[PASTE]
+
+👉 \[COPY] and \[PASTE] keyboard syntax can be also used to copy and paste the selected (Red) params of a fixture to another.
+
+The syntax to **copy and paste param values** is:
+
+\[Fixture] {Param Selection} or {All} \[COPY] {Fixture} \[PASTE]
+
+When something is in **Copy** the \[COPY] key will flash in <span style="color:Red">red</span> to indicate there is a copied content.
+
+When a **Paste** command applies the content to the target, the data is kept on the Copy key to allow making other copies.
+
+Toggle \[COPY] to remove the content from the copy feature.
+
+### Move
+
+\[MOVE] is used to change position of any object, such as Groups, Libraries, Scenes, Cues and Qlists.
+
+The syntax to move an object is:
+
+\[MOVE] {Object} {Target}
+
+\[MOVE] can be also used to re-position Playback controllers without changing their content and settings.
+
+The syntax to **Move a controller** is:
+
+\[MOVE] {Controller} {Target Controller}
+
+
+## Live {#Live-7.4}
+
+
+Vibe has two ways to display parameter data: 
+
+1. **Live View** - shows editor and playback values as a spreadsheet. 
+
+2. **Live Parameter View** - shows editor and playback data in a graphic icon-based format.
+
+### Live View
+
+<p align=center> ![7.4-Live-View](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FABNyNWvGPSeIlebactZp%2F7.4-Live-View.webp?alt=media&token=e031fefc-fb42-472e-be9f-45929a29c3f3) </p>
+
+**Live View Options** are on the Live view's menu.
+
+- **Active** - Filters the fixtures to display. 
+
+  - if all the options are toggled off, the view shows all the fixtures.
+
+  - if **Active On Stage** is on, only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
+
+  - if **Active In Editor** is on, only parameter columns that are selected in the editor are shown. All others are hidden.
+
+- **Headers per Device** - Groups the fixtures visualization by devices, showing the device name on each header. 
+
+  - Headers can be collapsed by tapping on the arrow in the header.
+
+- **Sub Device Mode** - Toggles on/off the visualization of sub-fixtures, available when the device contains sub-devices. 
+
+<p align=center> ![7.4-Live-View-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMvtZoku2GLbbAaUQAMiO%2F7.4-Live-View-Options.webp?alt=media&token=47884ba2-2356-4d50-8c55-f4df9566979f) </p>
+
+- **Sets** - Select which of the fixture sets to display. 
+
+  - Fixture
+
+  - Channel
+
+  - Spot
+
+  - Matrix
+
+  - Media Server 
+
+  - Custom Sets (if created)
+    
+- **Format** - Controls what data is displayed in the cells. 
+
+  - Source PB (the source triggering the value, either it is the editor or a controller)
+
+  - Value > % (values in percentage)
+
+  - Value > Decimal (DMX values 0 ⟶ 255 )
+
+  - Value > Text (Parameter step text)
+
+  - Value > Text + Percentage (Parameter step text and values in percentage)
+
+  - Time (Parameter time, if specified in the editor)
+
+- **Fit By** - Opens column width options:
+
+  - Window 
+
+  - Value 
+
+  - Default
+
+**Live View Settings** are on a popup accessible by tapping the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjtgCEoeuNIgRxKCFBZnG%2F00-Settings-Icon.webp?alt=media&token=a2a1a233-bb50-4c3a-bee5-382b4274c14c">](00-Settings-Icon.webp) Settings icon.
+
+<p align=center> ![7.4-Live-View-Display](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmhpAiLnwvnY7yNAwb8zC%2F7.4-Live-View-Display.webp?alt=media&token=c742eaaa-7312-44a5-b16b-924a53ab64ca) </p>
+
+Live View **Display** tab is to set the cells that are shown and order the columns.
+
+- **Live View Scheme** - Parameter columns may be freely added, removed, or moved in the grid by selecting and tapping on the move keys.
+
+To Move columns:
+
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+
+2. Use the **{|<}** or **{>|}** keys to move the parameter column forward or backwards.
+
+To Move columns to the first or last position:
+
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+
+2.  Use the **{|<<}** or **{>>|}** keys to move the parameter column first position or last position.
+
+To Remove columns:
+
+1. Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.
+
+2. Tap the {Remove} key.
+
+The **Dock** option locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position. 
+
+The **Group By Banks** option groups the columns corresponding to the same param bank.
+
+The **All icons in 1 cell** option is not implemented yet.
+
+- **Banks** - Columns are added using the icons in the parameter box.
+
+To Add or Remove columns:
+
+1. Select a bank - All parameters for the bank will appear in the box adjacent to the banks.
+
+2. Select the parameter or parameters to add to the live display. 
+
+👉 Swipe in the the parameter box to browse hidden parameters.
+
+3. Tap a parameter that is not already selected in green and it will be added to the end of the column list.
+
+👉 <span style="color:Red">Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns. </span>.
+
+4. Use the **{|<}** or **{>|} {|<<}** or **{>>|}** to position the column.
+
+-   **Interactive Icons:** - Adds or removes the interactive icons columns.
+
+👉 <span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.
+
+- **General:** 
+
+  - Global Fixture Number - Fixture's hidden unique system number. 
+
+  - Fixture Layer Number - Adds or removes the Fixture Number column. 
+
+  - Fixture Name - Adds or removes the Fixture Name column.
+
+  - Fixture Address - Adds or removes the Fixture Address column.
+
+👉 <span style="color:Red">Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>
+
+- **Presets:** 
+
+  - Basic - Live view preset that only shows the param columns
+
+  - Basic + Interactive - Live view preset that shows the param columns, the interactive icons, and the fixture layer name and number
+
+  - Extended - Live view preset that shows the param columns, the interactive icons, and the fixture layer name, number and address
+
+Live View **Behavior** tab is to set the view's interactions.
+
+<p align=center> ![7.4-Live-View-Behavior](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyVeVmDjqCCnIobi8zZ67%2F7.4-Live-View-Behavior.webp?alt=media&token=45ebe141-6923-480a-8376-defa4354eb1c) </p>
+
+- **Fixture Jumping**: 
+
+  - Off - No jumps.
+
+  - Jump if needed - Live display pages the display to show the selected fixtures if they are not shown on the current live page. 
+
+  - Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display. 
+
+- **Parameter Jumping**: 
+
+  - Jumps the parameter's column and related bank parameters to the first scrollable column (the end of the Dock position). 
+
+- **Interactive Fixture Selection**:  
+
+  - Turns on the ability to make fixture selections from the live display grids. 
+  - <span style="color:Gray">Not implemented yet.</span> 
+
+- **Interactive Cell Editing**:  
+
+  - Turns on the ability to directly edit cells in the live display grid. 
+  - <span style="color:Gray">Not implemented yet.</span> 
+
+- **Interactive Parameter Selection:** 
+
+  - Enables parameters to be directly selected from the live display headers.
+
+- **Submaster Values:** 
+
+  - Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjlksQ7Tw3y1W3D7BaGEF%2F00-Submaster-Icon.webp?alt=media&token=6904cabb-0530-43c7-8a7e-d6d1f1627c3f">](00-Submaster-Icon.webp) Submaster icon will also be shown to indicate when the parameter is inhibited. 
+  
+  - Show Output Values - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.
+
+### Live Parameter View
+
+The Live Parameter View shows values in a table format instead of spreadsheet format. 
+
+There are three Live Parameter Modes accessible from the view's menu: 
+
+  - Live Parameters
+
+  - Live Banks 
+
+  - Live Fixtures
+
+**Mode** - Select the options of the fixture / parameter icons displayed. 
+
+- **Live Parameter** - Fixtures are graphically displayed by icons per parameter.
+  
+<p align=center> ![7.4-Live-Parameter](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FRzoKlTLzvLuWJRBezETE%2F7.4-Live-Parameter.webp?alt=media&token=2258e36c-9fbd-4095-81d1-8df39675a80e) </p>
+
+As an evolution to the theatrical consoles concept, parameters other than dimmer are also shown.
+
+Parameters visible in Live Parameter Mode can be filtered by using the Parameter View Settings popup. 
+To **Filter Parameters**:
+1. Tap the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjtgCEoeuNIgRxKCFBZnG%2F00-Settings-Icon.webp?alt=media&token=a2a1a233-bb50-4c3a-bee5-382b4274c14c">](00-Settings-Icon.webp) Settings icon to open the Parameter View Settings popup.
+2. Tap parameters on either side to move them from one box to the other.
+3.   Close the popup with \[ENTER] or the [<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F6K4iXjyYvS7vrVHYfTw0%2F00-Apply-Icon.webp?alt=media&token=261d9f44-8145-434e-996f-1a2bd74b54e5">](00-Apply-Icon.webp) Apply icon.
+
+<p align=center> ![7.4-Parameter-View-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fwe49hUNOxgQRzIBpgIfn%2F7.4-Parameter-View-Settings.webp?alt=media&token=4fd9ee82-9d16-4f41-8b23-585afc9c0bf7) </p>
+
+- **Live Bank**- Fixtures are graphically displayed by icons per bank.
+
+<p align=center> ![7.4-Live-Bank](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTXTAHQ5rfOD4a6ELVTgJ%2F7.4-Live-Bank.webp?alt=media&token=cc344b47-ed94-4d32-80ad-63cba52d2ade) </p>
+
+Currently three banks can be graphically viewed:
+
+  -  **Intensity** - In the form of an illuminated circle.
+
+  -  **Position** - In the form of a cursor that moves in a black rectangle representing the stage.
+
+  -  **Color** - In the form of a circular color swatch (Color wheels are not currently supported.)
+
+- **Live Fixture** - Fixtures are graphically displayed by icons per fixture
+  
+<p align=center> ![7.4-Live-Fixture](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeinxVMmj6iSGeT223emn%2F7.4-Live-Fixture.webp?alt=media&token=96cc23ea-8f0e-48ec-b449-cbd8b75f739c) </p>
+
+Intensity, Position, and Color bank icons are merged into a single icon for each fixture.
+
+- **Active On Stage** - Toggle button.
+
+  - If off, all fixtures are shown.
+
+  - If on, only fixtures that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
+
+- **Sets** - Select which of the fixture sets to display. 
+
+  - Fixture
+
+  - Channel
+
+  - Spot
+
+  - Matrix
+
+  - Media Server 
+
+  - Custom Sets (if created)
+
+- **Format** - Controls what data is displayed in the cells. 
+
+  - Value > % (values in percentage)
+
+  - Value > Decimal (DMX values 0 ⟶ 255 )
+
+  - Value > Text (Parameter step text)
+
+  - Value > Text + Percentage (Parameter step text and values in percentage)
+

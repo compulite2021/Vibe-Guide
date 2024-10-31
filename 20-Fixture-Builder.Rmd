@@ -1,0 +1,42 @@
+
+# Fixture Builder
+
+<span style="color:blue">**Chapter under development.**</span>.
+
+This chapter describes the Fixture Builder integrated software that is used for managing the device database and for the creation and editing of the existent fixture devices.
+
+**The following is covered in this chapter:**
+
+-  [20.1 Fixture Builder](#Fixture-Builder-20.1)
+
+The Fixture Builder is a Vibe inbuilt software used to manage the Device Database.
+
+<p align=center> ![20.1-Fixture-Builder](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmdfOLP5EOkSlqpzGsAKN%2F20.1-Fixture-Builder.webp?alt=media&token=d1ba8352-7aba-4e5c-94b6-7400081c12f6) </p>
+
+Fixture Devices may be created, imported and exported through the Fixture Builder.
+
+Fixture Builder can be launched either from the Vibe Menu or from the OS programs.
+
+It's highly recommended to keep Vibe software closed while the Offline Tool is running. 
+If launched from Vibe, this operation will be automatically done.
+
+If launching the Fixture Builder from the Vibe, a popup will ask if it has to be opened in Console or in Show mode:
+
+- Console Mode - All the devices contained into the console's device database will be listed.
+
+- Show Mode - Only the devices imported into the current Vibe show will be listed.
+
+
+## Device Import and Export
+
+
+## GDTF Import
+
+
+## Build Device
+
+
+## Edit Device
+
+
+

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Program | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Program | Vibe Manual" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Program | Vibe Manual" />
+  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+
+<meta name="author" content="Compulite Systems (2000) Ltd" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="editor.html"/>
+<link rel="next" href="library.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li style="text-align: center;">
+<img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;">
+<br>
+<li style="text-align: center;"><h2>Vibe Guide</h2></li>
+<li style="text-align: center;">Version R_6.0</li>
+<br>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#Start-Up-1.1"><i class="fa fa-check"></i><b>1.1</b> Start Up</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#Guide-Conventions-1.2"><i class="fa fa-check"></i><b>1.2</b> Guide Conventions</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#Important-Terms-1.3"><i class="fa fa-check"></i><b>1.3</b> Important Terms</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#Software-Capacity-1.4"><i class="fa fa-check"></i><b>1.4</b> Software Capacity</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#Support-1.5"><i class="fa fa-check"></i><b>1.5</b> Support</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#Releases-1.6"><i class="fa fa-check"></i><b>1.6</b> Releases</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#r_6.0"><i class="fa fa-check"></i><b>1.6.1</b> R_6.0</a>
+<ul>
+<li class="chapter" data-level="1.6.1.1" data-path="index.html"><a href="index.html#version-highlights"><i class="fa fa-check"></i><b>1.6.1.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.1.2" data-path="index.html"><a href="index.html#bug-fixes"><i class="fa fa-check"></i><b>1.6.1.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#r_5.0"><i class="fa fa-check"></i><b>1.6.2</b> R_5.0</a>
+<ul>
+<li class="chapter" data-level="1.6.2.1" data-path="index.html"><a href="index.html#version-highlights-1"><i class="fa fa-check"></i><b>1.6.2.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.2.2" data-path="index.html"><a href="index.html#bug-fixes-1"><i class="fa fa-check"></i><b>1.6.2.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="index.html#r_4.0"><i class="fa fa-check"></i><b>1.6.3</b> R_4.0</a>
+<ul>
+<li class="chapter" data-level="1.6.3.1" data-path="index.html"><a href="index.html#version-highlights-2"><i class="fa fa-check"></i><b>1.6.3.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.3.2" data-path="index.html"><a href="index.html#bug-fixes-2"><i class="fa fa-check"></i><b>1.6.3.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.4" data-path="index.html"><a href="index.html#r_3.0"><i class="fa fa-check"></i><b>1.6.4</b> R_3.0</a>
+<ul>
+<li class="chapter" data-level="1.6.4.1" data-path="index.html"><a href="index.html#version-highlights-3"><i class="fa fa-check"></i><b>1.6.4.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.4.2" data-path="index.html"><a href="index.html#bug-fixes-3"><i class="fa fa-check"></i><b>1.6.4.2</b> Bug Fixes</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="hardware.html"><a href="hardware.html"><i class="fa fa-check"></i><b>2</b> Hardware</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="hardware.html"><a href="hardware.html#Console-2.1"><i class="fa fa-check"></i><b>2.1</b> Console</a></li>
+<li class="chapter" data-level="2.2" data-path="hardware.html"><a href="hardware.html#Wings-2.2"><i class="fa fa-check"></i><b>2.2</b> Wings</a></li>
+<li class="chapter" data-level="2.3" data-path="hardware.html"><a href="hardware.html#Connectors-2.3"><i class="fa fa-check"></i><b>2.3</b> Connectors</a></li>
+<li class="chapter" data-level="2.4" data-path="hardware.html"><a href="hardware.html#Editor-HardKeys-2.4"><i class="fa fa-check"></i><b>2.4</b> Editor HardKeys</a></li>
+<li class="chapter" data-level="2.5" data-path="hardware.html"><a href="hardware.html#Master-Controls-2.5"><i class="fa fa-check"></i><b>2.5</b> Master Controls</a></li>
+<li class="chapter" data-level="2.6" data-path="hardware.html"><a href="hardware.html#Playback-Controls-2.6"><i class="fa fa-check"></i><b>2.6</b> Playback Controls</a></li>
+<li class="chapter" data-level="2.7" data-path="hardware.html"><a href="hardware.html#Controller-Keys-2.7"><i class="fa fa-check"></i><b>2.7</b> Controller Keys</a></li>
+<li class="chapter" data-level="2.8" data-path="hardware.html"><a href="hardware.html#Page-Keys-2.8"><i class="fa fa-check"></i><b>2.8</b> Page Keys</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="layout.html"><a href="layout.html"><i class="fa fa-check"></i><b>3</b> Layout</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="layout.html"><a href="layout.html#Interface-3.1"><i class="fa fa-check"></i><b>3.1</b> Interface</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="layout.html"><a href="layout.html#smart-screen"><i class="fa fa-check"></i><b>3.1.1</b> Smart Screen</a></li>
+<li class="chapter" data-level="3.1.2" data-path="layout.html"><a href="layout.html#toolbars"><i class="fa fa-check"></i><b>3.1.2</b> Toolbars</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="layout.html"><a href="layout.html#Vibe-Menu-3.2"><i class="fa fa-check"></i><b>3.2</b> Vibe Menu</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="layout.html"><a href="layout.html#show-menu"><i class="fa fa-check"></i><b>3.2.1</b> Show Menu</a>
+<ul>
+<li class="chapter" data-level="3.2.1.1" data-path="layout.html"><a href="layout.html#load-vector-show"><i class="fa fa-check"></i><b>3.2.1.1</b> Load Vector Show</a></li>
+<li class="chapter" data-level="3.2.1.2" data-path="layout.html"><a href="layout.html#cleanup-show"><i class="fa fa-check"></i><b>3.2.1.2</b> CleanUp Show</a></li>
+<li class="chapter" data-level="3.2.1.3" data-path="layout.html"><a href="layout.html#show-report"><i class="fa fa-check"></i><b>3.2.1.3</b> Show Report</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2.2" data-path="layout.html"><a href="layout.html#layout-menu"><i class="fa fa-check"></i><b>3.2.2</b> Layout Menu</a></li>
+<li class="chapter" data-level="3.2.3" data-path="layout.html"><a href="layout.html#views-menu"><i class="fa fa-check"></i><b>3.2.3</b> Views Menu</a></li>
+<li class="chapter" data-level="3.2.4" data-path="layout.html"><a href="layout.html#settings-menu"><i class="fa fa-check"></i><b>3.2.4</b> Settings Menu</a></li>
+<li class="chapter" data-level="3.2.5" data-path="layout.html"><a href="layout.html#help-menu"><i class="fa fa-check"></i><b>3.2.5</b> Help Menu</a></li>
+<li class="chapter" data-level="3.2.6" data-path="layout.html"><a href="layout.html#exit"><i class="fa fa-check"></i><b>3.2.6</b> Exit</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="layout.html"><a href="layout.html#Pages-3.3"><i class="fa fa-check"></i><b>3.3</b> Pages</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="layout.html"><a href="layout.html#home-pages"><i class="fa fa-check"></i><b>3.3.1</b> Home Pages</a></li>
+<li class="chapter" data-level="3.3.2" data-path="layout.html"><a href="layout.html#clone-pages"><i class="fa fa-check"></i><b>3.3.2</b> Clone Pages</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="layout.html"><a href="layout.html#Views-3.4"><i class="fa fa-check"></i><b>3.4</b> Views</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="layout.html"><a href="layout.html#patch-views"><i class="fa fa-check"></i><b>3.4.1</b> Patch Views</a></li>
+<li class="chapter" data-level="3.4.2" data-path="layout.html"><a href="layout.html#program-views"><i class="fa fa-check"></i><b>3.4.2</b> Program Views</a></li>
+<li class="chapter" data-level="3.4.3" data-path="layout.html"><a href="layout.html#playback-views"><i class="fa fa-check"></i><b>3.4.3</b> Playback Views</a></li>
+<li class="chapter" data-level="3.4.4" data-path="layout.html"><a href="layout.html#view-settings"><i class="fa fa-check"></i><b>3.4.4</b> View Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="layout.html"><a href="layout.html#Layouts-3.5"><i class="fa fa-check"></i><b>3.5</b> Layouts</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="layout.html"><a href="layout.html#layout-settings"><i class="fa fa-check"></i><b>3.5.1</b> Layout Settings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="settings.html"><a href="settings.html"><i class="fa fa-check"></i><b>4</b> Settings</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="settings.html"><a href="settings.html#System-Settings-4.1"><i class="fa fa-check"></i><b>4.1</b> System Settings</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="settings.html"><a href="settings.html#editing"><i class="fa fa-check"></i><b>4.1.1</b> Editing</a></li>
+<li class="chapter" data-level="4.1.2" data-path="settings.html"><a href="settings.html#timing"><i class="fa fa-check"></i><b>4.1.2</b> Timing</a></li>
+<li class="chapter" data-level="4.1.3" data-path="settings.html"><a href="settings.html#hardware-1"><i class="fa fa-check"></i><b>4.1.3</b> Hardware</a></li>
+<li class="chapter" data-level="4.1.4" data-path="settings.html"><a href="settings.html#defaults"><i class="fa fa-check"></i><b>4.1.4</b> Defaults</a>
+<ul>
+<li class="chapter" data-level="4.1.4.1" data-path="settings.html"><a href="settings.html#controller-settings"><i class="fa fa-check"></i><b>4.1.4.1</b> Controller Settings</a></li>
+<li class="chapter" data-level="4.1.4.2" data-path="settings.html"><a href="settings.html#controller-actions"><i class="fa fa-check"></i><b>4.1.4.2</b> Controller Actions</a></li>
+<li class="chapter" data-level="4.1.4.3" data-path="settings.html"><a href="settings.html#snap-settings"><i class="fa fa-check"></i><b>4.1.4.3</b> Snap Settings</a></li>
+<li class="chapter" data-level="4.1.4.4" data-path="settings.html"><a href="settings.html#qlist-settings"><i class="fa fa-check"></i><b>4.1.4.4</b> Qlist Settings</a></li>
+<li class="chapter" data-level="4.1.4.5" data-path="settings.html"><a href="settings.html#chaser-settings"><i class="fa fa-check"></i><b>4.1.4.5</b> Chaser Settings</a></li>
+<li class="chapter" data-level="4.1.4.6" data-path="settings.html"><a href="settings.html#cue-settings"><i class="fa fa-check"></i><b>4.1.4.6</b> Cue Settings</a></li>
+<li class="chapter" data-level="4.1.4.7" data-path="settings.html"><a href="settings.html#cue-store-options"><i class="fa fa-check"></i><b>4.1.4.7</b> Cue Store Options</a></li>
+<li class="chapter" data-level="4.1.4.8" data-path="settings.html"><a href="settings.html#scene-settings"><i class="fa fa-check"></i><b>4.1.4.8</b> Scene Settings</a></li>
+<li class="chapter" data-level="4.1.4.9" data-path="settings.html"><a href="settings.html#scene-store-options"><i class="fa fa-check"></i><b>4.1.4.9</b> Scene Store Options</a></li>
+<li class="chapter" data-level="4.1.4.10" data-path="settings.html"><a href="settings.html#library-store-options"><i class="fa fa-check"></i><b>4.1.4.10</b> Library Store Options</a></li>
+<li class="chapter" data-level="4.1.4.11" data-path="settings.html"><a href="settings.html#library-filters"><i class="fa fa-check"></i><b>4.1.4.11</b> Library Filters</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1.5" data-path="settings.html"><a href="settings.html#system"><i class="fa fa-check"></i><b>4.1.5</b> System</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="settings.html"><a href="settings.html#Network-Settings-4.2"><i class="fa fa-check"></i><b>4.2</b> Network Settings</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="settings.html"><a href="settings.html#network"><i class="fa fa-check"></i><b>4.2.1</b> Network</a></li>
+<li class="chapter" data-level="4.2.2" data-path="settings.html"><a href="settings.html#users"><i class="fa fa-check"></i><b>4.2.2</b> Users</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="settings.html"><a href="settings.html#DMX-Settings-4.3"><i class="fa fa-check"></i><b>4.3</b> DMX Settings</a></li>
+<li class="chapter" data-level="4.4" data-path="settings.html"><a href="settings.html#I-O-Settings-4.4"><i class="fa fa-check"></i><b>4.4</b> I/O Settings</a></li>
+<li class="chapter" data-level="4.5" data-path="settings.html"><a href="settings.html#CITP-Settings-4.5"><i class="fa fa-check"></i><b>4.5</b> CITP Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="patch.html"><a href="patch.html"><i class="fa fa-check"></i><b>5</b> Patch</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="patch.html"><a href="patch.html#Sets-5.1"><i class="fa fa-check"></i><b>5.1</b> Sets</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="patch.html"><a href="patch.html#add-sets"><i class="fa fa-check"></i><b>5.1.1</b> Add Sets</a></li>
+<li class="chapter" data-level="5.1.2" data-path="patch.html"><a href="patch.html#edit-sets"><i class="fa fa-check"></i><b>5.1.2</b> Edit Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="patch.html"><a href="patch.html#Devices-5.2"><i class="fa fa-check"></i><b>5.2</b> Devices</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="patch.html"><a href="patch.html#advanced-search"><i class="fa fa-check"></i><b>5.2.1</b> Advanced Search</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="patch.html"><a href="patch.html#Create-and-Patch-5.3"><i class="fa fa-check"></i><b>5.3</b> Create and Patch</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="patch.html"><a href="patch.html#drag-and-drop-patch"><i class="fa fa-check"></i><b>5.3.1</b> Drag and Drop Patch</a></li>
+<li class="chapter" data-level="5.3.2" data-path="patch.html"><a href="patch.html#modify-patch"><i class="fa fa-check"></i><b>5.3.2</b> Modify Patch</a></li>
+<li class="chapter" data-level="5.3.3" data-path="patch.html"><a href="patch.html#address-test"><i class="fa fa-check"></i><b>5.3.3</b> Address Test</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="patch.html"><a href="patch.html#DMX-Properties-5.4"><i class="fa fa-check"></i><b>5.4</b> DMX Properties</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="patch.html"><a href="patch.html#local-output"><i class="fa fa-check"></i><b>5.4.1</b> Local Output</a></li>
+<li class="chapter" data-level="5.4.2" data-path="patch.html"><a href="patch.html#vc"><i class="fa fa-check"></i><b>5.4.2</b> VC</a></li>
+<li class="chapter" data-level="5.4.3" data-path="patch.html"><a href="patch.html#artnet"><i class="fa fa-check"></i><b>5.4.3</b> ArtNet</a></li>
+<li class="chapter" data-level="5.4.4" data-path="patch.html"><a href="patch.html#sacn"><i class="fa fa-check"></i><b>5.4.4</b> sACN</a></li>
+<li class="chapter" data-level="5.4.5" data-path="patch.html"><a href="patch.html#dmx-input"><i class="fa fa-check"></i><b>5.4.5</b> DMX Input</a></li>
+<li class="chapter" data-level="5.4.6" data-path="patch.html"><a href="patch.html#dmx-inout-view"><i class="fa fa-check"></i><b>5.4.6</b> DMX In/Out View</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="patch.html"><a href="patch.html#Fixture-View-5.5"><i class="fa fa-check"></i><b>5.5</b> Fixture View</a></li>
+<li class="chapter" data-level="5.6" data-path="patch.html"><a href="patch.html#Address-Properties-5.6"><i class="fa fa-check"></i><b>5.6</b> Address Properties</a></li>
+<li class="chapter" data-level="5.7" data-path="patch.html"><a href="patch.html#Park-5.7"><i class="fa fa-check"></i><b>5.7</b> Park</a></li>
+<li class="chapter" data-level="5.8" data-path="patch.html"><a href="patch.html#Clone-5.8"><i class="fa fa-check"></i><b>5.8</b> Clone</a></li>
+<li class="chapter" data-level="5.9" data-path="patch.html"><a href="patch.html#Replace-5.9"><i class="fa fa-check"></i><b>5.9</b> Replace</a></li>
+<li class="chapter" data-level="5.10" data-path="patch.html"><a href="patch.html#Calibration-5.10"><i class="fa fa-check"></i><b>5.10</b> Calibration</a>
+<ul>
+<li class="chapter" data-level="5.10.1" data-path="patch.html"><a href="patch.html#wysiwyg"><i class="fa fa-check"></i><b>5.10.1</b> Wysiwyg</a></li>
+<li class="chapter" data-level="5.10.2" data-path="patch.html"><a href="patch.html#capture"><i class="fa fa-check"></i><b>5.10.2</b> Capture</a></li>
+<li class="chapter" data-level="5.10.3" data-path="patch.html"><a href="patch.html#l8"><i class="fa fa-check"></i><b>5.10.3</b> L8</a></li>
+<li class="chapter" data-level="5.10.4" data-path="patch.html"><a href="patch.html#vectorworks"><i class="fa fa-check"></i><b>5.10.4</b> VectorWorks</a></li>
+<li class="chapter" data-level="5.10.5" data-path="patch.html"><a href="patch.html#depence"><i class="fa fa-check"></i><b>5.10.5</b> Depence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="editor.html"><a href="editor.html"><i class="fa fa-check"></i><b>6</b> Editor</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="editor.html"><a href="editor.html#Concept-6.1"><i class="fa fa-check"></i><b>6.1</b> Concept</a></li>
+<li class="chapter" data-level="6.2" data-path="editor.html"><a href="editor.html#Syntax-6.2"><i class="fa fa-check"></i><b>6.2</b> Syntax</a></li>
+<li class="chapter" data-level="6.3" data-path="editor.html"><a href="editor.html#Selection-6.3"><i class="fa fa-check"></i><b>6.3</b> Selection</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="editor.html"><a href="editor.html#selection-tools"><i class="fa fa-check"></i><b>6.3.1</b> Selection Tools</a></li>
+<li class="chapter" data-level="6.3.2" data-path="editor.html"><a href="editor.html#order-tools"><i class="fa fa-check"></i><b>6.3.2</b> Order Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="editor.html"><a href="editor.html#Editor-6.4"><i class="fa fa-check"></i><b>6.4</b> Editor</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="editor.html"><a href="editor.html#hardkeys"><i class="fa fa-check"></i><b>6.4.1</b> HardKeys</a></li>
+<li class="chapter" data-level="6.4.2" data-path="editor.html"><a href="editor.html#blind-editor"><i class="fa fa-check"></i><b>6.4.2</b> Blind Editor</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="editor.html"><a href="editor.html#Groups-6.5"><i class="fa fa-check"></i><b>6.5</b> Groups</a></li>
+<li class="chapter" data-level="6.6" data-path="editor.html"><a href="editor.html#Grab-6.6"><i class="fa fa-check"></i><b>6.6</b> Grab</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="program.html"><a href="program.html"><i class="fa fa-check"></i><b>7</b> Program</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="program.html"><a href="program.html#Parameters-7.1"><i class="fa fa-check"></i><b>7.1</b> Parameters</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="program.html"><a href="program.html#param-banks"><i class="fa fa-check"></i><b>7.1.1</b> Param Banks</a></li>
+<li class="chapter" data-level="7.1.2" data-path="program.html"><a href="program.html#virtual-params"><i class="fa fa-check"></i><b>7.1.2</b> Virtual Params</a></li>
+<li class="chapter" data-level="7.1.3" data-path="program.html"><a href="program.html#fixture-manipulation"><i class="fa fa-check"></i><b>7.1.3</b> Fixture Manipulation</a></li>
+<li class="chapter" data-level="7.1.4" data-path="program.html"><a href="program.html#editor-controls"><i class="fa fa-check"></i><b>7.1.4</b> Editor Controls</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="program.html"><a href="program.html#Smart-Screen-7.2"><i class="fa fa-check"></i><b>7.2</b> Smart Screen</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="program.html"><a href="program.html#intensity"><i class="fa fa-check"></i><b>7.2.1</b> Intensity</a></li>
+<li class="chapter" data-level="7.2.2" data-path="program.html"><a href="program.html#position"><i class="fa fa-check"></i><b>7.2.2</b> Position</a></li>
+<li class="chapter" data-level="7.2.3" data-path="program.html"><a href="program.html#color"><i class="fa fa-check"></i><b>7.2.3</b> Color</a></li>
+<li class="chapter" data-level="7.2.4" data-path="program.html"><a href="program.html#beam"><i class="fa fa-check"></i><b>7.2.4</b> Beam</a></li>
+<li class="chapter" data-level="7.2.5" data-path="program.html"><a href="program.html#image"><i class="fa fa-check"></i><b>7.2.5</b> Image</a></li>
+<li class="chapter" data-level="7.2.6" data-path="program.html"><a href="program.html#shape"><i class="fa fa-check"></i><b>7.2.6</b> Shape</a></li>
+<li class="chapter" data-level="7.2.7" data-path="program.html"><a href="program.html#wheel-picker"><i class="fa fa-check"></i><b>7.2.7</b> Wheel Picker</a></li>
+<li class="chapter" data-level="7.2.8" data-path="program.html"><a href="program.html#control"><i class="fa fa-check"></i><b>7.2.8</b> Control</a></li>
+<li class="chapter" data-level="7.2.9" data-path="program.html"><a href="program.html#media"><i class="fa fa-check"></i><b>7.2.9</b> Media</a></li>
+<li class="chapter" data-level="7.2.10" data-path="program.html"><a href="program.html#smart-settings"><i class="fa fa-check"></i><b>7.2.10</b> Smart Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="program.html"><a href="program.html#Editor-Features-7.3"><i class="fa fa-check"></i><b>7.3</b> Editor Features</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="program.html"><a href="program.html#clear"><i class="fa fa-check"></i><b>7.3.1</b> Clear</a></li>
+<li class="chapter" data-level="7.3.2" data-path="program.html"><a href="program.html#de-select"><i class="fa fa-check"></i><b>7.3.2</b> De-Select</a></li>
+<li class="chapter" data-level="7.3.3" data-path="program.html"><a href="program.html#release"><i class="fa fa-check"></i><b>7.3.3</b> Release</a></li>
+<li class="chapter" data-level="7.3.4" data-path="program.html"><a href="program.html#reset"><i class="fa fa-check"></i><b>7.3.4</b> Reset</a></li>
+<li class="chapter" data-level="7.3.5" data-path="program.html"><a href="program.html#home"><i class="fa fa-check"></i><b>7.3.5</b> Home</a></li>
+<li class="chapter" data-level="7.3.6" data-path="program.html"><a href="program.html#highlight"><i class="fa fa-check"></i><b>7.3.6</b> Highlight</a></li>
+<li class="chapter" data-level="7.3.7" data-path="program.html"><a href="program.html#lowlight"><i class="fa fa-check"></i><b>7.3.7</b> Lowlight</a></li>
+<li class="chapter" data-level="7.3.8" data-path="program.html"><a href="program.html#rem-dim"><i class="fa fa-check"></i><b>7.3.8</b> Rem Dim</a></li>
+<li class="chapter" data-level="7.3.9" data-path="program.html"><a href="program.html#undo"><i class="fa fa-check"></i><b>7.3.9</b> Undo</a></li>
+<li class="chapter" data-level="7.3.10" data-path="program.html"><a href="program.html#fan"><i class="fa fa-check"></i><b>7.3.10</b> Fan</a></li>
+<li class="chapter" data-level="7.3.11" data-path="program.html"><a href="program.html#copy-paste"><i class="fa fa-check"></i><b>7.3.11</b> Copy / Paste</a></li>
+<li class="chapter" data-level="7.3.12" data-path="program.html"><a href="program.html#move"><i class="fa fa-check"></i><b>7.3.12</b> Move</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="program.html"><a href="program.html#Live-7.4"><i class="fa fa-check"></i><b>7.4</b> Live</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="program.html"><a href="program.html#live-view"><i class="fa fa-check"></i><b>7.4.1</b> Live View</a></li>
+<li class="chapter" data-level="7.4.2" data-path="program.html"><a href="program.html#live-parameter-view"><i class="fa fa-check"></i><b>7.4.2</b> Live Parameter View</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="library.html"><a href="library.html"><i class="fa fa-check"></i><b>8</b> Library</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="library.html"><a href="library.html#Bank-Libraries-8.1"><i class="fa fa-check"></i><b>8.1</b> Bank Libraries</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="library.html"><a href="library.html#operations"><i class="fa fa-check"></i><b>8.1.1</b> Operations</a></li>
+<li class="chapter" data-level="8.1.2" data-path="library.html"><a href="library.html#auto-param-grouping"><i class="fa fa-check"></i><b>8.1.2</b> Auto Param Grouping</a></li>
+<li class="chapter" data-level="8.1.3" data-path="library.html"><a href="library.html#context"><i class="fa fa-check"></i><b>8.1.3</b> Context</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="library.html"><a href="library.html#Auto-Generate-8.2"><i class="fa fa-check"></i><b>8.2</b> Auto Generate</a></li>
+<li class="chapter" data-level="8.3" data-path="library.html"><a href="library.html#Library-Defaults-8.3"><i class="fa fa-check"></i><b>8.3</b> Library Defaults</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="library.html"><a href="library.html#behavior"><i class="fa fa-check"></i><b>8.3.1</b> Behavior</a></li>
+<li class="chapter" data-level="8.3.2" data-path="library.html"><a href="library.html#reference"><i class="fa fa-check"></i><b>8.3.2</b> Reference</a></li>
+<li class="chapter" data-level="8.3.3" data-path="library.html"><a href="library.html#time"><i class="fa fa-check"></i><b>8.3.3</b> Time</a></li>
+<li class="chapter" data-level="8.3.4" data-path="library.html"><a href="library.html#effect-base"><i class="fa fa-check"></i><b>8.3.4</b> Effect Base</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="library.html"><a href="library.html#Filters-8.4"><i class="fa fa-check"></i><b>8.4</b> Filters</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="library.html"><a href="library.html#on-the-fly"><i class="fa fa-check"></i><b>8.4.1</b> On the Fly</a></li>
+<li class="chapter" data-level="8.4.2" data-path="library.html"><a href="library.html#custom-filters"><i class="fa fa-check"></i><b>8.4.2</b> Custom Filters</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="effect.html"><a href="effect.html"><i class="fa fa-check"></i><b>9</b> Effect</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="effect.html"><a href="effect.html#Curves-9.1"><i class="fa fa-check"></i><b>9.1</b> Curves</a></li>
+<li class="chapter" data-level="9.2" data-path="effect.html"><a href="effect.html#Effects-Editor-9.2"><i class="fa fa-check"></i><b>9.2</b> Effect Editor</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="effect.html"><a href="effect.html#attributes"><i class="fa fa-check"></i><b>9.2.1</b> Attributes</a></li>
+<li class="chapter" data-level="9.2.2" data-path="effect.html"><a href="effect.html#grouping"><i class="fa fa-check"></i><b>9.2.2</b> Grouping</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="effect.html"><a href="effect.html#Pre-Built-Effects-9.3"><i class="fa fa-check"></i><b>9.3</b> Pre-Built Effects</a></li>
+<li class="chapter" data-level="9.4" data-path="effect.html"><a href="effect.html#Basic-Effects-9.4"><i class="fa fa-check"></i><b>9.4</b> Basic Effects</a></li>
+<li class="chapter" data-level="9.5" data-path="effect.html"><a href="effect.html#Basic-Effects-9.5"><i class="fa fa-check"></i><b>9.5</b> Advanced Effects</a></li>
+<li class="chapter" data-level="9.6" data-path="effect.html"><a href="effect.html#Library-Effects-9.6"><i class="fa fa-check"></i><b>9.6</b> Library Effects</a></li>
+<li class="chapter" data-level="9.7" data-path="effect.html"><a href="effect.html#Effect-Library-9.7"><i class="fa fa-check"></i><b>9.7</b> Effect Library</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="scene-qlist.html"><a href="scene-qlist.html"><i class="fa fa-check"></i><b>10</b> Scene &amp; Qlist</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="scene-qlist.html"><a href="scene-qlist.html#Operations-10.1"><i class="fa fa-check"></i><b>10.1</b> Operations</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="scene-qlist.html"><a href="scene-qlist.html#store"><i class="fa fa-check"></i><b>10.1.1</b> Store</a></li>
+<li class="chapter" data-level="10.1.2" data-path="scene-qlist.html"><a href="scene-qlist.html#edit-update"><i class="fa fa-check"></i><b>10.1.2</b> Edit &amp; Update</a></li>
+<li class="chapter" data-level="10.1.3" data-path="scene-qlist.html"><a href="scene-qlist.html#delete"><i class="fa fa-check"></i><b>10.1.3</b> Delete</a></li>
+<li class="chapter" data-level="10.1.4" data-path="scene-qlist.html"><a href="scene-qlist.html#copy-paste-1"><i class="fa fa-check"></i><b>10.1.4</b> Copy &amp; Paste</a></li>
+<li class="chapter" data-level="10.1.5" data-path="scene-qlist.html"><a href="scene-qlist.html#text"><i class="fa fa-check"></i><b>10.1.5</b> Text</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="scene-qlist.html"><a href="scene-qlist.html#Scenes-10.2"><i class="fa fa-check"></i><b>10.2</b> Scenes</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="scene-qlist.html"><a href="scene-qlist.html#scene-settings-1"><i class="fa fa-check"></i><b>10.2.1</b> Scene Settings</a></li>
+<li class="chapter" data-level="10.2.2" data-path="scene-qlist.html"><a href="scene-qlist.html#scene-time"><i class="fa fa-check"></i><b>10.2.2</b> Scene Time</a></li>
+<li class="chapter" data-level="10.2.3" data-path="scene-qlist.html"><a href="scene-qlist.html#home-scene"><i class="fa fa-check"></i><b>10.2.3</b> Home Scene</a></li>
+<li class="chapter" data-level="10.2.4" data-path="scene-qlist.html"><a href="scene-qlist.html#highlight-scene"><i class="fa fa-check"></i><b>10.2.4</b> Highlight Scene</a></li>
+<li class="chapter" data-level="10.2.5" data-path="scene-qlist.html"><a href="scene-qlist.html#lowlight-scene"><i class="fa fa-check"></i><b>10.2.5</b> Lowlight Scene</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="scene-qlist.html"><a href="scene-qlist.html#Submasters-10.3"><i class="fa fa-check"></i><b>10.3</b> Submasters</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="scene-qlist.html"><a href="scene-qlist.html#submasters"><i class="fa fa-check"></i><b>10.3.1</b> Submasters</a></li>
+<li class="chapter" data-level="10.3.2" data-path="scene-qlist.html"><a href="scene-qlist.html#groupmasters"><i class="fa fa-check"></i><b>10.3.2</b> Groupmasters</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="scene-qlist.html"><a href="scene-qlist.html#Cues-10.4"><i class="fa fa-check"></i><b>10.4</b> Cues</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="scene-qlist.html"><a href="scene-qlist.html#cue-settings-1"><i class="fa fa-check"></i><b>10.4.1</b> Cue Settings</a></li>
+<li class="chapter" data-level="10.4.2" data-path="scene-qlist.html"><a href="scene-qlist.html#cue-time"><i class="fa fa-check"></i><b>10.4.2</b> Cue Time</a></li>
+<li class="chapter" data-level="10.4.3" data-path="scene-qlist.html"><a href="scene-qlist.html#param-time"><i class="fa fa-check"></i><b>10.4.3</b> Param Time</a></li>
+<li class="chapter" data-level="10.4.4" data-path="scene-qlist.html"><a href="scene-qlist.html#param-profile"><i class="fa fa-check"></i><b>10.4.4</b> Param Profile</a></li>
+<li class="chapter" data-level="10.4.5" data-path="scene-qlist.html"><a href="scene-qlist.html#virtual-param-fade"><i class="fa fa-check"></i><b>10.4.5</b> Virtual Param Fade</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="scene-qlist.html"><a href="scene-qlist.html#Qlists-10.5"><i class="fa fa-check"></i><b>10.5</b> Qlists</a>
+<ul>
+<li class="chapter" data-level="10.5.1" data-path="scene-qlist.html"><a href="scene-qlist.html#qlist-settings-1"><i class="fa fa-check"></i><b>10.5.1</b> Qlist Settings</a></li>
+<li class="chapter" data-level="10.5.2" data-path="scene-qlist.html"><a href="scene-qlist.html#tracking"><i class="fa fa-check"></i><b>10.5.2</b> Tracking</a></li>
+<li class="chapter" data-level="10.5.3" data-path="scene-qlist.html"><a href="scene-qlist.html#move-in-dark"><i class="fa fa-check"></i><b>10.5.3</b> Move in Dark</a></li>
+<li class="chapter" data-level="10.5.4" data-path="scene-qlist.html"><a href="scene-qlist.html#link"><i class="fa fa-check"></i><b>10.5.4</b> Link</a></li>
+<li class="chapter" data-level="10.5.5" data-path="scene-qlist.html"><a href="scene-qlist.html#loop"><i class="fa fa-check"></i><b>10.5.5</b> Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="10.6" data-path="scene-qlist.html"><a href="scene-qlist.html#Chasers-10.6"><i class="fa fa-check"></i><b>10.6</b> Chasers</a>
+<ul>
+<li class="chapter" data-level="10.6.1" data-path="scene-qlist.html"><a href="scene-qlist.html#chase-settings"><i class="fa fa-check"></i><b>10.6.1</b> Chase Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="10.7" data-path="scene-qlist.html"><a href="scene-qlist.html#Tracksheet-10.7"><i class="fa fa-check"></i><b>10.7</b> Tracksheet</a>
+<ul>
+<li class="chapter" data-level="10.7.1" data-path="scene-qlist.html"><a href="scene-qlist.html#menu-and-filters"><i class="fa fa-check"></i><b>10.7.1</b> Menu and Filters</a></li>
+<li class="chapter" data-level="10.7.2" data-path="scene-qlist.html"><a href="scene-qlist.html#update-actions"><i class="fa fa-check"></i><b>10.7.2</b> Update Actions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="playback.html"><a href="playback.html"><i class="fa fa-check"></i><b>11</b> Playback</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="playback.html"><a href="playback.html#Physical-Controllers-11.1"><i class="fa fa-check"></i><b>11.1</b> Physical Controllers</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="playback.html"><a href="playback.html#grand-master-blackout"><i class="fa fa-check"></i><b>11.1.1</b> Grand Master + BlackOut</a></li>
+<li class="chapter" data-level="11.1.2" data-path="playback.html"><a href="playback.html#ab-crossfader"><i class="fa fa-check"></i><b>11.1.2</b> A/B CrossFader</a></li>
+<li class="chapter" data-level="11.1.3" data-path="playback.html"><a href="playback.html#slider"><i class="fa fa-check"></i><b>11.1.3</b> Slider</a></li>
+<li class="chapter" data-level="11.1.4" data-path="playback.html"><a href="playback.html#qkey"><i class="fa fa-check"></i><b>11.1.4</b> Qkey</a></li>
+<li class="chapter" data-level="11.1.5" data-path="playback.html"><a href="playback.html#auxkey"><i class="fa fa-check"></i><b>11.1.5</b> AuxKey</a></li>
+<li class="chapter" data-level="11.1.6" data-path="playback.html"><a href="playback.html#global-slider"><i class="fa fa-check"></i><b>11.1.6</b> Global Slider</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="playback.html"><a href="playback.html#Virtual-Controllers-11.2"><i class="fa fa-check"></i><b>11.2</b> Virtual Controllers</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="playback.html"><a href="playback.html#grand-master-blackout-1"><i class="fa fa-check"></i><b>11.2.1</b> Grand Master + BlackOut</a></li>
+<li class="chapter" data-level="11.2.2" data-path="playback.html"><a href="playback.html#ab-crossfader-1"><i class="fa fa-check"></i><b>11.2.2</b> A/B Crossfader</a></li>
+<li class="chapter" data-level="11.2.3" data-path="playback.html"><a href="playback.html#slider-1"><i class="fa fa-check"></i><b>11.2.3</b> Slider</a></li>
+<li class="chapter" data-level="11.2.4" data-path="playback.html"><a href="playback.html#qkeys"><i class="fa fa-check"></i><b>11.2.4</b> Qkeys</a></li>
+<li class="chapter" data-level="11.2.5" data-path="playback.html"><a href="playback.html#auxkey-1"><i class="fa fa-check"></i><b>11.2.5</b> Auxkey</a></li>
+<li class="chapter" data-level="11.2.6" data-path="playback.html"><a href="playback.html#global-slider-1"><i class="fa fa-check"></i><b>11.2.6</b> Global Slider</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="playback.html"><a href="playback.html#Controller-Keys-11.3"><i class="fa fa-check"></i><b>11.3</b> Controller Keys</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="playback.html"><a href="playback.html#master-keys"><i class="fa fa-check"></i><b>11.3.1</b> Master Keys</a></li>
+<li class="chapter" data-level="11.3.2" data-path="playback.html"><a href="playback.html#operation-keys"><i class="fa fa-check"></i><b>11.3.2</b> Operation Keys</a></li>
+<li class="chapter" data-level="11.3.3" data-path="playback.html"><a href="playback.html#command-keys"><i class="fa fa-check"></i><b>11.3.3</b> Command Keys</a></li>
+<li class="chapter" data-level="11.3.4" data-path="playback.html"><a href="playback.html#mode-keys"><i class="fa fa-check"></i><b>11.3.4</b> Mode Keys</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="playback.html"><a href="playback.html#Controller-Configuration-11.4"><i class="fa fa-check"></i><b>11.4</b> Controller Configuration</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="playback.html"><a href="playback.html#playback-status"><i class="fa fa-check"></i><b>11.4.1</b> Playback Status</a></li>
+<li class="chapter" data-level="11.4.2" data-path="playback.html"><a href="playback.html#controller-defaults"><i class="fa fa-check"></i><b>11.4.2</b> Controller Defaults</a></li>
+<li class="chapter" data-level="11.4.3" data-path="playback.html"><a href="playback.html#controller-actions-1"><i class="fa fa-check"></i><b>11.4.3</b> Controller Actions</a></li>
+<li class="chapter" data-level="11.4.4" data-path="playback.html"><a href="playback.html#controller-settings-1"><i class="fa fa-check"></i><b>11.4.4</b> Controller Settings</a></li>
+<li class="chapter" data-level="11.4.5" data-path="playback.html"><a href="playback.html#object-settings"><i class="fa fa-check"></i><b>11.4.5</b> Object Settings</a></li>
+<li class="chapter" data-level="11.4.6" data-path="playback.html"><a href="playback.html#compound-controllers"><i class="fa fa-check"></i><b>11.4.6</b> Compound Controllers</a></li>
+<li class="chapter" data-level="11.4.7" data-path="playback.html"><a href="playback.html#playback-master"><i class="fa fa-check"></i><b>11.4.7</b> Playback Master</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="playback.html"><a href="playback.html#Live-Controller-11.5"><i class="fa fa-check"></i><b>11.5</b> Live Controller</a></li>
+<li class="chapter" data-level="11.6" data-path="playback.html"><a href="playback.html#Teach-Rate-11.6"><i class="fa fa-check"></i><b>11.6</b> Teach Rate</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="snap.html"><a href="snap.html"><i class="fa fa-check"></i><b>12</b> Snap</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="snap.html"><a href="snap.html#Store-Snaps-12.1"><i class="fa fa-check"></i><b>12.1</b> Snaps</a></li>
+<li class="chapter" data-level="12.2" data-path="snap.html"><a href="snap.html#Trigger-Snaps-12.2"><i class="fa fa-check"></i><b>12.2</b> Trigger Snaps</a></li>
+<li class="chapter" data-level="12.3" data-path="snap.html"><a href="snap.html#Attach-Snaps-12.3"><i class="fa fa-check"></i><b>12.3</b> Attach Snaps</a></li>
+<li class="chapter" data-level="12.4" data-path="snap.html"><a href="snap.html#Snap-Time-12.4"><i class="fa fa-check"></i><b>12.4</b> Snap Time</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="macro.html"><a href="macro.html"><i class="fa fa-check"></i><b>13</b> Macro</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="macro.html"><a href="macro.html#Teach-Macros-13.1"><i class="fa fa-check"></i><b>13.1</b> Teach Macros</a></li>
+<li class="chapter" data-level="13.2" data-path="macro.html"><a href="macro.html#Trigger-Macros-13.2"><i class="fa fa-check"></i><b>13.2</b> Trigger Macros</a></li>
+<li class="chapter" data-level="13.3" data-path="macro.html"><a href="macro.html#Attach-Macros-13.3"><i class="fa fa-check"></i><b>13.3</b> Attach Macros</a></li>
+<li class="chapter" data-level="13.4" data-path="macro.html"><a href="macro.html#Macro-Time-13.4"><i class="fa fa-check"></i><b>13.4</b> Macro Time</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="timeline.html"><a href="timeline.html"><i class="fa fa-check"></i><b>14</b> Timeline</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="timeline.html"><a href="timeline.html#Timelines-14.1"><i class="fa fa-check"></i><b>14.1</b> Timelines</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="timeline.html"><a href="timeline.html#view"><i class="fa fa-check"></i><b>14.1.1</b> View</a></li>
+<li class="chapter" data-level="14.1.2" data-path="timeline.html"><a href="timeline.html#record"><i class="fa fa-check"></i><b>14.1.2</b> Record</a></li>
+<li class="chapter" data-level="14.1.3" data-path="timeline.html"><a href="timeline.html#commands"><i class="fa fa-check"></i><b>14.1.3</b> Commands</a></li>
+<li class="chapter" data-level="14.1.4" data-path="timeline.html"><a href="timeline.html#gestures"><i class="fa fa-check"></i><b>14.1.4</b> Gestures</a></li>
+<li class="chapter" data-level="14.1.5" data-path="timeline.html"><a href="timeline.html#markers"><i class="fa fa-check"></i><b>14.1.5</b> Markers</a></li>
+<li class="chapter" data-level="14.1.6" data-path="timeline.html"><a href="timeline.html#move-selection"><i class="fa fa-check"></i><b>14.1.6</b> Move Selection</a></li>
+<li class="chapter" data-level="14.1.7" data-path="timeline.html"><a href="timeline.html#actions"><i class="fa fa-check"></i><b>14.1.7</b> Actions</a></li>
+<li class="chapter" data-level="14.1.8" data-path="timeline.html"><a href="timeline.html#timestamp"><i class="fa fa-check"></i><b>14.1.8</b> TimeStamp</a></li>
+<li class="chapter" data-level="14.1.9" data-path="timeline.html"><a href="timeline.html#audio-track"><i class="fa fa-check"></i><b>14.1.9</b> Audio Track</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="timeline.html"><a href="timeline.html#Time-Code-14.2"><i class="fa fa-check"></i><b>14.2</b> Time Code</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="timeline.html"><a href="timeline.html#connections"><i class="fa fa-check"></i><b>14.2.1</b> Connections</a></li>
+<li class="chapter" data-level="14.2.2" data-path="timeline.html"><a href="timeline.html#ltc"><i class="fa fa-check"></i><b>14.2.2</b> LTC</a></li>
+<li class="chapter" data-level="14.2.3" data-path="timeline.html"><a href="timeline.html#mtc"><i class="fa fa-check"></i><b>14.2.3</b> MTC</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="timeline.html"><a href="timeline.html#MIDI-14.3"><i class="fa fa-check"></i><b>14.3</b> MIDI</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="timeline.html"><a href="timeline.html#midi-settings"><i class="fa fa-check"></i><b>14.3.1</b> MIDI Settings</a></li>
+<li class="chapter" data-level="14.3.2" data-path="timeline.html"><a href="timeline.html#midi-notes"><i class="fa fa-check"></i><b>14.3.2</b> MIDI Notes</a></li>
+<li class="chapter" data-level="14.3.3" data-path="timeline.html"><a href="timeline.html#msc"><i class="fa fa-check"></i><b>14.3.3</b> MSC</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="topo.html"><a href="topo.html"><i class="fa fa-check"></i><b>15</b> Topo</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="topo.html"><a href="topo.html#Topo-View-15.1"><i class="fa fa-check"></i><b>15.1</b> Topo View</a></li>
+<li class="chapter" data-level="15.2" data-path="topo.html"><a href="topo.html#TopoMenu-15.2"><i class="fa fa-check"></i><b>15.2</b> Topo Menu</a></li>
+<li class="chapter" data-level="15.3" data-path="topo.html"><a href="topo.html#Create-Topo-15.3"><i class="fa fa-check"></i><b>15.3</b> Create Topo</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="topo.html"><a href="topo.html#add-fixtures"><i class="fa fa-check"></i><b>15.3.1</b> Add Fixtures</a></li>
+<li class="chapter" data-level="15.3.2" data-path="topo.html"><a href="topo.html#add-softkeys"><i class="fa fa-check"></i><b>15.3.2</b> Add Softkeys</a></li>
+<li class="chapter" data-level="15.3.3" data-path="topo.html"><a href="topo.html#add-pixel-maps"><i class="fa fa-check"></i><b>15.3.3</b> Add Pixel Maps</a></li>
+<li class="chapter" data-level="15.3.4" data-path="topo.html"><a href="topo.html#add-text-labels"><i class="fa fa-check"></i><b>15.3.4</b> Add Text Labels</a></li>
+<li class="chapter" data-level="15.3.5" data-path="topo.html"><a href="topo.html#add-background"><i class="fa fa-check"></i><b>15.3.5</b> Add Background</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="exam.html"><a href="exam.html"><i class="fa fa-check"></i><b>16</b> Exam</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="exam.html"><a href="exam.html#Exam-View-16.1"><i class="fa fa-check"></i><b>16.1</b> Exam View</a></li>
+<li class="chapter" data-level="16.2" data-path="exam.html"><a href="exam.html#Show-Exam-16.2"><i class="fa fa-check"></i><b>16.2</b> Show Exam</a></li>
+<li class="chapter" data-level="16.3" data-path="exam.html"><a href="exam.html#Patch-Exam-16.3"><i class="fa fa-check"></i><b>16.3</b> Patch Exam</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="network-1.html"><a href="network-1.html"><i class="fa fa-check"></i><b>17</b> Network</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="network-1.html"><a href="network-1.html#Console-Network-17.1"><i class="fa fa-check"></i><b>17.1</b> Console Network</a>
+<ul>
+<li class="chapter" data-level="17.1.1" data-path="network-1.html"><a href="network-1.html#network-settings"><i class="fa fa-check"></i><b>17.1.1</b> Network Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="network-1.html"><a href="network-1.html#Compulite-ePorts-17.2"><i class="fa fa-check"></i><b>17.2</b> Compulite ePorts</a></li>
+<li class="chapter" data-level="17.3" data-path="network-1.html"><a href="network-1.html#ArtNet-and-sACN-17.3"><i class="fa fa-check"></i><b>17.3</b> ArtNet and sACN</a></li>
+<li class="chapter" data-level="17.4" data-path="network-1.html"><a href="network-1.html#RDM-17.4"><i class="fa fa-check"></i><b>17.4</b> RDM</a></li>
+<li class="chapter" data-level="17.5" data-path="network-1.html"><a href="network-1.html#OSC-17.5"><i class="fa fa-check"></i><b>17.5</b> OSC</a></li>
+<li class="chapter" data-level="17.6" data-path="network-1.html"><a href="network-1.html#CITP-17.6"><i class="fa fa-check"></i><b>17.6</b> CITP</a>
+<ul>
+<li class="chapter" data-level="17.6.1" data-path="network-1.html"><a href="network-1.html#general"><i class="fa fa-check"></i><b>17.6.1</b> General</a></li>
+<li class="chapter" data-level="17.6.2" data-path="network-1.html"><a href="network-1.html#media-servers"><i class="fa fa-check"></i><b>17.6.2</b> Media Servers</a></li>
+<li class="chapter" data-level="17.6.3" data-path="network-1.html"><a href="network-1.html#visualizers"><i class="fa fa-check"></i><b>17.6.3</b> Visualizers</a></li>
+<li class="chapter" data-level="17.6.4" data-path="network-1.html"><a href="network-1.html#consoles"><i class="fa fa-check"></i><b>17.6.4</b> Consoles</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="multi-user.html"><a href="multi-user.html"><i class="fa fa-check"></i><b>18</b> Multi-User</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="multi-user.html"><a href="multi-user.html#masterbackup"><i class="fa fa-check"></i><b>18.1</b> Master/Backup</a></li>
+<li class="chapter" data-level="18.2" data-path="multi-user.html"><a href="multi-user.html#users-1"><i class="fa fa-check"></i><b>18.2</b> Users</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="offline-tool.html"><a href="offline-tool.html"><i class="fa fa-check"></i><b>19</b> Offline Tool</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="offline-tool.html"><a href="offline-tool.html#offline-tool-1"><i class="fa fa-check"></i><b>19.1</b> Offline Tool</a></li>
+<li class="chapter" data-level="19.2" data-path="offline-tool.html"><a href="offline-tool.html#maintenance"><i class="fa fa-check"></i><b>19.2</b> Maintenance</a>
+<ul>
+<li class="chapter" data-level="19.2.1" data-path="offline-tool.html"><a href="offline-tool.html#sw-update"><i class="fa fa-check"></i><b>19.2.1</b> SW Update</a></li>
+<li class="chapter" data-level="19.2.2" data-path="offline-tool.html"><a href="offline-tool.html#patch-file"><i class="fa fa-check"></i><b>19.2.2</b> Patch File</a></li>
+<li class="chapter" data-level="19.2.3" data-path="offline-tool.html"><a href="offline-tool.html#full-device-package"><i class="fa fa-check"></i><b>19.2.3</b> Full Device Package</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="offline-tool.html"><a href="offline-tool.html#licence"><i class="fa fa-check"></i><b>19.3</b> Licence</a>
+<ul>
+<li class="chapter" data-level="19.3.1" data-path="offline-tool.html"><a href="offline-tool.html#vibe-licences"><i class="fa fa-check"></i><b>19.3.1</b> Vibe Licences</a></li>
+<li class="chapter" data-level="19.3.2" data-path="offline-tool.html"><a href="offline-tool.html#validate-console"><i class="fa fa-check"></i><b>19.3.2</b> Validate Console</a></li>
+<li class="chapter" data-level="19.3.3" data-path="offline-tool.html"><a href="offline-tool.html#get-sql-key"><i class="fa fa-check"></i><b>19.3.3</b> Get SQL Key</a></li>
+</ul></li>
+<li class="chapter" data-level="19.4" data-path="offline-tool.html"><a href="offline-tool.html#database"><i class="fa fa-check"></i><b>19.4</b> Database</a>
+<ul>
+<li class="chapter" data-level="19.4.1" data-path="offline-tool.html"><a href="offline-tool.html#console-db"><i class="fa fa-check"></i><b>19.4.1</b> Console DB</a></li>
+<li class="chapter" data-level="19.4.2" data-path="offline-tool.html"><a href="offline-tool.html#show-db"><i class="fa fa-check"></i><b>19.4.2</b> Show DB</a></li>
+<li class="chapter" data-level="19.4.3" data-path="offline-tool.html"><a href="offline-tool.html#layout-db"><i class="fa fa-check"></i><b>19.4.3</b> Layout DB</a></li>
+</ul></li>
+<li class="chapter" data-level="19.5" data-path="offline-tool.html"><a href="offline-tool.html#hardware-2"><i class="fa fa-check"></i><b>19.5</b> Hardware</a>
+<ul>
+<li class="chapter" data-level="19.5.1" data-path="offline-tool.html"><a href="offline-tool.html#panel-test"><i class="fa fa-check"></i><b>19.5.1</b> Panel Test</a></li>
+<li class="chapter" data-level="19.5.2" data-path="offline-tool.html"><a href="offline-tool.html#midismpte-test"><i class="fa fa-check"></i><b>19.5.2</b> MIDI/SMPTE Test</a></li>
+<li class="chapter" data-level="19.5.3" data-path="offline-tool.html"><a href="offline-tool.html#firmware-update"><i class="fa fa-check"></i><b>19.5.3</b> Firmware Update</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="fixture-builder.html"><a href="fixture-builder.html"><i class="fa fa-check"></i><b>20</b> Fixture Builder</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="fixture-builder.html"><a href="fixture-builder.html#device-import-and-export"><i class="fa fa-check"></i><b>20.1</b> Device Import and Export</a></li>
+<li class="chapter" data-level="20.2" data-path="fixture-builder.html"><a href="fixture-builder.html#gdtf-import"><i class="fa fa-check"></i><b>20.2</b> GDTF Import</a></li>
+<li class="chapter" data-level="20.3" data-path="fixture-builder.html"><a href="fixture-builder.html#build-device"><i class="fa fa-check"></i><b>20.3</b> Build Device</a></li>
+<li class="chapter" data-level="20.4" data-path="fixture-builder.html"><a href="fixture-builder.html#edit-device"><i class="fa fa-check"></i><b>20.4</b> Edit Device</a></li>
+</ul></li>
+<li class="divider"></li>
+<li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
+<br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="program" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Program<a href="program.html#program" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter deals with using the editor and the smart screen for fixture manipulation and parameter control.</p>
+<p><strong>The following is covered in this chapter:</strong></p>
+<ul>
+<li><a href="program.html#Parameters-7.1">7.1 Parameters</a></li>
+<li><a href="program.html#Smart-Screen-7.2">7.2 Smart Screen</a></li>
+<li><a href="program.html#Editor-Features-7.3">7.3 Editor Features</a></li>
+<li><a href="program.html#Live-7.4">7.4 Live</a></li>
+</ul>
+<div id="Parameters-7.1" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Parameters<a href="program.html#Parameters-7.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Parameters are any feature of a device that may be manipulated and stored into an object.</p>
+<p>Examples of parameters are:</p>
+<ul>
+<li><p>Dimmer</p></li>
+<li><p>Pan/Tilt</p></li>
+<li><p>Cyan/Yellow/Magenta</p></li>
+<li><p>Zoom/Focus</p></li>
+<li><p>Gobo Wheel</p></li>
+<li><p>Blade Rotation</p></li>
+</ul>
+<p>To control properly any fixture, the Vibe device needs to be built according to the DMX chart of the fixture’s parameters, that is usually reported in the manufacturer’s user manual.</p>
+<div id="param-banks" class="section level3 hasAnchor" number="7.1.1">
+<h3><span class="header-section-number">7.1.1</span> Param Banks<a href="program.html#param-banks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vibe organizes the fixtures’ parameters under 6 standard <strong>Banks</strong> and 2 special Banks:</p>
+<p>Standard Banks are:</p>
+<ol style="list-style-type: decimal">
+<li><p>Intensity</p>
+<ul>
+<li><p>for params related to the power and rate of the light output</p></li>
+<li><p>typical parameters are Dimmer, Shutter, Strobe</p></li>
+</ul></li>
+<li><p>Position</p>
+<ul>
+<li><p>for params related to the movement and focusing</p></li>
+<li><p>typical parameters are Pan, Tilt, Move speed</p></li>
+</ul></li>
+<li><p>Color</p>
+<ul>
+<li><p>for params related to the light’s colors and tints</p></li>
+<li><p>typical parameters are Red, Green, Blue, White, Cyan Magenta, Yellow, CTC</p></li>
+</ul></li>
+<li><p>Beam</p>
+<ul>
+<li><p>for params related to the angle and size of the light beam</p></li>
+<li><p>typical parameters are Zoom, Focus, Iris, Prism</p></li>
+</ul></li>
+<li><p>Image</p>
+<ul>
+<li><p>for params related to the pictures that may be applied to the light beam</p></li>
+<li><p>typical parameters are Gobo wheel, Gobo rotation, Animation wheel</p></li>
+</ul></li>
+<li><p>Shape</p>
+<ul>
+<li><p>for params related to the framing system that cuts the light output</p></li>
+<li><p>typical parameters are Blade depth, Blade angle, Blade rotation</p></li>
+</ul></li>
+</ol>
+<p>Special Banks are:</p>
+<ol style="list-style-type: decimal">
+<li><p>Control</p>
+<ul>
+<li><p>a param that sends “real time” messages to fixtures control functions</p></li>
+<li><p>typical functions are Lamp On, Lamp Off, Reset</p></li>
+<li><p>it is a special bank because its parameters are not stored in cues, scenes and libraries</p></li>
+</ul></li>
+<li><p>Media</p>
+<ul>
+<li><p>a bank that collects specific features to control media servers</p></li>
+<li><p>it is a special bank because its parameters are actually included in the standard banks</p></li>
+</ul></li>
+</ol>
+</div>
+<div id="virtual-params" class="section level3 hasAnchor" number="7.1.2">
+<h3><span class="header-section-number">7.1.2</span> Virtual Params<a href="program.html#virtual-params" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vibe automatically adds to the fixtures the relevant virtual parameters, that allow controlling the corresponding real parameters in a smart and effective way.</p>
+<p>Virtual controls are also mapped to the 4 physical wheels.</p>
+<p>Virtual parameters are the following:</p>
+<ul>
+<li><p><strong>Virtual Dimmer</strong>: assigned to fixtures that don’t have a specific dimmer parameter, usually RGB LEDs, it controls the light output intensity by adjusting the color values proportionally.</p></li>
+<li><p><strong>Virtual HSI</strong>: assigned to fixtures with any kind of color mixing system, it’s a set of 3 params (Hue, Saturation, Intensity) that controls the color output by adjusting the real color values.</p></li>
+</ul>
+<p>👉 It comes particularly useful when a fixture needs to be switched with another having a completely different color mixing system, for example an CMY to an RGBA.</p>
+<ul>
+<li><strong>Virtual XYZ</strong>: assigned to fixtures with Pan/Tilt parameters, it’s a set of 3 params (VX, VY, VZ) that controls the focusing by adjusting the position values. If based on a correct fixture <strong>calibration</strong> it allows to focus the fixtures on any stage point by simply tapping on the screen.</li>
+</ul>
+<p>👉 It comes particularly useful when a fixture needs to be switched with another having a different Pan and Tilt range.</p>
+</div>
+<div id="fixture-manipulation" class="section level3 hasAnchor" number="7.1.3">
+<h3><span class="header-section-number">7.1.3</span> Fixture Manipulation<a href="program.html#fixture-manipulation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The manipulation of any fixture’s parameter values may be set by using either Vibe’s intuitive <strong>Smart Screen</strong> picker system or the conventional encoder wheels and the keypad method.</p>
+<p>The switch between banks can be done either from the Smart Screen or through the combination SHIFT + # where the # represents the bank number.</p>
+<p><strong>Standard programming:</strong></p>
+<p>Programming may be done traditionally by using {Bank} keys and the 4 large push wheels.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures to program: Fixture # [+ ⟶ -]</p></li>
+<li><p>Select the <strong>{BANK}</strong> of the parameter you wish to adjust.</p></li>
+<li><p>Banks may contain more than 4 wheels of parameters. Tap the <strong>{BANK}</strong> key or push the encoder wheel again to page to the next set of 4 parameter wheels.</p></li>
+<li><p>Select the Param to adjust either on the touch screen or by pushing the correspondent encoder wheel. The wheel display turns red.</p></li>
+<li><p>Rotate the encoder wheel of the parameter you wish to adjust, or directly add values with the keypad:</p></li>
+</ol>
+<ul>
+<li>Push a parameter wheel to select the parameter</li>
+<li><strong>AT</strong> will appear on the command line</li>
+<li>Type a value from Zero ⟶ Full.</li>
+</ul>
+<blockquote>
+<p><span style="color:red">**<span class="citation">@*</span>* is only used for the dimmer, parameters other than dimmer do not use the @ key.</span></p>
+</blockquote>
+<blockquote>
+<p><span style="color:Red">A Parameter value must be entered in 2 digits or one digit and the [Enter] key for whole numbers: 05, 50, 5 [ENTER] = 50.</span></p>
+</blockquote>
+<p><strong>Interactive programming:</strong></p>
+<p>Programming may be done interactively by using {Bank} keys and the 4 large push wheels.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the fixtures to program: Fixture # [+ ⟶ -]</p></li>
+<li><p>Select the <strong>{BANK}</strong> of the parameter you wish to adjust OR Drag the <strong>Wheel Picker</strong> on the right side of the <strong>Smart Screen</strong> and browse to the wheel and slot you want to program.</p></li>
+<li><p>Tap the tab of the feature OR Tap the wheel slot that you wish to program. The context sensitive area on the <strong>Smart Screen</strong> will open with the appropriate picker.</p></li>
+<li><p>Adjust the virtual controls through the options shown in the picker, that will be grayed out if not available in the current fixture selection.</p></li>
+</ol>
+<p><strong>Select multiple parameters:</strong></p>
+<ul>
+<li>After making a fixture selection, toggle multiple parameters ON/OFF by tapping {Parameter Keys}, pressing encoder wheels, or toggling desired live display headers.</li>
+</ul>
+<p><strong>Manipulate all parameters in a bank:</strong></p>
+<ul>
+<li><p>After making a fixture selection, hold [SHIFT] and tap a {Parameter Bank Key}.</p></li>
+<li><p>Pressing and holding a {Parameter Bank} will popup three options:</p>
+<ul>
+<li><p>{HOME} - Sets the bank’s parameters to Home values.</p></li>
+<li><p>{ALL PARAMS} - Selects all parameters in the parameter bank.</p></li>
+<li><p>{RELEASE} - Releases the bank’s parameter from the Editor.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="editor-controls" class="section level3 hasAnchor" number="7.1.4">
+<h3><span class="header-section-number">7.1.4</span> Editor Controls<a href="program.html#editor-controls" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p><strong>Dimmer Wheel</strong> is always controlling the selected fixtures’ Dimmer params, independently from the currently selected bank and parameters.</p></li>
+<li><p><strong>Trackball</strong> is always controlling the selected fixtures’ Pan and Tilt params, independently from the currently selected bank and parameters.</p></li>
+<li><p><strong>[PREV] / [NEXT]</strong> keys have the same functions of the Next and Prev hardkeys, but are positioned near the trackball and the dimmer wheel to make the adjustment of these params fast and comfortable.</p></li>
+<li><p><strong>[X LOCK] / [Y LOCK]</strong> keys lock the X or Y axis of the trackball, allowing to move individually Pan or Tilt instead of both.</p></li>
+<li><p><strong>[RES]</strong> - Sets global encoder resolution.</p></li>
+</ul>
+<p><span style="color:Blue">Blue</span> = Low 8 bit,</p>
+<p><span style="color:MediumAquaMarine">Green</span> = Medium 10 bit (Default)</p>
+<p><span style="color:Red">Red</span> = Higher 12 bit.</p>
+<p><span style="color:Gold">Yellow</span> = High 16 bit.</p>
+<p><span style="color:Magenta">Magenta</span> = Highest 24 bit.</p>
+<p>👉 Holding the [VIBE] key down while turning an encoder temporarily sets the encoder to high resolution 16 bit.</p>
+<ul>
+<li><strong>Encoder Wheels</strong> the 4 interactive encoder wheels control the 4 params currently shown on the Smart Screen’s wheels display and allow to select or deselect the parameters by pushing the wheels.</li>
+</ul>
+<p>👉 Vibe uses a precision algorithm for encoders. Based on the starting resolution, the slower an encoder is turned, the more resolution it has.</p>
+<ul>
+<li><p><strong>Extra Wheels</strong> the 4 additional interactive encoder wheels on the Smart Screen’s right side control 4 additional params, that are dependent on the bank and selected fixture type.</p></li>
+<li><p>Position, Image and Shape assign Focus and Zoom to the interactive wheels.</p></li>
+<li><p>Color assigns Color Wheels and CTC to the interactive wheels.</p></li>
+<li><p>Beam assigns Prism and Prism Rotate to the interactive wheels.</p></li>
+</ul>
+</div>
+</div>
+<div id="Smart-Screen-7.2" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Smart Screen<a href="program.html#Smart-Screen-7.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The 11.6” multi-touch monitor directly above the 4 encoder wheels is referred to as the <strong>Smart Screen.</strong></p>
+<p>The <strong>Smart Screen</strong> is dedicated to displaying:</p>
+<ul>
+<li><p>Context sensitive interactive bank, and parameter information.</p></li>
+<li><p>Encoder wheel displays.</p></li>
+<li><p>Playback information for the controllers that are directly above it.</p></li>
+<li><p>Special popups for Libraries, Store options and Grab functions.</p></li>
+<li><p>A simplified Effects editor.</p></li>
+<li><p>Displays for Fan feature.</p></li>
+</ul>
+<p><strong>Smart Screen is divided into sections corresponding to the Parameter Banks.</strong></p>
+<p>The Bank buttons on the Smart Screen, used to access the different parameters of the selected fixtures, have the following behavior:</p>
+<ul>
+<li><p>Bank buttons 1-6 are always enabled. (i.e., to access libraries in the Context view)</p></li>
+<li><p>If the Bank is enabled and active (there are parameters for the current selection in this bank), it has White text.</p></li>
+<li><p>If the Bank is enabled and inactive (there are no parameters for the current selection in this bank), it has Black text.</p></li>
+<li><p>If the Bank is disabled (not functional in the current selection), it is grayed out and not accessible.</p></li>
+<li><p>If the Bank is currently selected, it has a colored background.</p></li>
+</ul>
+<div id="intensity" class="section level3 hasAnchor" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> Intensity<a href="program.html#intensity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Intensity bank has parameters like Dimmer, Shutter and Strobe.</p>
+<p>The dimmer level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the predefined incremental steps.</p>
+<p>The strobe and shutter level, mode and frequency can be set in the smart screen with the macros showing the selected fixtures’ properties.</p>
+<p align="center">
+<strong>Smart Screen - Intensity Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ODIRQRoX8R3lUkEDXDK%2F7.2-Intensity-Bank.webp?alt=media&amp;token=09031393-72b2-4afc-9c8c-89ebba241c58" alt="7.2-Intensity-Bank" />
+</p>
+<p>The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe’s universal fixture model. This means that is not necessary to memorize the manufacturer’s specification of each fixture, as all fixtures are programmed in a similar consistent way.</p>
+</div>
+<div id="position" class="section level3 hasAnchor" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> Position<a href="program.html#position" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Position bank has parameters like Pan and Tilt.</p>
+<p>The fixtures’ position can be set either with the editor keys, wheels, and trackball, and through the smart screen by using the virtual sliders and the position picker.</p>
+<p>The position is calculated at the same time on Pan/Tilt values and on virtual XYZ values, based on the fixture’s calibration on the stage.</p>
+<p>Independently from the fixture’s pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.</p>
+<p align="center">
+<strong>Smart Screen - Position Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcxXl4nzaySnknNJLRVzk%2F7.2-Position-Bank.webp?alt=media&amp;token=bdd6d8a7-f0a4-4807-98b5-a195429fa499" alt="7.2-Position-Bank" />
+</p>
+</div>
+<div id="color" class="section level3 hasAnchor" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> Color<a href="program.html#color" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Color bank has parameters like Color Mix (RGB, CMY, RGBW, …) and Color Wheels.</p>
+<p>The color level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders in “Params” screen, the color picker in “Virtual” screen, or the color presets.</p>
+<p>The color mix is calculated at the same time on the color values and on virtual HSI values, based on the fixture’s color mixing system.</p>
+<p>Independently from the fixture’s color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture’s colors.</p>
+<p>The color wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels’ features.</p>
+<p>The color mix can also be set by using the predefined preset combinations and Vibe’s smart features.</p>
+<p align="center">
+<strong>Smart Screen - Color Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUAQAtMSTZNGJfNL3hiQs%2F7.2-Color-Bank.webp?alt=media&amp;token=37233298-6edb-41c8-9321-84119d35f86d" alt="7.2-Color-Bank" />
+</p>
+<p><strong>Filters Picker</strong></p>
+<p>Color bank has a Lee and an Other filters section to assign colors based on the most used brands of gel filters.</p>
+<p><strong>Kelvin Picker</strong></p>
+<p>Color bank has a Kelvin picker for a fast adjust of any color temperature between 1000K and 20000K, linearly or by incremental steps.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F6HVYnqAGm4BNl8vUKHzQ%2F7.2-Kelvin-Picker.webp?alt=media&amp;token=b4bdbc15-0ebe-4091-8f3e-188670b69a81" alt="7.2-Kelvin-Picker" />
+</p>
+<p>This feature is recommended for working in television studios and photography environments.</p>
+<p><strong>Vibe Mood Picker</strong></p>
+<p>Color bank has a Vibe mood picker for a fast reproduction of a color taken from a picture.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fa0xtuFjdwfBdQmE9JJlJ%2F7.2-Mood-Picker.webp?alt=media&amp;token=aa3853ad-e7a0-4dc5-aa36-d5a1b6ce87b2" alt="7.2-Mood-Picker" />
+</p>
+<p>This feature is recommended if working with assigned color palettes, for example in cinema or theater shows, to create color libraries directly from the scene’s and costumes’ pictures.</p>
+<p>To get a color from an image:</p>
+<ol style="list-style-type: decimal">
+<li><p>Load an image file to the Vibe mood picker</p></li>
+<li><p>Zoom the section of the target color</p></li>
+<li><p>Select the color to assign to the fixture selection</p></li>
+</ol>
+<p>👉 The system provides an inbuilt database of 10 default images that can be used to check the Vibe Mood Picker and create Color Libraries based on the images’ tones.</p>
+</div>
+<div id="beam" class="section level3 hasAnchor" number="7.2.4">
+<h3><span class="header-section-number">7.2.4</span> Beam<a href="program.html#beam" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Beam bank has parameters like Focus, Zoom, Frost and Prism.</p>
+<p>The beam parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the beam picker.</p>
+<p>The beam picker automatically enables the features available on the selected fixtures, offering an intuitive control system to set the mode, speed and type of transition related to the controlled parameter.</p>
+<p>The prisms are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the wheel picker to get complete control on the prism wheels’ features.</p>
+<p align="center">
+<strong>Smart Screen - Beam Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2sh3eddaipBQZyzMFEaZ%2F7.2-Beam-Bank.webp?alt=media&amp;token=d658226f-7061-4d9d-916b-95529e9e1067" alt="7.2-Beam-Bank" />
+</p>
+</div>
+<div id="image" class="section level3 hasAnchor" number="7.2.5">
+<h3><span class="header-section-number">7.2.5</span> Image<a href="program.html#image" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Image bank has parameters like Gobo and Effect wheel.</p>
+<p>The image parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the image picker.</p>
+<p>The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels’ features. The image picker can be also accessed by pressing the Virtual button on image bank’s screen.</p>
+<p>On the image picker’s right side, it is possible to visualize and select each fixture’s wheel, on the left side can be set the indexing and rotation speed of the whole wheel or the single frame.</p>
+<p>The interactive wheel picker shows all the graphic frames related to the selected wheel to allow fast interchange operations.</p>
+<p align="center">
+<strong>Smart Screen - Image Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiwsphMY7h92U1agUZdTw%2F7.2-Image-Bank.webp?alt=media&amp;token=130d89e7-2636-4499-95e6-cc2c2bd6aa13" alt="7.2-Image-Bank" />
+</p>
+</div>
+<div id="shape" class="section level3 hasAnchor" number="7.2.6">
+<h3><span class="header-section-number">7.2.6</span> Shape<a href="program.html#shape" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Shape bank has parameters like Blade movement and rotation.</p>
+<p>The blades’ depth and angle can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the blade picker.</p>
+<p>The blade picker features a smart graphic control of the blade, independently from the fixture’s blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.</p>
+<p align="center">
+<strong>Smart Screen - Shape Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlFJYfyfv9GX4MoOVlIiK%2F7.2-Shape-Bank.webp?alt=media&amp;token=883721f1-4ad7-47ea-bd32-148aa6073666" alt="7.2-Shape-Bank" />
+</p>
+</div>
+<div id="wheel-picker" class="section level3 hasAnchor" number="7.2.7">
+<h3><span class="header-section-number">7.2.7</span> Wheel Picker<a href="program.html#wheel-picker" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Wheel Picker is used to control any kind of wheel, such as Color, Prism, Gobo and Animation.
+The values will be stored into libraries, scenes and cues according to the parameter’s bank.</p>
+<p align="center">
+<strong>Smart Screen - Wheel Picker</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fk4ddGPRblIR165mXK6Mn%2F7.2-Wheel-Picker.webp?alt=media&amp;token=f98fa9d6-394e-4a61-8b2a-63d81cfad125" alt="7.2-Wheel-Picker" />
+</p>
+<p>The wheels adjusted with the wheel picker will reflect into values assigned to the wheel’s parameters, usually the wheel’s positioning and rotation and the whell’s frame selection, index and rotation.</p>
+<p>Any wheel of the fixtures can be controlled through the wheel picker in the same way, using the Smart Screen’s “Smart” visualization mode to visualize and select the frames’ icons directly in the right side column.</p>
+</div>
+<div id="control" class="section level3 hasAnchor" number="7.2.8">
+<h3><span class="header-section-number">7.2.8</span> Control<a href="program.html#control" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Control bank has parameters related to the fixture’s functions, like Lamp on/off and Reset.</p>
+<p>The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.</p>
+<p align="center">
+<strong>Smart Screen - Control Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FYOhykSfJYRVLDIr5lo4K%2F7.2-Control-Bank.webp?alt=media&amp;token=67d196a9-9c5a-4cc3-bf4b-b9a6df2849e0" alt="7.2-Control-Bank" />
+</p>
+</div>
+<div id="media" class="section level3 hasAnchor" number="7.2.9">
+<h3><span class="header-section-number">7.2.9</span> Media<a href="program.html#media" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Media Bank is the picker designed for an intuitive <strong>Media Server</strong> programming, to handle media contents in a smart and easy way. In order to see the content in this bank, users will need to create Media Server fixtures such as Green Hippo’s Hippotizer.</p>
+<p>All virtual controls are also mapped to the physical wheels for easy use.</p>
+<p>This bank has 5 types of pickers:</p>
+<p><strong>Media</strong></p>
+<p>This picker includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play.
+By default all the folders and subfolders are visible, and once synchronizing the data with the media server through CITP the file’s thumbnails will be shown.</p>
+<p align="center">
+<strong>Smart Screen - Media Bank</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FxKWCsh9JnAWKx5I8vsAf%2F7.2-Media-Bank-File.webp?alt=media&amp;token=e08e89ea-d994-4b8f-b72c-7f40079974a7" alt="7.2-Media-Bank-File" />
+</p>
+<p><strong>FX (Effect)</strong></p>
+<p>This picker includes the effects available on the media server. There are media servers with more than 1 effect engine (layer) and for each effect there will be a numbered FX Bank button.</p>
+<p>The FX Bank includes a list of effects that are possible to trigger on the server and a list of parameters to control the effect. The parameters will be dynamically changed according to the selected effect.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fzn01ps0c5gZGjDGdjxrR%2F7.2-Media-Bank-Effect.webp?alt=media&amp;token=8ad6deae-2239-4b7a-a795-9c06f6b05007" alt="7.2-Media-Bank-Effect" />
+</p>
+<p><strong>Keystone</strong></p>
+<p>This picker includes a graphic interface to control the keystoning of the server.
+There are 4 points available for movement in order to control the position of each corner of the keystone control.
+The selected point that is assigned to the physical wheels is marked in red.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Ff1DltbHtsKqR2GSLNYx7%2F7.2-Media-Bank-Keystone.webp?alt=media&amp;token=3311291a-40ca-4c4c-a40e-65d14a673e54" alt="7.2-Media-Bank-Keystone" />
+</p>
+<p><strong>Generator</strong></p>
+<p>This picker is specifically made for Hippotizer. On this bank, users can control the picture that is sent from the server’s layer on the Generator engine.
+The bank acts the same as the Media FX bank by selecting the Generator from the Generators list and then moving the Generator’s parameters accordingly.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FejpUBCP4eaHQAPtihcAU%2F7.2-Media-Bank-Generator.webp?alt=media&amp;token=1586bc5c-112a-4429-bb5b-d0c67c7b5781" alt="7.2-Media-Bank-Generator" />
+</p>
+<p><strong>Geometry</strong></p>
+<p>This picker includes an interface to control most of the geometric functions of the media server.</p>
+<p>There are options to control:</p>
+<ul>
+<li><p>Aspect Mode of the layer.</p></li>
+<li><p>Zoom</p></li>
+<li><p>Rotation, Indexed or Rotating with speed control</p></li>
+<li><p>Aspect Ratio</p></li>
+<li><p>Positioning, both X and Y</p></li>
+</ul>
+<p>In addition there is a graphic preview to show the approximate result of the geometric parameters.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9hVknUQBXvotM5BxmTrY%2F7.2-Media-Bank-Geometry.webp?alt=media&amp;token=bd477f09-7a20-4a39-bd8f-c093e61f2344" alt="7.2-Media-Bank-Geometry" />
+</p>
+</div>
+<div id="smart-settings" class="section level3 hasAnchor" number="7.2.10">
+<h3><span class="header-section-number">7.2.10</span> Smart Settings<a href="program.html#smart-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Smart Screen’s Settings</strong> are accessed by tapping the {Settings} key.</p>
+<p>The options are divided in 3 menus:</p>
+<ul>
+<li><p>Format</p></li>
+<li><p>Resolution</p></li>
+<li><p>View</p></li>
+</ul>
+<p>The {Home} key returns menus to the upper level.</p>
+<ul>
+<li><p><strong>Format</strong> - Sets the view format for wheel displays:</p>
+<ul>
+<li><p>Percent</p></li>
+<li><p>Decimal</p></li>
+<li><p>Text</p></li>
+<li><p>Text + Percent</p></li>
+</ul></li>
+<li><p><strong>Resolution</strong> - Sets the wheels’ and the virtual pickers’ control resolution:</p>
+<ul>
+<li><p>8 bit - Blue on [Res] Key</p></li>
+<li><p>10 bit - Green on [Res] key</p></li>
+<li><p>12 bit - Red on [Res] key</p></li>
+<li><p>16 bit - Yellow on [Res] key</p></li>
+<li><p>24 bit - Magenta on [Res] key</p></li>
+</ul>
+<p>👉 This may also be set by toggling the [Res] key over the trackball.</p></li>
+<li><p><strong>View</strong> - Sets the behavior of the smart screen views:</p>
+<ul>
+<li><p>Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared.</p></li>
+<li><p>Programming - Maintains the programming display even with the editor released.</p></li>
+<li><p>Playbacks - Maintains the playback controller display even with fixtures in the editor.</p></li>
+</ul></li>
+</ul>
+<p><strong>Smart Screen’s Preferences</strong> are accessed by tapping the {Smart} {Param Steps} and {Extra Wheels} keys near the {Settings} key.</p>
+<p>The preferences affect the visualization display in the right side column of the smart screen:</p>
+<ul>
+<li><p><strong>Smart</strong> - All wheels for the selected fixture are shown in the interactive wheel picker area.</p></li>
+<li><p><strong>Parameter Steps</strong> - Pressing a parameter wheel or tapping the wheel display above it will display a picker list of all feature steps for the selected fixture.</p></li>
+<li><p><strong>Extra Wheels</strong> - Displays wheel information for the additional context sensitive encoder wheels.</p></li>
+</ul>
+</div>
+</div>
+<div id="Editor-Features-7.3" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Editor Features<a href="program.html#Editor-Features-7.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="clear" class="section level3 hasAnchor" number="7.3.1">
+<h3><span class="header-section-number">7.3.1</span> Clear<a href="program.html#clear" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To clear the last command or key pressed from the <strong>Command Line</strong></p>
+<ul>
+<li>Press [CE] key</li>
+</ul>
+<p>To clear the <strong>Command Line</strong> without releasing the fixture selection and the param values assigned on the editor</p>
+<ul>
+<li>Press [VIBE] + [CLEAR] keys</li>
+</ul>
+</div>
+<div id="de-select" class="section level3 hasAnchor" number="7.3.2">
+<h3><span class="header-section-number">7.3.2</span> De-Select<a href="program.html#de-select" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To de-select the current <strong>Fixture Selection</strong> without releasing the param values assigned on the editor</p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] [VIBE] + [DESEL] keys</li>
+</ul>
+<p>To re-select the last <strong>Fixture Selection</strong></p>
+<ul>
+<li>Press [.] key</li>
+</ul>
+</div>
+<div id="release" class="section level3 hasAnchor" number="7.3.3">
+<h3><span class="header-section-number">7.3.3</span> Release<a href="program.html#release" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To release all the selected fixtures’ parameters from the <strong>Editor</strong></p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] [RELEASE]</li>
+</ul>
+<p>To release the entire bank of parameters of the selected fixtures from the Editor</p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] [VIBE] + {Bank} [RELEASE]</li>
+</ul>
+<p>To release a fixture parameter (or the active parameters) of the selected fixtures from the Editor</p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] {BANK} {PARAMETER} [RELEASE]</li>
+</ul>
+<p>If a fixture is selected and active (Red), the first press of [RELEASE] releases the parameter and then the second press releases the whole fixture.</p>
+</div>
+<div id="reset" class="section level3 hasAnchor" number="7.3.4">
+<h3><span class="header-section-number">7.3.4</span> Reset<a href="program.html#reset" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To reset the <strong>Editor</strong>, releasing all the param values without releasing the fixture selection</p>
+<ul>
+<li>Press [RESET] key</li>
+</ul>
+<p>To reset the <strong>Editor</strong>, releasing both the fixture selection and the param values</p>
+<ul>
+<li>Press [VIBE] + [RESET] keys</li>
+</ul>
+</div>
+<div id="home" class="section level3 hasAnchor" number="7.3.5">
+<h3><span class="header-section-number">7.3.5</span> Home<a href="program.html#home" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When a parameter is not in use, meaning it is not in the Editor, neither triggered from any Playback, the values used by Vibe to tell where the fixture parameters should be set can be based on the fixture’s home values or on the last value assigned.</p>
+<p>Vibe has two options to set uncontrolled parameters’ values, that can be set in the System Settings popup in the {Editing Properties} tab under the Default Stage Values header:</p>
+<ul>
+<li><p>{Use Home values} sets the uncontrolled parameters to their <strong>Home Value</strong></p></li>
+<li><p>{Maintain Last Value} leaves the uncontrolled parameters to <strong>Maintain the Last Value</strong> they were at before being released</p></li>
+</ul>
+<p>All the devices have default home values for parameters based on the manufacturer’s DMX chart.</p>
+<p>Selected fixtures or parameters may be sent to their defaults using the [HOME] key.</p>
+<p><strong>Home</strong> - Sets parameter values to home values as defined by the manufacturer or to custom values defined by the user <strong>Home Scene</strong>.</p>
+<p>The [HOME] button brings the fixture, bank or parameter home value in the Editor.</p>
+<p>To <strong>Home</strong> selected fixtures in the <strong>Editor</strong></p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] [HOME]</li>
+</ul>
+<p>To Home the entire bank of parameters of the selected fixtures in the Editor</p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] [VIBE] + {BANK} [HOME]</li>
+</ul>
+<p>To Home a fixture parameter (or the active parameters) of the selected fixtures in the Editor</p>
+<ul>
+<li>Press [FIXTURE] or [FIXTURE] [#] [+ ⟶ -] [#] {BANK} {PARAMETER} [HOME]</li>
+</ul>
+<p>If a fixture is selected and active (Red), the first press of [HOME] homes the parameter and then the second press homes the whole fixture.</p>
+</div>
+<div id="highlight" class="section level3 hasAnchor" number="7.3.6">
+<h3><span class="header-section-number">7.3.6</span> Highlight<a href="program.html#highlight" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Highlight is used to help identify the positions of fixtures, so they may be edited more easily.</p>
+<p>Highlight Mode affects parameters and banks in the following way:</p>
+<ul>
+<li><p>Dimmer - Full</p></li>
+<li><p>Other Intensity parameters - home values and masked</p></li>
+<li><p>Position - unchanged and editable</p></li>
+<li><p>Color - home values and masked</p></li>
+<li><p>Beam - home values and masked</p></li>
+<li><p>Image - home values and masked</p></li>
+<li><p>Shape - home values and masked</p></li>
+</ul>
+<p>To Highlight Fixtures or Groups:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select fixtures using keypad or using Groups.</p></li>
+<li><p>Press [H.LIGHT] - The key will flash in <span style="color:Red">red</span> to indicate the mode is active.</p></li>
+</ol>
+<p>All the Fixture selection will be set as specified above.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Press [NEXT] - The first fixture will remain “highlighted” and all other fixtures will return to their editor or stage values.</p></li>
+<li><p>Adjust Pan/Tilt as required and press [NEXT] to move to the next fixture.</p></li>
+<li><p>Continue through the fixture selection using [NEXT] [PREV] until all fixtures are focused.</p></li>
+<li><p>Press [H.LIGHT] again to turn off Highlight Mode. The red light will go out and fixtures will return to their current editor or stage values.</p></li>
+</ol>
+<p>Highlight may be entered before a selection is made.
+Press [ENTER] to Highlight the selection.</p>
+<p>To swap new fixtures into Highlight:</p>
+<ul>
+<li>Select new fixtures or Groups and press [ENTER] while still in Highlight Mode - the Highlight selection will be swapped.</li>
+</ul>
+<p>Until [NEXT] [PREV] is pressed Groups will be appended to make up a larger Highlight selection.</p>
+<p>Highlight may be customized when the default home values are too generic.</p>
+<p>👉 Frequently users tighten the zoom or use a closer iris value as default to better focus the center of the beam.</p>
+</div>
+<div id="lowlight" class="section level3 hasAnchor" number="7.3.7">
+<h3><span class="header-section-number">7.3.7</span> Lowlight<a href="program.html#lowlight" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Lowlight is used when many fixtures are lit up and therefore Highlight is not helpful.</p>
+<p>Lowlight Mode affects parameters and banks in the following way:</p>
+<ul>
+<li><p>Dimmer - 30% all fixtures <strong>except</strong> active fixture which will be at 100%</p></li>
+<li><p>Other Intensity parameters - home values and masked.</p></li>
+<li><p>Position - unchanged and editable</p></li>
+<li><p>Color - home values and masked</p></li>
+<li><p>Beam - home values and masked</p></li>
+<li><p>Image - home values and masked</p></li>
+<li><p>Shape - home values and masked Unlike Highlight, Lowlight maintains a value of 30% for dimmers while active.</p></li>
+</ul>
+<p>To Lowlight Fixtures or Groups:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select fixtures using the keypad or using Groups.</p></li>
+<li><p>Press [L.LIGHT] - The key will flash in <span style="color:Red">red</span> to indicate the mode is active.</p></li>
+<li><p>Press [NEXT] - The first fixture will go to a dimmer value of 100% and all other fixtures dimmer values will remain at 30%. Other parameters will return to their editor or stage values.</p></li>
+<li><p>Adjust Pan/Tilt as required and press [NEXT] to move to the next fixture.</p></li>
+<li><p>Continue through the fixture selection using [NEXT] [PREV] until all fixtures are focused.</p></li>
+<li><p>Press [L.LIGHT] again to turn off Lowlight Mode. The red light will go out and fixtures will return to their current editor or stage values.</p></li>
+</ol>
+<p>Lowlight may be entered before a selection is made.</p>
+<p>Press [ENTER] to Lowlight the selection.</p>
+<p>To swap new fixtures into Lowlight:</p>
+<ul>
+<li>Select new fixtures or Groups and press [ENTER] while still in Lowlight Mode - the Lowlight selection will be swapped.</li>
+</ul>
+<p>Until [NEXT] [PREV] is pressed Groups will be appended to make up a larger Lowlight selection.</p>
+<p>Lowlight may be customized when the default home values are are too generic.</p>
+<p>👉 Frequently users set the Lowlight dimmer to Zero instead of the default 30% to create a solo effect.</p>
+</div>
+<div id="rem-dim" class="section level3 hasAnchor" number="7.3.8">
+<h3><span class="header-section-number">7.3.8</span> Rem Dim<a href="program.html#rem-dim" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Remainder Dim</strong> is an Editor Tool commonly used in theater environments but can be useful in many other situations.</p>
+<p><strong>{REM DIM}</strong> Toggles all dimmer values to 0 except those that are selected.</p>
+<p>If no value is given in the editor, the selected fixtures will maintain their current values.</p>
+<p>Find {REM DIM} key on the toolbar when there’s a Fixture Selection active.</p>
+<ul>
+<li><p>While in {REM DIM} is ON, [Next] / [Prev] will swap the Rem Dim fixture forwards or backwards.</p></li>
+<li><p>If a selection of multiple fixtures is made followed by {REM DIM} all unselected fixtures will go to 0%. The selected fixtures will not be changed or entered into the editor.</p></li>
+<li><p>If a selection of multiple fixtures is made, [Next] / [Prev] will force all but the first fixture in the selection to 0. The next press of [Next] / [Prev] will force the first fixture to 0 and release the next fixture’s dimmer. Fixtures in the selection will continue to swap from 0 to release with each press of [Next] / [Prev].</p></li>
+<li><p>Pressing REM DIM again toggles the feature off and restores the stage look.</p></li>
+<li><p>Cues may be stored with {REM DIM} ON and the dimmers forced to 0% by Rem Dim will not be stored.</p></li>
+</ul>
+<p>Once stored, {REM DIM} is turned off.</p>
+</div>
+<div id="undo" class="section level3 hasAnchor" number="7.3.9">
+<h3><span class="header-section-number">7.3.9</span> Undo<a href="program.html#undo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Undo button directly rolls back the last actions.</p>
+<p>Every parameter programmed in the editor can come back to its previous status by pressing the UNDO button.</p>
+<p>Pressing Undo button multiple times will restore step by step the last actions.</p>
+<p>Undo function can be used to recover the editor status after a Shift + Reset command, and to restore objects that have been stored, deleted, or updated, such as groups, libraries, qlists, cues and scenes.</p>
+<p>Undo button works also with Home and High/Lowlight actions.</p>
+<p><strong>Undo History</strong></p>
+<p>Settings ⟶ Undo opens the Undo/Redo list to review and restore the last actions.</p>
+<p align="center">
+<strong>Undo History</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FaaFMuHiXrwg3n1mWf7SL%2F7.3-Undo-History.webp?alt=media&amp;token=50c86b8e-4d72-4fa6-8534-b5b559f62702" alt="7.3-Undo-History" />
+</p>
+<p>To Undo more operations at a time, access the Undo history with the sequence [Vibe] + [Settings], [Undo]</p>
+<p>In the Undo popup’s left column are listed all the undoable actions, and in case an undo command has been done, the list on the right shows the redo able actions.</p>
+<p>Each action reports the date and time when it has been done.</p>
+<p>Select one or more actions, than press undo or redo to come back to the desired status.</p>
+<p>The popup does not close until the apply or restore buttons are pressed.</p>
+</div>
+<div id="fan" class="section level3 hasAnchor" number="7.3.10">
+<h3><span class="header-section-number">7.3.10</span> Fan<a href="program.html#fan" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Fan is used to apply a distribution of values to the Fixture Selection.</p>
+<p>Fan of the selected fixtures’ parameters can be done either through the keypad syntax or by using the [Fan] key and Smart Screen’s interface.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FksUNhoKmMfJPGeIEnQHl%2F7.3-Fan-Mode.webp?alt=media&amp;token=9c3a99c0-0b24-4a5e-bda1-1799cdb7f036" alt="7.3-Fan-Mode" />
+</p>
+<p>To enter the <strong>Fan</strong> Mode</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the range of fixtures to be fanned.</p></li>
+<li><p>Press [FAN] to enter Fan Mode. - The key will flash in <span style="color:Red">red</span> to indicate the mode is active.</p></li>
+<li><p>Select a Curve from the Fan Mode picker on the Smart Screen’s right side.</p></li>
+<li><p>Turn the encoder wheel of the parameter. - The param’s values will be set fanned proportionally to the curve applied the order of selection.</p></li>
+<li><p>Toggle [FAN] OR Select a different parameter to turn Fan mode off.</p></li>
+</ol>
+<p>Frequently used <strong>Fan curves</strong>:</p>
+<ul>
+<li><p>{Fade In} / = lowest to highest</p></li>
+<li><p>{Fade Out}  = highest to lowest</p></li>
+<li><p>{Diagonal} -/- = Standard PAN Fan</p></li>
+<li><p>{Saw Tooth} / = Mirror lowest on ends to highest in middle</p></li>
+<li><p>{Mirror} / = Highest on ends to lowest in middle</p></li>
+</ul>
+<p>Curves can be freely changes while in Fan Mode to check the different results.</p>
+<p>Any Curve created in the Curves Editor may be applied to Fan.</p>
+<p>The Fixture Selection can be splitted to get fanned in <strong>Blocks of</strong> and <strong>Sub Blocks</strong>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the range of fixtures to be fanned.</p></li>
+<li><p>Press [FAN].</p></li>
+<li><p>Select a Curve from the Fan Mode.</p></li>
+<li><p>Select <strong>Blocks of {#}</strong></p></li>
+<li><p>Select <strong>Sub Blocks {#}</strong></p></li>
+<li><p>Turn the encoder wheel of the parameter requiring fanning.</p></li>
+<li><p>Toggle [FAN] to turn off Fan Mode.</p></li>
+</ol>
+<p><strong>Examples of Blocks and Sub Blocks:</strong></p>
+<ul>
+<li>{Fade In} - Blocks of 1 and no Sub Block</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNIYGLi5Z3mtZPS5uV907%2F7.3-Fan-Blocks-1.webp?alt=media&amp;token=f20908a0-3050-4546-80e5-700d937b768e" alt="7.3-Fan-Blocks-1" />
+</p>
+<ul>
+<li>{Fade In} - Blocks of 4 no Sub Blocks</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FP5fT2dCktnN8oFTcFlMK%2F7.3-Fan-Blocks-2.webp?alt=media&amp;token=6d61ebdf-c946-4a8d-8a61-aabf6aaa7957" alt="7.3-Fan-Blocks-2" />
+</p>
+<ul>
+<li>{Fade In} - Blocks of 6, Sub Blocks of 2</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FllvDi6StFjRL6Y2YMBMD%2F7.3-Fan-Blocks-3.webp?alt=media&amp;token=6d06ff0b-86cc-411d-9f41-cdda41bdbf22" alt="7.3-Fan-Blocks-3" />
+</p>
+<ul>
+<li>{Saw Tooth} - (Low-High Mirror) Blocks of 12, Sub Blocks 2</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTqOFB3yJ3ihK3VTeVAL1%2F7.3-Fan-Blocks-4.webp?alt=media&amp;token=b4bfaaef-9ed0-4c1c-9494-5035867a4ba6" alt="7.3-Fan-Blocks-4" />
+</p>
+<ul>
+<li>Moving Light Fixture with {Fade In} Dimmer and Color Fan, and {Diagonal} Pan Fan</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FU981qcnwTo3prZBO4VAH%2F7.3-Fan-Blocks-5.webp?alt=media&amp;token=6be1a186-b9b8-4f22-8565-923e5d4eae31" alt="7.3-Fan-Blocks-5" />
+</p>
+<p>Fixture <strong>Groups</strong> may also be used as Blocks.</p>
+<p>To Fan Blocks By Groups:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the Groups</p></li>
+<li><p>Press [FAN].</p></li>
+<li><p>Tap {Blocks By Group} under the Fan Mode picker.</p></li>
+<li><p>Use any of the above methods to fan parameters by Group.</p></li>
+</ol>
+</div>
+<div id="copy-paste" class="section level3 hasAnchor" number="7.3.11">
+<h3><span class="header-section-number">7.3.11</span> Copy / Paste<a href="program.html#copy-paste" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>[COPY] and [PASTE] are used to make copies of any object, such as Groups, Libraries, Scenes, Cues and Qlists, and store them in the desired positions.</p>
+<p>The syntax to copy and paste an object is:</p>
+<p>{Object} [COPY] {Target} [PASTE]</p>
+<p>👉 [COPY] and [PASTE] keyboard syntax can be also used to copy and paste the selected (Red) params of a fixture to another.</p>
+<p>The syntax to <strong>copy and paste param values</strong> is:</p>
+<p>[Fixture] {Param Selection} or {All} [COPY] {Fixture} [PASTE]</p>
+<p>When something is in <strong>Copy</strong> the [COPY] key will flash in <span style="color:Red">red</span> to indicate there is a copied content.</p>
+<p>When a <strong>Paste</strong> command applies the content to the target, the data is kept on the Copy key to allow making other copies.</p>
+<p>Toggle [COPY] to remove the content from the copy feature.</p>
+</div>
+<div id="move" class="section level3 hasAnchor" number="7.3.12">
+<h3><span class="header-section-number">7.3.12</span> Move<a href="program.html#move" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>[MOVE] is used to change position of any object, such as Groups, Libraries, Scenes, Cues and Qlists.</p>
+<p>The syntax to move an object is:</p>
+<p>[MOVE] {Object} {Target}</p>
+<p>[MOVE] can be also used to re-position Playback controllers without changing their content and settings.</p>
+<p>The syntax to <strong>Move a controller</strong> is:</p>
+<p>[MOVE] {Controller} {Target Controller}</p>
+</div>
+</div>
+<div id="Live-7.4" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Live<a href="program.html#Live-7.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe has two ways to display parameter data:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Live View</strong> - shows editor and playback values as a spreadsheet.</p></li>
+<li><p><strong>Live Parameter View</strong> - shows editor and playback data in a graphic icon-based format.</p></li>
+</ol>
+<div id="live-view" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Live View<a href="program.html#live-view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FABNyNWvGPSeIlebactZp%2F7.4-Live-View.webp?alt=media&amp;token=e031fefc-fb42-472e-be9f-45929a29c3f3" alt="7.4-Live-View" />
+</p>
+<p><strong>Live View Options</strong> are on the Live view’s menu.</p>
+<ul>
+<li><p><strong>Active</strong> - Filters the fixtures to display.</p>
+<ul>
+<li><p>if all the options are toggled off, the view shows all the fixtures.</p></li>
+<li><p>if <strong>Active On Stage</strong> is on, only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.</p></li>
+<li><p>if <strong>Active In Editor</strong> is on, only parameter columns that are selected in the editor are shown. All others are hidden.</p></li>
+</ul></li>
+<li><p><strong>Headers per Device</strong> - Groups the fixtures visualization by devices, showing the device name on each header.</p>
+<ul>
+<li>Headers can be collapsed by tapping on the arrow in the header.</li>
+</ul></li>
+<li><p><strong>Sub Device Mode</strong> - Toggles on/off the visualization of sub-fixtures, available when the device contains sub-devices.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMvtZoku2GLbbAaUQAMiO%2F7.4-Live-View-Options.webp?alt=media&amp;token=47884ba2-2356-4d50-8c55-f4df9566979f" alt="7.4-Live-View-Options" />
+</p>
+<ul>
+<li><p><strong>Sets</strong> - Select which of the fixture sets to display.</p>
+<ul>
+<li><p>Fixture</p></li>
+<li><p>Channel</p></li>
+<li><p>Spot</p></li>
+<li><p>Matrix</p></li>
+<li><p>Media Server</p></li>
+<li><p>Custom Sets (if created)</p></li>
+</ul></li>
+<li><p><strong>Format</strong> - Controls what data is displayed in the cells.</p>
+<ul>
+<li><p>Source PB (the source triggering the value, either it is the editor or a controller)</p></li>
+<li><p>Value &gt; % (values in percentage)</p></li>
+<li><p>Value &gt; Decimal (DMX values 0 ⟶ 255 )</p></li>
+<li><p>Value &gt; Text (Parameter step text)</p></li>
+<li><p>Value &gt; Text + Percentage (Parameter step text and values in percentage)</p></li>
+<li><p>Time (Parameter time, if specified in the editor)</p></li>
+</ul></li>
+<li><p><strong>Fit By</strong> - Opens column width options:</p>
+<ul>
+<li><p>Window</p></li>
+<li><p>Value</p></li>
+<li><p>Default</p></li>
+</ul></li>
+</ul>
+<p><strong>Live View Settings</strong> are on a popup accessible by tapping the <a href="00-Settings-Icon.webp"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjtgCEoeuNIgRxKCFBZnG%2F00-Settings-Icon.webp?alt=media&token=a2a1a233-bb50-4c3a-bee5-382b4274c14c"></a> Settings icon.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmhpAiLnwvnY7yNAwb8zC%2F7.4-Live-View-Display.webp?alt=media&amp;token=c742eaaa-7312-44a5-b16b-924a53ab64ca" alt="7.4-Live-View-Display" />
+</p>
+<p>Live View <strong>Display</strong> tab is to set the cells that are shown and order the columns.</p>
+<ul>
+<li><strong>Live View Scheme</strong> - Parameter columns may be freely added, removed, or moved in the grid by selecting and tapping on the move keys.</li>
+</ul>
+<p>To Move columns:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.</p></li>
+<li><p>Use the <strong>{|&lt;}</strong> or <strong>{&gt;|}</strong> keys to move the parameter column forward or backwards.</p></li>
+</ol>
+<p>To Move columns to the first or last position:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.</p></li>
+<li><p>Use the <strong>{|&lt;&lt;}</strong> or <strong>{&gt;&gt;|}</strong> keys to move the parameter column first position or last position.</p></li>
+</ol>
+<p>To Remove columns:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap a parameter column heading or multiple parameter column headings - the green indicator light will turn on.</p></li>
+<li><p>Tap the {Remove} key.</p></li>
+</ol>
+<p>The <strong>Dock</strong> option locks the column scroll at the end of the parameter column that is docked. A red line will show on the live display to show the dock position.</p>
+<p>The <strong>Group By Banks</strong> option groups the columns corresponding to the same param bank.</p>
+<p>The <strong>All icons in 1 cell</strong> option is not implemented yet.</p>
+<ul>
+<li><strong>Banks</strong> - Columns are added using the icons in the parameter box.</li>
+</ul>
+<p>To Add or Remove columns:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select a bank - All parameters for the bank will appear in the box adjacent to the banks.</p></li>
+<li><p>Select the parameter or parameters to add to the live display.</p></li>
+</ol>
+<p>👉 Swipe in the the parameter box to browse hidden parameters.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Tap a parameter that is not already selected in green and it will be added to the end of the column list.</li>
+</ol>
+<p>👉 <span style="color:Red">Parameter keys are toggles so if the indicator light is on, touching the parameter will remove it. Tapping again will put it back at the end of the columns. </span>.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Use the <strong>{|&lt;}</strong> or <strong>{&gt;|} {|&lt;&lt;}</strong> or <strong>{&gt;&gt;|}</strong> to position the column.</li>
+</ol>
+<ul>
+<li><strong>Interactive Icons:</strong> - Adds or removes the interactive icons columns.</li>
+</ul>
+<p>👉 <span style="color:Red">Interactive Icon keys are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span>.</p>
+<ul>
+<li><p><strong>General:</strong></p>
+<ul>
+<li><p>Global Fixture Number - Fixture’s hidden unique system number.</p></li>
+<li><p>Fixture Layer Number - Adds or removes the Fixture Number column.</p></li>
+<li><p>Fixture Name - Adds or removes the Fixture Name column.</p></li>
+<li><p>Fixture Address - Adds or removes the Fixture Address column.</p></li>
+</ul></li>
+</ul>
+<p>👉 <span style="color:Red">Fixture # and Fixture Name are toggles so if the indicator light is on, touching an icon key will remove it. Tapping again will put it back at the end of the columns.</span></p>
+<ul>
+<li><p><strong>Presets:</strong></p>
+<ul>
+<li><p>Basic - Live view preset that only shows the param columns</p></li>
+<li><p>Basic + Interactive - Live view preset that shows the param columns, the interactive icons, and the fixture layer name and number</p></li>
+<li><p>Extended - Live view preset that shows the param columns, the interactive icons, and the fixture layer name, number and address</p></li>
+</ul></li>
+</ul>
+<p>Live View <strong>Behavior</strong> tab is to set the view’s interactions.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyVeVmDjqCCnIobi8zZ67%2F7.4-Live-View-Behavior.webp?alt=media&amp;token=45ebe141-6923-480a-8376-defa4354eb1c" alt="7.4-Live-View-Behavior" />
+</p>
+<ul>
+<li><p><strong>Fixture Jumping</strong>:</p>
+<ul>
+<li><p>Off - No jumps.</p></li>
+<li><p>Jump if needed - Live display pages the display to show the selected fixtures if they are not shown on the current live page.</p></li>
+<li><p>Lowest Selection to Top - Jumps the lowest fixture number of the selection to the top of the live display.</p></li>
+</ul></li>
+<li><p><strong>Parameter Jumping</strong>:</p>
+<ul>
+<li>Jumps the parameter’s column and related bank parameters to the first scrollable column (the end of the Dock position).</li>
+</ul></li>
+<li><p><strong>Interactive Fixture Selection</strong>:</p>
+<ul>
+<li>Turns on the ability to make fixture selections from the live display grids.</li>
+<li><span style="color:Gray">Not implemented yet.</span></li>
+</ul></li>
+<li><p><strong>Interactive Cell Editing</strong>:</p>
+<ul>
+<li>Turns on the ability to directly edit cells in the live display grid.</li>
+<li><span style="color:Gray">Not implemented yet.</span></li>
+</ul></li>
+<li><p><strong>Interactive Parameter Selection:</strong></p>
+<ul>
+<li>Enables parameters to be directly selected from the live display headers.</li>
+</ul></li>
+<li><p><strong>Submaster Values:</strong></p>
+<ul>
+<li><p>Show Stored Values - Dimmer parameters under the control of Group Submasters will continue to show their stored values and the <a href="00-Submaster-Icon.webp"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjlksQ7Tw3y1W3D7BaGEF%2F00-Submaster-Icon.webp?alt=media&token=6904cabb-0530-43c7-8a7e-d6d1f1627c3f"></a> Submaster icon will also be shown to indicate when the parameter is inhibited.</p></li>
+<li><p>Show Output Values - When the Submaster is pulled down, the actual dimmer output values will be shown in the live display dimmer column.</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="live-parameter-view" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Live Parameter View<a href="program.html#live-parameter-view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Live Parameter View shows values in a table format instead of spreadsheet format.</p>
+<p>There are three Live Parameter Modes accessible from the view’s menu:</p>
+<ul>
+<li><p>Live Parameters</p></li>
+<li><p>Live Banks</p></li>
+<li><p>Live Fixtures</p></li>
+</ul>
+<p><strong>Mode</strong> - Select the options of the fixture / parameter icons displayed.</p>
+<ul>
+<li><strong>Live Parameter</strong> - Fixtures are graphically displayed by icons per parameter.</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FRzoKlTLzvLuWJRBezETE%2F7.4-Live-Parameter.webp?alt=media&amp;token=2258e36c-9fbd-4095-81d1-8df39675a80e" alt="7.4-Live-Parameter" />
+</p>
+<p>As an evolution to the theatrical consoles concept, parameters other than dimmer are also shown.</p>
+<p>Parameters visible in Live Parameter Mode can be filtered by using the Parameter View Settings popup.
+To <strong>Filter Parameters</strong>:
+1. Tap the <a href="00-Settings-Icon.webp"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjtgCEoeuNIgRxKCFBZnG%2F00-Settings-Icon.webp?alt=media&token=a2a1a233-bb50-4c3a-bee5-382b4274c14c"></a> Settings icon to open the Parameter View Settings popup.
+2. Tap parameters on either side to move them from one box to the other.
+3. Close the popup with [ENTER] or the <a href="00-Apply-Icon.webp"><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F6K4iXjyYvS7vrVHYfTw0%2F00-Apply-Icon.webp?alt=media&token=261d9f44-8145-434e-996f-1a2bd74b54e5"></a> Apply icon.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fwe49hUNOxgQRzIBpgIfn%2F7.4-Parameter-View-Settings.webp?alt=media&amp;token=4fd9ee82-9d16-4f41-8b23-585afc9c0bf7" alt="7.4-Parameter-View-Settings" />
+</p>
+<ul>
+<li><strong>Live Bank</strong>- Fixtures are graphically displayed by icons per bank.</li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTXTAHQ5rfOD4a6ELVTgJ%2F7.4-Live-Bank.webp?alt=media&amp;token=cc344b47-ed94-4d32-80ad-63cba52d2ade" alt="7.4-Live-Bank" />
+</p>
+<p>Currently three banks can be graphically viewed:</p>
+<ul>
+<li><p><strong>Intensity</strong> - In the form of an illuminated circle.</p></li>
+<li><p><strong>Position</strong> - In the form of a cursor that moves in a black rectangle representing the stage.</p></li>
+<li><p><strong>Color</strong> - In the form of a circular color swatch (Color wheels are not currently supported.)</p></li>
+<li><p><strong>Live Fixture</strong> - Fixtures are graphically displayed by icons per fixture</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeinxVMmj6iSGeT223emn%2F7.4-Live-Fixture.webp?alt=media&amp;token=96cc23ea-8f0e-48ec-b449-cbd8b75f739c" alt="7.4-Live-Fixture" />
+</p>
+<p>Intensity, Position, and Color bank icons are merged into a single icon for each fixture.</p>
+<ul>
+<li><p><strong>Active On Stage</strong> - Toggle button.</p>
+<ul>
+<li><p>If off, all fixtures are shown.</p></li>
+<li><p>If on, only fixtures that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.</p></li>
+</ul></li>
+<li><p><strong>Sets</strong> - Select which of the fixture sets to display.</p>
+<ul>
+<li><p>Fixture</p></li>
+<li><p>Channel</p></li>
+<li><p>Spot</p></li>
+<li><p>Matrix</p></li>
+<li><p>Media Server</p></li>
+<li><p>Custom Sets (if created)</p></li>
+</ul></li>
+<li><p><strong>Format</strong> - Controls what data is displayed in the cells.</p>
+<ul>
+<li><p>Value &gt; % (values in percentage)</p></li>
+<li><p>Value &gt; Decimal (DMX values 0 ⟶ 255 )</p></li>
+<li><p>Value &gt; Text (Parameter step text)</p></li>
+<li><p>Value &gt; Text + Percentage (Parameter step text and values in percentage)</p></li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="editor.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="library.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["VibeManual.pdf", "VibeManual.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

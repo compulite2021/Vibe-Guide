@@ -1,0 +1,563 @@
+
+# Layout
+
+This chapter provides an overview of Vibe's layout and GUI (Graphical User Interface).
+
+**The following is covered in this chapter:**
+
+-  [3.1 Interface](#Interface-3.1)
+-  [3.2 Vibe Menu](#Vibe-Menu-3.2)
+-  [3.3 Pages](#Pages-3.3)
+-  [3.4 Views](#Views-3.4)
+-  [3.5 Layouts](#Layouts-3.5)
+
+
+## Interface {#Interface-3.1}
+
+
+Vibe has a multi-touch based interface, using simple gestures for selection and navigation.
+
+- Supported **Gestures**:
+
+  ◾ One finger or left mouse click to select. 
+  
+  ◾ Two fingers or right mouse click to swipe and scroll.
+  
+  ◾ Long one finger press or left mouse click for drag&drop.
+  
+  ◾ Multi-selection via ️️⤴ ⤵ (right->up /right->down) shaped gestures.
+  
+
+- Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added by using Display Port 1.2 or higher and MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). 
+    
+- The large embedded screen called **Vibe Main Screen** is general-purpose, as well as the external monitors.
+
+- The small embedded screen called **Smart Screen** is dedicated to context sensitive fixture information and interactive parameter pickers, used for Editor programming.
+
+- Each screen, excluding the Smart Screen, can have one **Window** with an independent set of **Pages**.
+
+- Each window can contain up to 12 Pages divided in 3 different Page Types:
+  
+  - up to 4 Pages for **PATCH**
+  
+  - up to 4 Pages for **PROGRAM**
+  
+  - up to 4 Pages for **PLAYBACK**
+
+- The page buttons, used to switch between the different pages, are specific to the monitor that has focus (the last touched or mouse selected screen).
+
+### Smart Screen
+
+The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe console is referred to as the **Smart Screen**. 
+
+<p align=center>**Smart Screen**</p>
+<p align=center> ![3.1-Smart-Screen](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIYKzE7HIxqtnUR28Neae%2F3.1-Smart-Screen.webp?alt=media&token=c6dcddeb-ec22-486f-aa1c-38f075ddeae1) </p>
+
+- On Vibe multi-screen console models the Smart Screen position is fixed on the dedicated monitor. The Smart Screen View cannot be moved on the other screens and the configuration of this screen cannot be customized.
+
+- On Vibe single-screen console models and on Vibe PC the Smart Screen is a View, so it can be positioned on any layout Page.
+
+### Toolbars
+
+The left side of the Toolbar contains the **Vibe Menu** button, the **Home Pages** buttons, and the **Command Line** that shows the current syntax.
+
+The right side of the Toolbar, also referred to as the **Editor Toolbar**, contains a set of interactive buttons that are used to access less common commands.
+
+The **Editor Toolbar** shows a different set of buttons according to the programming syntax.
+
+<p align=center>**Patch Toolbar**</p>
+<p align=center> ![3.1-Patch-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAB7z4JnpOxgh8teWURch%2F3.1-Patch-Toolbar.webp?alt=media&token=bbe507b9-9325-4a5d-8285-b381a155f2e6) </p>
+
+<p align=center>**Program Toolbar**</p>
+<p align=center> ![3.1-Program-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUg2rL8MYhNdaNOOGWJAu%2F3.1-Program-Toolbar.webp?alt=media&token=607da8bf-7587-464f-b039-7680afd0b04d) </p>
+
+The functions of the Toolbar buttons are described in the following chapters.
+
+
+## Vibe Menu {#Vibe-Menu-3.2}
+
+
+Vibe Menu can be opened at any time by tapping the **{VIBE}** key on the Toolbar.
+
+<p align=center> ![3.2-Vibe-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjYmWiIco2JoVB4RkoWFx%2F3.2-Vibe-Menu.webp?alt=media&token=4876847e-691c-488b-8dcc-d8d2146d1764) </p>
+
+The Vibe Menu is a hierarchical menu containing logically grouped submenus. 
+
+It is used to access common system functions such as **Save Show** and **Exit**, as well as to configure the **Layout** of the Pages. 
+
+It contains all the Views listed in dedicated submenus.
+
+### Show Menu
+
+The Show Menu is used to manage Vibe show files.
+
+<p align=center> ![3.2-Show-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIecwDUfux4PnXOqxrtuK%2F3.2-Show-Menu.webp?alt=media&token=b7477946-89bb-4dcb-91ed-1e33c4fe6b74) </p>
+
+Open the Show Menu to access the following options:
+
+**{New Show}** - Start a new show.
+
+**{Save Show}** - Save the current show in the last defined directory.
+
+**{Save Show As...}** - Open a popup to name and save the current show (on Vibe DB or an external device).
+
+**{Load Show}** - Open a popup to load a saved show file  (from Vibe DB or an external device).
+
+<p align=center> ![3.2-Load-Show](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdHRNXkO9bd783ERJec6b%2F3.2-Load-Show.webp?alt=media&token=280b9a25-ef44-4345-8439-6802ed910244) </p>
+
+**{Default Show}** - Open the default Vibe show. <span style="color:Gray"> (not implemented yet) </span>
+
+**{Import Partial Show}** - Open a popup to load a part of a saved show file. <span style="color:Gray"> (not implemented yet) </span>
+
+**{Load Vector Show}** - Open a popup to load and convert a show from Compulite Vector (.cvs show files).
+
+**{Clean Up Show}** - Open a popup where it is possible to check and delete the data that are not being used in the show.
+
+**{Show Report}** - Open a popup where it is possible to create excel files with the data of the show such as Groups, Libraries, Qlists and Scenes content.
+
+#### Load Vector Show
+
+The Load Vector Show popup, if opened from a PC that has Vector software installed, will allow to load a show directly from Vector's show folder.
+
+<p align=center> ![3.2-Load-Vector-Show](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FasLNx7LNdXfdR0BWTCmH%2F3.2-Load-Vector-Show.webp?alt=media&token=c53ab71d-f15e-490c-bf8f-28bb18b108cf) </p>
+
+After selecting the Vector show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
+
+<p align=center> ![3.2-Load-Vector-Device](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fqmff0jNnv3MASQK89e9h%2F3.2-Load-Vector-Device.webp?alt=media&token=6e4ef89a-633e-4a9b-99ef-7fb562376f4e) </p>
+
+Vector Shows will be loaded and converted with the following limitations:
+
+  - **Devices**: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.
+
+  - **Patch**: Vector device parameters will be mapped to Vibe device parameters.
+
+  - **Qlists and Cues**: will be matched.
+
+  - **Cue Values**: Vector cue parameter values will be matched to Vibe cue parameter values.
+
+  - **Temp Cues**: will be converted into Vibe Scenes.
+
+  - **Submasters**: will be converted into Vibe Submasters.
+
+  - **Groups**: will be matched.
+
+  - **Libraries**: will be matched per Bank, parameter values will be matched. 
+
+  - **General Libraries**: will be matched to Custom Libraries.
+
+  - **Playbacks**: Vector Playbacks will be matched to Vibe Controllers, paging will be matched, all button functions common to Vector and Vibe will be matched.
+
+  - **Snaps**: will be matched and mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.
+
+  - **Effects**: will be matched.
+
+  - **Macros**: <span style="color:Gray"> Not supported yet. </span>
+
+#### CleanUp Show
+
+The Clean Up Show popup shows all the objects that are not used on the show file, such as unused Fixtures and Devices, unused Libraries, unassigned Qlists and Scenes, divided by tabs.
+
+<p align=center> ![3.2-CleanUp-Show](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FM5UXvIlYHaLVdMeWHWYD%2F3.2-CleanUp-Show.webp?alt=media&token=2a96ec96-d8b9-4016-94dd-f29d60c3e135) </p>
+
+Use this feature to find and delete the unused objects, to reorder the show file and make it lighter.
+
+#### Show Report
+
+The Show Report popup collects all the objects stored into the show file, such as Groups, Libraries, Qlists and Scenes, divided by tabs.
+
+<p align=center> ![3.2-Show-Report](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FtR3c1wpkPQG37A09MHjs%2F3.2-Show-Report.webp?alt=media&token=1284cfff-7d13-4111-876e-01258f842eac) </p>
+
+Report files can be generated for all the data or just for the selected objects.
+Tap "Generate For Selected" to export only the selected objects or tap "Generate For All" to export all the data, independently from the current selection.
+
+The Format keys allow to choose how the parameters should be written on the document.
+
+👉 Enable the {Patch Data} key to store a sheet containing all the patch information, such as fixtures' list, universes, addresses, devices and personalities.
+
+Reports are saved in .cvs file format into the Reports Folder, inside the WorkDir.
+
+Use this feature to save a document containing the show information that may be needed.
+
+### Layout Menu
+
+The Layout Menu is used to manage the Vibe layout files.
+
+<p align=center> ![3.2-Layout-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfjvPFOlZZWWW5aLZta3q%2F3.2-Layout-Menu.webp?alt=media&token=97bb9e61-8cff-4565-a2ae-432bf680dd2d) </p>
+
+Open the Layout Menu to access the following options:
+
+**{New Layout}** - Start a new blank layout.
+
+**{Save Layout}** - Save the current layout in the last defined directory.
+
+**{Save Layout As...}** - Open a popup to name and save the current layout (on Vibe DB or an external device).
+
+**{Load Layout}** - Open a popup to load a saved layout file  (from Vibe DB or an external device).
+
+<p align=center> ![3.2-Load-Layout](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfB60x6TQY6zN9AuznrXp%2F3.2-Load-Layout.webp?alt=media&token=cedffbe3-9991-4928-8fc4-c97d350c1744) </p>
+
+**{Default Layout}** - Open the default Vibe layout, depending on the console model.
+
+**{Import Partial Layout}** - Open a popup to load a part of a saved layout file. <span style="color:Gray"> (not implemented yet) </span>
+
+**{Windows}** - Open a sub-menu to add an External window, toggle the window's Title Bar, enter or exit the Full Screen mode.
+
+<p align=center> ![3.2-Windows-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FN5hBKTtQVk0MGakmdF9k%2F3.2-Windows-Menu.webp?alt=media&token=adbf9b8d-363d-4e90-9de7-6e83ad12d35d) </p>
+
+### Views Menu
+
+The Views Menus contain a list of all the views that can be added to any page of the Vibe layout.
+
+Vibe Views are divided in logical order in 3 sub-menus:
+
+- **Patch Views**
+
+- **Program Views**
+
+- **Playback Views**
+
+Open Patch / Program / Playback Views menus to access all the views that can be added to any page to configure the Vibe layout.
+
+<p align=center> ![3.2-Patch-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeKYbu9Ftgk4EQab25jtb%2F3.2-Patch-Menu.webp?alt=media&token=6fa11dbe-a233-4b31-8677-feba5905251b) </p>
+
+<p align=center> ![3.2-Prog-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgHUsEx1uKxZysOC35hVG%2F3.2-Prog-Menu.webp?alt=media&token=f39f731d-9f0e-4511-b1c1-931fa83721ce) </p>
+
+<p align=center> ![3.2-Play-Menut](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5ogXQNRH5FuEHBBbp2Q5%2F3.2-Play-Menu.webp?alt=media&token=5aa6ec39-904f-432c-9301-e94f3b41b01c) </p>
+
+Vibe's **Layout** is totally flexible, it can be configured and customized to match the user preferences.
+
+All Vibe Views listed in the Patch, Prog and Play Views menus may be added, positioned, resized and tabbed on any Page of the layout. 
+
+The **Views** chapter will provide a short explanation of each view's features.
+
+### Settings Menu 
+
+The Settings Menu is used to manage the Vibe system settings.
+
+<p align=center> ![3.2-Settings-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoGyZ58FfOHZdLv8I9IWd%2F3.2-Settings-Menu.webp?alt=media&token=3b6e973e-7aa0-4bfe-8ccf-4cd13db1dd29) </p>
+
+Open the Settings Menu to access the following options:
+
+**{System Settings}** - Open a popup where it is possible to configure all the general system settings.
+
+**{Network Settings}** - Open a popup to configure the Console name and IP Address, find other Vibe systems on the same Network, and create a Client based connection such as the Master / Slave.
+
+**{DMX Settings}** - Open a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.
+
+**{I/O Settings}** - Open a popup to enable, disable and configure the MIDI notes, OSC commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.
+
+**{CITP Settings}** - Open a popup to enable, disable and configure the CITP settings. 
+Learn more about configuring CITP in the dedicated chapter.
+
+**{Offline Tool}** - Open the Offline Tool to manage software and hardware settings. 
+Learn more about the Offline Tool in the dedicated chapter. <span style="color:Gray"> (under development) </span>
+
+**{Fixture Builder}** - Open the Fixture Builder to build, import or edit devices. 
+Learn more about the Offline Tool in the dedicated chapter. <span style="color:Gray"> (under development) </span>
+
+👉 System settings popup can be quickly opened by tapping on the "System Status" View.
+
+👉 All settings popups can be directly accessed by adding the virtual "Settings Buttons" view to the layout.
+
+### Help Menu 
+
+<p align=center> ![3.2-Help-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FemwvRfR54i95Ed7WjoSw%2F3.2-Help-Menu.webp?alt=media&token=bb2d04c9-cdfc-4385-9339-aee912862f41) </p>
+
+**{Version}** - Open a popup listing the installed version of Vibe software and components.
+
+**{Manual}** - Open a popup with the Vibe Manual that can be also found online at https://vibemanual.compulite.com/. <span style="color:Gray"> (not implemented yet) </span>
+
+**{Tutorial}** - Open the tutorial popup that is shown at Vibe's software start up.
+
+**{Error Report}** - Create an Error Report file that can be shared with Compulite Support in case of software problems.
+
+### Exit
+
+The Exit and Close buttons are located in the Vibe Menu.
+- Main window shows the Exit button to exit the software
+- External windows show the Close button to close the current window.
+
+If Exit is pressed, a popup asks to save the show file.
+
+<p align=center> ![3.2-Exit](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5UuUj111nEajyz6IvVTq%2F3.2-Exit.webp?alt=media&token=22709df0-0451-428e-8c20-f8dee520732a) </p>
+
+If Close is pressed, a popup asks to confirm.
+
+<p align=center> ![3.2-Close](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F4PAdR6tptIo4UJ1RCc3g%2F3.2-Close.webp?alt=media&token=afc88955-8b13-44c8-8025-e82701ab8cc1) </p>
+
+
+## Pages {#Pages-3.3}
+
+
+Vibe has 3 types of Pages:
+
+-   **Patch Page** 
+
+-   **Program Page** 
+
+-   **Playback Page** 
+
+**\[Patch Page]** or the F2 keyboard button switches between the existing Patch Pages.
+
+**\[Program Page]** or the F3 keyboard button switches between the existing Program Pages.
+
+**\[Playback Page]** or the F4 keyboard button switches between the existing Playback Pages.
+
+All the Pages are organized in the **Pages View** that can be accesses either by pressing the **\[VIEW]** button or by tapping the **{VIBE}** Menu and then the **{PAGES}** key on the Toolbar.
+
+<p align=center> ![3.3-Pages-View](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPn9tyfXqkNM0BNszkmm5%2F3.3-Pages-View.webp?alt=media&token=69169cd2-8ec8-46d5-a42c-344ae7d5a028) </p>
+
+- All Pages can be completely customized by adding, sizing and positioning the **Views** listed inside the Vibe Menu, independently from where the view is located inside the Vibe Menu.
+
+- Pages can also be moved from one type to another, as soon as one of the 4 spaces per type is available.
+
+- The Pages View can be unlocked through the Selection button in order to assign Home Pages, reorder the pages with drag and drop, Clone or Delete existent Pages.
+
+👉 On the Console it is recommended to set views such as the System Status and the Playback Status on the bottom of the Program and Playback pages, to have them in correspondence to the physical controllers.
+
+### Home Pages
+
+Home page buttons, located on the Taskbar, are a fast way to recall up to three main pages.
+
+<p align=center> ![3.3-Home-Pages](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGfujKT441ne2mId2JY4X%2F3.3-Home-Pages.webp?alt=media&token=559dadf5-a305-43d6-90b7-becae303704f) </p>
+
+Any page can be stored as a Home Page on the Page View.
+
+F1 keyboard button switches between the three Home Pages.
+
+The currently active Home Page is shown in Green.
+
+### Clone Pages
+
+Clone pages for a faster building of a similar layout page.
+
+The Clone Pages key is displayed on the Toolbar, near the menu, when the window is in View mode and it is unlocked by tapping the Selection key.
+
+<p align=center> ![3.3-Pages-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkfKY2PaNqBgKMBmJjiQ1%2F3.3-Pages-Toolbar.webp?alt=media&token=a0aec0c8-969a-4c62-9ab2-1257b554aadb) </p>
+
+
+## Views {#Views-3.4}
+
+
+- Vibe Views are listed inside the Vibe Menu, into the Patch, Program, Playback Views sub-menus.
+
+- Any View can be added to any Page and stored in the layout.
+
+- Views can be resized and tabbed together, but each view has its own dimension limits.
+
+- To edit the placement of views on the layout, the **{Lock}** icon near the **{VIBE}** menu key must be toggled to unlock the layout editing. After changes are made, it must be toggled again to lock the layout and allow normal usage.
+
+- To configure the layout, any object in the Patch, Program and Playback Views hierarchical sub-menus can be tapped to open the view on a blank portion of the current page, or can be dragged and dropped into the page surface. Once on the page it may be moved or sized freely, space permitting. This operation automatically unlocks the layout editing.
+
+- If an object is dragged on top of another, both will turn green showing it is possible to tab them and create a **tabbed** view. Keep a tabbed view pressed to extract an object from the tab an move it separately.
+
+<p align=center> ![3.4-Views-sample](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZgXQQKIMYiWdsbeY3Ev0%2F3.4-Views-sample.webp?alt=media&token=987cbbc6-e464-4b00-b016-391e3e386257) </p>
+
+Here is the complete list of all the views that can be added to the layout pages to configure and customize the Vibe workspace.
+
+### Patch Views
+
+**Fixtures** - The list of all the fixtures created in the show.
+
+**Sets** - The list of all the sets, including the default sets (Fixture, Channel, Spot, Matrix, Media Server) and the custom sets.
+
+**Devices** - The list of all the devices imported in the show.
+
+**Universes** - The list of all the DMX universes.
+
+**Curves** - The list of all the curve profiles, including the default curves and the custom ones.
+
+**Fixture View** - The table of the created fixtures, with ID, patch and device information.
+
+**Address View** - The table of the DMX addresses, showing the fixtures and parameters patch and properties.
+
+**Universe View** - The table of the DMX universes that allows to patch by dragging the cells.
+
+**DMX In/Out View** - The table that shows the current values of the DMX output and input universes.
+
+**OSC View** - The list and trigger of the OSC commands.
+
+**External Devices** - The space to check and configure connected devices, such as ePort nodes and RDM fixtures.
+
+**Selection** - The box used to grab the fixture selection and drag it on the universe view.
+
+### Program Views
+
+**Smart Screen** - The view that contains the graphical editor screen.
+
+**Encoders** - The view that contains the encoders in the lower part of the Smart Screen.
+
+**Hard Keys** - The virtual version of the hard keys panel.
+
+**Single Buttons** - This sub-menu collects all the virtual buttons.
+
+- **Single Button** - The list of all the virtual button.
+
+- **Layout Page Buttons**
+		- The virtual buttons used for page navigation: View, Patch, Program, Playback.
+
+-	**Controller Page Buttons**
+		- The virtual buttons used for controller navigation: Slider and Qkey Page Up/Down.
+
+-	**Settings Button**
+		- The virtual buttons used to access the settings popups.
+
+**Softkeys**
+	- This sub-menu collects the softkey views of the objects.
+
+-	**Group**
+		- The softkey view of the Groups.
+		
+-	**Qlist**
+		- The softkey view of the Qlists.
+		
+-	**Scene**
+		- The softkey view of the Scenes.
+
+-	**Snap**
+		- The softkey view of the Snaps.
+
+-	**Filter**
+		- The softkey view of the Filters.
+
+-	**Macro**
+		- The softkey view of the Macros.
+
+**Library** - This sub-menu collects the softkey views of the libraries.
+	
+- **Intensity** - The softkey view of the Intensity Bank libraries.
+
+- **Position** - The softkey view of the Position Bank libraries.
+
+- **Color** - The softkey view of the Color Bank libraries.
+
+- **Beam** - The softkey view of the Beam Bank libraries.
+
+- **Image** - The softkey view of the Image Bank libraries.
+
+- **Shape** - The softkey view of the Shape Bank libraries.
+
+- **Custom** - The softkey view of the Custom libraries.
+
+- **Effect** - The softkey view of the Effect libraries.
+
+**Context** - The dynamic softkey view showing contents based on the current syntax.
+
+**Live** - The table view that shows the live status of all the fixtures' parameters.
+
+**Live Parameters** - The icon view that shows the live status of the fixtures' parameters.
+
+**Qlist Tracksheet** - The table used to check, edit and update the Qlists and Cues stored in the show.
+
+**Exam** - The worktree used to check all the objects stored in the show.
+
+**Topo** - The space to create interactive topographical views used to select the fixtures and trigger the objects.
+
+**Timeline** - The space to record and trigger time-code based timelines.
+
+### Playback Views
+
+**A/B Crossfader** - The virtual version of the A/B crossfader.
+
+**Slider** - The virtual version of the Slider controllers: Set, Fader, 3 Buttons, Button, 5 Sets.
+
+**QKey** - The virtual version of the Qkey controllers: Set, Fader, Button, 5 Sets.
+
+**AuxKey** - The virtual version of the AuxKey controllers: Set, Fader, Button, 5 Sets.
+
+**Global Slider** - The virtual version of the Global Slider controllers: Set, Fader, Button.
+
+**Master Keys** - The virtual Master Keys panel.
+
+**Operation Keys** - The virtual version of the Operation Keys panel.
+
+**Command Keys** - The virtual version of the Command Keys panel.
+
+**Live Controller** - The tabbed view that shows the live status of a target controller and its content.
+
+**System Status** - The box that shows the current status of the system, also used to access the system setting.
+
+**Playback Status** - The box that shows the current status of a single controller, also used to access the controller's setting.
+
+**Playback Status Set** - The box that shows the current status of a set of 5 controllers, also used to access the controller's setting.
+
+### View Settings
+
+Some views have specific settings that can be set from the view settings popup, opened from the toolbar when the layout is unlocked.
+
+View settings can be accessed when layout is **Unlocked**, by selecting the view and tapping the buttons on the toolbar. These settings are applied to the selected view.
+
+<p align=center> ![3.4-Unlock-Layout](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGujvpN1oUp70wkUc0LMV%2F3.4-Unlock-Layout.webp?alt=media&token=461750d8-e48b-482f-8754-b055c7ff1320) </p>
+
+**Toggle Scrollbar**: add or remove a scrollbar to/from the view, if available.
+
+**Toggle Frame**: add or remove the frame to/from the view.
+
+**Frame Color**: customize the view's frame for a better graphical separation between the views.
+
+**Softkey Settings**: any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
+
+<p align=center> ![3.4-SK-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqHCGEWL0meThObU6UWlG%2F3.4-SK-Settings.webp?alt=media&token=d7d3ee51-0d19-4031-b576-8123f428834e) </p>
+
+Softkey settings are used to change the size, font and color of the softkeys’ text and background.
+
+The settings can be saved as Pre-Built and applied to the other views of the same tab, page, or to the softkey views in all the pages.
+
+The settings can be saved as default, and it is always possible to come back to the default or to reset the changes.
+
+Some special color options are available to show color library softkeys with the colors that are stored in the library.
+
+<p align=center> ![3.4-SK-sample](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNfMQrOC8X9lwv9sDGeg3%2F3.4-SK-sample.webp?alt=media&token=b82b0d83-c8fa-43fa-9c4c-decf77789b64) </p>
+
+The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.
+
+<p align=center> ![3.4-SK-Color-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fbma400MHsbhKNNrwgfPk%2F3.4-SK-Color-Settings.webp?alt=media&token=af1402fe-3d16-4d50-8905-a549a6bfa77e) </p>
+
+**Context Options** only apply to the Context view. This view can show or hide the visualized objects depending on the user’s settings or on the smart option.
+
+<p align=center> ![3.4-Context-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGu2OJcfA1WPlgUgjK4UN%2F3.4-Context-Options.webp?alt=media&token=68932723-c5d8-46cb-8594-6ba42bce1b0f) </p>
+
+The Context Normal Mode filters the visualized objects according to the enabled buttons.
+
+The Context Smart Mode filters the visualized objects automatically avoiding the softkeys that are already visible in the page.
+
+**Single Button Settings**: any single button view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
+
+<p align=center> ![3.4-Single-Button-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLgSDdp76T4LDjiqX7jlV%2F3.4-Single-Button-Settings.webp?alt=media&token=3d323e1d-7c64-4843-954a-6d1ff60c3848) </p>
+
+Specific settings, such as color and text size, can be assigned to each single button.
+
+The settings can be saved as Pre-Built and applied to the other single buttons of the same tab, page, or to the buttons in all the pages.
+
+The settings can be saved as default, and it is always possible to come back to the default or to reset the changes.
+
+**Views Menu** is availeble on some views, such as Live, Topo and Timeline. 
+
+The View's menu can be closed when the layout is Locked by tapping the Close Menu button.
+
+<p align=center> ![3.4-Close-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlA1jIxHs5lhND9asYYRc%2F3.4-Close-Menu.webp?alt=media&token=f5fd8969-6183-4afc-b2a1-e6a97fe70d83) </p>
+
+The Open Menu button can be placed wherever on the view with a long click gesture and drag.
+
+<p align=center> ![3.4-Open-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fy7PHYFlk20M70l1I0Ixz%2F3.4-Open-Menu.webp?alt=media&token=8d5bb124-b6a5-4596-a2d0-0c069758448c) </p>
+
+
+## Layouts {#Layouts-3.5}
+
+
+- After all pages and views are configured, the layout configuration can be saved into a **Layout** file by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key.
+
+- After configuring new windows on the external monitors, a layout file should be saved to preserve the external monitor layout on reboot. Layout files store the configuration of external monitors and if the system is booted without the expected external monitor a warning message will appear.
+
+- Layout files, containing all the graphical settings of pages and views, are loaded independently from the Show files, containing all the stored data. 
+
+👉 Layout Files are particularly useful when the same desk is managed by different operators; each user can load his own customized layout without losing any show data programmed by the previous user.
+
+### Layout Settings
+
+Layout Settings can be accessed when layout is **Locked**, by tapping the Vibe Menu and then the {Setting} button on the toolbar, near the Lock and Pages buttons. These settings are applied as defaults to all the Pages and Views.
+
+<p align=center> ![3.5-Layout-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3meZC6vw7u2jpirhGdEf%2F3.5-Layout-Settings.webp?alt=media&token=d0c6e85e-0ac5-40b5-89fa-83e1ff066027) </p>
+
+It is possible to change the Vibe Theme, to move the Toolbar on top or bottom position on all the pages, and to set Default View Settings for the Headers, the Frames and the Scrollbars. 
+

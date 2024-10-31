@@ -1,0 +1,380 @@
+
+# Library 
+
+This chapter deals with filtering Editor parameters when storing objects and creating libraries by banks.
+
+**The following is covered in this chapter:**
+
+-  [8.1 Bank Libraries](#Bank-Libraries-8.1)
+-  [8.2 Auto Generate](#Auto-Generate-8.2)
+-  [8.3 Library Defaults](#Library-Defaults-8.3)
+-  [8.4 Filters](#Filters-8.4)
+
+
+## Bank Libraries {#Bank-Libraries-8.1}
+
+
+Libraries are the basic way to store show data on the system.
+
+The use of libraries is not mandatory, as most of the playback operations can be performed without storing any, but is highly recommended in order to make the programming flow better organized and much faster and easier, both during the setup and the editing of the show file.
+
+All kinds of libraries can be scrolled and selected through their specific softkey view or through the Context view.
+
+**Vibe has two types of Libraries: Object Libraries and Bank Libraries.**
+
+1.  Object Libraries are pools of system object types, such as:
+
+  - Groups (used to manage fixture selection)
+
+  - Qlists (used to store sequences of Cues)
+
+  - Scenes (used to store stage looks)
+
+  - Snaps (used to manage controllers' configuration)
+
+  - Filters (used to store Bank Libraries and Cues)
+
+  - Macros (used to store sequences of commands)
+		
+An extensive description of each object can be found into its dedicated chapter.
+
+2.  Bank Libraries are pools of parameter values divided by banks of parameters, such as:
+
+  - Intensity (dimmer, strobe, shutter, ...)
+
+  - Position (pan, tilt, move speed, ...)
+
+  - Color (red, cyan, CTC, color wheel, ...)
+
+  - Beam (focus, zoom, iris, frost, prism, ...)
+
+  - Image (gobo wheel, animation, pattern, ...)
+
+  - Shape (blade depth, blade angle, blade rotation...)
+
+  - Custom (unfiltered; stores every parameter in the Editor)
+
+  - Effect (effects running on parameters in the Editor)
+
+Bank Libraries are often called Presets or Palettes on other consoles.
+
+Bank libraries are referenced by stored objects such as Scenes and Cues, so any modification will affect all the objects that have a reference to the edited library.
+
+Video contents, managed on the Media Bank, don't have a specific library because Media Server's parameters are also assigned to the previous Banks. They may be stored on the bank libraries, filtering the parameters contained in that library, either on the Custom libraries.
+
+### Operations
+
+**Store directly to a Softkey:**
+
+1. \[Fixture] \[#] \[+ ⟶ -] Select parameter {Bank} on Smart Screen.
+
+2. Use keypad, Smart Screen pickers, and/or adjust parameter wheels, to set values.
+
+3. Press \[STORE] - The Library {Store Options} tab will appear on top right corner of the softkeys, use the Library {Store Options} popup at the bottom on the Smart Screen to make changes.
+
+👉 If no option changes are required just directly tap the appropriate Library SK without tapping the Library {Store Options}.
+
+4. Tap destination Library softkey.
+
+**Store a Library with the keypad syntax:**
+
+1.  Press \[Fixture] \[#] \[+ ⟶ -] - Select parameter {Bank } on Smart Screen.
+
+2.  Use Smart Screen pickers, and/or adjust parameter wheels, or type value to set values.
+
+3.  Press \[LIBRARY] - Library {Store Options} popup will open at the bottom of the Smart Screen and {Banks} will appear on the Editor Toolbar.
+
+<p align=center> ![8.1-Library-Store-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdDqiDGvr3fFtVf1gv3kk%2F8.1-Library-Store-Options.webp?alt=media&token=b2390804-086c-4fe2-b8fa-385f01c48617) </p>
+
+4. Tap a parameter {Bank} key on the Editor Toolbar.
+
+<p align=center> ![8.1-Library-Editor-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBeakMvTkWeKecaKXGeB5%2F8.1-Library-Editor-Toolbar.webp?alt=media&token=1c181fe5-e9b0-4a44-b5f1-7852387784d9) </p>
+
+**A shortcut for Bank selection is to specify a number directly after pressing \[LIBRARY] key:**
+
+  - 1 = Intensity  
+
+  - 2 = Position  
+
+  - 3 = Color  
+
+  - 4 = Beam  
+
+  - 5 = Image 
+
+  - 6 = Shape 
+
+  - 7 = Custom 
+
+  - 8 = Effect 
+
+After typing the first number, the bank name will appear on the command line. 
+
+The next number typed will be the library number.
+
+5. Enter the destination library number via the keypad.
+
+6. Make {Library Store Options} changes, if required.
+
+7. Press \[STORE] to complete the sequence.
+
+**Edit a Library using \[UPDATE]:**
+
+1.  Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.
+
+2.  Press \[UPDATE] - The Update popup will open. 
+
+<p align=center> ![8.1-Update](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fs8kVzpWHWBzpry4YtU9o%2F8.1-Update.webp?alt=media&token=4b72ca3d-a1a0-439a-b93f-ca6a48f937a0) </p>
+
+Two columns will appear: the left column shows **Cues** available for updating and the right column shows **Libraries** available for updating. The target library or libraries should be selected.
+
+3.  Selected libraries may be freely deselected in the Update popup. If all Libraries are deselected, updates will become "hard" values in the source cue instead of the source libraries being updated.
+
+4.  Tap Apply or press \[ENTER] to close the popup and complete the update.
+
+**Edit a Library using Softkey syntax:**
+
+1.  Make a change to parameter value outputting to the stage from a library referenced in an active cue or scene.
+
+2.  Press \[STORE] and tap source {Library SK}.
+
+3.  The {Cancel, Update, Overwrite, Release} popup will appear on the large screen.
+
+<p align=center> ![8.1-Library-Exists](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMulpNI0surUjqzM7WoiH%2F8.1-Library-Exists.webp?alt=media&token=b0a45645-21ea-4544-9545-40aab0c5a190) </p>
+
+4.  Tap {Overwrite} to replace all fixtures with those in the Editor, {Update} to merge the editor into the library, or {Release} to remove the selected fixtures from the Library.
+
+👉 Releasing fixtures is only valid if the library is **Fixture Specific** or **Device + Fixture** in the case where specific fixtures have modified recorded values.
+
+👉 Alternatively the sequence \[LIBRARY] {Bank} from the Editor Toolbar \[#] \[STORE] to an existing library will work the same as above.
+
+**Edit Library settings:**
+
+Library Settings may be changed at any time after they are created using the Library Settings popup.
+
+<p align=center> ![8.1-Library-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu796at3dvGQLUiIOQGY9%2F8.1-Library-Settings.webp?alt=media&token=ac63e724-d9df-4b19-b8bd-807925f49d18) </p>
+
+To open the Library Settings popup: 
+
+-   Tap the Library {SK} you wish to modify and press \[SETTINGS]. (This is invalid with Snaps and Macros as it will trigger them) 
+
+OR
+
+-   Press \[LIBRARY] tap {Bank} on the Editor Toolbar Press \[#] \[SETTINGS]
+
+  - If Reference is selected, modifying the library will modify the values of ALL cues that reference it. 
+  - If Timing is selected, any parameter cell times in the Editor will be stored with the library.
+
+**Rename a Library:**
+
+Text labels may be assigned as library names at any time there is NOT an active selection in the Editor. Any of the following methods are valid:
+
+-   Directly after storing a Library, start typing on the keyboard. The Text Entry popup will appear.
+
+-   Tap a Library {SK}, start typing on the keyboard. The Text Entry popup will appear.
+
+-   Press \[TEXT] tap a Library {SK}. The Text Entry popup will appear.
+
+-   Press \[Library] tap {Bank} on the Editor Toolbar Press \[#] \[TEXT]. The Text Entry popup will appear.
+
+**Delete a Library:**
+
+-   Method 1: Tap the Libraries' {SK} then press \[DELETE]
+
+-   Method 2: Keypad sequence for Bank Libraries: \[LIBRARY] tap {Bank} on the Editor Toolbar \[#] \[DELETE]
+
+-   Method 3: Keypad sequence for deleting Object Libraries: \[Object] \[#] \[DELETE]
+
+For most Delete functions, pressing \[DELETE] \[DELETE] will do the same as pressing \[DELETE] and \[ENTER] or Apply to complete the operation.
+
+**Library Softkey Menu:**
+
+The Long Click gesture on any softkey, including the libraries, opens a temporary menu where the user can directly select the most used functions:
+
+<p align=center> ![8.1-SK-Menu](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC8abJS5nqZmOWvLWcZ25%2F8.1-SK-Menu.webp?alt=media&token=4d24c8e6-d948-46bf-90e5-9638fc745f30) </p>
+
+- Copy: make a copy of the object, that may then be pasted on a different SK
+
+- Move: move the object to a different position, acting like a cut + paste command
+
+- Delete: open the delete object popup
+
+- Settings: open the object settings popup
+
+- Text: open the rename object popup
+
+- Exam: exam the object in the Exam View
+
+### Auto Param Grouping
+
+- By default Vibe uses the concept of "Automatic Parameter Grouping" when storing libraries. 
+
+- When a parameter is moved, all the parameters of the same library bank are grabbed into the editor with their current status, to guarantee that what is viewed on the stage is the same as what is stored in the library.
+
+- Auto Parameter Grouping can be disabled by tapping the toggle button in the system settings popup.
+    
+- Filters may be applied to modify what is stored in a Library.
+
+### Context
+
+The Context view is a softkey view that helps reducing the amount of space on the screen where the libraries are shown.
+
+Context adapts the visualization to the last selected object type or bank, for example by pressing Group it will show the Groups library, by pressing Color the Color library and by pressing Scene the Scenes library.
+
+The Context view's settings popup on the layout editing toolbar allows to filter the contents shown by the context view.
+
+<p align=center> ![8.1-Context-Settings-Smart](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FI84SUAtGcJZaHZlZXnq5%2F8.1-Context-Settings-Smart.webp?alt=media&token=536c2748-a2f1-41c7-9279-3cc8df9289e5) </p>
+
+Context views can be filtered manually, by toggling the contents to enable and disable, or automatically, by setting the **Smart** option. Smart context setting will avoid to show the softkeys that are already shown by other softkey views on the same page.
+
+
+## Auto Generate {#Auto-Generate-8.2}
+
+
+The option to Auto Generate Groups and Libraries permits a smart and fast creation of the most common fixture groups and parameter libraries.
+
+The Auto Generate button is on the Editor Toolbar in Patch pages. 
+
+<p align=center> ![8.2-AutoGenerate](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOM5cqS5GiU5HpHwY6MfI%2F8.2-AutoGenerate.webp?alt=media&token=56480c65-2cc6-4a1a-9786-19556fa82e1d) </p>
+
+- By selecting the options in the Auto Generate popup menu, the user can configure the quantity and numbering of the libraries to be automatically created.
+
+- The auto generated libraries can either overwrite or merge the already existing ones.
+
+- Libraries can be named using system names or library numbers, and customized for example using the device's name.
+
+- Libraries can be numbered starting from a desired number or appended to the first available position.
+
+- Libraries of different fixture types can be spaced with the desired interleave.
+
+- Auto generated libraries are created when pressing the GENERATE button on the popup. 
+
+- It is possible to check the preferred options on each bank page and then generate all of them in a single click, as well as to generate step by step for each device or for each bank.
+
+
+## Library Defaults {#Library-Defaults-8.3}
+
+
+When storing Bank Libraries, filters are used to exclude parameters from unrelated banks. The Library filter defaults are set under the **Filters** popup, **Library Defaults** tab.
+
+<p align=center> ![8.3-Library-Defaults](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fnv4rumj3C631P64dgyc0%2F8.3-Library-Defaults.webp?alt=media&token=7febd85c-b042-47e4-b7eb-b9a8d1120259) </p>
+
+**Change Defaults:**
+
+1.  Press \[VIBE] + \[FILTERS] to open the Filters pop-up.
+
+2.  Make sure the **Library Defaults** tab in the lower left corner of the pop-up is selected.
+
+3.  Tap the {Library Bank} to be edited.
+
+4.  Tap a parameter in the **Available Parameters** box to move it to the **Filtered Parameters box**.
+
+5. Press the {Apply} softkey to apply the filter and stay in the popup or press \[ENTER] or the Apply icon to apply the filter and close the popup.
+
+**Restore Defaults:** - Tapping {Restore Defaults} will reset Bank Libraries to their system defaults.
+
+### Behavior
+
+- Library behaviors are used to define which fixtures the library can be applied to.
+
+- Library Bank softkeys have default filters and behaviors based on the way they are commonly used.
+
+- Default library settings and behaviors can be changed in the System settings tab on the **Defaults** tab.
+
+- Vibe bank libraries have the following behaviors:
+
+1. **Fixture Specific** (**FS**) – Values will be applied only to the specific stored fixtures.
+    
+2. **Parameter Specific** (**PR**) – Values will be applied to all matched parameters.
+    
+3. **Pattern** (**PT**) – Values will be applied to all matched parameters and will keep the pattern of values.
+    
+4. **Device + Fixture** (**DF**) – Values will be applied  to the specific fixtures when possible and the rest will be the same as the first. The first fixture will be used as a reference for all other similar fixture types. If values are changed for specific fixtures they will be stored in the library as if they were fixture specific. If a fixture other than the first fixture is released from the library, its values will again be referenced from the first fixture. If the first fixture is released, the next fixture will become the reference.
+    
+5. **Device + Parameter** (**DR**) – Values will be applied to fixtures of the same device and having the same parameter type.
+    
+6. **Device + Pattern** (**DT**) – Values will be applied to fixtures of the same device and will keep the pattern of values. 
+
+### Reference
+
+When a library has the Reference option enabled, using that library will be referenced by the Cues and Scenes stored with the library active in the editor.
+
+Editing a referenced library will affect all the objects that have reference to that library.
+
+Enable or Disable library reference on the library settings or, as system default, in the system settings popup on the **Defaults** tab.
+
+### Time
+
+When a library has the Time option enabled it stores not only the parameters' values but also the parameter times assigned in editor.
+
+Enable or Disable library time on the library settings or, as system default, in the system settings popup on the **Defaults** tab.
+
+### Effect Base
+
+When an **Effect library** has the reference "Include Base" option enabled, the effect will be stored together with the base values of the parameters used.
+
+Change library reference on the library settings or, as system default, in the system settings popup on the **Defaults** tab.
+
+
+## Filters {#Filters-8.4}
+
+
+### On the Fly
+
+On the Fly Filters are used to filter editor parameters when storing libraries, cues and scenes.
+
+<p align=center> ![8.4-On-the-Fly-Filters](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzlReE8KLrXl1iaybXPES%2F8.4-On-the-Fly-Filters.webp?alt=media&token=d19490a6-9ba4-4781-8c7a-5dc9ff424dfd) </p>
+
+The Green box indicates parameters that will be included in the cue or scene.
+
+**Store using On The Fly Filters:**
+
+1.  Set or load values into the Editor. \[CUE] \[#] \[EDIT] is also valid.
+
+2.  Press \[FILTERS] key.
+
+3.  The On The Fly Filter popup will open.
+
+4.  De-select banks and parameters that need to be filtered from the cue.
+
+5.  Press \[ENTER] or Apply to apply the filter and close the popup.
+
+6.  Store library, cue or scene. Deselected banks and parameters will not be included.
+
+Options:
+
+- {Select All} - Selects all banks and parameters
+
+- {Deselect All} - Deselects all banks and parameters
+
+- {Save as Default} - <span style="color:Gray">Not implemented yet.</span>
+
+### Custom Filters
+
+Custom Filters may be created "blind" without a fixture and parameter selection. 
+Filters are saved in the **Filters Library** and can be recalled by tapping the filter's softkeys when storing.
+
+Parameters may be included or excluded by the Filter depending on how the filter is created. 
+
+- Only the parameters in the **Filtered Parameters** right box will be stored.
+
+- All the parameters in the **Available Parameters** left box will be ignored.
+
+**Create a Filter** 
+
+1.  Press \[VIBE] + \[FILTERS] to open the Filters popup.
+
+2.  Select the **General** Tab of the popup.
+
+3.  Press {New}. A new filter will be created with the name {1. Filter 1}.
+
+4.  Accept the name or type a new name in the white data entry box at the bottom of the Filter's column.
+
+5.  Tap in the Available Parameters box the parameters that you want to be included. The parameter will move from the Available Parameters box to the Filtered Parameters box.
+
+6.  Tap in the Filtered Parameters box the parameters that you want to be excluded. The parameter will move from the Filtered Parameters box to the Available Parameters box.
+
+7.  Press the {Apply} softkey to apply the filter and stay in the popup or press \[ENTER] or the Apply icon to apply the filter and close the popup.
+
+<p align=center> ![8.4-Filters-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FML87MkjYl8CiRa6NMFTQ%2F8.4-Filters-Settings.webp?alt=media&token=67ff8869-7e26-415a-8b20-b34a19b4401c) </p>
+

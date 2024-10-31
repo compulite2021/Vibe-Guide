@@ -1,0 +1,135 @@
+
+# Exam
+
+This chapter deals with viewing and checking the content of any stored object and show data. 
+
+**The following is covered in this chapter:**
+
+-  [16.1 Exam View](#Exam-View-16.1)
+-  [16.2 Show Exam](#Show-Exam-16.2)
+-  [16.3 Patch Exam](#Patch-Exam-16.3)
+
+## Exam View {#Exam-View-16.1}
+
+The **Exam** view contains all the data stored in the show, divided by object type.
+
+<p align=center> ![16.1-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FR7bpfU0OIquMzpAsrmQS%2F16.1-Exam.webp?alt=media&token=fecb332f-8956-4159-96c6-9383b4543203) </p>
+
+- The root menu is divided into two main sub menus, {Show} and {Patch}.
+
+- The Exam feature allows to check the content of anything that has been created or stored, for example the Fixtures into a Group, the Parameters into a Library, the Controllers into a Snap.
+
+- Exam view can also be opened with the \[EXAM] key. If an object is selected, the view will jump directly to that object's exam view.
+
+> \[GROUP] \[2] \[EXAM] - visualize the data of Group 2.
+
+> \[LIBRARY] \[2] (Position) \[1] (Library number) \[EXAM] - visualize the data of Position Library 1.
+
+> \[FIXTURE] \[3] \[EXAM] - visualize the data of Fixture 2.
+
+
+## Show Exam {#Show-Exam-16.2}
+
+
+<p align=center> ![16.2-Show-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSsWRSMnvCQSpkLAo3k07%2F16.2-Show-Exam.webp?alt=media&token=43995c95-87e4-4605-b7d3-cf9c50a346db) </p>
+
+**Qlist** - List of all show Qlists with Cues Count.
+
+-   \[QLIST] \[#] \[EXAM] - Displays a Cue Data sheet and a tab with all the libraries referenced in the Qlist.
+
+-   \[CUE] \[#] \[EXAM] - Displays a track sheet for the selected Cue, Set tabs, and a tab with all the libraries referenced in the Cue.
+ 
+**Library** - List of all stored Libraries types with Count.
+
+-   \[Library Type] \[#] \[EXAM] - Displays all libraries for the selected library type.
+
+-   \[LIBRARY] \[#] \[EXAM] - Displays fixtures and parameters values for the stored library, Set tabs, and a tab with all the Cues with reference to the Library.
+
+**Group** - List of all stored Groups with Fixtures Count.
+
+-   \[GROUP] \[#] \[EXAM] - Displays all the fixtures in the group in their selection order.
+
+-   \[FIXTURE] \[#] \[EXAM] - Displays the selected fixture's information organized in tabs by Patch, Sets, Cues, Libraries.
+
+**Snap** - List of all stored Snaps.
+
+-   \[SNAP] \[#] \[EXAM] - Graphically displays the Controllers recorded in the Snap and their status and configuration.
+
+**Macro** - List of all stored Macros.
+
+-   \[MACRO] \[#] \[EXAM] - Displays all macro steps, time (if enabled), macro state, and macro commands.
+
+**Timelines** - List of all stored Timelines.
+
+-   <span style="color:Gray">Not implemented yet.</span>
+
+**Look Ahead Mask**
+
+-   Displays which fixtures are enabled for the Look Ahead feature, with Set tabs.
+
+**Midi Notes** - List of the patched MIDI Notes.
+
+-   <span style="color:Gray">Displays patched Midi notes (currently unimplemented, use {I/0 Settings} as an alternative.) </span>
+
+**Filters**
+
+-   \[FILTERS] \[EXAM] - Displays all macro steps, time (if enabled), macro state, and macro commands.
+
+-   \[FILTERS] \[#] \[EXAM] - <span style="color:Gray">Not implemented yet.</span>
+
+**Scene** - List of all stored Scenes.
+
+-   \[SCENE] \[EXAM] - Displays a list of the Scenes and Submasters.
+
+-   \[SCENE] \[#] \[EXAM] - Displays a track sheet for the selected Scene, Set tabs, and a tab with all the libraries referenced in the Scene.
+
+-   \[SCENE] (Submaster) \[#] \[EXAM] - Displays all the fixtures in the Submaster in their selection order.
+
+**Home Scene** 
+
+-   \[HOME] \[EXAM] - Displays all fixtures and parameters stored in the Home Scene, with Set tabs.
+
+**Highlight Scene**
+
+-   \[H.LIGHT] \[EXAM] - Displays all fixtures and parameters stored in the Home Scene, with Set tabs.
+
+**Lowlight Scene**
+
+-   \[L.LIGHT] \[EXAM] - Displays all fixtures and parameters stored in the Home Scene, with Set tabs.
+
+
+## Patch Exam {#Patch-Exam-16.3}
+
+
+<p align=center> ![16.3-Patch-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfC4uFcURE3TnaTsqKny%2F16.3-Patch-Exam.webp?alt=media&token=3a5f7f68-ac4f-450b-be91-7e548fd79e71) </p>
+
+**Devices** - List of all imported Devices and their properties.
+
+-   Individual Device Exam - Displays graphically the DMX parameter allocation for the current device and mode.
+  
+**Sets** - List of all Sets with Fixtures Count.
+
+-   Individual Set Exam - Displays the fixtures in the Set with Fixture ID #, Set ID #, Name, Device.
+
+-   Individual Fixture Exam - Displays the selected fixture's information organized in tabs by Patch, Sets, Cues, Libraries.
+
+**DMX Out** - List of all DMX universes that have fixtures patched, with Fixtures Count. 
+
+-   Individual Universe Exam - Displays graphically a table of patched fixtures and their DMX properties.
+
+**DMX In** - Displays DMX inputs  used on each DMX input universe available.
+
+-   Individual Universe Exam - Displays a table of DMX input assignments.
+
+**Park** - Displays the Count of parked Addresses and Fixtures.
+
+-   Park Address - Displays a list of all parked addresses.
+
+-   Park Fixture - Displays a list of all parked fixtures and parameters.
+
+**Curve** List of all the Curves.
+
+-   Curves Exam - Displays a list of all read only and user created Functions and which of them are included in the favorites list.
+
+-   Individual Curve Exam - <span style="color:Gray">Not implemented yet.</span>
+

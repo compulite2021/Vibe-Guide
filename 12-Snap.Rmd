@@ -1,0 +1,163 @@
+
+# Snap 
+
+This chapter deals with creating and triggering Snapshots of the current playback state.
+
+**The following is covered in this chapter:**
+
+-  [12.1 Snaps](#Snaps-12.1)
+-  [12.2 Trigger Snaps](#Trigger-Snaps-12.2)
+-  [12.3 Attach Snaps](#Attach-Snaps-12.3)
+-  [12.4 Snap Time](#Snap-Time-12.4)
+
+
+## Snaps {#Store-Snaps-12.1}
+
+
+Snaps are Snapshots of the Playback configuration, they capture and record the current state of all Controllers including:
+
+-   Current Page
+    
+-   Current Master Controller
+    
+-   Loaded Qlist
+    
+-   Active Cue
+    
+-   Slider position
+    
+-   Priority list (stack) at the time of the snapshot
+    
+-   Controller priority number
+    
+-   Controller slider and button assignments
+    
+-   Linked controllers
+    
+-   Rate overrides
+    
+-   Effect Size overrides
+    
+-   Effect Offset overrides
+    
+-   Effect Base overrides
+    
+**Store a Snapshot:**
+
+1. Make sure that all controllers on all pages are setup, loaded, and activated exactly as you want them to be restored.
+    
+2.  Press \[STORE] \[HERE] to any available {Snap} softkey. 
+
+OR  Press \[SNAP] \[#] \[STORE].
+    
+3.  Press \[TEXT] to open the Text popup and label the Snap - this is only valid directly after storing the Snap, otherwise \[SNAP] \[#] \[TEXT] may be used at any time.
+
+Snaps may be viewed on the Exam view:
+
+<p align=center> ![12.1-Snap-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJXqd9ruLkRNPDHzLsVE%2F12.1-Snap-Exam.webp?alt=media&token=531f7279-ea09-41bb-8644-a91d376e14f0) </p>
+
+
+## Trigger Snaps {#Trigger-Snaps-12.2}
+
+
+Snaps may be directly triggered using the keypad or Snap Softkeys.
+
+**Trigger a Snap using the keypad:**
+
+-   \[SNAP] \[#] \[ENTER]
+    
+**Trigger a Snap using Snap softkeys:**
+
+-   Tap the required {SNAP} softkey.
+    
+**Trigger a Snap from a Qkey:**
+ 
+<span style="color:Gray">Not implemented yet.</span> 
+
+-    <span style="color:Gray">Assign the Snap to the Qkey by pressing \[SNAP] \[#] \[HERE] to any Qkey button.</span>
+    
+-   <span style="color:Gray">Press the Qkey button to trigger.</span>
+    
+Snaps on Vibe are absolute: all controllers are replaced with new loaded objects and controllers without new loaded objects are cleared. 
+
+<span style="color:Gray">Future releases will have an option for "Page Holdover" where active objects will not be replaced until the controller is released.</span>
+
+**Additional Snap Settings:**
+
+These additional options can be enabled or disabled in the System Settings on Defaults tab.
+
+<p align=center> ![12.2-Default-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQfHdbCHHRCh5Qb6bexaZ%2F12.2-Default-Snap-Settings.webp?alt=media&token=256944da-8054-4f3a-a3eb-1827b1f16337) </p>
+
+-   Load Pages - Restore the controllers to the page they were on when the Snap was stored.
+    
+-   Load Master PB - Restore the assignment of the Master Controller to the controller it was assigned to when the Snap was stored.
+
+-   Snap Time - Snaps will be loaded in the Time stored, or in the default Snap Time if there is not a specific time stored.
+    
+**Controller Settings Properties that affect Snaps:**
+
+-   Exclude from Snap - Controller will not be included when Snaps are stored.
+    
+-   Exclude from Override - Controller will ignore the Snap activation and will not be overridden.
+
+
+## Attach Snaps {#Attach-Snaps-12.3}
+
+
+Snaps may be attached and triggered from Cues.
+Snaps are triggered when:
+
+-   The Qlist is advanced to the cue with the Snap trigger.
+    
+-   \[GOTO] commands are used.
+    
+-   \[CUE] \[#] \[GO] is used.
+    
+<span style="color:Red">Back commands will not trigger Snaps.</span>
+
+**Attach a Snap to a Cue:**
+
+-   \[CUE] \[#] \[SNAP] \[#] \[STORE]
+    
+**Release a specific Snap from a Cue:**
+
+-   \[CUE] \[#] \[SNAP] \[#] \[RELEASE]
+    
+**Release all Macros from a Cue:**
+
+-   \[CUE] \[#] \[SNAP] \[RELEASE]
+    
+**Disable triggers:**
+
+1.  Tap the controller display header for the Qlist that contains Macro or Snap triggers
+
+OR  \[SETTINGS] \[HERE] to any controller button and select the Qlist Properties tab.
+    
+ - The Qlist Properties popup will appear. 
+
+2.   Deselect the {Trigger} button.
+
+ - Triggering will be disabled for the Qlist assigned to that specific controller.
+
+<p align=center> ![12.3-Qlist-Preferences](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F26CHJIB6I3eGUOPN0cia%2F12.3-Qlist-Preferences.webp?alt=media&token=f595f9cc-139f-41ea-a2be-578aade60b49) </p>
+
+
+## Snap Time {#Snap-Time-12.4}
+
+
+Snaps may be assigned a time to fade in their transitions.
+
+When a Snap is triggered the current playback status will fade to the status stored into the Snap in the assigned Snap time.
+
+**Set a Snap Time:**
+
+<p align=center> ![12.4-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fz8I5mMcTSUSBiyoouB1t%2F12.4-Snap-Settings.webp?alt=media&token=fd59ca71-e087-42c4-9ea9-817cf8c00c6e) </p>
+
+1.  Press \[SNAP] \[#] \[SETTINGS] - The Snap Settings popup will appear.
+    
+2.  Toggle the {Snap Time} key On.
+    
+3.  Adjust the Snap Time with the Virtual Time Wheel.
+    
+4.  Close the popup by using \[ENTER] or tapping Apply.
+

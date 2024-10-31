@@ -1,0 +1,417 @@
+
+# Hardware
+
+This chapter provides an overview of Vibe's hardware components.
+
+**The following is covered in this chapter:**
+
+-  [2.1 Console](#Console-2.1)
+-  [2.2 Wings](#Wings-2.2)
+-  [2.3 Connectors](#Connectors-2.3)
+-  [2.4 Editor HardKeys](#Editor-HardKeys-2.4)
+-  [2.5 Master Controls](#Master-Controls-2.5)
+-  [2.6 Playback Controls](#Playback-Controls-2.6)
+-  [2.7 Controller Keys](#Controller-Keys-2.7)
+-  [2.8 Page Keys](#Page-Keys-2.8)
+
+
+## Console {#Console-2.1}
+
+
+The Vibe Family has the following console models:
+
+ • **\[Vibe]**: the main model designed for wide entertainment productions.
+ 
+ • **\[Vibe M]**: the middle range model designed for theater and television studios.
+ 
+ • **\[Vibey]**: the compact model designed for live concerts and touring productions.
+ 
+
+The consoles share the same programming features but they have a different hardware composition, mostly related to: the overall dimension, the number of integrated monitors, the In/Out on-board connectors, and the quantity of physical controllers.
+
+
+<p align=center>**VIBE**</p>
+<p align=center> ![2.1-Vibe-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu3Dh7NEmJ7yaqImbo3Z2%2F2.1-Vibe-front.webp?alt=media&token=2e16015a-b07f-49cc-b829-66570cefd03e) </p>
+
+Built-in 21.5” plus 11.6” Full HD multi-touch screens
+
+Length: 977mm (38.4in)
+
+Width: 436mm (17.1in)
+
+Height (closed): 155mm (6.1in)
+
+Height (opened): 458mm (18in)
+
+Weight: 26.7kg (60.0lb)
+
+15 individually paging motorized faders
+
+35 individually paging multi-use controller buttons
+
+5 general purpose faders
+
+
+<p align=center>**VIBE M**</p>
+<p align=center> ![2.1-VibeM-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLAOBKbRG3YV3ueTyjacQ%2F2.1-VibeM-front.webp?alt=media&token=ce8ded0b-1722-4273-8a19-cb753c6a7a57) </p>
+
+Built-in 15.6” plus 11.6” Full HD multi-touch screens
+
+Length: 882mm (34.7in)
+
+Width: 436mm (17.1in)
+
+Height (closed): 155mm (6.1in)
+
+Height (opened): 396mm (15.5in)
+
+Weight: 22.8kg (50.2lb)
+
+10 individually paging motorized faders
+
+30 individually paging multi-use controller buttons
+
+
+<p align=center>**VIBEY**</p>
+<p align=center> ![2.1-Vibey-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBE6gmdqSoF8BZmHneuNZ%2F2.1-Vibey-front.webp?alt=media&token=485a70be-56aa-44b0-96c6-804f83107f46) </p>
+
+
+Built-in 21.5” Full HD multi-touch screen
+
+Width: 720mm (28.3in)
+
+Depth: 445mm (17.5in)
+
+Height (closed): 166mm (6.5in)
+
+Height (opened): 470mm (18.5in)
+
+Weight: 19.5kg (43.0lb)
+
+10 individually paging motorized faders
+
+10 individually paging multi-use encoders
+
+20 individually paging multi-use controller buttons
+
+
+All the consoles run the same Vibe software, that is also available in a free demo PC version for Windows operative systems. 
+
+
+<p align=center>**VIBE PC**</p>
+<p align=center> ![2.1-VibePC](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmxodfPufMiPZKwXnCgl5%2F2.1-Vibe-PC.webp?alt=media&token=27d44e1d-1bff-4717-972f-de79e5157e02) </p>
+
+Vibe PC is a useful tool for console training, feature and fixture test, remote programming and live lighting control as well. It may be used to communicate with a 3D visualizer and to pre-program show files, that can be easily moved between any Vibe system.
+
+The free unlicensed Vibe PC software has the following limitations:
+- outputs of up to 64 universes on VC protocol,
+- outputs of up to 1 universe on ArtNet and 1 universe on sACN protocols,
+- random blackout of 10 seconds every 5/20 minutes on ArtNet and sACN protocols,
+- networking connection to other Vibe systems is not available.
+
+
+## Wings {#Wings-2.2}
+
+
+The Vibe Family has the following wing models:
+ • **\[Vibe PC Wing]**: the Vibe panel, designed for touring events and freelance operators.
+
+Vibe PC Wing features the editor panel and the playback panel with the same size and capabilities of the compact Vibey console.
+
+Vibe PC Wing can be used in network with any Vibe Console running as a control expansion, or connected to the Vibe PC software providing the physical editor panel and controllers.
+
+ 
+<p align=center>**VIBE PC WING**</p>
+<p align=center> ![2.2-Vibe-PC-Wing-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZZ5YvnTd9P03bsaz1Xy7%2F2.2-Vibe-PC-Wing-front.webp?alt=media&token=f7ca2fe5-c7e7-40b8-b114-bcd7755e93a8) </p>
+
+Width: 654mm (25.75")
+
+Depth: 339.1mm (13.35")
+
+Height: Height: 95.7mm (3.7")
+
+Weight: 6.5Kg (14.33lb)
+
+10 individually paging motorized faders
+
+10 individually paging multi-use encoders
+
+20 individually paging multi-use controller buttons
+ 
+ 
+## Connectors {#Connectors-2.3}
+
+
+The Vibe Consoles and Wings have the following In/Out connectors:
+
+
+<p align=center>**Vibe**</p>
+<p align=center> ![2.3-Vibe-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2zBJLFNHr0zXidFy5e9X%2F2.3-Vibe-rear.webp?alt=media&token=4ceba074-2d5a-48f8-8053-8ebd258dbc70) </p>
+
+8 Physical DMX 512 input/output ports (RDM supported).
+
+64 standard DMX over Ethernet universes, up to 256 DMX universes via license.
+
+Support for Compulite VC, Art-Net 3, and sACN protocols. 
+
+MIDI In/Out 5-pin DIN.
+
+SMPTE In Combo XLR.
+
+2 EtherCON ports for the Data network.
+
+2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.
+
+4 USB3 ports on the back panel.
+
+2 USB2 ports on the front panel.
+
+3.5mm Audio line in/out.
+
+3.5mm Mic in.
+
+3.5mm Speaker out.
+
+2 DisplayPort video outputs.
+
+XLR Desklight port.
+
+PowerCon AC Input
+
+
+<p align=center>**Vibe M**</p>
+<p align=center> ![2.3-VibeM-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiqaKhMODV7uIwsOi32tA%2F2.3-VibeM-rear.webp?alt=media&token=1e7ebae2-ce50-4c30-b1ad-9506800ae6f2) </p>
+
+8 Physical DMX 512 input/output ports (RDM supported).
+
+64 standard DMX over Ethernet universes, up to 256 DMX universes via license.
+
+Support for Compulite VC, Art-Net 3, and sACN protocols. 
+
+MIDI In/Out 5-pin DIN.
+
+SMPTE In Combo XLR.
+
+2 EtherCON ports for the Data network.
+
+2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.
+
+4 USB3 ports on the back panel.
+
+2 USB2 ports on the front panel.
+
+3.5mm audio line in/out.
+
+3.5mm Mic in.
+
+3.5mm Speaker out.
+
+2 DisplayPort video outputs.
+
+XLR Desklight port.
+
+PowerCon AC Input
+
+
+<p align=center>**Vibey**</p>
+<p align=center> ![2.3-Vibey-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzYtLfOBTtM51hpZHa4hC%2F2.3-Vibey-rear.webp?alt=media&token=1ad1d095-bac5-484f-867f-696f5747e5db) </p>
+
+4 Physical DMX 512 input/output ports (RDM supported).
+
+64 standard DMX over Ethernet universes, up to 256 DMX universes via license.
+
+Support for Compulite VC, Art-Net 3, and sACN protocols. 
+
+MIDI In/Out 5-pin DIN.
+
+SMPTE In Combo XLR.
+
+1 EtherCON port for the Data network.
+
+2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.
+
+4 USB3 ports on the back panel.
+
+3 USB2 ports on the front panel.
+
+3.5mm audio line in/out.
+
+3.5mm Mic in.
+
+3.5mm Speaker out.
+
+2 DisplayPort video output.
+
+1 XLR Desklight port.
+
+PowerCon AC Input
+
+
+<p align=center>**Vibe PC Wing**</p>
+<p align=center> ![2.3-Vibe-PC-Wing-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FX5fm2Wk70F9d0bAL2JIl%2F2.3-Vibe-PC-Wing-rear.webp?alt=media&token=49724d7a-729a-47f4-8538-3da040191a93) </p>
+
+4 Physical DMX 512 input/output ports (RDM supported).
+
+64 standard DMX over Ethernet universes on VC protocol. 
+
+16 standard DMX over Ethernet universes on Art-Net 3 and sACN protocols. 
+
+MIDI In/Out 5-pin DIN.
+
+SMPTE In Combo XLR.
+
+2 EtherCON ports for the Data network, accessories and additional devices.
+
+3.5mm audio line in/out.
+
+3.5mm Mic in.
+
+3.5mm Speaker out.
+
+PowerCon AC Input
+
+
+## Editor HardKeys {#Editor-HardKeys-2.4}
+
+
+Editor Controls are used to program and edit parameter values for all fixtures as well as to create and edit objects such as cues and libraries.
+ 
+<p align=center>**Editor**</p>
+<p align=center> ![2.4-Editor](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzrJfgkfNBXIda8em6kmf%2F2.4-Editor.webp?alt=media&token=4c500a73-d20a-4e69-bd44-4a58681f657f){height=500px} </p>
+
+ • 1 Dedicated dimmer wheel
+ 
+ • 4 Main encoder push wheels
+ 
+ • 4 Extra encoder push wheels
+ 
+ • 1 Trackball
+ 
+ • **\[Next] / \[Prev]** Keys
+ 
+ • XYZ lock keys
+ 
+ • **\[Res]** Wheel resolution key
+ 
+ • Numeric Key Pad 
+ 
+ • **\[Vibe]** Key (Shift button)
+ 
+ • Editor Command keys
+ 
+ • Object Select keys
+
+
+## Master Controls {#Master-Controls-2.5}
+
+
+Master Controls are used to trigger the Controller assigned as the Master and to limit the intensity of all the fixtures.
+ 
+<p align=center>**Grand Master and BlackOut**</p>
+<p align=center> ![2.5-GM+BO](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9GMHGnOudh6O2tcytUnl%2F2.5-GM%2BBO.webp?alt=media&token=8ed9082b-a8ab-461f-af7d-59b241103c41){height=500px} </p>
+
+ • **\[Grand Master]** Slider.
+ 
+ • **\[BO]** Blackout key.
+
+<p align=center>**A/B and Master Keys**</p>
+<p align=center> ![2.5-Master+A/B](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfiXcNrYbTzg5rTdriZ5%2F2.5-Master%2BAB.webp?alt=media&token=8d1cbacb-8ce0-47b6-ba5c-5121e1a4d436){height=500px} </p>
+
+ • **\[GO/BACK/HOLD]** keys for executing cues on the Master Controller.
+ 
+ • **A/B CrossFader** non-motorized pair of sliders for executing Qlists and Cues manually.
+
+
+## Playback Controls {#Playback-Controls-2.6}
+
+
+Playback Controls are used to trigger the Objects assigned to the controller.
+
+<p align=center>**Playback**</p>
+<p align=center> ![2.6-Playback](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqOUb9JAc8XcIFfclklxN%2F2.6-Playback.webp?alt=media&token=0f8ebb5a-5b1a-4d21-9153-c0069b01343e){height=500px} </p>
+
+ • Individually paging **Slider Set Controllers** with motorized fader and three buttons for for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.
+ 
+ • Individually paging **Qkey Controllers** with pressable knob or single button for the execution of Qlists, Cues, Scenes, Groups selection, Libraries, Snaps, Macros, Rate.
+
+ • Individually paging **Auxiliary Key Controllers** with single button for the execution of Qlists, Cues, Scenes, Groups selection, Libraries, Snaps, Macros.
+ 
+ • Non-paging **Global Slider Controllers** with non-motorized fader and single button for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.
+
+
+## Controller Keys {#Controller-Keys-2.7}
+
+
+Controller Keys are used to select and trigger the controllers.
+These keys are divided into two groups: Operation Keys and Command Keys.
+
+**\[Operation Keys]** manage the assignments to the controllers.
+ 
+<p align=center>**Operation Keys**</p>
+<p align=center> ![2.7-Operation-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&token=45c6b4f6-86a6-4541-805b-4990a1b16fa8) </p>
+
+ • **\[SELECT]** key to assign the Master Controller.
+ 
+ • **\[LOAD]** key to pre-load a controller for execution.
+ 
+ • **\[RELEASE]** Key to release a target controller.
+ 
+ • **\[FREE]** Key to empty a target controller.
+ 
+ • **\[SNAP GO]** Key to trigger a Snap.
+ 
+ • **\[PROTECT]** Key to lock the desk with a password.
+ 
+**\[Command Keys]** provide additional functions to the controllers.
+ 
+<p align=center>**Command Keys**</p>
+<p align=center> ![2.7-Command-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F03BJgpqih15TcgY2jisu%2F2.7-Command-Keys.webp?alt=media&token=4d3ce841-3160-41b1-81d0-2eb7d1e3c823){height=500px} </p>
+
+ • **\[FLASH]** makes the target controller flash.
+ 
+ • **\[SOLO]** releases the other controllers, allowing only one controller to be triggered at once.
+ 
+ • **\[GO RELEASE]** makes a Go and Release command to the target controller.
+ 
+ • **\[ON]** activates the target controller.
+ 
+ • **\[OFF]** deactivates the target controller.
+ 
+ • **\[LATCH]** (not implemented yet).
+ 
+ • **\[GO]** makes a Go command to the target controller.
+ 
+ • **\[HOLD BACK]** makes a Hold and Back command to the target controller.
+ 
+ • **\[<--->]** reverses the order of the Cues on the target controller.
+ 
+ • **\[>>>]** makes a Step forward to the target controller (Go in Cut time).
+ 
+ • **\[<<<]** makes a Step backward to the target controller (Back in Cut time).
+ 
+ • **\[ASSERT]** makes a Go command to the current Cue on the target controller.
+ 
+ • **\[RATE]** for overall or individual rate override of the controllers.
+ 
+ • **\[TEACH]** for assigning the BPM tap time of the controllers.
+
+
+## Page Keys {#Page-Keys-2.8}
+
+
+Page Keys are used to quickly move between the pages.
+
+<p align=center>**Page Keys**</p>
+<p align=center> ![2.8-Page-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FF6iHunCxQPJrmb5bgAcA%2F2.8-Page-Keys.webp?alt=media&token=8cc195b4-fdec-4e4a-b9d5-bbb375b64ca9){height=200px} </p>
+
+  • **\[VIEW]** Accesses the Pages View.
+
+  • **\[PATCH]** switches between Patch Pages.
+
+  • **\[PROGRAM]** switches between Program Pages.
+
+  • **\[PLAYBACK]** switches between Playback Pages.
+
+
+Vibe Pages can be also switched from the screen's Toolbar by tapping the Home Page buttons, or through the keyboard by pressing F1, F2, F3, F4 function buttons.
+

@@ -1,0 +1,32 @@
+
+# Multi-User
+
+This chapter deals with connecting more consoles to the same network and configuring the users.
+
+**The following is covered in this chapter:**
+
+-  [18.1 Master/Backup](#Master/Backup-18.1)
+-  [18.2 Users](#Multi-User-18.2)
+
+
+## Master/Backup
+
+
+<span style="color:blue">Paragraph under development.</span>.
+
+<p align=center> ![18.1-Network](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhJKEcte50Bc8UJ58DfOL%2F18.1-Network.webp?alt=media&token=29f108e5-0686-405d-9b71-668bfe2d455d) </p>
+
+- Start a session
+
+- Connect a console 
+
+- Connect a PC (network licence needed)
+
+
+## Users
+
+
+<span style="color:blue">Not implemented yet.</span>.
+
+<p align=center> ![18.2-Users](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FH5zMtZgfJAwTzeNBMUEa%2F18.2-Users.webp?alt=media&token=724511cf-535e-4865-a5f3-ceec17a03dc3) </p>
+

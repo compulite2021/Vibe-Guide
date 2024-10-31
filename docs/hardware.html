@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Timeline | Vibe Manual</title>
+  <title>Chapter 2 Hardware | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta property="og:title" content="Chapter 2 Hardware | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 2 Hardware | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="macro.html"/>
-<link rel="next" href="topo.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="layout.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -556,441 +556,297 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="timeline" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Timeline<a href="timeline.html#timeline" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.</p>
+<div id="hardware" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Hardware<a href="hardware.html#hardware" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter provides an overview of Vibe’s hardware components.</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="timeline.html#Timelines-14.1">14.1 Timelines</a></li>
-<li><a href="timeline.html#Time-Code-14.2">14.2 Time Code</a></li>
-<li><a href="timeline.html#MIDI-14.3">14.3 MIDI</a></li>
+<li><a href="hardware.html#Console-2.1">2.1 Console</a></li>
+<li><a href="hardware.html#Wings-2.2">2.2 Wings</a></li>
+<li><a href="hardware.html#Connectors-2.3">2.3 Connectors</a></li>
+<li><a href="hardware.html#Editor-HardKeys-2.4">2.4 Editor HardKeys</a></li>
+<li><a href="hardware.html#Master-Controls-2.5">2.5 Master Controls</a></li>
+<li><a href="hardware.html#Playback-Controls-2.6">2.6 Playback Controls</a></li>
+<li><a href="hardware.html#Controller-Keys-2.7">2.7 Controller Keys</a></li>
+<li><a href="hardware.html#Page-Keys-2.8">2.8 Page Keys</a></li>
 </ul>
-<div id="Timelines-14.1" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Timelines<a href="timeline.html#Timelines-14.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses a philosophy of Timeline Tracks.</p>
-<p>There is no limit to the number of Timeline Tracks that may be recorded in a show.</p>
-<p>Timelines can be added to a Timeline View and played simultaneously following an internal or external Time Code.</p>
-<p><strong>Vibe can read the following Time Code sources</strong>:</p>
-<ul>
-<li><p>Virtual Local - Internally generated Time Code.</p></li>
-<li><p>Physical Local - SMPTE or MIDI Time Code received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
-<li><p>USB MIDI class compliant Time Code.</p></li>
-<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
-<li><p>Input sources from remote Multi-User consoles and devices</p></li>
-</ul>
-<p>Vibe can record data from multiple controllers simultaneously.</p>
-<p>Additional timeline subtracks will be created on a per controller basis.</p>
-<p>Vibe also supports fader automation on timeline tracks.</p>
+<div id="Console-2.1" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Console<a href="hardware.html#Console-2.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Vibe Family has the following console models:</p>
+<p>• <strong>[Vibe]</strong>: the main model designed for wide entertainment productions.</p>
+<p>• <strong>[Vibe M]</strong>: the middle range model designed for theater and television studios.</p>
+<p>• <strong>[Vibey]</strong>: the compact model designed for live concerts and touring productions.</p>
+<p>The consoles share the same programming features but they have a different hardware composition, mostly related to: the overall dimension, the number of integrated monitors, the In/Out on-board connectors, and the quantity of physical controllers.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyNOEZfLp8MiQtJSklmZ3%2F14.1-TL-Recorded.webp?alt=media&amp;token=7985f2a7-5a46-4d2e-b1c2-f55e3fd4059f" alt="14.1-TL-Recorded" />
+<strong>VIBE</strong>
 </p>
-<p>Vibe automatically matches frame rates to the incoming source.</p>
-<p>Supported frame rates are:</p>
-<ul>
-<li><p>24 FPS</p></li>
-<li><p>25 FPS</p></li>
-<li><p>29.97 FPS drop-frame</p></li>
-<li><p>30 FPS</p></li>
-</ul>
-<div id="view" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> View<a href="timeline.html#view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the layout.</p>
-<p>Unlimited Timeline views may be created and each Timeline View may have its own <strong>Time Code</strong>.</p>
-<p>As long as more Timeline views are set on different clock sources, they can load different Timelines and moved independently.</p>
-<p>If Timeline views are based on the same clock source, they will be synchronized and will load the same tracks and options.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOh7gGt5br6lurFzsNdes%2F14.1-TL-View.webp?alt=media&amp;token=d7eb125f-df73-4bc3-9126-0e860424f46a" alt="14.1-TL-View" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu3Dh7NEmJ7yaqImbo3Z2%2F2.1-Vibe-front.webp?alt=media&amp;token=2e16015a-b07f-49cc-b829-66570cefd03e" alt="2.1-Vibe-front" />
 </p>
-<p>The Timeline view shows all the active Timelines and allows to enable and disable them, or play in “solo” mode.</p>
-<p>Use the Timeline view’s menu to load the Timelines on the view, as well as to create, edit or delete Timelines.</p>
+<p>Built-in 21.5” plus 11.6” Full HD multi-touch screens</p>
+<p>Length: 977mm (38.4in)</p>
+<p>Width: 436mm (17.1in)</p>
+<p>Height (closed): 155mm (6.1in)</p>
+<p>Height (opened): 458mm (18in)</p>
+<p>Weight: 26.7kg (60.0lb)</p>
+<p>15 individually paging motorized faders</p>
+<p>35 individually paging multi-use controller buttons</p>
+<p>5 general purpose faders</p>
+<p align="center">
+<strong>VIBE M</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLAOBKbRG3YV3ueTyjacQ%2F2.1-VibeM-front.webp?alt=media&amp;token=ce8ded0b-1722-4273-8a19-cb753c6a7a57" alt="2.1-VibeM-front" />
+</p>
+<p>Built-in 15.6” plus 11.6” Full HD multi-touch screens</p>
+<p>Length: 882mm (34.7in)</p>
+<p>Width: 436mm (17.1in)</p>
+<p>Height (closed): 155mm (6.1in)</p>
+<p>Height (opened): 396mm (15.5in)</p>
+<p>Weight: 22.8kg (50.2lb)</p>
+<p>10 individually paging motorized faders</p>
+<p>30 individually paging multi-use controller buttons</p>
+<p align="center">
+<strong>VIBEY</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBE6gmdqSoF8BZmHneuNZ%2F2.1-Vibey-front.webp?alt=media&amp;token=485a70be-56aa-44b0-96c6-804f83107f46" alt="2.1-Vibey-front" />
+</p>
+<p>Built-in 21.5” Full HD multi-touch screen</p>
+<p>Width: 720mm (28.3in)</p>
+<p>Depth: 445mm (17.5in)</p>
+<p>Height (closed): 166mm (6.5in)</p>
+<p>Height (opened): 470mm (18.5in)</p>
+<p>Weight: 19.5kg (43.0lb)</p>
+<p>10 individually paging motorized faders</p>
+<p>10 individually paging multi-use encoders</p>
+<p>20 individually paging multi-use controller buttons</p>
+<p>All the consoles run the same Vibe software, that is also available in a free demo PC version for Windows operative systems.</p>
+<p align="center">
+<strong>VIBE PC</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmxodfPufMiPZKwXnCgl5%2F2.1-Vibe-PC.webp?alt=media&amp;token=27d44e1d-1bff-4717-972f-de79e5157e02" alt="2.1-VibePC" />
+</p>
+<p>Vibe PC is a useful tool for console training, feature and fixture test, remote programming and live lighting control as well. It may be used to communicate with a 3D visualizer and to pre-program show files, that can be easily moved between any Vibe system.</p>
+<p>The free unlicensed Vibe PC software has the following limitations:
+- outputs of up to 64 universes on VC protocol,
+- outputs of up to 1 universe on ArtNet and 1 universe on sACN protocols,
+- random blackout of 10 seconds every 5/20 minutes on ArtNet and sACN protocols,
+- networking connection to other Vibe systems is not available.</p>
 </div>
-<div id="record" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Record<a href="timeline.html#record" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After a Timeline View has been created, timeline tracks may be recorded.
-Timeline events may be recorded in “real time” and then edited afterwards.</p>
-<p><strong>Create a timeline track:</strong></p>
+<div id="Wings-2.2" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Wings<a href="hardware.html#Wings-2.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Vibe Family has the following wing models:
+• <strong>[Vibe PC Wing]</strong>: the Vibe panel, designed for touring events and freelance operators.</p>
+<p>Vibe PC Wing features the editor panel and the playback panel with the same size and capabilities of the compact Vibey console.</p>
+<p>Vibe PC Wing can be used in network with any Vibe Console running as a control expansion, or connected to the Vibe PC software providing the physical editor panel and controllers.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoNmp9u7TitOInt5iiRuA%2F14.1-Create-Timeline.webp?alt=media&amp;token=b5395505-25d3-43c0-bd94-cce6a48cf8eb" alt="14.1-Create-Timeline" />
+<strong>VIBE PC WING</strong>
 </p>
-<ol style="list-style-type: decimal">
-<li><p>Open the Timeline View menu.</p></li>
-<li><p>Tap + and the “Create New Timeline” popup will open.</p></li>
-<li><p>Select a timeline number and name.</p></li>
-<li><p>Choose Start from {Blank} or {Existing} Timeline and Apply.</p></li>
-<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p></li>
-</ol>
-<ul>
-<li><p>Virtual Local - Use internal timecode clock.</p></li>
-<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
-<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Enable the red {Record} button or the {+ Record} button.</li>
-</ol>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGYHhuOgYXG6ubGBALCOi%2F14.1-TL-Transport-Bar.webp?alt=media&amp;token=69968ead-6581-4b19-821a-3e6cd3992072" alt="14.1-TL-Transport-Bar" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZZ5YvnTd9P03bsaz1Xy7%2F2.2-Vibe-PC-Wing-front.webp?alt=media&amp;token=f7ca2fe5-c7e7-40b8-b114-bcd7755e93a8" alt="2.2-Vibe-PC-Wing-front" />
 </p>
-<ul>
-<li><p>{Record} overwrites the existing events.</p></li>
-<li><p>{+ Record} adds new events to the existing ones.</p></li>
-</ul>
-<ol start="7" style="list-style-type: decimal">
-<li><p>If using internal TC, press Play.</p></li>
-<li><p>If using external TC start the timecode source.</p></li>
-<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
-<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
-</ol>
-<p><strong>Trigger a Timeline</strong></p>
-<p>Timelines can be triggered and zoomed via the Timeline view’s transport bar.</p>
-<p>Timeline commands can be also triggered via the Editor Toolbar in Program and Playback pages.</p>
-<p><strong>Grid View Filters</strong></p>
-<p>Switch from the Graphical to the Grid view and viceversa with the toggle button on the control bar.</p>
-<p>In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFgICJWgLaaX6zER5xarw%2F14.1-TL-Grid-View.webp?alt=media&amp;token=f3f48320-4168-415b-b8b7-51364667e4fd" alt="14.1-TL-Grid-View" />
-</p>
+<p>Width: 654mm (25.75”)</p>
+<p>Depth: 339.1mm (13.35”)</p>
+<p>Height: Height: 95.7mm (3.7”)</p>
+<p>Weight: 6.5Kg (14.33lb)</p>
+<p>10 individually paging motorized faders</p>
+<p>10 individually paging multi-use encoders</p>
+<p>20 individually paging multi-use controller buttons</p>
 </div>
-<div id="commands" class="section level3 hasAnchor" number="14.1.3">
-<h3><span class="header-section-number">14.1.3</span> Commands<a href="timeline.html#commands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
-<p><strong>Commands for the Timeline</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
-<li><p>The Editor Toolbar shows the available commands:</p></li>
-</ol>
+<div id="Connectors-2.3" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Connectors<a href="hardware.html#Connectors-2.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Vibe Consoles and Wings have the following In/Out connectors:</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FK81XHaBtDHoweY0dr0ha%2F14.1-TL%23-Toolbar.webp?alt=media&amp;token=98266616-4265-455e-ae8f-27b14ad120c5" alt="14.1-TL#-Toolbar" />
+<strong>Vibe</strong>
 </p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqrhzxvT6qCnsbkgnIlFZ%2F14.1-TL-Commands.webp?alt=media&amp;token=f5e4caba-b4ea-4c3c-afd6-6c6ad4934ba4" alt="14.1-TL-Commands" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2zBJLFNHr0zXidFy5e9X%2F2.3-Vibe-rear.webp?alt=media&amp;token=4ceba074-2d5a-48f8-8053-8ebd258dbc70" alt="2.3-Vibe-rear" />
 </p>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Sequence may also end with:</p>
-<ul>
-<li><p>Store – will create the timelines if they are not already created</p></li>
-<li><p>Delete – will delete the timelines if they exist</p></li>
-<li><p>Text – will open text box to give a name to the selected timelines</p></li>
-<li><p>Copy – will add the timelines to the clipboard</p></li>
-<li><p>Paste – will paste the copied timelines from the clipboard</p></li>
-</ul></li>
-</ol>
-<ul>
-<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
-<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
-<li><p>The control bar may be used to stop and rewind events when the source is internal.</p></li>
-<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
-<li><p>forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
-</ul>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<p>8 Physical DMX 512 input/output ports (RDM supported).</p>
+<p>64 standard DMX over Ethernet universes, up to 256 DMX universes via license.</p>
+<p>Support for Compulite VC, Art-Net 3, and sACN protocols.</p>
+<p>MIDI In/Out 5-pin DIN.</p>
+<p>SMPTE In Combo XLR.</p>
+<p>2 EtherCON ports for the Data network.</p>
+<p>2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.</p>
+<p>4 USB3 ports on the back panel.</p>
+<p>2 USB2 ports on the front panel.</p>
+<p>3.5mm Audio line in/out.</p>
+<p>3.5mm Mic in.</p>
+<p>3.5mm Speaker out.</p>
+<p>2 DisplayPort video outputs.</p>
+<p>XLR Desklight port.</p>
+<p>PowerCon AC Input</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FooORahO1pS6AfEhuTM4N%2F14.1-TL-Menu-Active.webp?alt=media&amp;token=d6f12de1-9913-47e5-afe8-1cc6d37df1f9" alt="14.1-TL-Menu-Active" />
-</p>
-<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
-<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
-<p><span style="color:Red">Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</span></p>
-<p><strong>Commands for the Active Timeline</strong></p>
-<p>These commands will affect the Active Timeline View.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press <em>Timeline</em> from the panel</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTkMpw8g30Tv9mF8IqxRU%2F14.1-TL-Toolbar.webp?alt=media&amp;token=a8c3ff09-6899-4d4d-9a64-31da6908fe93" alt="14.1-TL-Toolbar" />
+<strong>Vibe M</strong>
 </p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIW9PDydVEqT1xPV762gX%2F14.1-TL-Options.webp?alt=media&amp;token=ba20f806-44a5-4f5f-9336-44e66361f273" alt="14.1-TL-Options" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiqaKhMODV7uIwsOi32tA%2F2.3-VibeM-rear.webp?alt=media&amp;token=1e7ebae2-ce50-4c30-b1ad-9506800ae6f2" alt="2.3-VibeM-rear" />
 </p>
+<p>8 Physical DMX 512 input/output ports (RDM supported).</p>
+<p>64 standard DMX over Ethernet universes, up to 256 DMX universes via license.</p>
+<p>Support for Compulite VC, Art-Net 3, and sACN protocols.</p>
+<p>MIDI In/Out 5-pin DIN.</p>
+<p>SMPTE In Combo XLR.</p>
+<p>2 EtherCON ports for the Data network.</p>
+<p>2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.</p>
+<p>4 USB3 ports on the back panel.</p>
+<p>2 USB2 ports on the front panel.</p>
+<p>3.5mm audio line in/out.</p>
+<p>3.5mm Mic in.</p>
+<p>3.5mm Speaker out.</p>
+<p>2 DisplayPort video outputs.</p>
+<p>XLR Desklight port.</p>
+<p>PowerCon AC Input</p>
+<p align="center">
+<strong>Vibey</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzYtLfOBTtM51hpZHa4hC%2F2.3-Vibey-rear.webp?alt=media&amp;token=1ad1d095-bac5-484f-867f-696f5747e5db" alt="2.3-Vibey-rear" />
+</p>
+<p>4 Physical DMX 512 input/output ports (RDM supported).</p>
+<p>64 standard DMX over Ethernet universes, up to 256 DMX universes via license.</p>
+<p>Support for Compulite VC, Art-Net 3, and sACN protocols.</p>
+<p>MIDI In/Out 5-pin DIN.</p>
+<p>SMPTE In Combo XLR.</p>
+<p>1 EtherCON port for the Data network.</p>
+<p>2 RJ45 Ethernet ports for accessories and additional devices, such as NAS storage.</p>
+<p>4 USB3 ports on the back panel.</p>
+<p>3 USB2 ports on the front panel.</p>
+<p>3.5mm audio line in/out.</p>
+<p>3.5mm Mic in.</p>
+<p>3.5mm Speaker out.</p>
+<p>2 DisplayPort video output.</p>
+<p>1 XLR Desklight port.</p>
+<p>PowerCon AC Input</p>
+<p align="center">
+<strong>Vibe PC Wing</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FX5fm2Wk70F9d0bAL2JIl%2F2.3-Vibe-PC-Wing-rear.webp?alt=media&amp;token=49724d7a-729a-47f4-8538-3da040191a93" alt="2.3-Vibe-PC-Wing-rear" />
+</p>
+<p>4 Physical DMX 512 input/output ports (RDM supported).</p>
+<p>64 standard DMX over Ethernet universes on VC protocol.</p>
+<p>16 standard DMX over Ethernet universes on Art-Net 3 and sACN protocols.</p>
+<p>MIDI In/Out 5-pin DIN.</p>
+<p>SMPTE In Combo XLR.</p>
+<p>2 EtherCON ports for the Data network, accessories and additional devices.</p>
+<p>3.5mm audio line in/out.</p>
+<p>3.5mm Mic in.</p>
+<p>3.5mm Speaker out.</p>
+<p>PowerCon AC Input</p>
 </div>
-<div id="gestures" class="section level3 hasAnchor" number="14.1.4">
-<h3><span class="header-section-number">14.1.4</span> Gestures<a href="timeline.html#gestures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Use the following <strong>gestures</strong> on the timeline view to manage the events:</p>
-<ul>
-<li><p>Tap on a single event – toggles the event selection</p></li>
-<li><p>Tap on a playback box – toggles the playback selection</p></li>
-<li><p>Tap on a marker – toggles the marker selection</p></li>
-<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
-<li><p>Double-tap an empty area – clear the selection</p></li>
-<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
-<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
-<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
-<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
-</ul>
-<p><span style="color:Red">Selection can have only one type of objects at a time. Selecting a timeline object (i.e. Playback, Event, Marker…) will clear all other objects selections.</span></p>
-</div>
-<div id="markers" class="section level3 hasAnchor" number="14.1.5">
-<h3><span class="header-section-number">14.1.5</span> Markers<a href="timeline.html#markers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To aid in timeline navigation, Markers may be inserted.</p>
+<div id="Editor-HardKeys-2.4" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Editor HardKeys<a href="hardware.html#Editor-HardKeys-2.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Editor Controls are used to program and edit parameter values for all fixtures as well as to create and edit objects such as cues and libraries.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FggiIzrGJjJMxB3Fbdsza%2F14.1-TL-Menu-Markers.webp?alt=media&amp;token=62f8c69f-b460-4be9-b647-968161c40d0e" alt="14.1-TL-Menu-Markers" />
+<strong>Editor</strong>
 </p>
-<p>To insert a marker:</p>
-<ul>
-<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
-<li><p>Press ⟵ to move backwards through the markers.</p></li>
-<li><p>Press ⟶ to move forwards through the markers.</p></li>
-<li><p>Press 🗑️ to delete a marker</p></li>
-</ul>
-<p>In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpJj4vHB3xXkARDK8pZdx%2F14.1-TL-Markers.webp?alt=media&amp;token=40c53b8f-a748-4251-a9df-f90ee07b59cf" alt="14.1-TL-Markers" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzrJfgkfNBXIda8em6kmf%2F2.4-Editor.webp?alt=media&amp;token=4c500a73-d20a-4e69-bd44-4a58681f657f" height="500" alt="2.4-Editor" />
 </p>
-<p>The Timeline Grid View shows the list of Markers on a dedicated tab, where they can be named.
-Markers’ names will appear also in the graphical view, on the bottom of the marker.</p>
+<p>• 1 Dedicated dimmer wheel</p>
+<p>• 4 Main encoder push wheels</p>
+<p>• 4 Extra encoder push wheels</p>
+<p>• 1 Trackball</p>
+<p>• <strong>[Next] / [Prev]</strong> Keys</p>
+<p>• XYZ lock keys</p>
+<p>• <strong>[Res]</strong> Wheel resolution key</p>
+<p>• Numeric Key Pad</p>
+<p>• <strong>[Vibe]</strong> Key (Shift button)</p>
+<p>• Editor Command keys</p>
+<p>• Object Select keys</p>
 </div>
-<div id="move-selection" class="section level3 hasAnchor" number="14.1.6">
-<h3><span class="header-section-number">14.1.6</span> Move Selection<a href="timeline.html#move-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Move Selection submenu offers options to set move the selected events.</p>
+<div id="Master-Controls-2.5" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Master Controls<a href="hardware.html#Master-Controls-2.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Master Controls are used to trigger the Controller assigned as the Master and to limit the intensity of all the fixtures.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5NzYriXZGQ5lQFov0s0m%2F14.1-TL-Menu-Move-Selection.webp?alt=media&amp;token=6e3f6889-4946-458d-aae1-87fd10bdaf64" alt="14.1-TL-Menu-Move-Selection" />
+<strong>Grand Master and BlackOut</strong>
 </p>
-<p>It is possible to change selected event times via the physical wheels.</p>
-<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
-<p>There are 2 physical wheels that are available for use:</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FucIYRJuwszY9q3vzIVvX%2F14.1-TL-Encoders.webp?alt=media&amp;token=9f852a86-a315-47df-a33f-df86c046278b" alt="14.1-TL-Encoders" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9GMHGnOudh6O2tcytUnl%2F2.5-GM%2BBO.webp?alt=media&amp;token=8ed9082b-a8ab-461f-af7d-59b241103c41" height="500" alt="2.5-GM+BO" />
 </p>
-<p>The left one is for moving the selected events.</p>
-<p>The right one is to change the time resolution for the current time movement.</p>
-</div>
-<div id="actions" class="section level3 hasAnchor" number="14.1.7">
-<h3><span class="header-section-number">14.1.7</span> Actions<a href="timeline.html#actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Actions submenu offers options to manage the selected events.</p>
+<p>• <strong>[Grand Master]</strong> Slider.</p>
+<p>• <strong>[BO]</strong> Blackout key.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVaRfzYUgas3u9aqWSNrI%2F14.1-TL-Menu-Actions.webp?alt=media&amp;token=a27019f0-9f02-4c76-887a-16a9a938e9a8" alt="14.1-TL-Menu-Actions" />
+<strong>A/B and Master Keys</strong>
 </p>
-<p>All the events can be moved on the timeline with drag&amp;drop commands in the graphical view, or by assigning a different time in the grid bar.</p>
-<p>The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fuc6wVYJVfy0govj8h7t9%2F14.1-TL-Actions.webp?alt=media&amp;token=345e65d9-2208-4d36-a515-d2c7207292b7" alt="14.1-TL-Actions" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfiXcNrYbTzg5rTdriZ5%2F2.5-Master%2BAB.webp?alt=media&amp;token=8d1cbacb-8ce0-47b6-ba5c-5121e1a4d436" height="500" alt="2.5-Master+A/B" />
 </p>
-<p>In the Actions menu there is the option to <strong>Reset Slider Value</strong> from a playback and set it to a fixed value between zero and full.</p>
-<p>To clear the slider value from a timeline:</p>
-<ol style="list-style-type: decimal">
-<li><p>Open a timelines</p></li>
-<li><p>Select the target playback</p></li>
-<li><p>On the menu, open the Actions</p></li>
-<li><p>Press Reset Slider</p></li>
-<li><p>Assign the slider value on the virtual slider popup</p></li>
-</ol>
+<p>• <strong>[GO/BACK/HOLD]</strong> keys for executing cues on the Master Controller.</p>
+<p>• <strong>A/B CrossFader</strong> non-motorized pair of sliders for executing Qlists and Cues manually.</p>
 </div>
-<div id="timestamp" class="section level3 hasAnchor" number="14.1.8">
-<h3><span class="header-section-number">14.1.8</span> TimeStamp<a href="timeline.html#timestamp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is possible to view the timeline and events data in different time formats.</p>
+<div id="Playback-Controls-2.6" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Playback Controls<a href="hardware.html#Playback-Controls-2.6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Playback Controls are used to trigger the Objects assigned to the controller.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F420TffgJLrwJeoJCoOWM%2F14.1-TL-Menu-Timestamp.webp?alt=media&amp;token=99428212-3196-47b1-81a9-450b1c32f7fe" alt="14.1-TL-Menu-Timestamp" />
+<strong>Playback</strong>
 </p>
-<p>The default time format is milliseconds, but it is also possible to use FPS format.</p>
-<p>The time format selection can be set on the Timestamp View sub-menu.</p>
-</div>
-<div id="audio-track" class="section level3 hasAnchor" number="14.1.9">
-<h3><span class="header-section-number">14.1.9</span> Audio Track<a href="timeline.html#audio-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Timelines can load Audio Tracks in common file formats such as .mp3 and .wav.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F513QLPh853sZ8nuDuBoz%2F14.1-TL-Audiotrack.webp?alt=media&amp;token=46ff16b6-b731-4596-8edb-b4520d162b36" alt="14.1-TL-Audiotrack" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqOUb9JAc8XcIFfclklxN%2F2.6-Playback.webp?alt=media&amp;token=0f8ebb5a-5b1a-4d21-9153-c0069b01343e" height="500" alt="2.6-Playback" />
 </p>
-<p>To add an audio track to a timeline:</p>
-<ul>
-<li><p>open the Audio section on the menu</p></li>
-<li><p>tap ADD</p></li>
-<li><p>select the target timeline on the selection popup and tap Apply</p></li>
-<li><p>select the audio file on the load popup and tap Apply</p></li>
-</ul>
-<p>The Audio Track will be loaded on the top line of the Timeline, showing the file name and the audio spectrum.</p>
+<p>• Individually paging <strong>Slider Set Controllers</strong> with motorized fader and three buttons for for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.</p>
+<p>• Individually paging <strong>Qkey Controllers</strong> with pressable knob or single button for the execution of Qlists, Cues, Scenes, Groups selection, Libraries, Snaps, Macros, Rate.</p>
+<p>• Individually paging <strong>Auxiliary Key Controllers</strong> with single button for the execution of Qlists, Cues, Scenes, Groups selection, Libraries, Snaps, Macros.</p>
+<p>• Non-paging <strong>Global Slider Controllers</strong> with non-motorized fader and single button for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.</p>
 </div>
-</div>
-<div id="Time-Code-14.2" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Time Code<a href="timeline.html#Time-Code-14.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).</p>
-<div id="connections" class="section level3 hasAnchor" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Connections<a href="timeline.html#connections" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Vibe has Time Code connectors for the following:</p>
-<ul>
-<li><p>Audio Combi Jack connector for SMPTE input with:</p>
-<ul>
-<li><p>Female unbalanced line level input on 1/4” phone jack</p></li>
-<li><p>Female 3 pin XLR balanced line level input.</p></li>
-</ul></li>
-<li><p>Female 5 Pin DIN connector for MIDI input.</p></li>
-<li><p>Female 5 Pin DIN connector for MIDI output.</p></li>
-<li><p>USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.</p></li>
-<li><p>RJ45 ports for MIDI over Ethernet (Compulite devices)</p></li>
-</ul>
-</div>
-<div id="ltc" class="section level3 hasAnchor" number="14.2.2">
-<h3><span class="header-section-number">14.2.2</span> LTC<a href="timeline.html#ltc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>LTC</strong> or <strong>Linear Time Code</strong> source, the SMPTE input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The SMPTE Tab contains the toggle button to enable or disable the LTC input.</p>
+<div id="Controller-Keys-2.7" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Controller Keys<a href="hardware.html#Controller-Keys-2.7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Controller Keys are used to select and trigger the controllers.
+These keys are divided into two groups: Operation Keys and Command Keys.</p>
+<p><strong>[Operation Keys]</strong> manage the assignments to the controllers.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fg4bDJOgnX88CaU1CqrnZ%2F14.2-IO-Settings-SMPTE.webp?alt=media&amp;token=2cadb1ad-2382-4443-89cc-1c5d971dfb75" alt="14.2-IO-Settings-SMPTE" />
+<strong>Operation Keys</strong>
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span></p>
-<p><strong>Recommended quality and level for SMPTE:</strong></p>
-<ul>
-<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
-<li><p>As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
-</ul>
-</div>
-<div id="mtc" class="section level3 hasAnchor" number="14.2.3">
-<h3><span class="header-section-number">14.2.3</span> MTC<a href="timeline.html#mtc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>MTC</strong> or <strong>Midi Time Code</strong> source, the MTC input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The MIDI Tab contains the toggle button to enable or disable the MTC input.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC7IvLw0Gqs94XcmfKDVa%2F14.2-IO-Settings-MTC.webp?alt=media&amp;token=75cc712a-9336-4d0e-bef4-57683b1502c2" alt="14.2-IO-Settings-MTC" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&amp;token=45c6b4f6-86a6-4541-805b-4990a1b16fa8" alt="2.7-Operation-Keys" />
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span></p>
-<p><strong>MIDI Time Code</strong> is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.</p>
-<p>MTC is available in the following frame rates:</p>
-<ul>
-<li><p>24 frame/s (standard rate for film work)</p></li>
-<li><p>25 frame/s (standard rate for PAL video)</p></li>
-<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
-<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
-</ul>
-</div>
-</div>
-<div id="MIDI-14.3" class="section level2 hasAnchor" number="14.3">
-<h2><span class="header-section-number">14.3</span> MIDI<a href="timeline.html#MIDI-14.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer.</p>
-<p>MIDI is a control protocol and does not transmit audio.</p>
-<p>Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment.</p>
-<p>MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)</p>
-<p><strong>MIDI implementation:</strong></p>
-<ul>
-<li><p>16 independent MIDI channels - The channels systems listen to.</p></li>
-<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
-<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
-<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
-<li><p>After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.</p></li>
-<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.</p></li>
-<li><p>Patch changes from 0 ⟶ 127 - Change from one instrument to another.</p></li>
-<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
-<li><p>A section for MIDI time code and other manufacturer’s “System Exclusive” information.</p></li>
-</ul>
-<div id="midi-settings" class="section level3 hasAnchor" number="14.3.1">
-<h3><span class="header-section-number">14.3.1</span> MIDI Settings<a href="timeline.html#midi-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To receive and generate Midi signals each protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.</p>
-<p><strong>Configure MIDI:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source:</p></li>
-</ol>
-<ul>
-<li><p><strong>Local MIDI</strong> is generated and received from the 5 pin DIN connectors on the back of the console.</p></li>
-<li><p><strong>MIDI over USB</strong> is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</p></li>
-<li><p><strong>MIDI over Ethernet</strong> is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.</p></li>
-<li><p><strong>Refresh MIDI Connection</strong> looks for new connections if devices have been added later.</p></li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Press Apply to stay in I/O settings, press [ENTER] or tap the Apply icon to close the popup.</li>
-</ol>
-</div>
-<div id="midi-notes" class="section level3 hasAnchor" number="14.3.2">
-<h3><span class="header-section-number">14.3.2</span> MIDI Notes<a href="timeline.html#midi-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In lighting MIDI notes and controllers from external sources are matched to the console’s controllers, buttons and wheels to synchronize the playback.</p>
-<blockquote>
-<p>A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ’s frequently control lighting via MIDI touchpad controllers.</p>
-</blockquote>
-<p>To configure <strong>MIDI Notes</strong> open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.</p>
-<p>In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.</p>
-<ul>
-<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
-<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
-<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
-</ul>
-<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+<p>• <strong>[SELECT]</strong> key to assign the Master Controller.</p>
+<p>• <strong>[LOAD]</strong> key to pre-load a controller for execution.</p>
+<p>• <strong>[RELEASE]</strong> Key to release a target controller.</p>
+<p>• <strong>[FREE]</strong> Key to empty a target controller.</p>
+<p>• <strong>[SNAP GO]</strong> Key to trigger a Snap.</p>
+<p>• <strong>[PROTECT]</strong> Key to lock the desk with a password.</p>
+<p><strong>[Command Keys]</strong> provide additional functions to the controllers.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0qfxuNCNVAbnJvsQuIf3%2F14.3-IO-Settings-MIDI-Notes.webp?alt=media&amp;token=dec7af76-bb68-46d8-b305-5eadbf31491c" alt="14.3-IO-Settings-MIDI-Notes" />
+<strong>Command Keys</strong>
 </p>
-<p><strong>Assign MIDI Notes to Controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>In Midi Tab enable Notes In or Notes Out.</p></li>
-<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
-<li><p>In Notes/Commands Tab select the tab for the type of MIDI message to be received.</p></li>
-</ol>
-<p>Possible messages types are:</p>
-<ul>
-<li><p><strong>Note</strong> (Note ON = press down on controller key, Note OFF = release of controller key).</p></li>
-<li><p><strong>After Touch</strong></p></li>
-<li><p><strong>Continuous Controller</strong></p></li>
-<li><p><strong>Path Change</strong></p></li>
-<li><p><strong>Channel Pressure</strong></p></li>
-<li><p><strong>Pitch Bend</strong></p></li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign Macros to a MIDI note:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press [MACRO] - The Macro selector popup will appear.</p></li>
-<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Additional functions:</strong></p>
-<ul>
-<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
-<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
-<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
-<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
-</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F03BJgpqih15TcgY2jisu%2F2.7-Command-Keys.webp?alt=media&amp;token=4d3ce841-3160-41b1-81d0-2eb7d1e3c823" height="500" alt="2.7-Command-Keys" />
+</p>
+<p>• <strong>[FLASH]</strong> makes the target controller flash.</p>
+<p>• <strong>[SOLO]</strong> releases the other controllers, allowing only one controller to be triggered at once.</p>
+<p>• <strong>[GO RELEASE]</strong> makes a Go and Release command to the target controller.</p>
+<p>• <strong>[ON]</strong> activates the target controller.</p>
+<p>• <strong>[OFF]</strong> deactivates the target controller.</p>
+<p>• <strong>[LATCH]</strong> (not implemented yet).</p>
+<p>• <strong>[GO]</strong> makes a Go command to the target controller.</p>
+<p>• <strong>[HOLD BACK]</strong> makes a Hold and Back command to the target controller.</p>
+<p>• <strong>[&lt;—&gt;]</strong> reverses the order of the Cues on the target controller.</p>
+<p>• <strong>[&gt;&gt;&gt;]</strong> makes a Step forward to the target controller (Go in Cut time).</p>
+<p>• <strong>[&lt;&lt;&lt;]</strong> makes a Step backward to the target controller (Back in Cut time).</p>
+<p>• <strong>[ASSERT]</strong> makes a Go command to the current Cue on the target controller.</p>
+<p>• <strong>[RATE]</strong> for overall or individual rate override of the controllers.</p>
+<p>• <strong>[TEACH]</strong> for assigning the BPM tap time of the controllers.</p>
 </div>
-<div id="msc" class="section level3 hasAnchor" number="14.3.3">
-<h3><span class="header-section-number">14.3.3</span> MSC<a href="timeline.html#msc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>MIDI Show Control</strong> is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard.</p>
-<p>MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p>
-<p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications.</p>
-<p>Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia</p>
-<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices.</p>
-<p>Basic MSC commands are:</p>
-<ul>
-<li><p>Go</p></li>
-<li><p>Stop</p></li>
-<li><p>Fire (Generally used for macros)</p></li>
-</ul>
-<p>Also supported on receive are:</p>
-<ul>
-<li><p>All fixtures</p></li>
-<li><p>General lights</p></li>
-<li><p>Moving lights</p></li>
-</ul>
-<p><strong>Receive MSC:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap {MTC In} in the I/O Settings popup, Midi Tab.</p></li>
-<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
-<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
-<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
-</ol>
-<p><strong>Transmit MSC:</strong></p>
-<p><span style="color:Gray">Not implemented yet.</span></p>
-<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+<div id="Page-Keys-2.8" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Page Keys<a href="hardware.html#Page-Keys-2.8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Page Keys are used to quickly move between the pages.</p>
+<p align="center">
+<strong>Page Keys</strong>
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FF6iHunCxQPJrmb5bgAcA%2F2.8-Page-Keys.webp?alt=media&amp;token=8cc195b4-fdec-4e4a-b9d5-bbb375b64ca9" height="200" alt="2.8-Page-Keys" />
+</p>
+<p>• <strong>[VIEW]</strong> Accesses the Pages View.</p>
+<p>• <strong>[PATCH]</strong> switches between Patch Pages.</p>
+<p>• <strong>[PROGRAM]</strong> switches between Program Pages.</p>
+<p>• <strong>[PLAYBACK]</strong> switches between Playback Pages.</p>
+<p>Vibe Pages can be also switched from the screen’s Toolbar by tapping the Home Page buttons, or through the keyboard by pressing F1, F2, F3, F4 function buttons.</p>
 
-</div>
 </div>
 </div>
             </section>
@@ -998,8 +854,8 @@ Markers’ names will appear also in the graphical view, on the bottom of the ma
           </div>
         </div>
       </div>
-<a href="macro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="topo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="layout.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

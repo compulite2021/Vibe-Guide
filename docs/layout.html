@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 14 Timeline | Vibe Manual</title>
+  <title>Chapter 3 Layout | Vibe Manual</title>
   <meta name="description" content="Compulite Guide for Vibe Consoles" />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta property="og:title" content="Chapter 3 Layout | Vibe Manual" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
   <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 14 Timeline | Vibe Manual" />
+  <meta name="twitter:title" content="Chapter 3 Layout | Vibe Manual" />
   
   <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
   <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="macro.html"/>
-<link rel="next" href="topo.html"/>
+<link rel="prev" href="hardware.html"/>
+<link rel="next" href="settings.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -556,439 +556,436 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="timeline" class="section level1 hasAnchor" number="14">
-<h1><span class="header-section-number">Chapter 14</span> Timeline<a href="timeline.html#timeline" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.</p>
+<div id="layout" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Layout<a href="layout.html#layout" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter provides an overview of Vibe’s layout and GUI (Graphical User Interface).</p>
 <p><strong>The following is covered in this chapter:</strong></p>
 <ul>
-<li><a href="timeline.html#Timelines-14.1">14.1 Timelines</a></li>
-<li><a href="timeline.html#Time-Code-14.2">14.2 Time Code</a></li>
-<li><a href="timeline.html#MIDI-14.3">14.3 MIDI</a></li>
+<li><a href="layout.html#Interface-3.1">3.1 Interface</a></li>
+<li><a href="layout.html#Vibe-Menu-3.2">3.2 Vibe Menu</a></li>
+<li><a href="layout.html#Pages-3.3">3.3 Pages</a></li>
+<li><a href="layout.html#Views-3.4">3.4 Views</a></li>
+<li><a href="layout.html#Layouts-3.5">3.5 Layouts</a></li>
 </ul>
-<div id="Timelines-14.1" class="section level2 hasAnchor" number="14.1">
-<h2><span class="header-section-number">14.1</span> Timelines<a href="timeline.html#Timelines-14.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Vibe uses a philosophy of Timeline Tracks.</p>
-<p>There is no limit to the number of Timeline Tracks that may be recorded in a show.</p>
-<p>Timelines can be added to a Timeline View and played simultaneously following an internal or external Time Code.</p>
-<p><strong>Vibe can read the following Time Code sources</strong>:</p>
+<div id="Interface-3.1" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Interface<a href="layout.html#Interface-3.1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe has a multi-touch based interface, using simple gestures for selection and navigation.</p>
 <ul>
-<li><p>Virtual Local - Internally generated Time Code.</p></li>
-<li><p>Physical Local - SMPTE or MIDI Time Code received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.</p></li>
-<li><p>USB MIDI class compliant Time Code.</p></li>
-<li><p>MIDI over Ethernet via Compulite VC protocol.</p></li>
-<li><p>Input sources from remote Multi-User consoles and devices</p></li>
-</ul>
-<p>Vibe can record data from multiple controllers simultaneously.</p>
-<p>Additional timeline subtracks will be created on a per controller basis.</p>
-<p>Vibe also supports fader automation on timeline tracks.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyNOEZfLp8MiQtJSklmZ3%2F14.1-TL-Recorded.webp?alt=media&amp;token=7985f2a7-5a46-4d2e-b1c2-f55e3fd4059f" alt="14.1-TL-Recorded" />
-</p>
-<p>Vibe automatically matches frame rates to the incoming source.</p>
-<p>Supported frame rates are:</p>
+<li><p>Supported <strong>Gestures</strong>:</p>
+<p>◾ One finger or left mouse click to select.</p>
+<p>◾ Two fingers or right mouse click to swipe and scroll.</p>
+<p>◾ Long one finger press or left mouse click for drag&amp;drop.</p>
+<p>◾ Multi-selection via ️️⤴ ⤵ (right-&gt;up /right-&gt;down) shaped gestures.</p></li>
+<li><p>Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added by using Display Port 1.2 or higher and MST splitter for a total of 4 external monitors at 1920 x 1080 resolution).</p></li>
+<li><p>The large embedded screen called <strong>Vibe Main Screen</strong> is general-purpose, as well as the external monitors.</p></li>
+<li><p>The small embedded screen called <strong>Smart Screen</strong> is dedicated to context sensitive fixture information and interactive parameter pickers, used for Editor programming.</p></li>
+<li><p>Each screen, excluding the Smart Screen, can have one <strong>Window</strong> with an independent set of <strong>Pages</strong>.</p></li>
+<li><p>Each window can contain up to 12 Pages divided in 3 different Page Types:</p>
 <ul>
-<li><p>24 FPS</p></li>
-<li><p>25 FPS</p></li>
-<li><p>29.97 FPS drop-frame</p></li>
-<li><p>30 FPS</p></li>
-</ul>
-<div id="view" class="section level3 hasAnchor" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> View<a href="timeline.html#view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the layout.</p>
-<p>Unlimited Timeline views may be created and each Timeline View may have its own <strong>Time Code</strong>.</p>
-<p>As long as more Timeline views are set on different clock sources, they can load different Timelines and moved independently.</p>
-<p>If Timeline views are based on the same clock source, they will be synchronized and will load the same tracks and options.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOh7gGt5br6lurFzsNdes%2F14.1-TL-View.webp?alt=media&amp;token=d7eb125f-df73-4bc3-9126-0e860424f46a" alt="14.1-TL-View" />
-</p>
-<p>The Timeline view shows all the active Timelines and allows to enable and disable them, or play in “solo” mode.</p>
-<p>Use the Timeline view’s menu to load the Timelines on the view, as well as to create, edit or delete Timelines.</p>
-</div>
-<div id="record" class="section level3 hasAnchor" number="14.1.2">
-<h3><span class="header-section-number">14.1.2</span> Record<a href="timeline.html#record" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After a Timeline View has been created, timeline tracks may be recorded.
-Timeline events may be recorded in “real time” and then edited afterwards.</p>
-<p><strong>Create a timeline track:</strong></p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoNmp9u7TitOInt5iiRuA%2F14.1-Create-Timeline.webp?alt=media&amp;token=b5395505-25d3-43c0-bd94-cce6a48cf8eb" alt="14.1-Create-Timeline" />
-</p>
-<ol style="list-style-type: decimal">
-<li><p>Open the Timeline View menu.</p></li>
-<li><p>Tap + and the “Create New Timeline” popup will open.</p></li>
-<li><p>Select a timeline number and name.</p></li>
-<li><p>Choose Start from {Blank} or {Existing} Timeline and Apply.</p></li>
-<li><p>Tap the {Select Clock} drop down in the top left corner and select the timecode source.</p></li>
-</ol>
-<ul>
-<li><p>Virtual Local - Use internal timecode clock.</p></li>
-<li><p>Physical Local - Use the SMPTE or MTC timecode inputs on the console.</p></li>
-<li><p>Additional options will populate the list depending on the interfaced timecode device.</p></li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Enable the red {Record} button or the {+ Record} button.</li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGYHhuOgYXG6ubGBALCOi%2F14.1-TL-Transport-Bar.webp?alt=media&amp;token=69968ead-6581-4b19-821a-3e6cd3992072" alt="14.1-TL-Transport-Bar" />
-</p>
-<ul>
-<li><p>{Record} overwrites the existing events.</p></li>
-<li><p>{+ Record} adds new events to the existing ones.</p></li>
-</ul>
-<ol start="7" style="list-style-type: decimal">
-<li><p>If using internal TC, press Play.</p></li>
-<li><p>If using external TC start the timecode source.</p></li>
-<li><p>The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller’s events.</p></li>
-<li><p>When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.</p></li>
-<li><p>👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span></p></li>
-</ol>
-<p><strong>Trigger a Timeline</strong></p>
-<p>Timelines can be triggered and zoomed via the Timeline view’s transport bar.</p>
-<p>Timeline commands can be also triggered via the Editor Toolbar in Program and Playback pages.</p>
-<p><strong>Grid View Filters</strong></p>
-<p>Switch from the Graphical to the Grid view and viceversa with the toggle button on the control bar.</p>
-<p>In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFgICJWgLaaX6zER5xarw%2F14.1-TL-Grid-View.webp?alt=media&amp;token=f3f48320-4168-415b-b8b7-51364667e4fd" alt="14.1-TL-Grid-View" />
-</p>
-</div>
-<div id="commands" class="section level3 hasAnchor" number="14.1.3">
-<h3><span class="header-section-number">14.1.3</span> Commands<a href="timeline.html#commands" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the “Active Timeline View”.</p>
-<p><strong>Commands for the Timeline</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press Timeline # (+#, ⟶#, etc.)</p></li>
-<li><p>The Editor Toolbar shows the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FK81XHaBtDHoweY0dr0ha%2F14.1-TL%23-Toolbar.webp?alt=media&amp;token=98266616-4265-455e-ae8f-27b14ad120c5" alt="14.1-TL#-Toolbar" />
-</p>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqrhzxvT6qCnsbkgnIlFZ%2F14.1-TL-Commands.webp?alt=media&amp;token=f5e4caba-b4ea-4c3c-afd6-6c6ad4934ba4" alt="14.1-TL-Commands" />
-</p>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Sequence may also end with:</p>
-<ul>
-<li><p>Store – will create the timelines if they are not already created</p></li>
-<li><p>Delete – will delete the timelines if they exist</p></li>
-<li><p>Text – will open text box to give a name to the selected timelines</p></li>
-<li><p>Copy – will add the timelines to the clipboard</p></li>
-<li><p>Paste – will paste the copied timelines from the clipboard</p></li>
+<li><p>up to 4 Pages for <strong>PATCH</strong></p></li>
+<li><p>up to 4 Pages for <strong>PROGRAM</strong></p></li>
+<li><p>up to 4 Pages for <strong>PLAYBACK</strong></p></li>
 </ul></li>
-</ol>
-<ul>
-<li><p>If the source is external MIDI or SMPTE timecode, press [Play] on the timecode source. The events will synchronize to the source timecode.</p></li>
-<li><p>If the source is internal, tap {Play} on the timecode view’s control bar. The internal timecode will start and events will execute.</p></li>
-<li><p>The control bar may be used to stop and rewind events when the source is internal.</p></li>
-<li><p>Record may be enabled and disabled “on the fly” to overwrite sections of a timeline track.</p></li>
-<li><p>forwards and backward using the Set Delta pop-up in the Actions drop down.</p></li>
+<li><p>The page buttons, used to switch between the different pages, are specific to the monitor that has focus (the last touched or mouse selected screen).</p></li>
 </ul>
-<p>To trigger Timeline commands via the panel and Editor Toolbar there is an “Active Timeline View” indicator:</p>
+<div id="smart-screen" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Smart Screen<a href="layout.html#smart-screen" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The 11.6” multi-touch monitor embedded on the right Editor section of the Vibe console is referred to as the <strong>Smart Screen</strong>.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FooORahO1pS6AfEhuTM4N%2F14.1-TL-Menu-Active.webp?alt=media&amp;token=d6f12de1-9913-47e5-afe8-1cc6d37df1f9" alt="14.1-TL-Menu-Active" />
-</p>
-<p>If there are more than 1 Timeline Views on the layout, only 1 of them can be the “Active” one.</p>
-<p>Tapping the white header of the view will select the current view as the “Active” and will remove the Active sign from the other views.</p>
-<p><span style="color:Red">Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</span></p>
-<p><strong>Commands for the Active Timeline</strong></p>
-<p>These commands will affect the Active Timeline View.</p>
-<ol style="list-style-type: decimal">
-<li><p>Go to idle state</p></li>
-<li><p>Press <em>Timeline</em> from the panel</p></li>
-<li><p>You see on the Editor Toolbar the available commands:</p></li>
-</ol>
-<p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTkMpw8g30Tv9mF8IqxRU%2F14.1-TL-Toolbar.webp?alt=media&amp;token=a8c3ff09-6899-4d4d-9a64-31da6908fe93" alt="14.1-TL-Toolbar" />
+<strong>Smart Screen</strong>
 </p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIW9PDydVEqT1xPV762gX%2F14.1-TL-Options.webp?alt=media&amp;token=ba20f806-44a5-4f5f-9336-44e66361f273" alt="14.1-TL-Options" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIYKzE7HIxqtnUR28Neae%2F3.1-Smart-Screen.webp?alt=media&amp;token=c6dcddeb-ec22-486f-aa1c-38f075ddeae1" alt="3.1-Smart-Screen" />
 </p>
-</div>
-<div id="gestures" class="section level3 hasAnchor" number="14.1.4">
-<h3><span class="header-section-number">14.1.4</span> Gestures<a href="timeline.html#gestures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Use the following <strong>gestures</strong> on the timeline view to manage the events:</p>
 <ul>
-<li><p>Tap on a single event – toggles the event selection</p></li>
-<li><p>Tap on a playback box – toggles the playback selection</p></li>
-<li><p>Tap on a marker – toggles the marker selection</p></li>
-<li><p>Rectangle draw using touch and drag – toggles all the events inside the rectangle</p></li>
-<li><p>Double-tap an empty area – clear the selection</p></li>
-<li><p>Double tap on the time bar – sets the current time to the selected time</p></li>
-<li><p>Long click an event and drag – moves the position of all the selected events</p></li>
-<li><p>Double finger vertical scroll on the view – will scroll the Timelines</p></li>
-<li><p>Double finger horizontal scroll on the time bar – will scroll the time bar</p></li>
+<li><p>On Vibe multi-screen console models the Smart Screen position is fixed on the dedicated monitor. The Smart Screen View cannot be moved on the other screens and the configuration of this screen cannot be customized.</p></li>
+<li><p>On Vibe single-screen console models and on Vibe PC the Smart Screen is a View, so it can be positioned on any layout Page.</p></li>
 </ul>
-<p><span style="color:Red">Selection can have only one type of objects at a time. Selecting a timeline object (i.e. Playback, Event, Marker…) will clear all other objects selections.</span></p>
 </div>
-<div id="markers" class="section level3 hasAnchor" number="14.1.5">
-<h3><span class="header-section-number">14.1.5</span> Markers<a href="timeline.html#markers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To aid in timeline navigation, Markers may be inserted.</p>
+<div id="toolbars" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Toolbars<a href="layout.html#toolbars" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The left side of the Toolbar contains the <strong>Vibe Menu</strong> button, the <strong>Home Pages</strong> buttons, and the <strong>Command Line</strong> that shows the current syntax.</p>
+<p>The right side of the Toolbar, also referred to as the <strong>Editor Toolbar</strong>, contains a set of interactive buttons that are used to access less common commands.</p>
+<p>The <strong>Editor Toolbar</strong> shows a different set of buttons according to the programming syntax.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FggiIzrGJjJMxB3Fbdsza%2F14.1-TL-Menu-Markers.webp?alt=media&amp;token=62f8c69f-b460-4be9-b647-968161c40d0e" alt="14.1-TL-Menu-Markers" />
+<strong>Patch Toolbar</strong>
 </p>
-<p>To insert a marker:</p>
-<ul>
-<li><p>Press the + at the desired location when the timeline is running. A marker will be inserted.</p></li>
-<li><p>Press ⟵ to move backwards through the markers.</p></li>
-<li><p>Press ⟶ to move forwards through the markers.</p></li>
-<li><p>Press 🗑️ to delete a marker</p></li>
-</ul>
-<p>In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpJj4vHB3xXkARDK8pZdx%2F14.1-TL-Markers.webp?alt=media&amp;token=40c53b8f-a748-4251-a9df-f90ee07b59cf" alt="14.1-TL-Markers" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAB7z4JnpOxgh8teWURch%2F3.1-Patch-Toolbar.webp?alt=media&amp;token=bbe507b9-9325-4a5d-8285-b381a155f2e6" alt="3.1-Patch-Toolbar" />
 </p>
-<p>The Timeline Grid View shows the list of Markers on a dedicated tab, where they can be named.
-Markers’ names will appear also in the graphical view, on the bottom of the marker.</p>
-</div>
-<div id="move-selection" class="section level3 hasAnchor" number="14.1.6">
-<h3><span class="header-section-number">14.1.6</span> Move Selection<a href="timeline.html#move-selection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Move Selection submenu offers options to set move the selected events.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5NzYriXZGQ5lQFov0s0m%2F14.1-TL-Menu-Move-Selection.webp?alt=media&amp;token=6e3f6889-4946-458d-aae1-87fd10bdaf64" alt="14.1-TL-Menu-Move-Selection" />
+<strong>Program Toolbar</strong>
 </p>
-<p>It is possible to change selected event times via the physical wheels.</p>
-<p>There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.</p>
-<p>There are 2 physical wheels that are available for use:</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FucIYRJuwszY9q3vzIVvX%2F14.1-TL-Encoders.webp?alt=media&amp;token=9f852a86-a315-47df-a33f-df86c046278b" alt="14.1-TL-Encoders" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUg2rL8MYhNdaNOOGWJAu%2F3.1-Program-Toolbar.webp?alt=media&amp;token=607da8bf-7587-464f-b039-7680afd0b04d" alt="3.1-Program-Toolbar" />
 </p>
-<p>The left one is for moving the selected events.</p>
-<p>The right one is to change the time resolution for the current time movement.</p>
+<p>The functions of the Toolbar buttons are described in the following chapters.</p>
 </div>
-<div id="actions" class="section level3 hasAnchor" number="14.1.7">
-<h3><span class="header-section-number">14.1.7</span> Actions<a href="timeline.html#actions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Actions submenu offers options to manage the selected events.</p>
+</div>
+<div id="Vibe-Menu-3.2" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Vibe Menu<a href="layout.html#Vibe-Menu-3.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe Menu can be opened at any time by tapping the <strong>{VIBE}</strong> key on the Toolbar.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVaRfzYUgas3u9aqWSNrI%2F14.1-TL-Menu-Actions.webp?alt=media&amp;token=a27019f0-9f02-4c76-887a-16a9a938e9a8" alt="14.1-TL-Menu-Actions" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjYmWiIco2JoVB4RkoWFx%2F3.2-Vibe-Menu.webp?alt=media&amp;token=4876847e-691c-488b-8dcc-d8d2146d1764" alt="3.2-Vibe-Menu" />
 </p>
-<p>All the events can be moved on the timeline with drag&amp;drop commands in the graphical view, or by assigning a different time in the grid bar.</p>
-<p>The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.</p>
+<p>The Vibe Menu is a hierarchical menu containing logically grouped submenus.</p>
+<p>It is used to access common system functions such as <strong>Save Show</strong> and <strong>Exit</strong>, as well as to configure the <strong>Layout</strong> of the Pages.</p>
+<p>It contains all the Views listed in dedicated submenus.</p>
+<div id="show-menu" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Show Menu<a href="layout.html#show-menu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Show Menu is used to manage Vibe show files.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fuc6wVYJVfy0govj8h7t9%2F14.1-TL-Actions.webp?alt=media&amp;token=345e65d9-2208-4d36-a515-d2c7207292b7" alt="14.1-TL-Actions" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIecwDUfux4PnXOqxrtuK%2F3.2-Show-Menu.webp?alt=media&amp;token=b7477946-89bb-4dcb-91ed-1e33c4fe6b74" alt="3.2-Show-Menu" />
 </p>
-<p>In the Actions menu there is the option to <strong>Reset Slider Value</strong> from a playback and set it to a fixed value between zero and full.</p>
-<p>To clear the slider value from a timeline:</p>
-<ol style="list-style-type: decimal">
-<li><p>Open a timelines</p></li>
-<li><p>Select the target playback</p></li>
-<li><p>On the menu, open the Actions</p></li>
-<li><p>Press Reset Slider</p></li>
-<li><p>Assign the slider value on the virtual slider popup</p></li>
-</ol>
-</div>
-<div id="timestamp" class="section level3 hasAnchor" number="14.1.8">
-<h3><span class="header-section-number">14.1.8</span> TimeStamp<a href="timeline.html#timestamp" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is possible to view the timeline and events data in different time formats.</p>
+<p>Open the Show Menu to access the following options:</p>
+<p><strong>{New Show}</strong> - Start a new show.</p>
+<p><strong>{Save Show}</strong> - Save the current show in the last defined directory.</p>
+<p><strong>{Save Show As…}</strong> - Open a popup to name and save the current show (on Vibe DB or an external device).</p>
+<p><strong>{Load Show}</strong> - Open a popup to load a saved show file (from Vibe DB or an external device).</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F420TffgJLrwJeoJCoOWM%2F14.1-TL-Menu-Timestamp.webp?alt=media&amp;token=99428212-3196-47b1-81a9-450b1c32f7fe" alt="14.1-TL-Menu-Timestamp" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdHRNXkO9bd783ERJec6b%2F3.2-Load-Show.webp?alt=media&amp;token=280b9a25-ef44-4345-8439-6802ed910244" alt="3.2-Load-Show" />
 </p>
-<p>The default time format is milliseconds, but it is also possible to use FPS format.</p>
-<p>The time format selection can be set on the Timestamp View sub-menu.</p>
-</div>
-<div id="audio-track" class="section level3 hasAnchor" number="14.1.9">
-<h3><span class="header-section-number">14.1.9</span> Audio Track<a href="timeline.html#audio-track" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Timelines can load Audio Tracks in common file formats such as .mp3 and .wav.</p>
+<p><strong>{Default Show}</strong> - Open the default Vibe show. <span style="color:Gray"> (not implemented yet) </span></p>
+<p><strong>{Import Partial Show}</strong> - Open a popup to load a part of a saved show file. <span style="color:Gray"> (not implemented yet) </span></p>
+<p><strong>{Load Vector Show}</strong> - Open a popup to load and convert a show from Compulite Vector (.cvs show files).</p>
+<p><strong>{Clean Up Show}</strong> - Open a popup where it is possible to check and delete the data that are not being used in the show.</p>
+<p><strong>{Show Report}</strong> - Open a popup where it is possible to create excel files with the data of the show such as Groups, Libraries, Qlists and Scenes content.</p>
+<div id="load-vector-show" class="section level4 hasAnchor" number="3.2.1.1">
+<h4><span class="header-section-number">3.2.1.1</span> Load Vector Show<a href="layout.html#load-vector-show" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The Load Vector Show popup, if opened from a PC that has Vector software installed, will allow to load a show directly from Vector’s show folder.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F513QLPh853sZ8nuDuBoz%2F14.1-TL-Audiotrack.webp?alt=media&amp;token=46ff16b6-b731-4596-8edb-b4520d162b36" alt="14.1-TL-Audiotrack" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FasLNx7LNdXfdR0BWTCmH%2F3.2-Load-Vector-Show.webp?alt=media&amp;token=c53ab71d-f15e-490c-bf8f-28bb18b108cf" alt="3.2-Load-Vector-Show" />
 </p>
-<p>To add an audio track to a timeline:</p>
-<ul>
-<li><p>open the Audio section on the menu</p></li>
-<li><p>tap ADD</p></li>
-<li><p>select the target timeline on the selection popup and tap Apply</p></li>
-<li><p>select the audio file on the load popup and tap Apply</p></li>
-</ul>
-<p>The Audio Track will be loaded on the top line of the Timeline, showing the file name and the audio spectrum.</p>
-</div>
-</div>
-<div id="Time-Code-14.2" class="section level2 hasAnchor" number="14.2">
-<h2><span class="header-section-number">14.2</span> Time Code<a href="timeline.html#Time-Code-14.2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).</p>
-<div id="connections" class="section level3 hasAnchor" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Connections<a href="timeline.html#connections" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Vibe has Time Code connectors for the following:</p>
-<ul>
-<li><p>Audio Combi Jack connector for SMPTE input with:</p>
-<ul>
-<li><p>Female unbalanced line level input on 1/4” phone jack</p></li>
-<li><p>Female 3 pin XLR balanced line level input.</p></li>
-</ul></li>
-<li><p>Female 5 Pin DIN connector for MIDI input.</p></li>
-<li><p>Female 5 Pin DIN connector for MIDI output.</p></li>
-<li><p>USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.</p></li>
-<li><p>RJ45 ports for MIDI over Ethernet (Compulite devices)</p></li>
-</ul>
-</div>
-<div id="ltc" class="section level3 hasAnchor" number="14.2.2">
-<h3><span class="header-section-number">14.2.2</span> LTC<a href="timeline.html#ltc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>LTC</strong> or <strong>Linear Time Code</strong> source, the SMPTE input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The SMPTE Tab contains the toggle button to enable or disable the LTC input.</p>
+<p>After selecting the Vector show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fg4bDJOgnX88CaU1CqrnZ%2F14.2-IO-Settings-SMPTE.webp?alt=media&amp;token=2cadb1ad-2382-4443-89cc-1c5d971dfb75" alt="14.2-IO-Settings-SMPTE" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fqmff0jNnv3MASQK89e9h%2F3.2-Load-Vector-Device.webp?alt=media&amp;token=6e4ef89a-633e-4a9b-99ef-7fb562376f4e" alt="3.2-Load-Vector-Device" />
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span></p>
-<p><strong>Recommended quality and level for SMPTE:</strong></p>
+<p>Vector Shows will be loaded and converted with the following limitations:</p>
 <ul>
-<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
-<li><p>As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+<li><p><strong>Devices</strong>: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.</p></li>
+<li><p><strong>Patch</strong>: Vector device parameters will be mapped to Vibe device parameters.</p></li>
+<li><p><strong>Qlists and Cues</strong>: will be matched.</p></li>
+<li><p><strong>Cue Values</strong>: Vector cue parameter values will be matched to Vibe cue parameter values.</p></li>
+<li><p><strong>Temp Cues</strong>: will be converted into Vibe Scenes.</p></li>
+<li><p><strong>Submasters</strong>: will be converted into Vibe Submasters.</p></li>
+<li><p><strong>Groups</strong>: will be matched.</p></li>
+<li><p><strong>Libraries</strong>: will be matched per Bank, parameter values will be matched.</p></li>
+<li><p><strong>General Libraries</strong>: will be matched to Custom Libraries.</p></li>
+<li><p><strong>Playbacks</strong>: Vector Playbacks will be matched to Vibe Controllers, paging will be matched, all button functions common to Vector and Vibe will be matched.</p></li>
+<li><p><strong>Snaps</strong>: will be matched and mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.</p></li>
+<li><p><strong>Effects</strong>: will be matched.</p></li>
+<li><p><strong>Macros</strong>: <span style="color:Gray"> Not supported yet. </span></p></li>
 </ul>
 </div>
-<div id="mtc" class="section level3 hasAnchor" number="14.2.3">
-<h3><span class="header-section-number">14.2.3</span> MTC<a href="timeline.html#mtc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To trigger a timeline with an <strong>MTC</strong> or <strong>Midi Time Code</strong> source, the MTC input protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>The MIDI Tab contains the toggle button to enable or disable the MTC input.</p>
+<div id="cleanup-show" class="section level4 hasAnchor" number="3.2.1.2">
+<h4><span class="header-section-number">3.2.1.2</span> CleanUp Show<a href="layout.html#cleanup-show" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The Clean Up Show popup shows all the objects that are not used on the show file, such as unused Fixtures and Devices, unused Libraries, unassigned Qlists and Scenes, divided by tabs.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC7IvLw0Gqs94XcmfKDVa%2F14.2-IO-Settings-MTC.webp?alt=media&amp;token=75cc712a-9336-4d0e-bef4-57683b1502c2" alt="14.2-IO-Settings-MTC" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FM5UXvIlYHaLVdMeWHWYD%2F3.2-CleanUp-Show.webp?alt=media&amp;token=2a96ec96-d8b9-4016-94dd-f29d60c3e135" alt="3.2-CleanUp-Show" />
 </p>
-<p><span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span></p>
-<p><strong>MIDI Time Code</strong> is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.</p>
-<p>MTC is available in the following frame rates:</p>
-<ul>
-<li><p>24 frame/s (standard rate for film work)</p></li>
-<li><p>25 frame/s (standard rate for PAL video)</p></li>
-<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
-<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
-</ul>
+<p>Use this feature to find and delete the unused objects, to reorder the show file and make it lighter.</p>
 </div>
-</div>
-<div id="MIDI-14.3" class="section level2 hasAnchor" number="14.3">
-<h2><span class="header-section-number">14.3</span> MIDI<a href="timeline.html#MIDI-14.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer.</p>
-<p>MIDI is a control protocol and does not transmit audio.</p>
-<p>Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment.</p>
-<p>MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)</p>
-<p><strong>MIDI implementation:</strong></p>
-<ul>
-<li><p>16 independent MIDI channels - The channels systems listen to.</p></li>
-<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
-<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
-<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
-<li><p>After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.</p></li>
-<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.</p></li>
-<li><p>Patch changes from 0 ⟶ 127 - Change from one instrument to another.</p></li>
-<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
-<li><p>A section for MIDI time code and other manufacturer’s “System Exclusive” information.</p></li>
-</ul>
-<div id="midi-settings" class="section level3 hasAnchor" number="14.3.1">
-<h3><span class="header-section-number">14.3.1</span> MIDI Settings<a href="timeline.html#midi-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To receive and generate Midi signals each protocol needs to be enabled.</p>
-<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.</p>
-<p><strong>Configure MIDI:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
-<li><p>Toggle a MIDI Connection source:</p></li>
-</ol>
-<ul>
-<li><p><strong>Local MIDI</strong> is generated and received from the 5 pin DIN connectors on the back of the console.</p></li>
-<li><p><strong>MIDI over USB</strong> is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</p></li>
-<li><p><strong>MIDI over Ethernet</strong> is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.</p></li>
-<li><p><strong>Refresh MIDI Connection</strong> looks for new connections if devices have been added later.</p></li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Press Apply to stay in I/O settings, press [ENTER] or tap the Apply icon to close the popup.</li>
-</ol>
-</div>
-<div id="midi-notes" class="section level3 hasAnchor" number="14.3.2">
-<h3><span class="header-section-number">14.3.2</span> MIDI Notes<a href="timeline.html#midi-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In lighting MIDI notes and controllers from external sources are matched to the console’s controllers, buttons and wheels to synchronize the playback.</p>
-<blockquote>
-<p>A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ’s frequently control lighting via MIDI touchpad controllers.</p>
-</blockquote>
-<p>To configure <strong>MIDI Notes</strong> open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
-<p>In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.</p>
-<p>In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.</p>
-<ul>
-<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
-<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
-<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
-</ul>
-<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+<div id="show-report" class="section level4 hasAnchor" number="3.2.1.3">
+<h4><span class="header-section-number">3.2.1.3</span> Show Report<a href="layout.html#show-report" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The Show Report popup collects all the objects stored into the show file, such as Groups, Libraries, Qlists and Scenes, divided by tabs.</p>
 <p align="center">
-<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0qfxuNCNVAbnJvsQuIf3%2F14.3-IO-Settings-MIDI-Notes.webp?alt=media&amp;token=dec7af76-bb68-46d8-b305-5eadbf31491c" alt="14.3-IO-Settings-MIDI-Notes" />
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FtR3c1wpkPQG37A09MHjs%2F3.2-Show-Report.webp?alt=media&amp;token=1284cfff-7d13-4111-876e-01258f842eac" alt="3.2-Show-Report" />
 </p>
-<p><strong>Assign MIDI Notes to Controllers:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>In Midi Tab enable Notes In or Notes Out.</p></li>
-<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
-<li><p>In Notes/Commands Tab select the tab for the type of MIDI message to be received.</p></li>
-</ol>
-<p>Possible messages types are:</p>
-<ul>
-<li><p><strong>Note</strong> (Note ON = press down on controller key, Note OFF = release of controller key).</p></li>
-<li><p><strong>After Touch</strong></p></li>
-<li><p><strong>Continuous Controller</strong></p></li>
-<li><p><strong>Path Change</strong></p></li>
-<li><p><strong>Channel Pressure</strong></p></li>
-<li><p><strong>Pitch Bend</strong></p></li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Assign Macros to a MIDI note:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Select the channel that the MIDI message will be received on.</p></li>
-<li><p>Select the tab for the type of MIDI message to be received.</p></li>
-<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
-<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
-<li><p>Press [MACRO] - The Macro selector popup will appear.</p></li>
-<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
-<li><p>Tap the {Teach} key again to toggle it off.</p></li>
-<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
-</ol>
-<p><strong>Additional functions:</strong></p>
-<ul>
-<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
-<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
-<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
-<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
-</ul>
+<p>Report files can be generated for all the data or just for the selected objects.
+Tap “Generate For Selected” to export only the selected objects or tap “Generate For All” to export all the data, independently from the current selection.</p>
+<p>The Format keys allow to choose how the parameters should be written on the document.</p>
+<p>👉 Enable the {Patch Data} key to store a sheet containing all the patch information, such as fixtures’ list, universes, addresses, devices and personalities.</p>
+<p>Reports are saved in .cvs file format into the Reports Folder, inside the WorkDir.</p>
+<p>Use this feature to save a document containing the show information that may be needed.</p>
 </div>
-<div id="msc" class="section level3 hasAnchor" number="14.3.3">
-<h3><span class="header-section-number">14.3.3</span> MSC<a href="timeline.html#msc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>MIDI Show Control</strong> is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard.</p>
-<p>MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p>
-<p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications.</p>
-<p>Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia</p>
-<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices.</p>
-<p>Basic MSC commands are:</p>
+</div>
+<div id="layout-menu" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Layout Menu<a href="layout.html#layout-menu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Layout Menu is used to manage the Vibe layout files.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfjvPFOlZZWWW5aLZta3q%2F3.2-Layout-Menu.webp?alt=media&amp;token=97bb9e61-8cff-4565-a2ae-432bf680dd2d" alt="3.2-Layout-Menu" />
+</p>
+<p>Open the Layout Menu to access the following options:</p>
+<p><strong>{New Layout}</strong> - Start a new blank layout.</p>
+<p><strong>{Save Layout}</strong> - Save the current layout in the last defined directory.</p>
+<p><strong>{Save Layout As…}</strong> - Open a popup to name and save the current layout (on Vibe DB or an external device).</p>
+<p><strong>{Load Layout}</strong> - Open a popup to load a saved layout file (from Vibe DB or an external device).</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfB60x6TQY6zN9AuznrXp%2F3.2-Load-Layout.webp?alt=media&amp;token=cedffbe3-9991-4928-8fc4-c97d350c1744" alt="3.2-Load-Layout" />
+</p>
+<p><strong>{Default Layout}</strong> - Open the default Vibe layout, depending on the console model.</p>
+<p><strong>{Import Partial Layout}</strong> - Open a popup to load a part of a saved layout file. <span style="color:Gray"> (not implemented yet) </span></p>
+<p><strong>{Windows}</strong> - Open a sub-menu to add an External window, toggle the window’s Title Bar, enter or exit the Full Screen mode.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FN5hBKTtQVk0MGakmdF9k%2F3.2-Windows-Menu.webp?alt=media&amp;token=adbf9b8d-363d-4e90-9de7-6e83ad12d35d" alt="3.2-Windows-Menu" />
+</p>
+</div>
+<div id="views-menu" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Views Menu<a href="layout.html#views-menu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Views Menus contain a list of all the views that can be added to any page of the Vibe layout.</p>
+<p>Vibe Views are divided in logical order in 3 sub-menus:</p>
 <ul>
-<li><p>Go</p></li>
-<li><p>Stop</p></li>
-<li><p>Fire (Generally used for macros)</p></li>
+<li><p><strong>Patch Views</strong></p></li>
+<li><p><strong>Program Views</strong></p></li>
+<li><p><strong>Playback Views</strong></p></li>
 </ul>
-<p>Also supported on receive are:</p>
+<p>Open Patch / Program / Playback Views menus to access all the views that can be added to any page to configure the Vibe layout.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeKYbu9Ftgk4EQab25jtb%2F3.2-Patch-Menu.webp?alt=media&amp;token=6fa11dbe-a233-4b31-8677-feba5905251b" alt="3.2-Patch-Menu" />
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgHUsEx1uKxZysOC35hVG%2F3.2-Prog-Menu.webp?alt=media&amp;token=f39f731d-9f0e-4511-b1c1-931fa83721ce" alt="3.2-Prog-Menu" />
+</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5ogXQNRH5FuEHBBbp2Q5%2F3.2-Play-Menu.webp?alt=media&amp;token=5aa6ec39-904f-432c-9301-e94f3b41b01c" alt="3.2-Play-Menut" />
+</p>
+<p>Vibe’s <strong>Layout</strong> is totally flexible, it can be configured and customized to match the user preferences.</p>
+<p>All Vibe Views listed in the Patch, Prog and Play Views menus may be added, positioned, resized and tabbed on any Page of the layout.</p>
+<p>The <strong>Views</strong> chapter will provide a short explanation of each view’s features.</p>
+</div>
+<div id="settings-menu" class="section level3 hasAnchor" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Settings Menu<a href="layout.html#settings-menu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Settings Menu is used to manage the Vibe system settings.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoGyZ58FfOHZdLv8I9IWd%2F3.2-Settings-Menu.webp?alt=media&amp;token=3b6e973e-7aa0-4bfe-8ccf-4cd13db1dd29" alt="3.2-Settings-Menu" />
+</p>
+<p>Open the Settings Menu to access the following options:</p>
+<p><strong>{System Settings}</strong> - Open a popup where it is possible to configure all the general system settings.</p>
+<p><strong>{Network Settings}</strong> - Open a popup to configure the Console name and IP Address, find other Vibe systems on the same Network, and create a Client based connection such as the Master / Slave.</p>
+<p><strong>{DMX Settings}</strong> - Open a popup to enable, disable and configure the DMX outputs and inputs ports, the network protocols such as VC’s, ArtNet and ACN, and the DMX rate.</p>
+<p><strong>{I/O Settings}</strong> - Open a popup to enable, disable and configure the MIDI notes, OSC commands, the Midi Show Control, and the timecode protocols such as MTC and SMPTE.</p>
+<p><strong>{CITP Settings}</strong> - Open a popup to enable, disable and configure the CITP settings.
+Learn more about configuring CITP in the dedicated chapter.</p>
+<p><strong>{Offline Tool}</strong> - Open the Offline Tool to manage software and hardware settings.
+Learn more about the Offline Tool in the dedicated chapter. <span style="color:Gray"> (under development) </span></p>
+<p><strong>{Fixture Builder}</strong> - Open the Fixture Builder to build, import or edit devices.
+Learn more about the Offline Tool in the dedicated chapter. <span style="color:Gray"> (under development) </span></p>
+<p>👉 System settings popup can be quickly opened by tapping on the “System Status” View.</p>
+<p>👉 All settings popups can be directly accessed by adding the virtual “Settings Buttons” view to the layout.</p>
+</div>
+<div id="help-menu" class="section level3 hasAnchor" number="3.2.5">
+<h3><span class="header-section-number">3.2.5</span> Help Menu<a href="layout.html#help-menu" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FemwvRfR54i95Ed7WjoSw%2F3.2-Help-Menu.webp?alt=media&amp;token=bb2d04c9-cdfc-4385-9339-aee912862f41" alt="3.2-Help-Menu" />
+</p>
+<p><strong>{Version}</strong> - Open a popup listing the installed version of Vibe software and components.</p>
+<p><strong>{Manual}</strong> - Open a popup with the Vibe Manual that can be also found online at <a href="https://vibemanual.compulite.com/" class="uri">https://vibemanual.compulite.com/</a>. <span style="color:Gray"> (not implemented yet) </span></p>
+<p><strong>{Tutorial}</strong> - Open the tutorial popup that is shown at Vibe’s software start up.</p>
+<p><strong>{Error Report}</strong> - Create an Error Report file that can be shared with Compulite Support in case of software problems.</p>
+</div>
+<div id="exit" class="section level3 hasAnchor" number="3.2.6">
+<h3><span class="header-section-number">3.2.6</span> Exit<a href="layout.html#exit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Exit and Close buttons are located in the Vibe Menu.
+- Main window shows the Exit button to exit the software
+- External windows show the Close button to close the current window.</p>
+<p>If Exit is pressed, a popup asks to save the show file.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5UuUj111nEajyz6IvVTq%2F3.2-Exit.webp?alt=media&amp;token=22709df0-0451-428e-8c20-f8dee520732a" alt="3.2-Exit" />
+</p>
+<p>If Close is pressed, a popup asks to confirm.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F4PAdR6tptIo4UJ1RCc3g%2F3.2-Close.webp?alt=media&amp;token=afc88955-8b13-44c8-8025-e82701ab8cc1" alt="3.2-Close" />
+</p>
+</div>
+</div>
+<div id="Pages-3.3" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Pages<a href="layout.html#Pages-3.3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe has 3 types of Pages:</p>
 <ul>
-<li><p>All fixtures</p></li>
-<li><p>General lights</p></li>
-<li><p>Moving lights</p></li>
+<li><p><strong>Patch Page</strong></p></li>
+<li><p><strong>Program Page</strong></p></li>
+<li><p><strong>Playback Page</strong></p></li>
 </ul>
-<p><strong>Receive MSC:</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Tap {MTC In} in the I/O Settings popup, Midi Tab.</p></li>
-<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
-<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
-<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
-</ol>
-<p><strong>Transmit MSC:</strong></p>
-<p><span style="color:Gray">Not implemented yet.</span></p>
-<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+<p><strong>[Patch Page]</strong> or the F2 keyboard button switches between the existing Patch Pages.</p>
+<p><strong>[Program Page]</strong> or the F3 keyboard button switches between the existing Program Pages.</p>
+<p><strong>[Playback Page]</strong> or the F4 keyboard button switches between the existing Playback Pages.</p>
+<p>All the Pages are organized in the <strong>Pages View</strong> that can be accesses either by pressing the <strong>[VIEW]</strong> button or by tapping the <strong>{VIBE}</strong> Menu and then the <strong>{PAGES}</strong> key on the Toolbar.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPn9tyfXqkNM0BNszkmm5%2F3.3-Pages-View.webp?alt=media&amp;token=69169cd2-8ec8-46d5-a42c-344ae7d5a028" alt="3.3-Pages-View" />
+</p>
+<ul>
+<li><p>All Pages can be completely customized by adding, sizing and positioning the <strong>Views</strong> listed inside the Vibe Menu, independently from where the view is located inside the Vibe Menu.</p></li>
+<li><p>Pages can also be moved from one type to another, as soon as one of the 4 spaces per type is available.</p></li>
+<li><p>The Pages View can be unlocked through the Selection button in order to assign Home Pages, reorder the pages with drag and drop, Clone or Delete existent Pages.</p></li>
+</ul>
+<p>👉 On the Console it is recommended to set views such as the System Status and the Playback Status on the bottom of the Program and Playback pages, to have them in correspondence to the physical controllers.</p>
+<div id="home-pages" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Home Pages<a href="layout.html#home-pages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Home page buttons, located on the Taskbar, are a fast way to recall up to three main pages.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGfujKT441ne2mId2JY4X%2F3.3-Home-Pages.webp?alt=media&amp;token=559dadf5-a305-43d6-90b7-becae303704f" alt="3.3-Home-Pages" />
+</p>
+<p>Any page can be stored as a Home Page on the Page View.</p>
+<p>F1 keyboard button switches between the three Home Pages.</p>
+<p>The currently active Home Page is shown in Green.</p>
+</div>
+<div id="clone-pages" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Clone Pages<a href="layout.html#clone-pages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Clone pages for a faster building of a similar layout page.</p>
+<p>The Clone Pages key is displayed on the Toolbar, near the menu, when the window is in View mode and it is unlocked by tapping the Selection key.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkfKY2PaNqBgKMBmJjiQ1%2F3.3-Pages-Toolbar.webp?alt=media&amp;token=a0aec0c8-969a-4c62-9ab2-1257b554aadb" alt="3.3-Pages-Toolbar" />
+</p>
+</div>
+</div>
+<div id="Views-3.4" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Views<a href="layout.html#Views-3.4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Vibe Views are listed inside the Vibe Menu, into the Patch, Program, Playback Views sub-menus.</p></li>
+<li><p>Any View can be added to any Page and stored in the layout.</p></li>
+<li><p>Views can be resized and tabbed together, but each view has its own dimension limits.</p></li>
+<li><p>To edit the placement of views on the layout, the <strong>{Lock}</strong> icon near the <strong>{VIBE}</strong> menu key must be toggled to unlock the layout editing. After changes are made, it must be toggled again to lock the layout and allow normal usage.</p></li>
+<li><p>To configure the layout, any object in the Patch, Program and Playback Views hierarchical sub-menus can be tapped to open the view on a blank portion of the current page, or can be dragged and dropped into the page surface. Once on the page it may be moved or sized freely, space permitting. This operation automatically unlocks the layout editing.</p></li>
+<li><p>If an object is dragged on top of another, both will turn green showing it is possible to tab them and create a <strong>tabbed</strong> view. Keep a tabbed view pressed to extract an object from the tab an move it separately.</p></li>
+</ul>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZgXQQKIMYiWdsbeY3Ev0%2F3.4-Views-sample.webp?alt=media&amp;token=987cbbc6-e464-4b00-b016-391e3e386257" alt="3.4-Views-sample" />
+</p>
+<p>Here is the complete list of all the views that can be added to the layout pages to configure and customize the Vibe workspace.</p>
+<div id="patch-views" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Patch Views<a href="layout.html#patch-views" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Fixtures</strong> - The list of all the fixtures created in the show.</p>
+<p><strong>Sets</strong> - The list of all the sets, including the default sets (Fixture, Channel, Spot, Matrix, Media Server) and the custom sets.</p>
+<p><strong>Devices</strong> - The list of all the devices imported in the show.</p>
+<p><strong>Universes</strong> - The list of all the DMX universes.</p>
+<p><strong>Curves</strong> - The list of all the curve profiles, including the default curves and the custom ones.</p>
+<p><strong>Fixture View</strong> - The table of the created fixtures, with ID, patch and device information.</p>
+<p><strong>Address View</strong> - The table of the DMX addresses, showing the fixtures and parameters patch and properties.</p>
+<p><strong>Universe View</strong> - The table of the DMX universes that allows to patch by dragging the cells.</p>
+<p><strong>DMX In/Out View</strong> - The table that shows the current values of the DMX output and input universes.</p>
+<p><strong>OSC View</strong> - The list and trigger of the OSC commands.</p>
+<p><strong>External Devices</strong> - The space to check and configure connected devices, such as ePort nodes and RDM fixtures.</p>
+<p><strong>Selection</strong> - The box used to grab the fixture selection and drag it on the universe view.</p>
+</div>
+<div id="program-views" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Program Views<a href="layout.html#program-views" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Smart Screen</strong> - The view that contains the graphical editor screen.</p>
+<p><strong>Encoders</strong> - The view that contains the encoders in the lower part of the Smart Screen.</p>
+<p><strong>Hard Keys</strong> - The virtual version of the hard keys panel.</p>
+<p><strong>Single Buttons</strong> - This sub-menu collects all the virtual buttons.</p>
+<ul>
+<li><p><strong>Single Button</strong> - The list of all the virtual button.</p></li>
+<li><p><strong>Layout Page Buttons</strong>
+- The virtual buttons used for page navigation: View, Patch, Program, Playback.</p></li>
+<li><p><strong>Controller Page Buttons</strong>
+- The virtual buttons used for controller navigation: Slider and Qkey Page Up/Down.</p></li>
+<li><p><strong>Settings Button</strong>
+- The virtual buttons used to access the settings popups.</p></li>
+</ul>
+<p><strong>Softkeys</strong>
+- This sub-menu collects the softkey views of the objects.</p>
+<ul>
+<li><p><strong>Group</strong>
+- The softkey view of the Groups.</p></li>
+<li><p><strong>Qlist</strong>
+- The softkey view of the Qlists.</p></li>
+<li><p><strong>Scene</strong>
+- The softkey view of the Scenes.</p></li>
+<li><p><strong>Snap</strong>
+- The softkey view of the Snaps.</p></li>
+<li><p><strong>Filter</strong>
+- The softkey view of the Filters.</p></li>
+<li><p><strong>Macro</strong>
+- The softkey view of the Macros.</p></li>
+</ul>
+<p><strong>Library</strong> - This sub-menu collects the softkey views of the libraries.</p>
+<ul>
+<li><p><strong>Intensity</strong> - The softkey view of the Intensity Bank libraries.</p></li>
+<li><p><strong>Position</strong> - The softkey view of the Position Bank libraries.</p></li>
+<li><p><strong>Color</strong> - The softkey view of the Color Bank libraries.</p></li>
+<li><p><strong>Beam</strong> - The softkey view of the Beam Bank libraries.</p></li>
+<li><p><strong>Image</strong> - The softkey view of the Image Bank libraries.</p></li>
+<li><p><strong>Shape</strong> - The softkey view of the Shape Bank libraries.</p></li>
+<li><p><strong>Custom</strong> - The softkey view of the Custom libraries.</p></li>
+<li><p><strong>Effect</strong> - The softkey view of the Effect libraries.</p></li>
+</ul>
+<p><strong>Context</strong> - The dynamic softkey view showing contents based on the current syntax.</p>
+<p><strong>Live</strong> - The table view that shows the live status of all the fixtures’ parameters.</p>
+<p><strong>Live Parameters</strong> - The icon view that shows the live status of the fixtures’ parameters.</p>
+<p><strong>Qlist Tracksheet</strong> - The table used to check, edit and update the Qlists and Cues stored in the show.</p>
+<p><strong>Exam</strong> - The worktree used to check all the objects stored in the show.</p>
+<p><strong>Topo</strong> - The space to create interactive topographical views used to select the fixtures and trigger the objects.</p>
+<p><strong>Timeline</strong> - The space to record and trigger time-code based timelines.</p>
+</div>
+<div id="playback-views" class="section level3 hasAnchor" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> Playback Views<a href="layout.html#playback-views" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>A/B Crossfader</strong> - The virtual version of the A/B crossfader.</p>
+<p><strong>Slider</strong> - The virtual version of the Slider controllers: Set, Fader, 3 Buttons, Button, 5 Sets.</p>
+<p><strong>QKey</strong> - The virtual version of the Qkey controllers: Set, Fader, Button, 5 Sets.</p>
+<p><strong>AuxKey</strong> - The virtual version of the AuxKey controllers: Set, Fader, Button, 5 Sets.</p>
+<p><strong>Global Slider</strong> - The virtual version of the Global Slider controllers: Set, Fader, Button.</p>
+<p><strong>Master Keys</strong> - The virtual Master Keys panel.</p>
+<p><strong>Operation Keys</strong> - The virtual version of the Operation Keys panel.</p>
+<p><strong>Command Keys</strong> - The virtual version of the Command Keys panel.</p>
+<p><strong>Live Controller</strong> - The tabbed view that shows the live status of a target controller and its content.</p>
+<p><strong>System Status</strong> - The box that shows the current status of the system, also used to access the system setting.</p>
+<p><strong>Playback Status</strong> - The box that shows the current status of a single controller, also used to access the controller’s setting.</p>
+<p><strong>Playback Status Set</strong> - The box that shows the current status of a set of 5 controllers, also used to access the controller’s setting.</p>
+</div>
+<div id="view-settings" class="section level3 hasAnchor" number="3.4.4">
+<h3><span class="header-section-number">3.4.4</span> View Settings<a href="layout.html#view-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Some views have specific settings that can be set from the view settings popup, opened from the toolbar when the layout is unlocked.</p>
+<p>View settings can be accessed when layout is <strong>Unlocked</strong>, by selecting the view and tapping the buttons on the toolbar. These settings are applied to the selected view.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGujvpN1oUp70wkUc0LMV%2F3.4-Unlock-Layout.webp?alt=media&amp;token=461750d8-e48b-482f-8754-b055c7ff1320" alt="3.4-Unlock-Layout" />
+</p>
+<p><strong>Toggle Scrollbar</strong>: add or remove a scrollbar to/from the view, if available.</p>
+<p><strong>Toggle Frame</strong>: add or remove the frame to/from the view.</p>
+<p><strong>Frame Color</strong>: customize the view’s frame for a better graphical separation between the views.</p>
+<p><strong>Softkey Settings</strong>: any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqHCGEWL0meThObU6UWlG%2F3.4-SK-Settings.webp?alt=media&amp;token=d7d3ee51-0d19-4031-b576-8123f428834e" alt="3.4-SK-Settings" />
+</p>
+<p>Softkey settings are used to change the size, font and color of the softkeys’ text and background.</p>
+<p>The settings can be saved as Pre-Built and applied to the other views of the same tab, page, or to the softkey views in all the pages.</p>
+<p>The settings can be saved as default, and it is always possible to come back to the default or to reset the changes.</p>
+<p>Some special color options are available to show color library softkeys with the colors that are stored in the library.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNfMQrOC8X9lwv9sDGeg3%2F3.4-SK-sample.webp?alt=media&amp;token=b82b0d83-c8fa-43fa-9c4c-decf77789b64" alt="3.4-SK-sample" />
+</p>
+<p>The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fbma400MHsbhKNNrwgfPk%2F3.4-SK-Color-Settings.webp?alt=media&amp;token=af1402fe-3d16-4d50-8905-a549a6bfa77e" alt="3.4-SK-Color-Settings" />
+</p>
+<p><strong>Context Options</strong> only apply to the Context view. This view can show or hide the visualized objects depending on the user’s settings or on the smart option.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGu2OJcfA1WPlgUgjK4UN%2F3.4-Context-Options.webp?alt=media&amp;token=68932723-c5d8-46cb-8594-6ba42bce1b0f" alt="3.4-Context-Options" />
+</p>
+<p>The Context Normal Mode filters the visualized objects according to the enabled buttons.</p>
+<p>The Context Smart Mode filters the visualized objects automatically avoiding the softkeys that are already visible in the page.</p>
+<p><strong>Single Button Settings</strong>: any single button view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLgSDdp76T4LDjiqX7jlV%2F3.4-Single-Button-Settings.webp?alt=media&amp;token=3d323e1d-7c64-4843-954a-6d1ff60c3848" alt="3.4-Single-Button-Settings" />
+</p>
+<p>Specific settings, such as color and text size, can be assigned to each single button.</p>
+<p>The settings can be saved as Pre-Built and applied to the other single buttons of the same tab, page, or to the buttons in all the pages.</p>
+<p>The settings can be saved as default, and it is always possible to come back to the default or to reset the changes.</p>
+<p><strong>Views Menu</strong> is availeble on some views, such as Live, Topo and Timeline.</p>
+<p>The View’s menu can be closed when the layout is Locked by tapping the Close Menu button.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlA1jIxHs5lhND9asYYRc%2F3.4-Close-Menu.webp?alt=media&amp;token=f5fd8969-6183-4afc-b2a1-e6a97fe70d83" alt="3.4-Close-Menu" />
+</p>
+<p>The Open Menu button can be placed wherever on the view with a long click gesture and drag.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fy7PHYFlk20M70l1I0Ixz%2F3.4-Open-Menu.webp?alt=media&amp;token=8d5bb124-b6a5-4596-a2d0-0c069758448c" alt="3.4-Open-Menu" />
+</p>
+</div>
+</div>
+<div id="Layouts-3.5" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Layouts<a href="layout.html#Layouts-3.5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>After all pages and views are configured, the layout configuration can be saved into a <strong>Layout</strong> file by tapping the <strong>{VIBE}</strong> Menu and then the <strong>{LAYOUT}</strong> key.</p></li>
+<li><p>After configuring new windows on the external monitors, a layout file should be saved to preserve the external monitor layout on reboot. Layout files store the configuration of external monitors and if the system is booted without the expected external monitor a warning message will appear.</p></li>
+<li><p>Layout files, containing all the graphical settings of pages and views, are loaded independently from the Show files, containing all the stored data.</p></li>
+</ul>
+<p>👉 Layout Files are particularly useful when the same desk is managed by different operators; each user can load his own customized layout without losing any show data programmed by the previous user.</p>
+<div id="layout-settings" class="section level3 hasAnchor" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Layout Settings<a href="layout.html#layout-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Layout Settings can be accessed when layout is <strong>Locked</strong>, by tapping the Vibe Menu and then the {Setting} button on the toolbar, near the Lock and Pages buttons. These settings are applied as defaults to all the Pages and Views.</p>
+<p align="center">
+<img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3meZC6vw7u2jpirhGdEf%2F3.5-Layout-Settings.webp?alt=media&amp;token=d0c6e85e-0ac5-40b5-89fa-83e1ff066027" alt="3.5-Layout-Settings" />
+</p>
+<p>It is possible to change the Vibe Theme, to move the Toolbar on top or bottom position on all the pages, and to set Default View Settings for the Headers, the Frames and the Scrollbars.</p>
 
 </div>
 </div>
@@ -998,8 +995,8 @@ Markers’ names will appear also in the graphical view, on the bottom of the ma
           </div>
         </div>
       </div>
-<a href="macro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="topo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="hardware.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="settings.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

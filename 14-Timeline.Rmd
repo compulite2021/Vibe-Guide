@@ -1,0 +1,572 @@
+
+# Timeline 
+
+This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.
+
+**The following is covered in this chapter:**
+
+-  [14.1 Timelines](#Timelines-14.1)
+-  [14.2 Time Code](#Time-Code-14.2)
+-  [14.3 MIDI](#MIDI-14.3)
+
+
+## Timelines {#Timelines-14.1}
+
+
+Vibe uses a philosophy of Timeline Tracks. 
+
+There is no limit to the number of Timeline Tracks that may be recorded in a show. 
+
+Timelines can be added to a Timeline View and played simultaneously following an internal or external Time Code.
+
+**Vibe can read the following Time Code sources**:
+
+-   Virtual Local - Internally generated Time Code.
+    
+-   Physical Local - SMPTE or MIDI Time Code received at the SMPTE audio input or via the DIN 5 pin MIDI connector on the back of the console.
+    
+-   USB MIDI class compliant Time Code.
+    
+-   MIDI over Ethernet via Compulite VC protocol.
+    
+-   Input sources from remote Multi-User consoles and devices
+    
+Vibe can record data from multiple controllers simultaneously. 
+
+Additional timeline subtracks will be created on a per controller basis. 
+
+Vibe also supports fader automation on timeline tracks.
+
+<p align=center> ![14.1-TL-Recorded](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyNOEZfLp8MiQtJSklmZ3%2F14.1-TL-Recorded.webp?alt=media&token=7985f2a7-5a46-4d2e-b1c2-f55e3fd4059f) </p>
+
+Vibe automatically matches frame rates to the incoming source.
+
+Supported frame rates are:
+
+-   24 FPS
+
+-   25 FPS
+
+-   29.97 FPS drop-frame
+
+-   30 FPS
+
+### View
+
+If no layout contains a Timeline view, the first step to create a Timeline is to add a Timeline View to the layout.
+
+Unlimited Timeline views may be created and each Timeline View may have its own **Time Code**.
+
+As long as more Timeline views are set on different clock sources, they can load different Timelines and moved independently.
+
+If Timeline views are based on the same clock source, they will be synchronized and will load the same tracks and options.
+
+<p align=center> ![14.1-TL-View](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOh7gGt5br6lurFzsNdes%2F14.1-TL-View.webp?alt=media&token=d7eb125f-df73-4bc3-9126-0e860424f46a) </p>
+
+The Timeline view shows all the active Timelines and allows to enable and disable them, or play in "solo" mode.
+
+Use the Timeline view's menu to load the Timelines on the view, as well as to create, edit or delete Timelines.
+
+### Record
+
+After a Timeline View has been created, timeline tracks may be recorded. 
+Timeline events may be recorded in "real time" and then edited afterwards.
+
+**Create a timeline track:**
+
+<p align=center> ![14.1-Create-Timeline](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoNmp9u7TitOInt5iiRuA%2F14.1-Create-Timeline.webp?alt=media&token=b5395505-25d3-43c0-bd94-cce6a48cf8eb) </p>
+
+1.  Open the Timeline View menu.
+    
+2.  Tap + and the "Create New Timeline" popup will open.
+    
+3.  Select a timeline number and name.
+    
+4.  Choose Start from {Blank} or {Existing} Timeline and Apply.
+    
+5.  Tap the {Select Clock} drop down in the top left corner and select the timecode source. 
+
+  - Virtual Local - Use internal timecode clock. 
+
+  - Physical Local - Use the SMPTE or MTC timecode inputs on the console. 
+
+  - Additional options will populate the list depending on the interfaced timecode device.
+    
+6.  Enable the red {Record} button or the {+ Record} button.
+    
+<p align=center> ![14.1-TL-Transport-Bar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGYHhuOgYXG6ubGBALCOi%2F14.1-TL-Transport-Bar.webp?alt=media&token=69968ead-6581-4b19-821a-3e6cd3992072) </p>
+
+  - {Record} overwrites the existing events. 
+  
+  - {+ Record} adds new events to the existing ones.
+    
+7.  If using internal TC, press Play.
+    
+8.  If using external TC start the timecode source.
+    
+9.  The timeline will start to move and all controller presses and motorized fader moves will now be recorded on sub-tracks, one for each controller's events.
+    
+10.  When all recording is done, either stop the external timecode source or press the Stop button if the clock source is internal.
+    
+11.  👉 <span style="color:Red">Disable the Record button to prevent accidental overwrite of events.</span>
+
+**Trigger a Timeline**
+
+Timelines can be triggered and zoomed via the Timeline view's transport bar.
+
+Timeline commands can be also triggered via the Editor Toolbar in Program and Playback pages.
+
+**Grid View Filters**
+
+Switch from the Graphical to the Grid view and viceversa with the toggle button on the control bar.
+
+In the grid view it is possible to see all events from all timelines or to filter events by timeline and see only its own events.
+
+<p align=center> ![14.1-TL-Grid-View](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFgICJWgLaaX6zER5xarw%2F14.1-TL-Grid-View.webp?alt=media&token=f3f48320-4168-415b-b8b7-51364667e4fd) </p>
+
+### Commands
+
+These commands will affect the selected timelines in the sequence. Some sequences will affect the selected timelines regardless of their current view and some will affect them on the "Active Timeline View".
+
+**Commands for the Timeline**
+
+1. Go to idle state
+
+2. Press Timeline # (+#, ⟶#, etc.)
+
+3. The Editor Toolbar shows the available commands:
+
+<p align=center> ![14.1-TL#-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FK81XHaBtDHoweY0dr0ha%2F14.1-TL%23-Toolbar.webp?alt=media&token=98266616-4265-455e-ae8f-27b14ad120c5) </p>
+
+<p align=center> ![14.1-TL-Commands](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqrhzxvT6qCnsbkgnIlFZ%2F14.1-TL-Commands.webp?alt=media&token=f5e4caba-b4ea-4c3c-afd6-6c6ad4934ba4) </p>
+
+4. Sequence may also end with:
+
+	 - Store – will create the timelines if they are not already created
+
+	 - Delete – will delete the timelines if they exist
+
+	 - Text – will open text box to give a name to the selected timelines
+
+	 - Copy – will add the timelines to the clipboard 
+	 
+	 - Paste – will paste the copied timelines from the clipboard
+
+-   If the source is external MIDI or SMPTE timecode, press \[Play] on the timecode source. The events will synchronize to the source timecode.
+    
+-   If the source is internal, tap {Play} on the timecode view's control bar. The internal timecode will start and events will execute.
+    
+-   The control bar may be used to stop and rewind events when the source is internal.
+
+-   Record may be enabled and disabled "on the fly" to overwrite sections of a timeline track.
+    
+-   forwards and backward using the Set Delta pop-up in the Actions drop down.
+
+To trigger Timeline commands via the panel and Editor Toolbar there is an "Active Timeline View" indicator:
+
+<p align=center> ![14.1-TL-Menu-Active](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FooORahO1pS6AfEhuTM4N%2F14.1-TL-Menu-Active.webp?alt=media&token=d6f12de1-9913-47e5-afe8-1cc6d37df1f9) </p>
+
+If there are more than 1 Timeline Views on the layout, only 1 of them can be the "Active" one.
+
+Tapping the white header of the view will select the current view as the "Active" and will remove the Active sign from the other views.
+
+<span style="color:Red">Each Timeline View has an active clock. All Timeline Views that have the same clock will be automatically synced.</span>
+
+**Commands for the Active Timeline**
+
+These commands will affect the Active Timeline View.
+
+1. Go to idle state
+
+2. Press *Timeline* from the panel
+
+3. You see on the Editor Toolbar the available commands:
+
+<p align=center> ![14.1-TL-Toolbar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTkMpw8g30Tv9mF8IqxRU%2F14.1-TL-Toolbar.webp?alt=media&token=a8c3ff09-6899-4d4d-9a64-31da6908fe93) </p>
+
+<p align=center> ![14.1-TL-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIW9PDydVEqT1xPV762gX%2F14.1-TL-Options.webp?alt=media&token=ba20f806-44a5-4f5f-9336-44e66361f273) </p>
+
+### Gestures
+
+Use the following **gestures** on the timeline view to manage the events:
+
+- Tap on a single event – toggles the event selection
+
+- Tap on a playback box – toggles the playback selection
+
+- Tap on a marker – toggles the marker selection
+
+- Rectangle draw using touch and drag – toggles all the events inside the rectangle
+
+- Double-tap an empty area – clear the selection
+
+- Double tap on the time bar – sets the current time to the selected time
+
+- Long click an event and drag – moves the position of all the selected events
+
+- Double finger vertical scroll on the view – will scroll the Timelines
+
+- Double finger horizontal scroll on the time bar – will scroll the time bar
+
+<span style="color:Red">Selection can have only one type of objects at a time. Selecting a timeline object (i.e. Playback, Event, Marker…) will clear all other objects selections.</span>
+
+### Markers
+
+To aid in timeline navigation, Markers may be inserted.
+
+<p align=center> ![14.1-TL-Menu-Markers](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FggiIzrGJjJMxB3Fbdsza%2F14.1-TL-Menu-Markers.webp?alt=media&token=62f8c69f-b460-4be9-b647-968161c40d0e) </p>
+
+To insert a marker:
+
+-   Press the + at the desired location when the timeline is running. A marker will be inserted.
+    
+-   Press ⟵ to move backwards through the markers.
+    
+-   Press ⟶  to move forwards through the markers.
+    
+-   Press 🗑️ to delete a marker
+
+In the Timeline view, markers can be moved by assigning a direct time, and they can be assigned a delta.
+
+<p align=center> ![14.1-TL-Markers](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpJj4vHB3xXkARDK8pZdx%2F14.1-TL-Markers.webp?alt=media&token=40c53b8f-a748-4251-a9df-f90ee07b59cf) </p>
+
+The Timeline Grid View shows the list of Markers on a dedicated tab, where they can be named. 
+Markers' names will appear also in the graphical view, on the bottom of the marker.
+
+### Move Selection
+
+The Move Selection submenu offers options to set move the selected events.
+
+<p align=center> ![14.1-TL-Menu-Move-Selection](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5NzYriXZGQ5lQFov0s0m%2F14.1-TL-Menu-Move-Selection.webp?alt=media&token=6e3f6889-4946-458d-aae1-87fd10bdaf64) </p>
+
+It is possible to change selected event times via the physical wheels.
+
+There are 2 new buttons to assign the delta time for the selected events to the physical wheel and then move it.
+
+There are 2 physical wheels that are available for use:
+
+<p align=center> ![14.1-TL-Encoders](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FucIYRJuwszY9q3vzIVvX%2F14.1-TL-Encoders.webp?alt=media&token=9f852a86-a315-47df-a33f-df86c046278b) </p>
+
+The left one is for moving the selected events.
+
+The right one is to change the time resolution for the current time movement.
+
+### Actions
+
+The Actions submenu offers options to manage the selected events.
+
+<p align=center> ![14.1-TL-Menu-Actions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVaRfzYUgas3u9aqWSNrI%2F14.1-TL-Menu-Actions.webp?alt=media&token=a27019f0-9f02-4c76-887a-16a9a938e9a8) </p>
+
+All the events can be moved on the timeline with drag&drop commands in the graphical view, or by assigning a different time in the grid bar.
+
+The Actions menu allows to enable or disable the selected events, to delete them from the timeline, or to hide the disabled events from the view.
+
+<p align=center> ![14.1-TL-Actions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fuc6wVYJVfy0govj8h7t9%2F14.1-TL-Actions.webp?alt=media&token=345e65d9-2208-4d36-a515-d2c7207292b7) </p>
+
+In the Actions menu there is the option to **Reset Slider Value** from a playback and set it to a fixed value between zero and full.
+
+To clear the slider value from a timeline:
+
+1. Open a timelines
+
+2. Select the target playback
+
+3. On the menu, open the Actions
+
+4. Press Reset Slider
+
+5. Assign the slider value on the virtual slider popup
+
+### TimeStamp
+
+It is possible to view the timeline and events data in different time formats.
+
+<p align=center> ![14.1-TL-Menu-Timestamp](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F420TffgJLrwJeoJCoOWM%2F14.1-TL-Menu-Timestamp.webp?alt=media&token=99428212-3196-47b1-81a9-450b1c32f7fe) </p>
+
+The default time format is milliseconds, but it is also possible to use FPS format. 
+
+The time format selection can be set on the Timestamp View sub-menu.
+
+### Audio Track
+
+Timelines can load Audio Tracks in common file formats such as .mp3 and .wav.
+
+<p align=center> ![14.1-TL-Audiotrack](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F513QLPh853sZ8nuDuBoz%2F14.1-TL-Audiotrack.webp?alt=media&token=46ff16b6-b731-4596-8edb-b4520d162b36) </p>
+
+To add an audio track to a timeline:
+
+- open the Audio section on the menu
+
+- tap ADD
+
+- select the target timeline on the selection popup and tap Apply
+
+- select the audio file on the load popup and tap Apply
+
+The Audio Track will be loaded on the top line of the Timeline, showing the file name and the audio spectrum. 
+
+
+## Time Code {#Time-Code-14.2}
+
+
+Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).
+
+### Connections
+
+Vibe has Time Code connectors for the following:
+
+- Audio Combi Jack connector for SMPTE input with: 
+
+  - Female unbalanced line level input on 1/4" phone jack 
+
+  - Female 3 pin XLR balanced line level input.
+    
+- Female 5 Pin DIN connector for MIDI input.
+
+- Female 5 Pin DIN connector for MIDI output.
+
+- USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.
+    
+- RJ45 ports for MIDI over Ethernet (Compulite devices)
+
+### LTC
+
+To trigger a timeline with an **LTC** or **Linear Time Code** source, the SMPTE input protocol needs to be enabled.
+
+Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.
+
+The SMPTE Tab contains the toggle button to enable or disable the LTC input.
+
+<p align=center> ![14.2-IO-Settings-SMPTE](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fg4bDJOgnX88CaU1CqrnZ%2F14.2-IO-Settings-SMPTE.webp?alt=media&token=2cadb1ad-2382-4443-89cc-1c5d971dfb75) </p>
+
+<span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span>
+
+**Recommended quality and level for SMPTE:**
+
+- SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.
+    
+- As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.
+
+### MTC
+
+To trigger a timeline with an **MTC** or **Midi Time Code** source, the MTC input protocol needs to be enabled.
+
+Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.
+
+The MIDI Tab contains the toggle button to enable or disable the MTC input.
+
+<p align=center> ![14.2-IO-Settings-MTC](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC7IvLw0Gqs94XcmfKDVa%2F14.2-IO-Settings-MTC.webp?alt=media&token=75cc712a-9336-4d0e-bef4-57683b1502c2) </p>
+
+<span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span>
+
+**MIDI Time Code** is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.
+    
+MTC is available in the following frame rates: 
+
+  - 24 frame/s (standard rate for film work) 
+
+  - 25 frame/s (standard rate for PAL video) 
+
+  - 29.97 frame/s (drop-frame timecode for NTSC video) 
+
+  - 30 frame/s (non-drop timecode for NTSC video)
+
+
+## MIDI {#MIDI-14.3}
+
+
+MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer. 
+
+MIDI is a control protocol and does not transmit audio. 
+
+Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment. 
+
+MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)
+
+**MIDI implementation:**
+
+-   16 independent MIDI channels - The channels systems listen to.
+    
+-   127 Note ONs - Pressing down on a keyboard.
+    
+-   127 Note OFFs - Lifting off a keyboard.
+    
+-   Note On Velocity of 1 ⟶ 127 - How hard the key is struck.
+    
+-   After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.
+    
+-   127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.
+    
+-   Patch changes from 0 ⟶ 127 - Change from one instrument to another.
+    
+-   Pitch bend wheel that has a 14-bit resolution.
+    
+-   A section for MIDI time code and other manufacturer's "System Exclusive" information. 
+
+### MIDI Settings
+
+To receive and generate Midi signals each protocol needs to be enabled.
+
+Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.
+
+In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.
+
+**Configure MIDI:**
+
+1.  Connect all appropriate MIDI devices and power them on.
+    
+2.  Toggle a MIDI Connection source:
+
+   - **Local MIDI** is generated and received from the 5 pin DIN connectors on the back of the console.
+
+   - **MIDI over USB** is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.
+
+   -  **MIDI over Ethernet** is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.
+   
+   - **Refresh MIDI Connection** looks for new connections if devices have been added later.
+    
+3.  Press Apply to stay in I/O settings, press \[ENTER] or tap the Apply icon to close the popup.
+
+### MIDI Notes
+
+In lighting MIDI notes and controllers from external sources are matched to the console's controllers, buttons and wheels to synchronize the playback.
+
+> A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ's frequently control lighting via MIDI touchpad controllers.
+
+To configure **MIDI Notes** open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.
+
+In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.
+
+In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.
+
+-   The numbers 0 ⟶  127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.
+    
+-   Tabs at the bottom filter the type of MIDI message to be received.
+    
+-   Channel # may also be selected to filter just messages being received on the selected channel.
+    
+The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.
+
+<p align=center> ![14.3-IO-Settings-MIDI-Notes](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0qfxuNCNVAbnJvsQuIf3%2F14.3-IO-Settings-MIDI-Notes.webp?alt=media&token=dec7af76-bb68-46d8-b305-5eadbf31491c) </p>
+
+**Assign MIDI Notes to Controllers:**
+
+1.  In Midi Tab enable Notes In or Notes Out.
+    
+2.  By default, all 16 available channels will be selected. Deselect as needed.
+    
+3.  In Notes/Commands Tab select the tab for the type of MIDI message to be received. 
+
+Possible messages types are:
+
+   - **Note** (Note ON = press down on controller key, Note OFF = release of controller key).
+
+   - **After Touch** 
+
+   - **Continuous Controller** 
+
+   - **Path Change** 
+
+   - **Channel Pressure** 
+
+   - **Pitch Bend** 
+   
+4. Tap {Teach } - The Teach key will turn purple.
+    
+5. Tap the desired note box in the MIDI grid - The box will turn purple.
+    
+6. Press any one of the controller keys - The location and button function of the controller will appear in the box.
+    
+7. Tap the {Teach} key again to toggle it off.
+    
+8. Tap Apply or press \[ENTER] to close the popup.
+
+**Assign MIDI Continuous Controller to Vibe Controller:**
+
+1.  Select the channel that the MIDI message will be received on.
+    
+2.  Select the tab for the type of MIDI message to be received. In this case **Continuous Controller**.
+    
+3. Tap {Teach } - The Teach key will turn purple.
+    
+4. Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.
+    
+5. Move any of the Vibe slider faders - The location and controller type will appear in the box.
+    
+6. Tap the {Teach} key again to toggle it off.
+    
+7. Tap Apply or press \[ENTER] to close the popup.
+    
+
+**Assign Macros to a MIDI note:**
+
+1.  Select the channel that the MIDI message will be received on.
+    
+2.  Select the tab for the type of MIDI message to be received.
+    
+3.  Tap {Teach } - The Teach key will turn purple.
+    
+4.  Tap the desired note box in the MIDI grid - The box will turn purple.
+    
+5.  Press \[MACRO] - The Macro selector popup will appear.
+    
+6.  Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.
+    
+7.  Tap the {Teach} key again to toggle it off.
+    
+8.  Tap Apply or press \[ENTER] to close the popup.
+
+**Additional functions:**
+
+-  Tap {Clear} followed by a MIDI grid box to clear its assignment.
+    
+-  Tap {Clear All} to clear all MIDI assignments.
+    
+-  Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.
+    
+-  Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.
+
+### MSC
+
+**MIDI Show Control** is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard. 
+
+MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.
+
+The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications. 
+
+Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia
+    
+Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices. 
+
+Basic MSC commands are:
+
+-   Go
+
+-   Stop
+
+-   Fire (Generally used for macros)
+
+Also supported on receive are:
+
+-   All fixtures
+
+-   General lights
+
+-   Moving lights
+
+**Receive MSC:**
+
+1.  Tap {MTC In} in the I/O Settings popup, Midi Tab.
+    
+2.  Match the {Device #} to number of the peer that will be sending the control commands.
+    
+3.  If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.
+    
+4.  If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers. 
+
+**Transmit MSC:**
+
+<span style="color:Gray">Not implemented yet.</span>
+
+Recommended reading: http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm
+
