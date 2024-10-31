@@ -70,7 +70,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
             text: item[1],
             onClick: function(e) {
               e.preventDefault();
-              window.open("https://www.dropbox.com/scl/fi/vb3ei3topxbeqbuvihjsh/B_4.01.vsw?rlkey=ioq7tkrpw2xd89fdog61qbxre&st=prt7x1vr&dl=1");
+              window.open(item[0]);
             }
           };
         })
