@@ -17,7 +17,7 @@ This chapter describes the Offline Tool integrated software that is used for sys
 
 The Offline Tool is a Vibe inbuilt software used for the system maintenance.
 
-<p align=center> ![19.1-Offline-Tool](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHoESYHwWRzS9I5V0co7M%2F19.1-Offline-Tool.webp?alt=media&token=831bc420-ee73-4b55-9863-162becdebf81) </p>
+`r create_image_tag("19.OfflineTool", "19.1-Offline-Tool", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHoESYHwWRzS9I5V0co7M%2F19.1-Offline-Tool.webp?alt=media&token=831bc420-ee73-4b55-9863-162becdebf81")`
 
 Offline Tool can be launched either from the Vibe Menu or from the OS programs.
 

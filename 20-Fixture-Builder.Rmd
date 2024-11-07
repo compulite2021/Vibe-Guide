@@ -11,7 +11,7 @@ This chapter describes the Fixture Builder integrated software that is used for 
 
 The Fixture Builder is a Vibe inbuilt software used to manage the Device Database.
 
-<p align=center> ![20.1-Fixture-Builder](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmdfOLP5EOkSlqpzGsAKN%2F20.1-Fixture-Builder.webp?alt=media&token=d1ba8352-7aba-4e5c-94b6-7400081c12f6) </p>
+`r create_image_tag("20.FixtureBuilder", "20.1-Fixture-Builder", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmdfOLP5EOkSlqpzGsAKN%2F20.1-Fixture-Builder.webp?alt=media&token=d1ba8352-7aba-4e5c-94b6-7400081c12f6")`
 
 Fixture Devices may be created, imported and exported through the Fixture Builder.
 

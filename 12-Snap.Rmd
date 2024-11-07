@@ -54,7 +54,7 @@ OR  Press \[SNAP] \[#] \[STORE].
 
 Snaps may be viewed on the Exam view:
 
-<p align=center> ![12.1-Snap-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJXqd9ruLkRNPDHzLsVE%2F12.1-Snap-Exam.webp?alt=media&token=531f7279-ea09-41bb-8644-a91d376e14f0) </p>
+`r create_image_tag("12.Snap", "12.1-Snap-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJXqd9ruLkRNPDHzLsVE%2F12.1-Snap-Exam.webp?alt=media&token=531f7279-ea09-41bb-8644-a91d376e14f0")`
 
 
 ## Trigger Snaps {#Trigger-Snaps-12.2}
@@ -86,7 +86,7 @@ Snaps on Vibe are absolute: all controllers are replaced with new loaded objects
 
 These additional options can be enabled or disabled in the System Settings on Defaults tab.
 
-<p align=center> ![12.2-Default-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQfHdbCHHRCh5Qb6bexaZ%2F12.2-Default-Snap-Settings.webp?alt=media&token=256944da-8054-4f3a-a3eb-1827b1f16337) </p>
+`r create_image_tag("12.Snap", "12.2-Default-Snap-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQfHdbCHHRCh5Qb6bexaZ%2F12.2-Default-Snap-Settings.webp?alt=media&token=256944da-8054-4f3a-a3eb-1827b1f16337")`
 
 -   Load Pages - Restore the controllers to the page they were on when the Snap was stored.
     
@@ -139,7 +139,7 @@ OR  \[SETTINGS] \[HERE] to any controller button and select the Qlist Properties
 
  - Triggering will be disabled for the Qlist assigned to that specific controller.
 
-<p align=center> ![12.3-Qlist-Preferences](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F26CHJIB6I3eGUOPN0cia%2F12.3-Qlist-Preferences.webp?alt=media&token=f595f9cc-139f-41ea-a2be-578aade60b49) </p>
+`r create_image_tag("12.Snap", "12.3-Qlist-Preferences", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F26CHJIB6I3eGUOPN0cia%2F12.3-Qlist-Preferences.webp?alt=media&token=f595f9cc-139f-41ea-a2be-578aade60b49")`
 
 
 ## Snap Time {#Snap-Time-12.4}
@@ -151,7 +151,7 @@ When a Snap is triggered the current playback status will fade to the status sto
 
 **Set a Snap Time:**
 
-<p align=center> ![12.4-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fz8I5mMcTSUSBiyoouB1t%2F12.4-Snap-Settings.webp?alt=media&token=fd59ca71-e087-42c4-9ea9-817cf8c00c6e) </p>
+`r create_image_tag("12.Snap", "12.4-Snap-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fz8I5mMcTSUSBiyoouB1t%2F12.4-Snap-Settings.webp?alt=media&token=fd59ca71-e087-42c4-9ea9-817cf8c00c6e")`
 
 1.  Press \[SNAP] \[#] \[SETTINGS] - The Snap Settings popup will appear.
     

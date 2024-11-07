@@ -17,6 +17,7 @@ bookdown::gitbook:
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
         <br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
     download: [["https://www.dropbox.com/scl/fi/kxmpw82npahozvg0u6pnh/VibeManual.pdf?rlkey=uxre6fdqi3nw1am6to5baeh61&st=f18356j7&dl=1","PDF"], ["VibeManual.epub","EPUB"]]
+
 github:
   is_project_page: false
 

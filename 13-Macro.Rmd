@@ -33,7 +33,7 @@ OR  Press \[MACRO] \[#] \[STORE] - The Macro is now stored.
 
 Macros may be viewed on the Exam view:
 
-<p align=center> ![13.1-Macro-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBzuKpOpf14wLkGEEhTVA%2F13.1-Macro-Exam.webp?alt=media&token=55197489-cdbe-4beb-bdf7-e7331b615336) </p>
+`r create_image_tag("13.Macro", "13.1-Macro-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBzuKpOpf14wLkGEEhTVA%2F13.1-Macro-Exam.webp?alt=media&token=55197489-cdbe-4beb-bdf7-e7331b615336")`
 
 
 ## Trigger Macros {#Trigger-Macros-13.2}
@@ -94,7 +94,7 @@ OR    \[SETTINGS] \[HERE] to any controller button and select the Qlist Properti
 
  - Triggering will be disabled for the Qlist assigned to that specific controller.
     
-<p align=center> ![13.3-Qlist-Preferences](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F188nTOMZ5WJxMWy80rKd%2F13.3-Qlist-Preferences.webp?alt=media&token=107a342e-1465-4763-ba67-de2ec7348262) </p>
+`r create_image_tag("13.Macro", "13.3-Qlist-Preferences", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F188nTOMZ5WJxMWy80rKd%2F13.3-Qlist-Preferences.webp?alt=media&token=107a342e-1465-4763-ba67-de2ec7348262")`
 
 
 ## Macro Time {#Macro-Time-13.4}

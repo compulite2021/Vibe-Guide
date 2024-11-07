@@ -122,7 +122,7 @@ Controller Display and Backlit Controller Key's color coding:
 
 ### Grand Master + BlackOut
 
-<p align=center> ![11.1-GM+BO](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBuHYeHU8VWvHQ3YtHY4C%2F11.1-GM%2BBO.webp?alt=media&token=307468f4-d0d0-4530-a532-23533cb54a6a){height=500px} </p>
+`r create_image_tag("11.Playback", "11.1-GM+BO", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBuHYeHU8VWvHQ3YtHY4C%2F11.1-GM%2BBO.webp?alt=media&token=307468f4-d0d0-4530-a532-23533cb54a6a", "500")`
 
 The main controllers of the console are the Grand Master, or GM, and the BlackOut, or B.O.
 
@@ -136,7 +136,7 @@ The main controllers of the console are the Grand Master, or GM, and the BlackOu
 
 ### A/B CrossFader
 
-<p align=center> ![11.1-AB-Xfader](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfvgXDkcqoTN9YdqRtEAD%2F11.1-AB-Xfader.webp?alt=media&token=f1f643c6-4aca-43c3-bcea-82f63b5196ce){height=500px} </p>
+`r create_image_tag("11.Playback", "11.1-AB-Xfader", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfvgXDkcqoTN9YdqRtEAD%2F11.1-AB-Xfader.webp?alt=media&token=f1f643c6-4aca-43c3-bcea-82f63b5196ce", "500")`
 
 The **Manual Crossfader** set is a controller with 2 non-motorized sliders and 2 buttons.
 
@@ -156,7 +156,7 @@ The **Manual Crossfader** set is a controller with 2 non-motorized sliders and 2
 
 ### Slider
 
-<p align=center> ![11.1-Slider](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F4gVuzzeCzpyXZxlAHjad%2F11.1-Slider.webp?alt=media&token=eabde232-1b07-49d7-9293-07710a907717){height=500px} </p>
+`r create_image_tag("11.Playback", "11.1-Slider", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F4gVuzzeCzpyXZxlAHjad%2F11.1-Slider.webp?alt=media&token=eabde232-1b07-49d7-9293-07710a907717", "500")`
 
 - The **Slider** set is a controller with 1 motorized slider and 3 buttons.
 
@@ -192,7 +192,7 @@ When a **Submaster** is assigned:
   
 ### Qkey
 
-<p align=center> ![11.1-Qkey](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FWMOvvzj3r6s6lCDVkPnS%2F11.1-Qkey.webp?alt=media&token=b84ee975-85a1-436c-b6b8-f2ada40a0cc0) </p>
+`r create_image_tag("11.Playback", "11.1-Qkey", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FWMOvvzj3r6s6lCDVkPnS%2F11.1-Qkey.webp?alt=media&token=b84ee975-85a1-436c-b6b8-f2ada40a0cc0")`
 
 - The **Qkey** set is a controller with 1 knob or slider (virtual only) and 1 single button.
 
@@ -216,7 +216,7 @@ When a **Submaster** is assigned:
 
 ### AuxKey
 
-<p align=center> ![11.1-Auxkey](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZ2uBBVyjvZpjEU7FTuwi%2F11.1-Auxkey.webp?alt=media&token=c7168fa4-b69e-405f-b8ae-7744e73a1319) </p>
+`r create_image_tag("11.Playback", "11.1-Auxkey", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZ2uBBVyjvZpjEU7FTuwi%2F11.1-Auxkey.webp?alt=media&token=c7168fa4-b69e-405f-b8ae-7744e73a1319")`
 
 - The **Auxkey** set is a controller with 1 slider (virtual only) and 1 single button.
 
@@ -240,7 +240,7 @@ When a **Submaster** is assigned:
 
 ### Global Slider
 
-<p align=center> ![11.1-Global-Slider](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&token=45c6b4f6-86a6-4541-805b-4990a1b16fa8) </p>
+`r create_image_tag("11.Playback", "11.1-Global-Slider", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&token=45c6b4f6-86a6-4541-805b-4990a1b16fa8")`
 
 - The **Global Slider** set is a controller with 1 non-motorized slider and 1 button.
 
@@ -278,7 +278,7 @@ Vibe software makes no distinction between physical and virtual controllers, thi
 
 ### Grand Master + BlackOut
 
-<p align=center> ![11.2-Virtual-GM+BO](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhrHZoPnVEZtQfvc9LQSl%2F11.2-Virtual-GM%2BBO.webp?alt=media&token=a80beef9-6cf6-4022-8225-86176bd56d6f){height=500px} </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-GM+BO", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhrHZoPnVEZtQfvc9LQSl%2F11.2-Virtual-GM%2BBO.webp?alt=media&token=a80beef9-6cf6-4022-8225-86176bd56d6f", "500")`
 
 Open the virtual Grand Master with \[SHIFT] + \[B.O.]
 
@@ -292,19 +292,19 @@ A Virtual BlackOut button can be added to the layout by selecting it from the Si
 
 ### A/B Crossfader
 
-<p align=center> ![11.2-Virtual-AB](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F636jtLTCbEm0vUPK6EH0%2F11.2-Virtual-AB.webp?alt=media&token=0bb3e16d-8923-4a54-b062-9f22c9226003){height=500px} </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-AB", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F636jtLTCbEm0vUPK6EH0%2F11.2-Virtual-AB.webp?alt=media&token=0bb3e16d-8923-4a54-b062-9f22c9226003", "500")`
 
 The Virtual A/B Crossfader has a Locker between the sliders used to set if the sliders' behaviour should be Splitted (**Separated**) or Merged (**In/Out**).
 
 ### Slider
 
-<p align=center> ![11.2-Virtual-Slider-Set](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgZGMCl5CNUsg57iVS5Oh%2F11.2-Virtual-Slider-Set.webp?alt=media&token=0a380142-bea2-49aa-8d79-6dc8232929ae) </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-Slider-Set", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgZGMCl5CNUsg57iVS5Oh%2F11.2-Virtual-Slider-Set.webp?alt=media&token=0a380142-bea2-49aa-8d79-6dc8232929ae")`
 
 Virtual Sliders show the controller's page and number, the name and number of the content loaded, the current and next Cue name and number, the fader level, and the icons of the functions assigned to the buttons and faders.
 
 ### Qkeys
 
-<p align=center> ![11.2-Virtual-Qkey-Set](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgTyMg8t5WFdSpioxR6Xc%2F11.2-Virtual-Qkey-Set.webp?alt=media&token=85b27b29-5f67-48ca-8018-46d1af9cc2ee) </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-Qkey-Set", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgTyMg8t5WFdSpioxR6Xc%2F11.2-Virtual-Qkey-Set.webp?alt=media&token=85b27b29-5f67-48ca-8018-46d1af9cc2ee")`
 
 Qkeys can have a virtual button and a virtual fader, or a virtual set of fader and button, independently from the corresponding physical controller's hardware (single button or knob).
 
@@ -312,7 +312,7 @@ Virtual QKeys show the controller's page and number, the name and number of the 
 
 ### Auxkey
 
-<p align=center> ![11.2-Virtual-Auxkey-Set](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fn540yqAjEOEjgW3XNOML%2F11.2-Virtual-Auxkey-Set.webp?alt=media&token=b19361a4-86d8-45c3-9cbb-697438198285) </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-Auxkey-Set", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fn540yqAjEOEjgW3XNOML%2F11.2-Virtual-Auxkey-Set.webp?alt=media&token=b19361a4-86d8-45c3-9cbb-697438198285")`
 
 Auxkeys can have a virtual button and a virtual fader, or a virtual set of fader and button, independently from the corresponding physical controller's hardware (single button).
 
@@ -320,7 +320,7 @@ Virtual AuxKeys show the controller's page and number, the name and number of th
 
 ### Global Slider
 
-<p align=center> ![11.2-Virtual-Global-Slider-Set](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSiriADzNvmCs21idtqEF%2F11.2-Virtual-Global-Set.webp?alt=media&token=872afad5-3f6d-4100-864e-7fc3b2c42b8e) </p>
+`r create_image_tag("11.Playback", "11.2-Virtual-Global-Set", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSiriADzNvmCs21idtqEF%2F11.2-Virtual-Global-Set.webp?alt=media&token=872afad5-3f6d-4100-864e-7fc3b2c42b8e")`
 
 Global Sliders can have a virtual button and a virtual fader, or a virtual set of fader and button, independently from the corresponding physical controller's hardware (the physical global sliders are only on the main Vibe console, but the virtual global sliders can be added to any layout).
 
@@ -348,7 +348,7 @@ Virtual Global Sliders show the controller's page and number, the name and numbe
 
 - The Master Controller is linked to the Master Controller Keys.
 
-<p align=center> ![11.3-Virtual-Master-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fs5ICrEzOojPfJUo7QSGE%2F11.3-Virtual-Master-Keys.webp?alt=media&token=a0c265f2-7d88-4ab6-8027-925d9f38f06c) </p>
+`r create_image_tag("11.Playback", "11.3-Virtual-Master-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fs5ICrEzOojPfJUo7QSGE%2F11.3-Virtual-Master-Keys.webp?alt=media&token=a0c265f2-7d88-4ab6-8027-925d9f38f06c")`
 
 The Master Controller has 4 buttons associated:
 
@@ -400,7 +400,7 @@ GOTO a cue on the Master Controller using system Cue Time:
 
 GOTO a cue on the Master Controller using Goto Cue popup:
 
-<p align=center> ![11.3-GOTO-Cue](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1ACRqc57zNfSpppYxzxI%2F11.3-GOTO-Cue.webp?alt=media&token=8cfa60fe-d10d-4b79-b374-e0377ed7a236) </p>
+`r create_image_tag("11.Playback", "11.3-GOTO-Cue", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1ACRqc57zNfSpppYxzxI%2F11.3-GOTO-Cue.webp?alt=media&token=8cfa60fe-d10d-4b79-b374-e0377ed7a236")`
 
 1.  Press \[GOTO] - Goto Cue popup will open.
     
@@ -440,7 +440,7 @@ Operational Keys allow to manage the controllers with basic and fundamental oper
 
 The Operation Keys are physical buttons on the panel and can be added as virtual a view on the layout.
 
-<p align=center> ![11.3-Virtual-Operation-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUf4hLdJhxJ1JfiBGl1TO%2F11.3-Virtual-Operation-Keys.webp?alt=media&token=a6fb2775-569b-4405-bd0f-e1a049f1e7a7) </p>
+`r create_image_tag("11.Playback", "11.3-Virtual-Operation-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUf4hLdJhxJ1JfiBGl1TO%2F11.3-Virtual-Operation-Keys.webp?alt=media&token=a6fb2775-569b-4405-bd0f-e1a049f1e7a7")`
 
 The Operational Keys are: Select, Load, Release, Free, Protect
 
@@ -554,7 +554,7 @@ Command Keys allow to manage the playback of the objects on the controllers, pro
 
 The Command Keys are physical buttons on the panel and can be added as a virtual view on the layout.
 
-<p align=center> ![11.3-Virtual-Command-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FxJSrnq9WQ27TYaRTaZvq%2F11.3-Virtual-Command-Keys.webp?alt=media&token=27aa0fb7-10fa-4a19-8db2-c1d640b3af62) </p>
+`r create_image_tag("11.Playback", "11.3-Virtual-Command-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FxJSrnq9WQ27TYaRTaZvq%2F11.3-Virtual-Command-Keys.webp?alt=media&token=27aa0fb7-10fa-4a19-8db2-c1d640b3af62")`
 
 The Command Keys are: 
 
@@ -608,7 +608,7 @@ The motorized sliders may be assigned to any one of 4 modes.
 
 Controller modes are are designed for "On the Fly" usage, allowing a quick modification to various rate and effect parameters. 
 
-<p align=center> ![11.3-Slider-Mode-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJLnSVdcibTaugj0fzi2L%2F11.3-Slider-Mode-Keys.webp?alt=media&token=f34d4fed-738a-44b9-8816-a8b46f138f87){height=500px} </p>
+`r create_image_tag("11.Playback", "11.3-Slider-Mode-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJLnSVdcibTaugj0fzi2L%2F11.3-Slider-Mode-Keys.webp?alt=media&token=f34d4fed-738a-44b9-8816-a8b46f138f87", "500")`
 
 -   \[**FADERS**] - Normal behavior for the Sliders, as assigned in Controller Definitions
     
@@ -636,7 +636,7 @@ The PB Status may be added to the layout as a single box, for a single controlle
 
 The view's settings allow to set which target controller is shown, that may be the A/B Crossfader, a Slider, a Qkey, an AuxKey or a Global Slider.
 
-<p align=center> ![11.4-PB-Status](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZyTU5BFijaq62pwstEAf%2F11.4-PB-Status.webp?alt=media&token=676ba904-025a-4fbe-805b-ccea6b885b6e) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Status", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZyTU5BFijaq62pwstEAf%2F11.4-PB-Status.webp?alt=media&token=676ba904-025a-4fbe-805b-ccea6b885b6e")`
 
 The contents shown on the PB Status are:
 
@@ -668,7 +668,7 @@ To edit the defaults, open System Settings and tap on the Defaults Tab, then:
 
 ### Controller Actions
 
-<p align=center> ![11.4-PB-Actions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F31SiXDfKzmPi2MsuBxxv%2F11.4-PB-Actions.webp?alt=media&token=289ff1a9-281a-4b78-9162-6635fd5b50e5) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Actions", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F31SiXDfKzmPi2MsuBxxv%2F11.4-PB-Actions.webp?alt=media&token=289ff1a9-281a-4b78-9162-6635fd5b50e5")`
 
 Assign Buttons and Slider Behavior:
 
@@ -684,8 +684,8 @@ Assign Buttons and Slider Behavior:
 
 **Assignable Button Behavior:**
 
-<p align=center> ![11.4-PB-Actions-Button-1](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfgJFXCwpORzkpdmDwHKf%2F11.4-PB-Actions-Button-1.webp?alt=media&token=d5e85eed-a44b-465f-992b-712053a66a8e) </p>
-<p align=center> ![11.4-PB-Actions-Button-2](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEyKWX8EzeiVL02odgjeI%2F11.4-PB-Actions-Button-2.webp?alt=media&token=7508c13a-a5fd-4513-8fae-40aa41ec56aa) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Actions-Button-1", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfgJFXCwpORzkpdmDwHKf%2F11.4-PB-Actions-Button-1.webp?alt=media&token=d5e85eed-a44b-465f-992b-712053a66a8e")`
+`r create_image_tag("11.Playback", "11.4-PB-Actions-Button-2", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEyKWX8EzeiVL02odgjeI%2F11.4-PB-Actions-Button-2.webp?alt=media&token=7508c13a-a5fd-4513-8fae-40aa41ec56aa")`
 
   - **Blackout** - Disables the Button.
 
@@ -729,7 +729,7 @@ Assign Buttons and Slider Behavior:
 
 **Assignable Slider Behavior:**
 
-<p align=center> ![11.4-PB-Actions-Slider](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Ffm6zguNdAh4FjIcu7bpL%2F11.4-PB-Actions-Slider.webp?alt=media&token=dda97381-da81-4794-b2fd-c7bdddd78d5e) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Actions-Slider", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Ffm6zguNdAh4FjIcu7bpL%2F11.4-PB-Actions-Slider.webp?alt=media&token=dda97381-da81-4794-b2fd-c7bdddd78d5e")`
 
   - **None** - Disables the Fader.
 
@@ -759,7 +759,7 @@ Assign Buttons and Slider Behavior:
 
 ### Controller Settings
 
-<p align=center> ![11.4-PB-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOpGr00NLY5vZlUNalTjp%2F11.4-PB-Settings.webp?alt=media&token=62d1f596-adf3-4e88-8e41-d358982e72c9) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOpGr00NLY5vZlUNalTjp%2F11.4-PB-Settings.webp?alt=media&token=62d1f596-adf3-4e88-8e41-d358982e72c9")`
 
 The left column allows to select one or more controllers to be configured.
 
@@ -833,7 +833,7 @@ OR
 
 3. Rotate the virtual wheel to the desired Priority Group number or tap the center of the wheel until it turns red and type a Priority number from 0 to 999.
 
-<p align=center> ![11.4-PB-Settings-Priority](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FnEVRNlHw2RiRcbOPqFK1%2F11.4-PB-Settings-Priority.webp?alt=media&token=ebe22bcc-349d-4028-9e2b-43d28ea35dcc) </p>
+`r create_image_tag("11.Playback", "11.4-PB-Settings-Priority", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FnEVRNlHw2RiRcbOPqFK1%2F11.4-PB-Settings-Priority.webp?alt=media&token=ebe22bcc-349d-4028-9e2b-43d28ea35dcc")`
 
 **Move Controllers**
 
@@ -867,7 +867,7 @@ The controllers method to open every object settings popup is:
 
 **Qlist Settings** 
 
-<p align=center> ![11.4-Qlist-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqDUZ7YGesCpST3DMpp8c%2F11.4-Qlist-Settings.webp?alt=media&token=44e80369-6eed-40d9-bbd8-687b78fbcc3f) </p>
+`r create_image_tag("11.Playback", "11.4-Qlist-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqDUZ7YGesCpST3DMpp8c%2F11.4-Qlist-Settings.webp?alt=media&token=44e80369-6eed-40d9-bbd8-687b78fbcc3f")`
 
 The first column allows to select one or more Qlists to be configured.
 
@@ -925,7 +925,7 @@ The **Release Time Wheel** may be used to set a specific Release Time for the Ql
 
 **Chase Settings** 
 
-<p align=center> ![11.4-Chase-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fd25Of6NE3lCrYXQbqgrj%2F11.4-Chase-Settings.webp?alt=media&token=23efcebc-2f1e-4a73-af8f-9355030b88ba) </p>
+`r create_image_tag("11.Playback", "11.4-Chase-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fd25Of6NE3lCrYXQbqgrj%2F11.4-Chase-Settings.webp?alt=media&token=23efcebc-2f1e-4a73-af8f-9355030b88ba")`
 
 Chase Settings Tab is enabled only when the selected Qlist is in Chaser Mode.
 
@@ -955,7 +955,7 @@ The fourth column contains the Chaser Properties:
 
 **Cue Settings** 
 
-<p align=center> ![11.4-Cue-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfZkDxGODjwr1ue6g4kGT%2F11.4-Cue-Settings.webp?alt=media&token=05fa7ddd-d677-4a55-a6f2-0a8120fa5eed) </p>
+`r create_image_tag("11.Playback", "11.4-Cue-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfZkDxGODjwr1ue6g4kGT%2F11.4-Cue-Settings.webp?alt=media&token=05fa7ddd-d677-4a55-a6f2-0a8120fa5eed")`
 
 Cue Settings popup opens by tapping on the Cue name into the Playback Status box.
 
@@ -1005,7 +1005,7 @@ The White fields under the columns may be used to write the Cue's name and the C
 
 **Scene Settings** 
 
-<p align=center> ![11.4-Scene-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTPL5ihHWlCUuojf8zSSn%2F11.4-Scene-Settings.webp?alt=media&token=4720598b-1a9d-440b-bf1b-5e9e39342dc7) </p>
+`r create_image_tag("11.Playback", "11.4-Scene-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTPL5ihHWlCUuojf8zSSn%2F11.4-Scene-Settings.webp?alt=media&token=4720598b-1a9d-440b-bf1b-5e9e39342dc7")`
 
 The first column allows to select one or more Scenes to be configured.
 
@@ -1045,7 +1045,7 @@ Other useful examples of compound controllers combinations are:
 
 - and many more...
     
-<p align=center> ![11.4-Compound-Controllers](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fhf1ngGXebgmlAE8Zypyv%2F11.4-Compound-Controllers.webp?alt=media&token=ba588161-cc81-44db-bd7d-247bd0ac98fe) </p>
+`r create_image_tag("11.Playback", "11.4-Compound-Controllers", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fhf1ngGXebgmlAE8Zypyv%2F11.4-Compound-Controllers.webp?alt=media&token=ba588161-cc81-44db-bd7d-247bd0ac98fe")`
 
 If Playback slider controllers and Qkey buttons are linked to the same object, it could be comfortable to synchronize the paging of Sliders and Qkeys. 
 
@@ -1087,7 +1087,7 @@ As many Live Controller Views as needed may be added to the layout, and each of 
 
 The **Header** of the view reports the controller that is currently shown and the name of the object loaded on that controller.
 
-<p align=center> ![11.5-Live-PB-Header](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBjVVWHrSpO9zUutO5Pod%2F11.5-Live-PB-Header.webp?alt=media&token=74b27c41-01fd-48fe-846d-0dea2847e501) </p>
+`r create_image_tag("11.Playback", "11.5-Live-PB-Header", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBjVVWHrSpO9zUutO5Pod%2F11.5-Live-PB-Header.webp?alt=media&token=74b27c41-01fd-48fe-846d-0dea2847e501")`
 
 The **List button** enables/disables the automatic scrolling of the Cues.
 
@@ -1095,7 +1095,7 @@ The **Arrow button** shows or hides the empty columns (fields with no data).
 
 The **Chain button** opens the Controller Selection popup.
 
-<p align=center> ![11.5-PB-Selection](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbVJMrYvWuXOcdmjeZQCu%2F11.5-PB-Selection.webp?alt=media&token=f1ab51a5-e694-4b4b-bb70-8ff64759e09c) </p>
+`r create_image_tag("11.Playback", "11.5-PB-Selection", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbVJMrYvWuXOcdmjeZQCu%2F11.5-PB-Selection.webp?alt=media&token=f1ab51a5-e694-4b4b-bb70-8ff64759e09c")`
 
 The target controller that needs to be shown on the view can be selected from the list on the popup, divided per Controller Type, Page Number and Controller Number.
 
@@ -1105,21 +1105,21 @@ The **Tabs** on the bottom of the Live Controller view switch between:
 
 -   **Cue Sheet** - shows all the Cue's numbers, names, times and notes.
 
-<p align=center> ![11.5-Live-PB-Cue-Sheet](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJrLfVURsAjKRK8YnO2ZM%2F11.5-Live-PB-Cue-Sheet.webp?alt=media&token=054d9553-9754-4844-85a6-088d1fafabf9) </p>
+`r create_image_tag("11.Playback", "11.5-Live-PB-Cue-Sheet", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJrLfVURsAjKRK8YnO2ZM%2F11.5-Live-PB-Cue-Sheet.webp?alt=media&token=054d9553-9754-4844-85a6-088d1fafabf9")`
 
 👉 Cue Sheet may be used to directly access the Cue's Timing popup by tapping on the desired time cell, either to rename the Cues by tammping on the Cue Name cell and digit the text on the keyboard.
 
 -   **Playback** - shows all the Controller's settings, actions and state.
 
-<p align=center> ![Live-PB-Playback](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FtkqV2TAJ1bDu4jVbWnqP%2F11.5-Live-PB-Playback.webp?alt=media&token=191543e7-7ef4-4e76-b835-428db6166111) </p>
+`r create_image_tag("11.Playback", "11.5-Live-PB-Playback", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FtkqV2TAJ1bDu4jVbWnqP%2F11.5-Live-PB-Playback.webp?alt=media&token=191543e7-7ef4-4e76-b835-428db6166111")`
 
 -   **Cue Exam** - shows a table of the values contained in the current Cue, listed by Fixture.
 
-<p align=center> ![Live-PB-Cue-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTqfzPOfPMVJlBkbhSE2d%2F11.5-Live-PB-Cue-Exam.webp?alt=media&token=479a6247-e424-4d6e-9d0b-fa8cb92578c9) </p>
+`r create_image_tag("11.Playback", "11.5-Live-PB-Cue-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTqfzPOfPMVJlBkbhSE2d%2F11.5-Live-PB-Cue-Exam.webp?alt=media&token=479a6247-e424-4d6e-9d0b-fa8cb92578c9")`
 
 -   **Preview** - shows a table of the values contained in the next Cue, listed by Fixture.
 
-<p align=center> ![Live-PB-Preview](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMW5BYQrw2kph0ElUlcqi%2F11.5-Live-PB-Preview.webp?alt=media&token=0ff93dcd-bb13-4917-855c-221b8a2d64cf) </p>
+`r create_image_tag("11.Playback", "11.5-Live-PB-Preview", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMW5BYQrw2kph0ElUlcqi%2F11.5-Live-PB-Preview.webp?alt=media&token=0ff93dcd-bb13-4917-855c-221b8a2d64cf")`
 
 
 ## Teach Rate {#Teach-Rate-11.6}
@@ -1146,7 +1146,7 @@ The Rate Screen operates outside of the editor and is non destructive. Changes m
 Press the \[RATE] button to open the Rate Picker on the Smart Screen.
 
 <p align=center>**Smart Screen - Rate Picker**</p>
-<p align=center> ![11.6-Rate-Picker](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSlOxvR4LvBrEGIFs3wue%2F11.6-Rate-Picker.webp?alt=media&token=551939ea-d447-4aa0-9000-c4a97032cbd5) </p>
+`r create_image_tag("11.Playback", "11.6-Rate-Picker", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSlOxvR4LvBrEGIFs3wue%2F11.6-Rate-Picker.webp?alt=media&token=551939ea-d447-4aa0-9000-c4a97032cbd5")`
 
 **Rate Screen**
 
@@ -1221,7 +1221,7 @@ To indentify the Freezed Controllers, an indicator will appear on the controller
 
 **Transport Bar**
 
-<p align=center> ![11.6-Rate-Transport-Bar](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLBMGjtIkx4EXwMgT5jZe%2F11.6-Rate-Transport-Bar.webp?alt=media&token=177b438c-d7ad-4b3e-88a4-ebc9421b71ff) </p>
+`r create_image_tag("11.Playback", "11.6-Rate-Transport-Bar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLBMGjtIkx4EXwMgT5jZe%2F11.6-Rate-Transport-Bar.webp?alt=media&token=177b438c-d7ad-4b3e-88a4-ebc9421b71ff")`
 
 When actively in the Rate Screen, physical controller keys are mapped to the rate interface and may not be used to activate Qlists, cues, or scenes. As an alternative, the transport bar may be used. To use the transport bar:
 
@@ -1245,7 +1245,7 @@ When actively in the Rate Screen, physical controller keys are mapped to the rat
     
 **Teach Rate**
 
-<p align=center> ![11.6-Rate-&-Teach-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGNG5gxys1j5DbGoIJztX%2F11.6-Rate-%26-Teach-Keys.webp?alt=media&token=7b467785-b797-4de7-ad96-826417cafb2c){height=100px} </p>
+`r create_image_tag("11.Playback", "11.6-Rate-Teach-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGNG5gxys1j5DbGoIJztX%2F11.6-Rate-%26-Teach-Keys.webp?alt=media&token=7b467785-b797-4de7-ad96-826417cafb2c", "100")`
 
 Teach may be used with the button on the Rate screen or with the \[TEACH] button on the panel.
 

@@ -22,7 +22,7 @@ System Settings popup is accessed by selecting {System Settings} from the Vibe M
 
 **Editing Properties**
 
-<p align=center> ![4.1-Editing](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNNoYXU4i6e6QscExGbkj%2F4.1-Editing.webp?alt=media&token=c0fecb69-5272-499d-b6a5-930d888583cf) </p>
+`r create_image_tag("04.Settings", "4.1-Editing", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNNoYXU4i6e6QscExGbkj%2F4.1-Editing.webp?alt=media&token=c0fecb69-5272-499d-b6a5-930d888583cf")`
 
 **Default Stage Value:**
 
@@ -126,7 +126,7 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
 
 **Timing Properties**
 
-<p align=center> ![4.1-Timing](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIcR1gofMK7RVnA9oJDAe%2F4.1-Timing.webp?alt=media&token=6be55950-ae48-40de-bd03-3f92bc95c8b5) </p>
+`r create_image_tag("04.Settings", "4.1-Timing", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIcR1gofMK7RVnA9oJDAe%2F4.1-Timing.webp?alt=media&token=6be55950-ae48-40de-bd03-3f92bc95c8b5")`
 
 **Default Back Time:**
 
@@ -167,7 +167,7 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
 
 **Hardware Properties**
 
-<p align=center> ![4.1-Hardware](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FA7h4cZw0skedOgA6pIcp%2F4.1-Hardware.webp?alt=media&token=a871977d-901a-4a7d-ac9f-e67182b8d174) </p>
+`r create_image_tag("04.Settings", "4.1-Hardware", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FA7h4cZw0skedOgA6pIcp%2F4.1-Hardware.webp?alt=media&token=a871977d-901a-4a7d-ac9f-e67182b8d174")`
 
 **Panel Backlight:**
 
@@ -184,7 +184,7 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
 
 -   **Defaults** are the customizable initial settings for most system objects.
 
-<p align=center> ![4.1-Defaults](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FKDaS981KDVSrsiwlWZSk%2F4.1-Defaults.webp?alt=media&token=75b911d3-d967-4f6c-9a1e-ef825da0d05a) </p>
+`r create_image_tag("04.Settings", "4.1-Defaults", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FKDaS981KDVSrsiwlWZSk%2F4.1-Defaults.webp?alt=media&token=75b911d3-d967-4f6c-9a1e-ef825da0d05a")`
 
 #### Controller Settings
 
@@ -202,7 +202,7 @@ Controller Settings are divided into:
 
 - Priority
 
-<p align=center> ![4.1-Default-Controller-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeJSJU05B38fe0SESH83r%2F4.1-Default-Controller-Settings.webp?alt=media&token=54fb6d4e-fd9c-4976-84f8-54db9993077e) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Controller-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeJSJU05B38fe0SESH83r%2F4.1-Default-Controller-Settings.webp?alt=media&token=54fb6d4e-fd9c-4976-84f8-54db9993077e")`
 
 **Flash behavior:**
 
@@ -260,13 +260,13 @@ Controller Actions are divided into:
 
 - Other Controllers: 1 fader + 1 button
 
-<p align=center> ![4.1-Default-Controller-Actions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzmQEnfWzoNY3Fobqo8e2%2F4.1-Default-Controller-Actions.webp?alt=media&token=5593432d-0d35-4560-9396-fa55d142c7cd) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Controller-Actions", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzmQEnfWzoNY3Fobqo8e2%2F4.1-Default-Controller-Actions.webp?alt=media&token=5593432d-0d35-4560-9396-fa55d142c7cd")`
 
 -   When a Scene is configured as a **Group Submaster** it has a unique set of functions and button options.
 
 #### Snap Settings
 
-<p align=center> ![4.1-Default-Snap-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3nnpfbC4r4vxD8OBMKLZ%2F4.1-Default-Snap-Settings.webp?alt=media&token=9ecb6875-a49c-449e-854e-04312bcd8906) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Snap-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3nnpfbC4r4vxD8OBMKLZ%2F4.1-Default-Snap-Settings.webp?alt=media&token=9ecb6875-a49c-449e-854e-04312bcd8906")`
 
 **Load Pages:**
 
@@ -286,7 +286,7 @@ Controller Actions are divided into:
     
 #### Qlist Settings
 
-<p align=center> ![4.1-Default-Qlist-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fck5k6sMuxvbeUviTC7AD%2F4.1-Default-Qlist-Settings.webp?alt=media&token=b64275d3-be33-480e-af8f-6177b269cd87) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Qlist-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fck5k6sMuxvbeUviTC7AD%2F4.1-Default-Qlist-Settings.webp?alt=media&token=b64275d3-be33-480e-af8f-6177b269cd87")`
 
 **Qlist Mode:**
 
@@ -322,7 +322,7 @@ Controller Actions are divided into:
     
 **Loop GO Behavior:**
 
-<p align=center> ![4.1-LoopGO-Behaviour](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmnROkDiIWiBGnQj6vf9p%2F4.1-LoopGO-Behaviour.webp?alt=media&token=429b11fd-daba-4984-a08c-d509d46804fb) </p>
+`r create_image_tag("04.Settings", "4.1-LoopGO-Behaviour", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmnROkDiIWiBGnQj6vf9p%2F4.1-LoopGO-Behaviour.webp?alt=media&token=429b11fd-daba-4984-a08c-d509d46804fb")`
 
 **Release time:**
 
@@ -340,7 +340,7 @@ Controller Actions are divided into:
 
 #### Chaser Settings
 
-<p align=center> ![4.1-Default-Chase-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FvxkccbPIvdCgANBMXEzS%2F4.1-Default-Chase-Settings.webp?alt=media&token=7b979868-fdf9-448e-8483-3ecf061590a6) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Chase-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FvxkccbPIvdCgANBMXEzS%2F4.1-Default-Chase-Settings.webp?alt=media&token=7b979868-fdf9-448e-8483-3ecf061590a6")`
 
 **Chase pattern:**
 
@@ -372,7 +372,7 @@ Controller Actions are divided into:
 
 #### Cue Settings
 
-<p align=center> ![4.1-Default-Cue-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpHSVuqdBonoFWnbbWTUN%2F4.1-Default-Cue-Settings.webp?alt=media&token=0afb16ab-8712-46b2-9220-6895c876b66c) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Cue-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpHSVuqdBonoFWnbbWTUN%2F4.1-Default-Cue-Settings.webp?alt=media&token=0afb16ab-8712-46b2-9220-6895c876b66c")`
 
 **Time:**
  
@@ -388,7 +388,7 @@ Controller Actions are divided into:
 
 #### Cue Store Options
 
-<p align=center> ![4.1-Default-Cue-Store-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjWAWEK3nEiBmULkPSP6F%2F4.1-Default-Cue-Store-Options.webp?alt=media&token=90da10a5-7534-4158-a406-5c0fff738cf6) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Cue-Store-Options", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjWAWEK3nEiBmULkPSP6F%2F4.1-Default-Cue-Store-Options.webp?alt=media&token=90da10a5-7534-4158-a406-5c0fff738cf6")`
 
 - **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
 
@@ -402,7 +402,7 @@ Controller Actions are divided into:
 
 #### Scene Settings
 
-<p align=center> ![4.1-Default-Scene-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fdwk5MAhgJ5EXEVuoOD8J%2F4.1-Default-Scene-Settings.webp?alt=media&token=ef2c6700-7c85-4096-88c5-145c73758a82) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Scene-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fdwk5MAhgJ5EXEVuoOD8J%2F4.1-Default-Scene-Settings.webp?alt=media&token=ef2c6700-7c85-4096-88c5-145c73758a82")`
 
 **Time In** 
 
@@ -412,7 +412,7 @@ Controller Actions are divided into:
 	
 #### Scene Store Options
 
-<p align=center> ![4.1-Default-Scene-Store-Options](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQa6h7JqvZ5TZNiBmBwYu%2F4.1-Default-Scene-Store-Options.webp?alt=media&token=9a406b38-ecce-44d2-838e-1ec546a53038) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Scene-Store-Options", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQa6h7JqvZ5TZNiBmBwYu%2F4.1-Default-Scene-Store-Options.webp?alt=media&token=9a406b38-ecce-44d2-838e-1ec546a53038")`
 
 - **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
 
@@ -444,7 +444,7 @@ Controller Actions are divided into:
 
 ***Default Library Settings:**  
 
-<p align=center> ![4.1-Default-Library-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FteX7SwGf3UUSES72cXKF%2F4.1-Default-Library-Settings.webp?alt=media&token=af8a9292-5cb6-4ed9-9a99-0918e09f25b0) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Library-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FteX7SwGf3UUSES72cXKF%2F4.1-Default-Library-Settings.webp?alt=media&token=af8a9292-5cb6-4ed9-9a99-0918e09f25b0")`
 
 - Library Type - Set the library behavior between Fixture Specific, Parameter Specific, Pattern, Device+Fixture, Device+Parameter, Device+Pattern.
 
@@ -466,7 +466,7 @@ Controller Actions are divided into:
 
 - The popup window is used to edit, for each bank, which parameters will be filtered by the library.
 
-<p align=center> ![4.1-Default-Library-Filters](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqBYlFdRyWMWzhHj2ifyL%2F4.1-Default-Library-Filters.webp?alt=media&token=b3e032bb-6080-435d-95e0-80d4eb6dedf2) </p>
+`r create_image_tag("04.Settings", "4.1-Default-Library-Filters", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqBYlFdRyWMWzhHj2ifyL%2F4.1-Default-Library-Filters.webp?alt=media&token=b3e032bb-6080-435d-95e0-80d4eb6dedf2")`
 
 - Select the library bank from the Library column, then tap the parameters in the **Available** box to add them to the **Filtered** box, so that the library will store them.
 
@@ -478,7 +478,7 @@ Controller Actions are divided into:
 
 - The popup window is used to create and edit the **Filters** that can be used on-the-fly when storing libraries, cues and scenes. 
 
-<p align=center> ![4.1-Filters-General](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fyu15qaiGxeWPhXSieCZq%2F4.1-Filters-General.webp?alt=media&token=5eadeb0d-8a9c-467a-aa7e-d30f93d7d5e0) </p>
+`r create_image_tag("04.Settings", "4.1-Filters-General", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fyu15qaiGxeWPhXSieCZq%2F4.1-Filters-General.webp?alt=media&token=5eadeb0d-8a9c-467a-aa7e-d30f93d7d5e0")`
 
 - The keys on the left side are used to create, delete or renumber Filters and to assign them a name and a specific softkey color.
 
@@ -486,7 +486,7 @@ Controller Actions are divided into:
 
 ### System
 
-<p align=center> ![4.1-System](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeFUNtLcN6IF29kE81jdN%2F4.1-System.webp?alt=media&token=1b093e18-8e27-4734-9c81-62dfe130be64) </p>
+`r create_image_tag("04.Settings", "4.1-System", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeFUNtLcN6IF29kE81jdN%2F4.1-System.webp?alt=media&token=1b093e18-8e27-4734-9c81-62dfe130be64")`
 
 **Auto Save:**
 
@@ -512,7 +512,7 @@ Vibe is made up of four modules:
     
 **LPU and HAL Status** LEDs are on the status box:
 
-<p align=center> ![4.1-Status-Box](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEEgMYGBUYvlQoKYOy5Z3%2F4.1-Status-Box.webp?alt=media&token=dd629a94-7ae5-44a3-926e-942ae16bf75f) </p>
+`r create_image_tag("04.Settings", "4.1-Status-Box", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEEgMYGBUYvlQoKYOy5Z3%2F4.1-Status-Box.webp?alt=media&token=dd629a94-7ae5-44a3-926e-942ae16bf75f")`
 
 -   In the case of an unexpected halt, the toggled on modules will attempt a restart.
 
@@ -542,13 +542,13 @@ For Network management, please refer to the **Network Chapter**.
 
 ### Network
 
-<p align=center> ![4.2-Network](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEIiETLGveQLErBHgewSm%2F4.2-Network.webp?alt=media&token=fda464b2-7add-4c98-b5a5-d7dbfa84626f) </p>
+`r create_image_tag("04.Settings", "4.2-Network", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FEIiETLGveQLErBHgewSm%2F4.2-Network.webp?alt=media&token=fda464b2-7add-4c98-b5a5-d7dbfa84626f")`
 
 ### Users
 
 <span style="color:Gray"> **(Not implemented yet)** </span>
 
-<p align=center> ![4.2-Users](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FswKGGvGy2yKlNJnD0vtH%2F4.2-Users.webp?alt=media&token=8b774634-623c-4d66-8b89-459b889301d0) </p>
+`r create_image_tag("04.Settings", "4.2-Users", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FswKGGvGy2yKlNJnD0vtH%2F4.2-Users.webp?alt=media&token=8b774634-623c-4d66-8b89-459b889301d0")`
 
 
 ## DMX Settings {#DMX-Settings-4.3}
@@ -556,7 +556,7 @@ For Network management, please refer to the **Network Chapter**.
 
 DMX Settings popup is accessed by selecting {DMX Settings} from the Vibe Menu or by tapping the \[DMX Settings] single button key.
 
-<p align=center> ![4.3-DMX-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9KxUiz9C7AY5U7ywKL1g%2F4.3-DMX-Settings.webp?alt=media&token=3754ef73-3dd4-4bad-8c33-d033cb317a14) </p>
+`r create_image_tag("04.Settings", "4.3-DMX-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9KxUiz9C7AY5U7ywKL1g%2F4.3-DMX-Settings.webp?alt=media&token=3754ef73-3dd4-4bad-8c33-d033cb317a14")`
 
 DMX Settings popup has 4 tabs:
 
@@ -576,7 +576,7 @@ For DMX output management, physical or over network protocols, please refer to t
 
 I/O Settings popup is accessed by selecting {I/O Settings} from the Vibe Menu or by tapping the \[I/O Settings] single button key.
 
-<p align=center> ![4.4-IO-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJszbz4pK6iV9Dnv9ojI%2F4.4-IO-Settings.webp?alt=media&token=8c3fb391-77ef-4825-8758-cf6aec3184b5) </p>
+`r create_image_tag("04.Settings", "4.4-IO-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcJszbz4pK6iV9Dnv9ojI%2F4.4-IO-Settings.webp?alt=media&token=8c3fb391-77ef-4825-8758-cf6aec3184b5")`
 
 I/O Settings popup has 4 tabs:
 
@@ -600,7 +600,7 @@ For SMPTE protocol management, please refer to the **Timeline Chapter**.
 
 CITP Settings popup is accessed by selecting {CITP Settings} from the Vibe Menu or by tapping the \[CITP Settings] single button key.
 
-<p align=center> ![4.5-CITP-Settings](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fw7f698U195608dVtoKzv%2F4.5-CITP-Settings.webp?alt=media&token=4555a47d-d81d-4a62-b63f-ba6bd5247f2f) </p>
+`r create_image_tag("04.Settings", "4.5-CITP-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fw7f698U195608dVtoKzv%2F4.5-CITP-Settings.webp?alt=media&token=4555a47d-d81d-4a62-b63f-ba6bd5247f2f")`
 
 CITP Settings popup has 4 tabs:
 

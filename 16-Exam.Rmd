@@ -13,7 +13,7 @@ This chapter deals with viewing and checking the content of any stored object an
 
 The **Exam** view contains all the data stored in the show, divided by object type.
 
-<p align=center> ![16.1-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FR7bpfU0OIquMzpAsrmQS%2F16.1-Exam.webp?alt=media&token=fecb332f-8956-4159-96c6-9383b4543203) </p>
+`r create_image_tag("16.Exam", "16.1-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FR7bpfU0OIquMzpAsrmQS%2F16.1-Exam.webp?alt=media&token=fecb332f-8956-4159-96c6-9383b4543203")`
 
 - The root menu is divided into two main sub menus, {Show} and {Patch}.
 
@@ -31,7 +31,7 @@ The **Exam** view contains all the data stored in the show, divided by object ty
 ## Show Exam {#Show-Exam-16.2}
 
 
-<p align=center> ![16.2-Show-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSsWRSMnvCQSpkLAo3k07%2F16.2-Show-Exam.webp?alt=media&token=43995c95-87e4-4605-b7d3-cf9c50a346db) </p>
+`r create_image_tag("16.Exam", "16.2-Show-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FSsWRSMnvCQSpkLAo3k07%2F16.2-Show-Exam.webp?alt=media&token=43995c95-87e4-4605-b7d3-cf9c50a346db")`
 
 **Qlist** - List of all show Qlists with Cues Count.
 
@@ -101,7 +101,7 @@ The **Exam** view contains all the data stored in the show, divided by object ty
 ## Patch Exam {#Patch-Exam-16.3}
 
 
-<p align=center> ![16.3-Patch-Exam](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfC4uFcURE3TnaTsqKny%2F16.3-Patch-Exam.webp?alt=media&token=3a5f7f68-ac4f-450b-be91-7e548fd79e71) </p>
+`r create_image_tag("16.Exam", "16.3-Patch-Exam", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfC4uFcURE3TnaTsqKny%2F16.3-Patch-Exam.webp?alt=media&token=3a5f7f68-ac4f-450b-be91-7e548fd79e71")`
 
 **Devices** - List of all imported Devices and their properties.
 

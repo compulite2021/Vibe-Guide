@@ -31,7 +31,7 @@ The consoles share the same programming features but they have a different hardw
 
 
 <p align=center>**VIBE**</p>
-<p align=center> ![2.1-Vibe-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu3Dh7NEmJ7yaqImbo3Z2%2F2.1-Vibe-front.webp?alt=media&token=2e16015a-b07f-49cc-b829-66570cefd03e) </p>
+`r create_image_tag("02.Hardware", "2.1-Vibe-front", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu3Dh7NEmJ7yaqImbo3Z2%2F2.1-Vibe-front.webp?alt=media&token=2e16015a-b07f-49cc-b829-66570cefd03e")`
 
 Built-in 21.5” plus 11.6” Full HD multi-touch screens
 
@@ -53,7 +53,7 @@ Weight: 26.7kg (60.0lb)
 
 
 <p align=center>**VIBE M**</p>
-<p align=center> ![2.1-VibeM-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLAOBKbRG3YV3ueTyjacQ%2F2.1-VibeM-front.webp?alt=media&token=ce8ded0b-1722-4273-8a19-cb753c6a7a57) </p>
+`r create_image_tag("02.Hardware", "2.1-VibeM-front", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLAOBKbRG3YV3ueTyjacQ%2F2.1-VibeM-front.webp?alt=media&token=ce8ded0b-1722-4273-8a19-cb753c6a7a57")`
 
 Built-in 15.6” plus 11.6” Full HD multi-touch screens
 
@@ -73,7 +73,7 @@ Weight: 22.8kg (50.2lb)
 
 
 <p align=center>**VIBEY**</p>
-<p align=center> ![2.1-Vibey-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBE6gmdqSoF8BZmHneuNZ%2F2.1-Vibey-front.webp?alt=media&token=485a70be-56aa-44b0-96c6-804f83107f46) </p>
+`r create_image_tag("02.Hardware", "2.1-Vibey-front", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBE6gmdqSoF8BZmHneuNZ%2F2.1-Vibey-front.webp?alt=media&token=485a70be-56aa-44b0-96c6-804f83107f46")`
 
 
 Built-in 21.5” Full HD multi-touch screen
@@ -99,7 +99,7 @@ All the consoles run the same Vibe software, that is also available in a free de
 
 
 <p align=center>**VIBE PC**</p>
-<p align=center> ![2.1-VibePC](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmxodfPufMiPZKwXnCgl5%2F2.1-Vibe-PC.webp?alt=media&token=27d44e1d-1bff-4717-972f-de79e5157e02) </p>
+`r create_image_tag("02.Hardware", "2.1-VibePC", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FmxodfPufMiPZKwXnCgl5%2F2.1-Vibe-PC.webp?alt=media&token=27d44e1d-1bff-4717-972f-de79e5157e02")`
 
 Vibe PC is a useful tool for console training, feature and fixture test, remote programming and live lighting control as well. It may be used to communicate with a 3D visualizer and to pre-program show files, that can be easily moved between any Vibe system.
 
@@ -122,7 +122,7 @@ Vibe PC Wing can be used in network with any Vibe Console running as a control e
 
  
 <p align=center>**VIBE PC WING**</p>
-<p align=center> ![2.2-Vibe-PC-Wing-front](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZZ5YvnTd9P03bsaz1Xy7%2F2.2-Vibe-PC-Wing-front.webp?alt=media&token=f7ca2fe5-c7e7-40b8-b114-bcd7755e93a8) </p>
+`r create_image_tag("02.Hardware", "2.2-Vibe-PC-Wing-front", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZZ5YvnTd9P03bsaz1Xy7%2F2.2-Vibe-PC-Wing-front.webp?alt=media&token=f7ca2fe5-c7e7-40b8-b114-bcd7755e93a8")`
 
 Width: 654mm (25.75")
 
@@ -146,7 +146,7 @@ The Vibe Consoles and Wings have the following In/Out connectors:
 
 
 <p align=center>**Vibe**</p>
-<p align=center> ![2.3-Vibe-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2zBJLFNHr0zXidFy5e9X%2F2.3-Vibe-rear.webp?alt=media&token=4ceba074-2d5a-48f8-8053-8ebd258dbc70) </p>
+`r create_image_tag("02.Hardware", "2.3-Vibe-rear", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2zBJLFNHr0zXidFy5e9X%2F2.3-Vibe-rear.webp?alt=media&token=4ceba074-2d5a-48f8-8053-8ebd258dbc70")`
 
 8 Physical DMX 512 input/output ports (RDM supported).
 
@@ -180,7 +180,7 @@ PowerCon AC Input
 
 
 <p align=center>**Vibe M**</p>
-<p align=center> ![2.3-VibeM-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiqaKhMODV7uIwsOi32tA%2F2.3-VibeM-rear.webp?alt=media&token=1e7ebae2-ce50-4c30-b1ad-9506800ae6f2) </p>
+`r create_image_tag("02.Hardware", "2.3-VibeM-rear", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiqaKhMODV7uIwsOi32tA%2F2.3-VibeM-rear.webp?alt=media&token=1e7ebae2-ce50-4c30-b1ad-9506800ae6f2")`
 
 8 Physical DMX 512 input/output ports (RDM supported).
 
@@ -214,7 +214,7 @@ PowerCon AC Input
 
 
 <p align=center>**Vibey**</p>
-<p align=center> ![2.3-Vibey-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzYtLfOBTtM51hpZHa4hC%2F2.3-Vibey-rear.webp?alt=media&token=1ad1d095-bac5-484f-867f-696f5747e5db) </p>
+`r create_image_tag("02.Hardware", "2.3-Vibey-rear", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzYtLfOBTtM51hpZHa4hC%2F2.3-Vibey-rear.webp?alt=media&token=1ad1d095-bac5-484f-867f-696f5747e5db")`
 
 4 Physical DMX 512 input/output ports (RDM supported).
 
@@ -248,7 +248,7 @@ PowerCon AC Input
 
 
 <p align=center>**Vibe PC Wing**</p>
-<p align=center> ![2.3-Vibe-PC-Wing-rear](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FX5fm2Wk70F9d0bAL2JIl%2F2.3-Vibe-PC-Wing-rear.webp?alt=media&token=49724d7a-729a-47f4-8538-3da040191a93) </p>
+`r create_image_tag("02.Hardware", "2.3-Vibe-PC-Wing-rear", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FX5fm2Wk70F9d0bAL2JIl%2F2.3-Vibe-PC-Wing-rear.webp?alt=media&token=49724d7a-729a-47f4-8538-3da040191a93")`
 
 4 Physical DMX 512 input/output ports (RDM supported).
 
@@ -277,7 +277,7 @@ PowerCon AC Input
 Editor Controls are used to program and edit parameter values for all fixtures as well as to create and edit objects such as cues and libraries.
  
 <p align=center>**Editor**</p>
-<p align=center> ![2.4-Editor](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzrJfgkfNBXIda8em6kmf%2F2.4-Editor.webp?alt=media&token=4c500a73-d20a-4e69-bd44-4a58681f657f){height=500px} </p>
+`r create_image_tag("02.Hardware", "2.4-Editor", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzrJfgkfNBXIda8em6kmf%2F2.4-Editor.webp?alt=media&token=4c500a73-d20a-4e69-bd44-4a58681f657f", "500")`
 
  • 1 Dedicated dimmer wheel
  
@@ -308,14 +308,14 @@ Editor Controls are used to program and edit parameter values for all fixtures a
 Master Controls are used to trigger the Controller assigned as the Master and to limit the intensity of all the fixtures.
  
 <p align=center>**Grand Master and BlackOut**</p>
-<p align=center> ![2.5-GM+BO](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9GMHGnOudh6O2tcytUnl%2F2.5-GM%2BBO.webp?alt=media&token=8ed9082b-a8ab-461f-af7d-59b241103c41){height=500px} </p>
+`r create_image_tag("02.Hardware", "2.5-GM+BO", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F9GMHGnOudh6O2tcytUnl%2F2.5-GM%2BBO.webp?alt=media&token=8ed9082b-a8ab-461f-af7d-59b241103c41", "500")`
 
  • **\[Grand Master]** Slider.
  
  • **\[BO]** Blackout key.
 
 <p align=center>**A/B and Master Keys**</p>
-<p align=center> ![2.5-Master+A/B](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfiXcNrYbTzg5rTdriZ5%2F2.5-Master%2BAB.webp?alt=media&token=8d1cbacb-8ce0-47b6-ba5c-5121e1a4d436){height=500px} </p>
+`r create_image_tag("02.Hardware", "2.5-Master+AB", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFfiXcNrYbTzg5rTdriZ5%2F2.5-Master%2BAB.webp?alt=media&token=8d1cbacb-8ce0-47b6-ba5c-5121e1a4d436", "500")`
 
  • **\[GO/BACK/HOLD]** keys for executing cues on the Master Controller.
  
@@ -328,7 +328,7 @@ Master Controls are used to trigger the Controller assigned as the Master and to
 Playback Controls are used to trigger the Objects assigned to the controller.
 
 <p align=center>**Playback**</p>
-<p align=center> ![2.6-Playback](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqOUb9JAc8XcIFfclklxN%2F2.6-Playback.webp?alt=media&token=0f8ebb5a-5b1a-4d21-9153-c0069b01343e){height=500px} </p>
+`r create_image_tag("02.Hardware", "2.6-Playback", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqOUb9JAc8XcIFfclklxN%2F2.6-Playback.webp?alt=media&token=0f8ebb5a-5b1a-4d21-9153-c0069b01343e", "500")`
 
  • Individually paging **Slider Set Controllers** with motorized fader and three buttons for for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.
  
@@ -348,7 +348,7 @@ These keys are divided into two groups: Operation Keys and Command Keys.
 **\[Operation Keys]** manage the assignments to the controllers.
  
 <p align=center>**Operation Keys**</p>
-<p align=center> ![2.7-Operation-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&token=45c6b4f6-86a6-4541-805b-4990a1b16fa8) </p>
+`r create_image_tag("02.Hardware", "2.7-Operation-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FToEgkuAcd4SnxRFp44IW%2F00-Upload-Image.webp?alt=media&token=45c6b4f6-86a6-4541-805b-4990a1b16fa8")`
 
  • **\[SELECT]** key to assign the Master Controller.
  
@@ -365,7 +365,7 @@ These keys are divided into two groups: Operation Keys and Command Keys.
 **\[Command Keys]** provide additional functions to the controllers.
  
 <p align=center>**Command Keys**</p>
-<p align=center> ![2.7-Command-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F03BJgpqih15TcgY2jisu%2F2.7-Command-Keys.webp?alt=media&token=4d3ce841-3160-41b1-81d0-2eb7d1e3c823){height=500px} </p>
+`r create_image_tag("02.Hardware", "2.7-Command-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F03BJgpqih15TcgY2jisu%2F2.7-Command-Keys.webp?alt=media&token=4d3ce841-3160-41b1-81d0-2eb7d1e3c823", "500")`
 
  • **\[FLASH]** makes the target controller flash.
  
@@ -402,7 +402,7 @@ These keys are divided into two groups: Operation Keys and Command Keys.
 Page Keys are used to quickly move between the pages.
 
 <p align=center>**Page Keys**</p>
-<p align=center> ![2.8-Page-Keys](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FF6iHunCxQPJrmb5bgAcA%2F2.8-Page-Keys.webp?alt=media&token=8cc195b4-fdec-4e4a-b9d5-bbb375b64ca9){height=200px} </p>
+`r create_image_tag("02.Hardware", "2.8-Page-Keys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FF6iHunCxQPJrmb5bgAcA%2F2.8-Page-Keys.webp?alt=media&token=8cc195b4-fdec-4e4a-b9d5-bbb375b64ca9", "200")`
 
   • **\[VIEW]** Accesses the Pages View.
 
