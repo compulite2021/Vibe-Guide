@@ -84,11 +84,11 @@ Video contents, managed on the Media Bank, don't have a specific library because
 
 3.  Press \[LIBRARY] - Library {Store Options} popup will open at the bottom of the Smart Screen and {Banks} will appear on the Editor Toolbar.
 
-`r create_image_tag("08.Library", "8.1-Library-Store-Options", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdDqiDGvr3fFtVf1gv3kk%2F8.1-Library-Store-Options.webp?alt=media&token=b2390804-086c-4fe2-b8fa-385f01c48617")`
+`r create_image_tag("08.Library", "8.1-Library-Store-Options")`
 
 4. Tap a parameter {Bank} key on the Editor Toolbar.
 
-`r create_image_tag("08.Library", "8.1-Library-Editor-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FBeakMvTkWeKecaKXGeB5%2F8.1-Library-Editor-Toolbar.webp?alt=media&token=1c181fe5-e9b0-4a44-b5f1-7852387784d9")`
+`r create_image_tag("08.Library", "8.1-Library-Editor-Toolbar")`
 
 **A shortcut for Bank selection is to specify a number directly after pressing \[LIBRARY] key:**
 
@@ -124,7 +124,7 @@ The next number typed will be the library number.
 
 2.  Press \[UPDATE] - The Update popup will open. 
 
-`r create_image_tag("08.Library", "8.1-Update", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fs8kVzpWHWBzpry4YtU9o%2F8.1-Update.webp?alt=media&token=4b72ca3d-a1a0-439a-b93f-ca6a48f937a0")`
+`r create_image_tag("08.Library", "8.1-Update")`
 
 Two columns will appear: the left column shows **Cues** available for updating and the right column shows **Libraries** available for updating. The target library or libraries should be selected.
 
@@ -140,7 +140,7 @@ Two columns will appear: the left column shows **Cues** available for updating a
 
 3.  The {Cancel, Update, Overwrite, Release} popup will appear on the large screen.
 
-`r create_image_tag("08.Library", "8.1-Library-Exists", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMulpNI0surUjqzM7WoiH%2F8.1-Library-Exists.webp?alt=media&token=b0a45645-21ea-4544-9545-40aab0c5a190")`
+`r create_image_tag("08.Library", "8.1-Library-Exists")`
 
 4.  Tap {Overwrite} to replace all fixtures with those in the Editor, {Update} to merge the editor into the library, or {Release} to remove the selected fixtures from the Library.
 
@@ -152,7 +152,7 @@ Two columns will appear: the left column shows **Cues** available for updating a
 
 Library Settings may be changed at any time after they are created using the Library Settings popup.
 
-`r create_image_tag("08.Library", "8.1-Library-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fu796at3dvGQLUiIOQGY9%2F8.1-Library-Settings.webp?alt=media&token=ac63e724-d9df-4b19-b8bd-807925f49d18")`
+`r create_image_tag("08.Library", "8.1-Library-Settings")`
 
 To open the Library Settings popup: 
 
@@ -191,7 +191,7 @@ For most Delete functions, pressing \[DELETE] \[DELETE] will do the same as pres
 
 The Long Click gesture on any softkey, including the libraries, opens a temporary menu where the user can directly select the most used functions:
 
-`r create_image_tag("08.Library", "8.1-SK-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FC8abJS5nqZmOWvLWcZ25%2F8.1-SK-Menu.webp?alt=media&token=4d24c8e6-d948-46bf-90e5-9638fc745f30")`
+`r create_image_tag("08.Library", "8.1-SK-Menu")`
 
 - Copy: make a copy of the object, that may then be pasted on a different SK
 
@@ -223,7 +223,7 @@ Context adapts the visualization to the last selected object type or bank, for e
 
 The Context view's settings popup on the layout editing toolbar allows to filter the contents shown by the context view.
 
-`r create_image_tag("08.Library", "8.1-Context-Settings-Smart", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FI84SUAtGcJZaHZlZXnq5%2F8.1-Context-Settings-Smart.webp?alt=media&token=536c2748-a2f1-41c7-9279-3cc8df9289e5")`
+`r create_image_tag("08.Library", "8.1-Context-Settings-Smart")`
 
 Context views can be filtered manually, by toggling the contents to enable and disable, or automatically, by setting the **Smart** option. Smart context setting will avoid to show the softkeys that are already shown by other softkey views on the same page.
 
@@ -235,7 +235,7 @@ The option to Auto Generate Groups and Libraries permits a smart and fast creati
 
 The Auto Generate button is on the Editor Toolbar in Patch pages. 
 
-`r create_image_tag("08.Library", "8.2-AutoGenerate", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FOM5cqS5GiU5HpHwY6MfI%2F8.2-AutoGenerate.webp?alt=media&token=56480c65-2cc6-4a1a-9786-19556fa82e1d")`
+`r create_image_tag("08.Library", "8.2-AutoGenerate")`
 
 - By selecting the options in the Auto Generate popup menu, the user can configure the quantity and numbering of the libraries to be automatically created.
 
@@ -257,7 +257,7 @@ The Auto Generate button is on the Editor Toolbar in Patch pages.
 
 When storing Bank Libraries, filters are used to exclude parameters from unrelated banks. The Library filter defaults are set under the **Filters** popup, **Library Defaults** tab.
 
-`r create_image_tag("08.Library", "8.3-Library-Defaults", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fnv4rumj3C631P64dgyc0%2F8.3-Library-Defaults.webp?alt=media&token=7febd85c-b042-47e4-b7eb-b9a8d1120259")`
+`r create_image_tag("08.Library", "8.3-Library-Defaults")`
 
 **Change Defaults:**
 
@@ -323,7 +323,7 @@ Change library reference on the library settings or, as system default, in the s
 
 On the Fly Filters are used to filter editor parameters when storing libraries, cues and scenes.
 
-`r create_image_tag("08.Library", "8.4-On-the-Fly-Filters", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzlReE8KLrXl1iaybXPES%2F8.4-On-the-Fly-Filters.webp?alt=media&token=d19490a6-9ba4-4781-8c7a-5dc9ff424dfd")`
+`r create_image_tag("08.Library", "8.4-On-the-Fly-Filters")`
 
 The Green box indicates parameters that will be included in the cue or scene.
 
@@ -376,5 +376,5 @@ Parameters may be included or excluded by the Filter depending on how the filter
 
 7.  Press the {Apply} softkey to apply the filter and stay in the popup or press \[ENTER] or the Apply icon to apply the filter and close the popup.
 
-`r create_image_tag("08.Library", "8.4-Filters-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FML87MkjYl8CiRa6NMFTQ%2F8.4-Filters-Settings.webp?alt=media&token=67ff8869-7e26-415a-8b20-b34a19b4401c")`
+`r create_image_tag("08.Library", "8.4-Filters-Settings")`
 

@@ -67,7 +67,7 @@ Cues and Scenes may be stored:
     
 2. The Store to Controller popup will appear. Tap {Create a new Qlist} the Scene will be assigned to the first available Qlist with the Scene's look being converted to Cue 1.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Store-to-Controller", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJMnYYUvnmPzb5YoZi91i%2F10.1-Store-to-Controller.webp?alt=media&token=dccf3cb2-ba35-4c34-bb4c-bf3071717ec7")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Store-to-Controller")`
 
 **Store Options**
 
@@ -87,7 +87,7 @@ To open the Store Options popup, two methods are available:
     
 2.  Press \[STORE] \[OPTIONS] **Cue Store Options** popup opens. Make selections and press \[HERE] to any button on the destination controller.
     
-`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Store-Options", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FvkS0Gg58lY8OXBpP6S1f%2F10.1-Cue-Store-Options.webp?alt=media&token=5685a032-6d6c-4a43-b453-807c13b14c9c")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Store-Options")`
 
 -   **Source**
 
@@ -148,7 +148,7 @@ Effects may also be edited.
     
 3.  If the cue exits, the **Cue Exists popup** will appear with options for {Cancel, Update, Overwrite, Release}. 
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Exists", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F8Y86BKeyUhPn3C3KIgnY%2F10.1-Cue-Exists.webp?alt=media&token=69796d57-a7d7-4cfa-875a-aa41c5dc0458")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Exists")`
 
 -   Tap {Overwrite} to replace all fixtures with those in the Editor. 
 
@@ -160,11 +160,11 @@ Effects may also be edited.
 
 -   Press \[CUE] \[#] \[SETTINGS] - The Cue Settings popup will appear.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfMYe09Zr7agiyLdh0PWt%2F10.1-Cue-Settings.webp?alt=media&token=4730074a-1ad8-42aa-82b0-59afac36e7e7")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Cue-Settings")`
 
 -   Alternatively tap the {Cue #} area of the source **Playback Status** box to open the Cue Settings popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-PB-Status", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FDSdKq5dwqpPL11D57gKS%2F10.1-PB-Status.webp?alt=media&token=a4f3632c-1cf6-40b7-9a59-2634eea1c99e")`
+`r create_image_tag("10.Scene_Qlist", "10.1-PB-Status")`
 
 Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue Re-number and Cue Tracking options at any time after the Cues are created.
 
@@ -186,7 +186,7 @@ Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue R
     
 **Update options**
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Update", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1HE8X0ZUl3gxdsUvqYsT%2F10.1-Update.webp?alt=media&token=f88e6120-6f33-424c-af8d-8c275b2a0229")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Update")`
 
 1.  Make a change to parameter values already outputting to the stage from an **active** cue or scene.
     
@@ -232,7 +232,7 @@ Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue R
 
 -   Press Apply or \[DELETE] again.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Scene", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2pt3IKJrLSsOuyahNqsH%2F10.1-Delete-Scene.webp?alt=media&token=cf571cb2-1bc8-4d78-b0e8-7b1031553d69")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Scene")`
 
 **Delete a Qlist**
 
@@ -242,7 +242,7 @@ Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue R
 
 -   Press Apply or \[DELETE] again.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Qlist", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FT4cqBeqFr5HFVj3CAyon%2F10.1-Delete-Qlist.webp?alt=media&token=ec0b683e-dc28-47e5-99e1-0fb2e556626a")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Qlist")`
 
 **Delete a Cue**
 
@@ -250,7 +250,7 @@ Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue R
 
 -   Press Apply or \[DELETE] again.
 
-`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Cue", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJhsHg8MOhKtpJG9X9ffl%2F10.1-Delete-Cue.webp?alt=media&token=5a7f6b20-9e73-414c-ab03-85d34b9df562")`
+`r create_image_tag("10.Scene_Qlist", "10.1-Delete-Cue")`
 
 ### Copy & Paste
 
@@ -352,7 +352,7 @@ If the label has to be assigned on an already existing object, the syntax is:
 
 -   \[SCENE] \[#] \[SETTINGS] opens the Scene Settings popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.2-Scene-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FzU5pEN9E9FKJfAp3rc1i%2F10.2-Scene-Settings.webp?alt=media&token=292c8239-36b1-4ee2-9b5a-2cebe1547558")`
+`r create_image_tag("10.Scene_Qlist", "10.2-Scene-Settings")`
 
 One or more scenes can be selected from the Scene column, in order to change the SK color settings and to assign a Time-In and Text.
 
@@ -360,7 +360,7 @@ One or more scenes can be selected from the Scene column, in order to change the
 
 \[SCENE] \[#] \[TIME] opens the Scene Time popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.2-Scene-Time", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FcTiXtExBQUVD24oCvGC4%2F10.2-Scene-Time.webp?alt=media&token=43f3ed47-1b76-4cd7-a6e4-cb636e0eb3ca")`
+`r create_image_tag("10.Scene_Qlist", "10.2-Scene-Time")`
 
 ### Home Scene
 
@@ -452,7 +452,7 @@ The Scene will now act as Submaster on the fixtures included.
 
 The Scene's fixture values will be ignored.
 
-`r create_image_tag("10.Scene_Qlist", "10.3-Submaster-Action", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F8lCG9aVVIxf2gTVo4sSP%2F10.3-Submaster-Action.webp?alt=media&token=26b4baf4-4007-4694-a78a-838bfa9bcdc6")`
+`r create_image_tag("10.Scene_Qlist", "10.3-Submaster-Action")`
 
 **Convert a Submaster into a Scene**
 
@@ -524,7 +524,7 @@ Groupmasters work exactly like Submasters, but they are stored using existing Gr
 
 -   \[QLIST] \[#] \[CUE] \[#] \[SETTINGS] opens the Cue Settings popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Cue-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUXCcfGjg5TMvpskzRPcA%2F10.4-Cue-Settings.webp?alt=media&token=d2ee9786-c9e6-4f41-a30c-dc04795f1ce4")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Cue-Settings")`
 
 One or more Qlists and Cues can be selected from the columns, in order to change their settings, time and properties.
 
@@ -532,7 +532,7 @@ One or more Qlists and Cues can be selected from the columns, in order to change
 
 \[QLIST] \[#] \[CUE] \[#] \[TIME] opens the Cue Time popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Cue-Time", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVi3JJpee2oiJvM6yOWV9%2F10.4-Cue-Time.webp?alt=media&token=77bfcd70-ad9e-45a3-8ce3-3c9f3bbc28d8")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Cue-Time")`
 
 The Cue Time popup is used to set the timing properties of the Cue:
 
@@ -624,7 +624,7 @@ If one or more Params of the fixture selection are active in the Editor, the Tim
 
 The time cells' background is Blue, Red or White according to the Editor state of the parameter.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Param-Time", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ltjLBW2LYpwoN8Ku914%2F10.4-Param-Time.webp?alt=media&token=4d1cb474-2dab-437c-9b7c-f93f83685e9c")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Param-Time")`
 
 **Assign Parameter Time during Cue Creation**
 
@@ -760,7 +760,7 @@ The following command combination enables a cell time fan without the need to to
 
 In the picture below there is a fan between 2 and 6 seconds on the Tilt parameter.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Param-Time-sample", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FxOXQZFtxLJRtQt5B3RQ8%2F10.4-Param-Time-sample.webp?alt=media&token=5fcfbb81-eac4-4138-ab7d-3b81a8901d14")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Param-Time-sample")`
 
 ### Param Profile
 
@@ -792,7 +792,7 @@ Any function from the system functions can be applied as a profile.
 
 4. Popup opens
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Param-Profile", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FRnHCOTvalmMhcWopO4ue%2F10.4-Param-Profile.webp?alt=media&token=09ad09ee-a517-43c0-a92f-7d3cdb9ac4d6")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Param-Profile")`
 
 On the left side there is a list of active parameters in the editor. Colored are the parameters that the settings will be applied to. User can switch a parameter on or off.
 
@@ -802,7 +802,7 @@ On the right side there are options that can be changed and explained in the tab
 
 User may apply the popup with nothing selected on the options or with all the options active.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Param-Profile-apply", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FTtOrzqelhDUcvjDNaRGN%2F10.4-Param-Profile-apply.webp?alt=media&token=b03744eb-20c8-4017-a6ff-ffce8685a2c9")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Param-Profile-apply")`
 
 ### Virtual Param Fade
 
@@ -816,7 +816,7 @@ The **Virtual Parameters** are:
 
 By default the fade between Cues is considering the transition between the physical parameters, but the option can be switched for each Cue, in the Cue Settings popup, to set a fade between the virtual parameters.
 
-`r create_image_tag("10.Scene_Qlist", "10.4-Virtual-Param-Fade", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F25JtEItCG5nrBet0caU6%2F10.4-Virtual-Param-Fade.webp?alt=media&token=97af97dd-054a-4822-ae9c-91c978a5107b")`
+`r create_image_tag("10.Scene_Qlist", "10.4-Virtual-Param-Fade")`
 
 A **Color Fade** using Virtual HUE parameters allows to fade between different color mixes without changing the Saturation, by only moving the Hue value, or to fade only the Saturation (or the Intensity) without changing the tone of the color. 
 
@@ -863,7 +863,7 @@ Opens the Controller Settings with the Qlist Settings Tab, to store the settings
 
 The **Restore default** button rolls back the changed settings to the default ones.
 
-`r create_image_tag("10.Scene_Qlist", "10.5-Qlist-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAuFYH8PLCf1KDEZaOmOe%2F10.5-Qlist-Settings.webp?alt=media&token=01089775-2a34-4d41-976e-0a6e92ac42d7")`
+`r create_image_tag("10.Scene_Qlist", "10.5-Qlist-Settings")`
 
 -   {Qlist Mode} - Defines if the Qlist will play normally or as a Chaser.
 
@@ -1079,7 +1079,7 @@ The Link allows to connect the Cue before the "missing part" to the cue that fol
 
 Cues may be linked using the Link popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.5-Link", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMLwf0TA0dUmnecAtupNZ%2F10.5-Link.webp?alt=media&token=fc143c7a-3136-4d12-9dd5-853d1780cba6")`
+`r create_image_tag("10.Scene_Qlist", "10.5-Link")`
 
 👉 In cue sheet, cues that are disabled because of a Link are grayed out.
 
@@ -1129,7 +1129,7 @@ In many consoles the only way to create a loop is to create a link from the end 
 
 Cues may be looped using the Loop popup.
 
-`r create_image_tag("10.Scene_Qlist", "10.5-Loop", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAAgsmd54nD7CX6ZqknJz%2F10.5-Loop.webp?alt=media&token=7510a42c-f744-4cdb-be56-8bc7126903f8")`
+`r create_image_tag("10.Scene_Qlist", "10.5-Loop")`
 
 In live playback view, cues that are set as Loop Cues have an orange color.
 
@@ -1234,7 +1234,7 @@ In the Qlist Settings popup, set the **Qlist Mode** to Chaser and tap on the Cha
 
 The **Restore default** button rolls back the changed settings to the default ones.
 
-`r create_image_tag("10.Scene_Qlist", "10.6-Chase-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FB1q0PkOZgJfWTPr5yIMl%2F10.6-Chase-Settings.webp?alt=media&token=74d1077b-e384-40c3-a100-b4efba613804")`
+`r create_image_tag("10.Scene_Qlist", "10.6-Chase-Settings")`
 
 - {Chaser Mode} - Defines if the Chaser Time will be controlled by the **Rate** or by **BPM**.
 
@@ -1274,7 +1274,7 @@ The **Restore default** button rolls back the changed settings to the default on
 
 - The Tracksheet can be also used to directly adjust and update the Cues.
 
-`r create_image_tag("10.Scene_Qlist", "10.7-Tracksheet", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlzJUogDu5mAy98JLTDPo%2F10.7-Tracksheet.webp?alt=media&token=8e016bb4-b472-4e8b-89cc-ad1b4bed9bbf")`
+`r create_image_tag("10.Scene_Qlist", "10.7-Tracksheet")`
 
 - Each line represents a Cue, each column represents a parameter of a fixture stored in the Qlist.
 

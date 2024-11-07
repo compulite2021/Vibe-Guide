@@ -122,7 +122,7 @@ For softkeys and controllers driven operations touching the object completes the
 
 {GROUP} \[1] \[Full] \[LIBRARY] {Position} \[3] \[Store] \[Store Options] {Red Only} press any button on \[Controller 1]
 
-`r create_image_tag("06.Editor", "6.2-Syntax", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1KDPKeQ4NluvD0wiyguI%2F6.2-Syntax.webp?alt=media&token=31aee10a-5f67-486f-acf9-74a07ce7a760")`
+`r create_image_tag("06.Editor", "6.2-Syntax")`
 
 The **Command Line** is the area where commands appear as they are entered.
 
@@ -130,7 +130,7 @@ The **Command Line** is the area where commands appear as they are entered.
 
 - When in BLIND Mode the command line is bounded in yellow. 
 
-`r create_image_tag("06.Editor", "6.2-Command-Line", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkDZJqae8mjnHHGV0Fjcl%2F6.2-Command-Line.webp?alt=media&token=95e5e157-52d8-47cb-858a-4704459dd89d")`
+`r create_image_tag("06.Editor", "6.2-Command-Line")`
 
 The **Selection Line** is the area where the active fixture selection appears.
 
@@ -138,7 +138,7 @@ The **Selection Line** is the area where the active fixture selection appears.
 
 - It shows the current fixture selection in the selection order.
 
-`r create_image_tag("06.Editor", "6.2-Selection-Line", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfWUDfU4FDXBtuSYI0Tlv%2F6.2-Selection-Line.webp?alt=media&token=e764e16c-1329-4221-aa21-e628e5604f0e")`
+`r create_image_tag("06.Editor", "6.2-Selection-Line")`
 
 
 ## Selection {#Selection-6.3}
@@ -241,7 +241,7 @@ Press \[LOCK] to make the current selection as the new base selection.
 
 Press \[CE/CLEAR] to return to the upper toolbar’s menu.
 
-`r create_image_tag("06.Editor", "6.3-Selection-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FYwUeTwMPXiXgJgUPKeaz%2F6.3-Selection-Toolbar.webp?alt=media&token=b2540237-7697-457b-b51d-f63bd482aca5")`
+`r create_image_tag("06.Editor", "6.3-Selection-Toolbar")`
 
 Selection toolbar has the following Selection Tools.
 
@@ -275,7 +275,7 @@ Press \[RESTORE] to get back to the original selection.
 
 Press \[CE/CLEAR] to return to the upper toolbar’s menu.
 
-`r create_image_tag("06.Editor", "6.3-Order-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHJZmcLO2KUe07AgJbfel%2F6.3-Order-Toolbar.webp?alt=media&token=e4ba881b-b2a3-494b-a497-f8375dffb035")`
+`r create_image_tag("06.Editor", "6.3-Order-Toolbar")`
 
 Order toolbar has the following Ordering Tools.
 
@@ -340,7 +340,7 @@ The **Live View** shows all values from both the fixtures in the Editor and the 
 
 Color coding is used to distinguish between values coming from the controllers and values in the Editor.
 
-`r create_image_tag("06.Editor", "6.4-Editor-Color-Coding", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbmMY5e60fqLGaFDsXh2p%2F6.4-Editor-Color-Coding.webp?alt=media&token=b9c294e2-4f13-465f-8eff-3d7efec4891b")`
+`r create_image_tag("06.Editor", "6.4-Editor-Color-Coding")`
 
 The Editor priority is always higher than the Playback priority, so any parameter moved in the Editor will overcome the values coming from any controller. 
 Release the parameter or the fixture from the Editor to get back to the controller's output values.
@@ -353,7 +353,7 @@ Vibe is a touch-based system, allowing efficient fixture manipulation through it
 
 As all the other panel's physical components (buttons and controllers), also the Hardkeys may be added to the layout by using the **Virtual HardKeys** View.
 
-`r create_image_tag("06.Editor", "6.4-Virtual-Hardkeys", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F1iTnAReM8On90f9vBQn2%2F6.4-Virtual-Hardkeys.webp?alt=media&token=08d5f9d2-db3e-46cb-8fd5-00d85317a9fc")`
+`r create_image_tag("06.Editor", "6.4-Virtual-Hardkeys")`
 
 ### Blind Editor
 
@@ -361,7 +361,7 @@ The Blind Editor is a parallel Editor used to create or modify objects without o
 
 When using Blind Editor the \[Blind] key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
 
-`r create_image_tag("06.Editor", "6.4-Blind-Editor", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FMJkpGXULgJw7gqMw1YN1%2F6.4-Blind-Editor.webp?alt=media&token=55950c16-663c-4616-b097-e7ce825aaa23")`
+`r create_image_tag("06.Editor", "6.4-Blind-Editor")`
 
 In Blind Editor the syntax and operations on the Objects, such as Store and Update, can be done exactly like in the Live Editor, but with no output on stage. 
 If a change is stored on content that is currently in Playback, then the output will be affected.
@@ -418,7 +418,7 @@ Range text labeling may be done via this method.
 
 -   Using SKs, tap the source {GROUP} SK and then press \[Settings] key.
 
-`r create_image_tag("06.Editor", "6.5-Group-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F76OfTXzWffC4XNPTWe2e%2F6.5-Group-Settings.webp?alt=media&token=7353486e-99d2-4d4f-bd7f-a66442fff2f1")`
+`r create_image_tag("06.Editor", "6.5-Group-Settings")`
 
 **Store Groups from existent Groups:**
 
@@ -464,7 +464,7 @@ By default \[GRAB] selects all fixtures with intensity or virtual intensity valu
 
 Pressing \[GRAB] without a selection opens a popup on the Smart Screen with the following options.
 
-`r create_image_tag("06.Editor", "6.6-Grab", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLCIvikmAZUIsjxuJ0KkP%2F6.6-Grab.webp?alt=media&token=337448df-67ee-4040-8d69-0238ae5b1db3")`
+`r create_image_tag("06.Editor", "6.6-Grab")`
 
 -   **{Filters}** 
 

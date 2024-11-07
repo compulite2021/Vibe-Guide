@@ -62,7 +62,7 @@ The Vibe can be used in networks using a DHCP server but cannot act as a DHCP se
 
 Open the {NETWORK SETTINGS} from Vibe Menu > Settings or tap the Network Settings button - The Network popup will open.
 
-`r create_image_tag("17.Network", "17.1-Network", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FnKSKqVowFHZXZuXiBe7a%2F17.1-Network.webp?alt=media&token=93939e0c-498c-4543-953a-b1e13a3461ad")`
+`r create_image_tag("17.Network", "17.1-Network")`
 
 **Local:**
 
@@ -109,7 +109,7 @@ Open the {NETWORK SETTINGS} from Vibe Menu > Settings or tap the Network Setting
 
 Compulite manufactures the **ePort** brand of DMX over Ethernet nodes. 
 
-`r create_image_tag("17.Network", "17.2-Eports", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fdmflojie8kYBsp2hSqeH%2F17.2-Eports.webp?alt=media&token=e6ba5a0c-1a27-40e8-adad-e67bf88f1304")`
+`r create_image_tag("17.Network", "17.2-Eports")`
 
 **Supported Protocols:**
 
@@ -141,11 +141,11 @@ Any ePort can be connected and configured directly from Vibe's External Devices 
 
 **Vibe External Devices View**
 
-`r create_image_tag("17.Network", "17.2-External-Devices", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdQ5mHlAwGrR8of9gDmmA%2F17.2-External-Devices.webp?alt=media&token=e5b434a7-276e-4c37-bd23-965ad62b4b43")`
+`r create_image_tag("17.Network", "17.2-External-Devices")`
 
 **C-Net Manager software**
 
-`r create_image_tag("17.Network", "17.2-CNet-Manager", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FouQhrjzSFhGbyjR92iSC%2F17.2-CNet-Manager.webp?alt=media&token=ecc7432f-99d9-4fbc-bee2-9c3f0243f5d9")`
+`r create_image_tag("17.Network", "17.2-CNet-Manager")`
 
 **Configure ePorts:**
 
@@ -213,7 +213,7 @@ It is possible to set specific IPs to send the output to. If there is a port con
 
 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("17.Network", "17.3-Unicast-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVQYlzzrlAb84LE9wa1AO%2F17.3-Unicast-Settings.webp?alt=media&token=6311ff99-f63e-47ea-83f1-06b5ed4973c8")`
+`r create_image_tag("17.Network", "17.3-Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 
@@ -237,7 +237,7 @@ RDM is fully supported on the 8 physical DMX output ports and Compulite VC proto
     
 4.  If new devices are added, press {Re Scan}.
 
-`r create_image_tag("17.Network", "17.4-RDM", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FbuhvunwydeyUTgCQyRSD%2F17.4-RDM.webp?alt=media&token=0a0c35bc-db25-4b41-9c0d-74028aa8da94")`
+`r create_image_tag("17.Network", "17.4-RDM")`
 
 
 ## OSC {#OSC-17.5}
@@ -257,7 +257,7 @@ In the I/O Settings popup, on the OSC tab, there is the list of supported OSC st
 
 Custom OSC strings can also be created by the user.
 
-`r create_image_tag("17.Network", "17.5-IO-Settings-OSC", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFSuyAmlrmmYZufcZmoKy%2F17.5-IO-Settings-OSC.webp?alt=media&token=3e02156d-703a-4ca7-abd7-3a713511933d")`
+`r create_image_tag("17.Network", "17.5-IO-Settings-OSC")`
 
 **OSC Output**
 
@@ -268,7 +268,7 @@ The OSC view shows the existing commands, allowing the user to create and edit c
 OSC commands can be attached to Cues with the syntax: 
 \[QLIST], \[#], \[CUE], \[#], \[ATTACH_OSC] (toolbar).
 
-`r create_image_tag("17.Network", "17.5-Attach-OSC", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeytLMo1voISkcLyMwjMJ%2F17.5-Attach-OSC.webp?alt=media&token=d5a0c260-6929-462e-a2ba-9731bd5ad102")`
+`r create_image_tag("17.Network", "17.5-Attach-OSC")`
 
 
 ## CITP {#CITP-17.6}
@@ -304,7 +304,7 @@ In the popup there are 4 tabs:
 
 This tab shows the general information about the console and gives the option to enable/disable CITP communication from/to the console.
 
-`r create_image_tag("17.Network", "17.6-CITP-General", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIhg1Hn7YdumnAH1oDrAp%2F17.6-CITP-General.webp?alt=media&token=b7b5fac9-e6b0-41af-94bd-411700d16a57")`
+`r create_image_tag("17.Network", "17.6-CITP-General")`
 
 ### Media Servers
 
@@ -314,7 +314,7 @@ In order to link a media server to a specific fixture, select a connected media 
 
 In order to get all the available data from a media server, select a connected and linked media server from the list, and tap _Get Data_. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.
 
-`r create_image_tag("17.Network", "17.6-CITP-MediaServers", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQeUe8DimbezOnaCxpVud%2F17.6-CITP-MediaServers.webp?alt=media&token=1a4536f7-03e9-42ad-91f1-0194ced3a04b")`
+`r create_image_tag("17.Network", "17.6-CITP-MediaServers")`
 
 ### Visualizers
 
@@ -326,13 +326,13 @@ To get the patch from a connected visualizer, select it from the list and tap Ge
 
 👉 This action will clear the current show data, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create them on your show.
 
-`r create_image_tag("17.Network", "17.6-CITP-Visualizers", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fzkr7EjIgV423vDEm8Aq0%2F17.6-CITP-Visualizers.webp?alt=media&token=70de4b78-23c0-4e74-ad26-68ba48aae7a1")`
+`r create_image_tag("17.Network", "17.6-CITP-Visualizers")`
 
 **Auto Patch from Capture**
 
 It is possible to sync the show from Capture. In order to do that, set the Capture CITP settings to use Standard Multicast and select the relevant IP address.
 
-`r create_image_tag("17.Network", "17.6-AutoPatch-Capture", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FntHPzJlS61Nsd2gq9z7M%2F17.6-AutoPatch-Capture.webp?alt=media&token=cb591723-6ce0-4950-94ae-ac7b3a4d6b30")`
+`r create_image_tag("17.Network", "17.6-AutoPatch-Capture")`
 
 In addition, make sure Vibe and Capture are on the same subnet. 
 
@@ -342,5 +342,5 @@ After finishing preparing the show on Capture, go to Vibe, open the CITP popup, 
 
 This tab shows a list of the detected Consoles on the network that are using CITP and their state.
 
-`r create_image_tag("17.Network", "17.6-CITP-Consoles", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FJsCz8cFiOgCUTGXEJg3m%2F17.6-CITP-Consoles.webp?alt=media&token=ed1e59bf-6d0e-4fb4-b1a6-e8be6187158f")`
+`r create_image_tag("17.Network", "17.6-CITP-Consoles")`
 

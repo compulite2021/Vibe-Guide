@@ -35,7 +35,7 @@ The same Curves database, containing pre-built curves and user-created custom cu
 
 All the **Curves** are listed in the **Curves View**
 
-`r create_image_tag("09.Effect", "9.1-Curves", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fq3lhjXPwsY2sz6YPJ8mZ%2F9.1-Curves.webp?alt=media&token=34e680d8-dda7-42b0-b806-539f97a31f7e")`
+`r create_image_tag("09.Effect", "9.1-Curves")`
 
 The Curves View header has options to manage the Curves:
 
@@ -51,7 +51,7 @@ The Curves View header has options to manage the Curves:
 
 A Curve creation or editing will open the **Curve Editor** popup.
 
-`r create_image_tag("09.Effect", "9.1-Curve-Editor", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fe6g1ggJHcFJJhyMUY835%2F9.1-Curve-Editor.webp?alt=media&token=7c93e95a-35c0-48b4-8f58-17459aabe80c")`
+`r create_image_tag("09.Effect", "9.1-Curve-Editor")`
 
 Tap the graphic to add anchor points.
 
@@ -85,7 +85,7 @@ A **Basic** Effect Engine opens on the Smart Screen and allows the creation of:
 
   To access the Basic Engine press the \[EFFECT] button with an active fixture selection and optionally a param selection.
 
-`r create_image_tag("09.Effect", "9.2-Basic-FX", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FHUbNhTVfHlZ3RQPxOyDZ%2F9.2-Basic-FX.webp?alt=media&token=eac650bd-1007-471b-88f5-9bb8915f471c")`
+`r create_image_tag("09.Effect", "9.2-Basic-FX")`
 
 An **Advanced** Effect Engine opens on the Wide Screen and allows the creation of:
 
@@ -95,7 +95,7 @@ An **Advanced** Effect Engine opens on the Wide Screen and allows the creation o
 
   To access the Advanced Engine press the \[VIBE] + \[EFFECT] buttons with an active fixture selection and optionally a param selection.
 
-`r create_image_tag("09.Effect", "9.2-Advanced-FX", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyMP0qZtoDYvRxISKUSBO%2F9.2-Advanced-FX.webp?alt=media&token=dd28fa59-0a85-4068-9891-b863de84b10b")`
+`r create_image_tag("09.Effect", "9.2-Advanced-FX")`
 
 Once a Fixture Selection is active, the effect editors can be opened even without a parameter selection, as that can be done afterwards, directly on the effect views.
 
@@ -221,7 +221,7 @@ To Block by Groups, select the Groups as Fixture Selection before entering the E
 
 - However the user can customize Pre-Built effects by editing all the available settings, using the Pre-Built library as a source to built new effects without starting from scratch.
 
-`r create_image_tag("09.Effect", "9.3-Basic-FX-Prebuilt", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FXiHJPVAF1tduGXAHaaNJ%2F9.3-Basic-FX-Prebuilt.webp?alt=media&token=d54f9b7f-8c4e-4ff1-b676-b2076a85a5d8")`
+`r create_image_tag("09.Effect", "9.3-Basic-FX-Prebuilt")`
 
 To create a **Pre-Built Effect**:
 
@@ -251,7 +251,7 @@ After programming an Effect, Close the editor using the Red X in the upper right
 
 - A Basic Effect is obtained by applying a Pattern and a Primitive to the selected Parameters.
 
-`r create_image_tag("09.Effect", "9.4-Basic-FX-Curves", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F2fwHGuG4TtLoOOPeWXrg%2F9.4-Basic-FX-Curves.webp?alt=media&token=dfd29926-584f-42ea-8a19-dfd0e974baeb")`
+`r create_image_tag("09.Effect", "9.4-Basic-FX-Curves")`
 
 To create a **Basic Effect**:
 
@@ -303,7 +303,7 @@ To create a **Basic Effect**:
 
 - Each Effect Track can contain many different frames, called **Effect Events**, with independent primitives, patterns and settings. The result of an advanced effect can be someway similar to a Timeline of effects.
 
-`r create_image_tag("09.Effect", "9.5-Advanced-FX-Sample", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhcxZf2PRDNeIYg0GDAkk%2F9.5-Advanced-FX-Sample.webp?alt=media&token=3e17bd75-29e4-41fa-bbf6-eae7776bac74")`
+`r create_image_tag("09.Effect", "9.5-Advanced-FX-Sample")`
 
 - Effect Tracks are made up of Effect Events running horizontally. 
 
@@ -323,7 +323,7 @@ To create a **Basic Effect**:
     
 -   It is possible to make simultaneous changes to Primitive, Pattern, and Effect settings by toggling them on/off. The selected elements will get a red background.
 
-`r create_image_tag("09.Effect", "9.5-Advanced-FX-Track", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F0ZbOmktpintRIcComkgd%2F9.5-Advanced-FX-Track.webp?alt=media&token=eac82de1-58be-48b6-8ddc-bb7fde160c86")`
+`r create_image_tag("09.Effect", "9.5-Advanced-FX-Track")`
 
 - The Advanced Effect Editor differs from the Basic Effect Editor in the following ways:
 
@@ -333,11 +333,11 @@ To create a **Basic Effect**:
 
  - Multiple Parameters may be assigned to the same Effect Track.
 
-`r create_image_tag("09.Effect", "9.5-Advanced-FX-Param", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPHFYFoRqs5m2USGbfunU%2F9.5-Advanced-FX-Param.webp?alt=media&token=88dbc825-b78a-42fa-8379-ff9c43dcbb08")`
+`r create_image_tag("09.Effect", "9.5-Advanced-FX-Param")`
 
  - Multiple Events may be assigned to the same Effect Track.
 
-`r create_image_tag("09.Effect", "9.5-Advanced-FX-Curve", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNb8KNveRezoyrFOltOPe%2F9.5-Advanced-FX-Curve.webp?alt=media&token=a38975d6-1eb1-4508-af59-3d316245fb09")`
+`r create_image_tag("09.Effect", "9.5-Advanced-FX-Curve")`
 
  - Effect sharing the same Effect Track can uses separate patterns or share patterns.
     
@@ -347,7 +347,7 @@ To create a **Basic Effect**:
 
  - Only a fixture selection is needed before entering the editor. Parameters are selected on the effect editor using the {Filter} and {Choose Parameter} keys.
 
-`r create_image_tag("09.Effect", "9.5-Advanced-FX-Params", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQ9DFENGAmwZS4avceKwt%2F9.5-Advanced-FX-Params.webp?alt=media&token=f065998c-2e83-47d0-a1b3-2b49b5822bfc")`
+`r create_image_tag("09.Effect", "9.5-Advanced-FX-Params")`
 
 To create an **Advanced Effect**:
 
@@ -481,7 +481,7 @@ Effect Parameters may be released using Edit Cue or Update pop-up.
 
 - Editing any of the reference libraries will automatically update the library effect (same as Cues and Scenes stored with library references).
 
-`r create_image_tag("09.Effect", "9.6-Library-FX", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F7kpfiUYHHVTWvqRG9lRY%2F9.6-Library-FX.webp?alt=media&token=a2ca09d2-c4c5-4544-9cb2-ae517dd5910e")`
+`r create_image_tag("09.Effect", "9.6-Library-FX")`
 
 To create a **Library Effect**:
 

@@ -1,7 +1,7 @@
 ```{r setup, include=FALSE}
-create_image_tag <- function(folder, name, url, height = NULL) {
+create_image_tag <- function(folder, name, height = NULL) {
   # Construct the img tag as a string
-  img_tag <- paste0('<p align=center> <img src="Images/', folder, '/', name, '.webp" onerror="this.onerror=null; this.src=\'', url, '\';" alt="', name, '"')
+  img_tag <- paste0('<p align=center> <img src="Images/', folder, '/', name, '.webp" onerror="this.onerror=null; this.src=\'https://vibemanual.compulite.com/Images/', folder, '/', name, '.webp\';" alt="', name, '"')
   
   # Add height attribute if provided
   if (!is.null(height))
@@ -15,20 +15,24 @@ create_image_tag <- function(folder, name, url, height = NULL) {
   # Return the constructed img tag
   return(img_tag)
 }
-```
 
-img_tag <- paste0('<img src="', localPath, 
-                    '" onerror="this.onerror=null; this.src=\'', url, 
-                    '\';" alt="', name, '"')
+create_inText_image_tag <- function(folder, name, height = NULL) {
+  # Construct the img tag as a string
+  img_tag <- paste0('<img src="Images/', folder, '/', name, '.webp" onerror="this.onerror=null; this.src=\'https://vibemanual.compulite.com/Images/', folder, '/', name, '.webp\';" alt="', name, '"')
   
   # Add height attribute if provided
-  if (!is.null(height)) {
+  if (!is.null(height))
+  {
     img_tag <- paste0(img_tag, ' height="', height, '"')
   }
   
   # Close the img tag
-  img_tag <- paste0(img_tag, ">")
+  img_tag <- paste0(img_tag, '/>')
   
+  # Return the constructed img tag
+  return(img_tag)
+}
+```
 ---
 title: "Vibe Manual"
 author: "Compulite Systems (2000) Ltd"

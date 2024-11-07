@@ -63,7 +63,7 @@ The option to add a user-created set is done via the Sets view.
 
 4. Tap apply
 
-`r create_image_tag("05.Patch", "5.1-Sets", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjCFDkXY9WpmSeQ91fsZw%2F5.1-Sets.webp?alt=media&token=dadb0728-f04f-4cfc-bb9f-fe2c9c74de67")`
+`r create_image_tag("05.Patch", "5.1-Sets")`
 
 ### Edit Sets
 
@@ -93,17 +93,17 @@ There is an option to edit a user-created set. This is done via the Sets view.
     
 2. Tap {Import}, the Manufactures picker list will appear.
     
-`r create_image_tag("05.Patch", "5.2-Devices-Import", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FVgkjm8TlWuNmLiU0j4VR%2F5.2-Devices-Import.webp?alt=media&token=16e2e4a8-39d2-45bc-a73e-4a0a83bdd90b")`
+`r create_image_tag("05.Patch", "5.2-Devices-Import")`
     
 3. Flick or drag along the list to browse to the desired manufacturer then tap the manufacturer's name.
     
 4.  A new list and search window will open. If the exact device name is known, type it in the search window, if not flick or drag to browse the list until the desired device is found.
     
-`r create_image_tag("05.Patch", "5.2-Devices", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FiFESaTqWd7144bmAyVY7%2F5.2-Devices.webp?alt=media&token=28707fe9-7109-4ed2-9596-7844baef1ad7")`
+`r create_image_tag("05.Patch", "5.2-Devices")`
     
 5. The < key may be pressed at any time to return to the imported Devices list.
     
-`r create_image_tag("05.Patch", "5.2-Search-Bar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FX2lFO5ZX0Ne1o9AyhOLU%2F5.2-Search-Bar.webp?alt=media&token=28b419bc-6c53-419f-9bd2-1b9b37d3c1e8")`
+`r create_image_tag("05.Patch", "5.2-Search-Bar")`
 
 ### Advanced Search
 
@@ -123,7 +123,7 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
     
 4. Select the fixture from the Matching Devices list.
 
-`r create_image_tag("05.Patch", "5.2-Advanced-Device-Search", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGoL0Gt2iGwyYvct06qaX%2F5.2-Advanced-Device-Search.webp?alt=media&token=7468ea48-7a91-4a68-a749-88a93d6ed289")`
+`r create_image_tag("05.Patch", "5.2-Advanced-Device-Search")`
 
 5. The DMX Modes pop-up will open. 
 
@@ -131,7 +131,7 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
 
 7. Tap Apply or Import or press \[ENTER] to close the popup and add the fixture to the Imported Devices list.
 
-`r create_image_tag("05.Patch", "5.2-Device-Import-sample", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FG2AZ20ZtAtO7SGBg9lTz%2F5.2-Device-Import-sample.webp?alt=media&token=e63abd48-59c5-4419-98e6-097c9a20ba75")`
+`r create_image_tag("05.Patch", "5.2-Device-Import-sample")`
 
 
 ## Create and Patch {#Create-and-Patch-5.3}
@@ -145,7 +145,7 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
     
 3. Tap the device you wish to patch and the Create and Patch Fixtures popup will appear.
     
-`r create_image_tag("05.Patch", "5.3-Create-and-Patch", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fb7xtMS0NFKC2o2P6G6C5%2F5.3-Create-and-Patch.webp?alt=media&token=6de8fca9-9323-43e7-9392-9678c1a8e5f1")`
+`r create_image_tag("05.Patch", "5.3-Create-and-Patch")`
 
 **To Create and Patch fixtures:**
 
@@ -195,7 +195,7 @@ Using the **INTERVAL** field, a custom interval may be set.
 
 If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be created but not patched. Created fixtures may then be dragged and dropped onto the Universe View.
 
-`r create_image_tag("05.Patch", "5.3-Universe-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fn6UFf0V5O0nFYeJVR8FZ%2F5.3-Universe-View.webp?alt=media&token=99282b2b-de53-4665-a7b7-3659737ce34d")`
+`r create_image_tag("05.Patch", "5.3-Universe-View")`
 
 **Drag and Drop from the Fixtures tab:**
 
@@ -203,16 +203,16 @@ If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be c
     
 2. Select the Fixture **Set** you wish to patch from the Set list.
 
-`r create_image_tag("05.Patch", "5.3-Sets-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Frdodu5SmvtgdgDUxXu4R%2F5.3-Sets-View.webp?alt=media&token=1ab7b80e-a3d3-4fae-925a-df44ce28b88f")`
+`r create_image_tag("05.Patch", "5.3-Sets-View")`
     
 3. Select a destination **Universe** from the Universes list. The universe grid will be shown in the Universes view.
 
-`r create_image_tag("05.Patch", "5.3-Universes", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FpmIWVHDAqtDJTFEzdKpb%2F5.3-Universes.webp?alt=media&token=758922ce-0348-44e0-8724-8f9eabd3c843")`
+`r create_image_tag("05.Patch", "5.3-Universes")`
 
 4. Select the **Fixtures** you wish to patch from the Fixtures list.
 👉 Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.
 
-`r create_image_tag("05.Patch", "5.3-Fixtures", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fm6TgndGbijvzLOjvhBaQ%2F5.3-Fixtures.webp?alt=media&token=51b04b7b-1122-4988-a82d-045f3cf8f959")`
+`r create_image_tag("05.Patch", "5.3-Fixtures")`
 
 5. **Press and Hold** the fixtures, they will turn into floating icons.
     
@@ -250,7 +250,7 @@ If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be c
 
 Once patched fixtures can be modified using keypad syntax or using the **Patch Toolbar**.
 
-`r create_image_tag("05.Patch", "5.3-Patch-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FaWuE5w1h9xsGI7KYRjzu%2F5.3-Patch-Toolbar.webp?alt=media&token=e75d6227-d09e-4465-9ac0-8d2476ee3612")`
+`r create_image_tag("05.Patch", "5.3-Patch-Toolbar")`
 
   - {CLEAR PATCH} - Opens the Clear Patch popup. 
     
@@ -280,7 +280,7 @@ Once patched fixtures can be modified using keypad syntax or using the **Patch T
 
 Sometimes, especially in theatrical environments, it is useful to check if a DMX channel is empty or not. This can be done from the console by enabling the Address Test function on the header of the Universe View.
 
-`r create_image_tag("05.Patch", "5.3-Address-Test", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAZ5q7uj4dvhLVyv7ofCY%2F5.3-Address-Test.webp?alt=media&token=1c50408d-ad1d-4627-bae5-fc878576238b")`
+`r create_image_tag("05.Patch", "5.3-Address-Test")`
 
 In Address Test mode each selected channel is visualized with a yellow background and it is forced to jump at full intensity.
 
@@ -300,7 +300,7 @@ DMX can be remapped to anyone of the supported 256 DMX universes.
 
 ### Local Output
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-Local", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FE1PvGTkqvDrFwQhZElBR%2F5.4-DMX-Settings-Local.webp?alt=media&token=140b3cfe-ef43-408e-8e2e-a785ded0ca2b")`
+`r create_image_tag("05.Patch", "5.4-DMX-Settings-Local")`
 
 **Remap Local Outputs:**
 
@@ -334,15 +334,15 @@ Sometimes older equipment cannot handle the higher refresh rates, so it may be r
 
 ### VC
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-VCs", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FQAgV8gnudy6xhCVZVy8m%2F5.4-DMX-Settings-VCs.webp?alt=media&token=5f4f3098-d4f9-4270-8b1a-f995fe1ffeb3")`
+`r create_image_tag("05.Patch", "5.4-DMX-Settings-VCs")`
 
 ### ArtNet
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-ArtNet", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FwWGPnUKAnxcINjhWUKPP%2F5.4-DMX-Settings-ArtNet.webp?alt=media&token=bf44f81a-2188-414f-8f4f-3172487ef382")`
+`r create_image_tag("05.Patch", "5.4-DMX-Settings-ArtNet")`
 
 ### sACN
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-sACN", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3OWqVR6ByBTYBVbQT64O%2F5.4-DMX-Settings-sACN.webp?alt=media&token=271eb997-6788-48de-87f2-634d4c7b83ec")`
+`r create_image_tag("05.Patch", "5.4-DMX-Settings-sACN")`
 
 ### DMX Input
 
@@ -402,7 +402,7 @@ Sometimes older equipment cannot handle the higher refresh rates, so it may be r
     
 5. Press ENTER, or tap Apply to close the popup and complete the patch.
     
-`r create_image_tag("05.Patch", "5.4-Controller-Selection", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FRZ8nyFAzMI8rsd1fTHgc%2F5.4-Controller-Selection.webp?alt=media&token=cafdb2cb-e84d-4504-a84f-04ba9d90bd73")`
+`r create_image_tag("05.Patch", "5.4-Controller-Selection")`
 
 **Map a Macro to a DMX input** - Macro will trigger at 50%
 
@@ -426,7 +426,7 @@ Sometimes older equipment cannot handle the higher refresh rates, so it may be r
 
 DMX Output and Input view is meant to show in real time the output and input values of each DMX channel of the selected universe.
 
-`r create_image_tag("05.Patch", "5.4-DMX-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FFjVC4XRlIwyXV5nZkHyG%2F5.4-DMX-View.webp?alt=media&token=21cb018c-9cd7-4746-8d78-7a8539ee4bd0")`
+`r create_image_tag("05.Patch", "5.4-DMX-View")`
 
 Use the view's menu to select the target output or input universe.
 
@@ -438,7 +438,7 @@ DMX values can be shown in numeric or in graphic visualization.
 
 - The fixture view lists all the created fixtures and their patch information.
 
-`r create_image_tag("05.Patch", "5.5-Fixtures-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FKD33aSZ7lUgWDr8dq3H4%2F5.5-Fixtures-View.webp?alt=media&token=c0e8e611-ba83-473b-be00-6f9ec45641f2")`
+`r create_image_tag("05.Patch", "5.5-Fixtures-View")`
 
 - Select a Set on the **Sets View** to filter the fixtures listed.
 
@@ -476,11 +476,11 @@ The address view lists all the DMX addresses of the selected universe and their 
 
 Each cell contains the properties of a DMX address and the icon of the parameter patched on it.
 
-`r create_image_tag("05.Patch", "5.6-Address-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjE7afW027QP0Nh4oBTvr%2F5.6-Address-View.webp?alt=media&token=f358e7bb-7393-4119-a867-7bf7cee5e28d")`
+`r create_image_tag("05.Patch", "5.6-Address-View")`
 
 - To edit address properties, tap on the addresses to select them and then "Address Properties" on the header. The Address Properties popup will open.
 
-`r create_image_tag("05.Patch", "5.6-Address-Properties", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FyyVrbwNAyQb83xSLQaxi%2F5.6-Address-Properties.webp?alt=media&token=5595d96e-b2bc-493a-b288-db1e37e3c15f")`
+`r create_image_tag("05.Patch", "5.6-Address-Properties")`
 
 - The following address properties can be edited:
 
@@ -548,7 +548,7 @@ The Fixture Cloning feature allows to copy all the stored data from a selection 
 
 To open the fixture cloning popup, press the dedicated button in Patch page's Editor Toolbar.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Fixture", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Ft9BWXOsET22ZwSrXCIjj%2F5.8-Clone-Fixture.webp?alt=media&token=fc1a6657-7681-4fc2-98d9-631cb0ee4f4e")`
+`r create_image_tag("05.Patch", "5.8-Clone-Fixture")`
 
 Choose the order of source fixtures on the left column and the order of destination fixtures on the right column, then press Done.
 
@@ -580,7 +580,7 @@ The Advanced fixture cloning option on the top enables access to a pair of Next 
 
 The next step shows the Parameter Selection window.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Param", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhKXYW1qqLaBmiZm3xrbS%2F5.8-Clone-Param.webp?alt=media&token=f3501cad-ed80-4800-a284-3751f7927c15")`
+`r create_image_tag("05.Patch", "5.8-Clone-Param")`
 
 The cloning can be based on raw values, preserving the parameters' levels, or on smart values, preserving the fixture's functions. Raw values means that Vibe will match between parameter types and copy the raw value. Smart means that Vibe will try to find the real data information of the parameter and convert the values to match the destination fixture to look the same. Default is Smart.
 
@@ -588,7 +588,7 @@ On the right side there is a match table between the source and destination fixt
 
 The next step shows the Data window.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Data", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FptAiS8Jyi5N22wJAUFC3%2F5.8-Clone-Data.webp?alt=media&token=ad8c362c-24e2-4642-ad33-beecc32a2d72")`
+`r create_image_tag("05.Patch", "5.8-Clone-Data")`
 
 The Data window permits to filter the Groups, Libraries, Qlists, Scenes and Submasters, to apply the cloning only to the selected contents. Default is that all are selected.
 
@@ -610,7 +610,7 @@ The Device replacement feature allows to replace a device with another one, keep
 
 To open the device replacement popup, press the dedicated button in Patch page's Editor Toolbar.
 
-`r create_image_tag("05.Patch", "5.9-Replace-Fixture", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fv2WEcCEBjXLr3RFwBkya%2F5.9-Replace-Fixture.webp?alt=media&token=3d21a434-c2ee-4a8b-a653-01398b2ad9fd")`
+`r create_image_tag("05.Patch", "5.9-Replace-Fixture")`
 
 Choose the Source device on the left column and the new device from the Imported Devices on the right column, then press Done.
 
@@ -624,7 +624,7 @@ The Advanced replacement option on the top enables access to a Next popup window
 
 The next step shows the Parameter Selection window.
 
-`r create_image_tag("05.Patch", "5.9-Replace-Param", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FKvTiJhHwBiXTIBTdBgjA%2F5.9-Replace-Param.webp?alt=media&token=f1c4ad21-609d-4938-b033-e674a935852f")`
+`r create_image_tag("05.Patch", "5.9-Replace-Param")`
 
 Each bank has its option to enable/disable. Enabled means it will be included in the Device replacement and disabled means it will not be included. Default is enabled.
 
@@ -654,11 +654,11 @@ There are few passages to get the calibration data of the fixtures from third pa
     
 4.  Select the center of your stage (see <span style="color:Red">Red Arrow</span> in the Picture)
     
-`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FuGGn7oGB4GdFOn9y5Ep7%2F5.10-Wysiwyg-Calibration.webp?alt=media&token=a6a8335f-1893-48c0-8a7d-c72e1800155e")`
+`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration")`
 
 5. Go to 'Data tab', press Option on the toolbar ⟶  Document Options ⟶  Draw Defaults - and  change the units to metric..
 
-`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration-Data", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F8QCyX3sj5XjZJ7bc7i37%2F5.10-Wysiwyg-Calibration-Data.webp?alt=media&token=b8a7cb36-8879-458e-ba9e-a36ab185305d")`
+`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration-Data")`
 
 6. Copy these values (manually) to the Fixture calibration table in Vibe:
 
@@ -680,13 +680,13 @@ There are few passages to get the calibration data of the fixtures from third pa
     
 3. Place the center of the stage in the intersect point of the 2 Bold Axis, when the CAD displays a view from the Top
 
-`r create_image_tag("05.Patch", "5.10-Capture-Calibration", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPdeom2jn8TJMpfgGE3uI%2F5.10-Capture-Calibration.webp?alt=media&token=7051aced-7871-45d2-a769-dc19d7f78cdc")`
+`r create_image_tag("05.Patch", "5.10-Capture-Calibration")`
 
 4. Go to Tools ⟶  Options and change the measurements to metric.
 
 5. Select a fixture in Capture to see the XYZ coordinates when the table is showing 'Selected Itemsʼ. 
 
-`r create_image_tag("05.Patch", "5.10-Capture-Calibration-Data", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FhqgyV9cxwbKip8xLTZ3m%2F5.10-Capture-Calibration-Data.webp?alt=media&token=ffa1d514-a363-4915-b762-28678d4e312e")`
+`r create_image_tag("05.Patch", "5.10-Capture-Calibration-Data")`
 
 6. Copy these values (manually) to the Fixture calibration table in Vibe:
 

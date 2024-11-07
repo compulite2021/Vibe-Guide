@@ -51,7 +51,7 @@ Vibe has a multi-touch based interface, using simple gestures for selection and 
 The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe console is referred to as the **Smart Screen**. 
 
 <p align=center>**Smart Screen**</p>
-`r create_image_tag("03.Layout", "3.1-Smart-Screen", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIYKzE7HIxqtnUR28Neae%2F3.1-Smart-Screen.webp?alt=media&token=c6dcddeb-ec22-486f-aa1c-38f075ddeae1")`
+`r create_image_tag("03.Layout", "3.1-Smart-Screen")`
 
 - On Vibe multi-screen console models the Smart Screen position is fixed on the dedicated monitor. The Smart Screen View cannot be moved on the other screens and the configuration of this screen cannot be customized.
 
@@ -66,10 +66,10 @@ The right side of the Toolbar, also referred to as the **Editor Toolbar**, conta
 The **Editor Toolbar** shows a different set of buttons according to the programming syntax.
 
 <p align=center>**Patch Toolbar**</p>
-`r create_image_tag("03.Layout", "3.1-Patch-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FAB7z4JnpOxgh8teWURch%2F3.1-Patch-Toolbar.webp?alt=media&token=bbe507b9-9325-4a5d-8285-b381a155f2e6")`
+`r create_image_tag("03.Layout", "3.1-Patch-Toolbar")`
 
 <p align=center>**Program Toolbar**</p>
-`r create_image_tag("03.Layout", "3.1-Program-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FUg2rL8MYhNdaNOOGWJAu%2F3.1-Program-Toolbar.webp?alt=media&token=607da8bf-7587-464f-b039-7680afd0b04d")`
+`r create_image_tag("03.Layout", "3.1-Program-Toolbar")`
 
 The functions of the Toolbar buttons are described in the following chapters.
 
@@ -79,7 +79,7 @@ The functions of the Toolbar buttons are described in the following chapters.
 
 Vibe Menu can be opened at any time by tapping the **{VIBE}** key on the Toolbar.
 
-`r create_image_tag("03.Layout", "3.2-Vibe-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FjYmWiIco2JoVB4RkoWFx%2F3.2-Vibe-Menu.webp?alt=media&token=4876847e-691c-488b-8dcc-d8d2146d1764")`
+`r create_image_tag("03.Layout", "3.2-Vibe-Menu")`
 
 The Vibe Menu is a hierarchical menu containing logically grouped submenus. 
 
@@ -91,7 +91,7 @@ It contains all the Views listed in dedicated submenus.
 
 The Show Menu is used to manage Vibe show files.
 
-`r create_image_tag("03.Layout", "3.2-Show-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FIecwDUfux4PnXOqxrtuK%2F3.2-Show-Menu.webp?alt=media&token=b7477946-89bb-4dcb-91ed-1e33c4fe6b74")`
+`r create_image_tag("03.Layout", "3.2-Show-Menu")`
 
 Open the Show Menu to access the following options:
 
@@ -103,7 +103,7 @@ Open the Show Menu to access the following options:
 
 **{Load Show}** - Open a popup to load a saved show file  (from Vibe DB or an external device).
 
-`r create_image_tag("03.Layout", "3.2-Load-Show", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FdHRNXkO9bd783ERJec6b%2F3.2-Load-Show.webp?alt=media&token=280b9a25-ef44-4345-8439-6802ed910244")`
+`r create_image_tag("03.Layout", "3.2-Load-Show")`
 
 **{Default Show}** - Open the default Vibe show. <span style="color:Gray"> (not implemented yet) </span>
 
@@ -119,11 +119,11 @@ Open the Show Menu to access the following options:
 
 The Load Vector Show popup, if opened from a PC that has Vector software installed, will allow to load a show directly from Vector's show folder.
 
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Show", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FasLNx7LNdXfdR0BWTCmH%2F3.2-Load-Vector-Show.webp?alt=media&token=c53ab71d-f15e-490c-bf8f-28bb18b108cf")`
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Show")`
 
 After selecting the Vector show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
 
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Device", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fqmff0jNnv3MASQK89e9h%2F3.2-Load-Vector-Device.webp?alt=media&token=6e4ef89a-633e-4a9b-99ef-7fb562376f4e")`
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Device")`
 
 Vector Shows will be loaded and converted with the following limitations:
 
@@ -157,7 +157,7 @@ Vector Shows will be loaded and converted with the following limitations:
 
 The Clean Up Show popup shows all the objects that are not used on the show file, such as unused Fixtures and Devices, unused Libraries, unassigned Qlists and Scenes, divided by tabs.
 
-`r create_image_tag("03.Layout", "3.2-CleanUp-Show", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FM5UXvIlYHaLVdMeWHWYD%2F3.2-CleanUp-Show.webp?alt=media&token=2a96ec96-d8b9-4016-94dd-f29d60c3e135")`
+`r create_image_tag("03.Layout", "3.2-CleanUp-Show")`
 
 Use this feature to find and delete the unused objects, to reorder the show file and make it lighter.
 
@@ -165,7 +165,7 @@ Use this feature to find and delete the unused objects, to reorder the show file
 
 The Show Report popup collects all the objects stored into the show file, such as Groups, Libraries, Qlists and Scenes, divided by tabs.
 
-`r create_image_tag("03.Layout", "3.2-Show-Report", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FtR3c1wpkPQG37A09MHjs%2F3.2-Show-Report.webp?alt=media&token=1284cfff-7d13-4111-876e-01258f842eac")`
+`r create_image_tag("03.Layout", "3.2-Show-Report")`
 
 Report files can be generated for all the data or just for the selected objects.
 Tap "Generate For Selected" to export only the selected objects or tap "Generate For All" to export all the data, independently from the current selection.
@@ -182,7 +182,7 @@ Use this feature to save a document containing the show information that may be 
 
 The Layout Menu is used to manage the Vibe layout files.
 
-`r create_image_tag("03.Layout", "3.2-Layout-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfjvPFOlZZWWW5aLZta3q%2F3.2-Layout-Menu.webp?alt=media&token=97bb9e61-8cff-4565-a2ae-432bf680dd2d")`
+`r create_image_tag("03.Layout", "3.2-Layout-Menu")`
 
 Open the Layout Menu to access the following options:
 
@@ -194,7 +194,7 @@ Open the Layout Menu to access the following options:
 
 **{Load Layout}** - Open a popup to load a saved layout file  (from Vibe DB or an external device).
 
-`r create_image_tag("03.Layout", "3.2-Load-Layout", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FfB60x6TQY6zN9AuznrXp%2F3.2-Load-Layout.webp?alt=media&token=cedffbe3-9991-4928-8fc4-c97d350c1744")`
+`r create_image_tag("03.Layout", "3.2-Load-Layout")`
 
 **{Default Layout}** - Open the default Vibe layout, depending on the console model.
 
@@ -202,7 +202,7 @@ Open the Layout Menu to access the following options:
 
 **{Windows}** - Open a sub-menu to add an External window, toggle the window's Title Bar, enter or exit the Full Screen mode.
 
-`r create_image_tag("03.Layout", "3.2-Windows-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FN5hBKTtQVk0MGakmdF9k%2F3.2-Windows-Menu.webp?alt=media&token=adbf9b8d-363d-4e90-9de7-6e83ad12d35d")`
+`r create_image_tag("03.Layout", "3.2-Windows-Menu")`
 
 ### Views Menu
 
@@ -218,11 +218,11 @@ Vibe Views are divided in logical order in 3 sub-menus:
 
 Open Patch / Program / Playback Views menus to access all the views that can be added to any page to configure the Vibe layout.
 
-`r create_image_tag("03.Layout", "3.2-Patch-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FeKYbu9Ftgk4EQab25jtb%2F3.2-Patch-Menu.webp?alt=media&token=6fa11dbe-a233-4b31-8677-feba5905251b")`
+`r create_image_tag("03.Layout", "3.2-Patch-Menu")`
 
-`r create_image_tag("03.Layout", "3.2-Prog-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FgHUsEx1uKxZysOC35hVG%2F3.2-Prog-Menu.webp?alt=media&token=f39f731d-9f0e-4511-b1c1-931fa83721ce")`
+`r create_image_tag("03.Layout", "3.2-Prog-Menu")`
 
-`r create_image_tag("03.Layout", "3.2-Play-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5ogXQNRH5FuEHBBbp2Q5%2F3.2-Play-Menu.webp?alt=media&token=5aa6ec39-904f-432c-9301-e94f3b41b01c")`
+`r create_image_tag("03.Layout", "3.2-Play-Menu")`
 
 Vibe's **Layout** is totally flexible, it can be configured and customized to match the user preferences.
 
@@ -234,7 +234,7 @@ The **Views** chapter will provide a short explanation of each view's features.
 
 The Settings Menu is used to manage the Vibe system settings.
 
-`r create_image_tag("03.Layout", "3.2-Settings-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FoGyZ58FfOHZdLv8I9IWd%2F3.2-Settings-Menu.webp?alt=media&token=3b6e973e-7aa0-4bfe-8ccf-4cd13db1dd29")`
+`r create_image_tag("03.Layout", "3.2-Settings-Menu")`
 
 Open the Settings Menu to access the following options:
 
@@ -261,7 +261,7 @@ Learn more about the Offline Tool in the dedicated chapter. <span style="color:G
 
 ### Help Menu 
 
-`r create_image_tag("03.Layout", "3.2-Help-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FemwvRfR54i95Ed7WjoSw%2F3.2-Help-Menu.webp?alt=media&token=bb2d04c9-cdfc-4385-9339-aee912862f41")`
+`r create_image_tag("03.Layout", "3.2-Help-Menu")`
 
 **{Version}** - Open a popup listing the installed version of Vibe software and components.
 
@@ -279,11 +279,11 @@ The Exit and Close buttons are located in the Vibe Menu.
 
 If Exit is pressed, a popup asks to save the show file.
 
-`r create_image_tag("03.Layout", "3.2-Exit", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F5UuUj111nEajyz6IvVTq%2F3.2-Exit.webp?alt=media&token=22709df0-0451-428e-8c20-f8dee520732a")`
+`r create_image_tag("03.Layout", "3.2-Exit")`
 
 If Close is pressed, a popup asks to confirm.
 
-`r create_image_tag("03.Layout", "3.2-Close", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F4PAdR6tptIo4UJ1RCc3g%2F3.2-Close.webp?alt=media&token=afc88955-8b13-44c8-8025-e82701ab8cc1")`
+`r create_image_tag("03.Layout", "3.2-Close")`
 
 
 ## Pages {#Pages-3.3}
@@ -305,7 +305,7 @@ Vibe has 3 types of Pages:
 
 All the Pages are organized in the **Pages View** that can be accesses either by pressing the **\[VIEW]** button or by tapping the **{VIBE}** Menu and then the **{PAGES}** key on the Toolbar.
 
-`r create_image_tag("03.Layout", "3.3-Pages-View", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FPn9tyfXqkNM0BNszkmm5%2F3.3-Pages-View.webp?alt=media&token=69169cd2-8ec8-46d5-a42c-344ae7d5a028")`
+`r create_image_tag("03.Layout", "3.3-Pages-View")`
 
 - All Pages can be completely customized by adding, sizing and positioning the **Views** listed inside the Vibe Menu, independently from where the view is located inside the Vibe Menu.
 
@@ -319,7 +319,7 @@ All the Pages are organized in the **Pages View** that can be accesses either by
 
 Home page buttons, located on the Taskbar, are a fast way to recall up to three main pages.
 
-`r create_image_tag("03.Layout", "3.3-Home-Pages", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGfujKT441ne2mId2JY4X%2F3.3-Home-Pages.webp?alt=media&token=559dadf5-a305-43d6-90b7-becae303704f")`
+`r create_image_tag("03.Layout", "3.3-Home-Pages")`
 
 Any page can be stored as a Home Page on the Page View.
 
@@ -333,7 +333,7 @@ Clone pages for a faster building of a similar layout page.
 
 The Clone Pages key is displayed on the Toolbar, near the menu, when the window is in View mode and it is unlocked by tapping the Selection key.
 
-`r create_image_tag("03.Layout", "3.3-Pages-Toolbar", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FkfKY2PaNqBgKMBmJjiQ1%2F3.3-Pages-Toolbar.webp?alt=media&token=a0aec0c8-969a-4c62-9ab2-1257b554aadb")`
+`r create_image_tag("03.Layout", "3.3-Pages-Toolbar")`
 
 
 ## Views {#Views-3.4}
@@ -351,7 +351,7 @@ The Clone Pages key is displayed on the Toolbar, near the menu, when the window 
 
 - If an object is dragged on top of another, both will turn green showing it is possible to tab them and create a **tabbed** view. Keep a tabbed view pressed to extract an object from the tab an move it separately.
 
-`r create_image_tag("03.Layout", "3.4-Views-sample", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FZgXQQKIMYiWdsbeY3Ev0%2F3.4-Views-sample.webp?alt=media&token=987cbbc6-e464-4b00-b016-391e3e386257")`
+`r create_image_tag("03.Layout", "3.4-Views-sample")`
 
 Here is the complete list of all the views that can be added to the layout pages to configure and customize the Vibe workspace.
 
@@ -487,7 +487,7 @@ Some views have specific settings that can be set from the view settings popup, 
 
 View settings can be accessed when layout is **Unlocked**, by selecting the view and tapping the buttons on the toolbar. These settings are applied to the selected view.
 
-`r create_image_tag("03.Layout", "3.4-Unlock-Layout", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGujvpN1oUp70wkUc0LMV%2F3.4-Unlock-Layout.webp?alt=media&token=461750d8-e48b-482f-8754-b055c7ff1320")`
+`r create_image_tag("03.Layout", "3.4-Unlock-Layout")`
 
 **Toggle Scrollbar**: add or remove a scrollbar to/from the view, if available.
 
@@ -497,7 +497,7 @@ View settings can be accessed when layout is **Unlocked**, by selecting the view
 
 **Softkey Settings**: any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
 
-`r create_image_tag("03.Layout", "3.4-SK-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FqHCGEWL0meThObU6UWlG%2F3.4-SK-Settings.webp?alt=media&token=d7d3ee51-0d19-4031-b576-8123f428834e")`
+`r create_image_tag("03.Layout", "3.4-SK-Settings")`
 
 Softkey settings are used to change the size, font and color of the softkeys’ text and background.
 
@@ -507,15 +507,15 @@ The settings can be saved as default, and it is always possible to come back to 
 
 Some special color options are available to show color library softkeys with the colors that are stored in the library.
 
-`r create_image_tag("03.Layout", "3.4-SK-sample", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FNfMQrOC8X9lwv9sDGeg3%2F3.4-SK-sample.webp?alt=media&token=b82b0d83-c8fa-43fa-9c4c-decf77789b64")`
+`r create_image_tag("03.Layout", "3.4-SK-sample")`
 
 The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.
 
-`r create_image_tag("03.Layout", "3.4-SK-Color-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fbma400MHsbhKNNrwgfPk%2F3.4-SK-Color-Settings.webp?alt=media&token=af1402fe-3d16-4d50-8905-a549a6bfa77e")`
+`r create_image_tag("03.Layout", "3.4-SK-Color-Settings")`
 
 **Context Options** only apply to the Context view. This view can show or hide the visualized objects depending on the user’s settings or on the smart option.
 
-`r create_image_tag("03.Layout", "3.4-Context-Options", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FGu2OJcfA1WPlgUgjK4UN%2F3.4-Context-Options.webp?alt=media&token=68932723-c5d8-46cb-8594-6ba42bce1b0f")`
+`r create_image_tag("03.Layout", "3.4-Context-Options")`
 
 The Context Normal Mode filters the visualized objects according to the enabled buttons.
 
@@ -523,7 +523,7 @@ The Context Smart Mode filters the visualized objects automatically avoiding the
 
 **Single Button Settings**: any single button view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
 
-`r create_image_tag("03.Layout", "3.4-Single-Button-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FLgSDdp76T4LDjiqX7jlV%2F3.4-Single-Button-Settings.webp?alt=media&token=3d323e1d-7c64-4843-954a-6d1ff60c3848")`
+`r create_image_tag("03.Layout", "3.4-Single-Button-Settings")`
 
 Specific settings, such as color and text size, can be assigned to each single button.
 
@@ -535,11 +535,11 @@ The settings can be saved as default, and it is always possible to come back to 
 
 The View's menu can be closed when the layout is Locked by tapping the Close Menu button.
 
-`r create_image_tag("03.Layout", "3.4-Close-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2FlA1jIxHs5lhND9asYYRc%2F3.4-Close-Menu.webp?alt=media&token=f5fd8969-6183-4afc-b2a1-e6a97fe70d83")`
+`r create_image_tag("03.Layout", "3.4-Close-Menu")`
 
 The Open Menu button can be placed wherever on the view with a long click gesture and drag.
 
-`r create_image_tag("03.Layout", "3.4-Open-Menu", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2Fy7PHYFlk20M70l1I0Ixz%2F3.4-Open-Menu.webp?alt=media&token=8d5bb124-b6a5-4596-a2d0-0c069758448c")`
+`r create_image_tag("03.Layout", "3.4-Open-Menu")`
 
 
 ## Layouts {#Layouts-3.5}
@@ -557,7 +557,7 @@ The Open Menu button can be placed wherever on the view with a long click gestur
 
 Layout Settings can be accessed when layout is **Locked**, by tapping the Vibe Menu and then the {Setting} button on the toolbar, near the Lock and Pages buttons. These settings are applied as defaults to all the Pages and Views.
 
-`r create_image_tag("03.Layout", "3.5-Layout-Settings", "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fco6zHjxX7ZVRiO0Ze921%2Fuploads%2F3meZC6vw7u2jpirhGdEf%2F3.5-Layout-Settings.webp?alt=media&token=d0c6e85e-0ac5-40b5-89fa-83e1ff066027")`
+`r create_image_tag("03.Layout", "3.5-Layout-Settings")`
 
 It is possible to change the Vibe Theme, to move the Toolbar on top or bottom position on all the pages, and to set Default View Settings for the Headers, the Frames and the Scrollbars. 
 
