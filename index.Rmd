@@ -43,9 +43,11 @@ url: https://vibemanual.compulite.com/
 
 # Introduction
 
+👉 Start up the **Vibe** and get confident with this User Guide and with Compulite Support.
+
 This chapter discusses getting started with Compulite Vibe.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [1.1 Start Up](#Start-Up-1.1)
 -  [1.2 Guide Conventions](#Guide-Conventions-1.2)
@@ -62,7 +64,7 @@ This chapter discusses getting started with Compulite Vibe.
 
 - Vibe uses a power supply that supports 90-264V at 47-63 Hz.
 - Approximately power consumption is 3.2A at 230V.
-- Input uses a Neutrik powerCON connector, or IEC C13 connector on the Vibey, ended with the appropriate male connector for the destination country.
+- Input uses a Neutrik powerCON connector.
 
 **Desk Light:**
 
@@ -79,6 +81,13 @@ This chapter discusses getting started with Compulite Vibe.
 - Turn on the power supply switch above the powerCON connector.
 - Press the Power button located at the upper corner of the monitor panel.
 - The operating system will boot and the Vibe console software will automatically launch.
+
+`r create_image_tag("01.Introduction", "1.1-Open-Vibe")`
+
+A loading popup with a countdown asks if the user wants to open a New Show or the Current Show. 
+If no selection is made the Current Show is loaded.
+
+> After opening the Vibe software for the first time, the Tutorial popup is shown. This option can be disabled through the "Don't Show Again" key.
 
 **Power down the console:**
 
@@ -269,6 +278,235 @@ This chapter discusses getting started with Compulite Vibe.
 
 
 ## Releases {#Releases-1.6}
+
+
+### R_7.0
+
+- Release Date: **09/10/2024**
+- DB version: **R_7.0**
+- Desktop version: **R_7.0**
+- LPU version: **R_7.0**
+- HAL version: **R_7.0**
+- Device Pack version: **DP_7.0**
+
+#### Version Highlights
+
+Version R_7.0 brings new and updated features as listed below:
+
+**General**
+
+- **Performance improvement** This software release features important background performance developments that improve the software elaboration speed.
+
+- **Startup popup** The startup process and the loading popup have been changed.
+
+- **Default layouts changed** The default layouts have been updated to include the latest views.
+
+- **Vibe Manual embedded** The Vibe Manual is now embedded in the Vibe Software.
+
+- **Drag views between pages** Views can be moved between different pages.
+
+- **Quick layout actions** The long click gesture can be used on toolbar and empty spaces for quick layout actions.
+
+- **Shift + Vibe Pages** Vibe Page buttons with Shift will sync the paging between all the Vibe screens.
+
+**Patch**
+
+- **Auto Generate Shape Libraries** Shape Libraries can be automatically created with the Auto Generate feature.
+
+- **Calibration Data import** Calibration data can be imported from csv files.
+
+- **MVR import** Devices, Fixtures, Patch and Calibration data can be imported from MVR files.
+
+**Program**
+
+- **Quick Actions on Wheel Encoders and Banks** The long click gesture on wheel encoders and extra wheels opens a quick actions box.
+
+- **Position params Lock** Position Lock functions allow to lock a movement direction.
+
+- **Copy / Paste params to Groups** Groups can be selected to Copy/Paste param values to other Groups.
+
+- **Copy / Paste Banks of params** Banks of params can be selected to Copy/Paste param values to Fixtures.
+
+- **Source PB on the Smart Screen** Smart Screen’s Format options allow to show the Source Playback of the values.
+
+- **Copy & Load Fixture from Cue** Selected Fixture values can be loaded or copied directly from target cues.
+
+- **Live View modes** Live View has 4 modes that can be switched from the Vibe menu or from the view settings.
+
+**Playback**
+
+- **Qlist Tracksheet menu redesign** Qlist Tracksheet view's menu has a more efficient way of filtering the information.
+
+- **Auxkey page up/down keys** Auxkey pages can be switched from the Smart Screen with the virtual up/down keys.
+
+- **GOTO # GO** GOTO # GO is now also a valid command that act like GOTO # ENTER.
+
+**Settings**
+
+- **Assign IP to General Networks** General Network IP addresses can be configured from the Network Settings popup.
+
+-**Unicast on sACN** sACN protocol can be transmitted in Unicast.
+
+- **Local VC with 64 universes** Local VC in DMX settings popup allows configuring up to 64 universes.
+
+- **Vibe Wings memory settings** Vibe wings (including Vector compatible wings) remember the last configured settings.
+
+- **Vibe PC Wing functions disable** Vibe PC Wing functions can be disabled to inhibit the use of part of the panel.
+
+- **View Key screen color coding** The View Page key changes color according to the active screen.
+
+**Fixture Builder**
+
+- **Reduced device DB size** The Device Database size has been reduced.
+
+**Offline Tool**
+
+- **Opening check if Vibe is running** If Offline Tool is launched from the system a popup advice asks to close the Vibe first.
+
+#### Bug Fixes
+
+**Vibe Crash Fixes**
+- HAL could crash if a panel is connecting more than once
+- Crash when having more than 1 small screen and changing to FX screen
+- Crash when removing DMX Output view and then changing dmx settings
+- LPU could get stuck if going back twice to empty (empty cue) in VColor values
+- Crash when using LIBRARY 1 #
+- Qlist Tracksheet stuck/crash/performance
+- Exam could crash when pressing on tabs
+- Crash when trying to create shutter-beam-blade command while device has only 1 parameter
+- Potential crashes of LPU during undo and other actions
+- Crash when selecting fixtures on an old layout that had a Vibe image that does not exists anymore
+- Crash with move controller syntax when combining numeric and controller selection
+- Grab, Controller, Fixture Selection, Enter can crash the system
+- Potential HAL crash when there is more than 1 console on the network
+- Switching from selection to spinning while throwing wheel can cause a crash
+- Switching modes fast from selection to spinning can cause the wheel to remain instead of the intended fader, and if moved it will crash
+
+**Vibe Bug Fixes**
+Performance
+- Reduced memory usage
+- General system speed
+- Startup process
+- Switching Topos performance
+- Shift + Reset performance
+- Grids loading (Live, Tracksheet etc.)
+- Deleting many fixtures
+- Improvement in Live view
+- Improvement in Parameters view
+- Renumber performance
+- Fixture Rename performance
+- Fixture Repatch performance
+- Add/Remove devices/fixtures performance
+- Fixture related operations performance
+- Device Replacement performance
+Layout
+- Default layout should close windows if they were not in the default layout
+- Vibe windows are not always located correct if there are external screens
+- Live view anchor does not work in headers per device
+- Some popups did not open correctly if they were first opened from an external screen.
+Timeline
+- Timeline Zoom and Scroll performance improvement
+- Timeline View events are doubled when duplicating a timeline
+Effects
+- Library effects could make strange spread with the size
+- Small Screen effect wheels were not always synced
+- Big FX Screen wheels were not always synced
+- Some Effect Wheels does not accept Hardkeys negative values
+- Effect with grouping stores wrong selection index to lib
+- Drag & drop library in library effect popup was not working
+Playback
+- Values jump when cue time in/out and follow are cut with lookahead
+- Qlist with only FX are not loaded
+- Force Black on 1st Cue corrupts fade
+- Wrong Wait time could cause chasers to get stuck
+- Submaster with non-dimmer fixtures did not select the fixtures
+- Fixed Prevent from paging issues with all controller types
+- If a parameter had value lower than 0 (FX or Fan) and in the next cue it had cell time with hard value then the fade was wrong
+- Cue number floating point inaccuracies
+- Release Controller didn't work if it was prevented from paging and on a different page than the original
+- PB Masters did not control any other controller than Sliders
+- When a PB is going out to release (by release or back) with more than 1 cue in the "stack" then values can jump
+- Snap load could load wrong state of Scenes
+Blind
+- Selection was not kept if changing between editor and blind
+- Blind did not show the values if set from pickers
+- Live view in blind mode did not show background colors on cells in edit
+- Grab active parameters on Blind does not work
+Time
+- System time did not work correct with virtual parameters
+- Cues with time/delay in/out in Cut and that also have follow time less than look ahead time could make jumps in playbacks
+- Time values on views were not always rounded
+Editing
+- Parameter manipulation after RESET can cause some parameters to be stuck if working in non-grouped parameter mode
+- Control Commands do not work when default slider is Rate
+- Topo View selection skips second
+- Topo Matrix Frame Selection - selecting same fixture many times
+- Library Edit+Delete fix cues
+- Move cues between qlists could miss deleting of src cues
+- Apply library with layer selection did not work
+- Apply Prebuild Effect with layer selection did not work
+- Grab with layer selection did not work
+- Beam picker showed only Normal mode and not strobe/custom
+- Custom Library Update loses SK settings
+- Auto generate added information to the library cells that could cause errors when updating
+- Double click on empty topo space doesn't work good with group selection
+- Update library issues when adding new fixtures
+- Switching modes fast from selection to spinning can cause the spinning GUI to have buttons but no fader
+- Release fixtures from library that isn't fixture specific was not working
+- Next/Prev with a different set than Fixture was not working
+- Cue Settings popup sometimes opens on default
+- Live intensity icon can show full when dimmer value is close to 0
+- Paste Cue from delta did not work
+- Bug fixes in store/update/delete of records (cue, library, scene)
+- Cue Only cue did not output the tracked cells
+- Cue Only cue type did not act like Cue Only
+- Changing cue type could cause wrong behavior
+- Context View did not refresh when fixture rename
+- Context View did not refresh when set change
+- Scene Settings Popup can show wrong default name in the textbox when selecting a scene
+- Device Replace / Clone - could have errors if there is a device with more than 1 dimmer
+- Device Replace / Clone - could have errors if there is a device with more than 1 shutter
+- Parameters that were active with FX from look ahead were not selected correctly in editor
+- Release values from cues can fail if the same cue was selected more than once in the selection
+- Release values from cues does not take .# cues if they are in the range
+Remotes
+- Wing with an offset of sliders that was reconnected did not refresh its sliders position
+- Connecting a wing with non-motorized sliders makes a jump in sliders on connection
+Gestures
+- Scroll gesture when fingers are too close can cause many button presses
+- Scroll gesture fast on the side can cause many button presses
+- Made the square notification of touches on consoles disappear
+- Grid mouse scroll scrollbar doesn't disappear
+- Fixture Data view drag selection was not working right
+Park
+- It was not possible to park virtual parameters correctly
+- Parking physical parameters did not avoid using virtual and changing the values
+Vector convert
+- Could fail if access driver was not installed on the pc
+- Redesigned convert popup and added more stages to select and configure object numbers
+- Added an option to generate the conversion report as a sheet
+- Effects with cycle time 0 did not work as expected
+- Playbacks got "no snap override" option when they shouldn't have
+- Similar effects with different sizes could be mistakenly combined
+- Cells with effect from reference library did not get effect
+- Tracked cells with effect did not work correctly
+- Object numbers above 999 were not accessible on Vibe
+- Auto match did only match for the first time
+- Error value if resolution of parameter changed
+- AutoBuild could make errors
+- Topo + Matrix fix when multiple matrix-topo exist
+
+**Fixture Builder Bug Fixes**
+- Devices stored from FixtureBuilder will have broken Intensity visualization in Live View and Topo View
+- Update bladeCommands param bank param properties
+- BladeCmd - Create Other Blades can be created with bad data
+- Gobo icons in LiveVIew, Topo, SmartScreen can have texture break when returning from FixtureBuilder
+- Gobo/color icons in LiveVIew, Topo, SmartScreen can be not updated if gobo/color was changed in FixtureBuilder
+- WheelCommands delete-clone may affect wrong cmd
+
+**Offline Tool Bug Fixes**
+- Software patch could not run more than 1 sql script if registry was not set right
+- SW Update did not work correctly
 
 
 ### R_6.0

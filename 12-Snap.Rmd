@@ -1,9 +1,11 @@
 
 # Snap 
 
-This chapter deals with creating and triggering Snapshots of the current playback state.
+👉 Take a **Snap** of the Vibe controllers' live state, trigger it manually or with a cue to restore the playback configuration.
 
-**The following is covered in this chapter:**
+This chapter deals with storing and triggering Snapshots of the current playback state.
+
+**Chapter index:**
 
 -  [12.1 Snaps](#Snaps-12.1)
 -  [12.2 Trigger Snaps](#Trigger-Snaps-12.2)

@@ -1,9 +1,11 @@
 
 # Library 
 
+👉 Store Vibe **Libraries** to get presets of values divided by banks of parameters, quickly recallable from the library softkeys.
+
 This chapter deals with filtering Editor parameters when storing objects and creating libraries by banks.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [8.1 Bank Libraries](#Bank-Libraries-8.1)
 -  [8.2 Auto Generate](#Auto-Generate-8.2)
@@ -189,9 +191,9 @@ For most Delete functions, pressing \[DELETE] \[DELETE] will do the same as pres
 
 **Library Softkey Menu:**
 
-The Long Click gesture on any softkey, including the libraries, opens a temporary menu where the user can directly select the most used functions:
+The Long Click gesture on any softkey, including the libraries, opens a temporary Quick Actions menu where the user can directly select the most used functions:
 
-`r create_image_tag("08.Library", "8.1-SK-Menu")`
+`r create_image_tag("08.Library", "8.1-Quick-SK")`
 
 - Copy: make a copy of the object, that may then be pasted on a different SK
 
@@ -209,11 +211,15 @@ The Long Click gesture on any softkey, including the libraries, opens a temporar
 
 - By default Vibe uses the concept of "Automatic Parameter Grouping" when storing libraries. 
 
-- When a parameter is moved, all the parameters of the same library bank are grabbed into the editor with their current status, to guarantee that what is viewed on the stage is the same as what is stored in the library.
-
 - Auto Parameter Grouping can be disabled by tapping the toggle button in the system settings popup.
     
-- Filters may be applied to modify what is stored in a Library.
+`r create_image_tag("08.Library", "8.1-Autoparam-Grouping")`
+
+- With Auto Param Grouping enabled: when a parameter is moved, all the parameters of the same library bank are grabbed into the editor with their current status, to guarantee that what is viewed on the stage is the same as what is stored in the library.
+
+- With Auto Param Grouping disabled: when a parameter is moved, only that parameter is grabbed into the editor with its current status.
+
+- Even if the Auto Param Grouping is enabled, Filters may be applied to modify what is stored in a Library.
 
 ### Context
 
@@ -250,6 +256,106 @@ The Auto Generate button is on the Editor Toolbar in Patch pages.
 - Auto generated libraries are created when pressing the GENERATE button on the popup. 
 
 - It is possible to check the preferred options on each bank page and then generate all of them in a single click, as well as to generate step by step for each device or for each bank.
+
+### Groups
+
+Auto Generate Groups has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Group")`
+
+- All per Set creates groups including the fixtures of the Set.
+
+- All per Type creates groups including the fixtures using each imported Device.
+
+- Odd/Even creates groups with fixtures splitted in halfs between odds and evens.
+
+- Interleave 3 creates groups using a 3 fixtures interleave.
+
+- Interleave 4 creates groups using a 3 fixtures interleave.
+
+### Fixture Masks
+
+<span style="color:gray">Not implemented yet.</span>.
+
+### Intensity
+
+Auto Generate Intensity Libraries has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Intensity")`
+
+- Intensity steps libraries may be splitted: in 3 (0%, 50%, 100%), in increments of 10%, in increments of 5%.
+
+- Shutter steps libraries are created according to the fixtures' shutter and strobe parameter.
+
+### Position
+
+Auto Generate Position Libraries is not supported, because commonly the position values are fixture specific and they are customized by the operator according to the show and stage setup.
+
+### Color
+
+Auto Generate Color Libraries has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Color")`
+
+- Color Wheels steps libraries are created according to the fixtures' color wheel parameter(s). 
+
+- Similar colors may be combined into the same library. 
+
+- Half steps libraries may be created between two consecutive colors of the wheel.
+
+- System Colors creates libraries of the most used colors, defined by the system.
+
+- Kelvin creates libraries of the most used color temperatures, defined by the system.
+
+- Color libraries using the fixtures' Color Mixing system may be splitted in steps based on their Hue and Saturation virtual parameters.
+
+### Beam
+
+Auto Generate Beam Libraries has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Beam")`
+
+- Zoom libraries are created for narrow, half and wide values (usually 0%, 50%, 100%, or viceversa).
+
+- Focus libraries are created for 0%, 50%, 100%.
+
+- Iris libraries are created for narrow, half and wide, and for eventual steps of the Iris parameter.
+
+- Frost libraries are created for 0%, 50%, 100%, and for eventual steps of the Frost parameter.
+
+- Prism steps libraries are created according to the fixtures' prism wheel(s) parameter(s).
+
+- Similar prisms may be combined into the same library. 
+
+- Prism Rotation libraries may be created with a clockwise (CW) and counterclockwise (CCW) direction.
+
+### Image
+
+Auto Generate Image Libraries has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Image")`
+
+- Gobo steps libraries are created according to the fixtures' gobo wheel(s) parameter(s).
+
+- Similar gobos may be combined into the same library. 
+
+- Gobo Rotation libraries may be created with a clockwise (CW) and counterclockwise (CCW) direction.
+
+- Animation steps libraries are created according to the fixtures' animation or effect wheel(s) parameter(s).
+
+- Similar animations may be combined into the same library. 
+
+- Animation Rotation libraries may be created with a clockwise (CW) and counterclockwise (CCW) direction.
+
+### Shape
+
+Auto Generate Shape Libraries has the following options:
+
+`r create_image_tag("08.Library", "8.2-Autogen-Shape")`
+
+- Shape libraries will be based on the fixtures' blading (or shapers) system.
+
+- Shape libraries may be created for different common shapes, such as: horizontal and vertical lines, squares and triangles shapes, blade pack indexing Rotations.
 
 
 ## Library Defaults {#Library-Defaults-8.3}

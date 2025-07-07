@@ -1,13 +1,15 @@
 
 # Program
 
+👉 **Program** the Vibe: all the parameters are easily controllable with the smart pickers and efficient powerful features.
+
 This chapter deals with using the editor and the smart screen for fixture manipulation and parameter control.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [7.1 Parameters](#Parameters-7.1)
 -  [7.2 Smart Screen](#Smart-Screen-7.2)
--  [7.3 Editor Features](#Editor-Features-7.3)
+-  [7.3 Features](#Editor-Features-7.3)
 -  [7.4 Live](#Live-7.4)
 
 
@@ -207,7 +209,9 @@ Programming may be done interactively by using {Bank} keys and the 4 large push 
 
 The 11.6" multi-touch monitor directly above the 4 encoder wheels is referred to as the **Smart Screen.**
 
-The **Smart Screen** is dedicated to displaying:
+The **Smart Screen** is the "brain" of the Vibe, designed for an easy and intuitive lighting control experience.  
+
+Smart Screen is dedicated to displaying:
 
 -   Context sensitive interactive bank, and parameter information.
 
@@ -221,6 +225,12 @@ The **Smart Screen** is dedicated to displaying:
 
 -   Displays for Fan feature.
     
+The Context sensitive area changes depending on the bank and fixture type. 
+
+Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. 
+
+It is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
+
 **Smart Screen is divided into sections corresponding to the Parameter Banks.**
 
 The Bank buttons on the Smart Screen, used to access the different parameters of the selected fixtures, have the following behavior:
@@ -235,6 +245,40 @@ The Bank buttons on the Smart Screen, used to access the different parameters of
 
 - If the Bank is currently selected, it has a colored background.
 
+Parameters can be selected on the Smart screen by tapping on their box or by pressing the corresponding encoder wheel.
+
+- Currently selected params get a Red background
+
+- Editor activated params get a white background
+
+- Editor released params get no background (their value may be in idle state or come from an active controlled)
+
+- Synchronized params (virtual with physical and viceversa) get an orange text
+
+**Quick Actions**
+
+The Bank boxes and the Encoder param boxes on the bottom of the Smart screen, as well as the Extra wheels param boxes on the right side (when the "Smart" option is set) have some quick actions that can be activated with the long-click gesture.
+
+**Banks** Quick Actions, referred to all the parameters of the bank, are: 
+
+`r create_image_tag("07.Program", "7.2-Quick-Bank")`
+
+- Home (assign home value)
+
+- All Params (selection in editor)
+
+- Release (release from editor)
+
+**Params** Quick Actions, referred to the specific parameter on the encoder or extra wheel, are: 
+
+`r create_image_tag("07.Program", "7.2-Quick-Param")`
+
+`r create_image_tag("07.Program", "7.2-Quick-Extra")`
+
+- Home (assign home value)
+
+- Release (release from editor)
+
 ### Intensity
 
 Intensity bank has parameters like Dimmer, Shutter and Strobe.
@@ -246,7 +290,7 @@ The strobe and shutter level, mode and frequency can be set in the smart screen 
 <p align=center>**Smart Screen - Intensity Bank**</p>
 `r create_image_tag("07.Program", "7.2-Intensity-Bank")`
 
-The Context sensitive area changes depending on the bank and fixture type. Where possible, similar parameters from different fixture types will be presented to the user using Vibe's universal fixture model. This means that is not necessary to memorize the manufacturer's specification of each fixture, as all fixtures are programmed in a similar consistent way.
+If the selected shutter / strobe parameter's step has the possibility of a linear control of the rate, the virtual slider that controls the transition timing in Hz will be enabled.
 
 ### Position
 
@@ -254,12 +298,24 @@ Position bank has parameters like Pan and Tilt.
 
 The fixtures' position can be set either with the editor keys, wheels, and trackball, and through the smart screen by using the virtual sliders and the position picker.
 
+<p align=center>**Smart Screen - Position Bank**</p>
+`r create_image_tag("07.Program", "7.2-Position-Bank-PT")`
+
 The position is calculated at the same time on Pan/Tilt values and on virtual XYZ values, based on the fixture's calibration on the stage.
 
-Independently from the fixture's pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.
+`r create_image_tag("07.Program", "7.2-Position-Bank-XYZ")`
 
-<p align=center>**Smart Screen - Position Bank**</p>
-`r create_image_tag("07.Program", "7.2-Position-Bank")`
+Independently from the fixture's pan and tilt range, the virtual XYZ coordinates allow easy interchangeable operations between different kinds of fixtures. 
+
+In case of exchange with a fixture using a different pan and tilt range, the XYZ values will automatically recover the positions.
+
+**Position Lock** functions allow to temporarily lock a movement direction to gain a more precise control of the unlocked ones.
+
+This may be done on the panel by using the X-Lock, Y-Lock and Z-Lock buttons, which blink while enabled (when using the physical parameters, they will respectively lock Pan and Tilt).
+
+This may also be done on the Smart Screen position pickers.
+
+The Physical picker shows the Pan and Tilt Lock keys, while the Virtual picker shows the X,Y,Z Lock keys.
 
 ### Color
 
@@ -267,20 +323,26 @@ Color bank has parameters like Color Mix (RGB, CMY, RGBW, ...) and Color Wheels.
 
 The color level can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders in "Params" screen, the color picker in "Virtual" screen, or the color presets.
 
+<p align=center>**Smart Screen - Color Bank**</p>
+`r create_image_tag("07.Program", "7.2-Color-Bank")`
+
 The color mix is calculated at the same time on the color values and on virtual HSI values, based on the fixture's color mixing system.
 
-Independently from the fixture's color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture's colors.
+Independently from the fixture's color mixing system, the color picker based on HSI system allows easy interchangeable operations between different kinds of fixtures. 
+
+In case of exchange with a fixture using a different color mixing system, the virtual HSI values will automatically recover the fixture's colors.
 
 The color wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features.
 
 The color mix can also be set by using the predefined preset combinations and Vibe's smart features.
 
-<p align=center>**Smart Screen - Color Bank**</p>
-`r create_image_tag("07.Program", "7.2-Color-Bank")`
-
 **Filters Picker**
 
 Color bank has a Lee and an Other filters section to assign colors based on the most used brands of gel filters.
+
+`r create_image_tag("07.Program", "7.2-Filters-Picker")`
+
+Use the search field to find a specific filter by its numeric code.
 
 **Kelvin Picker**
 
@@ -306,7 +368,7 @@ To get a color from an image:
 
 3. Select the color to assign to the fixture selection
 
-👉 The system provides an inbuilt database of 10 default images that can be used to check the Vibe Mood Picker and create Color Libraries based on the images' tones.
+👉 The system provides an inbuilt database of 10 default images that may be used to check the Vibe Mood Picker and create Color Libraries based on the images' tones.
 
 ### Beam
 
@@ -314,12 +376,12 @@ Beam bank has parameters like Focus, Zoom, Frost and Prism.
 
 The beam parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the beam picker.
 
+<p align=center>**Smart Screen - Beam Bank**</p>
+`r create_image_tag("07.Program", "7.2-Beam-Bank")`
+
 The beam picker automatically enables the features available on the selected fixtures, offering an intuitive control system to set the mode, speed and type of transition related to the controlled parameter.
 
 The prisms are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the wheel picker to get complete control on the prism wheels' features.
-
-<p align=center>**Smart Screen - Beam Bank**</p>
-`r create_image_tag("07.Program", "7.2-Beam-Bank")`
 
 ### Image
 
@@ -327,14 +389,16 @@ Image bank has parameters like Gobo and Effect wheel.
 
 The image parameters can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the image picker.
 
-The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features. The image picker can be also accessed by pressing the Virtual button on image bank's screen.
+<p align=center>**Smart Screen - Image Bank**</p>
+`r create_image_tag("07.Program", "7.2-Image-Bank")`
+
+The gobo wheels are visualized in the interactive wheel picker on the right and can be selected with a touch. The selection opens the image picker to get complete control on the wheels' features. 
+
+The image picker can be also accessed by pressing the Virtual button on image bank's screen.
 
 On the image picker's right side, it is possible to visualize and select each fixture's wheel, on the left side can be set the indexing and rotation speed of the whole wheel or the single frame.
 
 The interactive wheel picker shows all the graphic frames related to the selected wheel to allow fast interchange operations.
-
-<p align=center>**Smart Screen - Image Bank**</p>
-`r create_image_tag("07.Program", "7.2-Image-Bank")`
 
 ### Shape
 
@@ -342,10 +406,12 @@ Shape bank has parameters like Blade movement and rotation.
 
 The blades' depth and angle can be set either with the editor keys and wheels, and through the smart screen by using the virtual sliders and the blade picker.
 
-The blade picker features a smart graphic control of the blade, independently from the fixture's blade system. Each blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
-
 <p align=center>**Smart Screen - Shape Bank**</p>
 `r create_image_tag("07.Program", "7.2-Shape-Bank")`
+
+The blade picker features a smart graphic control of the blade, independently from the fixture's blade system. 
+
+Each single blade can be moved, angled, and individually reset, the blade system can be rotated all together, and the reset options permit to reset the whole system or just the rotation parameter.
 
 ### Wheel Picker
 
@@ -355,65 +421,76 @@ The values will be stored into libraries, scenes and cues according to the param
 <p align=center>**Smart Screen - Wheel Picker**</p>
 `r create_image_tag("07.Program", "7.2-Wheel-Picker")`
 
-The wheels adjusted with the wheel picker will reflect into values assigned to the wheel's parameters, usually the wheel's positioning and rotation and the whell's frame selection, index and rotation.
+The wheels adjusted with the wheel picker will reflect into values assigned to the wheel's parameters, usually the wheel's positioning and rotation and the wheel's frame selection, index and rotation.
 
-Any wheel of the fixtures can be controlled through the wheel picker in the same way, using the Smart Screen's "Smart" visualization mode to visualize and select the frames' icons directly in the right side column.
+Any wheel of the fixtures can be controlled through the wheel picker exactly in the same way, depending on the available possibilities, by using the Smart Screen's "Smart" visualization mode to visualize and select the frames' icons directly on the right side column.
 
 ### Control
 
 Control bank has parameters related to the fixture's functions, like Lamp on/off and Reset.
 
-The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.
-
 <p align=center>**Smart Screen - Control Bank**</p>
 `r create_image_tag("07.Program", "7.2-Control-Bank")`
 
+The control bank is a special bank as its parameters are not stored in cues. Instead it sends “real time” messages to fixtures control functions.
+
 ### Media
 
-Media Bank is the picker designed for an intuitive **Media Server** programming, to handle media contents in a smart and easy way. In order to see the content in this bank, users will need to create Media Server fixtures such as Green Hippo's Hippotizer. 
+Media Bank is the picker designed for an intuitive **Media Server** programming, to handle media contents in a smart and easy way. 
+
+In order to see the content in this bank, users will need to create Media Server fixtures such as Green Hippo's Hippotizer or Arkaos. 
 
 All virtual controls are also mapped to the physical wheels for easy use.
 
-This bank has 5 types of pickers:
+The Media Bank has 5 types of pickers:
 
 **Media**
 
-This picker includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play. 
-By default all the folders and subfolders are visible, and once synchronizing the data with the media server through CITP the file's thumbnails will be shown.
-
-<p align=center>**Smart Screen - Media Bank**</p>
 `r create_image_tag("07.Program", "7.2-Media-Bank-File")`
+
+This picker includes a quick way to trigger media files from the media server. It shows all the folders and files inside the server and lets the user decide which one to play. 
+
+By default all the folders and subfolders are visible, and once synchronizing the data with the media server through CITP the file's thumbnails will be shown.
 
 **FX (Effect)**
 
-This picker includes the effects available on the media server. There are media servers with more than 1 effect engine (layer) and for each effect there will be a numbered FX Bank button.
-
-The FX Bank includes a list of effects that are possible to trigger on the server and a list of parameters to control the effect. The parameters will be dynamically changed according to the selected effect.
-
 `r create_image_tag("07.Program", "7.2-Media-Bank-Effect")`
+
+This picker includes the effects available on the media server. 
+
+There are media servers with more than 1 effect engine (layer) and for each effect there will be a numbered FX Bank button.
+
+The FX Bank includes a list of effects that are possible to trigger on the server and a list of parameters to control the effect. 
+
+The parameters will be dynamically changed according to the selected effect.
 
 **Keystone**
 
-This picker includes a graphic interface to control the keystoning of the server. 
-There are 4 points available for movement in order to control the position of each corner of the keystone control. 
-The selected point that is assigned to the physical wheels is marked in red.
-
 `r create_image_tag("07.Program", "7.2-Media-Bank-Keystone")`
+
+This picker includes a graphic interface to control the keystoning of the server. 
+
+There are 4 points available for movement in order to control the position of each corner of the keystone control. 
+
+The selected point that is assigned to the physical wheels is marked in red.
 
 **Generator**
 
-This picker is specifically made for Hippotizer. On this bank, users can control the picture that is sent from the server's layer on the Generator engine. 
-The bank acts the same as the Media FX bank by selecting the Generator from the Generators list and then moving the Generator's parameters accordingly.
-
 `r create_image_tag("07.Program", "7.2-Media-Bank-Generator")`
 
+This picker is specifically made for Hippotizer. On this bank, users can control the picture that is sent from the server's layer on the Generator engine. 
+
+The bank acts the same as the Media FX bank by selecting the Generator from the Generators list and then moving the Generator's parameters accordingly.
+
 **Geometry**
+
+`r create_image_tag("07.Program", "7.2-Media-Bank-Geometry")`
 
 This picker includes an interface to control most of the geometric functions of the media server. 
 
 There are options to control:
 
-- Aspect Mode of the layer.
+- Aspect Mode of the layer
 
 - Zoom
 
@@ -425,9 +502,19 @@ There are options to control:
 
 In addition there is a graphic preview to show the approximate result of the geometric parameters.
 
-`r create_image_tag("07.Program", "7.2-Media-Bank-Geometry")`
+### Settings
 
-### Smart Settings
+The main Smart screen settings, shown on the first level, refer to the content visualized on the right side columns.
+
+The right side columns may be set in the following modes:
+
+- Smart - show the wheel's frames of the selected fixtures
+
+- Param Steps - show the stape of the active parameter
+
+- Extra Wheels - show the parameters assigned to the extra wheels
+
+👉 While working on banks like Position, Image and Shape, it is very often needed to adjust the focus and zoom of the fixtures. Therefore it may be used the Extra Wheels option on the Smart screen to get these parameters directly available on the extra wheels, with no need to switch to the Beam bank to control them.
 
 **Smart Screen's Settings** are accessed by tapping the {Settings} key.
 
@@ -441,7 +528,7 @@ The options are divided in 3 menus:
 
 The {Home} key returns menus to the upper level.
 
-- **Format** - Sets the view format for wheel displays:
+- **Format** - Sets the view format for wheel displays.
 
 	-   Percent 
 
@@ -450,8 +537,12 @@ The {Home} key returns menus to the upper level.
 	-   Text 
 
 	-   Text + Percent
+	
+	-   Source PB
 
-- **Resolution** - Sets the wheels' and the virtual pickers' control resolution:
+- **Resolution** - Sets the wheels' and the virtual pickers' control resolution.
+
+	👉 This may also be set by toggling the \[Res] key over the trackball.
 
 	-   8 bit - Blue on \[Res] Key
 
@@ -463,15 +554,23 @@ The {Home} key returns menus to the upper level.
 
 	-   24 bit - Magenta on \[Res] key 
 
-	👉 This may also be set by toggling the \[Res] key over the trackball.
+- **View** - Sets the behavior of the smart screen views, divided in Display Mode and Echoline Mode.
 
-- **View** - Sets the behavior of the smart screen views:
+<p align=center>**Display Mode**</p>
+`r create_image_tag("07.Program", "7.2-Display-Mode")`
 
 	-   Auto - Shows programming display when there are fixtures in the editor, and shows the controller displays for Aux Qkeys and Global Sliders when the editor is cleared. 
 
 	-   Programming - Maintains the programming display even with the editor released. 
 
 	-   Playbacks - Maintains the playback controller display even with fixtures in the editor.
+
+<p align=center>**Echoline Mode**</p>
+`r create_image_tag("07.Program", "7.2-Echoline-Mode")`
+
+	-   Fixture Selection - The line shows the current editor's fixture selection.
+
+	-   Syntax - The line shows the current syntax, like the main screen's toolbar.
 
 **Smart Screen's Preferences** are accessed by tapping the {Smart} {Param Steps} and {Extra Wheels} keys near the {Settings} key.
 
@@ -484,7 +583,7 @@ The preferences affect the visualization display in the right side column of the
 -   **Extra Wheels** - Displays wheel information for the additional context sensitive encoder wheels.
 
 
-## Editor Features {#Editor-Features-7.3}
+## Features {#Features-7.3}
 
 
 ### Clear
@@ -515,7 +614,7 @@ To release all the selected fixtures' parameters from the **Editor**
     
 To release the entire bank of parameters of the selected fixtures from the Editor
 
--   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {Bank} \[RELEASE] 
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {Bank} (or tap on the Bank) \[RELEASE] 
 
 To release a fixture parameter (or the active parameters) of the selected fixtures from the Editor
 
@@ -557,7 +656,7 @@ To **Home** selected fixtures in the **Editor**
     
 To Home the entire bank of parameters of the selected fixtures in the Editor
 
--   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {BANK} \[HOME]
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {BANK} (or tap on the Bank) \[HOME]
 
 To Home a fixture parameter (or the active parameters) of the selected fixtures in the Editor
 
@@ -809,15 +908,31 @@ The syntax to copy and paste an object is:
 
 👉 \[COPY] and \[PASTE] keyboard syntax can be also used to copy and paste the selected (Red) params of a fixture to another.
 
-The syntax to **copy and paste param values** is:
-
-\[Fixture] {Param Selection} or {All} \[COPY] {Fixture} \[PASTE]
-
 When something is in **Copy** the \[COPY] key will flash in <span style="color:Red">red</span> to indicate there is a copied content.
 
 When a **Paste** command applies the content to the target, the data is kept on the Copy key to allow making other copies.
 
-Toggle \[COPY] to remove the content from the copy feature.
+Toggle \[COPY] or \[RESET] the Editor to remove the content from the copy feature.
+
+**Copy and Paste param values to Fixtures**
+
+{Fixture} {Param Selection} or {GRAB ALL} \[COPY] {Fixture} \[PASTE]
+
+**Copy and Paste a Bank of param values to Fixtures**
+
+{Fixture} {Bank Selection} \[COPY] {Fixture} {Param Selection} \[PASTE]
+
+**Copy and Paste param values to Groups**
+
+\[Group] {Param Selection} or {GRAB ALL} \[COPY] \[Group] {Param Selection} \[PASTE]
+
+**Copy and Paste param values from Cues**
+
+\[Qlist] [#] \[Cue] [#] \[Fixture] [#] \[COPY] \[Fixture] [#] \[PASTE]
+
+**Load param values from Cues to Editor**
+
+\[Qlist] [#] \[Cue] [#] \[Fixture] [#] \[LOAD]
 
 ### Move
 
@@ -834,6 +949,76 @@ The syntax to **Move a controller** is:
 \[MOVE] {Controller} {Target Controller}
 
 
+### Grab
+
+
+Grab is a powerful tool for selecting fixtures that meet a number of conditions. 
+
+By default \[GRAB] selects all fixtures with intensity or virtual intensity values above Zero.
+
+Pressing \[GRAB] without a selection opens a popup on the Smart Screen with the following options.
+
+`r create_image_tag("07.Program", "7.3-Grab")`
+
+-   **{Filters}** 
+
+	-  {Stage} - Select anything that is live on the stage and meets the conditions below. 
+
+	-  {Editor} - Select anything that is in the Editor and meets the conditions below. 
+
+	-  {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
+    
+-   **{Conditions}** 
+
+	-   {All Fixtures} - Selects all fixtures that have any changes via the editor. 
+
+	-   {Active} - Fixture has intensity value over zero. 
+
+	-   {Invisible} - Recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
+
+	-   {Inactive} - Fixtures that have NO recorded values.
+    
+-   **{Parameter Selection}**
+
+	-  {All for Selected} Grabs all parameters for selected fixtures (shortcut is \[VIBE] + \[GRAB]) 
+
+	-  {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is \[GRAB] + \[ENTER]) 
+
+	-  {Search & Replace}.
+    
+-   \[SET] \[GRAB] selects all active fixtures filtered by Set.
+
+**Grab Fixtures from a Controller:**
+
+1. Press \[GRAB] - Grab Options popup will open.
+
+2. Press any Slider/Qkey/Aux Qkey controller button - All fixtures that are in the Controller's active cue and have dimmer levels above Zero (or meet the Grab conditions selected in the popup) will be selected.
+    
+👉 Pressing ENTER will put the selection in the EDITOR.
+
+**Grab Fixtures in a cue based on a {Library} SK selection:**
+
+1. Press \[GRAB], tap a {Library} SK - All fixtures with matching libraries will be selected.
+
+2. Tap another {Library} SK - The Library will be swapped to the new library.
+    
+👉 This is especially useful for quickly swapping colors in cues containing libraries
+
+**Select all parameters for a fixture selection:**
+
+1.  Select the fixtures
+
+2.  Press \[VIBE] + \[GRAB]
+    
+**Select all Parameters with hard and tracked values outputting to the stage:**
+
+1.   Press \[GRAB] \[ENTER]
+
+**Grab an entire bank of parameters** of the selected fixtures in the Editor:
+
+-   Press \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] \[VIBE] + {BANK} (or tap on the Bank) \[SHIFT] + \[GRAB]
+
+
 ## Live {#Live-7.4}
 
 
@@ -844,6 +1029,18 @@ Vibe has two ways to display parameter data:
 2. **Live Parameter View** - shows editor and playback data in a graphic icon-based format.
 
 ### Live View
+
+The Live view is splitted into 4 different modes:
+
+- Live Full: shows the list of fixtures
+
+- Live Per Device: shows the list of fixtures, divided per device
+
+- Live Full Sub Device: shows the list of fixtures and subfixtures
+
+- Live Per Device Sub Device: shows the list of fixtures and subfixtures, divided per device
+
+The preferred Live View mode may be loaded from the Vibe Menu, Program Views, Live submenu.
 
 `r create_image_tag("07.Program", "7.4-Live-View")`
 
@@ -856,14 +1053,6 @@ Vibe has two ways to display parameter data:
   - if **Active On Stage** is on, only parameter columns that are selected in the editor or have values derived from the active stage look are shown. All others are hidden.
 
   - if **Active In Editor** is on, only parameter columns that are selected in the editor are shown. All others are hidden.
-
-- **Headers per Device** - Groups the fixtures visualization by devices, showing the device name on each header. 
-
-  - Headers can be collapsed by tapping on the arrow in the header.
-
-- **Sub Device Mode** - Toggles on/off the visualization of sub-fixtures, available when the device contains sub-devices. 
-
-`r create_image_tag("07.Program", "7.4-Live-View-Options")`
 
 - **Sets** - Select which of the fixture sets to display. 
 
@@ -972,6 +1161,16 @@ To Add or Remove columns:
   - Basic + Interactive - Live view preset that shows the param columns, the interactive icons, and the fixture layer name and number
 
   - Extended - Live view preset that shows the param columns, the interactive icons, and the fixture layer name, number and address
+
+The Live View Settings popup has two keys to switch On/Off the “Headers Per Device” and the “Sub Device Mode” visualization options. 
+
+`r create_image_tag("07.Program", "7.4-Live-View-Mode")`
+
+- **Headers per Device** - Groups the fixtures visualization by devices, showing the device name on each header. 
+
+👉 Headers can be collapsed by tapping on the arrow in the header.
+
+- **Sub Device Mode** - Toggles on/off the visualization of sub-fixtures, available when the device contains sub-devices. 
 
 Live View **Behavior** tab is to set the view's interactions.
 

@@ -1,9 +1,11 @@
 
 # Macro
 
+👉 Teach a **Macro** to include any sequence of Vibe commands, trigger it manually or with a cue to expand the program features.
+
 This chapter deals with creating and triggering custom command sequences called Macros.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [13.1 Teach Macros](#Teach-Macros-13.1)
 -  [13.2 Trigger Macros](#Trigger-Macros-13.2)

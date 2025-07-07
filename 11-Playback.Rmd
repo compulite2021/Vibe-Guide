@@ -1,9 +1,11 @@
 
 # Playback
 
+👉 **Playback** the Vibe show through the most flexible sets of physical and virtual controllers, sliders, knobs and buttons.
+
 This chapter deals with the assignment of Qlists and Scenes to the Controllers and the management of playback settings.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [11.1 Physical Controllers](#Physical-Controllers-11.1)
 -  [11.2 Virtual Controllers](#Virtual-Controllers-11.2)
@@ -318,6 +320,8 @@ Auxkeys can have a virtual button and a virtual fader, or a virtual set of fader
 
 Virtual AuxKeys show the controller's page and number, the name and number of the content loaded, the current and next Cue name and number, the fader level, and the icons of the functions assigned to the buttons and faders.
 
+Auxkey pages can be switched from the Smart Screen's Programming View with the virtual up/down keys.
+
 ### Global Slider
 
 `r create_image_tag("11.Playback", "11.2-Virtual-Global-Set")`
@@ -350,7 +354,7 @@ Virtual Global Sliders show the controller's page and number, the name and numbe
 
 `r create_image_tag("11.Playback", "11.3-Virtual-Master-Keys")`
 
-The Master Controller has 4 buttons associated:
+The Master Keys have 4 buttons:
 
 -   \[GO] - Initiates a forward timed fade between cues in the selected Qlist using the **Cue Time**.
     
@@ -386,6 +390,16 @@ There are some syntax shortcuts used to speed up the programming that are always
 
 **GOTO Commands**
 
+GOTO commands can be performed through different syntax depending on the user preference.
+
+GOTO applies a GO command to a Cue of the Qlist that is currently on the Master controller, using the Default GOTO Time specified in the Timing settings:
+
+-   \[GOTO] \[#] \[ENTER]
+
+-   \[GOTO] \[#] \[GO]
+
+More GOTO syntax options are available to define a specific Time or a different Qlist.
+
 GOTO a cue on the Master Controller using system GOTO Time:
 
 -   \[CUE] \[#] \[GOTO]
@@ -418,7 +432,7 @@ GOTO a cue on the Master Controller using Goto Cue popup:
     
 -   {Release Master PB on Top} - Releases the Master Controller.
 
-5.  Tap Apply or press \[ENTER] to close the popup and execute the GOTO.
+5.  Tap Apply or press \[ENTER] or \[GO] to close the popup and execute the GOTO.
 
 <span style="color:Red">If a Qlist other than the one that is currently on the Master Controller is selected, that Qlist will replace the current one on the Master Controller.</span>
 

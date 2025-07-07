@@ -1,9 +1,11 @@
 
 # Timeline 
 
+👉 Record a Vibe **Timeline** to automatize the show playback, based on an audio track or an external timecode signal.
+
 This chapter deals with playback automation by creating Timelines and receiving external Time Code protocols and MIDI signals to trigger the controllers.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [14.1 Timelines](#Timelines-14.1)
 -  [14.2 Time Code](#Time-Code-14.2)

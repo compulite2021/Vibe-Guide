@@ -8,10 +8,10 @@ bookdown::gitbook:
       scroll_highlight: yes
       before: |
         <li style="text-align: center;">
-        <img src="https://compulite.com/images/Products/Lighting%20Controllers/vibe/vibe%20logo.webp" alt="Image" style="max-width:200px;padding:10px;">
+        <img src="Images/00.Icons/vibe_logo.webp" alt="Image" style="max-width:200px;padding:10px;">
         <br>
         <li style="text-align: center;"><h2>Vibe Guide</h2></li>
-        <li style="text-align: center;">Version R_6.0</li>
+        <li style="text-align: center;">Version R_7.0</li>
         <br>
       after: |
         <li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.

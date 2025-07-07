@@ -1,9 +1,11 @@
 
 # Scene & Qlist
 
+👉 Store Vibe **Scenes & Qlists** to get stage looks and sequences of timed or automatic Cues, to play the show.
+
 This chapter deals with storing fixtures, parameters, libraries and times into objects to playback with the controllers: Qlists and Cues, Scenes and Submasters.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [10.1 Operations](#Operations-10.1)
 -  [10.2 Scenes](#Scenes-10.2)
@@ -32,6 +34,10 @@ These operations are:
 - Text
 
 Each operation has a dedicated command hard-key on the panel and the syntax is basically the same used for the other elements such as Groups and Libraries.
+
+An additional command used for Scenes and Cues, that can be found on the Toolbar, is:
+
+- Load
 
 ### Store
 
@@ -226,7 +232,7 @@ Cue Settings popup is used for changing Text, Cue Time, Cue Link and Loop, Cue R
 
 **Delete a Scene**
 
--   \[SCENE \[#] \[DELETE]
+-   \[SCENE] \[#] \[DELETE]
 
 -   Optionally select other Scenes to be deleted.
 
@@ -329,6 +335,32 @@ If the label has to be assigned on an already existing object, the syntax is:
 	3. Enter cue text in the text box.
 
 	4. Optionally notes may also be entered for the selected cue.
+
+### Load
+
+The LOAD command grabs all the param values stored in a Scene or a Cue and loads them in the Editor, keeping the library reference.
+
+**Load** is loading to the Editor only the parameters' hard values from the Scene or Cue.
+
+**Load State** is loading to the Editor all the parameters' hard values and tracked values from the Scene or Cue.
+
+👉 When a Scene or a Cue is loaded to the Editor, all the fixtures that have data are automatically selected.
+
+**Load a Scene's hard values to the Editor**
+
+-   \[SCENE] \[#] \[LOAD]
+
+**Load a Cue's hard values to the Editor**
+
+-   \[CUE] \[#] \[LOAD]
+
+**Load a Scene's hard and tracked values to the Editor**
+
+-   \[SCENE] \[#] \[LOAD STATE]
+
+**Load a Cue's hard and tracked values to the Editor**
+
+-   \[CUE] \[#] \[LOAD STATE]
 
 
 ## Scenes {#Scenes-10.2}
@@ -1291,36 +1323,54 @@ The **Restore default** button rolls back the changed settings to the default on
   - {Red} - The value is stored and it is the same as the previous Cue.
 
   - {Violet} - The value is not stored in the Cue, but it is tracked from a previous Cue.
+  
+### Menu
 
-### Menu and Filters
+The view's menu contains some filters and actions that can be applied to the Tracksheet view.
 
-The view's menu contains some filters and actions that can be applied to the tracksheet view.
+`r create_image_tag("10.Scene_Qlist", "10.7-Tracksheet-Menu")`
 
-- {Qlist} - The top button of the Menu is used to navigate and load the Qlists. Only one Qlist can be shown at a time. The loaded Qlist number and name are shown here.
+- {Qlist} - The Qlist button of the Menu is used to navigate and load the Qlist. Only one Qlist can be shown at a time. The loaded Qlist's number and name are shown on the button.
 
-- {Bank Filter} - Filters the data shown on the view by parameter Bank.
+- {Filters} - Open a popup where the Fixtures and Parameters shown in the Tracksheet view can be filtered.
 
-- {Set} - Filters the fixtures shown on the view by Set.
+- {Actions} - Refreshes the view in case changes have been done to the loaded Qlist or to the Filters. If values are changed on the view, shows the update actions and options.
 
-- {Selection Filter} - Shows on the view only the currently selected fixtures.
+👉 The visualized values on the Tracksheet view are not automatically refreshed. 
 
-- {Refresh} - Refreshes the view in case changes have been done while a Qlist is loaded.
+- When the {Refresh} key's background is Green the visualized data are up to date. 
 
-- {Format} - Defines the data to be shown on the cell, such as the value in %, Decimal, Text, Text+%, or the Cell Time.
+- When the {Refresh} key's background is Red the data or the fixture and param filters may have been modified. Tap on the {Refresh} key to update the visualization to the actual stored state.
 
-- {Column Limit} - Sets a limit of columns shown. Set a lower limit to load the view faster.
+### Filters
+
+Qlists and Cues may contain a large amount of values, so the Filters may be applied to load on the view only the columns referred to the fixtures and parameters that need to be checked.
+
+- {Editor} - Grabs the Tracksheet Fixture selection from the current Editor selection.
+
+- {Fixtures} - Opens the Qlist Tracksheet Filter popup on the Fixtures tab, where the fixtures shown on the view can be selected. Use the {From Editor} key to grab the current fixture selection from the Editor.
+
+`r create_image_tag("10.Scene_Qlist", "10.7-Tracksheet-Fixtures")`
+
+- {Params} - Opens the Qlist Tracksheet Filter popup on the Parameters tab, where the parameters shown on the view can be selected.
+
+`r create_image_tag("10.Scene_Qlist", "10.7-Tracksheet-Fixtures")`
+
+- {Format} - Defines the format of data shown on the cell, such as the value in %, Decimal, Text, Text+%, or the Cell Time.
+
+👉 When a new filter of fixtures and params is configured, the Tracksheet view keeps showing the previous data but the Refresh key becomes Red. Tap on {Refresh} to make it Green and apply the filters.
 
 ### Update Actions
 
 **Update Cues with Tracksheet**
 
-The values stored inside each Cue can be directly edited into the tracksheet view.
+The values stored inside each Cue can be directly edited into the Tracksheet view.
 
 To avoid tracking conflicts, a single Cue can be edited at a time.
 
-To modify any value, tap on the cell and enter the new value with the numeric keyboard, then press Enter or tap outside the selected Cue's line and it will get a white background (Cue Edit Mode). The edited params will be colored in Red.
+To modify any value, tap on the cell and enter the new value with the numeric keyboard, then press Enter or tap outside the selected Cue's line and it will get a gray background (Cue Edit Mode). The edited params will be colored in White.
 
-When a line is in Cue Edit Mode, the Tracksheet Actions will appear on the view's Menu:
+When a line is in Cue Edit Mode, the Tracksheet Actions keys will appear on the view's Menu:
 
 - {UPDATE} - Updates the Cue with the edited values.
 

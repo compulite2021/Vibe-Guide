@@ -1,13 +1,26 @@
 
 # Fixture Builder
 
-<span style="color:blue">**Chapter under development.**</span>.
+👉 Use the **Fixture Builder** software for the Vibe's fixture devices importing, building and editing.
 
 This chapter describes the Fixture Builder integrated software that is used for managing the device database and for the creation and editing of the existent fixture devices.
 
-**The following is covered in this chapter:**
 
--  [20.1 Fixture Builder](#Fixture-Builder-20.1)
+<span style="color:blue">**CHAPTER UNDER DEVELOPMENT**</span>
+
+
+**Chapter index:**
+
+-  [20.1 Introduction](#Introduction-20.1)
+-  [20.2 Device Import](#Device-Import-20.2)
+-  [20.3 GDTF Import](#GDTF-Import-20.3)
+-  [20.4 Build Device](#Build-Device-20.4)
+-  [20.5 Edit Device](#Edit-Device-20.5)
+-  [20.6 Fixture Support](#Fixture-Support-20.6)
+
+
+## Introduction
+
 
 The Fixture Builder is a Vibe inbuilt software used to manage the Device Database.
 
@@ -27,16 +40,42 @@ If launching the Fixture Builder from the Vibe, a popup will ask if it has to be
 - Show Mode - Only the devices imported into the current Vibe show will be listed.
 
 
-## Device Import and Export
+## Device Import
+
+
+Tap {Device Import} to open the device import popup.
+
+Select the Device to import from the USB stick and press Apply.
+
+When the import is completed, the "Device Imported Successfully" popup will be displayed.
 
 
 ## GDTF Import
 
 
+Tap {GDTF Import} to open the GDTF file import popup.
+
+Select the Device to import from the USB stick and press Apply.
+
+When the import is completed, the "Device Imported Successfully" popup will be displayed.
+
+GDTF file format is open source, therefore anyone can create files of this type. Because the GDTF files may have errors affecting the conversion process, a popup will suggest to check the generated devices, parameters and steps to ensure the have been correctly matched or to fix any eventual error.
+
+
 ## Build Device
+
+
+<span style="color:blue">**CHAPTER UNDER DEVELOPMENT**</span>
 
 
 ## Edit Device
 
 
+<span style="color:blue">**CHAPTER UNDER DEVELOPMENT**</span>
+
+
+## Fixture Support
+
+
+For Fixture Device related requests as well as for adding a fixture brand or device to the library, please contact Compulite [FIXTURE SUPPORT](mailto:fixturesupport@compulite.com)
 

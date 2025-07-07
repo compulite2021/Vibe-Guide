@@ -1,9 +1,11 @@
 
 # Exam
 
-This chapter deals with viewing and checking the content of any stored object and show data. 
+👉 **Exam** the Vibe show file to analise all the stored data, objects and values, navigating a user friendly tree structure.
 
-**The following is covered in this chapter:**
+This chapter deals with viewing and checking the content of stored object and show data. 
+
+**Chapter index:**
 
 -  [16.1 Exam View](#Exam-View-16.1)
 -  [16.2 Show Exam](#Show-Exam-16.2)

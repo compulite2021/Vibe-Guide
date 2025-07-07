@@ -1,9 +1,11 @@
 
 # Layout
 
+👉 Customize the Vibe **Layout** and get the best interface to fit any operator's needs and preferences.
+
 This chapter provides an overview of Vibe's layout and GUI (Graphical User Interface).
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [3.1 Interface](#Interface-3.1)
 -  [3.2 Vibe Menu](#Vibe-Menu-3.2)
@@ -23,18 +25,20 @@ Vibe has a multi-touch based interface, using simple gestures for selection and 
   
   ◾ Two fingers or right mouse click to swipe and scroll.
   
-  ◾ Long one finger press or left mouse click for drag&drop.
+  ◾ Long finger press or left mouse click for Drag&Drop.
   
+  ◾ Long finger press or left mouse click on objects for Quick Menu Actions.
+
   ◾ Multi-selection via ️️⤴ ⤵ (right->up /right->down) shaped gestures.
   
 
 - Vibe directly supports up to 4 monitors, two embedded and two external. (Additional monitors may be added by using Display Port 1.2 or higher and MST splitter for a total of 4 external monitors at 1920 x 1080 resolution). 
     
-- The large embedded screen called **Vibe Main Screen** is general-purpose, as well as the external monitors.
+- The small embedded screen called **Smart Screen** is dedicated to context sensitive fixture information and interactive parameter pickers. It is used for Editor programming.
 
-- The small embedded screen called **Smart Screen** is dedicated to context sensitive fixture information and interactive parameter pickers, used for Editor programming.
+- The large embedded screen called **Vibe Main Screen** is general purpose, as well as the external monitors that may be connected. It is used for most of the patch, program and playback operations, collecting all the views on fully customizable pages that can be saved into user layout files.
 
-- Each screen, excluding the Smart Screen, can have one **Window** with an independent set of **Pages**.
+- Each screen, excluding the Smart Screen, can have one **Window** or more, with an independent set of **Pages**.
 
 - Each window can contain up to 12 Pages divided in 3 different Page Types:
   
@@ -44,11 +48,9 @@ Vibe has a multi-touch based interface, using simple gestures for selection and 
   
   - up to 4 Pages for **PLAYBACK**
 
-- The page buttons, used to switch between the different pages, are specific to the monitor that has focus (the last touched or mouse selected screen).
-
 ### Smart Screen
 
-The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe console is referred to as the **Smart Screen**. 
+The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe 2 screen console models is referred to as the **Smart Screen**. 
 
 <p align=center>**Smart Screen**</p>
 `r create_image_tag("03.Layout", "3.1-Smart-Screen")`
@@ -57,11 +59,23 @@ The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe c
 
 - On Vibe single-screen console models and on Vibe PC the Smart Screen is a View, so it can be positioned on any layout Page.
 
+Vibe Smart Screen has different options that allow o use it both for the fixtures' parameters manipulation and for the controllers' playback.
+
+- The Bank keys (intensity, Position, color, etc...) give access to the selected fixtures's parameter controls.
+
+- The line on the bottom of the Smart Screen, called **Echoline**, shows the current fixture selection or the syntax.
+
+- On the right side of the echoline there are the Smart Screen's options and settings.
+
+- The lower part and the right side of the screen show the parameters that may be controlled, depending on the selected fixtures and banks and according to the encoder wheels and extra wheels assignment.
+
 ### Toolbars
+
+Vibe Toolbar is a function line that may be placed either on the top or the bottom of the Vibe main screens. 
 
 The left side of the Toolbar contains the **Vibe Menu** button, the **Home Pages** buttons, and the **Command Line** that shows the current syntax.
 
-The right side of the Toolbar, also referred to as the **Editor Toolbar**, contains a set of interactive buttons that are used to access less common commands.
+The right side of the Toolbar, also referred to as the **Editor Toolbar**, contains a set of interactive buttons that are used to access additional editor commands.
 
 The **Editor Toolbar** shows a different set of buttons according to the programming syntax.
 
@@ -87,6 +101,10 @@ It is used to access common system functions such as **Save Show** and **Exit**,
 
 It contains all the Views listed in dedicated submenus.
 
+The upper part of the Menu shows the currently loaded show file.
+
+The search field may be used to filter and find the needed view by writing the view's name in it.
+
 ### Show Menu
 
 The Show Menu is used to manage Vibe show files.
@@ -99,9 +117,9 @@ Open the Show Menu to access the following options:
 
 **{Save Show}** - Save the current show in the last defined directory.
 
-**{Save Show As...}** - Open a popup to name and save the current show (on Vibe DB or an external device).
+**{Save Show As...}** - Open a popup to name and save the current show (on Vibe DB, on an external device, or on both).
 
-**{Load Show}** - Open a popup to load a saved show file  (from Vibe DB or an external device).
+**{Load Show}** - Open a popup to load a saved show file  (from Vibe DB or from an external device).
 
 `r create_image_tag("03.Layout", "3.2-Load-Show")`
 
@@ -123,43 +141,85 @@ The Load Vector Show popup, if opened from a PC that has Vector software install
 
 After selecting the Vector show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
 
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Device")`
+- Set the matching objects on each tab, by changing the number assigned to the Vibe object.
 
-Vector Shows will be loaded and converted with the following limitations:
+- Press the Next or Back keys to navigate through the tabs.
+
+- Press the Reset key to discard the matches edited on the current tab.
+
+- Press the Generate Report (enabled on the last tab) to create a grid file that lists all the matches that have been set between the Vector and the Vibe show files.
+
+Vector Shows will be loaded and converted as follows:
 
   - **Devices**: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.
+  
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Device")`
 
   - **Patch**: Vector device parameters will be mapped to Vibe device parameters.
 
-  - **Qlists and Cues**: will be matched.
-
-  - **Cue Values**: Vector cue parameter values will be matched to Vibe cue parameter values.
-
-  - **Temp Cues**: will be converted into Vibe Scenes.
-
-  - **Submasters**: will be converted into Vibe Submasters.
-
   - **Groups**: will be matched.
+
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Group")`
 
   - **Libraries**: will be matched per Bank, parameter values will be matched. 
 
   - **General Libraries**: will be matched to Custom Libraries.
 
-  - **Playbacks**: Vector Playbacks will be matched to Vibe Controllers, paging will be matched, all button functions common to Vector and Vibe will be matched.
-
-  - **Snaps**: will be matched and mapped to Vibe virtual controllers when the number of Vector Playbacks exceeds the amount of Vibe Controllers.
-
   - **Effects**: will be matched.
+
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Library")`
+
+  - **Qlists**: will be matched.
+
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Qlist")`
+
+  - **Cues**: Vector cue numbers will be matched to Vibe cue numbers with no possibility of renumbering before the conversion process.
+
+  - **Cue Values**: Vector cue parameter values will be matched to Vibe cue parameter values.
+
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Cue")`
+
+  - **Temp Cues**: will be converted into Vibe Scenes.
+
+  - **Submasters**: will be converted into Vibe Submasters.
+
+  - **Snaps**: will be matched and mapped to Vibe virtual controllers, until the number of Vector Playbacks exceeds the amount of Vibe Controllers.
+
+`r create_image_tag("03.Layout", "3.2-Load-Vector-Snap")`
+
+  - **Playbacks**: Vector Playbacks will be matched to Vibe Controllers, paging will be matched, all button functions common to Vector and Vibe will be matched.
 
   - **Macros**: <span style="color:Gray"> Not supported yet. </span>
 
+#### Load MVR Show
+
+The Load MVR Show popup is used to load a show in MVR format and convert it into a Vibe show file.
+
+`r create_image_tag("03.Layout", "3.2-Load-MVR")`
+
+After selecting the MVR show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
+
+MVR Shows will be loaded and converted as follows:
+
+  - **Devices**: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.
+  
+`r create_image_tag("03.Layout", "3.2-Load-MVR-Device")`
+
+  - **Fixture**: MVR fixtures IDs will be mapped to Vibe fixtures IDs.
+
+  - **Patch**: MVR fixture addresses will be mapped to Vibe fixture addresses.
+
+  - **Calibration**: MVR fixtures calibration data will be mapped to Vibe calibration data.
+  
+After matching the MVR devices to the Vibe devices, press Apply and wait for the loading bar to end the show conversion process.
+  
 #### CleanUp Show
 
 The Clean Up Show popup shows all the objects that are not used on the show file, such as unused Fixtures and Devices, unused Libraries, unassigned Qlists and Scenes, divided by tabs.
 
 `r create_image_tag("03.Layout", "3.2-CleanUp-Show")`
 
-Use this feature to find and delete the unused objects, to reorder the show file and make it lighter.
+Use this feature to find and delete the unused objects, to reorder the show file and to make it lighter by deleting all the unnecessary contents.
 
 #### Show Report
 
@@ -265,7 +325,13 @@ Learn more about the Offline Tool in the dedicated chapter. <span style="color:G
 
 **{Version}** - Open a popup listing the installed version of Vibe software and components.
 
-**{Manual}** - Open a popup with the Vibe Manual that can be also found online at https://vibemanual.compulite.com/. <span style="color:Gray"> (not implemented yet) </span>
+**{Manual}** - Open a popup with the Vibe Manual that can be also found online at https://vibemanual.compulite.com/. 
+
+👉 Vibe Manual is embedded in the Vibe Software.
+
+- If the system is online, the web manual will be opened in the browser.
+
+- If the system is offline, a local version of the Manual will be opened.
 
 **{Tutorial}** - Open the tutorial popup that is shown at Vibe's software start up.
 
@@ -297,13 +363,19 @@ Vibe has 3 types of Pages:
 
 -   **Playback Page** 
 
+- The page buttons are used to switch between the different pages and they are specific to the monitor that has focus (the last touched or mouse selected screen).
+
+**\[View]** opens the Page View and the button color coding shows the currently focused monitor.
+
+👉 Paging is independent for each window, but it can be synchronized by pressing **\[Shift]+\[View]** 
+
 **\[Patch Page]** or the F2 keyboard button switches between the existing Patch Pages.
 
 **\[Program Page]** or the F3 keyboard button switches between the existing Program Pages.
 
 **\[Playback Page]** or the F4 keyboard button switches between the existing Playback Pages.
 
-All the Pages are organized in the **Pages View** that can be accesses either by pressing the **\[VIEW]** button or by tapping the **{VIBE}** Menu and then the **{PAGES}** key on the Toolbar.
+All the Pages are organized in the **Page View** that can be accesses either by pressing the **\[VIEW]** button or by tapping the **{VIBE}** Menu and then the **{PAGES}** key on the Toolbar.
 
 `r create_image_tag("03.Layout", "3.3-Pages-View")`
 
@@ -317,31 +389,55 @@ All the Pages are organized in the **Pages View** that can be accesses either by
 
 ### Home Pages
 
-Home page buttons, located on the Taskbar, are a fast way to recall up to three main pages.
-
-`r create_image_tag("03.Layout", "3.3-Home-Pages")`
-
-Any page can be stored as a Home Page on the Page View.
+Home page buttons, located on the Toolbar, are a fast way to recall up to three main pages.
 
 F1 keyboard button switches between the three Home Pages.
 
 The currently active Home Page is shown in Green.
 
+`r create_image_tag("03.Layout", "3.3-Home-Pages")`
+
+Any page can be stored as a Home Page on the Page View. 
+
+The Home Pages may be assigned when the screen is in Page View and it is unlocked by tapping the Selection key.
+
 ### Clone Pages
 
 Clone pages for a faster building of a similar layout page.
 
-The Clone Pages key is displayed on the Toolbar, near the menu, when the window is in View mode and it is unlocked by tapping the Selection key.
-
 `r create_image_tag("03.Layout", "3.3-Pages-Toolbar")`
+
+Any page can be cloned as long as there is room available. 
+
+The Clone Pages key is displayed on the Toolbar, near the menu, when the screen is in Page View and it is unlocked by tapping the Selection key.
+
+### External Windows
+
+Any additional window that is added to the Vibe layout, maybe to be placed on an external monitor, will have exactly the same possibilities of the Main window. 
+
+Each external window also has:
+
+- 3 page types (Patch, Prog, Play-B) with up to 4 pages each, 
+
+- 3 Home Pages directly accessible throght the Home keys,
+
+- A Toolbar showing the Vibe Manu and Command Line.
+
+The Page buttons operate on the currently active window, the last one selected with a touch or mouse input.
+
+The Vibe Menu of the external windows shows the **Close** button instead of the **Exit** button. Tapping on it will close the window without exiting the software.
+
+Vibe Layout files save all the windows that are currently shown in the Vibe workspace.
 
 
 ## Views {#Views-3.4}
 
 
-- Vibe Views are listed inside the Vibe Menu, into the Patch, Program, Playback Views sub-menus.
+- Vibe Views are listed inside the Vibe Menu, into the Patch, Program, Playback Views submenus.
 
 - Any View can be added to any Page and stored in the layout.
+
+- Views can be moved between different pages. While editing the layout and dragging a view, press a Page button to switch the current page and the view will follow, making it possible to add it to the visualized page.
 
 - Views can be resized and tabbed together, but each view has its own dimension limits.
 
@@ -352,6 +448,10 @@ The Clone Pages key is displayed on the Toolbar, near the menu, when the window 
 - If an object is dragged on top of another, both will turn green showing it is possible to tab them and create a **tabbed** view. Keep a tabbed view pressed to extract an object from the tab an move it separately.
 
 `r create_image_tag("03.Layout", "3.4-Views-sample")`
+
+👉 Use the **Quick Layout Actions** menu to directly access the View's lists in Vibe Menu, Lock and Unlock the Layout, open the Page View or the Layout Settings popup. Quick Layout Actions may be opened through a long press gesture either on the Toolbar or on any empty space of a page.
+
+`r create_image_tag("03.Layout", "3.4-Quick-Layout")`
 
 Here is the complete list of all the views that can be added to the layout pages to configure and customize the Vibe workspace.
 
@@ -445,6 +545,8 @@ Here is the complete list of all the views that can be added to the layout pages
 
 **Live** - The table view that shows the live status of all the fixtures' parameters.
 
+👉 Live view have 4 different visualization modes, allowing to have or not have fixtures divided by **Headers per Device** and to show or not show **SubDevices**. These modes may also be switched later in the Live View Settings popup.
+
 **Live Parameters** - The icon view that shows the live status of the fixtures' parameters.
 
 **Qlist Tracksheet** - The table used to check, edit and update the Qlists and Cues stored in the show.
@@ -525,7 +627,7 @@ The Context Smart Mode filters the visualized objects automatically avoiding the
 
 `r create_image_tag("03.Layout", "3.4-Single-Button-Settings")`
 
-Specific settings, such as color and text size, can be assigned to each single button.
+Specific settings, such as background color and text color, size, or autotext option, either in Idle State or On Press can be assigned to each single button.
 
 The settings can be saved as Pre-Built and applied to the other single buttons of the same tab, page, or to the buttons in all the pages.
 

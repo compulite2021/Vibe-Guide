@@ -1,13 +1,18 @@
 
 # Topo 
 
+👉 Create a Vibe **Topo**, not only a 2D stage plan but also an impressively intuitive view for touch selections and triggers.
+
 This chapter deals with creating a Topographical Map to select the fixtures and trigger the objects.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [15.1 Topo View](#Topo-View-15.1)
--  [15.2 Topo Menu](#TopoMenu-15.2)
--  [15.3 Create Topo](#Create-Topo-15.3)
+-  [15.2 Topo Menu](#Topo-Menu-15.2)
+-  [15.3 Add Elements](#Add-Elements-15.3)
+-  [15.4 Selection](#Selection-15.4)
+-  [15.5 Tools](#Tools-15.5)
+-  [15.6 Live Mode](#Live-Mode-15.6)
 
 
 ## Topo View {#Topo-View-15.1}
@@ -41,23 +46,95 @@ The Topo view has 2 operating modes, switchable with the toggle button on the bo
    
    - **{EDIT}**: Topo toolbar and menu get a <span style="color:red">Red</span> frame. Enables all the Topo editing options, disables fixture selection and object triggering.
 
+### Topo Toolbar
 
-## Topo Menu {#TopoMenu-15.2}
+The Topo Toolbar is on the bottom of the Topo View and is used for Topo navigation and for the most common Topo Actions.
+
+`r create_image_tag("15.Topo", "15.1-Topo-Toolbar")`
+
+- Horizontal Slider - allows to Zoom In nd Zoom Out the Topo, showing the multiplier
+
+- Center Stage - centers the Topo to the axes origin
+
+- Fit Stage to Screen - adapts the Zoom to visualize all the stage
+
+- Fit Selection to Screen - adapts the Zoom to visualize all the selected object on the Topo
+
+- Fit Stage to Screen - adapts the Zoom to visualize all the existing object on the Topo
+
+- Reset Zoom - sets the Zoom multiplier to x1.0
+
+👉 The last Topo Zoom settings used are automatically kept when changing the selected Topo or switching Vibe pages.
+
+- **Object Settings** - opens the object settings popup to customize the Fixture Icons and to define the wheels that should be visualized for each device's icon.
+
+`r create_image_tag("15.Topo", "15.1-Object-Settings")`
+
+- **Show Fixture Address / Name** - switches the visualization on the fixture icons' headers between the Fixture Names and the DMX Addresses.
+
+👉 When the Stage Patch information needs to be shared with the Lighting Technicians, apart from exporting the Patch Data with the list of fixtures and addresses through the Show Report function in the Vibe Show Menu, a screenshot of the Topo showing the Fixture IDs and Addresses may be taken, to easily share a map of the lighting rig referencing the addresses to the fixtures' positioning.
+
+- **From Editor** - selects the current fixture selection from the Editor and adds it to the Topo. 
+
+👉 A single press on {From Editor} adds the fixture selection directly, while a long press gesture allows to drag&drop the selection on the Topo to the desired position.
+
+
+## Topo Menu {#Topo-Menu-15.2}
 
 
 The Topo Menu is a hierarchical menu that provides the tools for creating and editing Topos. 
 
-It provides the **TOPO** selection, with options to create, edit, duplicate and delete topos, and following sub-menus:
-
-   - Add Elements
-
-   - Selection
-
-   - Tools
-
 `r create_image_tag("15.Topo", "15.2-Topo-Menu")`
 
-**{Add Elements}** - Accesses the available objects:
+The menu is divided in 3 categories: Topo, Actions, Actions History.
+
+**TOPO** - Provides the Topo selection, with options to:
+  
+  - create a new Topo
+  
+  - edit the existing Topos
+  
+  - duplicate the selected Topo
+  
+  - delete the selected Topo
+  
+**ACTIONS** - Collects the submenus containing all the operations that may be done on the Topo:
+
+  - Add Elements - Accesses the available objects
+
+  - Selection – Accesses the selection options
+
+  - Tools - Accesses the smart adjustment options
+
+**ACTIONS HISTORY** - Records and writes down all the actions that have been applied to the Topo, featuring the commands to:
+  
+  - UNDO - rolls back the last operation on the list on each press
+  
+  - REDO - recovers the undone operation on the list on each press
+
+`r create_image_tag("15.Topo", "15.2-Actions-History")`
+
+👉 When the Topo view is in **Edit** Mode all the Topo submenus are enabled. When the Topo view is in **Live Mode** only the Topo menu and the Selection submenu are enabled, while the Add Elements and Tools submenus are grayed out and disabled.
+
+### Topo Actions
+
+**To create a new Topo** 
+
+Navigate to a Topo view
+
+1.  Tap the {+} key in the Topo Menu. - The "Create New Topo" popup will appear.
+
+`r create_image_tag("15.Topo", "15.2-Create-Topo")`
+
+2. Select the desired Topo number, and give the Topo a unique name.
+
+3. Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings popup.
+
+4. Select the stage point of view. The default is Top view.
+
+5. Tap Apply or press \[ENTER] - This closes the popup, enters Topo {Edit} mode, and the grid will be displayed.
+
+**{Add Elements}**
 
 - {Sets} Opens the filter of all available sets: Fixture, Channels, Spots, Matrix, Servers, and users created sets.
 
@@ -81,7 +158,7 @@ It provides the **TOPO** selection, with options to create, edit, duplicate and 
 
 - {Background} Adds/Removes a customizable and adjustable background image.
 
-**{Selection}** – Accesses the selection options:
+**{Selection}**
 
 👉 All types of selection must start outside of the fixture icons.
 
@@ -97,7 +174,7 @@ It provides the **TOPO** selection, with options to create, edit, duplicate and 
 
 - Sync to Editor: Fixtures can be selected using the embedded keypad (only in Edit Mode).
 
-**{Tools}** - Accesses the smart adjustment options:
+**{Tools}**
 
 - {Align}: Aligns the selected elements horizontally to the left, center or right, and vertically to the top, middle or bottom. The alignment can also be set on a circular or a square shape and between two points it is possible to adjust the element location on the shape, the radius and the ending point.
 
@@ -110,28 +187,12 @@ It provides the **TOPO** selection, with options to create, edit, duplicate and 
 - {Arrange by Calibration} - When tapped, selected fixture icons get their positions from the XYZ calibration.
 
 
-## Create Topo {#Create-Topo-15.3}
+## Add Elements {#Add-Elements-15.3}
 
 
-**To create a new Topo:** 
+### Fixtures
 
-Navigate to a Topo view
-
-1.  Tap the {+} key in the Topo Menu. - The "Create New Topo" popup will appear.
-
-`r create_image_tag("15.Topo", "15.3-Create-Topo")`
-
-2. Select the desired Topo number, and give the Topo a unique name.
-
-3. Enter the size of the Stage surface. The stage dimensions may be in be in Imperial or Metric. This default is set in the System Settings popup.
-
-4. Select the stage point of view. The default is Top view.
-
-5. Tap Apply or press \[ENTER] - This closes the popup, enters Topo {Edit} mode, and the grid will be displayed.
-
-### Add Fixtures
-
-There are two ways to add fixtures to a Topo 
+There are two ways to add fixtures to a Topo, from the keypad or from the Topo menu.
 
 **Using keypad selection**:
 
@@ -171,7 +232,7 @@ Topo view supports the fixture layers, so sub-devices of a fixture (for example 
 
 `r create_image_tag("15.Topo", "15.3-Topo-SubDevices")`
 
-### Add Softkeys
+### Softkeys
 
 There is an option to add softkeys of any type to the Topo with dragging and dropping items from the menu.
 
@@ -191,7 +252,7 @@ Softkey objects that can be currently added to the Topo include:
 
 Softkey object icons can be arranged on the Topo in the same way the fixture icons are.
 
-### Add Pixel Maps
+### Pixel Maps
 
 The pixel mapper creates a matrix of fixtures. 
 
@@ -227,7 +288,7 @@ Matrix fixtures may be selected by blocks using the rectangle or the lasso selec
     
 👉 The current Pixel Mapper is for the selection of fixtures and displaying of live output but future versions will add the ability to map content to individual pixel maps.
 
-### Add Text Labels
+### Labels
 
 Text labels of any color can be added don the Topo, for example to put notes, descriptions, or important information.
 
@@ -245,7 +306,7 @@ Text labels of any color can be added don the Topo, for example to put notes, de
 
 5. Transpose tools may be used to size and rotate the label.
 
-### Add Background
+### Background
 
 Backgrounds images, such as studio layouts, renderings and rig elements, may be added to the Topo. 
 
@@ -273,5 +334,89 @@ Backgrounds images, such as studio layouts, renderings and rig elements, may be 
 
 Topo background images can be edited in size and position, through the tools under the Add/Remove Background buttons.
 
-`r create_image_tag("15.Topo", "15.3-Topo-Menu-Background")`
+`r create_image_tag("15.Topo", "15.3-Topo-Background")`
+
+
+## Selection {#Selection-15.4}
+
+
+`r create_image_tag("15.Topo", "15.4-Selection-Menu")`
+
+- Fixture Selection may be switched at any time between the **Square** and the **Lazo** mode.
+
+- The **Deselect** key toggles off the current object selection. The same result may be achieved through a double tap on any empty area of the Topo.
+
+- The trash bin is to **Delete** the currently selected object from the Topo.
+
+- **Snap to Grid** option forces the objects to be positioned along the Topo Grid, while in Edit Mode. If the option is not enabled the objects are free to be positioned anywhere.
+
+- **Sync to Editor** option synchronizes the Topo selection with the Editor selection.
+
+
+## Tools {#Add-Elements-15.5}
+
+
+`r create_image_tag("15.Topo", "15.5-Tools-Menu")`
+
+- **Align** sub-menu contains all the align options that may be applied to the icons. 
+
+  - Selected icons may be aligned to the left, central or right icon
+  
+  - Selected icons may be aligned to the top, central or bottom icon
+  
+  - Selected icons may be aligned in a Circle shape, in a Square shape, or in a Line between 2 points. Both Circle and Square alignment options may be adjusted through the virtual sliders that appear when they are applied.
+
+- **Align to Point** sub-menu contains basically the same options of the Align, but the alignment instead of being based on the first selected fixture may be based on any point of the Topo by tapping on it.
+
+- **Spread** sub-menu contains all the spread options that may be applied to the icons.
+
+  - Selected icons may be spread to the sides, starting from the left, central or right icon
+  
+  - Selected icons may be spread up and down, starting from the left, central or right icon
+
+- **Transform** sub-menu contains all the transform options that may be applied to the icons.
+
+  - Selected icons may be sized bigger or smaller
+  
+  - Selected icons may be rotated in both directions
+
+  - Selected icons may be rotated in steps of +/-45 degrees or their rotation may be reset to a 0 degrees rotation angle
+
+- **Arrange by Calibration** key automatically positions the selected icons on the Topo, following the Fixtures' coordinates and the Stage Size that have been inserted (or imported) in the Calibration Data popup.
+
+
+## Live Mode {#Live-Mode-15.6}
+
+
+When the Topos are ready, they become a very useful tool to easily manage the fixture selection and the objects triggering.
+
+Switching the Topo View to Live Mode, the frame will change from Red to Green to show that it is active.
+
+While Topo Views in Edit Mode show the selected icons' frames in Red, Topo Views in Live Mode show the selected icons' frames in yellow.
+
+A few user samples of Topo Views utilities are as follows.
+
+Topos may be used to make a top visualization of the Lighting Rig and show the fixture addresses and patch information based on the fixture positions.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample1")`
+
+Topos may be used for having a graphical Live view of the stage lighting, where the Global Icons of the fixtures show in real time their intensity level, position, color, prism and gobo wheels' steps.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample2")`
+
+Topos may be used to create an intuitive ready-to-use interface that allows any not-experiences people to make a fixture selection and trigger Vibe objects such as Libraries, Snaps or Macros.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample3")`
+
+Topos may be set with a Front view and a Background, showing the stage appearance and positioning the Global Icons over the image, to simplify the lighting rig checking process.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample4")`
+
+Topos may be set with a Top view and a Background, showing the stage appearance and positioning the Fixture Icons over the image, to simplify the fixture selection process.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample5")`
+
+Topos may be used to simplify the management of the more complicated fixtures (such as the ones made of many sub-fixtures) and the control of Media Servers, by adding softkeys of the needed Groups and Libraries that may be easily activated.
+
+`r create_image_tag("15.Topo", "15.6-Topo-Sample6")`
 

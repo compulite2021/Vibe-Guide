@@ -1,22 +1,30 @@
 
 # Editor 
 
+👉 Understand the Vibe **Editor**, a simple concept and a direct syntax to manage a versatile fixture selection.
+
 This chapter introduces to the editor, explaining the concept and syntax, then describing the ways of making fixture selections.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [6.1 Concept](#Concept-6.1)
 -  [6.2 Syntax](#Syntax-6.2)
 -  [6.3 Selection](#Selection-6.3)
--  [6.4 Editor](#Editor-6.4)
--  [6.5 Groups](#Groups-6.5)
--  [6.6 Grab](#Grab-6.6)
+-  [6.4 Groups](#Groups-6.4)
 
 
 ## Concept {#Concept-6.1}
 
 
 The Vibe is an advanced lighting control system designed to simplify programming in all styles of Entertainment lighting.
+
+**Maintain Selection**
+
+-   To avoid reselecting fixtures after a STORE command, Vibe maintains its selection on reset of the editor.
+
+-   To clear the editor and the fixture selection \[VIBE] (Shift) + \[RESET] must be pressed.
+
+**Fixture Control**
 
 - To simplify programming, Vibe uses an abstract layer that allows fixtures of different hardware types to be presented to the user in a universal way.
     
@@ -60,6 +68,53 @@ Some examples are:
 
 -  Virtual XYZ coordinates for calibration of fixtures that only have physical Pan/Tilt parameters.
     
+**Color spaces**
+
+Vibe works in two synchronized color spaces: 
+
+-  HSV: Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (or any color mixing parameter of the fixture) will be displayed, but not directly referenced in cues using virtual HSV.
+
+-  Color Mix (RGB, CMY, others): If color values are set by using the real color mixing parameters, physical values are stored in the cue and HSV values will be displayed but not directly referenced.
+
+**Position spaces**
+
+Vibe works in two synchronized position spaces: 
+
+-  XYV: Position for all types of fixtures can be set using the XYZ Position picker or the XYZ parameter wheels. XYZ virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically Pan and Tilt values will be displayed, but not directly referenced in cues using virtual XYZ.
+
+-  Pan/Tilt: If position values are set by using the real focusing parameters, physical values are stored in the cue and XYZ values will be displayed but not directly referenced.
+
+**Virtual crossfading**
+
+By default the color and position crossfading is done by using the physical color parameters, but any Cue can be assigned to crossfade the virtual parameters instead.
+    
+## Editor {#Editor-6.4}
+
+All fixture selections and parameter modifications occur in the **Editor** (also called Programmer in other consoles). 
+
+The HardKeys panel, both virtual and physical, and the Smart Screen, are the most important components used to program the Editor.
+
+The **Live View** shows all values from both the fixtures in the Editor and the output from Controllers (also called Playbacks or Executors on other consoles). 
+
+Color coding is used to distinguish between values coming from the controllers and values in the Editor.
+
+`r create_image_tag("06.Editor", "6.1-Editor-Color-Coding")`
+
+The Editor priority is always higher than the Playback priority, so any parameter moved in the Editor will overcome the values coming from any controller. 
+Release the parameter or the fixture from the Editor to get back to the controller's output values.
+
+### HardKeys
+
+The Editor Hardkeys are the buttons on the Vibe Panel use to program. 
+
+Vibe is a touch-based system, allowing efficient fixture manipulation through its smart on-screen features, but it is also possible to program it in a traditional syntax based way by pressing the hardkeys in the proper sequence.
+
+As all the other panel's physical components (buttons and controllers), also the Hardkeys may be added to the layout by using the **Virtual HardKeys** View.
+
+`r create_image_tag("06.Editor", "6.1-Virtual-Hardkeys")`
+
+### Tracking & Qonly
+
 **Tracking Mode**
 
 Vibe by default is a tracking console and follows the conventions of modern show lighting. 
@@ -85,24 +140,35 @@ Using Compulite Mode the defaults are changed to:
 -   After Reset, Editor values mantain their last position instead of returning to home values.
 
 -   Controllers do not advance to the Cue after a Store.
+
+### Blind Editor
+
+The Blind Editor is a parallel Editor used to create or modify objects without outputting values to the stage.
+
+When using Blind Editor the \[Blind] key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
+
+`r create_image_tag("06.Editor", "6.1-Blind-Editor")`
+
+In Blind Editor the syntax and operations on the Objects, such as Store and Update, can be done exactly like in the Live Editor, but with no output on stage. 
+If a change is stored on content that is currently in Playback, then the output will be affected.
+
+Vibe has two Blind Editor behaviors:
+
+1. Blind acts as an independent editor, separate from the live editor.
     
-**Color spaces**
-
-Vibe can work in three color spaces: 
-
--  HSV: Color for all types of fixtures can be set using the Color picker or the HSV parameter wheels. HSV virtual parameters are stored in Cues and Libraries just like physical parameters. Automatically CMY or RGB values (or any color mixing parameter of the fixture) will be displayed, but not directly referenced in cues using virtual HSV.
-
--  RGB, CMY, other: If color values are set by using the real color mixing parameters, physical values are stored in the cue and HSV values will be displayed but not directly referenced.
-
-**Virtual crossfading**
-
-By default the color and position crossfading is done by using the physical color parameters, but any Cue can be assigned to crossfade the virtual parameters instead.
+2. Blind grabs the values from the live editor and viceversa. This is used to emulate the behavior of single editor consoles, where the main editor output is disabled while using the Blind Editor.
     
-**Maintain Selection**
+**To open the blind editor:**
 
--   To avoid reselecting fixtures after a STORE command, Vibe maintains its selection on reset of the editor.
+- Press \[BLIND] to open the Blind Editor empty, or as leaved at the last access.
+    
+- Press \[VIBE] + \[BLIND] to open the Blind Editor in single editor mode. The Live Editor contents are copied to the Blind Editor.
 
--   To clear the editor and the fixture selection \[VIBE] (Shift) + \[RESET] must be pressed.
+**To exit the blind editor:**
+
+- Press \[BLIND] to close the Blind Editor and get back to the Live Editor. The contents in the Blind Editor are kept.
+    
+- Press \[VIBE] + \[BLIND] to exit the Blind Editor in single editor mode. The Blind Editor contents are copied and merged to the Live Editor. The contents in the Blind Editor are also kept.
 
 
 ## Syntax {#Syntax-6.2}
@@ -329,63 +395,7 @@ It can be used prior to entering the Advanced Effects editor to create more comp
 👉 Simple Block and Sub Block groupings may be created in both Effects Editors with no need of using order tools, but the pattern feature allows more advanced blocks and groupings.
 
 
-## Editor {#Editor-6.4}
-
-
-All fixture selections and parameter modifications occur in the **Editor** (also called Programmer in other consoles). 
-
-The HardKeys panel, both virtual and physical, and the Smart Screen, are the most important components used to program the Editor.
-
-The **Live View** shows all values from both the fixtures in the Editor and the output from Controllers (also called Playbacks or Executors on other consoles). 
-
-Color coding is used to distinguish between values coming from the controllers and values in the Editor.
-
-`r create_image_tag("06.Editor", "6.4-Editor-Color-Coding")`
-
-The Editor priority is always higher than the Playback priority, so any parameter moved in the Editor will overcome the values coming from any controller. 
-Release the parameter or the fixture from the Editor to get back to the controller's output values.
-
-### HardKeys
-
-The Editor Hardkeys are the buttons on the Vibe Panel use to program. 
-
-Vibe is a touch-based system, allowing efficient fixture manipulation through its smart on-screen features, but it is also possible to program it in a traditional syntax based way by pressing the hardkeys in the proper sequence.
-
-As all the other panel's physical components (buttons and controllers), also the Hardkeys may be added to the layout by using the **Virtual HardKeys** View.
-
-`r create_image_tag("06.Editor", "6.4-Virtual-Hardkeys")`
-
-### Blind Editor
-
-The Blind Editor is a parallel Editor used to create or modify objects without outputting values to the stage.
-
-When using Blind Editor the \[Blind] key flashes **<span style="color:Gold">yellow</span>** and the Command Line turns **<mark>yellow</mark>**.
-
-`r create_image_tag("06.Editor", "6.4-Blind-Editor")`
-
-In Blind Editor the syntax and operations on the Objects, such as Store and Update, can be done exactly like in the Live Editor, but with no output on stage. 
-If a change is stored on content that is currently in Playback, then the output will be affected.
-
-Vibe has two Blind Editor behaviors:
-
-1. Blind acts as an independent editor, separate from the live editor.
-    
-2. Blind grabs the values from the live editor and viceversa. This is used to emulate the behavior of single editor consoles, where the main editor output is disabled while using the Blind Editor.
-    
-**To open the blind editor:**
-
-- Press \[BLIND] to open the Blind Editor empty, or as leaved at the last access.
-    
-- Press \[VIBE] + \[BLIND] to open the Blind Editor in single editor mode. The Live Editor contents are copied to the Blind Editor.
-
-**To exit the blind editor:**
-
-- Press \[BLIND] to close the Blind Editor and get back to the Live Editor. The contents in the Blind Editor are kept.
-    
-- Press \[VIBE] + \[BLIND] to exit the Blind Editor in single editor mode. The Blind Editor contents are copied and merged to the Live Editor. The contents in the Blind Editor are also kept.
-
-
-## Groups {#Groups-6.5}
+## Groups {#Groups-6.4}
 
 
 Groups are objects used to speed up the fixture selections, stored into the Groups Library.
@@ -418,7 +428,7 @@ Range text labeling may be done via this method.
 
 -   Using SKs, tap the source {GROUP} SK and then press \[Settings] key.
 
-`r create_image_tag("06.Editor", "6.5-Group-Settings")`
+`r create_image_tag("06.Editor", "6.4-Group-Settings")`
 
 **Store Groups from existent Groups:**
 
@@ -453,70 +463,4 @@ The new Group will not be linked nor referenced to the original Groups.
 -   With keypad, \[GROUP] # \[DELETE]
 
 -   With SKs, {GROUP} \[#] \[DELETE]
-
-
-## Grab {#Grab-6.6}
-
-
-Grab is a powerful tool for selecting fixtures that meet a number of conditions. 
-
-By default \[GRAB] selects all fixtures with intensity or virtual intensity values above Zero.
-
-Pressing \[GRAB] without a selection opens a popup on the Smart Screen with the following options.
-
-`r create_image_tag("06.Editor", "6.6-Grab")`
-
--   **{Filters}** 
-
-	-  {Stage} - Select anything that is live on the stage and meets the conditions below. 
-
-	-  {Editor} - Select anything that is in the Editor and meets the conditions below. 
-
-	-  {Master Controller} (Playback) - Selects only fixtures on the Master Controller that meet the conditions.
-    
--   **{Conditions}** 
-
-	-   {All Fixtures} - Selects all fixtures that have any changes via the editor. 
-
-	-   {Active} - Fixture has intensity value over zero. 
-
-	-   {Invisible} - Recorded "hard" parameter values for fixtures that do NOT have an intensity value over zero. 
-
-	-   {Inactive} - Fixtures that have NO recorded values.
-    
--   **{Parameter Selection}**
-
-	-  {All for Selected} Grabs all parameters for selected fixtures (shortcut is \[VIBE] + \[GRAB]) 
-
-	-  {Active (ENTER)} Select all "Active" fixtures and enters them into the Editor. (Shortcut is \[GRAB] + \[ENTER]) 
-
-	-  {Search & Replace}.
-    
--   \[SET] \[GRAB] selects all active fixtures filtered by Set.
-    
-**Grab Fixtures from a Controller:**
-
-1. Press \[GRAB] - Grab Options popup will open.
-
-2. Press any Slider/Qkey/Aux Qkey controller button - All fixtures that are in the Controller's active cue and have dimmer levels above Zero (or meet the Grab conditions selected in the popup) will be selected.
-    
-👉 Pressing ENTER will put the selection in the EDITOR.
-
-**Grab Fixtures in a cue based on a {Library} SK selection:**
-
-1. Press \[GRAB], tap a {Library} SK - All fixtures with matching libraries will be selected.
-
-2. Tap another {Library} SK - The Library will be swapped to the new library.
-    
-👉 This is especially useful for quickly swapping colors in cues containing libraries
-
-**Select all parameters for a fixture selection:**
-
-1.  Select the fixtures
-
-2.  Press \[VIBE] + \[GRAB]
-    
-**Select all Parameters with hard and tracked values outputting to the stage:**
-
-1.   Press \[GRAB] \[ENTER]
 

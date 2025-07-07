@@ -1,14 +1,16 @@
 
 # Effect
 
+👉 Experience Vibe **Effects**, the most complete FX engine designed to manage dynamic values through any function curve.
+
 This chapter deals with managing the effect engines and curves to create dynamic effects.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [9.1 Curves](#Curves-9.1)
 -  [9.2 Effect Editor](#Effect-Editor-9.2)
 -  [9.3 Pre-Built Effects](#Pre-Built-Effects-9.3)
--  [9.4 Basic Effects](#Basic-Effects-9.4)
+-  [9.4 Smart Effects](#Smart-Effects-9.4)
 -  [9.5 Advanced Effects](#Advanced-Effects-9.5)
 -  [9.6 Library Effects](#Library-Effects-9.6)
 -  [9.7 Effect Library](#Effect-Library-9.7)
@@ -81,11 +83,11 @@ A **Basic** Effect Engine opens on the Smart Screen and allows the creation of:
 
   - **Pre-built effects**
 
-  - **Basic effects**
+  - **Smart effects**
 
   To access the Basic Engine press the \[EFFECT] button with an active fixture selection and optionally a param selection.
 
-`r create_image_tag("09.Effect", "9.2-Basic-FX")`
+`r create_image_tag("09.Effect", "9.2-Smart-FX")`
 
 An **Advanced** Effect Engine opens on the Wide Screen and allows the creation of:
 
@@ -221,13 +223,177 @@ To Block by Groups, select the Groups as Fixture Selection before entering the E
 
 - However the user can customize Pre-Built effects by editing all the available settings, using the Pre-Built library as a source to built new effects without starting from scratch.
 
-`r create_image_tag("09.Effect", "9.3-Basic-FX-Prebuilt")`
+`r create_image_tag("09.Effect", "9.3-Prebuilt-FX")`
+
+Pre-Built Effect are divided by Parameter Banks and they can be assigned to any fixture, as long as the selected fixtures have the parameters involved by the effect.
+
+- **INTENSITY**
+
+  1. **Step Up** Dimmer jumps up with a step curve and linear 100% spread.
+  
+  2. **Step Down** Dimmer jumps down with a step curve and a linear 100% spread.
+  
+  3. **Fade In** Dimmer fades up with a fade in curve and linear 100% spread.
+  
+  4. **Fade Out** Dimmer fades down with a fade out curve and linear 100% spread.
+  
+  5. **Mirror In** Dimmer jumps up with a step curve and mirrored in 100% spread.
+  
+  6. **Mirror Out** Dimmer jumps up with a step curve and mirrored out 100% spread.
+  
+  7. **Pulse** Dimmer fades up and down with a saw tooth curve and linear 0% spread.
+  
+  8. **Wave** Dimmer fades up and down with a sine curve and linear 100% spread.
+  
+  9. **Rnd Fix** Dimmer jumps up with a step curve and linear 100% spread applying Random order to the Fixtures.
+  
+  10. **Rnd Sub** Dimmer jumps up with a step curve and linear 100% spread applying Random order to the Sub-Fixtures. <span style="color:gray">Not implemented yet.</span>.
+
+- **POSITION**
+
+  1. **Fly In** Tilt down while Dimmer is at full and roll back while dimmer is at zero, with mirrored 100% spread.
+  
+  2. **Fly Out** Tilt up while Dimmer is at full and roll back while dimmer is at zero, with mirrored 100% spread.
+  
+  3. **Pan Wave** Pan fades up and down with a sine curve, 20% size and linear 100% spread.
+  
+  4. **Pan Mirror** Pan fades up and down with a sine curve, 20% size and linear 100% spread in blocks of 2.
+  
+  5. **Tilt Wave** Tilt fades up and down with a sine curve, 20% size and linear 100% spread.
+  
+  6. **Tilt Mirror** Tilt fades up and down with a sine curve, 20% size and mirrored 100% spread.
+  
+  7. **Circle** Fixtures move in circle shape clockward around the base point.
+  
+  8. **Circle Invert** Fixtures move in circle shape counter-clockward around the base point.
+  
+  9. **Eight** Fixtures move in eight shape clockward around the base point.
+  
+  10. **Eight Invert** Fixtures move in eight shape counter-clockward around the base point.
+  
+  11. **Square** Fixtures move in square shape clockward around the base point.
+  
+  12. **Square Invert** Fixtures move in square shape counter-clockward around the base point.
+    
+  👉 Circle, Eight and Square Effect will be more precise if working on virtual XYZ parameters, based on a correct fixture calibration. If no calibration data exists, they will be applied to Pan and Tilt.
+  
+- **COLOR**
+
+  1. **Color Mix** Colors jump with a step curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  2. **Rainbow** Colors fade with a fade in curve and linear 100% spread. This effect is applied to virtual HSI parameters.
+  
+  3. **White Wheel** Color Wheel jumps from its current frame to the White Open frame. If more Color Wheels are available, the target wheel needs to be defined in the popup.
+  
+  4. **Kelvin Ramp** Color Temperature fades up and down with a saw tooth curve and a linear 0% spread.
+  
+  5. **White Step** Colors jump to White from their current value with a step curve and linear 0% spread. This effect is applied to virtual Saturation parameter.
+  
+  6. **White Fade** Colors fade to White from their current value with a fade in curve and linear 0% spread. This effect is applied to virtual Saturation parameter.
+  
+  7. **Red-Yellow** Colors fade between Red and Yellow with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  8. **Yellow-Green** Colors fade between Yellow and Green with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  9. **Green-Cyan** Colors fade between Green and Cyan with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  10. **Cyan-Blue** Colors fade between Cyan and Blue with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  11. **Blue-Magenta** Colors fade between Blue and Magenta with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+  
+  12. **Magenta-Red** Colors fade between Magenta and Red with a sine curve and linear 0% spread. This effect is applied to virtual HSI parameters.
+    
+  👉 Wheel based effects jump to the first open frame, so they are visible only when the starting value of the parameter corresponds to a different frame position.
+    
+- **BEAM**
+
+  1. **Prism** Prism Wheel jumps from its current value to the Open value with a step curve and linear 0% spread. If more Prism Wheels are available, the target wheel needs to be defined in the popup.
+  
+  2. **Prism Rot** Prism Rotation fades between both directions with a saw tooth curve and linear 0% spread. If more Prism Wheels are available, the target wheel needs to be defined in the popup.
+  
+  3. **Zoom In** Zoom fades up with a fade in curve and linear 0% spread.
+  
+  4. **Zoom Out** Zoom fades down with a fade out curve and linear 0% spread.
+  
+  5. **Zoom Wave** Zoom fades up and down with a sine curve and linear 0% spread.
+  
+  6. **Zoom Mirror** Zoom fades up and down with a sine curve and mirrored 100% spread.
+  
+  7. **Focus Wave** Focus fades up and down with a sine curve and linear 0% spread.
+  
+  8. **Focus Mirror** Focus fades up and down with a sine curve and mirrored 100% spread.
+  
+  9. **Frost Ramp** Frost fades up and down with a saw tooth curve and linear 0% spread.
+  
+  10. **Frost Mirror** Frost fades up and down with a step curve and mirrored 100% spread.
+  
+  11. **Iris Ramp** Iris fades up and down with a saw tooth curve and linear 0% spread.
+  
+  12. **Iris Mirror** Iris fades up and down with a step curve and mirrored 100% spread.
+  
+  👉 Wheel based effects jump to the first open frame, so they are visible only when the starting value of the parameter corresponds to a different frame position.
+  
+- **IMAGE**
+
+  1. **Gobo Open** Gobo Wheel jumps from its current frame to the Open frame with a step curve and linear 0% spread. If more Gobo Wheels are available, either static or rotating, the target wheel needs to be defined in the popup.
+  
+  2. **Gobo Rot** Gobo Rotation fades between both directions with a saw tooth curve and linear 0% spread. If more Gobo Wheels are available, the target wheel needs to be defined in the popup.
+  
+  3. **Gobo Rot CW** Gobo Rotation Speed fades in clockward direction with a fade out curve and linear 0% spread.
+  
+  4. **Gobo Rot CCW** Gobo Rotation Speed fades in counter-clockward direction with a fade in curve and linear 0% spread.
+  
+  5. **Animation Open** Animation Wheel jumps from its current value to the Open value with a step curve and linear 0% spread. If more Animation Wheels are available, the target wheel needs to be defined in the popup.
+  
+  6. **Animation Rot** Animation Rotation fades between both directions with a saw tooth curve and linear 0% spread. If more Animation Wheels are available, the target wheel needs to be defined in the popup.
+  
+  7. **Animation Rot CW** Animation Rotation Speed fades in clockward direction with a fade out curve and linear 0% spread.
+  
+  8. **Animation Rot CCW** Animation Rotation Speed fades in counter-clockward direction with a fade in curve and linear 0% spread.
+  
+  9. **Gobo Index** Gobo Index fades up and down making the frame spinning in both directions with a sine curve and a linear 0% spread.
+  
+  👉 Wheel based effects jump to the first open frame, so they are visible only when the starting value of the parameter corresponds to a different frame position.
+  
+- **SHAPE**
+
+  1. **Quad** 4 Blades fade between square shape and open, with a cosine curve and linear 0% spread.
+  
+  2. **Triangle** 3 Blades fade between triangle shape and open, with a cosine curve and linear 0% spread.
+  
+  3. **Romboid Hor** 2 opposite horizontal Blades fade their angle, with a sine curve and linear 0% spread.
+  
+  4. **Romboid Ver** 2 opposite vertical Blades fade their angle, with a sine curve and linear 0% spread.
+  
+  5. **Blade Rotation** Blades Rotation fades between both directions with a sine curve and linear 0% spread.
+  
+  6. **Alternate** 2 groups of opposite Blades alternatively jump to 50% with a step curve and linear 0% spread.
+  
+  7. **Eye Blink Hor** 2 opposite horizontal Blades fade their depth with a fade in curve and linear 0% spread.
+  
+  8. **Eye Blink Ver** 2 opposite vertical Blades fade their depth with a fade in curve and linear 0% spread.
+  
+  9. **Side 2 Side Hor** 2 opposite horizontal Blades fade their depth with a saw tooth curve and linear 0% spread.
+  
+  10. **Side 2 Side Ver** 2 opposite vertical Blades fade their depth with a saw tooth curve and linear 0% spread.
+  
+  11. **Curtain 1** Blade 1 fades its depth with a saw tooth curve and linear 0% spread.
+  
+  12. **Curtain 2** Blade 2 fades its depth with a saw tooth curve and linear 0% spread.
+  
+  13. **Curtain 3** Blade 3 fades its depth with a saw tooth curve and linear 0% spread.
+  
+  14. **Curtain 4** Blade 4 fades its depth with a saw tooth curve and linear 0% spread.
+  
+  👉 Blade Rotation effect is visible only when the blades are inserted.
+
+  👉 Curtain effects can perform a complete movement only if the fixture has a full curtain blading system, otherwise they will stop at the blade's maximum depth.
 
 To create a **Pre-Built Effect**:
 
 1.   Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] 
 
-2.   Press \[EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with No Effect Events.
+2.   Press \[EFFECT] - The Smart Effect Editor will open in the {Attributes} display with No Effect Events.
 
 3.   Tap on {Pre Built} key on the right of the Smart Screen
 
@@ -241,25 +407,25 @@ The Smart Screen Effects Editor allows users to quickly build effects within the
 
 **Effect Tracks** are created for every selected parameter, but they are hidden from the view to get more space on the screen, and some advance operations are removed to speed up programming of simple effects.
 
-After programming an Effect, Close the editor using the Red X in the upper right corner.
+After programming an Effect, close the editor by tapping the Red X in the upper right corner or by pressing [Effect].
 
 
-## Basic Effects {#Basic-Effects-9.4}
+## Smart Effects {#Smart-Effects-9.4}
 
 
-- **Basic Effects** are built by using the Basic Effect Editor on the Small Screen.
+- **Smart Effects** are built by using the Smart Effect Editor on the Small Screen.
 
-- A Basic Effect is obtained by applying a Pattern and a Primitive to the selected Parameters.
+- A Smart Effect is obtained by applying a Pattern and a Primitive to the selected Parameters.
 
-`r create_image_tag("09.Effect", "9.4-Basic-FX-Curves")`
+`r create_image_tag("09.Effect", "9.4-Smart-FX-Curves")`
 
-To create a **Basic Effect**:
+To create a **Smart Effect**:
 
 1.   Make a Fixture Selection: \[FIXTURE] or \[FIXTURE] \[#] \[+ ⟶ -] \[#] 
     
 2.  Select the Parameter or Parameters to be involved
     
-3.  Press \[EFFECT] - The Smart Screen Effect Editor will open in the {Attributes} display with a blank Effect Event.
+3.  Press \[EFFECT] - The Smart Effect Editor will open in the {Attributes} display with a blank Effect Event.
     
 4.  Tap on {Curves} key on the right of the Smart Screen
     
@@ -289,7 +455,19 @@ To create a **Basic Effect**:
 
 👉 Similar results to inverting the pattern functions may be achieved by reversing the selection direction with the direction {⟵ Negative}, {Positive ⟶ } keys.
 
-👉 If more options are needed, the Advanced Effects Editor may be opened at any time by pressing \[VIBE] + \[EFFECTS] or the {Advanced...} key. All the Effects running in the Basic Effects Editor will be synchronized with the Advanced Effect Editor.
+👉 If more options are needed, the Advanced Effects Editor may be opened at any time by pressing \[VIBE] + \[EFFECTS] or the {Advanced...} key. All the Effects running in the Smart Effects Editor will be synchronized with the Advanced Effect Editor.
+
+`r create_image_tag("09.Effect", "9.4-Smart-FX-Actions")`
+
+Some actions are available in the Smart Effects Editor near the parameter boxes, in order to:
+
+- Select and Deselect all the running parameters
+
+- Copy and Paste the selected effect attributes
+
+- Release the effect from the selected parameters or from all the running parameters
+
+After programming an Effect, close the editor by tapping the Red X in the upper right corner or by pressing [Effect].
 
 
 ## Advanced Effects {#Basic-Effects-9.5}
@@ -525,15 +703,21 @@ To create a **Library Effect**:
 ## Effect Library {#Effect-Library-9.7}
 
 
-- Once an effect has been created, it may be directly stored in cues and scenes or saved in **Effect Libraries** for future use.
+Once an effect has been created, it may be directly stored in cues and scenes or saved in **Effect Libraries** for future use.
 
-- Effect Libraries are stored like any other Library and have a specific Effect Library Sofkey view to recall them.
+- Effect Libraries are stored like any other Library and they have a specific Effect Library Softkey view to recall them.
 
 - By Default Effect Libraries are "Parameter Specific" with disabled Reference, Timing and Base, and they filter and store all parameter types.
 
 - Default Settings for Effect Libraries can be changed in System Settings popup, in the Defaults tab. Individual settings can be set on each stored Effect Library.
 
-- Effect Libraries have an additional option to include or exclude the base values. Include Base is useful when effects must start from an absolute value.
+`r create_image_tag("09.Effect", "9.7-Effect-Library")`
+
+- Effect Libraries have the option to **Include Base** (or Exclude) the base values. The include base is useful when effects must start from an absolute value.
+
+👉 An Effect Library without Include Base, when triggered in the Editor from the softkey will use the current param values as a base. When the effect is stored into a Scene or a Cue, the parameter values will be stored too and will be used as base values when the Scene or Cue is triggered.
+
+- Effect Libraries have the option to **Randomize** the selection order. When randomize is enabled, every time the library is applied in the Editor it changes the fixtures' selection order. Once the effect is stored into a Scene or a Cue, the selection order is kept as it was when storing.
 
 - Effect Libraries operations are managed in the same way as all other library operations are done.
 

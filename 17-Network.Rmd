@@ -1,13 +1,15 @@
 
 # Network
 
+👉 Configure the Vibe system's **Network**, manage input and output protocols, setup the connected external devices.
+
 This chapter deals with configuring DMX over Ethernet and other frequently used protocols such as RDM, OSC and CITP.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [17.1 Console Network](#Console-Network-17.1)
--  [17.2 Compulite ePorts](#Compulite-ePorts-17.2)
--  [17.3 ArtNet and sACN](#ArtNet-and-sACN-13.3)
+-  [17.2 Compulite Devices](#Compulite-Devices-17.2)
+-  [17.3 DMX](#DMX-17.3)
 -  [17.4 RDM](#RDM-17.4)
 -  [17.5 OSC](#OSC-17.5)
 -  [17.6 CITP](#CITP-17.6)
@@ -16,7 +18,7 @@ This chapter deals with configuring DMX over Ethernet and other frequently used 
 ## Console Network {#Console-Network-17.1}
 
 
-**Vibe has two user accessible Ethernet networks:**
+**Vibe has different user accessible Ethernet networks:**
 
 -   Data Network - Accessible via the two EtherCON connectors on the rear panel. 
 
@@ -26,7 +28,8 @@ This chapter deals with configuring DMX over Ethernet and other frequently used 
 
   ◾ Used for Network storage of show files and remote diagnostics.
     
-Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the System Settings popup. 
+Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the Network Settings popup. 
+
 It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP (the start address) must match on all devices in the network. Devices on the same network must **not** have identical IP addresses.
 
 **Common Start IP addresses:**
@@ -52,17 +55,33 @@ The Vibe can be used in networks using a DHCP server but cannot act as a DHCP se
 
 **Switches**:
 
--  Vibe has two internal switches so single direct device to device connections are possible without a cross cable.
+-  Vibe has two internal switches, single direct device to device connections are possible without a cross cable.
     
--  When more than one device must be connected to the Vibe a good quality gigabit switch should be used.
+-  When more than one device is connected to the Vibe a good quality gigabit switch should be used.
     
 <span style="color:Red">Many systems have gone down due to bad Ethernet cabling and cheap switches. It is recommended that EtherCON connectors are used where possible in conjunction with professional grade switches designed for lighting and audio applications.</span>.
 
 ### Network Settings
 
+**Vibe Consoles** have 4 different networks:
+
+- the Main Network is referred to the Data ports, that are in parallel under the same network board.
+
+- the General Networks are referred to the General_1 and General_2 ports, that are independently addressable.
+
+- the Internal Network has no external ports, it is used for internal connection between the Vibe components. The User should avoid editing this network's settings as it may compromise the console functioning. 
+
+**Vibe PC** has only one network configuration tab:
+
+- the Main Network, referred to the system's network port used as Data output.
+
 Open the {NETWORK SETTINGS} from Vibe Menu > Settings or tap the Network Settings button - The Network popup will open.
 
-`r create_image_tag("17.Network", "17.1-Network")`
+### Main Network
+
+The **Main Network** Tab shows the configuration of the network used for data transmission.
+
+`r create_image_tag("17.Network", "17.1-Main-Network")`
 
 **Local:**
 
@@ -103,129 +122,205 @@ Open the {NETWORK SETTINGS} from Vibe Menu > Settings or tap the Network Setting
 
 - Related to starting or ending a session with a master console.
 
+### User Networks
 
-## Compulite ePorts {#Compulite-ePorts-17.2}
+On the Vibe consoles, the **User Networks** Tab shows the configuration of the networks used for additional operations.
+
+`r create_image_tag("17.Network", "17.1-User-Networks")`
+
+General Network IP addresses, both regarding General Network 1 and General Network 2, can be configured in the User Networks tab:
+
+- select the Network Adapter, 
+
+- fill the IP Address and DNS fields as desired,
+
+- apply the network settings with the dedicated key.
+
+General Networks may be used for specific operations that require special network configurations, that may be very different, or even incompatible, with the Data network settings.
+
+Some examples of General Network purposes are:
+
+- connection to remote external servers for files backup and management, 
+
+- connection to web services such as TeamViewer to get remote support, 
+
+- communication with third party devices to exchange OSC commands.
+
+👉 General Networks are not intended to be used for Data output or to establish multiuser connection between Vibe systems and accessories. Please use the Main Network for these common lighting control operations.
 
 
-Compulite manufactures the **ePort** brand of DMX over Ethernet nodes. 
+## Compulite Devices {#Compulite-Devices-17.2}
+
+
+Compulite manufactures some additional devices that can be connected to the Vibe system and configured directly via the Vibe software.
+
+These devices include: 
+
+- Compulite Vibe Wings
+
+- Compulite ePort Nodes.
+
+The **External Devices View** shows all the ePort nodes and the Wings connected to the network, permitting remote management and configuration of the settings.
+
+Vibe actively scans the network to find other compatible Compulite devices. Once recognized by the Vibe system, all the devices found in the network are automatically listed in the view's tabs. 
+
+By selecting a Compulite device, its current options will appear in the External Devices view, according to the amount of ports available (ePorts) or controllers types on the panel (Wings).
+
+The Vibe may be used to configure and update Compulite Device's settings as well as to perform firmware updates.
+
+This view also permits to manage other brands devices that are compliant with the RDM protocol.
+
+### Vibe Wings
+
+Any Vibe Wing, as well as most of the Vector Wings, can be connected and configured directly from Vibe, through the External Devices view.
+
+Supported Vibe and Vector Wings that are automatically found by the Vibe while scanning the network are listed in the Wings tab of the External Devices view.
+
+`r create_image_tag("17.Network", "17.2-External-Wings")`
+
+The Wings tab inside the External Devices view allows to rename the wings and to enable or disable parts of the panel, such as the Grand Master, the Editor, the Controllers.
+
+Unavailable parts, such as the Editor on a Playback Wing, will be grayed out.
+
+Vibe Wings have the same controller types of the console, including Sliders, Qkeys and Auxkeys.
+
+The Wings' Controllers may be configured from the External Devices view by assigning the starting number for each controller type, as well as ordering the numbering direction from right to left or from left to right.
+
+👉 When a Wing is used with a VibePC, it may be good to have its controllers starting from 1, but when it is used as an expansion, its controllers may be starting from 11 or from 16 (depending on the console model) to obtain additional physical controllers that are not on the console panel.
+
+The Wing's IP address is not assignable, as it is automatically set by the console once the wing is connected and linked, with a logic that adds +10 to the last number of the console's IP or of the last Wing connected to the system.
+
+External Wings that are compatible with the Vibe software, such as Vibe PC Wing and Vector PC Wing, will keep the settings configured in the External Devices view once they are reconnected to the system, unless they have been connected to other Compulite systems in between.
+
+**Configure the Wing**
+
+1. Make sure that the Vibe IP and the Wing IP are in the same range.
+    
+2. Write a text in the Name field to rename the Wing.
+    
+3. Write the First Slider, Qkey and Auxkey number in the relative field.
+
+4. Set the Controllers' numbering direction.
+
+5. Set the panel part to be Enabled or Disabled (if available).
+    
+6. Tap {Update Wing} to apply the changes or {Reset Changes} to discard.
+
+**Update Firmware**
+
+Before updating the device's Firmware, make sure the update file is the correct one for the Wing's version. Compulite support may be contacted to check that.
+
+1. Select the Wing from the list.
+
+2. Tap {Update Firmware}. The file popup will open.
+
+3. Select the update file from the USB stick and press Apply.
+
+### ePort Nodes
+
+Compulite manufactures the **ePort** serie of DMX over Ethernet nodes. 
 
 `r create_image_tag("17.Network", "17.2-Eports")`
 
-**Supported Protocols:**
+Any ePort can be connected and configured directly from Vibe, through the External Devices view.
 
-- ePort 41 - Prior to Sept 2016 (check serial number with Compulite to confirm) 
+Supported Vibe and Vector Wings that are automatically found by the Vibe while scanning the network are listed in the Wings tab of the External Devices view.
 
-  ◾ Compulite VC protocol
+`r create_image_tag("17.Network", "17.2-External-Eports")`
 
-  ◾ Art-Net v2
-    
-- ePort-41 - Current 
-
-  ◾ sACN pre-release and release versions 
-
-  ◾ Art-Net 3 
-
-  ◾ Compulite VC protocol
-    
-- ePort-8 and ePort-2 
-
-  ◾ sACN pre-release and release versions 
-
-  ◾ Art-Net 3 
-
-  ◾ Compulite VC protocol 
-    
- For more product information, see ePort Documents.
-    
-Any ePort can be connected and configured directly from Vibe's External Devices View or by using the CNET Manager software, available on Compulite website www.compulite.com 
-
-**Vibe External Devices View**
-
-`r create_image_tag("17.Network", "17.2-External-Devices")`
-
-**C-Net Manager software**
-
-`r create_image_tag("17.Network", "17.2-CNet-Manager")`
-
-**Configure ePorts:**
+**Configure the ePort**
 
 1. Make sure that the Vibe IP and the ePort IP are in the same range.
     
-2. Assign universes to each physical port by typing the universe number in the box below the icon of the physical connector.
+2. Write a text in the Name field to rename the ePort.
     
 3. Select the DMX-ON-Ethernet protocol in the protocol list.
     
-If Art-Net is selected make sure the Art-Net Subnet is also set. In most cases this will be set to 0 which allows the first 16 universes. It must be incremented by one with each new range of 16 universes.
+4. Tap {Update Eport} to apply all the changes.
 
-4. Tap {Update} to apply all the changes.
+**Patch Universes to the Ports**
 
+1. Tap on the Universe cells in the Port's table to enter the edit mode.
 
-## ArtNet and sACN {#ArtNet-and-sACN-17.3}
+2. Assign a numeric value and press Enter (or tap outside the cell).
 
+3. The Edited cells get a yellow background.
 
-Vibe supports transmission of 256 universes on DMX over Ethernet using the industry standards of Art-Net versions 1 ⟶ 3, ad sACN (ANSI E1.31-2016 standard).
+4. Tap on the direction cells to switch the port from Output to Input.
 
-**Enable Art-Net or sACN output:**
+5. Tap on the RDM cells to switch the RDM protocol On / Off.
 
-- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+6. Tap {Update Eport} to apply the changes or {Reset Changes} to discard.
 
-1. Under the Protocol heading, tap {Art-Net} or {sACN} - The selection will turn red.
+**Update Firmware**
+
+Before updating the device's Firmware, make sure the update file is the correct one for the ePort's version. Compulite support may be contacted to check that.
+
+1. Select the ePort from the list.
+
+2. Tap {Update ePort Firmware}. The file popup will open.
+
+3. Select the update file from the USB stick and press Apply.
+
+**C-Net Manager software**
+
+Compulite ePort nodes may also be configured through the dedicated C-Net Manager software, downloadable from the Compulite website www.compulite.com 
+
+C-net Manager, same as the Vibe software, automatically scans the network and lists down all the ePort nodes that are found connected, allowing the configuration of the communication protocol and ports according to the ePort type.
+
+`r create_image_tag("17.Network", "17.2-CNet-Manager")`
+
+C-net Manager may also be used to remotely ensure whether the ePort's outputs are active or inactive, by checking the Green or Red status of each Port's LED.
+
+**Supported Protocols**
+
+- ePort-2 
+
+  ◾ Compulite VC 
     
-2. Under Broadcast Options (VC, Art-Net, sACN) tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the EtherCON Data ports.
+  ◾ sACN 
+
+  ◾ Art-Net 3 
+
+- ePort 41 (Prior to Sept 2016) 
+
+  ◾ Compulite VC 
+
+  ◾ Art-Net v2
     
-- Vibe is capable of transmitting more than one protocol at a time on the same Ethernet port. 
+- ePort-41 (Current)
 
-- To save bandwidth it is also possible to enable only the universes for each protocol that are required. 
-
-- Vibe has separate universe patches for VCs, Art-Net, and sACN. By default, universes are patched 1 to 1 for each protocol. It is possible to reroute universe output destinations. 
-
-The Vibe is licensed for 64, 96, 128, or 255 console source universes but these universes may be freely rerouted to any destination universe from 0 ⟶  256 as long as the total amount of universes does not exceed the purchased license.
-
-**Reroute Console Universes:**
-
-1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
+  ◾ Compulite VC 
     
-2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
+  ◾ sACN 
+
+  ◾ Art-Net 3 
+
+- ePort-8 
+
+  ◾ Compulite VC 
     
-**Additional functions:**
+  ◾ sACN 
 
-- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
+  ◾ Art-Net 3 
+
+ For more product information, see ePort Documents on www.compulite.com
     
-- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
-    
-- Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
-    
-- Reset all defaults for the selected protocol - Tap {Config All}.
-    
-**Art-Net Subnet View:**
 
-- Art-Net is designed in blocks of 16 universes. The blocks starts at subnet 0 and increments by 1 every 16 universes. The subnet number and fixture number in the subnet can be viewed by toggling {Subnet View}.
+## DMX {#DMX-17.3}
 
-**Unicast Option for Art-Net and VC**
 
-It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. Ports that are not defined as unicast will be still sent as broadcast. Each port can be configured to multiple IPs. Few ports can be sent to the same IP.
+Vibe supports transmission of 256 universes on **DMX over Ethernet** using the industry standards of Art-Net versions 1 ⟶ 3, ad sACN (ANSI E1.31-2016 standard). and the Compulite VCs protocol.
 
-**Configure Unicast:**
-
-1. Tap on the protocol in DMX Settings popup.
-
-2. Toggle to _Unicast Settings_ to open the unicast popup.
-
-3. Tap Add to add a new IP line or Delete to remove an existing IP
-
-`r create_image_tag("17.Network", "17.3-Unicast-Settings")`
-
-> On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
-
-> On the second line – port 5 will be sent also to IP 172.16.10.11
-
-> On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12
+For DMX output management, physical or over network protocols, please refer to the **Patch Chapter**.
 
 
 ## RDM {#RDM-17.4}
 
 
 RDM is fully supported on the 8 physical DMX output ports and Compulite VC protocol. 
+
+Vibe uses the External Devices view, RDM Devices tab, to scan the network for RDM compatible devices, get their information and perform settings updates on the target devices.
 
 **View RDM information:**
 
@@ -238,6 +333,8 @@ RDM is fully supported on the 8 physical DMX output ports and Compulite VC proto
 4.  If new devices are added, press {Re Scan}.
 
 `r create_image_tag("17.Network", "17.4-RDM")`
+
+👉 RDM protocol on a DMX wiring works only when every device on the line is RDM compliant. This includes any fixture, any splitter and any DMX node that may be wired in between the line.
 
 
 ## OSC {#OSC-17.5}
@@ -308,35 +405,29 @@ This tab shows the general information about the console and gives the option to
 
 ### Media Servers
 
-This tab shows a list of the detected Media Servers on the network. In order to connect to a media server and start a session, select a media server from the list and press _Connect_.
+This tab shows a list of the detected Media Servers on the network. 
+
+`r create_image_tag("17.Network", "17.6-CITP-MediaServers")`
+
+In order to connect to a media server and start a session, select a media server from the list and press _Connect_.
 
 In order to link a media server to a specific fixture, select a connected media server from the list and tap _Configure_. A popup will appear where you can choose which fixtures you want to link.
 
 In order to get all the available data from a media server, select a connected and linked media server from the list, and tap _Get Data_. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.
 
-`r create_image_tag("17.Network", "17.6-CITP-MediaServers")`
-
 ### Visualizers
 
 This tab shows a list of the detected Visualizers on the network that are using CITP. 
 
-To connect to a visualizer and start a session, select it from the list and tap Connect. 
-
-To get the patch from a connected visualizer, select it from the list and tap Get Show. 
-
-👉 This action will clear the current show data, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create them on your show.
-
 `r create_image_tag("17.Network", "17.6-CITP-Visualizers")`
 
-**Auto Patch from Capture**
+To connect to a visualizer and start a session, select it from the list and tap Connect. 
 
-It is possible to sync the show from Capture. In order to do that, set the Capture CITP settings to use Standard Multicast and select the relevant IP address.
+Once connected, to get the patch from the visualizer, select it from the list and tap Get Show. 
 
-`r create_image_tag("17.Network", "17.6-AutoPatch-Capture")`
+`r create_image_tag("17.Network", "17.6-CITP-Visual-GetShow")`
 
-In addition, make sure Vibe and Capture are on the same subnet. 
-
-After finishing preparing the show on Capture, go to Vibe, open the CITP popup, enable CITP and connect to Capture from the Visualizers tab. Then _Get Data_ from Capture and Vibe will be ready to go.
+👉 This action will clear the current show data, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create them on your show.
 
 ### Consoles
 

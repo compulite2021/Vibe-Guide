@@ -1,9 +1,11 @@
 
 # Settings
 
+👉 Configure the Vibe **Settings** to manage the system default behaviors and the protocols inputs and outputs.
+
 This chapter provides a description of Vibe's software settings that can be customized.
 
-**The following is covered in this chapter:**
+**Chapter index:**
 
 -  [4.1 System Settings](#System-Settings-4.1)
 -  [4.2 Network Settings](#Network-Settings-4.2)
@@ -424,7 +426,7 @@ Controller Actions are divided into:
 
 - **{All Param For Selected}** All parameters from the fixture selection will be turned red and stored in the cue. 
 
-#### Library Store Options
+#### Library Settings
 
 **Library settings are the same for all the following library types:**
 
@@ -502,13 +504,13 @@ Controller Actions are divided into:
 
 Vibe is made up of four modules:
 
-1.  **GUI - Graphic User Interface** -  The windows app with the Vibe graphics.
+1.  **GUI - Graphic User Interface** -  The windows software with the Vibe graphics.
     
-2.  **LPU - Lighting Processing Unit** - Calculates and outputs the show data.
+2.  **LPU - Lighting Processing Unit** - The engine that processes and outputs the show data.
     
-3.  **HAL - Hardware Access Layer** -  Connects the panels and devices to the Vibe.
+3.  **HAL - Hardware Access Layer** -  The system that connects the panels and devices to the Vibe.
 
-4.  **SQL** DataBase - Data management. 
+4.  **SQL** - The Data management DataBase. 
     
 **LPU and HAL Status** LEDs are on the status box:
 
@@ -532,23 +534,31 @@ Vibe is made up of four modules:
 
 Network Settings popup is accessed by selecting {Network Settings} from the Vibe Menu or by tapping the \[Network Settings] single button key.
 
-Network Settings popup has 2 tabs:
+Network Settings popup has the following tabs:
 
-  - Network
+  - Main Network: manages the network settings of the data output.
 
-  - Users
+  - User Networks: manages the network settings of the additional ports.
+
+  - Users: manages the multiuser settings.
 
 For Network management, please refer to the **Network Chapter**.
 
-### Network
+### Main Network
 
-`r create_image_tag("04.Settings", "4.2-Network")`
+`r create_image_tag("04.Settings", "4.2-Main-Network")`
+
+### User Networks
+
+`r create_image_tag("04.Settings", "4.2-User-Networks")`
+
+👉 This tab does not exist on the VibePC software version, it may be found only on Vibe consoles. 
 
 ### Users
 
-<span style="color:Gray"> **(Not implemented yet)** </span>
-
 `r create_image_tag("04.Settings", "4.2-Users")`
+
+<span style="color:Gray"> **(Not implemented yet)** </span>
 
 
 ## DMX Settings {#DMX-Settings-4.3}
