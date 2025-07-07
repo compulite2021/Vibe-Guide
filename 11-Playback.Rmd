@@ -107,7 +107,7 @@ Controller Display and Backlit Controller Key's color coding:
     - <font color="green">**Green**</font> = Qlist, Cue Active
     - <font color="red">**Red**</font> = Chaser Active
     - <font color="amber">**Yellow**</font> = Scene Active
-    - <font color="blue">**Blue**</font> = Sub or Group Master @ FL
+    - <font color="blue">**Blue**</font> = Sub or Group Master \@ FL
     - <font color="black">**Any of above Flashing**</font> = In Progress
 
 -   Middle Button:
@@ -857,7 +857,7 @@ The controller will be moved with all its settings and state, including intensit
 
 - \[MOVE], Source selection (Occupied controllers), Target selection (Empty controller)
 
-- \[MOVE], Source selection (Occupied controllers), @, Target selection (Any controller)
+- \[MOVE], Source selection (Occupied controllers), \@, Target selection (Any controller)
 
 - \[PLAYBACK], \[#], \[MOVE], \[PLAYBACK], \[#], \[PASTE]
 

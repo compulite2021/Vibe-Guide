@@ -135,7 +135,7 @@ Programming may be done traditionally by using {Bank} keys and the 4 large push 
   - **AT** will appear on the command line 
   - Type a value from Zero ⟶  Full.
     
-><span style="color:red">**@** is only used for the dimmer, parameters other than dimmer do not use the @ key.</span>
+><span style="color:red">**\@** is only used for the dimmer, parameters other than dimmer do not use the \@ key.</span>
 
 ><span style="color:Red">A Parameter value must be entered in 2 digits or one digit and the \[Enter] key for whole numbers: 05, 50, 5 \[ENTER] = 50.</span>
 

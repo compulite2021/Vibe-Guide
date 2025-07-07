@@ -505,7 +505,7 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
 
 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("17.Network", "5.4-Unicast-Settings")`
+`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 
@@ -613,7 +613,7 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
 
 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("17.Network", "5.4-Unicast-Settings")`
+`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 
@@ -719,7 +719,7 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
 
 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("17.Network", "5.4-Unicast-Settings")`
+`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 

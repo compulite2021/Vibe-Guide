@@ -258,28 +258,28 @@ Fixtures may also be interactively selected via the Live, the Live Parameter and
     
 **Command logic and shortcuts**
 
-- \[Fixture] # \[+ ⟶  -] \[Full] / \[Zero] (@100 and @00).
+- \[Fixture] # \[+ ⟶  -] \[Full] / \[Zero] (\@100 and \@00).
         
-- \[Fixture] # \[+ ⟶  -] \[@] enter value. Two digits are required to complete value entry.
+- \[Fixture] # \[+ ⟶  -] \[\@] enter value. Two digits are required to complete value entry.
         
-- \[Fixture] # \[+ ⟶  -] \[@] \[@] will set values to Full.
+- \[Fixture] # \[+ ⟶  -] \[\@] \[\@] will set values to Full.
         
-- \[Fixture] # \[+ ⟶  -] \[@] single value, \[ENTER]. 
-  > \[Fixture] \[1⟶ 6] \[@] \[5] \[ENTER] will set a value of 50%. 
-  > \[Fixture] \[1⟶ 6] \[@] \[7] \[ENTER] will set a value of 70%.
+- \[Fixture] # \[+ ⟶  -] \[\@] single value, \[ENTER]. 
+  > \[Fixture] \[1⟶ 6] \[\@] \[5] \[ENTER] will set a value of 50%. 
+  > \[Fixture] \[1⟶ 6] \[\@] \[7] \[ENTER] will set a value of 70%.
         
 - Pressing \[ENTER] at the end of value input is optional and does not affect the sequence. In most cases, it will simply terminate the command line.
         
 - \[Fixture] # will jump the **live display** screen to the specified fixture if the fixture is not visible on the screen. (Fixture Jumping must be enabled in the **Live Display, {Tools}** (Wrench icon) popup under the **Behavior** Tab
         
-- \[Fixture] # \[+ ⟶  -] \[@] \[+] \[value] or \[@] \[-] \[value] will make a **relative** change to the stage value. 
-  > {If the stage value is 50, @ + 10 will set the value to 60, @ - 30 would set the value to 20}. 
+- \[Fixture] # \[+ ⟶  -] \[\@] \[+] \[value] or \[\@] \[-] \[value] will make a **relative** change to the stage value. 
+  > {If the stage value is 50, \@ + 10 will set the value to 60, \@ - 30 would set the value to 20}. 
 
 The rules for single digit plus Enter will also apply.
         
-- \[Fixture] # \[⟶ ] #, Parameter, \[@] {value] \[⟶] \[value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as \[Zero] and \[Full].
+- \[Fixture] # \[⟶ ] #, Parameter, \[\@] {value] \[⟶] \[value] will **fan** the range. (if no parameter is specified, dimmer/intensity will be fanned) 0, and 100% are also valid as well as \[Zero] and \[Full].
         
-- \[Fixture] # \[⟶ ] # Parameter, \[@] \[value] \[⟶] \[⟶] \[value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
+- \[Fixture] # \[⟶ ] # Parameter, \[\@] \[value] \[⟶] \[⟶] \[value] will **mirror** fan the range. {1➡⟶ 100 would produce 0, 10, 20, 30, 40, 50, 40, 30, 20, 10, 0}
         
 - Fixture **Dot** = Restore last. (There's a toolbar equivalent)
         

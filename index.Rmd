@@ -282,7 +282,7 @@ If no selection is made the Current Show is loaded.
 
 ### R_7.0
 
-- Release Date: **09/10/2024**
+- Release Date: **07/07/2025**
 - DB version: **R_7.0**
 - Desktop version: **R_7.0**
 - LPU version: **R_7.0**
