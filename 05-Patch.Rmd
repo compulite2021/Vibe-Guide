@@ -1052,7 +1052,7 @@ Click the "Import Calibration Data" button.
 
 Use the file explorer to select your CSV file and click OK.
 
-`r create_image_tag("05.Patch", "Import-CSV")`
+`r create_image_tag("05.Patch", "CSV-Import")`
 
 A popup will appear displaying the data read from the CSV file.
 

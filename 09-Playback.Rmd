@@ -1650,7 +1650,7 @@ Timeline events may be recorded in "real time" and then edited afterwards.
 
 **Create a timeline track:**
 
-`r create_image_tag("09.Playback", "Create-Timeline")`
+`r create_image_tag("09.Playback", "TL-Create")`
 
 1.  Open the Timeline View menu.
     

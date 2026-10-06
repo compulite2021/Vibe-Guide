@@ -396,7 +396,7 @@ On the Vibe console that has to become the Master, open the Network Settings to 
 
 - A popup on both systems informs when the connection is ready.
 
-`r create_image_tag("18.MultiUser", "Master-Ready")`
+`r create_image_tag("11.Connect", "Master-Ready")`
 
 - In the Status Box, a green line shows that the connection is established, and the consoles' command lines show if the console is the Master or the Backup.
 
