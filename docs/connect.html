@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 Connect | Vibe Manual</title>
+  <meta name="description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 Connect | Vibe Manual" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+  <meta property="og:description" content="Compulite Guide for Vibe Consoles" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 Connect | Vibe Manual" />
+  
+  <meta name="twitter:description" content="Compulite Guide for Vibe Consoles" />
+  <meta name="twitter:image" content="https://vibemanual.compulite.com/Vibe-Guide-Cover.png" />
+
+<meta name="author" content="Compulite Systems (2000) Ltd" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="live.html"/>
+<link rel="next" href="show.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li style="text-align: center;">
+<img src="Images/00.Icons/vibe_logo.webp" alt="Image" style="max-width:200px;padding:10px;">
+<br>
+<li style="text-align: center;"><h2>Vibe Guide</h2></li>
+<li style="text-align: center;">Version R_8.0</li>
+<br>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#Start-Up"><i class="fa fa-check"></i><b>1.1</b> Start Up</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#Guide-Conventions"><i class="fa fa-check"></i><b>1.2</b> Guide Conventions</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#Important-Terms"><i class="fa fa-check"></i><b>1.3</b> Important Terms</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#Software-Capacity"><i class="fa fa-check"></i><b>1.4</b> Software Capacity</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#Support"><i class="fa fa-check"></i><b>1.5</b> Support</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#Releases"><i class="fa fa-check"></i><b>1.6</b> Releases</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="index.html"><a href="index.html#r_8.0"><i class="fa fa-check"></i><b>1.6.1</b> R_8.0</a>
+<ul>
+<li class="chapter" data-level="1.6.1.1" data-path="index.html"><a href="index.html#version-highlights"><i class="fa fa-check"></i><b>1.6.1.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.1.2" data-path="index.html"><a href="index.html#bug-fixes"><i class="fa fa-check"></i><b>1.6.1.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.2" data-path="index.html"><a href="index.html#r_7.0"><i class="fa fa-check"></i><b>1.6.2</b> R_7.0</a>
+<ul>
+<li class="chapter" data-level="1.6.2.1" data-path="index.html"><a href="index.html#version-highlights-1"><i class="fa fa-check"></i><b>1.6.2.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.2.2" data-path="index.html"><a href="index.html#bug-fixes-1"><i class="fa fa-check"></i><b>1.6.2.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="index.html#r_6.0"><i class="fa fa-check"></i><b>1.6.3</b> R_6.0</a>
+<ul>
+<li class="chapter" data-level="1.6.3.1" data-path="index.html"><a href="index.html#version-highlights-2"><i class="fa fa-check"></i><b>1.6.3.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.3.2" data-path="index.html"><a href="index.html#bug-fixes-2"><i class="fa fa-check"></i><b>1.6.3.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.4" data-path="index.html"><a href="index.html#r_5.0"><i class="fa fa-check"></i><b>1.6.4</b> R_5.0</a>
+<ul>
+<li class="chapter" data-level="1.6.4.1" data-path="index.html"><a href="index.html#version-highlights-3"><i class="fa fa-check"></i><b>1.6.4.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.4.2" data-path="index.html"><a href="index.html#bug-fixes-3"><i class="fa fa-check"></i><b>1.6.4.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.5" data-path="index.html"><a href="index.html#r_4.0"><i class="fa fa-check"></i><b>1.6.5</b> R_4.0</a>
+<ul>
+<li class="chapter" data-level="1.6.5.1" data-path="index.html"><a href="index.html#version-highlights-4"><i class="fa fa-check"></i><b>1.6.5.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.5.2" data-path="index.html"><a href="index.html#bug-fixes-4"><i class="fa fa-check"></i><b>1.6.5.2</b> Bug Fixes</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6.6" data-path="index.html"><a href="index.html#r_3.0"><i class="fa fa-check"></i><b>1.6.6</b> R_3.0</a>
+<ul>
+<li class="chapter" data-level="1.6.6.1" data-path="index.html"><a href="index.html#version-highlights-5"><i class="fa fa-check"></i><b>1.6.6.1</b> Version Highlights</a></li>
+<li class="chapter" data-level="1.6.6.2" data-path="index.html"><a href="index.html#bug-fixes-5"><i class="fa fa-check"></i><b>1.6.6.2</b> Bug Fixes</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="hardware.html"><a href="hardware.html"><i class="fa fa-check"></i><b>2</b> Hardware</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="hardware.html"><a href="hardware.html#Console"><i class="fa fa-check"></i><b>2.1</b> Console</a></li>
+<li class="chapter" data-level="2.2" data-path="hardware.html"><a href="hardware.html#Wings"><i class="fa fa-check"></i><b>2.2</b> Wings</a></li>
+<li class="chapter" data-level="2.3" data-path="hardware.html"><a href="hardware.html#Connectors"><i class="fa fa-check"></i><b>2.3</b> Connectors</a></li>
+<li class="chapter" data-level="2.4" data-path="hardware.html"><a href="hardware.html#Editor-Controls"><i class="fa fa-check"></i><b>2.4</b> Editor Controls</a></li>
+<li class="chapter" data-level="2.5" data-path="hardware.html"><a href="hardware.html#Master-Controls"><i class="fa fa-check"></i><b>2.5</b> Master Controls</a></li>
+<li class="chapter" data-level="2.6" data-path="hardware.html"><a href="hardware.html#Playback-Controls"><i class="fa fa-check"></i><b>2.6</b> Playback Controls</a></li>
+<li class="chapter" data-level="2.7" data-path="hardware.html"><a href="hardware.html#Playback-Keys"><i class="fa fa-check"></i><b>2.7</b> Playback Keys</a></li>
+<li class="chapter" data-level="2.8" data-path="hardware.html"><a href="hardware.html#Page-Keys"><i class="fa fa-check"></i><b>2.8</b> Page Keys</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="software.html"><a href="software.html"><i class="fa fa-check"></i><b>3</b> Software</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="software.html"><a href="software.html#Interface"><i class="fa fa-check"></i><b>3.1</b> Interface</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="software.html"><a href="software.html#smart-screen"><i class="fa fa-check"></i><b>3.1.1</b> Smart Screen</a></li>
+<li class="chapter" data-level="3.1.2" data-path="software.html"><a href="software.html#toolbars"><i class="fa fa-check"></i><b>3.1.2</b> Toolbars</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="software.html"><a href="software.html#Vibe-Menu"><i class="fa fa-check"></i><b>3.2</b> Vibe Menu</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="software.html"><a href="software.html#show-menu"><i class="fa fa-check"></i><b>3.2.1</b> Show Menu</a></li>
+<li class="chapter" data-level="3.2.2" data-path="software.html"><a href="software.html#layout-menu"><i class="fa fa-check"></i><b>3.2.2</b> Layout Menu</a></li>
+<li class="chapter" data-level="3.2.3" data-path="software.html"><a href="software.html#views-menu"><i class="fa fa-check"></i><b>3.2.3</b> Views Menu</a></li>
+<li class="chapter" data-level="3.2.4" data-path="software.html"><a href="software.html#settings-menu"><i class="fa fa-check"></i><b>3.2.4</b> Settings Menu</a></li>
+<li class="chapter" data-level="3.2.5" data-path="software.html"><a href="software.html#help-menu"><i class="fa fa-check"></i><b>3.2.5</b> Help Menu</a></li>
+<li class="chapter" data-level="3.2.6" data-path="software.html"><a href="software.html#exit"><i class="fa fa-check"></i><b>3.2.6</b> Exit</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="software.html"><a href="software.html#Pages"><i class="fa fa-check"></i><b>3.3</b> Pages</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="software.html"><a href="software.html#home-pages"><i class="fa fa-check"></i><b>3.3.1</b> Home Pages</a></li>
+<li class="chapter" data-level="3.3.2" data-path="software.html"><a href="software.html#clone-pages"><i class="fa fa-check"></i><b>3.3.2</b> Clone Pages</a></li>
+<li class="chapter" data-level="3.3.3" data-path="software.html"><a href="software.html#external-windows"><i class="fa fa-check"></i><b>3.3.3</b> External Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="software.html"><a href="software.html#Views"><i class="fa fa-check"></i><b>3.4</b> Views</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="software.html"><a href="software.html#patch-views"><i class="fa fa-check"></i><b>3.4.1</b> Patch Views</a></li>
+<li class="chapter" data-level="3.4.2" data-path="software.html"><a href="software.html#program-views"><i class="fa fa-check"></i><b>3.4.2</b> Program Views</a></li>
+<li class="chapter" data-level="3.4.3" data-path="software.html"><a href="software.html#playback-views"><i class="fa fa-check"></i><b>3.4.3</b> Playback Views</a></li>
+<li class="chapter" data-level="3.4.4" data-path="software.html"><a href="software.html#view-settings"><i class="fa fa-check"></i><b>3.4.4</b> View Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="software.html"><a href="software.html#Layouts"><i class="fa fa-check"></i><b>3.5</b> Layouts</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="software.html"><a href="software.html#layout-settings"><i class="fa fa-check"></i><b>3.5.1</b> Layout Settings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="settings.html"><a href="settings.html"><i class="fa fa-check"></i><b>4</b> Settings</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="settings.html"><a href="settings.html#System-Settings"><i class="fa fa-check"></i><b>4.1</b> System Settings</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="settings.html"><a href="settings.html#editing"><i class="fa fa-check"></i><b>4.1.1</b> Editing</a></li>
+<li class="chapter" data-level="4.1.2" data-path="settings.html"><a href="settings.html#timing"><i class="fa fa-check"></i><b>4.1.2</b> Timing</a></li>
+<li class="chapter" data-level="4.1.3" data-path="settings.html"><a href="settings.html#hardware-1"><i class="fa fa-check"></i><b>4.1.3</b> Hardware</a></li>
+<li class="chapter" data-level="4.1.4" data-path="settings.html"><a href="settings.html#defaults"><i class="fa fa-check"></i><b>4.1.4</b> Defaults</a>
+<ul>
+<li class="chapter" data-level="4.1.4.1" data-path="settings.html"><a href="settings.html#controller-settings"><i class="fa fa-check"></i><b>4.1.4.1</b> Controller Settings</a></li>
+<li class="chapter" data-level="4.1.4.2" data-path="settings.html"><a href="settings.html#controller-actions"><i class="fa fa-check"></i><b>4.1.4.2</b> Controller Actions</a></li>
+<li class="chapter" data-level="4.1.4.3" data-path="settings.html"><a href="settings.html#snap-settings"><i class="fa fa-check"></i><b>4.1.4.3</b> Snap Settings</a></li>
+<li class="chapter" data-level="4.1.4.4" data-path="settings.html"><a href="settings.html#qlist-settings"><i class="fa fa-check"></i><b>4.1.4.4</b> Qlist Settings</a></li>
+<li class="chapter" data-level="4.1.4.5" data-path="settings.html"><a href="settings.html#chase-settings"><i class="fa fa-check"></i><b>4.1.4.5</b> Chase Settings</a></li>
+<li class="chapter" data-level="4.1.4.6" data-path="settings.html"><a href="settings.html#cue-settings"><i class="fa fa-check"></i><b>4.1.4.6</b> Cue Settings</a></li>
+<li class="chapter" data-level="4.1.4.7" data-path="settings.html"><a href="settings.html#cue-store-options"><i class="fa fa-check"></i><b>4.1.4.7</b> Cue Store Options</a></li>
+<li class="chapter" data-level="4.1.4.8" data-path="settings.html"><a href="settings.html#scene-settings"><i class="fa fa-check"></i><b>4.1.4.8</b> Scene Settings</a></li>
+<li class="chapter" data-level="4.1.4.9" data-path="settings.html"><a href="settings.html#scene-store-options"><i class="fa fa-check"></i><b>4.1.4.9</b> Scene Store Options</a></li>
+<li class="chapter" data-level="4.1.4.10" data-path="settings.html"><a href="settings.html#library-settings"><i class="fa fa-check"></i><b>4.1.4.10</b> Library Settings</a></li>
+<li class="chapter" data-level="4.1.4.11" data-path="settings.html"><a href="settings.html#library-filters"><i class="fa fa-check"></i><b>4.1.4.11</b> Library Filters</a></li>
+<li class="chapter" data-level="4.1.4.12" data-path="settings.html"><a href="settings.html#grab-settings"><i class="fa fa-check"></i><b>4.1.4.12</b> Grab Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1.5" data-path="settings.html"><a href="settings.html#system"><i class="fa fa-check"></i><b>4.1.5</b> System</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="settings.html"><a href="settings.html#Network-Settings"><i class="fa fa-check"></i><b>4.2</b> Network Settings</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="settings.html"><a href="settings.html#main-network"><i class="fa fa-check"></i><b>4.2.1</b> Main Network</a></li>
+<li class="chapter" data-level="4.2.2" data-path="settings.html"><a href="settings.html#user-networks"><i class="fa fa-check"></i><b>4.2.2</b> User Networks</a></li>
+<li class="chapter" data-level="4.2.3" data-path="settings.html"><a href="settings.html#users"><i class="fa fa-check"></i><b>4.2.3</b> Users</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="settings.html"><a href="settings.html#DMX-Settings"><i class="fa fa-check"></i><b>4.3</b> DMX Settings</a></li>
+<li class="chapter" data-level="4.4" data-path="settings.html"><a href="settings.html#I-O-Settings"><i class="fa fa-check"></i><b>4.4</b> I/O Settings</a></li>
+<li class="chapter" data-level="4.5" data-path="settings.html"><a href="settings.html#CITP-Settings"><i class="fa fa-check"></i><b>4.5</b> CITP Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="patch.html"><a href="patch.html"><i class="fa fa-check"></i><b>5</b> Patch</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="patch.html"><a href="patch.html#Sets"><i class="fa fa-check"></i><b>5.1</b> Sets</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="patch.html"><a href="patch.html#add-sets"><i class="fa fa-check"></i><b>5.1.1</b> Add Sets</a></li>
+<li class="chapter" data-level="5.1.2" data-path="patch.html"><a href="patch.html#edit-sets"><i class="fa fa-check"></i><b>5.1.2</b> Edit Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="patch.html"><a href="patch.html#Devices"><i class="fa fa-check"></i><b>5.2</b> Devices</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="patch.html"><a href="patch.html#advanced-search"><i class="fa fa-check"></i><b>5.2.1</b> Advanced Search</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="patch.html"><a href="patch.html#Create-and-Patch"><i class="fa fa-check"></i><b>5.3</b> Create and Patch</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="patch.html"><a href="patch.html#drag-and-drop-patch"><i class="fa fa-check"></i><b>5.3.1</b> Drag and Drop Patch</a></li>
+<li class="chapter" data-level="5.3.2" data-path="patch.html"><a href="patch.html#modify-patch"><i class="fa fa-check"></i><b>5.3.2</b> Modify Patch</a></li>
+<li class="chapter" data-level="5.3.3" data-path="patch.html"><a href="patch.html#address-test"><i class="fa fa-check"></i><b>5.3.3</b> Address Test</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="patch.html"><a href="patch.html#DMX-Properties"><i class="fa fa-check"></i><b>5.4</b> DMX Properties</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="patch.html"><a href="patch.html#local-output"><i class="fa fa-check"></i><b>5.4.1</b> Local Output</a></li>
+<li class="chapter" data-level="5.4.2" data-path="patch.html"><a href="patch.html#vc"><i class="fa fa-check"></i><b>5.4.2</b> VC</a></li>
+<li class="chapter" data-level="5.4.3" data-path="patch.html"><a href="patch.html#artnet"><i class="fa fa-check"></i><b>5.4.3</b> ArtNet</a></li>
+<li class="chapter" data-level="5.4.4" data-path="patch.html"><a href="patch.html#sacn"><i class="fa fa-check"></i><b>5.4.4</b> sACN</a></li>
+<li class="chapter" data-level="5.4.5" data-path="patch.html"><a href="patch.html#dmx-input"><i class="fa fa-check"></i><b>5.4.5</b> DMX Input</a></li>
+<li class="chapter" data-level="5.4.6" data-path="patch.html"><a href="patch.html#dmx-inout-view"><i class="fa fa-check"></i><b>5.4.6</b> DMX In/Out View</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="patch.html"><a href="patch.html#Fixture-View"><i class="fa fa-check"></i><b>5.5</b> Fixture View</a></li>
+<li class="chapter" data-level="5.6" data-path="patch.html"><a href="patch.html#Address-Properties"><i class="fa fa-check"></i><b>5.6</b> Address Properties</a></li>
+<li class="chapter" data-level="5.7" data-path="patch.html"><a href="patch.html#Park"><i class="fa fa-check"></i><b>5.7</b> Park</a></li>
+<li class="chapter" data-level="5.8" data-path="patch.html"><a href="patch.html#Clone"><i class="fa fa-check"></i><b>5.8</b> Clone</a></li>
+<li class="chapter" data-level="5.9" data-path="patch.html"><a href="patch.html#Replace"><i class="fa fa-check"></i><b>5.9</b> Replace</a></li>
+<li class="chapter" data-level="5.10" data-path="patch.html"><a href="patch.html#Calibration"><i class="fa fa-check"></i><b>5.10</b> Calibration</a>
+<ul>
+<li class="chapter" data-level="5.10.1" data-path="patch.html"><a href="patch.html#import-csv"><i class="fa fa-check"></i><b>5.10.1</b> Import CSV</a></li>
+<li class="chapter" data-level="5.10.2" data-path="patch.html"><a href="patch.html#wysiwyg"><i class="fa fa-check"></i><b>5.10.2</b> Wysiwyg</a></li>
+<li class="chapter" data-level="5.10.3" data-path="patch.html"><a href="patch.html#capture"><i class="fa fa-check"></i><b>5.10.3</b> Capture</a></li>
+<li class="chapter" data-level="5.10.4" data-path="patch.html"><a href="patch.html#l8"><i class="fa fa-check"></i><b>5.10.4</b> L8</a></li>
+<li class="chapter" data-level="5.10.5" data-path="patch.html"><a href="patch.html#vectorworks"><i class="fa fa-check"></i><b>5.10.5</b> VectorWorks</a></li>
+<li class="chapter" data-level="5.10.6" data-path="patch.html"><a href="patch.html#depence"><i class="fa fa-check"></i><b>5.10.6</b> Depence</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="patch.html"><a href="patch.html#Trackers"><i class="fa fa-check"></i><b>5.11</b> Trackers</a></li>
+<li class="chapter" data-level="5.12" data-path="patch.html"><a href="patch.html#Auto-Patch"><i class="fa fa-check"></i><b>5.12</b> Auto-Patch</a>
+<ul>
+<li class="chapter" data-level="5.12.1" data-path="patch.html"><a href="patch.html#wysiwyg-1"><i class="fa fa-check"></i><b>5.12.1</b> Wysiwyg</a></li>
+<li class="chapter" data-level="5.12.2" data-path="patch.html"><a href="patch.html#capture-1"><i class="fa fa-check"></i><b>5.12.2</b> Capture</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="program.html"><a href="program.html"><i class="fa fa-check"></i><b>6</b> Program</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="program.html"><a href="program.html#Concept"><i class="fa fa-check"></i><b>6.1</b> Concept</a></li>
+<li class="chapter" data-level="6.2" data-path="program.html"><a href="program.html#Editor"><i class="fa fa-check"></i><b>6.2</b> Editor</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="program.html"><a href="program.html#hardkeys"><i class="fa fa-check"></i><b>6.2.1</b> HardKeys</a></li>
+<li class="chapter" data-level="6.2.2" data-path="program.html"><a href="program.html#tracking-cue-only"><i class="fa fa-check"></i><b>6.2.2</b> Tracking &amp; Cue Only</a></li>
+<li class="chapter" data-level="6.2.3" data-path="program.html"><a href="program.html#blind-editor"><i class="fa fa-check"></i><b>6.2.3</b> Blind Editor</a></li>
+<li class="chapter" data-level="6.2.4" data-path="program.html"><a href="program.html#syntax"><i class="fa fa-check"></i><b>6.2.4</b> Syntax</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="program.html"><a href="program.html#Selection"><i class="fa fa-check"></i><b>6.3</b> Selection</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="program.html"><a href="program.html#selection-tools"><i class="fa fa-check"></i><b>6.3.1</b> Selection Tools</a></li>
+<li class="chapter" data-level="6.3.2" data-path="program.html"><a href="program.html#order-tools"><i class="fa fa-check"></i><b>6.3.2</b> Order Tools</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="program.html"><a href="program.html#Groups"><i class="fa fa-check"></i><b>6.4</b> Groups</a></li>
+<li class="chapter" data-level="6.5" data-path="program.html"><a href="program.html#Parameters"><i class="fa fa-check"></i><b>6.5</b> Parameters</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="program.html"><a href="program.html#param-banks"><i class="fa fa-check"></i><b>6.5.1</b> Param Banks</a></li>
+<li class="chapter" data-level="6.5.2" data-path="program.html"><a href="program.html#virtual-params"><i class="fa fa-check"></i><b>6.5.2</b> Virtual Params</a></li>
+<li class="chapter" data-level="6.5.3" data-path="program.html"><a href="program.html#fixture-manipulation"><i class="fa fa-check"></i><b>6.5.3</b> Fixture Manipulation</a></li>
+<li class="chapter" data-level="6.5.4" data-path="program.html"><a href="program.html#editor-controls"><i class="fa fa-check"></i><b>6.5.4</b> Editor Controls</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="program.html"><a href="program.html#Smart-Screen"><i class="fa fa-check"></i><b>6.6</b> Smart Screen</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="program.html"><a href="program.html#intensity"><i class="fa fa-check"></i><b>6.6.1</b> Intensity</a></li>
+<li class="chapter" data-level="6.6.2" data-path="program.html"><a href="program.html#position"><i class="fa fa-check"></i><b>6.6.2</b> Position</a></li>
+<li class="chapter" data-level="6.6.3" data-path="program.html"><a href="program.html#color"><i class="fa fa-check"></i><b>6.6.3</b> Color</a></li>
+<li class="chapter" data-level="6.6.4" data-path="program.html"><a href="program.html#beam"><i class="fa fa-check"></i><b>6.6.4</b> Beam</a></li>
+<li class="chapter" data-level="6.6.5" data-path="program.html"><a href="program.html#image"><i class="fa fa-check"></i><b>6.6.5</b> Image</a></li>
+<li class="chapter" data-level="6.6.6" data-path="program.html"><a href="program.html#shape"><i class="fa fa-check"></i><b>6.6.6</b> Shape</a></li>
+<li class="chapter" data-level="6.6.7" data-path="program.html"><a href="program.html#wheel-picker"><i class="fa fa-check"></i><b>6.6.7</b> Wheel Picker</a></li>
+<li class="chapter" data-level="6.6.8" data-path="program.html"><a href="program.html#control"><i class="fa fa-check"></i><b>6.6.8</b> Control</a></li>
+<li class="chapter" data-level="6.6.9" data-path="program.html"><a href="program.html#media"><i class="fa fa-check"></i><b>6.6.9</b> Media</a></li>
+<li class="chapter" data-level="6.6.10" data-path="program.html"><a href="program.html#settings-1"><i class="fa fa-check"></i><b>6.6.10</b> Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="program.html"><a href="program.html#Commands"><i class="fa fa-check"></i><b>6.7</b> Commands</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="program.html"><a href="program.html#clear"><i class="fa fa-check"></i><b>6.7.1</b> Clear</a></li>
+<li class="chapter" data-level="6.7.2" data-path="program.html"><a href="program.html#de-select"><i class="fa fa-check"></i><b>6.7.2</b> De-Select</a></li>
+<li class="chapter" data-level="6.7.3" data-path="program.html"><a href="program.html#release"><i class="fa fa-check"></i><b>6.7.3</b> Release</a></li>
+<li class="chapter" data-level="6.7.4" data-path="program.html"><a href="program.html#reset"><i class="fa fa-check"></i><b>6.7.4</b> Reset</a></li>
+<li class="chapter" data-level="6.7.5" data-path="program.html"><a href="program.html#home"><i class="fa fa-check"></i><b>6.7.5</b> Home</a></li>
+<li class="chapter" data-level="6.7.6" data-path="program.html"><a href="program.html#highlight"><i class="fa fa-check"></i><b>6.7.6</b> Highlight</a></li>
+<li class="chapter" data-level="6.7.7" data-path="program.html"><a href="program.html#lowlight"><i class="fa fa-check"></i><b>6.7.7</b> Lowlight</a></li>
+<li class="chapter" data-level="6.7.8" data-path="program.html"><a href="program.html#rem-dim"><i class="fa fa-check"></i><b>6.7.8</b> Rem Dim</a></li>
+<li class="chapter" data-level="6.7.9" data-path="program.html"><a href="program.html#undo"><i class="fa fa-check"></i><b>6.7.9</b> Undo</a></li>
+<li class="chapter" data-level="6.7.10" data-path="program.html"><a href="program.html#fan"><i class="fa fa-check"></i><b>6.7.10</b> Fan</a></li>
+<li class="chapter" data-level="6.7.11" data-path="program.html"><a href="program.html#copy-paste"><i class="fa fa-check"></i><b>6.7.11</b> Copy / Paste</a></li>
+<li class="chapter" data-level="6.7.12" data-path="program.html"><a href="program.html#move"><i class="fa fa-check"></i><b>6.7.12</b> Move</a></li>
+<li class="chapter" data-level="6.7.13" data-path="program.html"><a href="program.html#grab"><i class="fa fa-check"></i><b>6.7.13</b> Grab</a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="program.html"><a href="program.html#Pixel-Mapper"><i class="fa fa-check"></i><b>6.8</b> Pixel Mapper</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="library.html"><a href="library.html"><i class="fa fa-check"></i><b>7</b> Library</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="library.html"><a href="library.html#Bank-Libraries"><i class="fa fa-check"></i><b>7.1</b> Bank Libraries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="library.html"><a href="library.html#operations"><i class="fa fa-check"></i><b>7.1.1</b> Operations</a></li>
+<li class="chapter" data-level="7.1.2" data-path="library.html"><a href="library.html#auto-param-grouping"><i class="fa fa-check"></i><b>7.1.2</b> Auto Param Grouping</a></li>
+<li class="chapter" data-level="7.1.3" data-path="library.html"><a href="library.html#context"><i class="fa fa-check"></i><b>7.1.3</b> Context</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="library.html"><a href="library.html#Auto-Generate"><i class="fa fa-check"></i><b>7.2</b> Auto Generate</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="library.html"><a href="library.html#groups"><i class="fa fa-check"></i><b>7.2.1</b> Groups</a></li>
+<li class="chapter" data-level="7.2.2" data-path="library.html"><a href="library.html#fixture-masks"><i class="fa fa-check"></i><b>7.2.2</b> Fixture Masks</a></li>
+<li class="chapter" data-level="7.2.3" data-path="library.html"><a href="library.html#intensity-1"><i class="fa fa-check"></i><b>7.2.3</b> Intensity</a></li>
+<li class="chapter" data-level="7.2.4" data-path="library.html"><a href="library.html#position-1"><i class="fa fa-check"></i><b>7.2.4</b> Position</a></li>
+<li class="chapter" data-level="7.2.5" data-path="library.html"><a href="library.html#color-1"><i class="fa fa-check"></i><b>7.2.5</b> Color</a></li>
+<li class="chapter" data-level="7.2.6" data-path="library.html"><a href="library.html#beam-1"><i class="fa fa-check"></i><b>7.2.6</b> Beam</a></li>
+<li class="chapter" data-level="7.2.7" data-path="library.html"><a href="library.html#image-1"><i class="fa fa-check"></i><b>7.2.7</b> Image</a></li>
+<li class="chapter" data-level="7.2.8" data-path="library.html"><a href="library.html#shape-1"><i class="fa fa-check"></i><b>7.2.8</b> Shape</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="library.html"><a href="library.html#Library-Defaults"><i class="fa fa-check"></i><b>7.3</b> Library Defaults</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="library.html"><a href="library.html#behavior"><i class="fa fa-check"></i><b>7.3.1</b> Behavior</a></li>
+<li class="chapter" data-level="7.3.2" data-path="library.html"><a href="library.html#reference"><i class="fa fa-check"></i><b>7.3.2</b> Reference</a></li>
+<li class="chapter" data-level="7.3.3" data-path="library.html"><a href="library.html#time"><i class="fa fa-check"></i><b>7.3.3</b> Time</a></li>
+<li class="chapter" data-level="7.3.4" data-path="library.html"><a href="library.html#effect-base"><i class="fa fa-check"></i><b>7.3.4</b> Effect Base</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="library.html"><a href="library.html#Filters"><i class="fa fa-check"></i><b>7.4</b> Filters</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="library.html"><a href="library.html#on-the-fly"><i class="fa fa-check"></i><b>7.4.1</b> On the Fly</a></li>
+<li class="chapter" data-level="7.4.2" data-path="library.html"><a href="library.html#custom-filters"><i class="fa fa-check"></i><b>7.4.2</b> Custom Filters</a></li>
+<li class="chapter" data-level="7.4.3" data-path="library.html"><a href="library.html#filters-store-options"><i class="fa fa-check"></i><b>7.4.3</b> Filters Store Options</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="library.html"><a href="library.html#Curves"><i class="fa fa-check"></i><b>7.5</b> Curves</a></li>
+<li class="chapter" data-level="7.6" data-path="library.html"><a href="library.html#Effects"><i class="fa fa-check"></i><b>7.6</b> Effects</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="library.html"><a href="library.html#attributes"><i class="fa fa-check"></i><b>7.6.1</b> Attributes</a></li>
+<li class="chapter" data-level="7.6.2" data-path="library.html"><a href="library.html#grouping"><i class="fa fa-check"></i><b>7.6.2</b> Grouping</a></li>
+<li class="chapter" data-level="7.6.3" data-path="library.html"><a href="library.html#pre-built-effects"><i class="fa fa-check"></i><b>7.6.3</b> Pre-Built Effects</a></li>
+<li class="chapter" data-level="7.6.4" data-path="library.html"><a href="library.html#smart-effects"><i class="fa fa-check"></i><b>7.6.4</b> Smart Effects</a></li>
+<li class="chapter" data-level="7.6.5" data-path="library.html"><a href="library.html#advanced-effects"><i class="fa fa-check"></i><b>7.6.5</b> Advanced Effects</a></li>
+<li class="chapter" data-level="7.6.6" data-path="library.html"><a href="library.html#library-effects"><i class="fa fa-check"></i><b>7.6.6</b> Library Effects</a></li>
+<li class="chapter" data-level="7.6.7" data-path="library.html"><a href="library.html#effect-library"><i class="fa fa-check"></i><b>7.6.7</b> Effect Library</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="cue.html"><a href="cue.html"><i class="fa fa-check"></i><b>8</b> Cue</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="cue.html"><a href="cue.html#Operations"><i class="fa fa-check"></i><b>8.1</b> Operations</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="cue.html"><a href="cue.html#store"><i class="fa fa-check"></i><b>8.1.1</b> Store</a></li>
+<li class="chapter" data-level="8.1.2" data-path="cue.html"><a href="cue.html#edit-update"><i class="fa fa-check"></i><b>8.1.2</b> Edit &amp; Update</a></li>
+<li class="chapter" data-level="8.1.3" data-path="cue.html"><a href="cue.html#delete"><i class="fa fa-check"></i><b>8.1.3</b> Delete</a></li>
+<li class="chapter" data-level="8.1.4" data-path="cue.html"><a href="cue.html#copy-paste-1"><i class="fa fa-check"></i><b>8.1.4</b> Copy &amp; Paste</a></li>
+<li class="chapter" data-level="8.1.5" data-path="cue.html"><a href="cue.html#text"><i class="fa fa-check"></i><b>8.1.5</b> Text</a></li>
+<li class="chapter" data-level="8.1.6" data-path="cue.html"><a href="cue.html#load"><i class="fa fa-check"></i><b>8.1.6</b> Load</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="cue.html"><a href="cue.html#Scenes"><i class="fa fa-check"></i><b>8.2</b> Scenes</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="cue.html"><a href="cue.html#scene-settings-1"><i class="fa fa-check"></i><b>8.2.1</b> Scene Settings</a></li>
+<li class="chapter" data-level="8.2.2" data-path="cue.html"><a href="cue.html#scene-time"><i class="fa fa-check"></i><b>8.2.2</b> Scene Time</a></li>
+<li class="chapter" data-level="8.2.3" data-path="cue.html"><a href="cue.html#home-scene"><i class="fa fa-check"></i><b>8.2.3</b> Home Scene</a></li>
+<li class="chapter" data-level="8.2.4" data-path="cue.html"><a href="cue.html#highlight-scene"><i class="fa fa-check"></i><b>8.2.4</b> Highlight Scene</a></li>
+<li class="chapter" data-level="8.2.5" data-path="cue.html"><a href="cue.html#lowlight-scene"><i class="fa fa-check"></i><b>8.2.5</b> Lowlight Scene</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="cue.html"><a href="cue.html#Submasters"><i class="fa fa-check"></i><b>8.3</b> Submasters</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="cue.html"><a href="cue.html#submasters"><i class="fa fa-check"></i><b>8.3.1</b> Submasters</a></li>
+<li class="chapter" data-level="8.3.2" data-path="cue.html"><a href="cue.html#groupmasters"><i class="fa fa-check"></i><b>8.3.2</b> Groupmasters</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="cue.html"><a href="cue.html#Cues"><i class="fa fa-check"></i><b>8.4</b> Cues</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="cue.html"><a href="cue.html#cue-settings-1"><i class="fa fa-check"></i><b>8.4.1</b> Cue Settings</a></li>
+<li class="chapter" data-level="8.4.2" data-path="cue.html"><a href="cue.html#cue-time"><i class="fa fa-check"></i><b>8.4.2</b> Cue Time</a></li>
+<li class="chapter" data-level="8.4.3" data-path="cue.html"><a href="cue.html#param-time"><i class="fa fa-check"></i><b>8.4.3</b> Param Time</a></li>
+<li class="chapter" data-level="8.4.4" data-path="cue.html"><a href="cue.html#param-profile"><i class="fa fa-check"></i><b>8.4.4</b> Param Profile</a></li>
+<li class="chapter" data-level="8.4.5" data-path="cue.html"><a href="cue.html#virtual-param-fade"><i class="fa fa-check"></i><b>8.4.5</b> Virtual Param Fade</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="cue.html"><a href="cue.html#Qlists"><i class="fa fa-check"></i><b>8.5</b> Qlists</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="cue.html"><a href="cue.html#qlist-settings-1"><i class="fa fa-check"></i><b>8.5.1</b> Qlist Settings</a></li>
+<li class="chapter" data-level="8.5.2" data-path="cue.html"><a href="cue.html#tracking"><i class="fa fa-check"></i><b>8.5.2</b> Tracking</a></li>
+<li class="chapter" data-level="8.5.3" data-path="cue.html"><a href="cue.html#move-in-dark"><i class="fa fa-check"></i><b>8.5.3</b> Move in Dark</a></li>
+<li class="chapter" data-level="8.5.4" data-path="cue.html"><a href="cue.html#link"><i class="fa fa-check"></i><b>8.5.4</b> Link</a></li>
+<li class="chapter" data-level="8.5.5" data-path="cue.html"><a href="cue.html#loop"><i class="fa fa-check"></i><b>8.5.5</b> Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="cue.html"><a href="cue.html#Chasers"><i class="fa fa-check"></i><b>8.6</b> Chasers</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="cue.html"><a href="cue.html#chase-settings-1"><i class="fa fa-check"></i><b>8.6.1</b> Chase Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="cue.html"><a href="cue.html#Tracksheet"><i class="fa fa-check"></i><b>8.7</b> Tracksheet</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="cue.html"><a href="cue.html#menu"><i class="fa fa-check"></i><b>8.7.1</b> Menu</a></li>
+<li class="chapter" data-level="8.7.2" data-path="cue.html"><a href="cue.html#filters"><i class="fa fa-check"></i><b>8.7.2</b> Filters</a></li>
+<li class="chapter" data-level="8.7.3" data-path="cue.html"><a href="cue.html#update-actions"><i class="fa fa-check"></i><b>8.7.3</b> Update Actions</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="cue.html"><a href="cue.html#Wizard"><i class="fa fa-check"></i><b>8.8</b> Wizard</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="playback.html"><a href="playback.html"><i class="fa fa-check"></i><b>9</b> Playback</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="playback.html"><a href="playback.html#Physical-Controllers"><i class="fa fa-check"></i><b>9.1</b> Physical Controllers</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="playback.html"><a href="playback.html#grand-master-blackout"><i class="fa fa-check"></i><b>9.1.1</b> Grand Master + BlackOut</a></li>
+<li class="chapter" data-level="9.1.2" data-path="playback.html"><a href="playback.html#ab-crossfader"><i class="fa fa-check"></i><b>9.1.2</b> A/B CrossFader</a></li>
+<li class="chapter" data-level="9.1.3" data-path="playback.html"><a href="playback.html#slider"><i class="fa fa-check"></i><b>9.1.3</b> Slider</a></li>
+<li class="chapter" data-level="9.1.4" data-path="playback.html"><a href="playback.html#qkey"><i class="fa fa-check"></i><b>9.1.4</b> Qkey</a></li>
+<li class="chapter" data-level="9.1.5" data-path="playback.html"><a href="playback.html#auxkey"><i class="fa fa-check"></i><b>9.1.5</b> AuxKey</a></li>
+<li class="chapter" data-level="9.1.6" data-path="playback.html"><a href="playback.html#global-slider"><i class="fa fa-check"></i><b>9.1.6</b> Global Slider</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="playback.html"><a href="playback.html#Virtual-Controllers"><i class="fa fa-check"></i><b>9.2</b> Virtual Controllers</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="playback.html"><a href="playback.html#grand-master-blackout-1"><i class="fa fa-check"></i><b>9.2.1</b> Grand Master + BlackOut</a></li>
+<li class="chapter" data-level="9.2.2" data-path="playback.html"><a href="playback.html#ab-crossfader-1"><i class="fa fa-check"></i><b>9.2.2</b> A/B Crossfader</a></li>
+<li class="chapter" data-level="9.2.3" data-path="playback.html"><a href="playback.html#slider-1"><i class="fa fa-check"></i><b>9.2.3</b> Slider</a></li>
+<li class="chapter" data-level="9.2.4" data-path="playback.html"><a href="playback.html#qkeys"><i class="fa fa-check"></i><b>9.2.4</b> Qkeys</a></li>
+<li class="chapter" data-level="9.2.5" data-path="playback.html"><a href="playback.html#auxkey-1"><i class="fa fa-check"></i><b>9.2.5</b> Auxkey</a></li>
+<li class="chapter" data-level="9.2.6" data-path="playback.html"><a href="playback.html#global-slider-1"><i class="fa fa-check"></i><b>9.2.6</b> Global Slider</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="playback.html"><a href="playback.html#Controller-Keys"><i class="fa fa-check"></i><b>9.3</b> Controller Keys</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="playback.html"><a href="playback.html#master-keys"><i class="fa fa-check"></i><b>9.3.1</b> Master Keys</a></li>
+<li class="chapter" data-level="9.3.2" data-path="playback.html"><a href="playback.html#operation-keys"><i class="fa fa-check"></i><b>9.3.2</b> Operation Keys</a></li>
+<li class="chapter" data-level="9.3.3" data-path="playback.html"><a href="playback.html#command-keys"><i class="fa fa-check"></i><b>9.3.3</b> Command Keys</a></li>
+<li class="chapter" data-level="9.3.4" data-path="playback.html"><a href="playback.html#mode-keys"><i class="fa fa-check"></i><b>9.3.4</b> Mode Keys</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="playback.html"><a href="playback.html#Controller-Configuration"><i class="fa fa-check"></i><b>9.4</b> Controller Configuration</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="playback.html"><a href="playback.html#playback-status"><i class="fa fa-check"></i><b>9.4.1</b> Playback Status</a></li>
+<li class="chapter" data-level="9.4.2" data-path="playback.html"><a href="playback.html#controller-defaults"><i class="fa fa-check"></i><b>9.4.2</b> Controller Defaults</a></li>
+<li class="chapter" data-level="9.4.3" data-path="playback.html"><a href="playback.html#controller-actions-1"><i class="fa fa-check"></i><b>9.4.3</b> Controller Actions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="playback.html"><a href="playback.html#controller-settings-1"><i class="fa fa-check"></i><b>9.4.4</b> Controller Settings</a></li>
+<li class="chapter" data-level="9.4.5" data-path="playback.html"><a href="playback.html#object-settings"><i class="fa fa-check"></i><b>9.4.5</b> Object Settings</a></li>
+<li class="chapter" data-level="9.4.6" data-path="playback.html"><a href="playback.html#compound-controllers"><i class="fa fa-check"></i><b>9.4.6</b> Compound Controllers</a></li>
+<li class="chapter" data-level="9.4.7" data-path="playback.html"><a href="playback.html#playback-master"><i class="fa fa-check"></i><b>9.4.7</b> Playback Master</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="playback.html"><a href="playback.html#Live-Controller"><i class="fa fa-check"></i><b>9.5</b> Live Controller</a></li>
+<li class="chapter" data-level="9.6" data-path="playback.html"><a href="playback.html#Rate"><i class="fa fa-check"></i><b>9.6</b> Rate</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="playback.html"><a href="playback.html#rate-screen"><i class="fa fa-check"></i><b>9.6.1</b> Rate Screen</a></li>
+<li class="chapter" data-level="9.6.2" data-path="playback.html"><a href="playback.html#teach-rate"><i class="fa fa-check"></i><b>9.6.2</b> Teach Rate</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="playback.html"><a href="playback.html#Snap"><i class="fa fa-check"></i><b>9.7</b> Snap</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="playback.html"><a href="playback.html#store-snaps"><i class="fa fa-check"></i><b>9.7.1</b> Store Snaps</a></li>
+<li class="chapter" data-level="9.7.2" data-path="playback.html"><a href="playback.html#trigger-snaps"><i class="fa fa-check"></i><b>9.7.2</b> Trigger Snaps</a></li>
+<li class="chapter" data-level="9.7.3" data-path="playback.html"><a href="playback.html#attach-snaps"><i class="fa fa-check"></i><b>9.7.3</b> Attach Snaps</a></li>
+<li class="chapter" data-level="9.7.4" data-path="playback.html"><a href="playback.html#snap-time"><i class="fa fa-check"></i><b>9.7.4</b> Snap Time</a></li>
+</ul></li>
+<li class="chapter" data-level="9.8" data-path="playback.html"><a href="playback.html#Macro"><i class="fa fa-check"></i><b>9.8</b> Macro</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="playback.html"><a href="playback.html#teach-macro"><i class="fa fa-check"></i><b>9.8.1</b> Teach Macro</a></li>
+<li class="chapter" data-level="9.8.2" data-path="playback.html"><a href="playback.html#trigger-macro"><i class="fa fa-check"></i><b>9.8.2</b> Trigger Macro</a></li>
+<li class="chapter" data-level="9.8.3" data-path="playback.html"><a href="playback.html#attach-macro"><i class="fa fa-check"></i><b>9.8.3</b> Attach Macro</a></li>
+<li class="chapter" data-level="9.8.4" data-path="playback.html"><a href="playback.html#macro-time"><i class="fa fa-check"></i><b>9.8.4</b> Macro Time</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="playback.html"><a href="playback.html#Timeline"><i class="fa fa-check"></i><b>9.9</b> Timeline</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="playback.html"><a href="playback.html#view"><i class="fa fa-check"></i><b>9.9.1</b> View</a></li>
+<li class="chapter" data-level="9.9.2" data-path="playback.html"><a href="playback.html#record"><i class="fa fa-check"></i><b>9.9.2</b> Record</a></li>
+<li class="chapter" data-level="9.9.3" data-path="playback.html"><a href="playback.html#commands"><i class="fa fa-check"></i><b>9.9.3</b> Commands</a></li>
+<li class="chapter" data-level="9.9.4" data-path="playback.html"><a href="playback.html#gestures"><i class="fa fa-check"></i><b>9.9.4</b> Gestures</a></li>
+<li class="chapter" data-level="9.9.5" data-path="playback.html"><a href="playback.html#markers"><i class="fa fa-check"></i><b>9.9.5</b> Markers</a></li>
+<li class="chapter" data-level="9.9.6" data-path="playback.html"><a href="playback.html#move-selection"><i class="fa fa-check"></i><b>9.9.6</b> Move Selection</a></li>
+<li class="chapter" data-level="9.9.7" data-path="playback.html"><a href="playback.html#actions"><i class="fa fa-check"></i><b>9.9.7</b> Actions</a></li>
+<li class="chapter" data-level="9.9.8" data-path="playback.html"><a href="playback.html#timestamp"><i class="fa fa-check"></i><b>9.9.8</b> TimeStamp</a></li>
+<li class="chapter" data-level="9.9.9" data-path="playback.html"><a href="playback.html#actions-history"><i class="fa fa-check"></i><b>9.9.9</b> Actions History</a></li>
+<li class="chapter" data-level="9.9.10" data-path="playback.html"><a href="playback.html#audio-track"><i class="fa fa-check"></i><b>9.9.10</b> Audio Track</a></li>
+<li class="chapter" data-level="9.9.11" data-path="playback.html"><a href="playback.html#time-code"><i class="fa fa-check"></i><b>9.9.11</b> Time Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="live.html"><a href="live.html"><i class="fa fa-check"></i><b>10</b> Live</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="live.html"><a href="live.html#Live-View"><i class="fa fa-check"></i><b>10.1</b> Live View</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="live.html"><a href="live.html#live-options"><i class="fa fa-check"></i><b>10.1.1</b> Live Options</a></li>
+<li class="chapter" data-level="10.1.2" data-path="live.html"><a href="live.html#live-settings"><i class="fa fa-check"></i><b>10.1.2</b> Live Settings</a>
+<ul>
+<li class="chapter" data-level="10.1.2.1" data-path="live.html"><a href="live.html#display"><i class="fa fa-check"></i><b>10.1.2.1</b> Display</a></li>
+<li class="chapter" data-level="10.1.2.2" data-path="live.html"><a href="live.html#behavior-1"><i class="fa fa-check"></i><b>10.1.2.2</b> Behavior</a></li>
+<li class="chapter" data-level="10.1.2.3" data-path="live.html"><a href="live.html#sizing"><i class="fa fa-check"></i><b>10.1.2.3</b> Sizing</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="live.html"><a href="live.html#Live-Param-View"><i class="fa fa-check"></i><b>10.2</b> Live Param View</a></li>
+<li class="chapter" data-level="10.3" data-path="live.html"><a href="live.html#Exam-View"><i class="fa fa-check"></i><b>10.3</b> Exam View</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="live.html"><a href="live.html#show-exam"><i class="fa fa-check"></i><b>10.3.1</b> Show Exam</a></li>
+<li class="chapter" data-level="10.3.2" data-path="live.html"><a href="live.html#patch-exam"><i class="fa fa-check"></i><b>10.3.2</b> Patch Exam</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="live.html"><a href="live.html#Topo-View"><i class="fa fa-check"></i><b>10.4</b> Topo View</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="live.html"><a href="live.html#topo-toolbar"><i class="fa fa-check"></i><b>10.4.1</b> Topo Toolbar</a></li>
+<li class="chapter" data-level="10.4.2" data-path="live.html"><a href="live.html#topo-menu"><i class="fa fa-check"></i><b>10.4.2</b> Topo Menu</a></li>
+<li class="chapter" data-level="10.4.3" data-path="live.html"><a href="live.html#topo-actions"><i class="fa fa-check"></i><b>10.4.3</b> Topo Actions</a></li>
+<li class="chapter" data-level="10.4.4" data-path="live.html"><a href="live.html#add-elements"><i class="fa fa-check"></i><b>10.4.4</b> Add Elements</a></li>
+<li class="chapter" data-level="10.4.5" data-path="live.html"><a href="live.html#selection"><i class="fa fa-check"></i><b>10.4.5</b> Selection</a></li>
+<li class="chapter" data-level="10.4.6" data-path="live.html"><a href="live.html#tools"><i class="fa fa-check"></i><b>10.4.6</b> Tools</a></li>
+<li class="chapter" data-level="10.4.7" data-path="live.html"><a href="live.html#live-mode"><i class="fa fa-check"></i><b>10.4.7</b> Live Mode</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="connect.html"><a href="connect.html"><i class="fa fa-check"></i><b>11</b> Connect</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="connect.html"><a href="connect.html#DMX"><i class="fa fa-check"></i><b>11.1</b> DMX</a></li>
+<li class="chapter" data-level="11.2" data-path="connect.html"><a href="connect.html#RDM"><i class="fa fa-check"></i><b>11.2</b> RDM</a></li>
+<li class="chapter" data-level="11.3" data-path="connect.html"><a href="connect.html#Network"><i class="fa fa-check"></i><b>11.3</b> Network</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="connect.html"><a href="connect.html#network-settings"><i class="fa fa-check"></i><b>11.3.1</b> Network Settings</a></li>
+<li class="chapter" data-level="11.3.2" data-path="connect.html"><a href="connect.html#main-network-1"><i class="fa fa-check"></i><b>11.3.2</b> Main Network</a></li>
+<li class="chapter" data-level="11.3.3" data-path="connect.html"><a href="connect.html#user-networks-1"><i class="fa fa-check"></i><b>11.3.3</b> User Networks</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="connect.html"><a href="connect.html#Wings-and-Nodes"><i class="fa fa-check"></i><b>11.4</b> Wings and Nodes</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="connect.html"><a href="connect.html#vibe-wings"><i class="fa fa-check"></i><b>11.4.1</b> Vibe Wings</a></li>
+<li class="chapter" data-level="11.4.2" data-path="connect.html"><a href="connect.html#eport-nodes"><i class="fa fa-check"></i><b>11.4.2</b> ePort Nodes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="connect.html"><a href="connect.html#MultiUser"><i class="fa fa-check"></i><b>11.5</b> MultiUser</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="connect.html"><a href="connect.html#masterbackup"><i class="fa fa-check"></i><b>11.5.1</b> Master/Backup</a></li>
+<li class="chapter" data-level="11.5.2" data-path="connect.html"><a href="connect.html#users-1"><i class="fa fa-check"></i><b>11.5.2</b> Users</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="connect.html"><a href="connect.html#MIDI"><i class="fa fa-check"></i><b>11.6</b> MIDI</a>
+<ul>
+<li class="chapter" data-level="11.6.1" data-path="connect.html"><a href="connect.html#midi-settings"><i class="fa fa-check"></i><b>11.6.1</b> MIDI Settings</a></li>
+<li class="chapter" data-level="11.6.2" data-path="connect.html"><a href="connect.html#midi-notes"><i class="fa fa-check"></i><b>11.6.2</b> MIDI Notes</a></li>
+<li class="chapter" data-level="11.6.3" data-path="connect.html"><a href="connect.html#msc"><i class="fa fa-check"></i><b>11.6.3</b> MSC</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="connect.html"><a href="connect.html#TimeCode"><i class="fa fa-check"></i><b>11.7</b> TimeCode</a>
+<ul>
+<li class="chapter" data-level="11.7.1" data-path="connect.html"><a href="connect.html#connections"><i class="fa fa-check"></i><b>11.7.1</b> Connections</a></li>
+<li class="chapter" data-level="11.7.2" data-path="connect.html"><a href="connect.html#ltc"><i class="fa fa-check"></i><b>11.7.2</b> LTC</a></li>
+<li class="chapter" data-level="11.7.3" data-path="connect.html"><a href="connect.html#mtc"><i class="fa fa-check"></i><b>11.7.3</b> MTC</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="connect.html"><a href="connect.html#OSC"><i class="fa fa-check"></i><b>11.8</b> OSC</a></li>
+<li class="chapter" data-level="11.9" data-path="connect.html"><a href="connect.html#CITP"><i class="fa fa-check"></i><b>11.9</b> CITP</a>
+<ul>
+<li class="chapter" data-level="11.9.1" data-path="connect.html"><a href="connect.html#general"><i class="fa fa-check"></i><b>11.9.1</b> General</a></li>
+<li class="chapter" data-level="11.9.2" data-path="connect.html"><a href="connect.html#media-servers"><i class="fa fa-check"></i><b>11.9.2</b> Media Servers</a></li>
+<li class="chapter" data-level="11.9.3" data-path="connect.html"><a href="connect.html#visualizers"><i class="fa fa-check"></i><b>11.9.3</b> Visualizers</a></li>
+<li class="chapter" data-level="11.9.4" data-path="connect.html"><a href="connect.html#consoles"><i class="fa fa-check"></i><b>11.9.4</b> Consoles</a></li>
+</ul></li>
+<li class="chapter" data-level="11.10" data-path="connect.html"><a href="connect.html#PSN"><i class="fa fa-check"></i><b>11.10</b> PSN</a></li>
+<li class="chapter" data-level="11.11" data-path="connect.html"><a href="connect.html#NDI"><i class="fa fa-check"></i><b>11.11</b> NDI</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="show.html"><a href="show.html"><i class="fa fa-check"></i><b>12</b> Show</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="show.html"><a href="show.html#Vibe-Show"><i class="fa fa-check"></i><b>12.1</b> Vibe Show</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="show.html"><a href="show.html#save-show"><i class="fa fa-check"></i><b>12.1.1</b> Save Show</a></li>
+<li class="chapter" data-level="12.1.2" data-path="show.html"><a href="show.html#load-show"><i class="fa fa-check"></i><b>12.1.2</b> Load Show</a></li>
+<li class="chapter" data-level="12.1.3" data-path="show.html"><a href="show.html#default-show"><i class="fa fa-check"></i><b>12.1.3</b> Default Show</a></li>
+<li class="chapter" data-level="12.1.4" data-path="show.html"><a href="show.html#merge-show"><i class="fa fa-check"></i><b>12.1.4</b> Merge Show</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="show.html"><a href="show.html#Vibe-Layout"><i class="fa fa-check"></i><b>12.2</b> Vibe Layout</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="show.html"><a href="show.html#save-layout"><i class="fa fa-check"></i><b>12.2.1</b> Save Layout</a></li>
+<li class="chapter" data-level="12.2.2" data-path="show.html"><a href="show.html#load-layout"><i class="fa fa-check"></i><b>12.2.2</b> Load Layout</a></li>
+<li class="chapter" data-level="12.2.3" data-path="show.html"><a href="show.html#default-layout"><i class="fa fa-check"></i><b>12.2.3</b> Default Layout</a></li>
+<li class="chapter" data-level="12.2.4" data-path="show.html"><a href="show.html#merge-layout"><i class="fa fa-check"></i><b>12.2.4</b> Merge Layout</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="show.html"><a href="show.html#Vector-Show"><i class="fa fa-check"></i><b>12.3</b> Vector Show</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="show.html"><a href="show.html#compulite-vector"><i class="fa fa-check"></i><b>12.3.1</b> Compulite Vector</a></li>
+<li class="chapter" data-level="12.3.2" data-path="show.html"><a href="show.html#load-vector-show"><i class="fa fa-check"></i><b>12.3.2</b> Load Vector Show</a></li>
+<li class="chapter" data-level="12.3.3" data-path="show.html"><a href="show.html#device-match"><i class="fa fa-check"></i><b>12.3.3</b> Device Match</a></li>
+<li class="chapter" data-level="12.3.4" data-path="show.html"><a href="show.html#data-import"><i class="fa fa-check"></i><b>12.3.4</b> Data Import</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="show.html"><a href="show.html#MVR-Show"><i class="fa fa-check"></i><b>12.4</b> MVR Show</a></li>
+<li class="chapter" data-level="12.5" data-path="show.html"><a href="show.html#Clean-Up"><i class="fa fa-check"></i><b>12.5</b> Clean-Up</a></li>
+<li class="chapter" data-level="12.6" data-path="show.html"><a href="show.html#Report"><i class="fa fa-check"></i><b>12.6</b> Report</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="offline-tool.html"><a href="offline-tool.html"><i class="fa fa-check"></i><b>13</b> Offline Tool</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="offline-tool.html"><a href="offline-tool.html#HomePage"><i class="fa fa-check"></i><b>13.1</b> HomePage</a></li>
+<li class="chapter" data-level="13.2" data-path="offline-tool.html"><a href="offline-tool.html#Maintenance"><i class="fa fa-check"></i><b>13.2</b> Maintenance</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="offline-tool.html"><a href="offline-tool.html#sw-update"><i class="fa fa-check"></i><b>13.2.1</b> SW Update</a></li>
+<li class="chapter" data-level="13.2.2" data-path="offline-tool.html"><a href="offline-tool.html#sw-patch-file"><i class="fa fa-check"></i><b>13.2.2</b> SW Patch File</a></li>
+<li class="chapter" data-level="13.2.3" data-path="offline-tool.html"><a href="offline-tool.html#full-device-package"><i class="fa fa-check"></i><b>13.2.3</b> Full Device Package</a></li>
+<li class="chapter" data-level="13.2.4" data-path="offline-tool.html"><a href="offline-tool.html#create-error-log"><i class="fa fa-check"></i><b>13.2.4</b> Create Error Log</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="offline-tool.html"><a href="offline-tool.html#Activation"><i class="fa fa-check"></i><b>13.3</b> Activation</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="offline-tool.html"><a href="offline-tool.html#validate-console-license"><i class="fa fa-check"></i><b>13.3.1</b> Validate Console License</a></li>
+<li class="chapter" data-level="13.3.2" data-path="offline-tool.html"><a href="offline-tool.html#get-sql-key"><i class="fa fa-check"></i><b>13.3.2</b> Get SQL Key</a></li>
+<li class="chapter" data-level="13.3.3" data-path="offline-tool.html"><a href="offline-tool.html#set-computer-name"><i class="fa fa-check"></i><b>13.3.3</b> Set Computer Name</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="offline-tool.html"><a href="offline-tool.html#Database"><i class="fa fa-check"></i><b>13.4</b> Database</a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="offline-tool.html"><a href="offline-tool.html#console-db"><i class="fa fa-check"></i><b>13.4.1</b> Console DB</a></li>
+<li class="chapter" data-level="13.4.2" data-path="offline-tool.html"><a href="offline-tool.html#show-db"><i class="fa fa-check"></i><b>13.4.2</b> Show DB</a></li>
+<li class="chapter" data-level="13.4.3" data-path="offline-tool.html"><a href="offline-tool.html#layout-db"><i class="fa fa-check"></i><b>13.4.3</b> Layout DB</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="offline-tool.html"><a href="offline-tool.html#Hardware"><i class="fa fa-check"></i><b>13.5</b> Hardware</a>
+<ul>
+<li class="chapter" data-level="13.5.1" data-path="offline-tool.html"><a href="offline-tool.html#upgrade-dmx-count"><i class="fa fa-check"></i><b>13.5.1</b> Upgrade DMX Count</a></li>
+<li class="chapter" data-level="13.5.2" data-path="offline-tool.html"><a href="offline-tool.html#panel-test"><i class="fa fa-check"></i><b>13.5.2</b> Panel Test</a></li>
+<li class="chapter" data-level="13.5.3" data-path="offline-tool.html"><a href="offline-tool.html#midismpte-test"><i class="fa fa-check"></i><b>13.5.3</b> MIDI/SMPTE Test</a></li>
+<li class="chapter" data-level="13.5.4" data-path="offline-tool.html"><a href="offline-tool.html#firmware-update"><i class="fa fa-check"></i><b>13.5.4</b> Firmware Update</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="fixture-builder.html"><a href="fixture-builder.html"><i class="fa fa-check"></i><b>14</b> Fixture Builder</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="fixture-builder.html"><a href="fixture-builder.html#Introduction"><i class="fa fa-check"></i><b>14.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.2" data-path="fixture-builder.html"><a href="fixture-builder.html#Device-Import"><i class="fa fa-check"></i><b>14.2</b> Device Import</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="fixture-builder.html"><a href="fixture-builder.html#import-vibe-device"><i class="fa fa-check"></i><b>14.2.1</b> Import Vibe Device</a></li>
+<li class="chapter" data-level="14.2.2" data-path="fixture-builder.html"><a href="fixture-builder.html#import-vibe-device-package"><i class="fa fa-check"></i><b>14.2.2</b> Import Vibe Device Package</a></li>
+<li class="chapter" data-level="14.2.3" data-path="fixture-builder.html"><a href="fixture-builder.html#export-vibe-device"><i class="fa fa-check"></i><b>14.2.3</b> Export Vibe Device</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="fixture-builder.html"><a href="fixture-builder.html#GDTF-Import"><i class="fa fa-check"></i><b>14.3</b> GDTF Import</a></li>
+<li class="chapter" data-level="14.4" data-path="fixture-builder.html"><a href="fixture-builder.html#Build-Device"><i class="fa fa-check"></i><b>14.4</b> Build Device</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="fixture-builder.html"><a href="fixture-builder.html#terminology"><i class="fa fa-check"></i><b>14.4.1</b> Terminology</a></li>
+<li class="chapter" data-level="14.4.2" data-path="fixture-builder.html"><a href="fixture-builder.html#resources-and-information"><i class="fa fa-check"></i><b>14.4.2</b> Resources and Information</a></li>
+<li class="chapter" data-level="14.4.3" data-path="fixture-builder.html"><a href="fixture-builder.html#create-device"><i class="fa fa-check"></i><b>14.4.3</b> Create Device</a></li>
+<li class="chapter" data-level="14.4.4" data-path="fixture-builder.html"><a href="fixture-builder.html#device-wheels"><i class="fa fa-check"></i><b>14.4.4</b> Device Wheels</a></li>
+<li class="chapter" data-level="14.4.5" data-path="fixture-builder.html"><a href="fixture-builder.html#edit-filters"><i class="fa fa-check"></i><b>14.4.5</b> Edit Filters</a></li>
+<li class="chapter" data-level="14.4.6" data-path="fixture-builder.html"><a href="fixture-builder.html#edit-gobos"><i class="fa fa-check"></i><b>14.4.6</b> Edit Gobos</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="fixture-builder.html"><a href="fixture-builder.html#Edit-Device"><i class="fa fa-check"></i><b>14.5</b> Edit Device</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="fixture-builder.html"><a href="fixture-builder.html#device-data"><i class="fa fa-check"></i><b>14.5.1</b> Device Data</a></li>
+<li class="chapter" data-level="14.5.2" data-path="fixture-builder.html"><a href="fixture-builder.html#dmx-mode"><i class="fa fa-check"></i><b>14.5.2</b> DMX Mode</a></li>
+<li class="chapter" data-level="14.5.3" data-path="fixture-builder.html"><a href="fixture-builder.html#parameter-definitions"><i class="fa fa-check"></i><b>14.5.3</b> Parameter Definitions</a>
+<ul>
+<li class="chapter" data-level="14.5.3.1" data-path="fixture-builder.html"><a href="fixture-builder.html#parameter-properties"><i class="fa fa-check"></i><b>14.5.3.1</b> Parameter Properties</a></li>
+<li class="chapter" data-level="14.5.3.2" data-path="fixture-builder.html"><a href="fixture-builder.html#parameter-steps"><i class="fa fa-check"></i><b>14.5.3.2</b> Parameter Steps</a></li>
+<li class="chapter" data-level="14.5.3.3" data-path="fixture-builder.html"><a href="fixture-builder.html#color-information"><i class="fa fa-check"></i><b>14.5.3.3</b> Color Information</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5.4" data-path="fixture-builder.html"><a href="fixture-builder.html#pickers"><i class="fa fa-check"></i><b>14.5.4</b> Pickers</a>
+<ul>
+<li class="chapter" data-level="14.5.4.1" data-path="fixture-builder.html"><a href="fixture-builder.html#shutter-picker"><i class="fa fa-check"></i><b>14.5.4.1</b> Shutter Picker</a></li>
+<li class="chapter" data-level="14.5.4.2" data-path="fixture-builder.html"><a href="fixture-builder.html#additive-color"><i class="fa fa-check"></i><b>14.5.4.2</b> Additive Color</a></li>
+<li class="chapter" data-level="14.5.4.3" data-path="fixture-builder.html"><a href="fixture-builder.html#frost-picker"><i class="fa fa-check"></i><b>14.5.4.3</b> Frost Picker</a></li>
+<li class="chapter" data-level="14.5.4.4" data-path="fixture-builder.html"><a href="fixture-builder.html#iris-picker"><i class="fa fa-check"></i><b>14.5.4.4</b> Iris Picker</a></li>
+<li class="chapter" data-level="14.5.4.5" data-path="fixture-builder.html"><a href="fixture-builder.html#zoom-picker"><i class="fa fa-check"></i><b>14.5.4.5</b> Zoom Picker</a></li>
+<li class="chapter" data-level="14.5.4.6" data-path="fixture-builder.html"><a href="fixture-builder.html#focus-picker"><i class="fa fa-check"></i><b>14.5.4.6</b> Focus Picker</a></li>
+<li class="chapter" data-level="14.5.4.7" data-path="fixture-builder.html"><a href="fixture-builder.html#wheel-picker-1"><i class="fa fa-check"></i><b>14.5.4.7</b> Wheel Picker</a></li>
+<li class="chapter" data-level="14.5.4.8" data-path="fixture-builder.html"><a href="fixture-builder.html#blade-picker"><i class="fa fa-check"></i><b>14.5.4.8</b> Blade Picker</a></li>
+<li class="chapter" data-level="14.5.4.9" data-path="fixture-builder.html"><a href="fixture-builder.html#control-picker"><i class="fa fa-check"></i><b>14.5.4.9</b> Control Picker</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5.5" data-path="fixture-builder.html"><a href="fixture-builder.html#media-picker"><i class="fa fa-check"></i><b>14.5.5</b> Media Picker</a>
+<ul>
+<li class="chapter" data-level="14.5.5.1" data-path="fixture-builder.html"><a href="fixture-builder.html#media-1"><i class="fa fa-check"></i><b>14.5.5.1</b> Media</a></li>
+<li class="chapter" data-level="14.5.5.2" data-path="fixture-builder.html"><a href="fixture-builder.html#fx1-fx4"><i class="fa fa-check"></i><b>14.5.5.2</b> FX1-FX4</a></li>
+<li class="chapter" data-level="14.5.5.3" data-path="fixture-builder.html"><a href="fixture-builder.html#keystone"><i class="fa fa-check"></i><b>14.5.5.3</b> Keystone</a></li>
+<li class="chapter" data-level="14.5.5.4" data-path="fixture-builder.html"><a href="fixture-builder.html#generator"><i class="fa fa-check"></i><b>14.5.5.4</b> Generator</a></li>
+<li class="chapter" data-level="14.5.5.5" data-path="fixture-builder.html"><a href="fixture-builder.html#geometry"><i class="fa fa-check"></i><b>14.5.5.5</b> Geometry</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="fixture-builder.html"><a href="fixture-builder.html#Fixture-Support"><i class="fa fa-check"></i><b>14.6</b> Fixture Support</a></li>
+</ul></li>
+<li class="divider"></li>
+<li style="text-align: center;"> <br> Copyright © Compulite Systems (2000) Ltd.
+<br> <a href="https://compulite.com/" target="_blank">compulite.com</a> </li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vibe Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="connect" class="section level1 hasAnchor" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Connect<a href="connect.html#connect" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>👉 Configure the Vibe system’s <strong>Connection</strong>, manage input and output protocols, setup the connected external devices.</p>
+<p>This chapter deals with configuring DMX over Ethernet and other frequently used protocols such as RDM, OSC and CITP.</p>
+<p><strong>Chapter index:</strong></p>
+<ul>
+<li><a href="connect.html#DMX">11.1 DMX</a></li>
+<li><a href="connect.html#RDM">11.2 RDM</a></li>
+<li><a href="connect.html#Network">11.3 Network</a></li>
+<li><a href="connect.html#Wings-and-Nodes">11.4 Wings and Nodes</a></li>
+<li><a href="connect.html#MultiUser">11.5 MultiUser</a></li>
+<li><a href="connect.html#MIDI">11.6 MIDI</a></li>
+<li><a href="connect.html#TimeCode">11.7 TimeCode</a></li>
+<li><a href="connect.html#OSC">11.8 OSC</a></li>
+<li><a href="connect.html#CITP">11.9 CITP</a></li>
+<li><a href="connect.html#PSN">11.10 PSN</a></li>
+<li><a href="connect.html#NDI">11.11 NDI</a></li>
+</ul>
+<div id="DMX" class="section level2 hasAnchor" number="11.1">
+<h2><span class="header-section-number">11.1</span> DMX<a href="connect.html#DMX" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vibe supports transmission of 256 universes on <strong>DMX over Ethernet</strong> using the industry standards of Art-Net versions 1 ⟶ 3, ad sACN (ANSI E1.31-2016 standard). and the Compulite VCs protocol.</p>
+<p>For DMX output management, physical or over network protocols, please refer to the <strong>Patch Chapter</strong>.</p>
+</div>
+<div id="RDM" class="section level2 hasAnchor" number="11.2">
+<h2><span class="header-section-number">11.2</span> RDM<a href="connect.html#RDM" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>RDM is fully supported on the 8 physical DMX output ports and Compulite VC protocol.</p>
+<p>Vibe uses the External Devices view, RDM Devices tab, to scan the network for RDM compatible devices, get their information and perform settings updates on the target devices.</p>
+<p><strong>View RDM information:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Open the External Devices View.</p></li>
+<li><p>Tap the RDM Devices tab.</p></li>
+<li><p>Tap {Get Devices} on the view’s menu - The system will scan and display RDM compliant devices.</p></li>
+<li><p>If new devices are added, press {Re Scan}.</p></li>
+</ol>
+<p align="center">
+<img src="Images/11.Connect/RDM.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/RDM.webp';" alt="RDM"/>
+</p>
+<p>👉 RDM protocol on a DMX wiring works only when every device on the line is RDM compliant. This includes any fixture, any splitter and any DMX node that may be wired in between the line.</p>
+</div>
+<div id="Network" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">11.3</span> Network<a href="connect.html#Network" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Vibe has different user accessible Ethernet networks:</strong></p>
+<ul>
+<li>Data Network - Accessible via the two EtherCON connectors on the rear panel.</li>
+</ul>
+<p>◾ Used for Art-Net, sACN, Compulite VC protocol nodes and Master/Slave backup.</p>
+<ul>
+<li>General Networks - Accessible via the two RJ45 connectors on the rear panel.</li>
+</ul>
+<p>◾ Used for Network storage of show files and remote diagnostics.</p>
+<p>Each network device must have its own unique static IP address in the form of four triplets xxx.xxx.xxx.xxx, to identify it on the network. In Vibe, this can be set in the Network Settings popup.</p>
+<p>It is not necessary to have three digits in each segment of the IP but there must be at least one digit in each segment. Vibe ships with a default Subnet Mask of 255.0.0.0 which means that it is only important that the first triplets of the IP (the start address) must match on all devices in the network. Devices on the same network must <strong>not</strong> have identical IP addresses.</p>
+<p><strong>Common Start IP addresses:</strong></p>
+<ul>
+<li><p>2.x.x.x - Default for Art-Net networks.</p></li>
+<li><p>10.x.x.x - Default for most ETC networks and alternate for Art-Net network.</p></li>
+<li><p>192.x.x.x -Default for most MA consoles.</p></li>
+</ul>
+<p><strong>Subnet Mask</strong> - Identifies the network itself and in conjunction with the IP address can be used to properly route network devices.</p>
+<ul>
+<li><p>255.0.0.0. - Compulite Default. Only the first triplet must match.</p></li>
+<li><p>255.255.0.0 - Common in configurations with different systems on the same network. The first and second triplets must match.</p></li>
+<li><p>255.255.255.0 - Common in configurations with many different systems on the same network. The first, second and third triplets must match. Not suggested for networks having more Compulite consoles connected.</p></li>
+</ul>
+<p>Compulite uses the third triplet as a console identifier in some of the products.</p>
+<p>The Vibe can be used in networks using a DHCP server but cannot act as a DHCP server.</p>
+<p><strong>Switches</strong>:</p>
+<ul>
+<li><p>Vibe has two internal switches, single direct device to device connections are possible without a cross cable.</p></li>
+<li><p>When more than one device is connected to the Vibe a good quality gigabit switch should be used.</p></li>
+</ul>
+<p><span style="color:Red">Many systems have gone down due to bad Ethernet cabling and cheap switches. It is recommended that EtherCON connectors are used where possible in conjunction with professional grade switches designed for lighting and audio applications.</span>.</p>
+<div id="network-settings" class="section level3 hasAnchor" number="11.3.1">
+<h3><span class="header-section-number">11.3.1</span> Network Settings<a href="connect.html#network-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Vibe Consoles</strong> have 4 different networks:</p>
+<ul>
+<li><p>the Main Network is referred to the Data ports, that are in parallel under the same network board.</p></li>
+<li><p>the General Networks are referred to the General_1 and General_2 ports, that are independently addressable.</p></li>
+<li><p>the Internal Network has no external ports, it is used for internal connection between the Vibe components. The User should avoid editing this network’s settings as it may compromise the console functioning.</p></li>
+</ul>
+<p><strong>Vibe PC</strong> has only one network configuration tab:</p>
+<ul>
+<li>the Main Network, referred to the system’s network port used as Data output.</li>
+</ul>
+<p>Open the {NETWORK SETTINGS} from Vibe Menu &gt; Settings or tap the Network Settings button - The Network popup will open.</p>
+</div>
+<div id="main-network-1" class="section level3 hasAnchor" number="11.3.2">
+<h3><span class="header-section-number">11.3.2</span> Main Network<a href="connect.html#main-network-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <strong>Main Network</strong> Tab shows the configuration of the network used for data transmission.</p>
+<p align="center">
+<img src="Images/11.Connect/Main-Network.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Main-Network.webp';" alt="Main-Network"/>
+</p>
+<p><strong>Local:</strong></p>
+<ul>
+<li><p>Option to set the local information of the console such as IP and name.</p></li>
+<li><p>Unlock the boxes to edit the fields.</p></li>
+</ul>
+<p><strong>Console State:</strong></p>
+<ul>
+<li><p>There are 2 possible individual states:</p></li>
+<li><p>Stand Alone (Default) – Console is not in a session but networking for outputs, remotes and external connections are active.</p></li>
+<li><p>Local (Offline) – Same as Stand Alone but disables the DMX over Ethernet.</p></li>
+</ul>
+<p><strong>User ID:</strong></p>
+<ul>
+<li><span style="color:blue">Not implemented yet.</span>.</li>
+</ul>
+<p><strong>Start Session:</strong></p>
+<ul>
+<li>The console becomes a Master, meaning it’s hosting a session where Backup consoles can be connected.</li>
+</ul>
+<p><strong>Online IP Devices:</strong></p>
+<ul>
+<li>Displays all Valid IP based devices active on the network.</li>
+</ul>
+<p><strong>Delete Selected:</strong></p>
+<ul>
+<li>Remove the selected devices from the list.</li>
+</ul>
+<p><strong>Clear IP Devices:</strong></p>
+<ul>
+<li>Clear the whole IP device list.</li>
+</ul>
+<p><strong>Connect As … / Disconnect:</strong></p>
+<ul>
+<li>Related to starting or ending a session with a master console.</li>
+</ul>
+</div>
+<div id="user-networks-1" class="section level3 hasAnchor" number="11.3.3">
+<h3><span class="header-section-number">11.3.3</span> User Networks<a href="connect.html#user-networks-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>On the Vibe consoles, the <strong>User Networks</strong> Tab shows the configuration of the networks used for additional operations.</p>
+<p align="center">
+<img src="Images/11.Connect/User-Networks.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/User-Networks.webp';" alt="User-Networks"/>
+</p>
+<p>General Network IP addresses, both regarding General Network 1 and General Network 2, can be configured in the User Networks tab:</p>
+<ul>
+<li><p>select the Network Adapter,</p></li>
+<li><p>fill the IP Address and DNS fields as desired,</p></li>
+<li><p>apply the network settings with the dedicated key.</p></li>
+</ul>
+<p>General Networks may be used for specific operations that require special network configurations, that may be very different, or even incompatible, with the Data network settings.</p>
+<p>Some examples of General Network purposes are:</p>
+<ul>
+<li><p>connection to remote external servers for files backup and management,</p></li>
+<li><p>connection to web services such as TeamViewer to get remote support,</p></li>
+<li><p>communication with third party devices to exchange OSC commands.</p></li>
+</ul>
+<p>👉 General Networks are not intended to be used for Data output or to establish multiuser connection between Vibe systems and accessories. Please use the Main Network for these common lighting control operations.</p>
+</div>
+</div>
+<div id="Wings-and-Nodes" class="section level2 hasAnchor" number="11.4">
+<h2><span class="header-section-number">11.4</span> Wings and Nodes<a href="connect.html#Wings-and-Nodes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Compulite manufactures some additional devices that can be connected to the Vibe system and configured directly via the Vibe software.</p>
+<p>These devices include:</p>
+<ul>
+<li><p>Compulite Vibe Wings</p></li>
+<li><p>Compulite Vector Wings</p></li>
+<li><p>Compulite ePort Nodes.</p></li>
+</ul>
+<p>The <strong>External Devices View</strong> shows all the ePort nodes and the Wings connected to the network, permitting remote management and configuration of the settings.</p>
+<p>Vibe actively scans the network to find other compatible Compulite devices. Once recognized by the Vibe system, all the devices found in the network are automatically listed in the view’s tabs.</p>
+<p>By selecting a Compulite device, its current options will appear in the External Devices view, according to the amount of ports available (ePorts) or controllers types on the panel (Wings).</p>
+<p>The Vibe may be used to configure and update Compulite Device’s settings as well as to perform firmware updates.</p>
+<p>This view also permits to manage other brands devices that are compliant with the RDM protocol.</p>
+<div id="vibe-wings" class="section level3 hasAnchor" number="11.4.1">
+<h3><span class="header-section-number">11.4.1</span> Vibe Wings<a href="connect.html#vibe-wings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Any Vibe Wing, as well as most of the Vector Wings, can be connected and configured directly from Vibe, through the External Devices view.</p>
+<p>Supported Vibe and Vector Wings that are automatically found by the Vibe while scanning the network are listed in the Wings tab of the External Devices view.</p>
+<p align="center">
+<img src="Images/11.Connect/External-Wings.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/External-Wings.webp';" alt="External-Wings"/>
+</p>
+<p>The Wings tab inside the External Devices view allows to rename the wings and to enable or disable parts of the panel, such as the Grand Master, the Editor, the Controllers.</p>
+<p>Unavailable parts, such as the Editor on a Playback Wing, will be grayed out.</p>
+<p>Vibe Wings have the same controller types of the console, including Sliders, Qkeys and Auxkeys.</p>
+<p>The Wings’ Controllers may be configured from the External Devices view by assigning the starting number for each controller type, as well as ordering the numbering direction from right to left or from left to right.</p>
+<p>👉 When a Wing is used with a VibePC, it may be good to have its controllers starting from 1, but when it is used as an expansion, its controllers may be starting from 11 or from 16 (depending on the console model) to obtain additional physical controllers that are not on the console panel.</p>
+<p>The Wing’s IP address is not assignable, as it is automatically set by the console once the wing is connected and linked, with a logic that adds +10 to the last number of the console’s IP or of the last Wing connected to the system.</p>
+<p>External Wings that are compatible with the Vibe software, such as Vibe PC Wing and Vector PC Wing, will keep the settings configured in the External Devices view once they are reconnected to the system, unless they have been connected to other Compulite systems in between.</p>
+<p><strong>Configure the Wing</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Make sure that the Vibe IP and the Wing IP are in the same range.</p></li>
+<li><p>Write a text in the Name field to rename the Wing.</p></li>
+<li><p>Write the First Slider, Qkey and Auxkey number in the relative field.</p></li>
+<li><p>Set the Controllers’ numbering direction.</p></li>
+<li><p>Set the panel part to be Enabled or Disabled (if available).</p></li>
+<li><p>Tap {Update Wing} to apply the changes or {Reset Changes} to discard.</p></li>
+</ol>
+<p><strong>Update Firmware</strong></p>
+<p>Before updating the device’s Firmware, make sure the update file is the correct one for the Wing’s version. Compulite support may be contacted to check that.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the Wing from the list.</p></li>
+<li><p>Tap {Update Firmware}. The file popup will open.</p></li>
+<li><p>Select the update file from the USB stick and press Apply.</p></li>
+</ol>
+</div>
+<div id="eport-nodes" class="section level3 hasAnchor" number="11.4.2">
+<h3><span class="header-section-number">11.4.2</span> ePort Nodes<a href="connect.html#eport-nodes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Compulite manufactures the <strong>ePort</strong> serie of DMX over Ethernet nodes.</p>
+<p align="center">
+<img src="Images/11.Connect/Eports.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Eports.webp';" alt="Eports"/>
+</p>
+<p>Any ePort can be connected and configured directly from Vibe, through the External Devices view.</p>
+<p>Supported Vibe and Vector Wings that are automatically found by the Vibe while scanning the network are listed in the Wings tab of the External Devices view.</p>
+<p align="center">
+<img src="Images/11.Connect/External-Eports.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/External-Eports.webp';" alt="External-Eports"/>
+</p>
+<p><strong>Configure the ePort</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Make sure that the Vibe IP and the ePort IP are in the same range.</p></li>
+<li><p>Write a text in the Name field to rename the ePort.</p></li>
+<li><p>Select the DMX-ON-Ethernet protocol in the protocol list.</p></li>
+<li><p>Tap {Update Eport} to apply all the changes.</p></li>
+</ol>
+<p><strong>Patch Universes to the Ports</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap on the Universe cells in the Port’s table to enter the edit mode.</p></li>
+<li><p>Assign a numeric value and press Enter (or tap outside the cell).</p></li>
+<li><p>The Edited cells get a yellow background.</p></li>
+<li><p>Tap on the direction cells to switch the port from Output to Input.</p></li>
+<li><p>Tap on the RDM cells to switch the RDM protocol On / Off.</p></li>
+<li><p>Tap {Update Eport} to apply the changes or {Reset Changes} to discard.</p></li>
+</ol>
+<p><strong>Update Firmware</strong></p>
+<p>Before updating the device’s Firmware, make sure the update file is the correct one for the ePort’s version. Compulite support may be contacted to check that.</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the ePort from the list.</p></li>
+<li><p>Tap {Update ePort Firmware}. The file popup will open.</p></li>
+<li><p>Select the update file from the USB stick and press Apply.</p></li>
+</ol>
+<p><strong>C-Net Manager software</strong></p>
+<p>Compulite ePort nodes may also be configured through the dedicated C-Net Manager software, downloadable from the Compulite website www.compulite.com</p>
+<p>C-net Manager, same as the Vibe software, automatically scans the network and lists down all the ePort nodes that are found connected, allowing the configuration of the communication protocol and ports according to the ePort type.</p>
+<p align="center">
+<img src="Images/11.Connect/CNet-Manager.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CNet-Manager.webp';" alt="CNet-Manager"/>
+</p>
+<p>C-net Manager may also be used to remotely ensure whether the ePort’s outputs are active or inactive, by checking the Green or Red status of each Port’s LED.</p>
+<p><strong>Supported Protocols</strong></p>
+<ul>
+<li><p>ePort-2</p>
+<p>◾ Compulite VC</p>
+<p>◾ sACN</p>
+<p>◾ Art-Net 3</p></li>
+<li><p>ePort 41 (Prior to Sept 2016)</p>
+<p>◾ Compulite VC</p>
+<p>◾ Art-Net v2</p></li>
+<li><p>ePort-41 (Current)</p>
+<p>◾ Compulite VC</p>
+<p>◾ sACN</p>
+<p>◾ Art-Net 3</p></li>
+<li><p>ePort-8</p>
+<p>◾ Compulite VC</p>
+<p>◾ sACN</p>
+<p>◾ Art-Net 3</p></li>
+</ul>
+<p>For more product information, see ePort Documents on www.compulite.com</p>
+</div>
+</div>
+<div id="MultiUser" class="section level2 hasAnchor" number="11.5">
+<h2><span class="header-section-number">11.5</span> MultiUser<a href="connect.html#MultiUser" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>MultiUser features are about connecting more consoles to the same network and configuring the user rights per each console and programmer connected.</p>
+<p>👉 Connect to a Vibe session to program and control the show with more consoles and operators working together in real time.</p>
+<div id="masterbackup" class="section level3 hasAnchor" number="11.5.1">
+<h3><span class="header-section-number">11.5.1</span> Master/Backup<a href="connect.html#masterbackup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Master/Backup is the basic way to connect two Vibe systems and make them work simultaneously on the same show file.</p>
+<p>In order to establish a Master/Backup connection, the two Vibe consoles must be in the same network and must run the same Vibe software version.</p>
+<p>👉 <span style="color:gray"> Any Vibe console can work in a MultiUser Session, while the VibePC needs to install a <strong>Network Licence</strong> to enable the networking. Not implemented yet.</span>.</p>
+<p><strong>Connection Process</strong></p>
+<p>On the Vibe console that has to become the Master, open the Network Settings to start the <strong>Session</strong>.</p>
+<p align="center">
+<img src="Images/11.Connect/Main-Network.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Main-Network.webp';" alt="Main-Network"/>
+</p>
+<ul>
+<li><p>Verify the Network Adapter and IP address used, refresh them if changes are applied.</p></li>
+<li><p>Tap on the <strong>Start Session</strong> key. The Console State changes from <strong>Stand Alone</strong> to <strong>Master</strong>.</p></li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Start-Session.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Start-Session.webp';" alt="Start-Session"/>
+</p>
+<ul>
+<li><p>On the Backup console select the Master console from the <strong>Online IP Devices</strong> box.</p></li>
+<li><p>Tap on the <strong>Connect as Backup</strong> key.</p></li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Backup.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Backup.webp';" alt="Backup"/>
+</p>
+<ul>
+<li>The Backup console gets a <strong>Connect Request</strong> popup.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Connect-Request.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Connect-Request.webp';" alt="Connect-Request"/>
+</p>
+<ul>
+<li>Tap Approve and wait for the Show Sync Progress bar to finish on both consoles.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Sync-Master.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Sync-Master.webp';" alt="Sync-Master"/>
+</p>
+<p align="center">
+<img src="Images/11.Connect/Sync-Backup.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Sync-Backup.webp';" alt="Sync-Backup"/>
+</p>
+<ul>
+<li>The Backup console gets a <strong>Layout Sync Request</strong> popup.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Sync-Backup-Layout.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Sync-Backup-Layout.webp';" alt="Sync-Backup-Layout"/>
+</p>
+<ul>
+<li><p>Tap Apply to synch the layout too, or Cancel to keep the layouts separate.</p></li>
+<li><p>A popup on both systems informs when the connection is ready.</p></li>
+</ul>
+<p align="center">
+<img src="Images/18.MultiUser/Master-Ready.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/18.MultiUser/Master-Ready.webp';" alt="Master-Ready"/>
+</p>
+<ul>
+<li>In the Status Box, a green line shows that the connection is established, and the consoles’ command lines show if the console is the Master or the Backup.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Master-Command.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Master-Command.webp';" alt="Master-Command"/>
+</p>
+<p align="center">
+<img src="Images/11.Connect/Backup-Command.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Backup-Command.webp';" alt="Backup-Command"/>
+</p>
+<p>When the Master/Backup connection is ready, both the Vibe systems run the same show and use the same outputs, the ones of the Master.</p>
+<p>Any operation that is done either on the Master or on the Backup is synchronized in real time on the other system.</p>
+<p>👉 Master and Backup consoles share also the Editor, so the programming operations should be done on one system at a time otherwise they will be merged.</p>
+<p><strong>Disconnection Process</strong></p>
+<p>To manually end the whole network session, on the Master’s network settings tap on <strong>End Session</strong> key.</p>
+<p>To manually end the synchronized connection:</p>
+<ul>
+<li><p>Open the Network settings on either the Master or the Backup console.</p></li>
+<li><p>Tap on the <strong>Disconnect</strong> key.</p></li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Disconnect.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Disconnect.webp';" alt="Disconnect"/>
+</p>
+<ul>
+<li>Wait for the Disconnect Progress bar to finish.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Disconnect-Progress.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Disconnect-Progress.webp';" alt="Disconnect-Progress"/>
+</p>
+<ul>
+<li>The <strong>Partner Disconnected</strong> advice appears on both consoles.</li>
+</ul>
+<p align="center">
+<img src="Images/11.Connect/Partner-Disconnected.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Partner-Disconnected.webp';" alt="Partner-Disconnected"/>
+</p>
+<p>The <strong>Partner Disconnected</strong> advice appears also in case of connection failure (for example if the cable is disconnected or if one console fails or loses power).</p>
+<p>If the connection with the Master fails, the Backup will automatically take control of the outputs, ensuring that the show won’t lose any data.</p>
+<p>The Command Line informs that the connection with the partner is lost.</p>
+<p align="center">
+<img src="Images/11.Connect/Partner-Disconnected-Command.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Partner-Disconnected-Command.webp';" alt="Partner-Disconnected-Command"/>
+</p>
+<p>If a lost connection is restored, a popup appear on both systems to inform the user that the other system is online again and ask which option to choose.</p>
+<p align="center">
+<img src="Images/11.Connect/Reconnect.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Reconnect.webp';" alt="Reconnect"/>
+</p>
+<ul>
+<li><p>Stand Alone - the consoles will use the show independently from each other, leaving the session.</p></li>
+<li><p>Offline - the console will keep the show but disables the outputs, without leaving the session.</p></li>
+<li><p>Master - the console will be the Master, performing a full sync operation to make the other console the Backup.</p></li>
+<li><p>Backup - the console will be the Backup, performing a full sync operation to make the other console the Master.</p></li>
+</ul>
+<p><span style="color:gray"> In a MultiUser Session there may be different type of Clients connected. The Client type affects the system’s rights of use and limits the operations that can be done from it. The Client type may be <strong>Backup</strong> (Primary Client), <strong>Normal</strong> (Secondary Client), <strong>Low</strong> (Basic Client). Not implemented yet.</span>.</p>
+</div>
+<div id="users-1" class="section level3 hasAnchor" number="11.5.2">
+<h3><span class="header-section-number">11.5.2</span> Users<a href="connect.html#users-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span style="color:blue">Not implemented yet.</span>.</p>
+<p><span style="color:gray"> Users popup allows to configure and assign user rights to the Vibe systems on the same network that are connected to the Master console’s session.</span>.</p>
+<p align="center">
+<img src="Images/11.Connect/Users.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Users.webp';" alt="Users"/>
+</p>
+<p><span style="color:gray"> Each User Client has specific authorizations and limitations for managing the Master console’s show patch, program and playback properties.</span>.</p>
+<p><span style="color:gray"> The User right may be assigned with Default options or Customized.</span>.</p>
+</div>
+</div>
+<div id="MIDI" class="section level2 hasAnchor" number="11.6">
+<h2><span class="header-section-number">11.6</span> MIDI<a href="connect.html#MIDI" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>MIDI (Musical Instrument Digital Interface) is a protocol that was originally developed by the music industry to allow multiple MIDI sound devices to be triggered from just one source, usually a master keyboard or synthesizer.</p>
+<p>MIDI is a control protocol and does not transmit audio.</p>
+<p>Over the years the MIDI protocol has evolved to become a common way to synchronize sound, video and lighting equipment.</p>
+<p>MIDI is based on a 7-bit architecture and therefore has a theoretical limit of 127 possible notes for a keyboard. (Most pianos use only 88 notes and synthesizers even less)</p>
+<p><strong>MIDI implementation:</strong></p>
+<ul>
+<li><p>16 independent MIDI channels - The channels systems listen to.</p></li>
+<li><p>127 Note ONs - Pressing down on a keyboard.</p></li>
+<li><p>127 Note OFFs - Lifting off a keyboard.</p></li>
+<li><p>Note On Velocity of 1 ⟶ 127 - How hard the key is struck.</p></li>
+<li><p>After Touch pressure of 0 ⟶ 127 - How much pressure is applied after the key reaches the bottom.</p></li>
+<li><p>127 controllers each with a range of 0 ⟶ 127 - Encoder wheels or sliders.</p></li>
+<li><p>Patch changes from 0 ⟶ 127 - Change from one instrument to another.</p></li>
+<li><p>Pitch bend wheel that has a 14-bit resolution.</p></li>
+<li><p>A section for MIDI time code and other manufacturer’s “System Exclusive” information.</p></li>
+</ul>
+<div id="midi-settings" class="section level3 hasAnchor" number="11.6.1">
+<h3><span class="header-section-number">11.6.1</span> MIDI Settings<a href="connect.html#midi-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To receive and generate Midi signals each protocol needs to be enabled.</p>
+<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
+<p>In MIDI Tab it is possible to enable and disable the Midi Notes, the Midi Time Code and the Midi Show Control devices.</p>
+<p><strong>Configure MIDI:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Connect all appropriate MIDI devices and power them on.</p></li>
+<li><p>Toggle a MIDI Connection source:</p></li>
+</ol>
+<ul>
+<li><p><strong>Local MIDI</strong> is generated and received from the 5 pin DIN connectors on the back of the console.</p></li>
+<li><p><strong>MIDI over USB</strong> is transmitted and received over standard USB connectors. The device must be MIDI over USB class compliant to work with Windows without a driver. If the device has a Windows driver available it is recommended to install the driver for optimal results.</p></li>
+<li><p><strong>MIDI over Ethernet</strong> is supported by Windows class compliant MIDI over Ethernet and Compulite VC MIDI over Ethernet devices.</p></li>
+<li><p><strong>Refresh MIDI Connection</strong> looks for new connections if devices have been added later.</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Press Apply to stay in I/O settings, press [ENTER] or tap the Apply icon to close the popup.</li>
+</ol>
+</div>
+<div id="midi-notes" class="section level3 hasAnchor" number="11.6.2">
+<h3><span class="header-section-number">11.6.2</span> MIDI Notes<a href="connect.html#midi-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In lighting MIDI notes and controllers from external sources are matched to the console’s controllers, buttons and wheels to synchronize the playback.</p>
+<blockquote>
+<p>A GO Button on console A is configured to send Note #46, and a GO button on console B is configured to receive note #46. Pressing GO on console A console will press the GO on console B. In EDM shows DJ’s frequently control lighting via MIDI touchpad controllers.</p>
+</blockquote>
+<p>To configure <strong>MIDI Notes</strong> open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
+<p>In Midi Tab enable the Midi Notes In / Out and the Active Midi Channels on the columns.</p>
+<p>In Notes/Commands Tab it is possible to assign specific commands to the Midi notes.</p>
+<ul>
+<li><p>The numbers 0 ⟶ 127 on the MIDI grid represent 10 3/4 octaves of notes from C-0 ⟶ G-10.</p></li>
+<li><p>Tabs at the bottom filter the type of MIDI message to be received.</p></li>
+<li><p>Channel # may also be selected to filter just messages being received on the selected channel.</p></li>
+</ul>
+<p>The MIDI grid is used to select any of the 127 values available for the MIDI message types selected with the tabs.</p>
+<p align="center">
+<img src="Images/11.Connect/IO-Settings-MIDI-Notes.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO-Settings-MIDI-Notes.webp';" alt="IO-Settings-MIDI-Notes"/>
+</p>
+<p><strong>Assign MIDI Notes to Controllers:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>In Midi Tab enable Notes In or Notes Out.</p></li>
+<li><p>By default, all 16 available channels will be selected. Deselect as needed.</p></li>
+<li><p>In Notes/Commands Tab select the tab for the type of MIDI message to be received.</p></li>
+</ol>
+<p>Possible messages types are:</p>
+<ul>
+<li><p><strong>Note</strong> (Note ON = press down on controller key, Note OFF = release of controller key).</p></li>
+<li><p><strong>After Touch</strong></p></li>
+<li><p><strong>Continuous Controller</strong></p></li>
+<li><p><strong>Path Change</strong></p></li>
+<li><p><strong>Channel Pressure</strong></p></li>
+<li><p><strong>Pitch Bend</strong></p></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press any one of the controller keys - The location and button function of the controller will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
+</ol>
+<p><strong>Assign MIDI Continuous Controller to Vibe Controller:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received. In this case <strong>Continuous Controller</strong>.</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap in the desired continuous controller # in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Move any of the Vibe slider faders - The location and controller type will appear in the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
+</ol>
+<p><strong>Assign Macros to a MIDI note:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Select the channel that the MIDI message will be received on.</p></li>
+<li><p>Select the tab for the type of MIDI message to be received.</p></li>
+<li><p>Tap {Teach } - The Teach key will turn purple.</p></li>
+<li><p>Tap the desired note box in the MIDI grid - The box will turn purple.</p></li>
+<li><p>Press [MACRO] - The Macro selector popup will appear.</p></li>
+<li><p>Select or type a previously recorded {Macro #} - the Macro # will appear in the the box.</p></li>
+<li><p>Tap the {Teach} key again to toggle it off.</p></li>
+<li><p>Tap Apply or press [ENTER] to close the popup.</p></li>
+</ol>
+<p><strong>Additional functions:</strong></p>
+<ul>
+<li><p>Tap {Clear} followed by a MIDI grid box to clear its assignment.</p></li>
+<li><p>Tap {Clear All} to clear all MIDI assignments.</p></li>
+<li><p>Tap {Copy} followed by the source MIDI assignment and then the destination MIDI assignment to copy from one note to another.</p></li>
+<li><p>Tap {Move} followed by the source MIDI assignment and then the destination MIDI assignment to move the assignment from one note to another.</p></li>
+</ul>
+</div>
+<div id="msc" class="section level3 hasAnchor" number="11.6.3">
+<h3><span class="header-section-number">11.6.3</span> MSC<a href="connect.html#msc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>MIDI Show Control</strong> is a significant Real Time System Exclusive extension of the international Musical Instrument Digital Interface (MIDI) standard.</p>
+<p>MSC enables all types of entertainment equipment to easily communicate with each other through the process of show control.</p>
+<p>The MIDI Show Control protocol is an industry standard ratified by the MIDI Manufacturers Association in 1991 which allows all types of entertainment control devices to talk with each other and with computers to perform show control functions in live and canned entertainment applications.</p>
+<p>Just like musical MIDI, MSC does not transmit the actual show media, it simply transmits digital information about a multimedia performance. * Courtesy Wikipedia</p>
+<p>Midi Show Control was developed as a simple standard method of triggering basic commands on dissimilar devices.</p>
+<p>Basic MSC commands are:</p>
+<ul>
+<li><p>Go</p></li>
+<li><p>Stop</p></li>
+<li><p>Fire (Generally used for macros)</p></li>
+</ul>
+<p>Also supported on receive are:</p>
+<ul>
+<li><p>All fixtures</p></li>
+<li><p>General lights</p></li>
+<li><p>Moving lights</p></li>
+</ul>
+<p><strong>Receive MSC:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Tap {MTC In} in the I/O Settings popup, Midi Tab.</p></li>
+<li><p>Match the {Device #} to number of the peer that will be sending the control commands.</p></li>
+<li><p>If the Peer # is above 111, select a Group # that matches and all devices set to that Group # will receive MSC packets.</p></li>
+<li><p>If the Peer # is 127 (Broadcast Mode) packets will be received on all devices regardless of their Device or Group numbers.</p></li>
+</ol>
+<p><strong>Transmit MSC:</strong></p>
+<p><span style="color:Gray">Not implemented yet.</span></p>
+<p>Recommended reading: <a href="http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm" class="uri">http://jac.michaeldrolet.net/SCS_10_Help/scs_options_mid_msc.htm</a></p>
+</div>
+</div>
+<div id="TimeCode" class="section level2 hasAnchor" number="11.7">
+<h2><span class="header-section-number">11.7</span> TimeCode<a href="connect.html#TimeCode" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Time Code is used to synchronize Vibe events with the internal timeline or external SMPTE Linear Time Code (LTC) or MIDI Time Code (MTC).</p>
+<div id="connections" class="section level3 hasAnchor" number="11.7.1">
+<h3><span class="header-section-number">11.7.1</span> Connections<a href="connect.html#connections" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vibe has Time Code connectors for the following:</p>
+<ul>
+<li><p>Audio Combi Jack connector for SMPTE input with:</p>
+<ul>
+<li><p>Female unbalanced line level input on 1/4” phone jack</p></li>
+<li><p>Female 3 pin XLR balanced line level input.</p></li>
+</ul></li>
+<li><p>Female 5 Pin DIN connector for MIDI input.</p></li>
+<li><p>Female 5 Pin DIN connector for MIDI output.</p></li>
+<li><p>USB 2 and USB 3 ports for USB class compliant MIDI over USB devices.</p></li>
+<li><p>RJ45 ports for MIDI over Ethernet (Compulite devices)</p></li>
+</ul>
+</div>
+<div id="ltc" class="section level3 hasAnchor" number="11.7.2">
+<h3><span class="header-section-number">11.7.2</span> LTC<a href="connect.html#ltc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To trigger a timeline with an <strong>LTC</strong> or <strong>Linear Time Code</strong> source, the SMPTE input protocol needs to be enabled.</p>
+<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
+<p>The SMPTE Tab contains the toggle button to enable or disable the LTC input.</p>
+<p align="center">
+<img src="Images/11.Connect/IO-Settings-SMPTE.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO-Settings-SMPTE.webp';" alt="IO-Settings-SMPTE"/>
+</p>
+<p><span style="color:Gray">Currently Vibe is only capable of receiving LTC inputs, but will be able to send SMPTE output in future releases.</span></p>
+<p><strong>Recommended quality and level for SMPTE:</strong></p>
+<ul>
+<li><p>SMPTE is very sensitive to distortion and also requires adequate gain. A clean audio signal with a gain ranging between 0db to +5db is recommended.</p></li>
+<li><p>As the console SMPTE input is high impedance, if long runs are to be used it is recommended to send a 150 - 600 ohm balancing line level feed to a transformer close to the console and convert to high impedance.</p></li>
+</ul>
+</div>
+<div id="mtc" class="section level3 hasAnchor" number="11.7.3">
+<h3><span class="header-section-number">11.7.3</span> MTC<a href="connect.html#mtc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To trigger a timeline with an <strong>MTC</strong> or <strong>Midi Time Code</strong> source, the MTC input protocol needs to be enabled.</p>
+<p>Open the I/O Settings popup from the Vibe menu or with the {I/O Settings} button.</p>
+<p>The MIDI Tab contains the toggle button to enable or disable the MTC input.</p>
+<p align="center">
+<img src="Images/11.Connect/IO-Settings-MTC.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO-Settings-MTC.webp';" alt="IO-Settings-MTC"/>
+</p>
+<p><span style="color:Gray">Currently Vibe is only capable of receiving MTC inputs, but will be able to send MTC output in future releases.</span></p>
+<p><strong>MIDI Time Code</strong> is similar to the SMPTE Time Code and is used to synchronize audio, video, and lighting equipment, but unlike the SMPTE it does not use an audio signal.</p>
+<p>MTC is available in the following frame rates:</p>
+<ul>
+<li><p>24 frame/s (standard rate for film work)</p></li>
+<li><p>25 frame/s (standard rate for PAL video)</p></li>
+<li><p>29.97 frame/s (drop-frame timecode for NTSC video)</p></li>
+<li><p>30 frame/s (non-drop timecode for NTSC video)</p></li>
+</ul>
+</div>
+</div>
+<div id="OSC" class="section level2 hasAnchor" number="11.8">
+<h2><span class="header-section-number">11.8</span> OSC<a href="connect.html#OSC" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>OSC (Open Sound Control) is a protocol for networking with sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control.</p>
+<p>OSC enables a text string based exchange of commands and triggers between different devices via a network connection, that is used to establish the synchronization between different systems.</p>
+<p>Connections with OSC can use TCP or UDP protocol for direct communication over the network.</p>
+<p><strong>OSC Input</strong></p>
+<p>Vibe supports the OSC input protocol using TCP, UDP, or both.</p>
+<p>In the I/O Settings popup, on the OSC tab, there is the list of supported OSC strings as well as OSC ports and protocols.</p>
+<p>OSC Connections may be configured in I/O Settings, OSC section, Connections tab.</p>
+<p align="center">
+<img src="Images/11.Connect/IO-Settings-OSC-Connections.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO-Settings-OSC-Connections.webp';" alt="IO-Settings-OSC-Connections"/>
+</p>
+<ul>
+<li><p>Enable or Disable and configure the UPD In/Out Ports and Destination IP addresses.</p></li>
+<li><p>Enable or Disable and configure the TCP In/Out Ports and TCP Out IP address.</p></li>
+<li><p>Enable or Disable the Auto Reply message that the Vibe will send back whenever it receives an OSC message, as a receive confirmation.</p></li>
+</ul>
+<p>OSC Commands may be visualized in I/O Settings, OSC section, Commands tab.</p>
+<p align="center">
+<img src="Images/11.Connect/IO-Settings-OSC-Commands.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO-Settings-OSC-Commands.webp';" alt="IO-Settings-OSC-Commands"/>
+</p>
+<ul>
+<li><p>Prebuilt commands are already available and listed and they cannot be deleted.</p></li>
+<li><p>{Delete Custom} removes the selected custom command.</p></li>
+<li><p>{Delete All Custom} removes all the custom commands.</p></li>
+<li><p>{Add Linked} opens a command where the OSC string of a command linked to the selected command can be created, with a Notes box where a short explanation of the command may be written.</p></li>
+<li><p>{Add Custom} opens a popup where the OSC strings can be created, with a Notes box where a short explanation of the command may be written.</p></li>
+<li><p>{Info} key opens a popup explaining how the prebuilt OSC Commands work.</p></li>
+</ul>
+<p><strong>OSC Output</strong></p>
+<p>Vibe supports the OSC output protocol using TCP, UDP, or both.</p>
+<p>The OSC view shows the existing commands, allowing the user to create and edit custom commands and to send immediate commands and use keyboard arrows to re-send commands from the cache.</p>
+<p>OSC commands can be attached to Cues with the syntax:</p>
+<p>[QLIST], [#], [CUE], [#], [ATTACH_OSC] (toolbar).</p>
+<p align="center">
+<img src="Images/11.Connect/OSC-Attach-Toolbar.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/OSC-Attach-Toolbar.webp';" alt="OSC-Attach-Toolbar"/>
+</p>
+<p>The Attach OSC to Cue popup will open.</p>
+<p>In the Attach OSC to Cue popup the OSC Commands can be attached and detached to any stored Cue.</p>
+<p align="center">
+<img src="Images/11.Connect/OSC-Attach.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/OSC-Attach.webp';" alt="OSC-Attach"/>
+</p>
+<p>To Attach OSC Commands to a Cue:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the Qlist and Cue from the boxes on the left side.</p></li>
+<li><p>Select the OSC Command from the list on the right side.</p></li>
+<li><p>Tap {Attach} key.</p></li>
+<li><p>The OSC Command will be added to the Attached Addresses list.</p></li>
+</ol>
+<p>To Detach OSC Commands to a Cue:</p>
+<ol style="list-style-type: decimal">
+<li><p>Select the Qlist and Cue from the boxes on the left side.</p></li>
+<li><p>Select the OSC Command from the Attached Addresses list.</p></li>
+<li><p>Tap {Detach} key.</p></li>
+<li><p>The OSC Command will be removed from the Attached Addresses list.</p></li>
+</ol>
+</div>
+<div id="CITP" class="section level2 hasAnchor" number="11.9">
+<h2><span class="header-section-number">11.9</span> CITP<a href="connect.html#CITP" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The CITP (Controller Interface Transport Protocol) is a network protocol used between lighting control consoles, visualizers and media servers.</p>
+<p>The protocol allows to transport information, browse media and thumbnails, stream media among different devices.</p>
+<p><strong>CITP Settings</strong> popup gathers all the CITP capabilities of the Vibe together.</p>
+<p>To open the CITP Popup:</p>
+<ol style="list-style-type: decimal">
+<li><p>Tap Vibe menu button</p></li>
+<li><p>In Settings, tap CITP Settings</p></li>
+</ol>
+<p>or</p>
+<ol style="list-style-type: decimal">
+<li>Tap [CITP Settings] button.</li>
+</ol>
+<p>In the popup there are 4 tabs:</p>
+<ul>
+<li><p>General</p></li>
+<li><p>Media Servers</p></li>
+<li><p>Visualizers</p></li>
+<li><p>Consoles</p></li>
+</ul>
+<div id="general" class="section level3 hasAnchor" number="11.9.1">
+<h3><span class="header-section-number">11.9.1</span> General<a href="connect.html#general" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This tab shows the general information about the console and gives the option to enable/disable CITP communication from/to the console.</p>
+<p align="center">
+<img src="Images/11.Connect/CITP-General.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CITP-General.webp';" alt="CITP-General"/>
+</p>
+</div>
+<div id="media-servers" class="section level3 hasAnchor" number="11.9.2">
+<h3><span class="header-section-number">11.9.2</span> Media Servers<a href="connect.html#media-servers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This tab shows a list of the detected Media Servers on the network.</p>
+<p align="center">
+<img src="Images/11.Connect/CITP-MediaServers.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CITP-MediaServers.webp';" alt="CITP-MediaServers"/>
+</p>
+<p>In order to connect to a media server and start a session, select a media server from the list and press <em>Connect</em>.</p>
+<p>In order to link a media server to a specific fixture, select a connected media server from the list and tap <em>Configure</em>. A popup will appear where you can choose which fixtures you want to link.</p>
+<p>In order to get all the available data from a media server, select a connected and linked media server from the list, and tap <em>Get Data</em>. All available data such as thumbnails, effects etc. will be synced from the media server to the fixtures on your show.</p>
+</div>
+<div id="visualizers" class="section level3 hasAnchor" number="11.9.3">
+<h3><span class="header-section-number">11.9.3</span> Visualizers<a href="connect.html#visualizers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This tab shows a list of the detected Visualizers on the network that are using CITP.</p>
+<p align="center">
+<img src="Images/11.Connect/CITP-Visualizers.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CITP-Visualizers.webp';" alt="CITP-Visualizers"/>
+</p>
+<p>To connect to a visualizer and start a session, select it from the list and tap Connect.</p>
+<p>Once connected, to get the patch from the visualizer, select it from the list and tap Get Show.</p>
+<p align="center">
+<img src="Images/11.Connect/CITP-Visual-GetShow.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CITP-Visual-GetShow.webp';" alt="CITP-Visual-GetShow"/>
+</p>
+<p>👉 This action will clear the current show data, get the devices, fixtures, numbers, patch, XYZ information from the visualizer and automatically create them on your show.</p>
+</div>
+<div id="consoles" class="section level3 hasAnchor" number="11.9.4">
+<h3><span class="header-section-number">11.9.4</span> Consoles<a href="connect.html#consoles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This tab shows a list of the detected Consoles on the network that are using CITP and their state.</p>
+<p align="center">
+<img src="Images/11.Connect/CITP-Consoles.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/CITP-Consoles.webp';" alt="CITP-Consoles"/>
+</p>
+</div>
+</div>
+<div id="PSN" class="section level2 hasAnchor" number="11.10">
+<h2><span class="header-section-number">11.10</span> PSN<a href="connect.html#PSN" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The PSN (PosiStageNet) protocol is supported.</p>
+<p>PSN (PosiStageNet) is a network protocol used between lighting control consoles and stage tracking systems to get the position data of a target or a moving structure, in order to automatize operations related to dynamic fixture focusing and positioning on the stage.</p>
+<p>👉 PSN data may be used to automatically follow a person or an object moving through the stage, by updating the fixtures’ Pan and Tilt values based on the XYZ coordinates received by the protocol streaming.</p>
+<p>👉 PSN data may be used to automatically update the calibration data of fixtures hanged on a moving truss or any object where the tracker is also mounted.</p>
+<p>When a PSN signal is received from the network, the Trackers View in the Protocols tab shows the incoming PSN channels.</p>
+<p align="center">
+<img src="Images/11.Connect/Trackers-Protocols.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/Trackers-Protocols.webp';" alt="Trackers-Protocols"/>
+</p>
+<ul>
+<li><p>Trackers can be patched to the PSN channels.</p></li>
+<li><p>Fixtures’ calibration data can be linked to the trackers in order to automatically update their positioning information based on the data received from the PSN.</p></li>
+</ul>
+<p>👉 For a correct use of this feature, the fixture offset from the tracker must be set in the calibration coordinates table and has to be accurate.</p>
+<ul>
+<li>Fixtures’ Pan and Tilt parameters can be stored linked to trackers in order to automatically update their focusing values based on the data received from the PSN.</li>
+</ul>
+<p>👉 For a correct use of this feature, the fixture calibration coordinates must be set and have to be accurate.</p>
+<p>Please refer to the Tracker View for configuring and programming the Vibe Trackers.</p>
+</div>
+<div id="NDI" class="section level2 hasAnchor" number="11.11">
+<h2><span class="header-section-number">11.11</span> NDI<a href="connect.html#NDI" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The NDI (Network Device Interface) protocol is supported.</p>
+<p>NDI (Network Device Interface) is a network protocol used to stream media contents, such as images and videos, between different devices.</p>
+<p>Enable NDI streaming in the I/O Settings popup.</p>
+<p align="center">
+<img src="Images/11.Connect/IO Settings-NDI.webp" onerror="this.onerror=null; this.src='https://vibemanual.compulite.com/Images/11.Connect/IO Settings-NDI.webp';" alt="IO Settings-NDI"/>
+</p>
+<p>Choose the behavior of the affected parameter values in case the input stream goes off:</p>
+<ul>
+<li><p>{Keep Last} to keep the last frame</p></li>
+<li><p>{Blackout} to fade to black</p></li>
+</ul>
+<p>👉 NDI may be used to receive a video stream from a device in the network and connect it to a Pixel Mapper, to automatically control the fixtures’ color mix parameters according to the video input.</p>
+<p>Please refer to the Pixel Mapper View for placing fixtures on a pixel mapper and connect it to the NDI source.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="live.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="show.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": [["https://www.dropbox.com/scl/fi/mnqpo30vankimlgbqpphu/Vibe-Manual.pdf?rlkey=a8jm4jfkuxchzf7re2grqnzfq&st=8ahfv8dl&dl=1", "PDF"], ["VibeManual.epub", "EPUB"]],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

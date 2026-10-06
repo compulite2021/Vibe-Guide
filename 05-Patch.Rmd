@@ -7,20 +7,21 @@ This chapter deals with creating and patching fixtures.
 
 **Chapter index:**
 
--  [5.1 Sets](#Sets-5.1)
--  [5.2 Devices](#Devices-5.2)
--  [5.3 Create and Patch](#Create-and-Patch-5.3)
--  [5.4 DMX Properties](#DMX-Properties-5.4)
--  [5.5 Fixture View](#Fixture-View-5.5)
--  [5.6 Address Properties](#Address-Properties-5.6)
--  [5.7 Park](#Park-5.7)
--  [5.8 Clone](#Clone-5.8)
--  [5.9 Replace](#Replace-5.9)
--  [5.10 Calibration](#Calibration-5.10)
--  [5.11 Auto-Patch](#Auto-Patch-5.11)
+-  [5.1 Sets](#Sets)
+-  [5.2 Devices](#Devices)
+-  [5.3 Create and Patch](#Create-and-Patch)
+-  [5.4 DMX Properties](#DMX-Properties)
+-  [5.5 Fixture View](#Fixture-View)
+-  [5.6 Address Properties](#Address-Properties)
+-  [5.7 Park](#Park)
+-  [5.8 Clone](#Clone)
+-  [5.9 Replace](#Replace)
+-  [5.10 Calibration](#Calibration)
+-  [5.11 Trackers](#Trackers)
+-  [5.12 Auto-Patch](#Auto-Patch)
 
 
-## Sets {#Sets-5.1}
+## Sets {#Sets}
 
 
 Vibe contains an extensive **Device Library** with DMX parameter mapping for fixtures, media servers, and common miscellaneous devices like smoke machines. 
@@ -66,7 +67,7 @@ The option to add a user-created set is done via the Sets view.
 
 4. Tap apply
 
-`r create_image_tag("05.Patch", "5.1-Sets")`
+`r create_image_tag("05.Patch", "Sets")`
 
 ### Edit Sets
 
@@ -87,7 +88,7 @@ There is an option to edit a user-created set. This is done via the Sets view.
 3. Tap the Edit icon on the header
 
 
-## Devices {#Devices-5.2}
+## Devices {#Devices}
 
 
 **Once the Patch Page is open:**
@@ -96,17 +97,17 @@ There is an option to edit a user-created set. This is done via the Sets view.
     
 2. Tap {Import}, the Manufactures picker list will appear.
     
-`r create_image_tag("05.Patch", "5.2-Devices-Import")`
+`r create_image_tag("05.Patch", "Devices-Import")`
     
 3. Flick or drag along the list to browse to the desired manufacturer then tap the manufacturer's name.
     
 4.  A new list and search window will open. If the exact device name is known, type it in the search window, if not flick or drag to browse the list until the desired device is found.
     
-`r create_image_tag("05.Patch", "5.2-Devices")`
+`r create_image_tag("05.Patch", "Devices")`
     
 5. The < key may be pressed at any time to return to the imported Devices list.
     
-`r create_image_tag("05.Patch", "5.2-Search-Bar")`
+`r create_image_tag("05.Patch", "Search-Bar")`
 
 ### Advanced Search
 
@@ -126,7 +127,7 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
     
 4. Select the fixture from the Matching Devices list.
 
-`r create_image_tag("05.Patch", "5.2-Advanced-Device-Search")`
+`r create_image_tag("05.Patch", "Advanced-Device-Search")`
 
 5. The DMX Modes pop-up will open. 
 
@@ -134,10 +135,10 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
 
 7. Tap Apply or Import or press \[ENTER] to close the popup and add the fixture to the Imported Devices list.
 
-`r create_image_tag("05.Patch", "5.2-Device-Import-sample")`
+`r create_image_tag("05.Patch", "Device-Import-sample")`
 
 
-## Create and Patch {#Create-and-Patch-5.3}
+## Create and Patch {#Create-and-Patch}
 
 
 **To open the Create and Patch popup:**
@@ -148,7 +149,7 @@ Searches may be filtered by parameter order and DMX Channel Count to limit the s
     
 3. Tap the device you wish to patch and the Create and Patch Fixtures popup will appear.
     
-`r create_image_tag("05.Patch", "5.3-Create-and-Patch")`
+`r create_image_tag("05.Patch", "Create-and-Patch")`
 
 **To Create and Patch fixtures:**
 
@@ -198,7 +199,7 @@ Using the **INTERVAL** field, a custom interval may be set.
 
 If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be created but not patched. Created fixtures may then be dragged and dropped onto the Universe View.
 
-`r create_image_tag("05.Patch", "5.3-Universe-View")`
+`r create_image_tag("05.Patch", "Universe-View")`
 
 **Drag and Drop from the Fixtures tab:**
 
@@ -206,16 +207,16 @@ If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be c
     
 2. Select the Fixture **Set** you wish to patch from the Set list.
 
-`r create_image_tag("05.Patch", "5.3-Sets-View")`
+`r create_image_tag("05.Patch", "Sets-View")`
     
 3. Select a destination **Universe** from the Universes list. The universe grid will be shown in the Universes view.
 
-`r create_image_tag("05.Patch", "5.3-Universes")`
+`r create_image_tag("05.Patch", "Universes")`
 
 4. Select the **Fixtures** you wish to patch from the Fixtures list.
 👉 Multiple fixtures may be selected by swiping ⤴ or ⤵ in the Fixtures list.
 
-`r create_image_tag("05.Patch", "5.3-Fixtures")`
+`r create_image_tag("05.Patch", "Fixtures")`
 
 5. **Press and Hold** the fixtures, they will turn into floating icons.
     
@@ -253,7 +254,7 @@ If {Main Patch} is toggled off in the Create and Patch pop-up, fixtures can be c
 
 Once patched fixtures can be modified using keypad syntax or using the **Patch Toolbar**.
 
-`r create_image_tag("05.Patch", "5.3-Patch-Toolbar")`
+`r create_image_tag("05.Patch", "Patch-Toolbar")`
 
   - {CLEAR PATCH} - Opens the Clear Patch popup. 
     
@@ -283,7 +284,7 @@ Once patched fixtures can be modified using keypad syntax or using the **Patch T
 
 Sometimes, especially in theatrical environments, it is useful to check if a DMX channel is empty or not. This can be done from the console by enabling the Address Test function on the header of the Universe View.
 
-`r create_image_tag("05.Patch", "5.3-Address-Test")`
+`r create_image_tag("05.Patch", "Address-Test")`
 
 In Address Test mode each selected channel is visualized with a yellow background and it is forced to jump at full intensity.
 
@@ -294,7 +295,7 @@ Many channels can be selected by dragging or through multiple touches.
 Once the function is disabled all the channels come back to their normal state.
 
 
-## DMX Properties {#DMX-Properties-5.4}
+## DMX Properties {#DMX-Properties}
 
 
 The DMX Properties is divided in 4 sections corresponding to the 4 output types supported:
@@ -309,7 +310,7 @@ The DMX Properties is divided in 4 sections corresponding to the 4 output types 
 
 Most of the options and configuration properties are common to all the protocols, but a few of them are specific to the selected protocol and will be grayed out or not available.
 
-Vibe is capable of transmitting more than one protocol at a time on the same Ethernet port. 
+Vibe is capable of transmitting more DMX-over-Ethernet protocols at a time on the same network from the Data port. 
 
 To save bandwidth it is also possible to enable only the universes for each protocol that are required. 
 
@@ -329,7 +330,7 @@ In the bottom left of the popup, a red framed box informs about the amount of un
 
 This number is based on the connected devices, summing each device universes to reach the system's total amount:
 
-- Vibe PC software by default enables up to 64 input and output universes on VC's protocol and up to 1 universe on ArtNet and ACN protocols.
+- Vibe PC software by default enables up to 64 universes on VC's protocol and up to 1 universe on ArtNet and ACN protocols.
 
 👉 If no PC Wing is connected to the Vibe PC, then the VibePC works in Demo Mode and the ArtNet and ACN protocols will get random 10 seconds blackouts, advised by a Red box on the toolbar. VC's protocol is not affected by the random blackouts.
 
@@ -349,68 +350,54 @@ This number is based on the connected devices, summing each device universes to 
 
 ### Local Output
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-Local")`
+`r create_image_tag("05.Patch", "DMX-Settings-Local")`
 
-**Enable Local output**
-
-- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
-
-1. Under the Protocol heading, tap {Local Output} - The selection will turn red.
-    
-2. Under Broadcast Options tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the EtherCON Data ports.
-    
-**Reroute Console Universes:**
-
-1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
-    
-2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
-    
-**Additional functions:**
-
-- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
-    
-- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
-    
-- Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
-    
-- Reset all defaults for the selected protocol - Tap {Config All}.
-
-**Enable Input / Output**
+**Enable Local Input / Output**
 
 Use the Broadcast Option keys to enable / disable the Input and the Output, to either receive or send the protocol.
 
 When the green dot is shown on the key, the protocol is set as enabled. Tap apply to activate it.
 
-**Remap  Input / Output**
+To Enable Output:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {Out (Send)} - The status indicator light will turn green. 
+  
+  - The console can now output the selected protocol on the DMX ports.
+
+To Enable Input:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {In (Receive)} - The status indicator light will turn green. 
+  
+  - The console can now get input of the selected protocol on the DMX ports.
+
+**Map Console Universes**
 
 Toggle between In (Receive) and Out (Send) on the top of the view to either show the input or the output universes configuration in the destination universe box.
 
-1. Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+  1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
     
-2. In the Protocol column, Tap {Local Output}.
+  2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
     
-3. Under the Source Universe heading, tap the desired source universe number or once red type the universe number you wish to be the source.
-    
-4. Under the Local Output Destination Universe heading, tap one of the displayed local outputs - the source Universe will now be patched to the output.
+**Additional functions**
 
 👉 Use the Clear All and the Config All keys to remap the protocol on a 1:1 basis.
-  
-**Change output to input** 
 
-- Currently Vibe supports 2 inputs but multiple connectors may be assigned to the same input.
-
-1. Tap a patched output - Two additional options will light up near the Output Destination Universe box. 
-
-  - {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
-
-  - {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
+- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
     
-**Change input to output**
+- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
+    
+- Config default route for a single destination universe - Tap {Universe #} Tap {Config}.
+    
+- Config all default destination universes for the selected protocol - Tap {Config All}.
 
-1. Tap a patched input - an additional Make Output option will light up near the Output Destination Universe box.
-    
-2. Tap {Make Output} - The Connector will now output DMX.
-    
 **DMX refresh rate**
 
 Sometimes older equipment cannot handle the higher refresh rates, so it may be reduced with the DMX Max Rate wheel. It is not recommended to go below 28Hz as some flickering may be observed.
@@ -419,68 +406,54 @@ Sometimes older equipment cannot handle the higher refresh rates, so it may be r
 
 ### VC
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-VCs")`
+`r create_image_tag("05.Patch", "DMX-Settings-VCs")`
 
-**Enable VC output**
-
-- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
-
-1. Under the Protocol heading, tap {VC's} - The selection will turn red.
-    
-2. Under Broadcast Options tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the EtherCON Data ports.
-    
-**Reroute Console Universes:**
-
-1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
-    
-2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
-    
-**Additional functions:**
-
-- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
-    
-- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
-    
-- Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
-    
-- Reset all defaults for the selected protocol - Tap {Config All}.
-
-**Enable Input / Output**
+**Enable VCs Input / Output**
 
 Use the Broadcast Option keys to enable / disable the Input and the Output, to either receive or send the protocol.
 
 When the green dot is shown on the key, the protocol is set as enabled. Tap apply to activate it.
 
-**Remap Input / Output**
+To Enable Output:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {Out (Send)} - The status indicator light will turn green. 
+  
+  - The console can now output the selected protocol on the DMX ports.
+
+To Enable Input:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {In (Receive)} - The status indicator light will turn green. 
+  
+  - The console can now get input of the selected protocol on the DMX ports.
+
+**Map Console Universes**
 
 Toggle between In (Receive) and Out (Send) on the top of the view to either show the input or the output universes configuration in the destination universe box.
 
-1. Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+  1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
     
-2. In the Protocol column, Tap {VC's}.
+  2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
     
-3. Under the Source Universe heading, tap the desired source universe number or once red type the universe number you wish to be the source.
-    
-4. Under the Local Output Destination Universe heading, tap one of the displayed local outputs - the source Universe will now be patched to the output.
+**Additional functions**
 
 👉 Use the Clear All and the Config All keys to remap the protocol on a 1:1 basis.
+
+- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
     
-**Change output to input** 
-
-- Currently Vibe supports 2 inputs but multiple connectors may be assigned to the same input.
-
-1. Tap a patched output - Two additional options will light up near the Output Destination Universe box. 
-
-  - {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
-
-  - {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
+- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
     
-**Change input to output**
+- Config default route for a single destination universe - Tap {Universe #} Tap {Config}.
+    
+- Config all default destination universes for the selected protocol - Tap {Config All}.
 
-1. Tap a patched input - an additional Make Output option will light up near the Output Destination Universe box.
-    
-2. Tap {Make Output} - The Connector will now output DMX.
-    
 **DMX refresh rate**
 
 Sometimes older equipment cannot handle the higher refresh rates, so it may be reduced with the DMX Max Rate wheel. It is not recommended to go below 28Hz as some flickering may be observed.
@@ -493,19 +466,17 @@ The Unicast Settings allow to Add or Delete the IP addresses that will be used f
 
 Any IP address may receive the whole protocol with all its universes, or only a part of it as defined in the "From Port" and "To Port" fields.
 
-Ports that are not defined as unicast will be still sent as broadcast. 
-
 Each port can be configured to multiple IPs, more ports can be sent to the same IP.
 
-**Configure Unicast:**
+ - To Configure Unicast:
 
-1. Tap on the protocol in DMX Settings popup.
+ 1. Tap on the protocol in DMX Settings popup.
 
-2. Toggle to _Unicast Settings_ to open the unicast popup.
+ 2. Toggle to **Unicast Settings** to open the unicast popup.
 
-3. Tap Add to add a new IP line or Delete to remove an existing IP
+ 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
+`r create_image_tag("05.Patch", "Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 
@@ -513,75 +484,105 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
 
 > On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12
 
+👉 Any IP may be configured, but it must have the first number in the same range of the Vibe's Data Network IP, which is reported on the top of the list.
+
+  - To Configure Broadcast:
+  
+  Ports that are not defined as Unicast will be still sent as Broadcast. 
+  
+  Use Broadcast / Use Unicast toggle keys on the top of the {Unicast Settings} tab switch the protocol transmission between unicast and broadcast.
+  
+  👉 The {Use Broadcast} key ignores the unicast configuration of ports and IP addresses, so it permits sending the protocol in broadcast without losing the unicast configuration made. Once the transmission needs to be restored to unicast, simply tap on the {Use Unicast} key.
+
 ### ArtNet
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-ArtNet")`
+`r create_image_tag("05.Patch", "DMX-Settings-ArtNet")`
 
-**Enable ArtNet output**
-
-- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
-
-1. Under the Protocol heading, tap {ArtNet} - The selection will turn red.
-    
-2. Under Broadcast Options tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the EtherCON Data ports.
-    
-**Reroute Console Universes:**
-
-1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
-    
-2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
-    
-**Additional functions:**
-
-- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
-    
-- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
-    
-- Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
-    
-- Reset all defaults for the selected protocol - Tap {Config All}.
-
-**Enable Input / Output**
+**Enable ArtNet Input / Output**
 
 Use the Broadcast Option keys to enable / disable the Input and the Output, to either receive or send the protocol.
 
 When the green dot is shown on the key, the protocol is set as enabled. Tap apply to activate it.
 
-<span style="color:blue">**Input** on the ArtNet protocol is not implemented yet.</span>.
+To Enable Output:
 
-**Remap Input / Output**
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {Out (Send)} - The status indicator light will turn green. 
+  
+  - The console can now output the selected protocol on the DMX ports.
+
+To Enable Input:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {In (Receive)} - The status indicator light will turn green. 
+  
+  - The console can now get input of the selected protocol on the DMX ports.
+
+**Map Console Universes**
 
 Toggle between In (Receive) and Out (Send) on the top of the view to either show the input or the output universes configuration in the destination universe box.
 
-1. Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+  1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
     
-2. In the Protocol column, Tap {ArtNet}.
+  2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
     
-3. Under the Source Universe heading, tap the desired source universe number or once red type the universe number you wish to be the source.
-    
-4. Under the Local Output Destination Universe heading, tap one of the displayed local outputs - the source Universe will now be patched to the output.
+**Additional functions**
 
 👉 Use the Clear All and the Config All keys to remap the protocol on a 1:1 basis.
 
-**Change output to input** 
-
-- Currently Vibe supports 2 inputs but multiple connectors may be assigned to the same input.
-
-1. Tap a patched output - Two additional options will light up near the Output Destination Universe box. 
-
-  - {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
-
-  - {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
+- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
     
-**Change input to output**
+- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
+    
+- Config default route for a single destination universe - Tap {Universe #} Tap {Config}.
+    
+- Config all default destination universes for the selected protocol - Tap {Config All}.
 
-1. Tap a patched input - an additional Make Output option will light up near the Output Destination Universe box.
-    
-2. Tap {Make Output} - The Connector will now output DMX.
-    
 **DMX refresh rate**
 
 Sometimes older equipment cannot handle the higher refresh rates, so it may be reduced with the DMX Max Rate wheel. It is not recommended to go below 28Hz as some flickering may be observed.
+
+**Unicast**
+
+By default the protocol transmission is Broadcast, if a Unicast or Multicast transmission needs to be set, tap on the Unicast Settings toggle key. It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. 
+
+The Unicast Settings allow to Add or Delete the IP addresses that will be used for the Unicast or Multicast transmission.
+
+Any IP address may receive the whole protocol with all its universes, or only a part of it as defined in the "From Port" and "To Port" fields.
+
+Each port can be configured to multiple IPs, more ports can be sent to the same IP.
+
+ - To Configure Unicast:
+
+ 1. Tap on the protocol in DMX Settings popup.
+
+ 2. Toggle to **Unicast Settings** to open the unicast popup.
+
+ 3. Tap Add to add a new IP line or Delete to remove an existing IP
+
+`r create_image_tag("05.Patch", "Unicast-Settings")`
+
+> On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
+
+> On the second line – port 5 will be sent also to IP 172.16.10.11
+
+> On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12
+
+👉 Any IP may be configured, but it must have the first number in the same range of the Vibe's Data Network IP, which is reported on the top of the list.
+
+  - To Configure Broadcast:
+  
+  Ports that are not defined as Unicast will be still sent as Broadcast. 
+  
+  Use Broadcast / Use Unicast toggle keys on the top of the {Unicast Settings} tab switch the protocol transmission between unicast and broadcast.
+  
+  👉 The {Use Broadcast} key ignores the unicast configuration of ports and IP addresses, so it permits sending the protocol in broadcast without losing the unicast configuration made. Once the transmission needs to be restored to unicast, simply tap on the {Use Unicast} key.
 
 **SubNet view**
 
@@ -593,111 +594,59 @@ The subnet number and fixture number in the subnet can be viewed by toggling {Su
 
 Enable the Subnet view through the dedicated key on the right of the destination universe box to visualize the subnet number instead of the universe number on the ArtNet universes.
 
-**Unicast**
-
-By default the protocol transmission is Broadcast, if a Unicast or Multicast transmission needs to be set, tap on the Unicast Settings toggle key. It is possible to set specific IPs to send the output to. If there is a port configured to a specific IP it will not be sent broadcast. 
-
-The Unicast Settings allow to Add or Delete the IP addresses that will be used for the Unicast or Multicast transmission.
-
-Any IP address may receive the whole protocol with all its universes, or only a part of it as defined in the "From Port" and "To Port" fields.
-
-Ports that are not defined as unicast will be still sent as broadcast. 
-
-Each port can be configured to multiple IPs, more ports can be sent to the same IP.
-
-**Configure Unicast:**
-
-1. Tap on the protocol in DMX Settings popup.
-
-2. Toggle to _Unicast Settings_ to open the unicast popup.
-
-3. Tap Add to add a new IP line or Delete to remove an existing IP
-
-`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
-
-> On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
-
-> On the second line – port 5 will be sent also to IP 172.16.10.11
-
-> On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12
-
 ### sACN
 
-`r create_image_tag("05.Patch", "5.4-DMX-Settings-sACN")`
+`r create_image_tag("05.Patch", "DMX-Settings-sACN")`
 
-**Enable sACN output**
-
-- Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
-
-1. Under the Protocol heading, tap {sACN} - The selection will turn red.
-    
-2. Under Broadcast Options tap {Out} - The status indicator light will turn green. The console will now be outputting the selected protocol on the EtherCON Data ports.
-    
-**Reroute Console Universes:**
-
-1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
-    
-2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
-    
-**Additional functions:**
-
-- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
-    
-- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
-    
-- Reset default route for a single destination universe - Tap {Universe #} Tap {Config}.
-    
-- Reset all defaults for the selected protocol - Tap {Config All}.
-
-**Enable Input / Output**
+**Enable sACN Input / Output**
 
 Use the Broadcast Option keys to enable / disable the Input and the Output, to either receive or send the protocol.
 
 When the green dot is shown on the key, the protocol is set as enabled. Tap apply to activate it.
 
-<span style="color:blue">**Input** on the ACN protocol is not implemented yet.</span>.
+To Enable Output:
 
-**Remap Input / Output**
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {Out (Send)} - The status indicator light will turn green. 
+  
+  - The console can now output the selected protocol on the DMX ports.
+
+To Enable Input:
+
+  - Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+
+  1. Tap on the Protocol heading in the Protocol column - The selection will turn red.
+    
+  2. Under Broadcast Options tap {In (Receive)} - The status indicator light will turn green. 
+  
+  - The console can now get input of the selected protocol on the DMX ports.
+
+**Map Console Universes**
 
 Toggle between In (Receive) and Out (Send) on the top of the view to either show the input or the output universes configuration in the destination universe box.
 
-1. Open the {DMX SETTINGS} from Vibe Menu > Settings or tap the DMX Settings button - The DMX Properties popup will open.
+  1. Under the **Source Universe** header, scroll the list to the source console universe number you wish to route. Once tapped, the selection will turn red. A universe number may also be typed from the keypad.
     
-2. In the Protocol column, Tap {ACN}.
+  2. Under the **Destination Universe** header, tap one of the cells in the destination universe grid. The source universe number will now be routed through the destination universe number.
     
-3. Under the Source Universe heading, tap the desired source universe number or once red type the universe number you wish to be the source.
-    
-4. Under the Local Output Destination Universe heading, tap one of the displayed local outputs - the source Universe will now be patched to the output.
+**Additional functions**
 
 👉 Use the Clear All and the Config All keys to remap the protocol on a 1:1 basis.
+
+- Clear a destination universe - Tap {Universe #} in the destination grid. Tap {Clear}.
     
-**Change output to input** 
-
-- Currently Vibe supports 2 inputs but multiple connectors may be assigned to the same input.
-
-1. Tap a patched output - Two additional options will light up near the Output Destination Universe box. 
-
-  - {Make Input 1} - Makes the selected outputs into Input 1. The Physical connector display will turn white to indicate it is now an input. 
-
-  - {Make Input 2} - Makes the selected outputs into Input 2. The Physical connector display will turn white to indicate it is now an input.
+- Clear all destination universes - Select the protocol to clear. Tap {Clear All}.
     
-**Change input to output**
+- Config default route for a single destination universe - Tap {Universe #} Tap {Config}.
+    
+- Config all default destination universes for the selected protocol - Tap {Config All}.
 
-1. Tap a patched input - an additional Make Output option will light up near the Output Destination Universe box.
-    
-2. Tap {Make Output} - The Connector will now output DMX.
-    
-**Change DMX refresh rate**
+**DMX refresh rate**
 
 Sometimes older equipment cannot handle the higher refresh rates, so it may be reduced with the DMX Max Rate wheel. It is not recommended to go below 28Hz as some flickering may be observed.
-
-**Priority**
-
-ACN universes may have a priority to manage networks where more than one ACN is transmitted.
-
-Turn the Priority wheel, or select it and give a numeric input, to configure the whole protocol's priority.
-
-Tap on a destination universe box and then tap on the Priority key to open the Port Priority popup and set a priority to the specific selected universe.
 
 **Unicast**
 
@@ -707,25 +656,43 @@ The Unicast Settings allow to Add or Delete the IP addresses that will be used f
 
 Any IP address may receive the whole protocol with all its universes, or only a part of it as defined in the "From Port" and "To Port" fields.
 
-Ports that are not defined as unicast will be still sent as broadcast. 
-
 Each port can be configured to multiple IPs, more ports can be sent to the same IP.
 
-**Configure Unicast:**
+ - To Configure Unicast:
 
-1. Tap on the protocol in DMX Settings popup.
+ 1. Tap on the protocol in DMX Settings popup.
 
-2. Toggle to _Unicast Settings_ to open the unicast popup.
+ 2. Toggle to **Unicast Settings** to open the unicast popup.
 
-3. Tap Add to add a new IP line or Delete to remove an existing IP
+ 3. Tap Add to add a new IP line or Delete to remove an existing IP
 
-`r create_image_tag("05.Patch", "5.4-Unicast-Settings")`
+`r create_image_tag("05.Patch", "Unicast-Settings")`
 
 > On the first line – ports 1 ⟶ 5 will be sent to IP 172.16.10.10
 
 > On the second line – port 5 will be sent also to IP 172.16.10.11
 
 > On the third line – ports 6 ⟶ 10 will be sent to IP 172.16.10.12
+
+👉 Any IP may be configured, but it must have the first number in the same range of the Vibe's Data Network IP, which is reported on the top of the list.
+
+  - To Configure Broadcast:
+  
+  Ports that are not defined as Unicast will be still sent as Broadcast. 
+  
+  Use Broadcast / Use Unicast toggle keys on the top of the {Unicast Settings} tab switch the protocol transmission between unicast and broadcast.
+  
+  👉 The {Use Broadcast} key ignores the unicast configuration of ports and IP addresses, so it permits sending the protocol in broadcast without losing the unicast configuration made. Once the transmission needs to be restored to unicast, simply tap on the {Use Unicast} key.
+
+**Priority**
+
+ACN universes may have a priority to manage networks where more than one source is transmitting sACN.
+
+Turn the Priority wheel, or select it and give a numeric input, to configure the whole protocol's priority.
+
+Tap on a destination universe box and then tap on the Priority key to open the Port Priority popup and set a priority to the specific selected universe.
+
+`r create_image_tag("05.Patch", "ACN-Port-Priority")`
 
 ### DMX Input
 
@@ -785,7 +752,7 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
     
 5. Press ENTER, or tap Apply to close the popup and complete the patch.
     
-`r create_image_tag("05.Patch", "5.4-Controller-Selection")`
+`r create_image_tag("05.Patch", "Controller-Selection")`
 
 **Map a Macro to a DMX input** - Macro will trigger at 50%
 
@@ -809,19 +776,19 @@ Each port can be configured to multiple IPs, more ports can be sent to the same 
 
 DMX Output and Input view is meant to show in real time the output and input values of each DMX channel of the selected universe.
 
-`r create_image_tag("05.Patch", "5.4-DMX-View")`
+`r create_image_tag("05.Patch", "DMX-View")`
 
 Use the view's menu to select the target output or input universe.
 
 DMX values can be shown in numeric or in graphic visualization.
 
 
-## Fixture View {#Fixture-View-5.5}
+## Fixture View {#Fixture-View}
 
 
 - The fixture view lists all the created fixtures and their patch information.
 
-`r create_image_tag("05.Patch", "5.5-Fixtures-View")`
+`r create_image_tag("05.Patch", "Fixtures-View")`
 
 - Select a Set on the **Sets View** to filter the fixtures listed.
 
@@ -852,18 +819,18 @@ DMX values can be shown in numeric or in graphic visualization.
 - Tap on the Pan Invert, Tilt Invert, Pan/Tilt Swap columns of a fixture selection to change the fixture position parameters' behavior.
 
 
-## Address Properties {#Address-Properties-5.6}
+## Address Properties {#Address-Properties}
 
 
 The address view lists all the DMX addresses of the selected universe and their properties.
 
 Each cell contains the properties of a DMX address and the icon of the parameter patched on it.
 
-`r create_image_tag("05.Patch", "5.6-Address-View")`
+`r create_image_tag("05.Patch", "Address-View")`
 
 - To edit address properties, tap on the addresses to select them and then "Address Properties" on the header. The Address Properties popup will open.
 
-`r create_image_tag("05.Patch", "5.6-Address-Properties")`
+`r create_image_tag("05.Patch", "Address-Properties")`
 
 - The following address properties can be edited:
 
@@ -878,10 +845,10 @@ Each cell contains the properties of a DMX address and the icon of the parameter
   - **Restore Defaults**: restores the default address properties.
 
 
-## Park {#Park-5.7}
+## Park {#Park}
 
 
-`r create_image_tag("05.Patch", "5.7-Park-Address")`
+`r create_image_tag("05.Patch", "Park-Address")`
 
 **Park an address:**
 
@@ -924,7 +891,7 @@ In the Exam view tap Patch and then Park to check all the parked addresses and f
 ><span style="color:Red">> The \[B.O.] key **does** blackout parked addresses and fixtures. </span>
 
 
-## Clone {#Clone-5.8}
+## Clone {#Clone}
 
 
 Vibe has smart and advanced clone features.
@@ -933,7 +900,7 @@ The Fixture Cloning feature allows to copy all the stored data from a selection 
 
 To open the fixture cloning popup, press the dedicated button in Patch page's Editor Toolbar.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Fixture")`
+`r create_image_tag("05.Patch", "Clone-Fixture")`
 
 Choose the order of source fixtures on the left column and the order of destination fixtures on the right column, then press Done.
 
@@ -965,7 +932,7 @@ The Advanced fixture cloning option on the top enables access to a pair of Next 
 
 The next step shows the Parameter Selection window.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Param")`
+`r create_image_tag("05.Patch", "Clone-Param")`
 
 The cloning can be based on raw values, preserving the parameters' levels, or on smart values, preserving the fixture's functions. Raw values means that Vibe will match between parameter types and copy the raw value. Smart means that Vibe will try to find the real data information of the parameter and convert the values to match the destination fixture to look the same. Default is Smart.
 
@@ -973,7 +940,7 @@ On the right side there is a match table between the source and destination fixt
 
 The next step shows the Data window.
 
-`r create_image_tag("05.Patch", "5.8-Clone-Data")`
+`r create_image_tag("05.Patch", "Clone-Data")`
 
 The Data window permits to filter the Groups, Libraries, Qlists, Scenes and Submasters, to apply the cloning only to the selected contents. Default is that all are selected.
 
@@ -986,7 +953,7 @@ There is an option to clone the look ahead mask so if the source fixture is in t
 There is an option to choose what to do with the parameters of the destination fixtures that are not included in the clone because they were not matched or any other reason. Merge means to keep these values, overwrite will delete the values. Default is Overwrite.
 
 
-## Replace {#Replace-5.9}
+## Replace {#Replace}
 
 
 Vibe has smart and advanced device replacement.
@@ -995,7 +962,7 @@ The Device replacement feature allows to replace a device with another one, keep
 
 To open the device replacement popup, press the dedicated button in Patch page's Editor Toolbar.
 
-`r create_image_tag("05.Patch", "5.9-Replace-Fixture")`
+`r create_image_tag("05.Patch", "Replace-Fixture")`
 
 Choose the Source device on the left column and the new device from the Imported Devices on the right column, then press Done.
 
@@ -1009,7 +976,7 @@ The Advanced replacement option on the top enables access to a Next popup window
 
 The next step shows the Parameter Selection window.
 
-`r create_image_tag("05.Patch", "5.9-Replace-Param")`
+`r create_image_tag("05.Patch", "Replace-Param")`
 
 Each bank has its option to enable/disable. Enabled means it will be included in the Device replacement and disabled means it will not be included. Default is enabled.
 
@@ -1018,14 +985,14 @@ The replacement can be based on raw values, preserving the parameters' levels, o
 On the right side there is a match table between the source and destination fixtures parameters. This table is dynamic and shows the data set from the left side. User can also change matching parameters manually, but this is only to very special cases and anyway it is not recommended. SMART will anyway overrule the table in case there is a parameter that is included in the smart.
 
 
-## Calibration {#Calibration-5.10}
+## Calibration {#Calibration}
 
 
 Calibration Data give to the Vibe all the information regarding the fixture positioning on the stage, defined by X, Y, Z coordinates and Rotations around the axes, based on the point identified as stage center.
 
 {Fixture Calibration} key on the Patch Toolbar opens a popup used to calibrate the fixtures through the XYZ coordinates, that may be either taken from a 3D Visualizer or from a real measurement. 
 
-`r create_image_tag("05.Patch", "5.10-Fixture-Calibration")`
+`r create_image_tag("05.Patch", "Fixture-Calibration")`
 
 When fixtures are properly calibrated it is possible to specify a stage point on Vibe xyz position picker to automatically point all the fixtures on it. 
 
@@ -1061,7 +1028,7 @@ The file should include the following columns in the specified order:
 
 - H  - RotZ – The Z value of the fixture’s rotation, in degrees
 
-`r create_image_tag("05.Patch", "5.10-CSV-Sample")`
+`r create_image_tag("05.Patch", "CSV-Sample")`
 
 Notes: 
 
@@ -1085,7 +1052,7 @@ Click the "Import Calibration Data" button.
 
 Use the file explorer to select your CSV file and click OK.
 
-`r create_image_tag("05.Patch", "5.10-Import-CSV")`
+`r create_image_tag("05.Patch", "Import-CSV")`
 
 A popup will appear displaying the data read from the CSV file.
 
@@ -1107,11 +1074,11 @@ As an alternative to the CSV import, calibration data may be manually copied fro
     
 4.  Select the center of your stage (see <span style="color:Red">Red Arrow</span> in the Picture)
     
-`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration")`
+`r create_image_tag("05.Patch", "Wysiwyg-Calibration")`
 
 5. Go to 'Data tab', press Option on the toolbar ⟶  Document Options ⟶  Draw Defaults - and  change the units to metric.
 
-`r create_image_tag("05.Patch", "5.10-Wysiwyg-Calibration-Data")`
+`r create_image_tag("05.Patch", "Wysiwyg-Calibration-Data")`
 
 6. Copy these values to the Fixture calibration table in Vibe:
 
@@ -1135,13 +1102,13 @@ As an alternative to the CSV import, calibration data may be manually copied fro
     
 3. On Capture, place the center of the stage in the intersect point of the 2 Bold Axis, when the CAD displays a view from the Top
 
-`r create_image_tag("05.Patch", "5.10-Capture-Calibration")`
+`r create_image_tag("05.Patch", "Capture-Calibration")`
 
 4. Go to Tools ⟶  Options and change the measurements to metric.
 
 5. Select a fixture in Capture to see the XYZ coordinates when the table is showing 'Selected Itemsʼ. 
 
-`r create_image_tag("05.Patch", "5.10-Capture-Calibration-Data")`
+`r create_image_tag("05.Patch", "Capture-Calibration-Data")`
 
 6. Copy these values to the Fixture calibration table in Vibe:
 
@@ -1165,13 +1132,13 @@ As an alternative to the CSV import, calibration data may be manually copied fro
     
 3. On L8, go to ROOM environment and set the 'World Center' to define the center of the stage. Eventually an object with zero-sized dimensions can be created and set as world center. Ensure that the measurement is set on metric.
 
-`r create_image_tag("05.Patch", "5.10-L8-Calibration")`
+`r create_image_tag("05.Patch", "L8-Calibration")`
 
 4. Go to DMX environment. All the fixtures' coordinates are now based on the world center. 
 
 5. Select a fixture in L8 from the list on the left side of the screen to see the XYZ coordinates.
 
-`r create_image_tag("05.Patch", "5.10-L8-Calibration-Data")`
+`r create_image_tag("05.Patch", "L8-Calibration-Data")`
 
 6. Copy these values to the Fixture calibration table in Vibe:
 
@@ -1196,7 +1163,43 @@ As an alternative to the CSV import, calibration data may be manually copied fro
 <span style="color:Gray">Coming Soon.</span>
 
 
-## Auto-Patch {#Auto-Patch-5.11}
+## Trackers {#Trackers}
+
+
+Vibe Trackers are virtual objects that can be created and patched to the trackers of the supported incoming protocols in order to get the position coordinates of a tracked person/object on the stage and make fixtures automatically follow it.
+
+Trackers may be created, named and patched on the Trackers View.
+
+`r create_image_tag("05.Patch", "Trackers")`
+
+Once changes to the trackers have been made, press Update to apply them.
+
+The Protocols Tab of the Trackers View shows the trackers connected to the system, divided per protocol. 
+
+`r create_image_tag("05.Patch", "Trackers-Protocols")`
+
+Currently the only supported tracking protocol is PSN (PosiStageNet).
+
+The Position Picker on the Smart Screen, in the XYZ mode, shows a column where the Trackers are listed and may be selected.
+
+`r create_image_tag("05.Patch", "Trackers-Picker-XYZ")`
+
+- To assign the selected fixtures to the Tracker tap on the tracker in the list and the Vxyz coordinates will be grabbed in Editor, pointing to the tracker. 
+
+- Trackers position values can be stored as usual into Libraries, Scenes and Cues and programmed in the same way of any other parameter.
+
+- The fade time between position values coming from trackers and from stored values can be managed like any other system, library, scene and cue timing.
+
+Trackers may also be used to automatically update the fixtures’ calibration data of hanged fixtures, based on the position where the fixtures are mounted and their offset from the object center (the structure point that originates the coordinates of the trussing system, where the tracker is mounted).
+
+Once the Trackers have been patched in the Trackers view, simply link the fixtures to the related tracker by adding the tracker’s number in the column of the Fixture Calibration popup.
+
+`r create_image_tag("05.Patch", "Fixture-Calibration")`
+
+The fixtures’ position will then be determined by the tracker’s input, while the other calibration columns (XYZ coordinates and Rotation angles on the 3 axes) will define the offsets of distance and angles of the fixture from the tracker.
+
+
+## Auto-Patch {#Auto-Patch}
 
 
 Vibe can automatically get the device list, fixture patch and calibration data, by loading and converting an MVR show file.
@@ -1227,7 +1230,7 @@ Enable VC transmission on Vibe.
 
 After completing the patch procedures in Wysiwyg, **establish the connection** between the console and the Wysiwyg application.
 
-`r create_image_tag("05.Patch", "5.11-Wysiwyg-connect-viz")`
+`r create_image_tag("05.Patch", "Wysiwyg-connect-viz")`
 
 1.	In the Wysiwyg application, click the Live tab.
 
@@ -1257,11 +1260,11 @@ After completing the patch procedures in Wysiwyg, **establish the connection** b
 
 A popup will show that a Wysiwyg client is now connected.
 
-`r create_image_tag("05.Patch", "5.11-Wysiwyg-connect-vibe")`
+`r create_image_tag("05.Patch", "Wysiwyg-connect-vibe")`
 
 Use **Wysiwyg Auto Patch feature**:
 
-`r create_image_tag("05.Patch", "5.11-Wysiwyg-autopatch")`
+`r create_image_tag("05.Patch", "Wysiwyg-autopatch")`
 
 1.	In the Wysiwyg application, click the Live Wysiwyg tab.
 
@@ -1273,19 +1276,19 @@ Use **Wysiwyg Auto Patch feature**:
 
 5.	Click Close, to close the dialog box.
 
-`r create_image_tag("05.Patch", "5.11-Wysiwyg-patch-sent")`
+`r create_image_tag("05.Patch", "Wysiwyg-patch-sent")`
 
 A popup on the Vibe screen will ask to accept the autopatch from Wysiwyg. Tap Apply.
 
-`r create_image_tag("05.Patch", "5.11-AutoPatch-Wysiwyg")`
+`r create_image_tag("05.Patch", "AutoPatch-Wysiwyg")`
 
 A popup on the Vibe screen will ask to save the current show file.
 
-`r create_image_tag("05.Patch", "5.11-AutoPatch-Wysiwyg-apply")`
+`r create_image_tag("05.Patch", "AutoPatch-Wysiwyg-apply")`
 
 A popup on the Vibe screen will show the matched devices and allows to match them in a different way or to built the unmatched ones as new devices.
 
-`r create_image_tag("05.Patch", "5.11-AutoPatch-Wysiwyg-Device")`
+`r create_image_tag("05.Patch", "AutoPatch-Wysiwyg-Device")`
 
 When all the devices are matched, tap Apply and the convert process will start.
 
@@ -1295,7 +1298,7 @@ When all the devices are matched, tap Apply and the convert process will start.
 
 It is possible to sync the show from Capture. In order to do that, set the Capture CITP settings to use Standard Multicast and select the relevant IP address.
 
-`r create_image_tag("05.Patch", "5.11-AutoPatch-Capture")`
+`r create_image_tag("05.Patch", "AutoPatch-Capture")`
 
 In addition, make sure Vibe and Capture are on the same subnet. 
 

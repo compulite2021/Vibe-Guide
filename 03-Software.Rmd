@@ -1,20 +1,20 @@
 
-# Layout
+# Software
 
-👉 Customize the Vibe **Layout** and get the best interface to fit any operator's needs and preferences.
+👉 Customize the Vibe **Software** and get the best layout interface to fit any operator's needs and preferences.
 
 This chapter provides an overview of Vibe's layout and GUI (Graphical User Interface).
 
 **Chapter index:**
 
--  [3.1 Interface](#Interface-3.1)
--  [3.2 Vibe Menu](#Vibe-Menu-3.2)
--  [3.3 Pages](#Pages-3.3)
--  [3.4 Views](#Views-3.4)
--  [3.5 Layouts](#Layouts-3.5)
+-  [3.1 Interface](#Interface)
+-  [3.2 Vibe Menu](#Vibe-Menu)
+-  [3.3 Pages](#Pages)
+-  [3.4 Views](#Views)
+-  [3.5 Layouts](#Layouts)
 
 
-## Interface {#Interface-3.1}
+## Interface {#Interface}
 
 
 Vibe has a multi-touch based interface, using simple gestures for selection and navigation.
@@ -53,7 +53,7 @@ Vibe has a multi-touch based interface, using simple gestures for selection and 
 The 11.6" multi-touch monitor embedded on the right Editor section of the Vibe 2 screen console models is referred to as the **Smart Screen**. 
 
 <p align=center>**Smart Screen**</p>
-`r create_image_tag("03.Layout", "3.1-Smart-Screen")`
+`r create_image_tag("03.Software", "Smart-Screen")`
 
 - On Vibe multi-screen console models the Smart Screen position is fixed on the dedicated monitor. The Smart Screen View cannot be moved on the other screens and the configuration of this screen cannot be customized.
 
@@ -80,20 +80,20 @@ The right side of the Toolbar, also referred to as the **Editor Toolbar**, conta
 The **Editor Toolbar** shows a different set of buttons according to the programming syntax.
 
 <p align=center>**Patch Toolbar**</p>
-`r create_image_tag("03.Layout", "3.1-Patch-Toolbar")`
+`r create_image_tag("03.Software", "Toolbar-Patch")`
 
 <p align=center>**Program Toolbar**</p>
-`r create_image_tag("03.Layout", "3.1-Program-Toolbar")`
+`r create_image_tag("03.Software", "Toolbar-Program")`
 
 The functions of the Toolbar buttons are described in the following chapters.
 
 
-## Vibe Menu {#Vibe-Menu-3.2}
+## Vibe Menu {#Vibe-Menu}
 
 
 Vibe Menu can be opened at any time by tapping the **{VIBE}** key on the Toolbar.
 
-`r create_image_tag("03.Layout", "3.2-Vibe-Menu")`
+`r create_image_tag("03.Software", "Menu-Vibe")`
 
 The Vibe Menu is a hierarchical menu containing logically grouped submenus. 
 
@@ -109,7 +109,7 @@ The search field may be used to filter and find the needed view by writing the v
 
 The Show Menu is used to manage Vibe show files.
 
-`r create_image_tag("03.Layout", "3.2-Show-Menu")`
+`r create_image_tag("03.Software", "Menu-Show")`
 
 Open the Show Menu to access the following options:
 
@@ -121,8 +121,6 @@ Open the Show Menu to access the following options:
 
 **{Load Show}** - Open a popup to load a saved show file  (from Vibe DB or from an external device).
 
-`r create_image_tag("03.Layout", "3.2-Load-Show")`
-
 **{Default Show}** - Open the default Vibe show. <span style="color:Gray"> (not implemented yet) </span>
 
 **{Import Partial Show}** - Open a popup to load a part of a saved show file. <span style="color:Gray"> (not implemented yet) </span>
@@ -133,116 +131,11 @@ Open the Show Menu to access the following options:
 
 **{Show Report}** - Open a popup where it is possible to create excel files with the data of the show such as Groups, Libraries, Qlists and Scenes content.
 
-#### Load Vector Show
-
-The Load Vector Show popup, if opened from a PC that has Vector software installed, will allow to load a show directly from Vector's show folder.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Show")`
-
-After selecting the Vector show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
-
-- Set the matching objects on each tab, by changing the number assigned to the Vibe object.
-
-- Press the Next or Back keys to navigate through the tabs.
-
-- Press the Reset key to discard the matches edited on the current tab.
-
-- Press the Generate Report (enabled on the last tab) to create a grid file that lists all the matches that have been set between the Vector and the Vibe show files.
-
-Vector Shows will be loaded and converted as follows:
-
-  - **Devices**: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.
-  
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Device")`
-
-  - **Patch**: Vector device parameters will be mapped to Vibe device parameters.
-
-  - **Groups**: will be matched.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Group")`
-
-  - **Libraries**: will be matched per Bank, parameter values will be matched. 
-
-  - **General Libraries**: will be matched to Custom Libraries.
-
-  - **Effects**: will be matched.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Library")`
-
-  - **Qlists**: will be matched.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Qlist")`
-
-  - **Cues**: Vector cue numbers will be matched to Vibe cue numbers with no possibility of renumbering before the conversion process.
-
-  - **Cue Values**: Vector cue parameter values will be matched to Vibe cue parameter values.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Cue")`
-
-  - **Temp Cues**: will be converted into Vibe Scenes.
-
-  - **Submasters**: will be converted into Vibe Submasters.
-
-  - **Snaps**: will be matched and mapped to Vibe virtual controllers, until the number of Vector Playbacks exceeds the amount of Vibe Controllers.
-
-`r create_image_tag("03.Layout", "3.2-Load-Vector-Snap")`
-
-  - **Playbacks**: Vector Playbacks will be matched to Vibe Controllers, paging will be matched, all button functions common to Vector and Vibe will be matched.
-
-  - **Macros**: <span style="color:Gray"> Not supported yet. </span>
-
-#### Load MVR Show
-
-The Load MVR Show popup is used to load a show in MVR format and convert it into a Vibe show file.
-
-`r create_image_tag("03.Layout", "3.2-Load-MVR")`
-
-After selecting the MVR show file it will be analyzed by the Vibe and then a popup will guide through the process of device matching and show conversion.
-
-MVR Shows will be loaded and converted as follows:
-
-  - **Devices**: If a matching device exists, it will be used and modes will be matched. If a similar device exists, it will be used and modes will try to be matched. If no match or close match is found, a generic device will be created.
-  
-`r create_image_tag("03.Layout", "3.2-Load-MVR-Device")`
-
-  - **Fixture**: MVR fixtures IDs will be mapped to Vibe fixtures IDs.
-
-  - **Patch**: MVR fixture addresses will be mapped to Vibe fixture addresses.
-
-  - **Calibration**: MVR fixtures calibration data will be mapped to Vibe calibration data.
-  
-After matching the MVR devices to the Vibe devices, press Apply and wait for the loading bar to end the show conversion process.
-  
-#### CleanUp Show
-
-The Clean Up Show popup shows all the objects that are not used on the show file, such as unused Fixtures and Devices, unused Libraries, unassigned Qlists and Scenes, divided by tabs.
-
-`r create_image_tag("03.Layout", "3.2-CleanUp-Show")`
-
-Use this feature to find and delete the unused objects, to reorder the show file and to make it lighter by deleting all the unnecessary contents.
-
-#### Show Report
-
-The Show Report popup collects all the objects stored into the show file, such as Groups, Libraries, Qlists and Scenes, divided by tabs.
-
-`r create_image_tag("03.Layout", "3.2-Show-Report")`
-
-Report files can be generated for all the data or just for the selected objects.
-Tap "Generate For Selected" to export only the selected objects or tap "Generate For All" to export all the data, independently from the current selection.
-
-The Format keys allow to choose how the parameters should be written on the document.
-
-👉 Enable the {Patch Data} key to store a sheet containing all the patch information, such as fixtures' list, universes, addresses, devices and personalities.
-
-Reports are saved in .cvs file format into the Reports Folder, inside the WorkDir.
-
-Use this feature to save a document containing the show information that may be needed.
-
 ### Layout Menu
 
 The Layout Menu is used to manage the Vibe layout files.
 
-`r create_image_tag("03.Layout", "3.2-Layout-Menu")`
+`r create_image_tag("03.Software", "Menu-Layout")`
 
 Open the Layout Menu to access the following options:
 
@@ -254,15 +147,13 @@ Open the Layout Menu to access the following options:
 
 **{Load Layout}** - Open a popup to load a saved layout file  (from Vibe DB or an external device).
 
-`r create_image_tag("03.Layout", "3.2-Load-Layout")`
-
 **{Default Layout}** - Open the default Vibe layout, depending on the console model.
 
 **{Import Partial Layout}** - Open a popup to load a part of a saved layout file. <span style="color:Gray"> (not implemented yet) </span>
 
 **{Windows}** - Open a sub-menu to add an External window, toggle the window's Title Bar, enter or exit the Full Screen mode.
 
-`r create_image_tag("03.Layout", "3.2-Windows-Menu")`
+`r create_image_tag("03.Software", "Menu-Windows")`
 
 ### Views Menu
 
@@ -278,11 +169,11 @@ Vibe Views are divided in logical order in 3 sub-menus:
 
 Open Patch / Program / Playback Views menus to access all the views that can be added to any page to configure the Vibe layout.
 
-`r create_image_tag("03.Layout", "3.2-Patch-Menu")`
+`r create_image_tag("03.Software", "Menu-Patch")`
 
-`r create_image_tag("03.Layout", "3.2-Prog-Menu")`
+`r create_image_tag("03.Software", "Menu-Prog")`
 
-`r create_image_tag("03.Layout", "3.2-Play-Menu")`
+`r create_image_tag("03.Software", "Menu-Play")`
 
 Vibe's **Layout** is totally flexible, it can be configured and customized to match the user preferences.
 
@@ -294,7 +185,7 @@ The **Views** chapter will provide a short explanation of each view's features.
 
 The Settings Menu is used to manage the Vibe system settings.
 
-`r create_image_tag("03.Layout", "3.2-Settings-Menu")`
+`r create_image_tag("03.Software", "Menu-Settings")`
 
 Open the Settings Menu to access the following options:
 
@@ -321,7 +212,7 @@ Learn more about the Offline Tool in the dedicated chapter. <span style="color:G
 
 ### Help Menu 
 
-`r create_image_tag("03.Layout", "3.2-Help-Menu")`
+`r create_image_tag("03.Software", "Menu-Help")`
 
 **{Version}** - Open a popup listing the installed version of Vibe software and components.
 
@@ -345,14 +236,14 @@ The Exit and Close buttons are located in the Vibe Menu.
 
 If Exit is pressed, a popup asks to save the show file.
 
-`r create_image_tag("03.Layout", "3.2-Exit")`
+`r create_image_tag("03.Software", "Exit")`
 
 If Close is pressed, a popup asks to confirm.
 
-`r create_image_tag("03.Layout", "3.2-Close")`
+`r create_image_tag("03.Software", "Close")`
 
 
-## Pages {#Pages-3.3}
+## Pages {#Pages}
 
 
 Vibe has 3 types of Pages:
@@ -377,7 +268,7 @@ Vibe has 3 types of Pages:
 
 All the Pages are organized in the **Page View** that can be accesses either by pressing the **\[VIEW]** button or by tapping the **{VIBE}** Menu and then the **{PAGES}** key on the Toolbar.
 
-`r create_image_tag("03.Layout", "3.3-Pages-View")`
+`r create_image_tag("03.Software", "Pages-View")`
 
 - All Pages can be completely customized by adding, sizing and positioning the **Views** listed inside the Vibe Menu, independently from where the view is located inside the Vibe Menu.
 
@@ -395,7 +286,7 @@ F1 keyboard button switches between the three Home Pages.
 
 The currently active Home Page is shown in Green.
 
-`r create_image_tag("03.Layout", "3.3-Home-Pages")`
+`r create_image_tag("03.Software", "Home-Pages")`
 
 Any page can be stored as a Home Page on the Page View. 
 
@@ -405,7 +296,7 @@ The Home Pages may be assigned when the screen is in Page View and it is unlocke
 
 Clone pages for a faster building of a similar layout page.
 
-`r create_image_tag("03.Layout", "3.3-Pages-Toolbar")`
+`r create_image_tag("03.Software", "Pages-Toolbar")`
 
 Any page can be cloned as long as there is room available. 
 
@@ -430,7 +321,7 @@ The Vibe Menu of the external windows shows the **Close** button instead of the 
 Vibe Layout files save all the windows that are currently shown in the Vibe workspace.
 
 
-## Views {#Views-3.4}
+## Views {#Views}
 
 
 - Vibe Views are listed inside the Vibe Menu, into the Patch, Program, Playback Views submenus.
@@ -447,11 +338,11 @@ Vibe Layout files save all the windows that are currently shown in the Vibe work
 
 - If an object is dragged on top of another, both will turn green showing it is possible to tab them and create a **tabbed** view. Keep a tabbed view pressed to extract an object from the tab an move it separately.
 
-`r create_image_tag("03.Layout", "3.4-Views-sample")`
+`r create_image_tag("03.Software", "Views-sample")`
 
 👉 Use the **Quick Layout Actions** menu to directly access the View's lists in Vibe Menu, Lock and Unlock the Layout, open the Page View or the Layout Settings popup. Quick Layout Actions may be opened through a long press gesture either on the Toolbar or on any empty space of a page.
 
-`r create_image_tag("03.Layout", "3.4-Quick-Layout")`
+`r create_image_tag("03.Software", "Quick-Layout")`
 
 Here is the complete list of all the views that can be added to the layout pages to configure and customize the Vibe workspace.
 
@@ -470,6 +361,8 @@ Here is the complete list of all the views that can be added to the layout pages
 **Fixture View** - The table of the created fixtures, with ID, patch and device information.
 
 **Address View** - The table of the DMX addresses, showing the fixtures and parameters patch and properties.
+
+**Trackers View** - The table listing the trackers and their patch and position coordinates.
 
 **Universe View** - The table of the DMX universes that allows to patch by dragging the cells.
 
@@ -557,6 +450,8 @@ Here is the complete list of all the views that can be added to the layout pages
 
 **Timeline** - The space to record and trigger time-code based timelines.
 
+**Pixel Mapper** - The space to create pixel mappers to position the fixtures into the mapper's grid and visualize the incoming video source.
+
 ### Playback Views
 
 **A/B Crossfader** - The virtual version of the A/B crossfader.
@@ -589,9 +484,11 @@ Some views have specific settings that can be set from the view settings popup, 
 
 View settings can be accessed when layout is **Unlocked**, by selecting the view and tapping the buttons on the toolbar. These settings are applied to the selected view.
 
-`r create_image_tag("03.Layout", "3.4-Unlock-Layout")`
+`r create_image_tag("03.Software", "Unlock-Layout")`
 
 **Toggle Scrollbar**: add or remove a scrollbar to/from the view, if available.
+
+**Horizontal Scrollbar**: add or remove an horizonal scrollbar to/from the view, if available.
 
 **Toggle Frame**: add or remove the frame to/from the view.
 
@@ -599,7 +496,7 @@ View settings can be accessed when layout is **Unlocked**, by selecting the view
 
 **Softkey Settings**: any softkey view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
 
-`r create_image_tag("03.Layout", "3.4-SK-Settings")`
+`r create_image_tag("03.Software", "SK-Settings")`
 
 Softkey settings are used to change the size, font and color of the softkeys’ text and background.
 
@@ -609,15 +506,15 @@ The settings can be saved as default, and it is always possible to come back to 
 
 Some special color options are available to show color library softkeys with the colors that are stored in the library.
 
-`r create_image_tag("03.Layout", "3.4-SK-sample")`
+`r create_image_tag("03.Software", "SK-sample")`
 
 The auto text color option in Softkey Settings popup automatically sets the softkey’s text color in black or white in contrast with the softkey’s background color, to make it always visible.
 
-`r create_image_tag("03.Layout", "3.4-SK-Color-Settings")`
+`r create_image_tag("03.Software", "SK-Color-Settings")`
 
 **Context Options** only apply to the Context view. This view can show or hide the visualized objects depending on the user’s settings or on the smart option.
 
-`r create_image_tag("03.Layout", "3.4-Context-Options")`
+`r create_image_tag("03.Software", "Context-Options")`
 
 The Context Normal Mode filters the visualized objects according to the enabled buttons.
 
@@ -625,7 +522,7 @@ The Context Smart Mode filters the visualized objects automatically avoiding the
 
 **Single Button Settings**: any single button view can be graphically customized by selecting it in layout edit mode and opening the settings popup with the {Settings} button on the toolbar.
 
-`r create_image_tag("03.Layout", "3.4-Single-Button-Settings")`
+`r create_image_tag("03.Software", "Single-Button-Settings")`
 
 Specific settings, such as background color and text color, size, or autotext option, either in Idle State or On Press can be assigned to each single button.
 
@@ -637,14 +534,14 @@ The settings can be saved as default, and it is always possible to come back to 
 
 The View's menu can be closed when the layout is Locked by tapping the Close Menu button.
 
-`r create_image_tag("03.Layout", "3.4-Close-Menu")`
+`r create_image_tag("03.Software", "Close-Menu")`
 
 The Open Menu button can be placed wherever on the view with a long click gesture and drag.
 
-`r create_image_tag("03.Layout", "3.4-Open-Menu")`
+`r create_image_tag("03.Software", "Open-Menu")`
 
 
-## Layouts {#Layouts-3.5}
+## Layouts {#Layouts}
 
 
 - After all pages and views are configured, the layout configuration can be saved into a **Layout** file by tapping the **{VIBE}** Menu and then the **{LAYOUT}** key.
@@ -653,13 +550,19 @@ The Open Menu button can be placed wherever on the view with a long click gestur
 
 - Layout files, containing all the graphical settings of pages and views, are loaded independently from the Show files, containing all the stored data. 
 
-👉 Layout Files are particularly useful when the same desk is managed by different operators; each user can load his own customized layout without losing any show data programmed by the previous user.
+- Layout files also include the interface configuration regarding the external windows.
+
+- If using different console models or systems with wings connected it may be useful to have an edited layout in order to match the controllers or to visualize on the screen what is not available on the panel. For example: the Vibe M and the Vibey have 10 slider sets while the Vibe LX has 15 of them, a Smart Screen may not be needed when using a Vibe M or LX because it is already available on the dedicated monitor, the Editor Hardkeys as well as most of the physical buttons may be very useful on the Vibe PC especially if there is not a Vibe PC Wing connected.
+
+👉 Layout files are particularly useful when the same desk is managed by different operators; each user can load his own customized layout without losing any show data programmed by the previous user.
+
+👉 Layout files may be slightly different depending on the kind of show that is going to be programmed, for example theatrical plays are very different from live concerts, so they may require customized views in order to get a more comfortable interface which allows visualizing just the contents and data that the user may need.
 
 ### Layout Settings
 
 Layout Settings can be accessed when layout is **Locked**, by tapping the Vibe Menu and then the {Setting} button on the toolbar, near the Lock and Pages buttons. These settings are applied as defaults to all the Pages and Views.
 
-`r create_image_tag("03.Layout", "3.5-Layout-Settings")`
+`r create_image_tag("03.Software", "Layout-Settings")`
 
 It is possible to change the Vibe Theme, to move the Toolbar on top or bottom position on all the pages, and to set Default View Settings for the Headers, the Frames and the Scrollbars. 
 

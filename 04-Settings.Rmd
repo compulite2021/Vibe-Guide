@@ -7,24 +7,23 @@ This chapter provides a description of Vibe's software settings that can be cust
 
 **Chapter index:**
 
--  [4.1 System Settings](#System-Settings-4.1)
--  [4.2 Network Settings](#Network-Settings-4.2)
--  [4.3 DMX Settings](#DMX-Settings-4.3)
--  [4.4 I/O Settings](#I-O-Settings-4.4)
--  [4.5 CITP Settings](#CITP-Settings-4.5)
+-  [4.1 System Settings](#System-Settings)
+-  [4.2 Network Settings](#Network-Settings)
+-  [4.3 DMX Settings](#DMX-Settings)
+-  [4.4 I/O Settings](#I-O-Settings)
+-  [4.5 CITP Settings](#CITP-Settings)
 
 
-## System Settings {#System-Settings-4.1}
+## System Settings {#System-Settings}
 
 
 System Settings popup is accessed by selecting {System Settings} from the Vibe Menu, by tapping the \[System Settings] single button key, or by tapping the {System Status} area in the system status view.
-
 
 ### Editing
 
 **Editing Properties**
 
-`r create_image_tag("04.Settings", "4.1-Editing")`
+`r create_image_tag("04.Settings", "Editing")`
 
 **Default Stage Value:**
 
@@ -34,24 +33,53 @@ System Settings popup is accessed by selecting {System Settings} from the Vibe M
     
 **Auto Param Grouping:**
 
--   When enabled, parameters are grouped as follows:
+- When enabled, parameters are grouped as follows:
 
-|  **Bank** |              **Parameters**              | **Grouping** |
-|:---------:|:----------------------------------------:|:------------:|
-| Intensity |                                          |  Not Grouped |
-|  Position |                 Pan, Tilt                |    Grouped   |
-|  Position |               Virtual X/Y/Z              |    Grouped   |
-|   Color   |               All Color Mix              |    Grouped   |
-|   Color   |               CMY Color Mix              |    Grouped   |
-|   Color   |  Color Wheels, Color Correction and misc |  Not Grouped |
-|    Beam   |                 Any Param                |  Not Grouped |
-|   Image   |                 Any Param                |  Not Grouped |
-|   Shape   | Blade Depth, Angle, Rotation - Per Blade |    Grouped   |
+    - Intensity1 - (ShutterDuration) + Shutter
+    
+    - Intensity2 (MediaServer) - File + Folder
+    
+    - Position1 - Pan + Tilt
+    
+    - Position2 - VX + VY + VZ
+    
+    - Position3 - VPan + VTilt
+    
+    - Color1 - Cyan + Magenta + Yellow + Red + Green + Blue + White + (Virtual Dimmer) + Color Temperature + Color Correction + Color Wheel + Color Wheel Spin + Color Wheel Function + Color Wheel Speed + Auxiliary Color 1-5
+    
+    - Color2 - Hue + Saturation + Intensity
+    
+    - Color3 - VHue + VSaturation + VIntensity + [ Color Temperature + Color Correction + Color Wheel + Color Wheel Spin + Color Wheel Function + Color Wheel Speed ]
+    
+    - Beam1 - Prism + Prism Spin + Prism Index + Prism Speed
+    
+    - Beam2 - Iris + Zoom + Focus
+    
+    - Beam3 (MediaServer) - Zoom + Zoom Select + Zoom X + Zoom Y
+    
+    - Shape1 - Blade Depth + Blade Angle + BladeA Depth + BladeB Depth + Blade Package Angle
 
+- Notes: 
+
+  - 1: When a parameter is in "( )" it means that other parameters don't activate it, but it activates the other parameters. For example, activating Virtual Dimmer will also activate the other color parameters in the group, but activating any of the color parameters in the group will not activate Virtual Dimmer.
+
+  - 2: When parameters are in "[]" it means that the other parameters in the group activate them, but they don't activate the group.
+
+  - 3: Color3 is Vhsi, Vhsi activates other color parameters but the other color parameters activate Color1 instead.
+
+  - 4: "(MediaServer)" at the group name means the parameters are used only for media servers.
+
+  - 5: Zoom is used for both Beam2 and Beam3, it means that clicking Zoom will activate both groups.
+
+  - 6: When there are parameters of the same type they will not group with each other and will only group with parameter of the same type index. For example if having 3 sets of Iris + Zoom + Focus, if the 2nd Focus is activated it will only mark the 2nd Iris and the 2nd Zoom.
 
 **Clear Editor After Store:**
 
 - After storing a cue, values remain in the editor until \[RESET] or \[VIBE] + \[RESET] is pressed.
+
+**Release Dimmer If Zero:**
+
+- Storing Dimmer parameters with their value at 0% will Release the value instead.
 
 **Automatically Assign Cues to PB:**
 
@@ -102,16 +130,20 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
 -   Default Stage Values = {Maintain Last Value}
     
 -   {Clear Editor After Store} = Off
+
+-   {Release Dimmer If Zero} = On
     
 -   {Automatically Assign Cues to PB} = Off
     
 -   Qlist Behavior = {Non-Tracking}
+
+The Editor Settings affected by the Apply Compulite Mode key in the system settings popup are marked with the Compulite sign, white if Off and green if On.
     
 **ON Value:**
 
 -   Virtual wheel sets the default editor value for the dimmer parameter when the \[ON] key is pressed.
     
--   <span style="color:Gray">{First ON Recalls Last} - Pressing \[ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.</span>
+-   {1st ON Recalls Last} - Pressing \[ON] the first time will copy the last dimmer value set for a fixture into the next selected fixture. Pressing again will set the dimmer value to the ON default.
     
 **Restore Defaults:**
 
@@ -123,53 +155,61 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
     
 -   {Apply to Defaults} -Updates system setting changes to **show specific defaults**.
 
-
 ### Timing
 
 **Timing Properties**
 
-`r create_image_tag("04.Settings", "4.1-Timing")`
+`r create_image_tag("04.Settings", "Timing")`
 
 **Default Back Time:**
 
 -   Default Time used when the \[Back] or [Hold Back] Buttons are pressed.
+
+-   The Back Time may be set to use the Cue Time as default by enabling the \[Use Cue Time] button.
     
 **Default Assert:**
 
 -   Default Time used when a controller's parameters are reasserted with the \[ASSERT] \[HERE] command.
+
+-   The Assert Time may be set to use the Cue Time as default by enabling the \[Use Cue Time] button.
     
 **Default GOTO Time:**
 
 -   Default Time used whith the GOTO command. GOTO time can be overridden using command \[GOTO] \[CUE] \[#] \[TIME] \[Value] \[ENTER]. 
+
+-   The GOTO Time may be set to use the Cue Time as default by enabling the \[Use Cue Time] button.
     
 **Default Release Time:**
 
 -   Default Fade out time for parameters being released from the editor using the \[RESET] or \[RELEASE] keys, or Controllers being released from the stage using the controller \[RELEASE] button.
 
-**Use Cue Time:**
-
--   The Back, Asset and GOTO times may be seet to use the Cue Time as default by enabling the \[Use Cue Time] button.
-    
 **Look Ahead:**
 
--   Set All Controllers On will enable the Look Ahead function for all controllers.
-    
--   Set All Controllers Off will disable the Look Ahead function for all controllers.
+-   Default Time used for the parameters' look ahead function to move them when the dimmer is off.
+
+-   The Look Ahead time may be set to use the Cue Time as default by enabling the \[Use Cue Time] button.
+
+-   **Set All Controllers On** will enable the Look Ahead function for all controllers.
     
 > Once all is set ON individual controllers may disable Look Ahead at any time. 
 
+-   **Set All Controllers Off** will disable the Look Ahead function for all controllers.
+    
 > Once all is set OFF individual controllers may enable Look Ahead at any time.
 
 **System Time:** 
 
 -   System Time (Editor Time) is applied to values being introduced into the editor and other miscellaneous features that do not otherwise have their own timing settings.
 
+**Library Time:** 
+
+-   Library Time (Editor Time referred to Libraries) is applied to values being introduced into the editor by libraries.
 
 ### Hardware
 
 **Hardware Properties**
 
-`r create_image_tag("04.Settings", "4.1-Hardware")`
+`r create_image_tag("04.Settings", "Hardware")`
 
 **Panel Backlight:**
 
@@ -181,12 +221,11 @@ Sets a number of default settings to emulate the traditional non-tracking Compul
 
 -   Opens relevant Windows setting screen to adjust the OS settings.
 
-
 ### Defaults
 
 -   **Defaults** are the customizable initial settings for most system objects.
 
-`r create_image_tag("04.Settings", "4.1-Defaults")`
+`r create_image_tag("04.Settings", "Defaults")`
 
 #### Controller Settings
 
@@ -204,7 +243,7 @@ Controller Settings are divided into:
 
 - Priority
 
-`r create_image_tag("04.Settings", "4.1-Default-Controller-Settings")`
+`r create_image_tag("04.Settings", "Default-Controller-Settings")`
 
 **Flash behavior:**
 
@@ -262,13 +301,13 @@ Controller Actions are divided into:
 
 - Other Controllers: 1 fader + 1 button
 
-`r create_image_tag("04.Settings", "4.1-Default-Controller-Actions")`
+`r create_image_tag("04.Settings", "Default-Controller-Actions")`
 
 -   When a Scene is configured as a **Group Submaster** it has a unique set of functions and button options.
 
 #### Snap Settings
 
-`r create_image_tag("04.Settings", "4.1-Default-Snap-Settings")`
+`r create_image_tag("04.Settings", "Default-Snap-Settings")`
 
 **Load Pages:**
 
@@ -288,7 +327,7 @@ Controller Actions are divided into:
     
 #### Qlist Settings
 
-`r create_image_tag("04.Settings", "4.1-Default-Qlist-Settings")`
+`r create_image_tag("04.Settings", "Default-Qlist-Settings")`
 
 **Qlist Mode:**
 
@@ -324,7 +363,7 @@ Controller Actions are divided into:
     
 **Loop GO Behavior:**
 
-`r create_image_tag("04.Settings", "4.1-LoopGO-Behaviour")`
+`r create_image_tag("04.Settings", "LoopGO-Behaviour")`
 
 **Release time:**
 
@@ -340,9 +379,9 @@ Controller Actions are divided into:
 
 - Resets Qlist properties to their last stored configuration.
 
-#### Chaser Settings
+#### Chase Settings
 
-`r create_image_tag("04.Settings", "4.1-Default-Chase-Settings")`
+`r create_image_tag("04.Settings", "Default-Chase-Settings")`
 
 **Chase pattern:**
 
@@ -374,7 +413,7 @@ Controller Actions are divided into:
 
 #### Cue Settings
 
-`r create_image_tag("04.Settings", "4.1-Default-Cue-Settings")`
+`r create_image_tag("04.Settings", "Default-Cue-Settings")`
 
 **Time:**
  
@@ -390,7 +429,7 @@ Controller Actions are divided into:
 
 #### Cue Store Options
 
-`r create_image_tag("04.Settings", "4.1-Default-Cue-Store-Options")`
+`r create_image_tag("04.Settings", "Default-Cue-Store-Options")`
 
 - **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
 
@@ -404,7 +443,7 @@ Controller Actions are divided into:
 
 #### Scene Settings
 
-`r create_image_tag("04.Settings", "4.1-Default-Scene-Settings")`
+`r create_image_tag("04.Settings", "Default-Scene-Settings")`
 
 **Time In** 
 
@@ -414,7 +453,7 @@ Controller Actions are divided into:
 	
 #### Scene Store Options
 
-`r create_image_tag("04.Settings", "4.1-Default-Scene-Store-Options")`
+`r create_image_tag("04.Settings", "Default-Scene-Store-Options")`
 
 - **{Red + Grey}** Editor Values in <mark style="color:white;background-color:red;" >100%</mark> <mark style="color:black;background-color:LightGray;" >90%</mark> will be stored. 
 
@@ -428,7 +467,7 @@ Controller Actions are divided into:
 
 #### Library Settings
 
-**Library settings are the same for all the following library types:**
+Library settings are the same for all the following library types:
 
 - Intensity
 
@@ -446,7 +485,7 @@ Controller Actions are divided into:
 
 ***Default Library Settings:**  
 
-`r create_image_tag("04.Settings", "4.1-Default-Library-Settings")`
+`r create_image_tag("04.Settings", "Default-Library-Settings")`
 
 - Library Type - Set the library behavior between Fixture Specific, Parameter Specific, Pattern, Device+Fixture, Device+Parameter, Device+Pattern.
 
@@ -456,7 +495,7 @@ Controller Actions are divided into:
 
 - Filters - Open the Library Filters popup.
 
-**Effect Library settings also include two additional options:** 
+Effect Library settings also include two additional options:
 
 - Include Base - If toggled on, the start points of parameters will be stored with the Effect making them "Absolute Effects".
 
@@ -468,7 +507,7 @@ Controller Actions are divided into:
 
 - The popup window is used to edit, for each bank, which parameters will be filtered by the library.
 
-`r create_image_tag("04.Settings", "4.1-Default-Library-Filters")`
+`r create_image_tag("04.Settings", "Default-Library-Filters")`
 
 - Select the library bank from the Library column, then tap the parameters in the **Available** box to add them to the **Filtered** box, so that the library will store them.
 
@@ -480,15 +519,31 @@ Controller Actions are divided into:
 
 - The popup window is used to create and edit the **Filters** that can be used on-the-fly when storing libraries, cues and scenes. 
 
-`r create_image_tag("04.Settings", "4.1-Filters-General")`
+`r create_image_tag("04.Settings", "Filters-General")`
 
 - The keys on the left side are used to create, delete or renumber Filters and to assign them a name and a specific softkey color.
 
 - The Available and Filtered parameters boxes are used to defin the parameters that the filter is going to be applied to.
 
+#### Grab Settings
+
+The GRAB button directly selects fixtures and parameters, based on the default Grab settings.
+
+The default Grab behavior may be set in System Settings.
+
+- **Default Grab Settings** define what is the common behavior of the GRAB key.
+
+- Grab settings may be changed temporarily during programming, or stored as new defaults, on the Grab Settings popup, opened by pressing SETTINGS after a GRAB command.
+
+`r create_image_tag("04.Settings", "Default-Grab-Settings")`
+
+- Grab Filters allow selecting fixtures from: the whole Stage, the Editor, the Master Playback.
+
+- Grab Conditions allow selecting either All Fixtures, Active fixtures (dimmer over 0%), Invisible fixtures (dimmer at 0%), Inactive fixtures (parameters not in use).
+
 ### System
 
-`r create_image_tag("04.Settings", "4.1-System")`
+`r create_image_tag("04.Settings", "System")`
 
 **Auto Save:**
 
@@ -514,7 +569,7 @@ Vibe is made up of four modules:
     
 **LPU and HAL Status** LEDs are on the status box:
 
-`r create_image_tag("04.Settings", "4.1-Status-Box")`
+`r create_image_tag("04.Settings", "Status-Box")`
 
 -   In the case of an unexpected halt, the toggled on modules will attempt a restart.
 
@@ -529,7 +584,7 @@ Vibe is made up of four modules:
 -   Lock screen is shown when system is locked or when Vibe is waiting for the Fixture Builder to be exit.
 
 
-## Network Settings {#Network-Settings-4.2}
+## Network Settings {#Network-Settings}
 
 
 Network Settings popup is accessed by selecting {Network Settings} from the Vibe Menu or by tapping the \[Network Settings] single button key.
@@ -542,31 +597,31 @@ Network Settings popup has the following tabs:
 
   - Users: manages the multiuser settings.
 
-For Network management, please refer to the **Network Chapter**.
+For Network management, please refer to the **Connect Chapter**.
 
 ### Main Network
 
-`r create_image_tag("04.Settings", "4.2-Main-Network")`
+`r create_image_tag("04.Settings", "Main-Network")`
 
 ### User Networks
 
-`r create_image_tag("04.Settings", "4.2-User-Networks")`
+`r create_image_tag("04.Settings", "User-Networks")`
 
 👉 This tab does not exist on the VibePC software version, it may be found only on Vibe consoles. 
 
 ### Users
 
-`r create_image_tag("04.Settings", "4.2-Users")`
+`r create_image_tag("04.Settings", "Users")`
 
 <span style="color:Gray"> **(Not implemented yet)** </span>
 
 
-## DMX Settings {#DMX-Settings-4.3}
+## DMX Settings {#DMX-Settings}
 
 
 DMX Settings popup is accessed by selecting {DMX Settings} from the Vibe Menu or by tapping the \[DMX Settings] single button key.
 
-`r create_image_tag("04.Settings", "4.3-DMX-Settings")`
+`r create_image_tag("04.Settings", "DMX-Settings")`
 
 DMX Settings popup has 4 tabs:
 
@@ -581,36 +636,44 @@ DMX Settings popup has 4 tabs:
 For DMX output management, physical or over network protocols, please refer to the **Patch Chapter**.
 
 
-## I/O Settings {#I-O-Settings-4.4}
+## I/O Settings {#I-O-Settings}
 
 
 I/O Settings popup is accessed by selecting {I/O Settings} from the Vibe Menu or by tapping the \[I/O Settings] single button key.
 
-`r create_image_tag("04.Settings", "4.4-IO-Settings")`
+`r create_image_tag("04.Settings", "IO-Settings")`
 
 I/O Settings popup has 4 tabs:
 
-  - MIDI
+  - MIDI - to configure the MIDI protocol
 
-  - Notes/Commands
+`r create_image_tag("04.Settings", "IO-Settings-MIDI")`
 
-  - OSC
+  - Notes/Commands - to patch MIDI Notes to vibe commands
 
-  - SMPTE
+`r create_image_tag("04.Settings", "IO-Settings-Notes")`
 
-For MIDI management and MIDI Notes configuration, please refer to the **Timeline Chapter**.
+  - OSC - to configure OSC ports and commands
 
-For OSC protocol management, please refer to the **Network Chapter**.
+`r create_image_tag("04.Settings", "IO-Settings-OSC")`
 
-For SMPTE protocol management, please refer to the **Timeline Chapter**.
+  - SMPTE - to enable SMPTE protocol
+
+`r create_image_tag("04.Settings", "IO-Settings-SMPTE")`
+  
+  - NDI - to enable NDI protocol
+
+`r create_image_tag("04.Settings", "IO-Settings-NDI")`
+
+For MIDI management, MIDI Notes configuration, OSC protocol, SMPTE and Timecode signals, NDI streaming protocol, please refer to the **Connect Chapter**.
 
 
-## CITP Settings {#CITP-Settings-4.5}
+## CITP Settings {#CITP-Settings}
 
 
 CITP Settings popup is accessed by selecting {CITP Settings} from the Vibe Menu or by tapping the \[CITP Settings] single button key.
 
-`r create_image_tag("04.Settings", "4.5-CITP-Settings")`
+`r create_image_tag("04.Settings", "CITP-Settings")`
 
 CITP Settings popup has 4 tabs:
 
@@ -622,5 +685,5 @@ CITP Settings popup has 4 tabs:
 
   - Consoles
 
-For CITP protocol management, please refer to the **Network Chapter**.
+For CITP protocol management, please refer to the **Connect Chapter**.
 

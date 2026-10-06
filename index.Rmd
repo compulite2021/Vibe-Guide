@@ -43,21 +43,21 @@ url: https://vibemanual.compulite.com/
 
 # Introduction
 
-👉 Start up the **Vibe** and get confident with this User Guide and with Compulite Support.
-
-This chapter discusses getting started with Compulite Vibe.
+👉 Start up **Compulite Vibe** to get confident with the Manual and with Support.
 
 **Chapter index:**
 
--  [1.1 Start Up](#Start-Up-1.1)
--  [1.2 Guide Conventions](#Guide-Conventions-1.2)
--  [1.3 Important Terms](#Important-Terms-1.3)
--  [1.4 Software Capacity](#Software-Capacity-1.4)
--  [1.5 Support](#Support-1.5)
--  [1.6 Releases](#Releases-1.6)
+-  [1.1 Start Up](#Start-Up)
+-  [1.2 Guide Conventions](#Guide-Conventions)
+-  [1.3 Important Terms](#Important-Terms)
+-  [1.4 Software Capacity](#Software-Capacity)
+-  [1.5 Support](#Support)
+-  [1.6 Releases](#Releases)
+
+`r create_image_tag("01.Introduction", "Vibe-Family")`
 
 
-## Start Up {#Start-Up-1.1}
+## Start Up {#Start-Up}
 
 
 **Power requirements:**
@@ -82,7 +82,7 @@ This chapter discusses getting started with Compulite Vibe.
 - Press the Power button located at the upper corner of the monitor panel.
 - The operating system will boot and the Vibe console software will automatically launch.
 
-`r create_image_tag("01.Introduction", "1.1-Open-Vibe")`
+`r create_image_tag("01.Introduction", "Start-Vibe")`
 
 A loading popup with a countdown asks if the user wants to open a New Show or the Current Show. 
 If no selection is made the Current Show is loaded.
@@ -98,7 +98,7 @@ If no selection is made the Current Show is loaded.
 - Press the Power button - The console will safely power off.
 
 
-## Guide Conventions {#Guide-Conventions-1.2}
+## Guide Conventions {#Guide-Conventions}
 
 
 - **\[XXXX]** - Physical key
@@ -128,7 +128,7 @@ If no selection is made the Current Show is loaded.
 - **\[Here]** - Short form for Press an appropriate destination key or button
 
 
-## Important Terms {#Important-Terms-1.3}
+## Important Terms {#Important-Terms}
 
 
 -   **DMX 512 Output/Input Port** - One of the 8 physical 5 pin XLR connectors on the back of the console. Although the gender is female, any connector may be configured as an input but must use a turnaround adapter.
@@ -224,7 +224,7 @@ If no selection is made the Current Show is loaded.
 >👉 Some keys have two functions when used with the \[VIBE] key (shift key). In this case, the key label on the bottom is the default, and the top label is the shifted function.
 
 
-## Software Capacity {#Software-Capacity-1.4}
+## Software Capacity {#Software-Capacity}
 
 
 -   256 DMX universes.
@@ -262,7 +262,8 @@ If no selection is made the Current Show is loaded.
 -   1000 Timelines.
     
     
-## Support {#Support-1.5}
+## Support {#Support}
+
 
 - Compulite Vibe Online Manual can be found at this link: 
   👉 [MANUAL](https://vibemanual.compulite.com)
@@ -277,8 +278,385 @@ If no selection is made the Current Show is loaded.
   👉 [FIXTURE SUPPORT](mailto:fixturesupport@compulite.com) 
 
 
-## Releases {#Releases-1.6}
+## Releases {#Releases}
 
+
+### R_8.0
+
+- Release Date: **05/10/2026**
+- DB version: **R_8.0**
+- Desktop version: **R_8.0**
+- LPU version: **R_8.0**
+- HAL version: **R_8.0**
+- Device Pack version: **DP_8.0**
+
+#### Version Highlights
+
+This software version brings new and updated features as listed below:
+
+**General**
+
+- **Performance improvement** Important background developments that improve the software elaboration speed.
+
+- **NDI Protocol support** The NDI video streaming protocol is supported.
+
+- **PSN Protocol support** The PSN (PosiStageNet) protocol is supported.
+
+- **Load Vector Show** The Load Vector Show supports new features, such as: Rename objects, Squeeze Gaps, Bank tabs in Library Tab, General + Palette + Time Library Order, Reset Number and Reset Name buttons, Clear Selection Button, User defined objects to not be converted.
+
+- **Default Layouts update** The default layouts have been updated to include the latest views and a more intuitive and effective workflow.
+
+**Patch**
+
+- **Device DataBase expansion** This Software Version includes a Device Database expansion which takes the total amount of available fixtures up to over 31,000 devices and more than 94,000 modes.
+
+- **Device Update popup re-design** The Device Update popup after load show has been re-designed.
+
+- **Trackers** Trackers View and implementation of trackers feature to autofollow coordinates from incoming protocols, such as PSN.
+
+- **Curve Step Count** Option to set Steps Count to curves, to tell how many beats are in the function.
+
+- **Topo icons background
+Topo icons can have a specific text and background color.
+
+**Program**
+
+- **Merge Show** New feature to merge the programming objects and data coming from different shows, based on the same patch information.
+
+- **Qlist Wizard** New feature to combine existing Cues and Scenes to build (or edit) a Qlist.
+
+- **Pixel Mapper** New feature to get media streaming inputs (like NDI) and transfer them to the fixtures’ color mixing system.
+
+- **BPM on Effects** Effect Time can be assigned in BPM (beats per minute) in both the basic and advanced effect engine. 
+
+- **Grab Default settings** Grab directly selects based on the default Grab settings. Grab popup has been re-designed.
+
+- **Live View horizontal slider** Optional horizontal slider per grid.
+
+- **Live View Menu** Live View Menu has new options to show Patched Fixtures only, Active in Master, Active in Selection. Added Library to Format options. Source Pb, Time, Library Format options are shown in additional rows.
+
+- **Live View Settings - Display** Added Device tabs: each device has its own column order and settings. Select / Deselect All buttons for the banked parameters. Presets: Number and Name are docked and all interactive icons come after name/address.
+
+- **Live View Settings - Sizing** Added new "Sizing" tab to set columns’ width. “Fit by …” options for quick sizing.
+
+- **Wheel picker Bank frame icons** The wheel picker shows the wheels of the selected Bank.
+
+- **Copy Cue options** More options on Copy Cue popup, such as “copy only hard values + cue properties”.
+
+- **Syntax SHIFT + #** SHIFT + # will go to the next bank page if that bank is already selected.
+
+**Playback**
+
+- **Playback Master settings** Playback Master may be assigned names, settings and PB Status.
+
+- **Backtrack options** The Backtrack Update feature has two options: Current Cue and Earliest Cue.
+
+- **Attach OSC Commands to Cue** OSC commands can be attached to Cues and triggered by them.
+
+- **Autosend OSC feedback reply** Receiving an OSC command can generate an automatic OSC string as reply.
+
+- **Assign Cue or Scene to controller** Syntax to assign Cue or Scene to a controller.
+
+- **Controller Actions Save and Restore Default** Added Save and Restore Default buttons in controller actions popup.
+
+- **Timeline Actions Copy-Paste** Added Copy and Paste keys to timeline actions.
+
+- **Timeline Undo+Redo** Added Undo/Redo features for Timeline editing.
+
+**Settings**
+
+- **On-Off Unicast on DMX over ethernet protocols** Toggle On-Off key for Unicast on all DMX over ethernet protocols (ArtNet, sACN, VCs).
+
+- **Auto Text Color by default** By default all views supporting text color will take the Auto Text color option ON.
+
+**Fixture Builder**
+
+- **Additive Color Mixing RGB / XYZ** Devices with additive color mixing systems may use Vibe color picker based on either the RGB or the XYZ coordinates.
+
+- **Advanced device search** The Advanced device search feature has been added to the Fixture Builder.
+
+- **Grab param from other fixtures** Fixture Builder allows grabbing params from other devices in the database.
+
+**Offline Tool**
+
+- **Panel Test LEDs color** Option to turn on all LEDs of a specific color in panel test.
+
+- **Panel Test from PC connection** Panel test can be used to test console panel from pc connection.
+
+#### Bug Fixes
+
+**Vibe Crash Fixes**
+
+- EffectsPopup - crash when deleting used custom curve in popup.
+- Vibe could crash on startup if DB is not ready fast enough.
+- LPU could get stuck when loading a show or a new show.
+- Small screen could crash on control bank if more than 1 small screen is in the layout.
+- LPU crash when entering cue with fixture with look ahead active on non-dimmer parameter in the cue and there is no dimmer parameters in any playback for said fixture.
+- LPU could crash if it received wrong cell data.
+- Smart wheel picker could crash if there were two devices with the same wheel name.
+- LiveView Multigrid sometimes crashes on startup and moves colums.
+- Crash when pressing CE CE after GRAB.
+- Patch popup could crash or get stuck if there's no active selection.
+- Timeline could crash when selecting events while time is running.
+- Potential crash after removing context view.
+- Potential LPU crash when deleting cues.
+- Potential GUI crash on closing.
+- Crash when selecting a view and going to all pages from the quick menu and then selecting a page.
+- Load layout could crash if layout had exam view.
+
+**Vibe Bug Fixes**
+
+- MVR convert considered each fixture as a separate device, making the popup confusing and the convert process longer than it has to be.
+- The manufacturer selection popup made the convert stuck if pressed "enter" instead of selecting device and pressing V.
+- Devices with 0 parameters are illegal in Vibe, so they will no longer be shown in the initial popup.
+- Fixtures with no patch or with illegal patch were not created. Now they are created unpatched.
+- Changing scene time doesn't always affect the Scene time correctly.
+- DMXSettingsPopup input-output toggle was clickable when hidden.
+- Added "Select Unconverted" button to the initial popup for an easier GDTF convert while keeping the auto-matched devices- Live Controller View refreshed cues when not needed.
+- Editor changes caused some views to refresh when not needed.
+- Smart screen encoders did not show the parameters indexes.
+- Smart screen virtual wheels showed wrong indexes on parameters.
+- Live view did not show parameters indexes when in sub device mode.
+- Grab All now also grabs libraries to the editor.
+- Added <> brackets when the time presented in the view is from the system instead of the cue.
+- Outputs will not be sent if there is no Data connection.
+- Some operations did not clear group selection and re-selecting the groups could cause wrong selections.
+- Grab and then Controller did not close the grab popup.
+- Grab did not consider the popup parameters if changed.
+- TracksheetView did not refresh while on other pages.
+- Cell Time resets effect selection+blocks.
+- LPU closing was taking a long time.
+- Fade time is not executed on the output after Cue Delete.
+- Live Controller View jumps to a wrong location when it tries to jump to the current cue when changing tabs or when changing playback.
+- Live Controller View with library, macro or submaster should be grayed out, the same way an empty controller is.
+- Pre Built effect did not apply if the fixture selection did not have a fixture selected with index 1.
+- Popup does not get winscroll events when the smart screen is focused.
+- The keyboard button on edit boxes sometimes does not disappear after first touch.
+- Controller views with sliders minimum size has been updated.
+- Performance improvement on assigning objects to controllers.
+- Grab performance improvement.
+- Editor changes were triggering DB updates and could slow down Vibe.
+- Empty scene was not shown in LiveControllerView, Exam, Report.
+- Live Controller View with incorrect Scene Number.
+- Live Controller switching between assigned object types does not refresh correctly.
+- Tracksheet is not up to date after changes.
+- Backtrack did not consider changes of vFunc.
+- LPU memory usage improvement.
+- Desktop memory usage improvement.
+- Option to set global Look Ahead time.
+- Option to release a dimmer parameter if the value is ZR.
+- LiveView fixture jump could fail + wrong jump location collapse.
+- Assigning playbacks during LPU startup can cause it to loop.
+- LivePlaybackView - Cue Sheet columns order not kept in some operations.
+- GM slider did not work on startup.
+- Load show fails if show version is below 5.23.
+- Wheel picker wheels are not changing if there is more than one smart screen view.
+- Snap load double activates macro.
+- Scroll jump to place if horizontal scroll is enabled.
+- When using the settings popup only to add/remove columns, it will sometimes not apply to the view.
+- LPU: Go_Release with release takes priority (release shouldn't take priority).
+- LPU: Off takes priority while it shouldn't.
+- LPU: Releasing a parameter while it is active on other playback did not fade correctly.
+- LPU: Activating playback while another parameter was active did not calculate the AllParams fader value.
+- LPU: Pressing Go on a parameter to a tracking value that has priority on a different playback, will go in CUT.
+- LPU: Adding cell time to a hard value causes its tracking cells to not work correctly unless it is released and relaunched.
+- LPU: Look ahead value did not consider the AllParams fader value correctly.
+- LPU: Releasing a cue did not update the Xfader value.
+- LPU: Look ahead was activated while another playback had dimmer active.
+- LPU: Having two playbacks on the same parameter, releasing the non-active one caused a jump to the active one.
+- LPU: Maintain last value + AllParams fader did not behave correctly.
+- LPU: Non tracking cell time does not work corectly if the Qlist repeats itself.
+- LPU: Pressing GO and then BACK while mark is running can cause the mark value to get stuck.
+- LPU: Look ahead did not consider master controller fader and scene submaster at zero.
+- LPU: DMX Output rate was not stable when operations are big on the LPU.
+- When entering cue with look ahead in cut (time cut, shift go, goto, snap with snap time cut), look ahead may be activated unnecessarily.
+- Look ahead was activated wrongly when there was an active dimmer effect running on another playback.
+- Live view settings "Apply to All" sometimes did not work.
+- In certain snaps, look ahead was not activated in the cue of the snap.
+- Snap did not put crossfader sliders in the correct position in case they were in the middle of fade.
+- Snap to cue with follow and look ahead failed follow.
+- Some Vector shows failed to load.
+- Clear undo data after fixture clone or device replace.
+- Paste objects made an error when the lowest number is higher than 255.
+- LiveView wheel icons did not work in some devices.
+- The update popup showed wrong cue numbers for some dot cues.
+- Some snaps activate look ahead to off fixtures that turn on in the snap.
+- Network popup is not usable after "Apply" is pressed.
+- Shape bank shows blade picker even if the device does not have blade commands.
+- When the show has devices with parameters of the same type and type index but different layer index, the parameter is pushed to the end of the live view.
+- Error icon on live view.
+- OSC UDP was always sending data from port 15000. Now it will send from the same port as the destination port (that was set in the settings).
+- External window page change and focus window change page type.
+- While the page type of an external window changes to/from PatchPage, it will not update the toolbar accordingly.
+- When a window is focused, it will change the page type of the toolbar to the current page type of the focused window.
+- WinScroll functionality did not work on windows other than the main one.
+- Shape Picker angles did not work for some devices.
+- Long click on empty parameter popped the parameter menu while it should not.
+- The timeline handle was not smooth enough on movement.
+- OSC Triggers could sometimes not work.
+- OSC UDP can now send to more than one IP.
+- Load Show, Update Device Popup has an error when changing mode number.
+- Show channels per device mode.
+- Topo Actions History does not consider the Add Elements operation.
+- Trackball doesn't control vXYZ params.
+- Views' Menus should be more similar to each other.
+- Load Vector Show: Vector reports illegal characters and location popup.
+- Load Vector Show: There's no Save advice.
+- Load Vector Show: Exit key has no safe advice popup.
+- Load Vector Show: Range selection.
+- Group selection after Store is not restored.
+- Master Pb was incorrectly allowed to be on AB Slider.
+- Status Box doesn't update Qlist and Cue in real time.
+- Smart Screen Playback mode should show Global sliders.
+- The Topo menu doesn't show Custom Sets.
+- Fan Blocks virtual sliders not working with hardkeys.
+- Patch popup issues on the 2nd screen.
+- Encoder after library doesn't select param a second time.
+- Delete Custom OSC Command.
+- Load Vector Show: General and Palette Library.
+- Load Vector Show: Deleted Objects.
+- Load Vector Show: Report did not work for some shows.
+- Load Vector Show: Select Qlist Box.
+- Load Vector Show: Manufacturer Search.
+- Load Vector Show: Panel Keys Commands.
+- GRP M and SUB M labels on SK.
+- Change key names in the OSC tab.
+- Topo editing label should open the label edit popup.
+- Groupmaster with Flash doesn't blink + blink when flash.
+- Live View Settings: Dock toggle key
+- Live View: Address button led state refresh.
+- Live View: New preset Virtual and change to existing presets.
+- Live View: Make the default order be the same as Standard preset (including the locked columns).
+- Live View: The preset order ignored "prio" column, making the preset order and the default order be different in column order as well column visibility.
+- Live View: Icon buttons did not refresh their enabled/grayed state when switching between devices.
+- Live View: In some situations, when a new device was added to the show, the settings popup showed the device as "no columns", making it impossible to edit.
+- Live View: Moved "fit by" from the view to the settings popup + added option "small icons" to the popup.
+- Live View: Changing columns in Live View Settings resets the Fit By of the LiveView to "default".
+- Live View: Adding a new device type makes the new grid have the default fit instead of the current fit.
+- Live View Settings: Bank title and Frames.
+- Live View Settings: Apply to All
+- From Cue only to Tracking does not update new stored params.
+- From Block Cue to Skip Cue to Block Cue again forgets about tracking values.
+- Back/Release from Force Black Cue made a wrong fade.
+- From Force Black to Block Cue makes the param jump and wrong fade.
+- Store value on a Cue Only Cue might cause wrong values to be stored in the next cue.
+- When first creating a fixture some of the vFunc operations could not work until Vibe restart or load show.
+- Live Controller Cue Exam and Preview were slow.
+- Assigning cue on a released controller was not behaving as expected.
+- Fixture Clone + Device Replace could fail.
+- Device update after load show did not work well if param's resolution was changed.
+- Device update after load show did not update its live view settings correctly.
+- Device update after load show did not clear the blade commands correctly.
+- Deleting fixtures did not remove them from submasters while on PB.
+- Aux keys 201 and 207 on the wing do not lit correctly on first connection.
+- The physical Grand Master is disabled.
+- Load Vector Show: Fail when cue number was a dot number.
+- Load Vector Show: Error when a fixture was in several topos.
+- Load Vector Show: Some tracked cells became hard cells with the same value.
+- Cue Settings performance for small actions like Link and Loop.
+- Long click on the tab view while the page is unlocked, opens the page edit menu.
+- Pasting objects did not check if it can go over 999.
+- Group # Controller with existing selection creates a scene with invalid number and assigns it to the controller.
+- Live View: wheel interactive icon was shown in non-value rows.
+- Sometimes cue only did not act correctly on Store/Update.
+- Paste delta did not work.
+- Cue failed to unlink or unloop.
+- Shift Reset after copy editor values / delta was slow.
+- Parameter Steps of different subdevices of the same device will make different tabs.
+- Live View layout data now stores only settings about existing devices.
+- Smart Screens wheels can disappear after using the small effect screen when there is more than one Smart Views in the layout.
+- Undo for delete fixtures did not work well.
+- When cue time is CUT and follow time is equal to the param times then auto follow gets stuck.
+- Tracked effects movement is smoother.
+- Auto follow with tracked effect is starting the effect to fade again instead of continuing from the same point with the same size.
+- Auto follow and delay out on the next cue with tracked effects make the effect get stuck.
+- Auto follow tracked effect with wait time makes a jump in the effect.
+- Delete Qlist when a cue from another Qlist was linking to one of the cues in this Qlist did not work.
+- Look Ahead stopped working in some cases.
+- Look Ahead sometimes applied when it shouldn't.
+- Floating menus could get stuck if more than one touch has touched the screen.
+- Overwriting fixtures while creating new fixtures failed to delete more than one fixture.
+- Clear SK Color removed Mixed Colors and wheel icons from the library.
+- Library SK did not get wheel icons if the parameter type was different than expected.
+- Some exam operations caused errors.
+- Wheel Picker does not switch modes correctly for some fixtures.
+- Store+ may incorrectly activate look ahead.
+- Crossfade with cell time causes the value to jump back at the end of the crossfade.
+- Live time on some views when cue is fading was incorrect.
+- Assignment of snap when fader behavior was XFade and physical fader was in the middle caused a wrong direction for this slider.
+- Updating a library that holds a physical parameter with a virtual parameter of the same fixture or vice versa will make the cues referencing the library to have both physical and virtual parameters.
+- The Update key sometimes made DB get stuck and delayed and caused potential errors.
+- Topo did not save if only changed position with Tools and then switched topo.
+- Small Screen FX time fader didn't work on start/end mode.
+- Examining macro after fixture does not remove the tabs of the exam.
+- Flash on a released controller that has look ahead active made the values fade instead of jump.
+- Force Black from a cue with dimmer and all other parameters as tracked to a cue with empty dimmer cell did not activate force black as needed.
+- Cell time did not apply on library cells.
+- Manual AB movement caused a jump at the end of the look ahead fade.
+- Fixture vFunc restructured.
+- Effect of look ahead cell runs faster.
+- Effect of look ahead cell sync time with hard cell.
+- Tracked timed cell wrong value end of xfade slider.
+- Touch fader button double clicks if used while holding another.
+- Tracked effect acted as fade-in when moving x-fader to start the next cue.
+- Cue Exam and Preview will now consider if the Qlist/Controller is set to Cue Only mode.
+- Releasing a value from an active cue and the controller is in non-tracking mode will show tracked values after the release.
+- Releasing a value from an active cue when there is no value before and the maintain last option is on, will not maintain last and jump to empty value.
+- Fixture Cues exam showed tracked data for Qlists that are non-tracking.
+- Non tracking Qlist on playback should not look ahead to "tracked" cells.
+- Non tracking Qlist did not show correct colors in live and in exam after empty cell.
+- Cell tracked colors did not consider skip cues and cells.
+- Release of skip cell did not turn it to track.
+- Release cells from cue only should act like update cells.
+- Changing cue to skip type should make its tracked cells hard.
+- Changing cue to skip or block should make its tracked cells hard.
+- Block cue cells should always be new.
+- Updating reference libraries did not update the selection index correctly.
+- Store Scene to Controller sometimes did not work and showed a message about numbering above 1000.
+- Scenes could be created with numbers over the limit.
+- Tracksheet view puts 0 instead of release if the cell was focused.
+- Macro name did not show on controllers live.
+- Changing effect time causes the effect to jump and not go smoothly to the next value.
+- Master/Backup connection unstable on big shows.
+- Master/Backup Status texts to use B instead of S.
+- The internal network adapter should not be shown in network settings popup.
+- Color Library SK could lose its background if it had many fixtures saved in the library.
+- Universe counter on the universe list header is not updated correctly.
+- Effect Blocks By Groups button did not respond to clicks.
+- Effect Blocks By Groups button did not get the correct status.
+- Effect Blocks By Groups button did not turn off when changing "Blocks Of".
+- Effects popup did not show the functions new, edit, delete and favorites.
+- Go+Jump Parameters option doesn’t work for playbacks after load show.
+- GRAB did not consider non-tracking mode in playbacks.
+- Exam View Popup scrollbar for the menu on the right.
+- Live View: manual resize of columns changed back after settings popup reorder.
+- Exam scroll can make issues.
+- LPU could show bad values in XYZ when Pan/Tilt is active.
+- LPU could show XYZ out of bounds when the fixtures are positioned out of the stage.
+- Device Replacement + Fixture Clone with fixtures stored out of the stage did not create position properly.
+- Device Replacement + Fixture Clone with smart position could fail.
+- Cue Settings Popup: times can reset after apply.
+- Update tracked cues with library cells could wrongly take the tracked time.
+- HSV to RGB could take a long time if H value is out of range.
+- Partial vFunc values calculation could get wrong values or freeze the LPU.
+- Undo of some playback operations was not done correctly.
+- If there are similar hard effects in two consecutive cues they should continue to run and not re-fade.
+
+**Fixture Builder Bug Fixes**
+
+- Changing color data of a color parameter in a show device did not update the color of the existing fixtures in the show.
+- Change of color parameters in the show's fixture builder did not update the existing fixtures correctly.
+- Performance improved for store changes.
+- Device scroll did not reset when changing manufacturer.
+- Importing devices shows progress.
+- Fixture builder could crash on exit.
+- Changing Highlight/Lowlight/Home in Fixture Builder did not affect existing fixtures in the show.
+- Selecting params with “shift” in the fixture builder can crash.
+
+**Offline Tool Bug Fixes**
+
+- Added deadlock log to error log.
+- Software update did not clear older files.
 
 ### R_7.0
 
@@ -291,7 +669,7 @@ If no selection is made the Current Show is loaded.
 
 #### Version Highlights
 
-Version R_7.0 brings new and updated features as listed below:
+This software version brings new and updated features as listed below:
 
 **General**
 
@@ -366,23 +744,25 @@ Version R_7.0 brings new and updated features as listed below:
 #### Bug Fixes
 
 **Vibe Crash Fixes**
-- HAL could crash if a panel is connecting more than once
-- Crash when having more than 1 small screen and changing to FX screen
-- Crash when removing DMX Output view and then changing dmx settings
-- LPU could get stuck if going back twice to empty (empty cue) in VColor values
-- Crash when using LIBRARY 1 #
-- Qlist Tracksheet stuck/crash/performance
-- Exam could crash when pressing on tabs
-- Crash when trying to create shutter-beam-blade command while device has only 1 parameter
-- Potential crashes of LPU during undo and other actions
-- Crash when selecting fixtures on an old layout that had a Vibe image that does not exists anymore
-- Crash with move controller syntax when combining numeric and controller selection
-- Grab, Controller, Fixture Selection, Enter can crash the system
-- Potential HAL crash when there is more than 1 console on the network
-- Switching from selection to spinning while throwing wheel can cause a crash
-- Switching modes fast from selection to spinning can cause the wheel to remain instead of the intended fader, and if moved it will crash
+
+- HAL could crash if a panel is connecting more than once.
+- Crash when having more than 1 small screen and changing to FX screen.
+- Crash when removing DMX Output view and then changing dmx settings.
+- LPU could get stuck if going back twice to empty (empty cue) in VColor values.
+- Crash when using LIBRARY 1 #.
+- Qlist Tracksheet stuck/crash/performance.
+- Exam could crash when pressing on tabs.
+- Crash when trying to create shutter-beam-blade command while device has only 1 parameter.
+- Potential crashes of LPU during undo and other actions.
+- Crash when selecting fixtures on an old layout that had a Vibe image that does not exists anymore.
+- Crash with move controller syntax when combining numeric and controller selection.
+- Grab, Controller, Fixture Selection, Enter can crash the system.
+- Potential HAL crash when there is more than 1 console on the network.
+- Switching from selection to spinning while throwing wheel can cause a crash.
+- Switching modes fast from selection to spinning can cause the wheel to remain instead of the intended fader, and if moved it will crash.
 
 **Vibe Bug Fixes**
+
 Performance
 - Reduced memory usage
 - General system speed
@@ -497,6 +877,7 @@ Vector convert
 - Topo + Matrix fix when multiple matrix-topo exist
 
 **Fixture Builder Bug Fixes**
+
 - Devices stored from FixtureBuilder will have broken Intensity visualization in Live View and Topo View
 - Update bladeCommands param bank param properties
 - BladeCmd - Create Other Blades can be created with bad data
@@ -505,9 +886,9 @@ Vector convert
 - WheelCommands delete-clone may affect wrong cmd
 
 **Offline Tool Bug Fixes**
+
 - Software patch could not run more than 1 sql script if registry was not set right
 - SW Update did not work correctly
-
 
 ### R_6.0
 
@@ -518,10 +899,9 @@ Vector convert
 - HAL version: **R_6.0**
 - Device Pack version: **DP_6.0**
 
-
 #### Version Highlights
 
-Version R_6.0 brings new and updated features as listed below:
+This software version new and updated features as listed below:
 
 **General**
 
@@ -611,10 +991,10 @@ Version R_6.0 brings new and updated features as listed below:
 
 - **Vibe PC Wing Panel Test** Offline tool's Panel test is supported for the Vibe PC Wing if it is connected to Vibe PC.
 
-
 #### Bug Fixes
 
 **Vibe Crash Fixes**
+
 - Potential crash after deleting Status Box View
 - Potential crash caused by A/B fader
 - Possible crash when working after closing Topo View
@@ -627,6 +1007,7 @@ Version R_6.0 brings new and updated features as listed below:
 - LPU crash after multiple undos
 
 **Vibe Bug Fixes**
+
 Performance improvements
 - Store/Update/Delete cues/libs operations
 - Fixture selection
@@ -776,14 +1157,15 @@ Topo
 - Duplicated Topo loses background image
 
 **Fixture Builder Bug Fixes**
+
 - Storing in Edit mode page could crash
 - Crash when deleting parameter
 
 **Offline Tool Bug Fixes**
+
 - Panel Test Vibey faders acting wrong if moved from the virtual
 - Firmware update could get stuck
 - Initialize DBs could cause the application to not load correctly
-
 
 ### R_5.0
 
@@ -794,10 +1176,9 @@ Topo
 - HAL version: **R_5.0** 
 - Device Pack version: **DP_5.0**
 
-
 #### Version Highlights
 
-Version R_5.0 brings new and updated features as listed below:
+This software version brings new and updated features as listed below:
 
 **General**
 
@@ -875,10 +1256,10 @@ Version R_5.0 brings new and updated features as listed below:
 
 - **Test Fader Movement** In the Offline Tool there's an option to test fader movement.
 
-
 #### Bug Fixes
 
 **Vibe Crash Fixes**
+
 - Fixed potential crash on scrollable items when loading layout.
 - Fixed potential crash when a Single button on a layout was used afterwards on a new layout.
 - Fixed Vibe stuck because of SQL resources.
@@ -909,6 +1290,7 @@ Version R_5.0 brings new and updated features as listed below:
 - All Pages could crash after duplicate, lock, unlock.
 
 **Vibe Bug Fixes**
+
 - Performance issues on Store/Update/Delete of cues.
 - Cue Time popup did not set cue time for cues with sub number.
 - Release cell time was writing 'Cut' instead of nothing.
@@ -1065,6 +1447,7 @@ Version R_5.0 brings new and updated features as listed below:
 - Changing IP on Vibe makes sure that the subnet is 255.0.0.0.
 
 **Fixture Builder Bug Fixes**
+
 - Fixed a bug when deleting a parameter that could cause wrong link in commands and even crash.
 - Fixed Add button in wheel command.
 - Fixed grayed out functions in beam command.
@@ -1089,6 +1472,7 @@ Version R_5.0 brings new and updated features as listed below:
 - Exit with pressing Store did not store.
 
 **Offline Tool Bug Fixes**
+
 - The software update could fail if something was running in background.
 - In the Offline Tool the patch version popup was wrong.
 - Restoring the console DB on VibePC made Vibe crash on boot.
@@ -1096,7 +1480,6 @@ Version R_5.0 brings new and updated features as listed below:
 - Firmware Update didn't work if Vibe wasn't installed.
 - Added loading popup for device pack update.
 - The software update loaded the wrong default layout.
-
 
 ### R_4.0
 
@@ -1107,10 +1490,9 @@ Version R_5.0 brings new and updated features as listed below:
 - HAL version: **R_4.0** 
 - Device Pack version: **DP_4.0**
 
-
 #### Version Highlights
 
-Version R_4.0 brings new and updated features as listed below:
+This software version brings new and updated features as listed below:
 
 **Settings**
 
@@ -1276,10 +1658,10 @@ Version R_4.0 brings new and updated features as listed below:
 
 - **SMPTE Test Raw Data** - Added raw data to SMPTE window on offline tool smpte test.
 
-
 #### Bug Fixes
 
 **Vibe Crash Fixes**
+
 - Crash on CITP when getting empty data
 - Load layout is stuck if the layout is too old
 - Load layout is stuck if loading a layout with less windows that are currently on
@@ -1289,6 +1671,7 @@ Version R_4.0 brings new and updated features as listed below:
 - Crash on HAL when pressing multiple times on Swap Display
 
 **Vibe Bug Fixes**
+
 - Small Screen wheels could disappear in some sequences.
 - Big performance improvements.
 - Store/Update/Delete cue bugs with all options (tracking, cue only and more)
@@ -1412,6 +1795,7 @@ Vector Show conversion
 - Could make a mix of parameter type indexes if certain types were in the device
 
 **Fixture Builder Bug Fixes**
+
 - When there are collisions in steps values it does not popup a message
 - Unsupported notes are now disabled
 - Add a step after renaming a step will not rename the step name.
@@ -1426,7 +1810,6 @@ Vector Show conversion
 - Changing home/empty/highlight/lowlight values in fixture builder did not fix it in the existing fixtures
 - Fix crash on store from EditDeviceTab
 
-
 ### R_3.0
 
 - Release Date: **06/09/2020** 
@@ -1436,11 +1819,9 @@ Vector Show conversion
 - HAL version: **R_3.0** 
 - Device Pack version: **DP_3.0**
 
-
 #### Version Highlights
 
-Version R_3.0 brings new and updated features as listed below:
-
+This software version brings new and updated features as listed below:
 
 **Settings**
 
@@ -1520,10 +1901,10 @@ Version R_3.0 brings new and updated features as listed below:
 
 - **Update Firmware Options**- There are new possibilities to update the console firmware
 
-
 #### Bug Fixes
 
 **Vibe Crash Fixes**
+
 - Fixed a crash when removing a point from the Function editor
 - Fixed a crash when searching Exam View and pressing SHIFT+RESET
 - Fixed a potential crash on startup
@@ -1538,6 +1919,7 @@ Version R_3.0 brings new and updated features as listed below:
 - Loading a big show could cause the system to get stuck
 
 **Vibe Bug Fixes**
+
 - Rem Dim could cause errors on DB
 - Grab Active Master PB could cause errors on DB
 - Live View - When parameter jumping is on its should works all the cases
@@ -1608,6 +1990,7 @@ Version R_3.0 brings new and updated features as listed below:
 - Edit control - caret remains visible after focusing out
 
 **Fixture Builder Bug Fixes**
+
 - Errors on edit factory devices with overlapping steps 
 - Editing a show device could cause it to be cloned infinite times 
 - Parameter Step tab did not update the navigation buttons 

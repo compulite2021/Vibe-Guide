@@ -7,22 +7,22 @@ This chapter provides an overview of Vibe's hardware components.
 
 **Chapter index:**
 
--  [2.1 Console](#Console-2.1)
--  [2.2 Wings](#Wings-2.2)
--  [2.3 Connectors](#Connectors-2.3)
--  [2.4 Editor HardKeys](#Editor-HardKeys-2.4)
--  [2.5 Master Controls](#Master-Controls-2.5)
--  [2.6 Playback Controls](#Playback-Controls-2.6)
--  [2.7 Controller Keys](#Controller-Keys-2.7)
--  [2.8 Page Keys](#Page-Keys-2.8)
+-  [2.1 Console](#Console)
+-  [2.2 Wings](#Wings)
+-  [2.3 Connectors](#Connectors)
+-  [2.4 Editor Controls](#Editor-Controls)
+-  [2.5 Master Controls](#Master-Controls)
+-  [2.6 Playback Controls](#Playback-Controls)
+-  [2.7 Playback Keys](#Playback-Keys)
+-  [2.8 Page Keys](#Page-Keys)
 
 
-## Console {#Console-2.1}
+## Console {#Console}
 
 
 The Vibe Family has the following console models:
 
- • **\[Vibe]**: the main model designed for wide entertainment productions.
+ • **\[Vibe LX]**: the main model designed for wide entertainment productions.
  
  • **\[Vibe M]**: the middle range model designed for theater and television studios.
  
@@ -33,7 +33,7 @@ The consoles share the same programming features but they have a different hardw
 
 
 <p align=center>**VIBE**</p>
-`r create_image_tag("02.Hardware", "2.1-Vibe-front")`
+`r create_image_tag("02.Hardware", "Vibe-front")`
 
 Built-in 21.5” plus 11.6” Full HD multi-touch screens
 
@@ -55,7 +55,7 @@ Weight: 26.7kg (60.0lb)
 
 
 <p align=center>**VIBE M**</p>
-`r create_image_tag("02.Hardware", "2.1-VibeM-front")`
+`r create_image_tag("02.Hardware", "VibeM-front")`
 
 Built-in 15.6” plus 11.6” Full HD multi-touch screens
 
@@ -75,7 +75,7 @@ Weight: 22.8kg (50.2lb)
 
 
 <p align=center>**VIBEY**</p>
-`r create_image_tag("02.Hardware", "2.1-Vibey-front")`
+`r create_image_tag("02.Hardware", "Vibey-front")`
 
 
 Built-in 21.5” Full HD multi-touch screen
@@ -101,7 +101,7 @@ All the consoles run the same Vibe software, that is also available in a free de
 
 
 <p align=center>**VIBE PC**</p>
-`r create_image_tag("02.Hardware", "2.1-VibePC")`
+`r create_image_tag("02.Hardware", "VibePC")`
 
 Vibe PC is a useful tool for console training, feature and fixture test, remote programming and live lighting control as well. It may be used to communicate with a 3D visualizer and to pre-program show files, that can be easily moved between any Vibe system.
 
@@ -112,7 +112,7 @@ The free unlicensed Vibe PC software has the following limitations:
 - networking connection to other Vibe systems is not available.
 
 
-## Wings {#Wings-2.2}
+## Wings {#Wings}
 
 
 The Vibe Family has the following wing models:
@@ -125,7 +125,7 @@ Vibe PC Wing can be used in network with any Vibe Console running as a control e
 
  
 <p align=center>**VIBE PC WING**</p>
-`r create_image_tag("02.Hardware", "2.2-Vibe-PC-Wing-front")`
+`r create_image_tag("02.Hardware", "Vibe-PC-Wing-front")`
 
 Width: 654mm (25.75")
 
@@ -142,14 +142,14 @@ Weight: 6.5Kg (14.33lb)
 20 individually paging multi-use controller buttons
  
  
-## Connectors {#Connectors-2.3}
+## Connectors {#Connectors}
 
 
 The Vibe Consoles and Wings have the following In/Out connectors:
 
 
 <p align=center>**VIBE**</p>
-`r create_image_tag("02.Hardware", "2.3-Vibe-rear")`
+`r create_image_tag("02.Hardware", "Vibe-rear")`
 
 8 Physical DMX 512 input/output ports (RDM supported).
 
@@ -185,7 +185,7 @@ Power Button.
 
 
 <p align=center>**VIBE M**</p>
-`r create_image_tag("02.Hardware", "2.3-VibeM-rear")`
+`r create_image_tag("02.Hardware", "VibeM-rear")`
 
 8 Physical DMX 512 input/output ports (RDM supported).
 
@@ -221,7 +221,7 @@ Power Button.
 
 
 <p align=center>**VIBEY**</p>
-`r create_image_tag("02.Hardware", "2.3-Vibey-rear")`
+`r create_image_tag("02.Hardware", "Vibey-rear")`
 
 4 Physical DMX 512 input/output ports (RDM supported).
 
@@ -265,7 +265,7 @@ Protected Power Switch.
 
 
 <p align=center>**VIBE PC WING**</p>
-`r create_image_tag("02.Hardware", "2.3-Vibe-PC-Wing-rear")`
+`r create_image_tag("02.Hardware", "Vibe-PC-Wing-rear")`
 
 4 Physical DMX 512 input/output ports (RDM supported).
 
@@ -284,64 +284,63 @@ PowerCon AC Input.
 Power Switch.
 
 
-## Editor HardKeys {#Editor-HardKeys-2.4}
+## Editor Controls {#Editor-Controls}
 
 
 Editor Controls are used to program and edit parameter values for all fixtures as well as to create and edit objects such as cues and libraries.
- 
-<p align=center>**Editor**</p>
-`r create_image_tag("02.Hardware", "2.4-Editor", "500")`
 
- • 1 Dedicated dimmer wheel
+The Editor Controls are all on the Vieb Panel and they include: 
  
- • 4 Main encoder push wheels
- 
- • 4 Extra encoder push wheels
- 
- • 1 Trackball
- 
- • **\[Next] / \[Prev]** Keys
- 
- • XYZ lock keys
- 
- • **\[Res]** Wheel resolution key
- 
- • Numeric Key Pad 
- 
- • **\[Vibe]** Key (Shift button)
- 
- • Editor Command keys
- 
- • Object Select keys
+- **Editor Harkeys**: Editor Command keys, Object Select keys, Numeric keypad, **\[Vibe]** (Shift) key.
 
+`r create_image_tag("02.Hardware", "Editor", "500")`
 
-## Master Controls {#Master-Controls-2.5}
+- 1 **Dimmer wheel** (vertical wheel on VibeLX and VibeM, push wheel on Vibey)
+ 
+- 4 **Main Encoder** push wheels
+
+`r create_image_tag("02.Hardware", "Encoders")`
+
+- 4 **Extra Wheels** push knobs
+
+`r create_image_tag("02.Hardware", "Extra-Wheels", "200")`
+ 
+- 1 **Trackball** back lighted
+ 
+- **\[Next] / \[Prev]** **\XYZ Lock** keys
+ 
+- **\[Res]** resolution key
+
+`r create_image_tag("02.Hardware", "Trackball", "200")`
+ 
+
+## Master Controls {#Master-Controls}
 
 
 Master Controls are used to trigger the Controller assigned as the Master and to limit the intensity of all the fixtures.
  
 <p align=center>**Grand Master and BlackOut**</p>
-`r create_image_tag("02.Hardware", "2.5-GM+BO", "500")`
+`r create_image_tag("02.Hardware", "GM+BO", "500")`
 
  • **\[Grand Master]** Slider.
  
  • **\[BO]** Blackout key.
 
 <p align=center>**A/B and Master Keys**</p>
-`r create_image_tag("02.Hardware", "2.5-Master+AB", "500")`
+`r create_image_tag("02.Hardware", "Master+AB", "500")`
 
  • **\[GO/BACK/HOLD]** keys for executing cues on the Master Controller.
  
  • **A/B CrossFader** non-motorized pair of sliders for executing Qlists and Cues manually.
 
 
-## Playback Controls {#Playback-Controls-2.6}
+## Playback Controls {#Playback-Controls}
 
 
 Playback Controls are used to trigger the Objects assigned to the controller.
 
 <p align=center>**Playback**</p>
-`r create_image_tag("02.Hardware", "2.6-Playback", "500")`
+`r create_image_tag("02.Hardware", "Playback", "500")`
 
  • Individually paging **Slider Set Controllers** with motorized fader and three buttons for for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.
  
@@ -352,7 +351,7 @@ Playback Controls are used to trigger the Objects assigned to the controller.
  • Non-paging **Global Slider Controllers** with non-motorized fader and single button for the execution and control of Qlists, Cues, Scenes, Group Masters (Submasters), Rate Masters, Flash Masters.
 
 
-## Controller Keys {#Controller-Keys-2.7}
+## Playback Keys {#Playback-Keys}
 
 
 Controller Keys are used to select and trigger the controllers.
@@ -361,7 +360,7 @@ These keys are divided into: Operation Keys. Command Keys, Mode Keys.
 **\[Operation Keys]** manage the assignments to the controllers.
  
 <p align=center>**Operation Keys**</p>
-`r create_image_tag("02.Hardware", "2.7-Operation-Keys", "500")`
+`r create_image_tag("02.Hardware", "Operation-Keys", "500")`
 
  • **\[SELECT]** key to assign the Master Controller.
  
@@ -378,7 +377,7 @@ These keys are divided into: Operation Keys. Command Keys, Mode Keys.
 **\[Command Keys]** provide additional functions to the controllers.
  
 <p align=center>**Command Keys**</p>
-`r create_image_tag("02.Hardware", "2.7-Command-Keys", "500")`
+`r create_image_tag("02.Hardware", "Command-Keys", "500")`
 
  • **\[FLASH]** makes the target controller flash.
  
@@ -411,7 +410,7 @@ These keys are divided into: Operation Keys. Command Keys, Mode Keys.
 **\[Mode Keys]** manage the function operated by the controllers.
  
 <p align=center>**Mode Keys**</p>
-`r create_image_tag("02.Hardware", "2.7-Mode-Keys", "500")`
+`r create_image_tag("02.Hardware", "Mode-Keys", "500")`
 
  • **\[FADERS]** Controllers will trigger the assigned objects.
  
@@ -424,13 +423,13 @@ These keys are divided into: Operation Keys. Command Keys, Mode Keys.
  • **\[PROTECT]** Key to lock the desk with a password.
  
 
-## Page Keys {#Page-Keys-2.8}
+## Page Keys {#Page-Keys}
 
 
 Page Keys are used to quickly move between the pages.
 
 <p align=center>**Page Keys**</p>
-`r create_image_tag("02.Hardware", "2.8-Page-Keys", "200")`
+`r create_image_tag("02.Hardware", "Page-Keys", "200")`
 
   • **\[VIEW]** Accesses the Pages View.
 
